@@ -1,0 +1,14 @@
+{
+  "domain": "kwb_heating",
+  "name": "KWB Heating Integration",
+  "brand": "kwb",
+  "version": "0.1.0",
+  "documentation": "https://github.com/cgfm/kwb-heating-integration",
+  "issue_tracker": "https://github.com/cgef/kwb-heating-integration/issues",
+  "codeowners": ["@cgfm"],
+  "requirements": ["pymodbus>=3.0.0", "aiofiles>=23.0.0"],
+  "config_flow": true,
+  "dependencies": [],
+  "after_dependencies": [],
+  "iot_class": "local_polling"
+}

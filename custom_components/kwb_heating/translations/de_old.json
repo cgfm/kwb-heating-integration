@@ -1,0 +1,101 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "KWB Heizungssystem - Verbindung",
+        "description": "Konfigurieren Sie die Verbindung zu Ihrem KWB Heizungssystem.\n\nZugriffsstufen:\n{access_levels}",
+        "data": {
+          "host": "IP-Adresse oder Hostname",
+          "port": "Modbus TCP Port",
+          "slave_id": "Modbus Slave ID"
+        }
+      },
+      "device": {
+        "title": "KWB Heizungssystem - Gerätetyp",
+        "description": "Wählen Sie Ihren KWB Heizungstyp und Zugriffsstufe.\n\nVerfügbare Geräte: {device_types}\n\nZugriffsstufen:\n{access_levels}",
+        "data": {
+          "device_type": "KWB Gerätetyp",
+          "access_level": "Zugriffsstufe",
+          "update_interval": "Update-Intervall (Sekunden)"
+        }
+      },
+      "equipment": {
+        "title": "KWB Heizungssystem - Ausstattung",
+        "description": "Konfigurieren Sie die Ausstattung Ihres {device_type} Systems. Verwenden Sie die Slider, um die Anzahl der jeweiligen Komponenten festzulegen. 0 = deaktiviert.",
+        "data": {
+          "heating_circuits": "Anzahl Heizkreise (0-16)",
+          "buffer_storage": "Anzahl Pufferspeicher (0-8)",
+          "dhw_storage": "Anzahl Brauchwasserspeicher (0-8)",
+          "secondary_heat_sources": "Anzahl Zweitwärmequellen (0-4)",
+          "circulation": "Anzahl Zirkulationen (0-4)",
+          "solar": "Anzahl Solar-Anlagen (0-8)",
+          "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-4)",
+          "heat_meters": "Anzahl Wärmemengenzähler (0-8)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Verbindung zum KWB Heizungssystem fehlgeschlagen. Bitte prüfen Sie die IP-Adresse und stellen Sie sicher, dass das System erreichbar ist.",
+      "invalid_host": "Ungültiger Hostname oder IP-Adresse.",
+      "timeout": "Verbindungs-Timeout. Bitte prüfen Sie Ihre Netzwerkverbindung.",
+      "unknown": "Ein unbekannter Fehler ist während der Einrichtung aufgetreten."
+    },
+    "abort": {
+      "already_configured": "Dieses KWB Heizungssystem ist bereits konfiguriert."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "KWB Heizung Optionen konfigurieren",
+        "description": "Konfigurieren Sie Ihre KWB Heizungsanlage. Sie können diese Einstellungen jederzeit ändern, ohne das Gerät neu erstellen zu müssen."
+      },
+      "equipment": {
+        "title": "Zubehör und Ausstattung",
+        "description": "Wählen Sie die installierte Ausstattung Ihrer KWB Heizung ({device_type}). Verwenden Sie die Slider, um die Anzahl der jeweiligen Komponenten festzulegen. 0 = deaktiviert.",
+        "data": {
+          "heating_circuits": "Anzahl Heizkreise (0-16)",
+          "buffer_storage": "Anzahl Pufferspeicher (0-8)",
+          "dhw_storage": "Anzahl Brauchwasserspeicher (0-8)",
+          "secondary_heat_sources": "Anzahl Zweitwärmequellen (0-4)",
+          "circulation": "Anzahl Zirkulationen (0-4)",
+          "solar": "Anzahl Solar-Anlagen (0-8)",
+          "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-4)",
+          "heat_meters": "Anzahl Wärmemengenzähler (0-8)",
+          "access_level": "Zugriffsstufe",
+          "update_interval": "Update-Intervall (Sekunden)"
+        }
+      }
+        },
+        "data_description": {
+          "heating_circuits": "0-16 Heizkreise (inkl. Mischkreise)",
+          "buffer_storage": "0-16 Pufferspeicher verschiedener Größen",
+          "dhw_storage": "0-16 Warmwasserspeicher und Boiler",
+          "solar": "Solar-Kollektoren oder PV-Anlage",
+          "circulation": "Zirkulationspumpe für Warmwasser",
+          "access_level": "UserLevel: Standardfunktionen, ExpertLevel: Alle Parameter",
+          "update_interval": "Wie oft Daten vom Heizungssystem abgerufen werden"
+        }
+      },
+      "advanced": {
+        "title": "Erweiterte Konfiguration",
+        "description": "Erweiterte Optionen für komplexe Heizungsanlagen.",
+        "data": {
+          "additional_heating_sources": "Zusätzliche Wärmequellen",
+          "boiler_cascade": "Kesselfolgeschaltung",
+          "heat_meter": "Wärmemengenzähler",
+          "mixing_circuits": "Mischkreise"
+        },
+        "data_description": {
+          "additional_heating_sources": "Anzahl zusätzlicher Wärmequellen (0-4)",
+          "boiler_cascade": "Mehrere Kessel in Kaskadenschaltung",
+          "heat_meter": "Anzahl Wärmemengenzähler (0-8)",
+          "mixing_circuits": "Anzahl separater Mischkreise (0-16)"
+        }
+      }
+    },
+    "error": {
+      "unknown": "Unbekannter Fehler beim Aktualisieren der Konfiguration."
+    }
+  }
+}

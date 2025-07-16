@@ -1,0 +1,24 @@
+# Docker setup for local Home Assistant testing
+# This directory contains the necessary files to run Home Assistant
+# in a Docker container for testing the KWB Heating integration.
+
+services:
+  homeassistant:
+    container_name: kwb-hass-test
+    image: homeassistant/home-assistant:latest
+    restart: unless-stopped
+    privileged: true
+    ports:
+      - "8123:8123"  # Modbus TCP port
+    environment:
+      - TZ=Europe/Berlin
+    volumes:
+      - ./ha-config:/config
+      - ./custom_components:/config/custom_components
+      - /run/dbus:/run/dbus:ro
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8123"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
