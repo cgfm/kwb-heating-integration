@@ -1,0 +1,6 @@
+{
+  "name": "KWB Heating Integration",
+  "render_readme": true,
+  "domains": ["kwb_heating"],
+  "homeassistant": "2023.1.0"
+}
