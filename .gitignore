@@ -75,3 +75,8 @@ secrets.yaml
 *.tmp
 *.temp
 *~
+
+claude*
+coordination/
+memory/
+Backup/

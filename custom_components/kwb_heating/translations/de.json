@@ -12,9 +12,10 @@
       },
       "device": {
         "title": "KWB Heizungssystem - Gerätetyp",
-        "description": "Wählen Sie Ihren KWB Heizungstyp und Zugriffsstufe.\n\nVerfügbare Geräte: {device_types}\n\nZugriffsstufen:\n{access_levels}",
+        "description": "Wählen Sie Ihren KWB Heizungstyp und geben Sie einen benutzerdefinierten Namen ein.\n\nVerfügbare Geräte: {device_types}\n\nZugriffsstufen:\n{access_levels}",
         "data": {
           "device_type": "KWB Gerätetyp",
+          "device_name": "Gerätename (zur Identifikation)",
           "access_level": "Zugriffsstufe",
           "update_interval": "Update-Intervall (Sekunden)"
         }
@@ -23,14 +24,14 @@
         "title": "KWB Heizungssystem - Ausstattung",
         "description": "Konfigurieren Sie die Ausstattung Ihres {device_type} Systems. Verwenden Sie die Slider, um die Anzahl der jeweiligen Komponenten festzulegen. 0 = deaktiviert.",
         "data": {
-          "heating_circuits": "Anzahl Heizkreise (0-16)",
-          "buffer_storage": "Anzahl Pufferspeicher (0-8)",
-          "dhw_storage": "Anzahl Brauchwasserspeicher (0-8)",
-          "secondary_heat_sources": "Anzahl Zweitwärmequellen (0-4)",
-          "circulation": "Anzahl Zirkulationen (0-4)",
-          "solar": "Anzahl Solar-Anlagen (0-8)",
-          "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-4)",
-          "heat_meters": "Anzahl Wärmemengenzähler (0-8)"
+          "heating_circuits": "Anzahl Heizkreise (0-14)",
+          "buffer_storage": "Anzahl Pufferspeicher (0-15)",
+          "dhw_storage": "Anzahl Brauchwasserspeicher (0-14)",
+          "secondary_heat_sources": "Anzahl Zweitwärmequellen (0-14)",
+          "circulation": "Anzahl Zirkulationen (0-15)",
+          "solar": "Anzahl Solar-Anlagen (0-14)",
+          "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-8)",
+          "heat_meters": "Anzahl Wärmemengenzähler (0-36)"
         }
       }
     },
@@ -38,6 +39,8 @@
       "cannot_connect": "Verbindung zum KWB Heizungssystem fehlgeschlagen. Bitte prüfen Sie die IP-Adresse und stellen Sie sicher, dass das System erreichbar ist.",
       "invalid_host": "Ungültiger Hostname oder IP-Adresse.",
       "timeout": "Verbindungs-Timeout. Bitte prüfen Sie Ihre Netzwerkverbindung.",
+      "invalid_device_name": "Gerätename darf nicht leer sein.",
+      "device_name_too_long": "Gerätename ist zu lang (maximal 50 Zeichen).",
       "unknown": "Ein unbekannter Fehler ist während der Einrichtung aufgetreten."
     },
     "abort": {
@@ -50,20 +53,23 @@
         "title": "Zubehör und Ausstattung",
         "description": "Wählen Sie die installierte Ausstattung Ihrer KWB Heizung ({device_type}). Verwenden Sie die Slider, um die Anzahl der jeweiligen Komponenten festzulegen. 0 = deaktiviert.",
         "data": {
-          "heating_circuits": "Anzahl Heizkreise (0-16)",
-          "buffer_storage": "Anzahl Pufferspeicher (0-8)",
-          "dhw_storage": "Anzahl Brauchwasserspeicher (0-8)",
-          "secondary_heat_sources": "Anzahl Zweitwärmequellen (0-4)",
-          "circulation": "Anzahl Zirkulationen (0-4)",
-          "solar": "Anzahl Solar-Anlagen (0-8)",
-          "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-4)",
-          "heat_meters": "Anzahl Wärmemengenzähler (0-8)",
+          "device_name": "Gerätename (zur Identifikation)",
+          "heating_circuits": "Anzahl Heizkreise (0-14)",
+          "buffer_storage": "Anzahl Pufferspeicher (0-15)",
+          "dhw_storage": "Anzahl Brauchwasserspeicher (0-14)",
+          "secondary_heat_sources": "Anzahl Zweitwärmequellen (0-14)",
+          "circulation": "Anzahl Zirkulationen (0-15)",
+          "solar": "Anzahl Solar-Anlagen (0-14)",
+          "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-8)",
+          "heat_meters": "Anzahl Wärmemengenzähler (0-36)",
           "access_level": "Zugriffsstufe",
           "update_interval": "Update-Intervall (Sekunden)"
         }
       }
     },
     "error": {
+      "invalid_device_name": "Gerätename darf nicht leer sein.",
+      "device_name_too_long": "Gerätename ist zu lang (maximal 50 Zeichen).",
       "unknown": "Unbekannter Fehler beim Aktualisieren der Konfiguration."
     }
   }

@@ -18,6 +18,7 @@ from .const import (
     CONF_ACCESS_LEVEL,
     CONF_UPDATE_INTERVAL,
     CONF_DEVICE_TYPE,
+    CONF_DEVICE_NAME,
     CONF_HEATING_CIRCUITS,
     CONF_BUFFER_STORAGE,
     CONF_DHW_STORAGE,
@@ -80,6 +81,9 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         
         # Get device type from config
         device_type = self.config.get(CONF_DEVICE_TYPE)
+        
+        # Store device type for device_info
+        self.device_type = device_type
         
         # Build equipment configuration - use counts directly, not boolean conversion
         equipment_config = {
@@ -266,11 +270,72 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
     @property
     def device_info(self) -> dict[str, Any]:
         """Return device information."""
+        # Use custom device name if available, otherwise fallback to device type or generic name
+        device_name = self.config.get(CONF_DEVICE_NAME) or getattr(self, 'device_type', None) or "KWB Heating System"
+        model_name = getattr(self, 'device_type', None) or "Heating System"
+        
+        # Create consistent device identifier based on host and slave_id
+        # This ensures all entities are linked to the same device
+        device_identifier = f"{self.host}_{self.slave_id}"
+        
         return {
-            "identifiers": {(DOMAIN, f"{self.host}_{self.slave_id}")},
-            "name": f"KWB Heating System ({self.host})",
+            "identifiers": {(DOMAIN, device_identifier)},
+            "name": device_name,
             "manufacturer": "KWB",
-            "model": "Heating System",
+            "model": model_name,
             "sw_version": "1.0.0",
             "configuration_url": f"http://{self.host}",
         }
+
+    @property
+    def device_name_prefix(self) -> str:
+        """Return device name suitable for entity name prefixes."""
+        # Use custom device name if available, otherwise fallback to device type
+        device_name = self.config.get(CONF_DEVICE_NAME) or getattr(self, 'device_type', None) or "KWB"
+        
+        # Remove redundant "KWB" prefix if it's already there and return a clean prefix
+        if device_name.startswith("KWB "):
+            return device_name[4:]  # Remove "KWB " prefix
+        return device_name
+
+    def sanitize_for_entity_id(self, text: str) -> str:
+        """Sanitize text for use in entity IDs - shared method for consistent entity naming."""
+        return (text.lower()
+               .replace(" ", "_")
+               .replace(".", "_")
+               .replace("(", "")
+               .replace(")", "")
+               .replace("/", "_")
+               .replace("-", "_")
+               .replace(":", "_")
+               .replace("ä", "ae")
+               .replace("ö", "oe") 
+               .replace("ü", "ue")
+               .replace("ß", "ss")
+               .replace("&", "and")
+               .replace("#", "")
+               .replace("@", "at")
+               .replace("!", "")
+               .replace("?", "")
+               .replace(",", "")
+               .replace(";", "")
+               .replace("'", "")
+               .replace('"', ""))
+
+    def generate_entity_unique_id(self, register: dict) -> str:
+        """Generate consistent unique ID for entities based on device identifier."""
+        # Get base name from register
+        base_name = register["name"]
+        address = register["starting_address"]
+        
+        # Use the same device identifier as in device_info
+        device_identifier = f"{self.host}_{self.slave_id}"
+        
+        # Get device name prefix for entity naming
+        device_prefix = self.device_name_prefix.lower().replace(" ", "_")
+        
+        # Sanitize the base name for use in entity ID
+        base_id = self.sanitize_for_entity_id(base_name)
+        
+        # Create unique ID with device prefix, consistent device identifier and proper prefix
+        return f"kwb_heating_{device_identifier}_{device_prefix}_{base_id}_{address}"

@@ -59,6 +59,11 @@ class KWBNumber(CoordinatorEntity, NumberEntity):
         self._attr_name = entity_name
         self._attr_unique_id = unique_id
         
+        # Set explicit entity_id to ensure device name prefix is included
+        device_prefix = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
+        register_name = coordinator.sanitize_for_entity_id(register["name"])
+        self._attr_entity_id = f"number.{device_prefix}_{register_name}"
+        
         # Set device info
         self._attr_device_info = coordinator.device_info
         
@@ -148,29 +153,14 @@ class KWBNumber(CoordinatorEntity, NumberEntity):
     
     def _generate_entity_name_and_id(self, register: dict, coordinator) -> tuple[str, str]:
         """Generate proper entity name and unique ID."""
-        # Use the name as-is from register (already processed by async_modular_register_manager)
-        entity_name = register["name"]
-        address = register["starting_address"]
+        # Get base name from register
+        base_name = register["name"]
         
-        # Create unique entity ID (lowercase, underscore-separated)
-        device_id = next(iter(coordinator.device_info['identifiers']))[1]
+        # Add device name prefix to entity name
+        device_prefix = coordinator.device_name_prefix
+        entity_name = f"{device_prefix} {base_name}"
         
-        # Sanitize for entity ID - remove special characters and normalize
-        def sanitize_for_id(text: str) -> str:
-            return (text.lower()
-                   .replace(" ", "_")
-                   .replace(".", "_")
-                   .replace("(", "")
-                   .replace(")", "")
-                   .replace("/", "_")
-                   .replace("-", "_")
-                   .replace(":", "_")
-                   .replace("ä", "ae")
-                   .replace("ö", "oe") 
-                   .replace("ü", "ue")
-                   .replace("ß", "ss"))
-        
-        base_id = sanitize_for_id(entity_name)
-        unique_id = f"kwb_heating_{device_id}_{base_id}_{address}"
+        # Use coordinator's centralized unique ID generation
+        unique_id = coordinator.generate_entity_unique_id(register)
         
         return entity_name, unique_id
