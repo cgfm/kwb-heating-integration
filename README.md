@@ -39,6 +39,10 @@ A comprehensive Home Assistant Custom Component for **KWB heating systems** with
 
 ### Via HACS (Recommended)
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=cgfm&repository=kwb-heating-integration&category=integration)
+
+**Manual HACS Installation:**
+
 1. Open HACS in Home Assistant
 2. Click on "Integrations"
 3. Click the menu (⋮) and select "Custom repositories"

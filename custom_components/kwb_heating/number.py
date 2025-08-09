@@ -12,6 +12,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -66,6 +67,9 @@ class KWBNumber(CoordinatorEntity, NumberEntity):
         
         # Set device info
         self._attr_device_info = coordinator.device_info
+        
+        # Set icon based on register name
+        self._attr_icon = get_entity_icon(self._register["name"], "number")
         
         # Configure number properties
         self._configure_number()

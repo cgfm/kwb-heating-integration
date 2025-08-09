@@ -24,6 +24,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -117,6 +118,9 @@ class KWBSensor(CoordinatorEntity, SensorEntity):
         if (self.coordinator.data_converter.is_numeric(self._register) and 
             not self.coordinator.data_converter.has_value_table(self._register)):
             self._attr_state_class = SensorStateClass.MEASUREMENT
+        
+        # Set icon based on register name
+        self._attr_icon = get_entity_icon(self._register["name"], "sensor")
         
         # Set entity category based on register properties
         name_lower = self._register["name"].lower()
