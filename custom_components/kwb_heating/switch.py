@@ -12,6 +12,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -94,6 +95,9 @@ class KWBSwitch(CoordinatorEntity, SwitchEntity):
         
         # Set device info
         self._attr_device_info = coordinator.device_info
+        
+        # Set icon based on register definition
+        self._attr_icon = get_entity_icon(self._register, "switch")
         
         # Determine on/off values from value table using data converter
         unit_value_table = self._register.get("unit_value_table", "")
@@ -198,15 +202,15 @@ class KWBSwitch(CoordinatorEntity, SwitchEntity):
         }
         
         # Add current raw value
-        if self.coordinator.data is not None:
-            raw_value = self.coordinator.data.get(self._address)
-            if raw_value is not None:
-                attributes["raw_value"] = raw_value
-                
-                # Add value description if available
-                value_table = self._register.get("value_table", {})
-                if value_table and str(raw_value) in value_table:
-                    attributes["value_description"] = value_table[str(raw_value)]
+        if self.coordinator.data is not None and self._address in self.coordinator.data:
+            reg_data = self.coordinator.data[self._address]
+            raw_val = reg_data.get("raw_value")
+            if raw_val is not None:
+                attributes["raw_value"] = raw_val
+                # Add value description if available via data converter
+                disp = self.coordinator.data_converter.get_display_value(self._register, raw_val)
+                if disp is not None:
+                    attributes["value_description"] = disp
         
         return attributes
 

@@ -39,6 +39,10 @@ A comprehensive Home Assistant Custom Component for **KWB heating systems** with
 
 ### Via HACS (Recommended)
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=cgfm&repository=kwb-heating-integration&category=integration)
+
+**Manual HACS Installation:**
+
 1. Open HACS in Home Assistant
 2. Click on "Integrations"
 3. Click the menu (⋮) and select "Custom repositories"
@@ -100,6 +104,31 @@ Configure the number of your equipment components:
 - **Pumps** manual control
 
 > **Note**: Read-Write entities are only available with appropriate access level
+
+## 🔢 Raw Value Attribute
+
+- Purpose: Exposes the original Modbus register value before any conversion or localization.
+- Available on: sensors, selects, and switches (attribute name: `raw_value`).
+- Display vs. raw:
+  - Sensors with value tables: state shows a localized text; `raw_value` holds the numeric status code.
+  - Numeric sensors with scaling: state shows the converted/scaled value; `raw_value` holds the unscaled register value.
+- Switch extras: switches also expose `value_description` (text mapped from the current `raw_value`).
+
+Examples:
+- Jinja template: `{{ state_attr('sensor.<your_device_prefix>_kessel_status_stuckholz', 'raw_value') }}`
+- Lovelace (e.g., floorplan-card): `entity.attributes.raw_value`
+- Template sensor:
+  ```yaml
+  template:
+    - sensor:
+        - name: "Kesselstatus (roh)"
+          state: "{{ state_attr('sensor.<your_device_prefix>_kessel_status_stuckholz', 'raw_value') }}"
+  ```
+
+Migration from legacy "rohwert" entities:
+- Older setups used separate entities like `sensor.*_rohwert`. These are no longer created.
+- Replace them by reading the `raw_value` attribute from the corresponding base entity.
+- Example: `sensor.kwb_combifire_cf2_kessel_status_stuckholz_rohwert` → `state_attr('sensor.heizungsanlage_kessel_status_stuckholz', 'raw_value')`.
 
 ## 🌍 Language Support
 

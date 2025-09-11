@@ -12,6 +12,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -65,6 +66,9 @@ class KWBSelect(CoordinatorEntity, SelectEntity):
         
         # Set device info
         self._attr_device_info = coordinator.device_info
+        
+        # Set icon based on register definition
+        self._attr_icon = get_entity_icon(self._register, "select")
         
         # Configure select properties
         self._configure_select()
@@ -159,7 +163,22 @@ class KWBSelect(CoordinatorEntity, SelectEntity):
             return "mdi:information"
         
         return "mdi:format-list-bulleted"
-    
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """Return additional state attributes, including raw Modbus value."""
+        if not self.coordinator.data or self._address not in self.coordinator.data:
+            return {}
+
+        reg_data = self.coordinator.data[self._address]
+
+        attrs: dict[str, Any] = {
+            "register_address": self._address,
+            "raw_value": reg_data.get("raw_value"),
+        }
+
+        return attrs
+
     def _generate_entity_name_and_id(self, register: dict, coordinator) -> tuple[str, str]:
         """Generate proper entity name and unique ID."""
         # Get base name from register

@@ -13,6 +13,7 @@
       "index": "",
       "unit_value_table": "1/10°C",
       "values": "",
+      "icon": "mdi:thermometer",
       "min": "",
       "max": "",
       "user_level": "read",
@@ -30,6 +31,7 @@
       "index": "",
       "unit_value_table": "1/10%",
       "values": "",
+      "icon": "mdi:water-percent",
       "min": "",
       "max": "",
       "user_level": "read",
@@ -50,7 +52,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9397,
@@ -67,7 +70,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:information"
     },
     {
       "address": 9398,
@@ -84,7 +88,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9399,
@@ -101,7 +106,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:information"
     },
     {
       "address": 9400,
@@ -118,7 +124,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9402,
@@ -135,7 +142,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9403,
@@ -152,7 +160,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9404,
@@ -169,7 +178,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9405,
@@ -186,7 +196,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9406,
@@ -203,7 +214,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9407,
@@ -220,7 +232,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9408,
@@ -237,7 +250,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9409,
@@ -254,7 +268,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:connection"
     },
     {
       "address": 9422,
@@ -271,7 +286,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9423,
@@ -288,7 +304,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9424,
@@ -305,7 +322,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9425,
@@ -322,7 +340,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9426,
@@ -339,7 +358,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9427,
@@ -356,7 +376,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9428,
@@ -373,7 +394,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9429,
@@ -390,7 +412,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert-circle"
     },
     {
       "address": 9499,
@@ -407,7 +430,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:office-building"
     },
     {
       "address": 9500,
@@ -424,7 +448,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:office-building"
     },
     {
       "address": 9501,
@@ -441,7 +466,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9502,
@@ -458,7 +484,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9503,
@@ -475,7 +502,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9504,
@@ -492,7 +520,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9505,
@@ -509,7 +538,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9506,
@@ -526,7 +556,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9507,
@@ -543,7 +574,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9508,
@@ -560,7 +592,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9509,
@@ -577,7 +610,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9510,
@@ -594,7 +628,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9511,
@@ -611,7 +646,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9512,
@@ -628,7 +664,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9513,
@@ -645,7 +682,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9514,
@@ -662,7 +700,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:alert"
     },
     {
       "address": 9515,
@@ -679,7 +718,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 9516,
@@ -696,7 +736,8 @@
       "min": "",
       "max": "",
       "user_level": "read",
-      "expert_level": "read"
+      "expert_level": "read",
+      "icon": "mdi:cylinder"
     },
     {
       "address": 24848,
@@ -713,7 +754,8 @@
       "min": "500",
       "max": "900",
       "user_level": "readwrite",
-      "expert_level": "readwrite"
+      "expert_level": "readwrite",
+      "icon": "mdi:thermometer"
     },
     {
       "address": 24929,
@@ -730,7 +772,8 @@
       "min": "",
       "max": "",
       "user_level": "readwrite",
-      "expert_level": "readwrite"
+      "expert_level": "readwrite",
+      "icon": "mdi:devices"
     },
     {
       "address": 24930,
@@ -747,7 +790,8 @@
       "min": "",
       "max": "",
       "user_level": "readwrite",
-      "expert_level": "readwrite"
+      "expert_level": "readwrite",
+      "icon": "mdi:account-cog"
     },
     {
       "address": 24931,
@@ -764,7 +808,8 @@
       "min": "300",
       "max": "900",
       "user_level": "readwrite",
-      "expert_level": "readwrite"
+      "expert_level": "readwrite",
+      "icon": "mdi:thermometer"
     }
   ]
 }

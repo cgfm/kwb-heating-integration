@@ -14,7 +14,7 @@ services:
       - TZ=Europe/Berlin
     volumes:
       - ./ha-config:/config
-      - ./custom_components:/config/custom_components
+      - ./custom_components/kwb_heating:/config/custom_components/kwb_heating
       - /run/dbus:/run/dbus:ro
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8123"]

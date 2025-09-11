@@ -12,6 +12,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -66,6 +67,9 @@ class KWBNumber(CoordinatorEntity, NumberEntity):
         
         # Set device info
         self._attr_device_info = coordinator.device_info
+        
+        # Set icon based on register definition
+        self._attr_icon = get_entity_icon(self._register, "number")
         
         # Configure number properties
         self._configure_number()
@@ -136,6 +140,11 @@ class KWBNumber(CoordinatorEntity, NumberEntity):
     @property
     def icon(self) -> str | None:
         """Return icon for the number entity."""
+        # Wenn ein Icon direkt im Register definiert ist, verwende dieses
+        if "icon" in self._register and self._register["icon"]:
+            return self._register["icon"]
+            
+        # Ansonsten fallback auf bestehende Logik
         name_lower = self._register["name"].lower()
         
         if "temperature" in name_lower or "temp" in name_lower:

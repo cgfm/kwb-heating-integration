@@ -77,6 +77,84 @@ DATA_TYPES = {
     "str": "string"
 }
 
+# Icon mapping for different entity types based on register names/types
+ENTITY_ICONS = {
+    # Temperature related
+    "temperature": "mdi:thermometer",
+    "temp": "mdi:thermometer",
+    "kesseltemperatur": "mdi:thermometer-lines",
+    "aussentemperatur": "mdi:thermometer",
+    "vorlauftemperatur": "mdi:thermometer-chevron-up",
+    "rücklauftemperatur": "mdi:thermometer-chevron-down",
+    "rücklauf": "mdi:thermometer-chevron-down",
+    "solltemperatur": "mdi:thermometer-auto",
+    
+    # Heating/Boiler related
+    "kessel": "mdi:fire",
+    "brenner": "mdi:fire",
+    "heizung": "mdi:radiator",
+    "heizkreis": "mdi:heating-coil",
+    "hk": "mdi:heating-coil",
+    
+    # Pumps and circulation
+    "pumpe": "mdi:pump",
+    "pump": "mdi:pump",
+    "zirkulation": "mdi:rotate-3d-variant",
+    
+    # Water/Storage
+    "speicher": "mdi:storage-tank",
+    "puffer": "mdi:storage-tank",
+    "brauchwasser": "mdi:water-thermometer",
+    "warmwasser": "mdi:water-thermometer",
+    "bws": "mdi:water-thermometer",
+    
+    # Solar
+    "solar": "mdi:solar-power-variant",
+    "kollektor": "mdi:solar-panel-large",
+    
+    # Sensors and inputs
+    "sensor": "mdi:gauge",
+    "fühler": "mdi:thermometer-probe",
+    "eingang": "mdi:import",
+    "ausgang": "mdi:export",
+    
+    # System/Status
+    "status": "mdi:information-outline",
+    "störung": "mdi:alert-circle",
+    "alarm": "mdi:alert",
+    "betrieb": "mdi:play-circle",
+    "anforderung": "mdi:gesture-tap",
+    "freigabe": "mdi:check-circle",
+    
+    # Power/Energy
+    "leistung": "mdi:lightning-bolt",
+    "power": "mdi:lightning-bolt",
+    "energie": "mdi:flash",
+    
+    # Time/Program
+    "zeit": "mdi:clock",
+    "timer": "mdi:timer",
+    "programm": "mdi:cog",
+    
+    # Default fallbacks
+    "default_sensor": "mdi:gauge",
+    "default_switch": "mdi:toggle-switch",
+    "default_number": "mdi:numeric",
+    "default_select": "mdi:format-list-bulleted",
+}
+
+# Icon mapping for device types
+DEVICE_TYPE_ICONS = {
+    "KWB Easyfire": "mdi:water-boiler",
+    "KWB Multifire": "mdi:water-boiler", 
+    "KWB Pelletfire+": "mdi:water-boiler",
+    "KWB Combifire": "mdi:water-boiler",
+    "KWB CF 2": "mdi:water-boiler",
+    "KWB CF 1": "mdi:water-boiler",
+    "KWB CF 1.5": "mdi:water-boiler",
+    "default": "mdi:water-boiler",
+}
+
 # Error codes
 ERROR_CONNECTION = "connection_error"
 ERROR_INVALID_DATA = "invalid_data"

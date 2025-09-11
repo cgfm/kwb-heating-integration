@@ -109,31 +109,37 @@ class KWBDataConverter:
         if unit_value_table in self.value_tables:
             return None
         
+        # Common units to Home Assistant standards
+        unit_mapping = {
+            "°C": "°C",
+            "°F": "°F", 
+            "%": "%",
+            "bar": "bar",
+            "Pa": "Pa",
+            "kW": "kW",
+            "W": "W",
+            "l": "L",
+            "m³": "m³",
+            "kg": "kg",
+            "h": "h",
+            "min": "min",
+            "s": "s",
+            "V": "V",
+            "A": "A",
+            "Hz": "Hz",
+            "rpm": "rpm",
+            "Upm": "RPM"
+        }
+        
         # Extract unit from scaling factor like "1/10°C" -> "°C"
         match = re.match(r"1/\d+(.+)", unit_value_table)
         if match:
             unit = match.group(1)
-            # Convert common units to Home Assistant standards
-            unit_mapping = {
-                "°C": "°C",
-                "°F": "°F", 
-                "%": "%",
-                "bar": "bar",
-                "Pa": "Pa",
-                "kW": "kW",
-                "W": "W",
-                "l": "L",
-                "m³": "m³",
-                "kg": "kg",
-                "h": "h",
-                "min": "min",
-                "s": "s",
-                "V": "V",
-                "A": "A",
-                "Hz": "Hz",
-                "rpm": "rpm"
-            }
             return unit_mapping.get(unit, unit)
+        
+        # Check if the whole string is a known unit (e.g., "kg", "min", etc.)
+        if unit_value_table in unit_mapping:
+            return unit_mapping[unit_value_table]
         
         return None
     

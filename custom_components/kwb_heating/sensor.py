@@ -24,6 +24,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -118,6 +119,9 @@ class KWBSensor(CoordinatorEntity, SensorEntity):
             not self.coordinator.data_converter.has_value_table(self._register)):
             self._attr_state_class = SensorStateClass.MEASUREMENT
         
+        # Set icon based on register definition
+        self._attr_icon = get_entity_icon(self._register, "sensor")
+        
         # Set entity category based on register properties
         name_lower = self._register["name"].lower()
         if any(keyword in name_lower for keyword in ["version", "revision", "software"]):
@@ -154,6 +158,8 @@ class KWBSensor(CoordinatorEntity, SensorEntity):
             "data_type": self._register.get("data_type"),
             "raw_value": register_data.get("raw_value"),
         }
+
+        # Keep only snake_case attributes for consistency
         
         # Add register description if available
         if self._register.get("description"):

@@ -255,8 +255,10 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
     """Handle options flow for KWB Heating integration."""
 
     def __init__(self, config_entry: config_entries.ConfigEntry):
-        """Initialize options flow."""
-        self.config_entry = config_entry
+        """Initialize options flow without setting deprecated attribute."""
+        # Do NOT assign to self.config_entry (deprecated in HA);
+        # keep a private reference for backward-compat usage.
+        self._config_entry = config_entry
 
     async def async_step_init(
         self, user_input: dict[str, Any] | None = None
@@ -282,13 +284,13 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
             if not errors:
                 try:
                     # Update config entry data if device name changed
-                    if CONF_DEVICE_NAME in user_input and user_input[CONF_DEVICE_NAME] != self.config_entry.data.get(CONF_DEVICE_NAME):
+                    if CONF_DEVICE_NAME in user_input and user_input[CONF_DEVICE_NAME] != self._config_entry.data.get(CONF_DEVICE_NAME):
                         # Update data with new device name
-                        updated_data = {**self.config_entry.data, CONF_DEVICE_NAME: user_input[CONF_DEVICE_NAME]}
+                        updated_data = {**self._config_entry.data, CONF_DEVICE_NAME: user_input[CONF_DEVICE_NAME]}
                         
                         # Update config entry with new data and title
                         self.hass.config_entries.async_update_entry(
-                            self.config_entry,
+                            self._config_entry,
                             data=updated_data,
                             title=f"{user_input[CONF_DEVICE_NAME]} ({updated_data[CONF_HOST]})"
                         )
@@ -301,64 +303,66 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                     errors["base"] = "unknown"
 
         # Get current values from config entry
-        current_equipment = self.config_entry.options
+        # Prefer framework-provided property if available, else our private copy
+        entry = getattr(self, "config_entry", None) or self._config_entry
+        current_equipment = entry.options
         
         # Create schema with current values as defaults
         equipment_schema = vol.Schema({
             vol.Optional(
                 CONF_DEVICE_NAME,
                 default=current_equipment.get(CONF_DEVICE_NAME,
-                                             self.config_entry.data.get(CONF_DEVICE_NAME, "KWB Heating"))
+                                             entry.data.get(CONF_DEVICE_NAME, "KWB Heating"))
             ): cv.string,
             vol.Optional(
                 CONF_HEATING_CIRCUITS, 
                 default=current_equipment.get(CONF_HEATING_CIRCUITS, 
-                                             self.config_entry.data.get(CONF_HEATING_CIRCUITS, 0))
+                                             entry.data.get(CONF_HEATING_CIRCUITS, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
             vol.Optional(
                 CONF_BUFFER_STORAGE, 
                 default=current_equipment.get(CONF_BUFFER_STORAGE,
-                                             self.config_entry.data.get(CONF_BUFFER_STORAGE, 0))
+                                             entry.data.get(CONF_BUFFER_STORAGE, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=15)),
             vol.Optional(
                 CONF_DHW_STORAGE, 
                 default=current_equipment.get(CONF_DHW_STORAGE,
-                                             self.config_entry.data.get(CONF_DHW_STORAGE, 0))
+                                             entry.data.get(CONF_DHW_STORAGE, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
             vol.Optional(
                 CONF_SECONDARY_HEAT_SOURCES, 
                 default=current_equipment.get(CONF_SECONDARY_HEAT_SOURCES,
-                                             self.config_entry.data.get(CONF_SECONDARY_HEAT_SOURCES, 0))
+                                             entry.data.get(CONF_SECONDARY_HEAT_SOURCES, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
             vol.Optional(
                 CONF_CIRCULATION, 
                 default=current_equipment.get(CONF_CIRCULATION,
-                                             self.config_entry.data.get(CONF_CIRCULATION, 0))
+                                             entry.data.get(CONF_CIRCULATION, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=15)),
             vol.Optional(
                 CONF_SOLAR, 
                 default=current_equipment.get(CONF_SOLAR,
-                                             self.config_entry.data.get(CONF_SOLAR, 0))
+                                             entry.data.get(CONF_SOLAR, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
             vol.Optional(
                 CONF_BOILER_SEQUENCE, 
                 default=current_equipment.get(CONF_BOILER_SEQUENCE,
-                                             self.config_entry.data.get(CONF_BOILER_SEQUENCE, 0))
+                                             entry.data.get(CONF_BOILER_SEQUENCE, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=8)),
             vol.Optional(
                 CONF_HEAT_METERS, 
                 default=current_equipment.get(CONF_HEAT_METERS,
-                                             self.config_entry.data.get(CONF_HEAT_METERS, 0))
+                                             entry.data.get(CONF_HEAT_METERS, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=36)),
             vol.Optional(
                 CONF_ACCESS_LEVEL,
                 default=current_equipment.get(CONF_ACCESS_LEVEL,
-                                             self.config_entry.data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL))
+                                             entry.data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL))
             ): vol.In(ACCESS_LEVELS.keys()),
             vol.Optional(
                 CONF_UPDATE_INTERVAL,
                 default=current_equipment.get(CONF_UPDATE_INTERVAL,
-                                             self.config_entry.data.get(CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL))
+                                             entry.data.get(CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL))
             ): vol.All(vol.Coerce(int), vol.Range(min=10, max=300)),
         })
 
@@ -367,7 +371,7 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
             data_schema=equipment_schema,
             errors=errors,
             description_placeholders={
-                "device_type": self.config_entry.data.get(CONF_DEVICE_TYPE, "Unknown")
+                "device_type": entry.data.get(CONF_DEVICE_TYPE, "Unknown")
             }
         )
 
