@@ -2,7 +2,8 @@
   "domain": "kwb_heating",
   "name": "KWB Heating Integration",
   "brand": "kwb",
-  "version": "0.2.2",
+  "icon": "https://brands.home-assistant.io/_/kwb/icon.png",
+  "version": "0.2.1",
   "documentation": "https://github.com/cgfm/kwb-heating-integration",
   "issue_tracker": "https://github.com/cgfm/kwb-heating-integration/issues",
   "codeowners": ["@cgfm"],
@@ -10,8 +11,5 @@
   "config_flow": true,
   "dependencies": [],
   "after_dependencies": [],
-  "iot_class": "local_polling",
-  "integration_type": "device",
-  "loggers": ["custom_components.kwb_heating"],
-  "quality_scale": "silver"
+  "iot_class": "local_polling"
 }

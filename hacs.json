@@ -3,8 +3,5 @@
   "render_readme": true,
   "domains": ["kwb_heating"],
   "homeassistant": "2023.1.0",
-  "iot_class": "Local Polling",
-  "country": ["DE", "AT", "CH"],
-  "repository": "https://github.com/cgfm/kwb-heating-integration",
-  "version": "0.2.3"
+  "iot_class": "Local Polling"
 }

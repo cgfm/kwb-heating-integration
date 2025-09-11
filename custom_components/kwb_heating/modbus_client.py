@@ -205,25 +205,15 @@ class KWBModbusClient:
         for reg in sorted_registers:
             address = reg["starting_address"]
             
-            # Determine count based on data type (u32/s32 need 2 registers)
-            data_type = reg.get("unit", "u16")
-            count = 2 if data_type in ["u32", "s32"] else 1
-            
             try:
                 if register_type == "input":
-                    values = await self.read_input_registers(address, count)
+                    values = await self.read_input_registers(address, 1)
                 else:
-                    values = await self.read_holding_registers(address, count)
+                    values = await self.read_holding_registers(address, 1)
                 
                 if values and len(values) > 0:
-                    if count == 2 and len(values) >= 2:
-                        # Combine two 16-bit registers into one 32-bit value
-                        combined_value = (values[0] << 16) | values[1]
-                        results[address] = combined_value
-                        _LOGGER.debug("Read 32-bit register %d: %d", address, combined_value)
-                    else:
-                        results[address] = values[0]
-                        _LOGGER.debug("Read register %d: %d", address, values[0])
+                    results[address] = values[0]
+                    _LOGGER.debug("Read register %d: %d", address, values[0])
                 else:
                     _LOGGER.debug("No data for register %d", address)
                     

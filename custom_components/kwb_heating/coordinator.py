@@ -229,26 +229,12 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
                 return False
             
             # Check if register is writable
-            user_level = register.get("user_level", "")
-            if user_level != "readwrite":
-                _LOGGER.error("Register %d is not writable (user_level: %s)", address, user_level)
+            if register.get("access") != "RW":
+                _LOGGER.error("Register %d is not writable", address)
                 return False
-                
-            # Check if this is a 32-bit register (2 Modbus registers)
-            data_type = register.get("unit", "u16")
             
-            if data_type in ["u32", "s32"]:
-                # Split 32-bit value into two 16-bit values
-                high_word = (value >> 16) & 0xFFFF
-                low_word = value & 0xFFFF
-                
-                # Write both registers
-                success = await self.modbus_client.write_multiple_registers(
-                    address, [high_word, low_word]
-                )
-            else:
-                # Write single 16-bit register
-                success = await self.modbus_client.write_single_register(address, value)
+            # Write the value
+            success = await self.modbus_client.write_single_register(address, value)
             
             if success:
                 _LOGGER.debug("Successfully wrote value %d to register %d", value, address)
