@@ -311,7 +311,8 @@ class RegisterManager:
             "unit_value_table": register.get("unit_value_table", ""),  # Changed from value_table
             "min": register.get("min", ""),
             "max": register.get("max", ""),
-            "description": register.get("description", ""),
+            # Some configs may use 'number_of_registers' instead of 'description'
+            "description": register.get("description", str(register.get("number_of_registers", ""))),
             "id": register.get("id", ""),
             "index": register.get("index", ""),  # Include index for equipment identification
         }

@@ -4,7 +4,7 @@
     {
       "address": 9517,
       "starting_address": "9517",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -22,7 +22,7 @@
     {
       "address": 9519,
       "starting_address": "9519",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -40,7 +40,7 @@
     {
       "address": 9521,
       "starting_address": "9521",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -58,7 +58,7 @@
     {
       "address": 9523,
       "starting_address": "9523",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -76,7 +76,7 @@
     {
       "address": 9525,
       "starting_address": "9525",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -94,7 +94,7 @@
     {
       "address": 9527,
       "starting_address": "9527",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -112,7 +112,7 @@
     {
       "address": 9529,
       "starting_address": "9529",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -130,7 +130,7 @@
     {
       "address": 9531,
       "starting_address": "9531",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -148,7 +148,7 @@
     {
       "address": 9533,
       "starting_address": "9533",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -166,7 +166,7 @@
     {
       "address": 9535,
       "starting_address": "9535",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -184,7 +184,7 @@
     {
       "address": 9537,
       "starting_address": "9537",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -202,7 +202,7 @@
     {
       "address": 9539,
       "starting_address": "9539",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -220,7 +220,7 @@
     {
       "address": 9541,
       "starting_address": "9541",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -238,7 +238,7 @@
     {
       "address": 9543,
       "starting_address": "9543",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -256,7 +256,7 @@
     {
       "address": 9545,
       "starting_address": "9545",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -274,7 +274,7 @@
     {
       "address": 9547,
       "starting_address": "9547",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -292,7 +292,7 @@
     {
       "address": 9549,
       "starting_address": "9549",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -310,7 +310,7 @@
     {
       "address": 9551,
       "starting_address": "9551",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -328,7 +328,7 @@
     {
       "address": 9553,
       "starting_address": "9553",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -346,7 +346,7 @@
     {
       "address": 9555,
       "starting_address": "9555",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -364,7 +364,7 @@
     {
       "address": 9557,
       "starting_address": "9557",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -382,7 +382,7 @@
     {
       "address": 9559,
       "starting_address": "9559",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -400,7 +400,7 @@
     {
       "address": 9561,
       "starting_address": "9561",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -418,7 +418,7 @@
     {
       "address": 9563,
       "starting_address": "9563",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -436,7 +436,7 @@
     {
       "address": 9565,
       "starting_address": "9565",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -454,7 +454,7 @@
     {
       "address": 9567,
       "starting_address": "9567",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -472,7 +472,7 @@
     {
       "address": 9569,
       "starting_address": "9569",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -490,7 +490,7 @@
     {
       "address": 9571,
       "starting_address": "9571",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -508,7 +508,7 @@
     {
       "address": 9573,
       "starting_address": "9573",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -526,7 +526,7 @@
     {
       "address": 9575,
       "starting_address": "9575",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -544,7 +544,7 @@
     {
       "address": 9577,
       "starting_address": "9577",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -562,7 +562,7 @@
     {
       "address": 9579,
       "starting_address": "9579",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -580,7 +580,7 @@
     {
       "address": 9581,
       "starting_address": "9581",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -598,7 +598,7 @@
     {
       "address": 9583,
       "starting_address": "9583",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -616,7 +616,7 @@
     {
       "address": 9585,
       "starting_address": "9585",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -634,7 +634,7 @@
     {
       "address": 9587,
       "starting_address": "9587",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.leistung",
@@ -652,7 +652,7 @@
     {
       "address": 9589,
       "starting_address": "9589",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -670,7 +670,7 @@
     {
       "address": 9590,
       "starting_address": "9590",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -688,7 +688,7 @@
     {
       "address": 9591,
       "starting_address": "9591",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -706,7 +706,7 @@
     {
       "address": 9592,
       "starting_address": "9592",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -724,7 +724,7 @@
     {
       "address": 9593,
       "starting_address": "9593",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -742,7 +742,7 @@
     {
       "address": 9594,
       "starting_address": "9594",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -760,7 +760,7 @@
     {
       "address": 9595,
       "starting_address": "9595",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -778,7 +778,7 @@
     {
       "address": 9596,
       "starting_address": "9596",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -796,7 +796,7 @@
     {
       "address": 9597,
       "starting_address": "9597",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -814,7 +814,7 @@
     {
       "address": 9598,
       "starting_address": "9598",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -832,7 +832,7 @@
     {
       "address": 9599,
       "starting_address": "9599",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -850,7 +850,7 @@
     {
       "address": 9600,
       "starting_address": "9600",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -868,7 +868,7 @@
     {
       "address": 9601,
       "starting_address": "9601",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -886,7 +886,7 @@
     {
       "address": 9602,
       "starting_address": "9602",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -904,7 +904,7 @@
     {
       "address": 9603,
       "starting_address": "9603",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -922,7 +922,7 @@
     {
       "address": 9604,
       "starting_address": "9604",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -940,7 +940,7 @@
     {
       "address": 9605,
       "starting_address": "9605",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -958,7 +958,7 @@
     {
       "address": 9606,
       "starting_address": "9606",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -976,7 +976,7 @@
     {
       "address": 9607,
       "starting_address": "9607",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -994,7 +994,7 @@
     {
       "address": 9608,
       "starting_address": "9608",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1012,7 +1012,7 @@
     {
       "address": 9609,
       "starting_address": "9609",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1030,7 +1030,7 @@
     {
       "address": 9610,
       "starting_address": "9610",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1048,7 +1048,7 @@
     {
       "address": 9611,
       "starting_address": "9611",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1066,7 +1066,7 @@
     {
       "address": 9612,
       "starting_address": "9612",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1084,7 +1084,7 @@
     {
       "address": 9613,
       "starting_address": "9613",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1102,7 +1102,7 @@
     {
       "address": 9614,
       "starting_address": "9614",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1120,7 +1120,7 @@
     {
       "address": 9615,
       "starting_address": "9615",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1138,7 +1138,7 @@
     {
       "address": 9616,
       "starting_address": "9616",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1156,7 +1156,7 @@
     {
       "address": 9617,
       "starting_address": "9617",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1174,7 +1174,7 @@
     {
       "address": 9618,
       "starting_address": "9618",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1192,7 +1192,7 @@
     {
       "address": 9619,
       "starting_address": "9619",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1210,7 +1210,7 @@
     {
       "address": 9620,
       "starting_address": "9620",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1228,7 +1228,7 @@
     {
       "address": 9621,
       "starting_address": "9621",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1246,7 +1246,7 @@
     {
       "address": 9622,
       "starting_address": "9622",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1264,7 +1264,7 @@
     {
       "address": 9623,
       "starting_address": "9623",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1282,7 +1282,7 @@
     {
       "address": 9624,
       "starting_address": "9624",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.vorlauftemp",
@@ -1300,7 +1300,7 @@
     {
       "address": 9625,
       "starting_address": "9625",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1318,7 +1318,7 @@
     {
       "address": 9626,
       "starting_address": "9626",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1336,7 +1336,7 @@
     {
       "address": 9627,
       "starting_address": "9627",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1354,7 +1354,7 @@
     {
       "address": 9628,
       "starting_address": "9628",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1372,7 +1372,7 @@
     {
       "address": 9629,
       "starting_address": "9629",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1390,7 +1390,7 @@
     {
       "address": 9630,
       "starting_address": "9630",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1408,7 +1408,7 @@
     {
       "address": 9631,
       "starting_address": "9631",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1426,7 +1426,7 @@
     {
       "address": 9632,
       "starting_address": "9632",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1444,7 +1444,7 @@
     {
       "address": 9633,
       "starting_address": "9633",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1462,7 +1462,7 @@
     {
       "address": 9634,
       "starting_address": "9634",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1480,7 +1480,7 @@
     {
       "address": 9635,
       "starting_address": "9635",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1498,7 +1498,7 @@
     {
       "address": 9636,
       "starting_address": "9636",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1516,7 +1516,7 @@
     {
       "address": 9637,
       "starting_address": "9637",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1534,7 +1534,7 @@
     {
       "address": 9638,
       "starting_address": "9638",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1552,7 +1552,7 @@
     {
       "address": 9639,
       "starting_address": "9639",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1570,7 +1570,7 @@
     {
       "address": 9640,
       "starting_address": "9640",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1588,7 +1588,7 @@
     {
       "address": 9641,
       "starting_address": "9641",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1606,7 +1606,7 @@
     {
       "address": 9642,
       "starting_address": "9642",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1624,7 +1624,7 @@
     {
       "address": 9643,
       "starting_address": "9643",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1642,7 +1642,7 @@
     {
       "address": 9644,
       "starting_address": "9644",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1660,7 +1660,7 @@
     {
       "address": 9645,
       "starting_address": "9645",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1678,7 +1678,7 @@
     {
       "address": 9646,
       "starting_address": "9646",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1696,7 +1696,7 @@
     {
       "address": 9647,
       "starting_address": "9647",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1714,7 +1714,7 @@
     {
       "address": 9648,
       "starting_address": "9648",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1732,7 +1732,7 @@
     {
       "address": 9649,
       "starting_address": "9649",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1750,7 +1750,7 @@
     {
       "address": 9650,
       "starting_address": "9650",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1768,7 +1768,7 @@
     {
       "address": 9651,
       "starting_address": "9651",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1786,7 +1786,7 @@
     {
       "address": 9652,
       "starting_address": "9652",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1804,7 +1804,7 @@
     {
       "address": 9653,
       "starting_address": "9653",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1822,7 +1822,7 @@
     {
       "address": 9654,
       "starting_address": "9654",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1840,7 +1840,7 @@
     {
       "address": 9655,
       "starting_address": "9655",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1858,7 +1858,7 @@
     {
       "address": 9656,
       "starting_address": "9656",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1876,7 +1876,7 @@
     {
       "address": 9657,
       "starting_address": "9657",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1894,7 +1894,7 @@
     {
       "address": 9658,
       "starting_address": "9658",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1912,7 +1912,7 @@
     {
       "address": 9659,
       "starting_address": "9659",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1930,7 +1930,7 @@
     {
       "address": 9660,
       "starting_address": "9660",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MBUS.ruecklauftemp",
@@ -1948,7 +1948,7 @@
     {
       "address": 9661,
       "starting_address": "9661",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -1966,7 +1966,7 @@
     {
       "address": 9663,
       "starting_address": "9663",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -1984,7 +1984,7 @@
     {
       "address": 9665,
       "starting_address": "9665",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2002,7 +2002,7 @@
     {
       "address": 9667,
       "starting_address": "9667",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2020,7 +2020,7 @@
     {
       "address": 9669,
       "starting_address": "9669",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2038,7 +2038,7 @@
     {
       "address": 9671,
       "starting_address": "9671",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2056,7 +2056,7 @@
     {
       "address": 9673,
       "starting_address": "9673",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2074,7 +2074,7 @@
     {
       "address": 9675,
       "starting_address": "9675",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2092,7 +2092,7 @@
     {
       "address": 9677,
       "starting_address": "9677",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2110,7 +2110,7 @@
     {
       "address": 9679,
       "starting_address": "9679",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2128,7 +2128,7 @@
     {
       "address": 9681,
       "starting_address": "9681",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2146,7 +2146,7 @@
     {
       "address": 9683,
       "starting_address": "9683",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2164,7 +2164,7 @@
     {
       "address": 9685,
       "starting_address": "9685",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2182,7 +2182,7 @@
     {
       "address": 9687,
       "starting_address": "9687",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2200,7 +2200,7 @@
     {
       "address": 9689,
       "starting_address": "9689",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2218,7 +2218,7 @@
     {
       "address": 9691,
       "starting_address": "9691",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2236,7 +2236,7 @@
     {
       "address": 9693,
       "starting_address": "9693",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2254,7 +2254,7 @@
     {
       "address": 9695,
       "starting_address": "9695",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2272,7 +2272,7 @@
     {
       "address": 9697,
       "starting_address": "9697",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2290,7 +2290,7 @@
     {
       "address": 9699,
       "starting_address": "9699",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2308,7 +2308,7 @@
     {
       "address": 9701,
       "starting_address": "9701",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2326,7 +2326,7 @@
     {
       "address": 9703,
       "starting_address": "9703",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2344,7 +2344,7 @@
     {
       "address": 9705,
       "starting_address": "9705",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2362,7 +2362,7 @@
     {
       "address": 9707,
       "starting_address": "9707",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2380,7 +2380,7 @@
     {
       "address": 9709,
       "starting_address": "9709",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2398,7 +2398,7 @@
     {
       "address": 9711,
       "starting_address": "9711",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2416,7 +2416,7 @@
     {
       "address": 9713,
       "starting_address": "9713",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2434,7 +2434,7 @@
     {
       "address": 9715,
       "starting_address": "9715",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2452,7 +2452,7 @@
     {
       "address": 9717,
       "starting_address": "9717",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2470,7 +2470,7 @@
     {
       "address": 9719,
       "starting_address": "9719",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2488,7 +2488,7 @@
     {
       "address": 9721,
       "starting_address": "9721",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2506,7 +2506,7 @@
     {
       "address": 9723,
       "starting_address": "9723",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2524,7 +2524,7 @@
     {
       "address": 9725,
       "starting_address": "9725",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2542,7 +2542,7 @@
     {
       "address": 9727,
       "starting_address": "9727",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2560,7 +2560,7 @@
     {
       "address": 9729,
       "starting_address": "9729",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2578,7 +2578,7 @@
     {
       "address": 9731,
       "starting_address": "9731",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "MBUS.energie",
@@ -2596,7 +2596,7 @@
     {
       "address": 9733,
       "starting_address": "9733",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2614,7 +2614,7 @@
     {
       "address": 9735,
       "starting_address": "9735",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2632,7 +2632,7 @@
     {
       "address": 9737,
       "starting_address": "9737",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2650,7 +2650,7 @@
     {
       "address": 9739,
       "starting_address": "9739",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2668,7 +2668,7 @@
     {
       "address": 9741,
       "starting_address": "9741",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2686,7 +2686,7 @@
     {
       "address": 9743,
       "starting_address": "9743",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2704,7 +2704,7 @@
     {
       "address": 9745,
       "starting_address": "9745",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2722,7 +2722,7 @@
     {
       "address": 9747,
       "starting_address": "9747",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2740,7 +2740,7 @@
     {
       "address": 9749,
       "starting_address": "9749",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2758,7 +2758,7 @@
     {
       "address": 9751,
       "starting_address": "9751",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2776,7 +2776,7 @@
     {
       "address": 9753,
       "starting_address": "9753",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2794,7 +2794,7 @@
     {
       "address": 9755,
       "starting_address": "9755",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2812,7 +2812,7 @@
     {
       "address": 9757,
       "starting_address": "9757",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2830,7 +2830,7 @@
     {
       "address": 9759,
       "starting_address": "9759",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2848,7 +2848,7 @@
     {
       "address": 9761,
       "starting_address": "9761",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2866,7 +2866,7 @@
     {
       "address": 9763,
       "starting_address": "9763",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2884,7 +2884,7 @@
     {
       "address": 9765,
       "starting_address": "9765",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2902,7 +2902,7 @@
     {
       "address": 9767,
       "starting_address": "9767",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2920,7 +2920,7 @@
     {
       "address": 9769,
       "starting_address": "9769",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2938,7 +2938,7 @@
     {
       "address": 9771,
       "starting_address": "9771",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2956,7 +2956,7 @@
     {
       "address": 9773,
       "starting_address": "9773",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2974,7 +2974,7 @@
     {
       "address": 9775,
       "starting_address": "9775",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -2992,7 +2992,7 @@
     {
       "address": 9777,
       "starting_address": "9777",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3010,7 +3010,7 @@
     {
       "address": 9779,
       "starting_address": "9779",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3028,7 +3028,7 @@
     {
       "address": 9781,
       "starting_address": "9781",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3046,7 +3046,7 @@
     {
       "address": 9783,
       "starting_address": "9783",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3064,7 +3064,7 @@
     {
       "address": 9785,
       "starting_address": "9785",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3082,7 +3082,7 @@
     {
       "address": 9787,
       "starting_address": "9787",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3100,7 +3100,7 @@
     {
       "address": 9789,
       "starting_address": "9789",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3118,7 +3118,7 @@
     {
       "address": 9791,
       "starting_address": "9791",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3136,7 +3136,7 @@
     {
       "address": 9793,
       "starting_address": "9793",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3154,7 +3154,7 @@
     {
       "address": 9795,
       "starting_address": "9795",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3172,7 +3172,7 @@
     {
       "address": 9797,
       "starting_address": "9797",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3190,7 +3190,7 @@
     {
       "address": 9799,
       "starting_address": "9799",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3208,7 +3208,7 @@
     {
       "address": 9801,
       "starting_address": "9801",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3226,7 +3226,7 @@
     {
       "address": 9803,
       "starting_address": "9803",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_akt",
@@ -3244,7 +3244,7 @@
     {
       "address": 9805,
       "starting_address": "9805",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3262,7 +3262,7 @@
     {
       "address": 9807,
       "starting_address": "9807",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3280,7 +3280,7 @@
     {
       "address": 9809,
       "starting_address": "9809",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3298,7 +3298,7 @@
     {
       "address": 9811,
       "starting_address": "9811",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3316,7 +3316,7 @@
     {
       "address": 9813,
       "starting_address": "9813",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3334,7 +3334,7 @@
     {
       "address": 9815,
       "starting_address": "9815",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3352,7 +3352,7 @@
     {
       "address": 9817,
       "starting_address": "9817",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3370,7 +3370,7 @@
     {
       "address": 9819,
       "starting_address": "9819",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3388,7 +3388,7 @@
     {
       "address": 9821,
       "starting_address": "9821",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3406,7 +3406,7 @@
     {
       "address": 9823,
       "starting_address": "9823",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3424,7 +3424,7 @@
     {
       "address": 9825,
       "starting_address": "9825",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3442,7 +3442,7 @@
     {
       "address": 9827,
       "starting_address": "9827",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3460,7 +3460,7 @@
     {
       "address": 9829,
       "starting_address": "9829",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3478,7 +3478,7 @@
     {
       "address": 9831,
       "starting_address": "9831",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3496,7 +3496,7 @@
     {
       "address": 9833,
       "starting_address": "9833",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3514,7 +3514,7 @@
     {
       "address": 9835,
       "starting_address": "9835",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3532,7 +3532,7 @@
     {
       "address": 9837,
       "starting_address": "9837",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3550,7 +3550,7 @@
     {
       "address": 9839,
       "starting_address": "9839",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3568,7 +3568,7 @@
     {
       "address": 9841,
       "starting_address": "9841",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3586,7 +3586,7 @@
     {
       "address": 9843,
       "starting_address": "9843",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3604,7 +3604,7 @@
     {
       "address": 9845,
       "starting_address": "9845",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3622,7 +3622,7 @@
     {
       "address": 9847,
       "starting_address": "9847",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3640,7 +3640,7 @@
     {
       "address": 9849,
       "starting_address": "9849",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3658,7 +3658,7 @@
     {
       "address": 9851,
       "starting_address": "9851",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3676,7 +3676,7 @@
     {
       "address": 9853,
       "starting_address": "9853",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3694,7 +3694,7 @@
     {
       "address": 9855,
       "starting_address": "9855",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3712,7 +3712,7 @@
     {
       "address": 9857,
       "starting_address": "9857",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3730,7 +3730,7 @@
     {
       "address": 9859,
       "starting_address": "9859",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3748,7 +3748,7 @@
     {
       "address": 9861,
       "starting_address": "9861",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3766,7 +3766,7 @@
     {
       "address": 9863,
       "starting_address": "9863",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3784,7 +3784,7 @@
     {
       "address": 9865,
       "starting_address": "9865",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3802,7 +3802,7 @@
     {
       "address": 9867,
       "starting_address": "9867",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3820,7 +3820,7 @@
     {
       "address": 9869,
       "starting_address": "9869",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3838,7 +3838,7 @@
     {
       "address": 9871,
       "starting_address": "9871",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3856,7 +3856,7 @@
     {
       "address": 9873,
       "starting_address": "9873",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",
@@ -3874,7 +3874,7 @@
     {
       "address": 9875,
       "starting_address": "9875",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "s32",
       "access": "MBUS.vol_ges",

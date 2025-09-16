@@ -4,7 +4,7 @@
     {
       "address": 9394,
       "starting_address": "9394",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.mittlere_puffertemperatur",
@@ -22,7 +22,7 @@
     {
       "address": 9395,
       "starting_address": "9395",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_fuellgrad",
@@ -40,7 +40,7 @@
     {
       "address": 9396,
       "starting_address": "9396",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.netz_vorlauf.value",
@@ -58,7 +58,7 @@
     {
       "address": 9397,
       "starting_address": "9397",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.netz_vorlauf.status",
@@ -76,7 +76,7 @@
     {
       "address": 9398,
       "starting_address": "9398",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.netz_ruecklauf.value",
@@ -94,7 +94,7 @@
     {
       "address": 9399,
       "starting_address": "9399",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.netz_ruecklauf.status",
@@ -112,7 +112,7 @@
     {
       "address": 9400,
       "starting_address": "9400",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.o_anforderung_spitzenlastkessel",
@@ -130,7 +130,7 @@
     {
       "address": 9402,
       "starting_address": "9402",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -148,7 +148,7 @@
     {
       "address": 9403,
       "starting_address": "9403",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -166,7 +166,7 @@
     {
       "address": 9404,
       "starting_address": "9404",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -184,7 +184,7 @@
     {
       "address": 9405,
       "starting_address": "9405",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -202,7 +202,7 @@
     {
       "address": 9406,
       "starting_address": "9406",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -220,7 +220,7 @@
     {
       "address": 9407,
       "starting_address": "9407",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -238,7 +238,7 @@
     {
       "address": 9408,
       "starting_address": "9408",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -256,7 +256,7 @@
     {
       "address": 9409,
       "starting_address": "9409",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.o_anforderung",
@@ -274,7 +274,7 @@
     {
       "address": 9422,
       "starting_address": "9422",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -292,7 +292,7 @@
     {
       "address": 9423,
       "starting_address": "9423",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -310,7 +310,7 @@
     {
       "address": 9424,
       "starting_address": "9424",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -328,7 +328,7 @@
     {
       "address": 9425,
       "starting_address": "9425",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -346,7 +346,7 @@
     {
       "address": 9426,
       "starting_address": "9426",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -364,7 +364,7 @@
     {
       "address": 9427,
       "starting_address": "9427",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -382,7 +382,7 @@
     {
       "address": 9428,
       "starting_address": "9428",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -400,7 +400,7 @@
     {
       "address": 9429,
       "starting_address": "9429",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFK.i_stoerung",
@@ -418,7 +418,7 @@
     {
       "address": 9499,
       "starting_address": "9499",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u8",
       "access": "KFS.anzahl_kessel",
@@ -436,7 +436,7 @@
     {
       "address": 9500,
       "starting_address": "9500",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.anzahl_angeforderte_kessel",
@@ -454,7 +454,7 @@
     {
       "address": 9501,
       "starting_address": "9501",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_solltemperatur_anzeige",
@@ -472,7 +472,7 @@
     {
       "address": 9502,
       "starting_address": "9502",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_1.value",
@@ -490,7 +490,7 @@
     {
       "address": 9503,
       "starting_address": "9503",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_1.status",
@@ -508,7 +508,7 @@
     {
       "address": 9504,
       "starting_address": "9504",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_2.value",
@@ -526,7 +526,7 @@
     {
       "address": 9505,
       "starting_address": "9505",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_2.status",
@@ -544,7 +544,7 @@
     {
       "address": 9506,
       "starting_address": "9506",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_3.value",
@@ -562,7 +562,7 @@
     {
       "address": 9507,
       "starting_address": "9507",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_3.status",
@@ -580,7 +580,7 @@
     {
       "address": 9508,
       "starting_address": "9508",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_4.value",
@@ -598,7 +598,7 @@
     {
       "address": 9509,
       "starting_address": "9509",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_4.status",
@@ -616,7 +616,7 @@
     {
       "address": 9510,
       "starting_address": "9510",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_5.value",
@@ -634,7 +634,7 @@
     {
       "address": 9511,
       "starting_address": "9511",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_temperatur_5.status",
@@ -652,7 +652,7 @@
     {
       "address": 9512,
       "starting_address": "9512",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.i_aussen_temperatur_mittelwert.value",
@@ -670,7 +670,7 @@
     {
       "address": 9513,
       "starting_address": "9513",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.i_aussen_temperatur_mittelwert.status",
@@ -688,7 +688,7 @@
     {
       "address": 9514,
       "starting_address": "9514",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.o_stoerung_dauer",
@@ -706,7 +706,7 @@
     {
       "address": 9515,
       "starting_address": "9515",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.mittlere_durchladetemperatur",
@@ -724,7 +724,7 @@
     {
       "address": 9516,
       "starting_address": "9516",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KFS.puffer_durchladegrad",
@@ -742,7 +742,7 @@
     {
       "address": 24848,
       "starting_address": "24848",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KFS.puffer_solltemperatur_winter",
@@ -760,7 +760,7 @@
     {
       "address": 24929,
       "starting_address": "24929",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KFS.anlage_ein",
@@ -778,7 +778,7 @@
     {
       "address": 24930,
       "starting_address": "24930",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KFS.active_profile",
@@ -796,7 +796,7 @@
     {
       "address": 24931,
       "starting_address": "24931",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KFS.puffer_solltemperatur_sommer",

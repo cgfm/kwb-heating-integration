@@ -11,6 +11,7 @@
   "after_dependencies": [],
   "iot_class": "local_polling",
   "integration_type": "device",
+  "brand": "KWB",
   "loggers": ["custom_components.kwb_heating"],
   "quality_scale": "silver"
 }

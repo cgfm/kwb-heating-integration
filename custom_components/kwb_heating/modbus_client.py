@@ -99,6 +99,36 @@ class KWBModbusClient:
                         # Propagate the earliest informative error
                         raise e_unit
 
+    async def _invoke_write(self, method_name: str, *, address: int, value: Any):
+        """Call a pymodbus write method in a version-agnostic way.
+
+        Always pass address and value(s) positionally, and unit/slave as keyword.
+        Falls back between 'unit' and 'slave', and finally no unit (if not supported).
+        """
+        if not self._client:
+            raise ConnectionError("Modbus client is not initialized")
+
+        method = getattr(self._client, method_name)
+
+        # Try with 'unit'
+        try:
+            res = await method(address, value, unit=self.slave_id)
+            self._unit_kwarg = "unit"
+            return res
+        except TypeError as e_unit:
+            # Try with 'slave'
+            try:
+                res2 = await method(address, value, slave=self.slave_id)
+                self._unit_kwarg = "slave"
+                return res2
+            except TypeError:
+                # Try without unit/slave
+                try:
+                    res3 = await method(address, value)
+                    return res3
+                except TypeError:
+                    raise e_unit
+
     async def connect(self) -> None:
         """Connect to the Modbus device."""
         async with self._lock:
@@ -208,8 +238,8 @@ class KWBModbusClient:
 
         try:
             async with self._lock:
-                result = await self._invoke_with_unit_kwarg(
-                    "write_register", address, value
+                result = await self._invoke_write(
+                    "write_register", address=address, value=value
                 )
                 
                 if result.isError():
@@ -243,8 +273,8 @@ class KWBModbusClient:
 
         try:
             async with self._lock:
-                result = await self._invoke_with_unit_kwarg(
-                    "write_registers", address, values
+                result = await self._invoke_write(
+                    "write_registers", address=address, value=values
                 )
                 
                 if result.isError():

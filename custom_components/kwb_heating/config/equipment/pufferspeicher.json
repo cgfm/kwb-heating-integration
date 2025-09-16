@@ -4,7 +4,7 @@
     {
       "address": 8708,
       "starting_address": "8708",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -22,7 +22,7 @@
     {
       "address": 8709,
       "starting_address": "8709",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -40,7 +40,7 @@
     {
       "address": 8710,
       "starting_address": "8710",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -58,7 +58,7 @@
     {
       "address": 8711,
       "starting_address": "8711",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -76,7 +76,7 @@
     {
       "address": 8712,
       "starting_address": "8712",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -94,7 +94,7 @@
     {
       "address": 8713,
       "starting_address": "8713",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -112,7 +112,7 @@
     {
       "address": 8714,
       "starting_address": "8714",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -130,7 +130,7 @@
     {
       "address": 8715,
       "starting_address": "8715",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -148,7 +148,7 @@
     {
       "address": 8716,
       "starting_address": "8716",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -166,7 +166,7 @@
     {
       "address": 8717,
       "starting_address": "8717",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -184,7 +184,7 @@
     {
       "address": 8718,
       "starting_address": "8718",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -202,7 +202,7 @@
     {
       "address": 8719,
       "starting_address": "8719",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -220,7 +220,7 @@
     {
       "address": 8720,
       "starting_address": "8720",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -238,7 +238,7 @@
     {
       "address": 8721,
       "starting_address": "8721",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -256,7 +256,7 @@
     {
       "address": 8722,
       "starting_address": "8722",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -274,7 +274,7 @@
     {
       "address": 8723,
       "starting_address": "8723",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -292,7 +292,7 @@
     {
       "address": 8724,
       "starting_address": "8724",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -310,7 +310,7 @@
     {
       "address": 8725,
       "starting_address": "8725",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -328,7 +328,7 @@
     {
       "address": 8726,
       "starting_address": "8726",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -346,7 +346,7 @@
     {
       "address": 8727,
       "starting_address": "8727",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -364,7 +364,7 @@
     {
       "address": 8728,
       "starting_address": "8728",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -382,7 +382,7 @@
     {
       "address": 8729,
       "starting_address": "8729",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -400,7 +400,7 @@
     {
       "address": 8730,
       "starting_address": "8730",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -418,7 +418,7 @@
     {
       "address": 8731,
       "starting_address": "8731",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -436,7 +436,7 @@
     {
       "address": 8732,
       "starting_address": "8732",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -454,7 +454,7 @@
     {
       "address": 8733,
       "starting_address": "8733",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -472,7 +472,7 @@
     {
       "address": 8734,
       "starting_address": "8734",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -490,7 +490,7 @@
     {
       "address": 8735,
       "starting_address": "8735",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -508,7 +508,7 @@
     {
       "address": 8736,
       "starting_address": "8736",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.value",
@@ -526,7 +526,7 @@
     {
       "address": 8737,
       "starting_address": "8737",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_1.status",
@@ -544,7 +544,7 @@
     {
       "address": 8742,
       "starting_address": "8742",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -562,7 +562,7 @@
     {
       "address": 8743,
       "starting_address": "8743",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -580,7 +580,7 @@
     {
       "address": 8744,
       "starting_address": "8744",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -598,7 +598,7 @@
     {
       "address": 8745,
       "starting_address": "8745",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -616,7 +616,7 @@
     {
       "address": 8746,
       "starting_address": "8746",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -634,7 +634,7 @@
     {
       "address": 8747,
       "starting_address": "8747",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -652,7 +652,7 @@
     {
       "address": 8748,
       "starting_address": "8748",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -670,7 +670,7 @@
     {
       "address": 8749,
       "starting_address": "8749",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -688,7 +688,7 @@
     {
       "address": 8750,
       "starting_address": "8750",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -706,7 +706,7 @@
     {
       "address": 8751,
       "starting_address": "8751",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -724,7 +724,7 @@
     {
       "address": 8752,
       "starting_address": "8752",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -742,7 +742,7 @@
     {
       "address": 8753,
       "starting_address": "8753",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -760,7 +760,7 @@
     {
       "address": 8754,
       "starting_address": "8754",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -778,7 +778,7 @@
     {
       "address": 8755,
       "starting_address": "8755",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -796,7 +796,7 @@
     {
       "address": 8756,
       "starting_address": "8756",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -814,7 +814,7 @@
     {
       "address": 8757,
       "starting_address": "8757",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -832,7 +832,7 @@
     {
       "address": 8758,
       "starting_address": "8758",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -850,7 +850,7 @@
     {
       "address": 8759,
       "starting_address": "8759",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -868,7 +868,7 @@
     {
       "address": 8760,
       "starting_address": "8760",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -886,7 +886,7 @@
     {
       "address": 8761,
       "starting_address": "8761",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -904,7 +904,7 @@
     {
       "address": 8762,
       "starting_address": "8762",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -922,7 +922,7 @@
     {
       "address": 8763,
       "starting_address": "8763",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -940,7 +940,7 @@
     {
       "address": 8764,
       "starting_address": "8764",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -958,7 +958,7 @@
     {
       "address": 8765,
       "starting_address": "8765",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -976,7 +976,7 @@
     {
       "address": 8766,
       "starting_address": "8766",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -994,7 +994,7 @@
     {
       "address": 8767,
       "starting_address": "8767",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -1012,7 +1012,7 @@
     {
       "address": 8768,
       "starting_address": "8768",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -1030,7 +1030,7 @@
     {
       "address": 8769,
       "starting_address": "8769",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -1048,7 +1048,7 @@
     {
       "address": 8770,
       "starting_address": "8770",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.value",
@@ -1066,7 +1066,7 @@
     {
       "address": 8771,
       "starting_address": "8771",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_2.status",
@@ -1084,7 +1084,7 @@
     {
       "address": 8776,
       "starting_address": "8776",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1102,7 +1102,7 @@
     {
       "address": 8777,
       "starting_address": "8777",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1120,7 +1120,7 @@
     {
       "address": 8778,
       "starting_address": "8778",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1138,7 +1138,7 @@
     {
       "address": 8779,
       "starting_address": "8779",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1156,7 +1156,7 @@
     {
       "address": 8780,
       "starting_address": "8780",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1174,7 +1174,7 @@
     {
       "address": 8781,
       "starting_address": "8781",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1192,7 +1192,7 @@
     {
       "address": 8782,
       "starting_address": "8782",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1210,7 +1210,7 @@
     {
       "address": 8783,
       "starting_address": "8783",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1228,7 +1228,7 @@
     {
       "address": 8784,
       "starting_address": "8784",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1246,7 +1246,7 @@
     {
       "address": 8785,
       "starting_address": "8785",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1264,7 +1264,7 @@
     {
       "address": 8786,
       "starting_address": "8786",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1282,7 +1282,7 @@
     {
       "address": 8787,
       "starting_address": "8787",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1300,7 +1300,7 @@
     {
       "address": 8788,
       "starting_address": "8788",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1318,7 +1318,7 @@
     {
       "address": 8789,
       "starting_address": "8789",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1336,7 +1336,7 @@
     {
       "address": 8790,
       "starting_address": "8790",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1354,7 +1354,7 @@
     {
       "address": 8791,
       "starting_address": "8791",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1372,7 +1372,7 @@
     {
       "address": 8792,
       "starting_address": "8792",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1390,7 +1390,7 @@
     {
       "address": 8793,
       "starting_address": "8793",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1408,7 +1408,7 @@
     {
       "address": 8794,
       "starting_address": "8794",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1426,7 +1426,7 @@
     {
       "address": 8795,
       "starting_address": "8795",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1444,7 +1444,7 @@
     {
       "address": 8796,
       "starting_address": "8796",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1462,7 +1462,7 @@
     {
       "address": 8797,
       "starting_address": "8797",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1480,7 +1480,7 @@
     {
       "address": 8798,
       "starting_address": "8798",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1498,7 +1498,7 @@
     {
       "address": 8799,
       "starting_address": "8799",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1516,7 +1516,7 @@
     {
       "address": 8800,
       "starting_address": "8800",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1534,7 +1534,7 @@
     {
       "address": 8801,
       "starting_address": "8801",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1552,7 +1552,7 @@
     {
       "address": 8802,
       "starting_address": "8802",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1570,7 +1570,7 @@
     {
       "address": 8803,
       "starting_address": "8803",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1588,7 +1588,7 @@
     {
       "address": 8804,
       "starting_address": "8804",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.value",
@@ -1606,7 +1606,7 @@
     {
       "address": 8805,
       "starting_address": "8805",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_3.status",
@@ -1624,7 +1624,7 @@
     {
       "address": 8810,
       "starting_address": "8810",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1642,7 +1642,7 @@
     {
       "address": 8811,
       "starting_address": "8811",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1660,7 +1660,7 @@
     {
       "address": 8812,
       "starting_address": "8812",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1678,7 +1678,7 @@
     {
       "address": 8813,
       "starting_address": "8813",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1696,7 +1696,7 @@
     {
       "address": 8814,
       "starting_address": "8814",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1714,7 +1714,7 @@
     {
       "address": 8815,
       "starting_address": "8815",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1732,7 +1732,7 @@
     {
       "address": 8816,
       "starting_address": "8816",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1750,7 +1750,7 @@
     {
       "address": 8817,
       "starting_address": "8817",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1768,7 +1768,7 @@
     {
       "address": 8818,
       "starting_address": "8818",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1786,7 +1786,7 @@
     {
       "address": 8819,
       "starting_address": "8819",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1804,7 +1804,7 @@
     {
       "address": 8820,
       "starting_address": "8820",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1822,7 +1822,7 @@
     {
       "address": 8821,
       "starting_address": "8821",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1840,7 +1840,7 @@
     {
       "address": 8822,
       "starting_address": "8822",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1858,7 +1858,7 @@
     {
       "address": 8823,
       "starting_address": "8823",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1876,7 +1876,7 @@
     {
       "address": 8824,
       "starting_address": "8824",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1894,7 +1894,7 @@
     {
       "address": 8825,
       "starting_address": "8825",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1912,7 +1912,7 @@
     {
       "address": 8826,
       "starting_address": "8826",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1930,7 +1930,7 @@
     {
       "address": 8827,
       "starting_address": "8827",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1948,7 +1948,7 @@
     {
       "address": 8828,
       "starting_address": "8828",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -1966,7 +1966,7 @@
     {
       "address": 8829,
       "starting_address": "8829",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -1984,7 +1984,7 @@
     {
       "address": 8830,
       "starting_address": "8830",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -2002,7 +2002,7 @@
     {
       "address": 8831,
       "starting_address": "8831",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -2020,7 +2020,7 @@
     {
       "address": 8832,
       "starting_address": "8832",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -2038,7 +2038,7 @@
     {
       "address": 8833,
       "starting_address": "8833",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -2056,7 +2056,7 @@
     {
       "address": 8834,
       "starting_address": "8834",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -2074,7 +2074,7 @@
     {
       "address": 8835,
       "starting_address": "8835",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -2092,7 +2092,7 @@
     {
       "address": 8836,
       "starting_address": "8836",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -2110,7 +2110,7 @@
     {
       "address": 8837,
       "starting_address": "8837",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -2128,7 +2128,7 @@
     {
       "address": 8838,
       "starting_address": "8838",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.value",
@@ -2146,7 +2146,7 @@
     {
       "address": 8839,
       "starting_address": "8839",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_4.status",
@@ -2164,7 +2164,7 @@
     {
       "address": 8844,
       "starting_address": "8844",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2182,7 +2182,7 @@
     {
       "address": 8845,
       "starting_address": "8845",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2200,7 +2200,7 @@
     {
       "address": 8846,
       "starting_address": "8846",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2218,7 +2218,7 @@
     {
       "address": 8847,
       "starting_address": "8847",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2236,7 +2236,7 @@
     {
       "address": 8848,
       "starting_address": "8848",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2254,7 +2254,7 @@
     {
       "address": 8849,
       "starting_address": "8849",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2272,7 +2272,7 @@
     {
       "address": 8850,
       "starting_address": "8850",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2290,7 +2290,7 @@
     {
       "address": 8851,
       "starting_address": "8851",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2308,7 +2308,7 @@
     {
       "address": 8852,
       "starting_address": "8852",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2326,7 +2326,7 @@
     {
       "address": 8853,
       "starting_address": "8853",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2344,7 +2344,7 @@
     {
       "address": 8854,
       "starting_address": "8854",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2362,7 +2362,7 @@
     {
       "address": 8855,
       "starting_address": "8855",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2380,7 +2380,7 @@
     {
       "address": 8856,
       "starting_address": "8856",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2398,7 +2398,7 @@
     {
       "address": 8857,
       "starting_address": "8857",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2416,7 +2416,7 @@
     {
       "address": 8858,
       "starting_address": "8858",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2434,7 +2434,7 @@
     {
       "address": 8859,
       "starting_address": "8859",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2452,7 +2452,7 @@
     {
       "address": 8860,
       "starting_address": "8860",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2470,7 +2470,7 @@
     {
       "address": 8861,
       "starting_address": "8861",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2488,7 +2488,7 @@
     {
       "address": 8862,
       "starting_address": "8862",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2506,7 +2506,7 @@
     {
       "address": 8863,
       "starting_address": "8863",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2524,7 +2524,7 @@
     {
       "address": 8864,
       "starting_address": "8864",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2542,7 +2542,7 @@
     {
       "address": 8865,
       "starting_address": "8865",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2560,7 +2560,7 @@
     {
       "address": 8866,
       "starting_address": "8866",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2578,7 +2578,7 @@
     {
       "address": 8867,
       "starting_address": "8867",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2596,7 +2596,7 @@
     {
       "address": 8868,
       "starting_address": "8868",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2614,7 +2614,7 @@
     {
       "address": 8869,
       "starting_address": "8869",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2632,7 +2632,7 @@
     {
       "address": 8870,
       "starting_address": "8870",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2650,7 +2650,7 @@
     {
       "address": 8871,
       "starting_address": "8871",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2668,7 +2668,7 @@
     {
       "address": 8872,
       "starting_address": "8872",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.value",
@@ -2686,7 +2686,7 @@
     {
       "address": 8873,
       "starting_address": "8873",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.i_ist_temperatur_5.status",
@@ -2704,7 +2704,7 @@
     {
       "address": 8878,
       "starting_address": "8878",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2722,7 +2722,7 @@
     {
       "address": 8879,
       "starting_address": "8879",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2740,7 +2740,7 @@
     {
       "address": 8880,
       "starting_address": "8880",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2758,7 +2758,7 @@
     {
       "address": 8881,
       "starting_address": "8881",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2776,7 +2776,7 @@
     {
       "address": 8882,
       "starting_address": "8882",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2794,7 +2794,7 @@
     {
       "address": 8883,
       "starting_address": "8883",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2812,7 +2812,7 @@
     {
       "address": 8884,
       "starting_address": "8884",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2830,7 +2830,7 @@
     {
       "address": 8885,
       "starting_address": "8885",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2848,7 +2848,7 @@
     {
       "address": 8886,
       "starting_address": "8886",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2866,7 +2866,7 @@
     {
       "address": 8887,
       "starting_address": "8887",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2884,7 +2884,7 @@
     {
       "address": 8888,
       "starting_address": "8888",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2902,7 +2902,7 @@
     {
       "address": 8889,
       "starting_address": "8889",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2920,7 +2920,7 @@
     {
       "address": 8890,
       "starting_address": "8890",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2938,7 +2938,7 @@
     {
       "address": 8891,
       "starting_address": "8891",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2956,7 +2956,7 @@
     {
       "address": 8892,
       "starting_address": "8892",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_pumpe",
@@ -2974,7 +2974,7 @@
     {
       "address": 8895,
       "starting_address": "8895",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -2992,7 +2992,7 @@
     {
       "address": 8896,
       "starting_address": "8896",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3010,7 +3010,7 @@
     {
       "address": 8897,
       "starting_address": "8897",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3028,7 +3028,7 @@
     {
       "address": 8898,
       "starting_address": "8898",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3046,7 +3046,7 @@
     {
       "address": 8899,
       "starting_address": "8899",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3064,7 +3064,7 @@
     {
       "address": 8900,
       "starting_address": "8900",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3082,7 +3082,7 @@
     {
       "address": 8901,
       "starting_address": "8901",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3100,7 +3100,7 @@
     {
       "address": 8902,
       "starting_address": "8902",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3118,7 +3118,7 @@
     {
       "address": 8903,
       "starting_address": "8903",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3136,7 +3136,7 @@
     {
       "address": 8904,
       "starting_address": "8904",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3154,7 +3154,7 @@
     {
       "address": 8905,
       "starting_address": "8905",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3172,7 +3172,7 @@
     {
       "address": 8906,
       "starting_address": "8906",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3190,7 +3190,7 @@
     {
       "address": 8907,
       "starting_address": "8907",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3208,7 +3208,7 @@
     {
       "address": 8908,
       "starting_address": "8908",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3226,7 +3226,7 @@
     {
       "address": 8909,
       "starting_address": "8909",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.anforderung",
@@ -3244,7 +3244,7 @@
     {
       "address": 8912,
       "starting_address": "8912",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3262,7 +3262,7 @@
     {
       "address": 8913,
       "starting_address": "8913",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3280,7 +3280,7 @@
     {
       "address": 8914,
       "starting_address": "8914",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3298,7 +3298,7 @@
     {
       "address": 8915,
       "starting_address": "8915",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3316,7 +3316,7 @@
     {
       "address": 8916,
       "starting_address": "8916",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3334,7 +3334,7 @@
     {
       "address": 8917,
       "starting_address": "8917",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3352,7 +3352,7 @@
     {
       "address": 8918,
       "starting_address": "8918",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3370,7 +3370,7 @@
     {
       "address": 8919,
       "starting_address": "8919",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3388,7 +3388,7 @@
     {
       "address": 8920,
       "starting_address": "8920",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3406,7 +3406,7 @@
     {
       "address": 8921,
       "starting_address": "8921",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3424,7 +3424,7 @@
     {
       "address": 8922,
       "starting_address": "8922",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3442,7 +3442,7 @@
     {
       "address": 8923,
       "starting_address": "8923",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3460,7 +3460,7 @@
     {
       "address": 8924,
       "starting_address": "8924",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3478,7 +3478,7 @@
     {
       "address": 8925,
       "starting_address": "8925",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3496,7 +3496,7 @@
     {
       "address": 8926,
       "starting_address": "8926",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "PUF.o_umschaltventil",
@@ -3514,7 +3514,7 @@
     {
       "address": 9971,
       "starting_address": "9971",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3532,7 +3532,7 @@
     {
       "address": 9972,
       "starting_address": "9972",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3550,7 +3550,7 @@
     {
       "address": 9973,
       "starting_address": "9973",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3568,7 +3568,7 @@
     {
       "address": 9974,
       "starting_address": "9974",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3586,7 +3586,7 @@
     {
       "address": 9975,
       "starting_address": "9975",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3604,7 +3604,7 @@
     {
       "address": 9976,
       "starting_address": "9976",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3622,7 +3622,7 @@
     {
       "address": 9977,
       "starting_address": "9977",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3640,7 +3640,7 @@
     {
       "address": 9978,
       "starting_address": "9978",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3658,7 +3658,7 @@
     {
       "address": 9979,
       "starting_address": "9979",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3676,7 +3676,7 @@
     {
       "address": 9980,
       "starting_address": "9980",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3694,7 +3694,7 @@
     {
       "address": 9981,
       "starting_address": "9981",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3712,7 +3712,7 @@
     {
       "address": 9982,
       "starting_address": "9982",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3730,7 +3730,7 @@
     {
       "address": 9983,
       "starting_address": "9983",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3748,7 +3748,7 @@
     {
       "address": 9984,
       "starting_address": "9984",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3766,7 +3766,7 @@
     {
       "address": 9985,
       "starting_address": "9985",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "GRP.verbraucher_anf_temperatur",
@@ -3784,7 +3784,7 @@
     {
       "address": 24760,
       "starting_address": "24760",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3802,7 +3802,7 @@
     {
       "address": 24761,
       "starting_address": "24761",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3820,7 +3820,7 @@
     {
       "address": 24762,
       "starting_address": "24762",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3838,7 +3838,7 @@
     {
       "address": 24763,
       "starting_address": "24763",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3856,7 +3856,7 @@
     {
       "address": 24764,
       "starting_address": "24764",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3874,7 +3874,7 @@
     {
       "address": 24765,
       "starting_address": "24765",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3892,7 +3892,7 @@
     {
       "address": 24766,
       "starting_address": "24766",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3910,7 +3910,7 @@
     {
       "address": 24767,
       "starting_address": "24767",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3928,7 +3928,7 @@
     {
       "address": 24768,
       "starting_address": "24768",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3946,7 +3946,7 @@
     {
       "address": 24769,
       "starting_address": "24769",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3964,7 +3964,7 @@
     {
       "address": 24770,
       "starting_address": "24770",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -3982,7 +3982,7 @@
     {
       "address": 24771,
       "starting_address": "24771",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -4000,7 +4000,7 @@
     {
       "address": 24772,
       "starting_address": "24772",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -4018,7 +4018,7 @@
     {
       "address": 24773,
       "starting_address": "24773",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -4036,7 +4036,7 @@
     {
       "address": 24774,
       "starting_address": "24774",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.programm",
@@ -4054,7 +4054,7 @@
     {
       "address": 24777,
       "starting_address": "24777",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4072,7 +4072,7 @@
     {
       "address": 24778,
       "starting_address": "24778",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4090,7 +4090,7 @@
     {
       "address": 24779,
       "starting_address": "24779",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4108,7 +4108,7 @@
     {
       "address": 24780,
       "starting_address": "24780",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4126,7 +4126,7 @@
     {
       "address": 24781,
       "starting_address": "24781",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4144,7 +4144,7 @@
     {
       "address": 24782,
       "starting_address": "24782",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4162,7 +4162,7 @@
     {
       "address": 24783,
       "starting_address": "24783",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4180,7 +4180,7 @@
     {
       "address": 24784,
       "starting_address": "24784",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4198,7 +4198,7 @@
     {
       "address": 24785,
       "starting_address": "24785",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4216,7 +4216,7 @@
     {
       "address": 24786,
       "starting_address": "24786",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4234,7 +4234,7 @@
     {
       "address": 24787,
       "starting_address": "24787",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4252,7 +4252,7 @@
     {
       "address": 24788,
       "starting_address": "24788",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4270,7 +4270,7 @@
     {
       "address": 24789,
       "starting_address": "24789",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4288,7 +4288,7 @@
     {
       "address": 24790,
       "starting_address": "24790",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4306,7 +4306,7 @@
     {
       "address": 24791,
       "starting_address": "24791",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4324,7 +4324,7 @@
     {
       "address": 24792,
       "starting_address": "24792",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4342,7 +4342,7 @@
     {
       "address": 24793,
       "starting_address": "24793",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4360,7 +4360,7 @@
     {
       "address": 24794,
       "starting_address": "24794",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4378,7 +4378,7 @@
     {
       "address": 24795,
       "starting_address": "24795",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4396,7 +4396,7 @@
     {
       "address": 24796,
       "starting_address": "24796",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4414,7 +4414,7 @@
     {
       "address": 24797,
       "starting_address": "24797",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4432,7 +4432,7 @@
     {
       "address": 24798,
       "starting_address": "24798",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4450,7 +4450,7 @@
     {
       "address": 24799,
       "starting_address": "24799",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4468,7 +4468,7 @@
     {
       "address": 24800,
       "starting_address": "24800",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4486,7 +4486,7 @@
     {
       "address": 24801,
       "starting_address": "24801",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4504,7 +4504,7 @@
     {
       "address": 24802,
       "starting_address": "24802",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4522,7 +4522,7 @@
     {
       "address": 24803,
       "starting_address": "24803",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4540,7 +4540,7 @@
     {
       "address": 24804,
       "starting_address": "24804",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4558,7 +4558,7 @@
     {
       "address": 24805,
       "starting_address": "24805",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.min",
@@ -4576,7 +4576,7 @@
     {
       "address": 24806,
       "starting_address": "24806",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.temperatur_grenzen.max",
@@ -4594,7 +4594,7 @@
     {
       "address": 24811,
       "starting_address": "24811",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4612,7 +4612,7 @@
     {
       "address": 24812,
       "starting_address": "24812",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4630,7 +4630,7 @@
     {
       "address": 24813,
       "starting_address": "24813",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4648,7 +4648,7 @@
     {
       "address": 24814,
       "starting_address": "24814",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4666,7 +4666,7 @@
     {
       "address": 24815,
       "starting_address": "24815",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4684,7 +4684,7 @@
     {
       "address": 24816,
       "starting_address": "24816",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4702,7 +4702,7 @@
     {
       "address": 24817,
       "starting_address": "24817",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4720,7 +4720,7 @@
     {
       "address": 24818,
       "starting_address": "24818",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4738,7 +4738,7 @@
     {
       "address": 24819,
       "starting_address": "24819",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4756,7 +4756,7 @@
     {
       "address": 24820,
       "starting_address": "24820",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4774,7 +4774,7 @@
     {
       "address": 24821,
       "starting_address": "24821",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4792,7 +4792,7 @@
     {
       "address": 24822,
       "starting_address": "24822",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4810,7 +4810,7 @@
     {
       "address": 24823,
       "starting_address": "24823",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4828,7 +4828,7 @@
     {
       "address": 24824,
       "starting_address": "24824",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",
@@ -4846,7 +4846,7 @@
     {
       "address": 24825,
       "starting_address": "24825",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "PUF.brauchwassertemp_min",

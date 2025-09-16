@@ -4,7 +4,7 @@
     {
       "address": 9049,
       "starting_address": "9049",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -22,7 +22,7 @@
     {
       "address": 9050,
       "starting_address": "9050",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -40,7 +40,7 @@
     {
       "address": 9051,
       "starting_address": "9051",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -58,7 +58,7 @@
     {
       "address": 9052,
       "starting_address": "9052",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -76,7 +76,7 @@
     {
       "address": 9053,
       "starting_address": "9053",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -94,7 +94,7 @@
     {
       "address": 9054,
       "starting_address": "9054",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -112,7 +112,7 @@
     {
       "address": 9055,
       "starting_address": "9055",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -130,7 +130,7 @@
     {
       "address": 9056,
       "starting_address": "9056",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -148,7 +148,7 @@
     {
       "address": 9057,
       "starting_address": "9057",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -166,7 +166,7 @@
     {
       "address": 9058,
       "starting_address": "9058",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -184,7 +184,7 @@
     {
       "address": 9059,
       "starting_address": "9059",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -202,7 +202,7 @@
     {
       "address": 9060,
       "starting_address": "9060",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -220,7 +220,7 @@
     {
       "address": 9061,
       "starting_address": "9061",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -238,7 +238,7 @@
     {
       "address": 9062,
       "starting_address": "9062",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status",
@@ -256,7 +256,7 @@
     {
       "address": 9064,
       "starting_address": "9064",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -274,7 +274,7 @@
     {
       "address": 9065,
       "starting_address": "9065",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -292,7 +292,7 @@
     {
       "address": 9066,
       "starting_address": "9066",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -310,7 +310,7 @@
     {
       "address": 9067,
       "starting_address": "9067",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -328,7 +328,7 @@
     {
       "address": 9068,
       "starting_address": "9068",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -346,7 +346,7 @@
     {
       "address": 9069,
       "starting_address": "9069",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -364,7 +364,7 @@
     {
       "address": 9070,
       "starting_address": "9070",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -382,7 +382,7 @@
     {
       "address": 9071,
       "starting_address": "9071",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -400,7 +400,7 @@
     {
       "address": 9072,
       "starting_address": "9072",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -418,7 +418,7 @@
     {
       "address": 9073,
       "starting_address": "9073",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -436,7 +436,7 @@
     {
       "address": 9074,
       "starting_address": "9074",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -454,7 +454,7 @@
     {
       "address": 9075,
       "starting_address": "9075",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -472,7 +472,7 @@
     {
       "address": 9076,
       "starting_address": "9076",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -490,7 +490,7 @@
     {
       "address": 9077,
       "starting_address": "9077",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.status_ursache",
@@ -508,7 +508,7 @@
     {
       "address": 9080,
       "starting_address": "9080",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -526,7 +526,7 @@
     {
       "address": 9081,
       "starting_address": "9081",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -544,7 +544,7 @@
     {
       "address": 9082,
       "starting_address": "9082",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -562,7 +562,7 @@
     {
       "address": 9083,
       "starting_address": "9083",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -580,7 +580,7 @@
     {
       "address": 9084,
       "starting_address": "9084",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -598,7 +598,7 @@
     {
       "address": 9085,
       "starting_address": "9085",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -616,7 +616,7 @@
     {
       "address": 9086,
       "starting_address": "9086",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -634,7 +634,7 @@
     {
       "address": 9087,
       "starting_address": "9087",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -652,7 +652,7 @@
     {
       "address": 9088,
       "starting_address": "9088",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -670,7 +670,7 @@
     {
       "address": 9089,
       "starting_address": "9089",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -688,7 +688,7 @@
     {
       "address": 9090,
       "starting_address": "9090",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -706,7 +706,7 @@
     {
       "address": 9091,
       "starting_address": "9091",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -724,7 +724,7 @@
     {
       "address": 9092,
       "starting_address": "9092",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -742,7 +742,7 @@
     {
       "address": 9093,
       "starting_address": "9093",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -760,7 +760,7 @@
     {
       "address": 9094,
       "starting_address": "9094",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -778,7 +778,7 @@
     {
       "address": 9095,
       "starting_address": "9095",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -796,7 +796,7 @@
     {
       "address": 9096,
       "starting_address": "9096",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -814,7 +814,7 @@
     {
       "address": 9097,
       "starting_address": "9097",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -832,7 +832,7 @@
     {
       "address": 9098,
       "starting_address": "9098",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -850,7 +850,7 @@
     {
       "address": 9099,
       "starting_address": "9099",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -868,7 +868,7 @@
     {
       "address": 9100,
       "starting_address": "9100",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -886,7 +886,7 @@
     {
       "address": 9101,
       "starting_address": "9101",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -904,7 +904,7 @@
     {
       "address": 9102,
       "starting_address": "9102",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -922,7 +922,7 @@
     {
       "address": 9103,
       "starting_address": "9103",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -940,7 +940,7 @@
     {
       "address": 9104,
       "starting_address": "9104",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -958,7 +958,7 @@
     {
       "address": 9105,
       "starting_address": "9105",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -976,7 +976,7 @@
     {
       "address": 9106,
       "starting_address": "9106",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.value",
@@ -994,7 +994,7 @@
     {
       "address": 9107,
       "starting_address": "9107",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_temperatur.status",
@@ -1012,7 +1012,7 @@
     {
       "address": 9110,
       "starting_address": "9110",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1030,7 +1030,7 @@
     {
       "address": 9111,
       "starting_address": "9111",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1048,7 +1048,7 @@
     {
       "address": 9112,
       "starting_address": "9112",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1066,7 +1066,7 @@
     {
       "address": 9113,
       "starting_address": "9113",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1084,7 +1084,7 @@
     {
       "address": 9114,
       "starting_address": "9114",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1102,7 +1102,7 @@
     {
       "address": 9115,
       "starting_address": "9115",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1120,7 +1120,7 @@
     {
       "address": 9116,
       "starting_address": "9116",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1138,7 +1138,7 @@
     {
       "address": 9117,
       "starting_address": "9117",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1156,7 +1156,7 @@
     {
       "address": 9118,
       "starting_address": "9118",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1174,7 +1174,7 @@
     {
       "address": 9119,
       "starting_address": "9119",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1192,7 +1192,7 @@
     {
       "address": 9120,
       "starting_address": "9120",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1210,7 +1210,7 @@
     {
       "address": 9121,
       "starting_address": "9121",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1228,7 +1228,7 @@
     {
       "address": 9122,
       "starting_address": "9122",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1246,7 +1246,7 @@
     {
       "address": 9123,
       "starting_address": "9123",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1264,7 +1264,7 @@
     {
       "address": 9124,
       "starting_address": "9124",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1282,7 +1282,7 @@
     {
       "address": 9125,
       "starting_address": "9125",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1300,7 +1300,7 @@
     {
       "address": 9126,
       "starting_address": "9126",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1318,7 +1318,7 @@
     {
       "address": 9127,
       "starting_address": "9127",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1336,7 +1336,7 @@
     {
       "address": 9128,
       "starting_address": "9128",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1354,7 +1354,7 @@
     {
       "address": 9129,
       "starting_address": "9129",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1372,7 +1372,7 @@
     {
       "address": 9130,
       "starting_address": "9130",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1390,7 +1390,7 @@
     {
       "address": 9131,
       "starting_address": "9131",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1408,7 +1408,7 @@
     {
       "address": 9132,
       "starting_address": "9132",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1426,7 +1426,7 @@
     {
       "address": 9133,
       "starting_address": "9133",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1444,7 +1444,7 @@
     {
       "address": 9134,
       "starting_address": "9134",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1462,7 +1462,7 @@
     {
       "address": 9135,
       "starting_address": "9135",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1480,7 +1480,7 @@
     {
       "address": 9136,
       "starting_address": "9136",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.value",
@@ -1498,7 +1498,7 @@
     {
       "address": 9137,
       "starting_address": "9137",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_1.status",
@@ -1516,7 +1516,7 @@
     {
       "address": 9140,
       "starting_address": "9140",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1534,7 +1534,7 @@
     {
       "address": 9141,
       "starting_address": "9141",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1552,7 +1552,7 @@
     {
       "address": 9142,
       "starting_address": "9142",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1570,7 +1570,7 @@
     {
       "address": 9143,
       "starting_address": "9143",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1588,7 +1588,7 @@
     {
       "address": 9144,
       "starting_address": "9144",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1606,7 +1606,7 @@
     {
       "address": 9145,
       "starting_address": "9145",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1624,7 +1624,7 @@
     {
       "address": 9146,
       "starting_address": "9146",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1642,7 +1642,7 @@
     {
       "address": 9147,
       "starting_address": "9147",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1660,7 +1660,7 @@
     {
       "address": 9148,
       "starting_address": "9148",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1678,7 +1678,7 @@
     {
       "address": 9149,
       "starting_address": "9149",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1696,7 +1696,7 @@
     {
       "address": 9150,
       "starting_address": "9150",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1714,7 +1714,7 @@
     {
       "address": 9151,
       "starting_address": "9151",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1732,7 +1732,7 @@
     {
       "address": 9152,
       "starting_address": "9152",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1750,7 +1750,7 @@
     {
       "address": 9153,
       "starting_address": "9153",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1768,7 +1768,7 @@
     {
       "address": 9154,
       "starting_address": "9154",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1786,7 +1786,7 @@
     {
       "address": 9155,
       "starting_address": "9155",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1804,7 +1804,7 @@
     {
       "address": 9156,
       "starting_address": "9156",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1822,7 +1822,7 @@
     {
       "address": 9157,
       "starting_address": "9157",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1840,7 +1840,7 @@
     {
       "address": 9158,
       "starting_address": "9158",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1858,7 +1858,7 @@
     {
       "address": 9159,
       "starting_address": "9159",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1876,7 +1876,7 @@
     {
       "address": 9160,
       "starting_address": "9160",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1894,7 +1894,7 @@
     {
       "address": 9161,
       "starting_address": "9161",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1912,7 +1912,7 @@
     {
       "address": 9162,
       "starting_address": "9162",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1930,7 +1930,7 @@
     {
       "address": 9163,
       "starting_address": "9163",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1948,7 +1948,7 @@
     {
       "address": 9164,
       "starting_address": "9164",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -1966,7 +1966,7 @@
     {
       "address": 9165,
       "starting_address": "9165",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -1984,7 +1984,7 @@
     {
       "address": 9166,
       "starting_address": "9166",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.value",
@@ -2002,7 +2002,7 @@
     {
       "address": 9167,
       "starting_address": "9167",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ist_temperatur_speicher_2.status",
@@ -2020,7 +2020,7 @@
     {
       "address": 9169,
       "starting_address": "9169",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2038,7 +2038,7 @@
     {
       "address": 9170,
       "starting_address": "9170",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2056,7 +2056,7 @@
     {
       "address": 9171,
       "starting_address": "9171",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2074,7 +2074,7 @@
     {
       "address": 9172,
       "starting_address": "9172",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2092,7 +2092,7 @@
     {
       "address": 9173,
       "starting_address": "9173",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2110,7 +2110,7 @@
     {
       "address": 9174,
       "starting_address": "9174",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2128,7 +2128,7 @@
     {
       "address": 9175,
       "starting_address": "9175",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2146,7 +2146,7 @@
     {
       "address": 9176,
       "starting_address": "9176",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2164,7 +2164,7 @@
     {
       "address": 9177,
       "starting_address": "9177",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2182,7 +2182,7 @@
     {
       "address": 9178,
       "starting_address": "9178",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2200,7 +2200,7 @@
     {
       "address": 9179,
       "starting_address": "9179",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2218,7 +2218,7 @@
     {
       "address": 9180,
       "starting_address": "9180",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2236,7 +2236,7 @@
     {
       "address": 9181,
       "starting_address": "9181",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2254,7 +2254,7 @@
     {
       "address": 9182,
       "starting_address": "9182",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_1",
@@ -2272,7 +2272,7 @@
     {
       "address": 9184,
       "starting_address": "9184",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2290,7 +2290,7 @@
     {
       "address": 9185,
       "starting_address": "9185",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2308,7 +2308,7 @@
     {
       "address": 9186,
       "starting_address": "9186",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2326,7 +2326,7 @@
     {
       "address": 9187,
       "starting_address": "9187",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2344,7 +2344,7 @@
     {
       "address": 9188,
       "starting_address": "9188",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2362,7 +2362,7 @@
     {
       "address": 9189,
       "starting_address": "9189",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2380,7 +2380,7 @@
     {
       "address": 9190,
       "starting_address": "9190",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2398,7 +2398,7 @@
     {
       "address": 9191,
       "starting_address": "9191",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2416,7 +2416,7 @@
     {
       "address": 9192,
       "starting_address": "9192",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2434,7 +2434,7 @@
     {
       "address": 9193,
       "starting_address": "9193",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2452,7 +2452,7 @@
     {
       "address": 9194,
       "starting_address": "9194",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2470,7 +2470,7 @@
     {
       "address": 9195,
       "starting_address": "9195",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2488,7 +2488,7 @@
     {
       "address": 9196,
       "starting_address": "9196",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2506,7 +2506,7 @@
     {
       "address": 9197,
       "starting_address": "9197",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_pumpe_2",
@@ -2524,7 +2524,7 @@
     {
       "address": 9199,
       "starting_address": "9199",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2542,7 +2542,7 @@
     {
       "address": 9200,
       "starting_address": "9200",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2560,7 +2560,7 @@
     {
       "address": 9201,
       "starting_address": "9201",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2578,7 +2578,7 @@
     {
       "address": 9202,
       "starting_address": "9202",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2596,7 +2596,7 @@
     {
       "address": 9203,
       "starting_address": "9203",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2614,7 +2614,7 @@
     {
       "address": 9204,
       "starting_address": "9204",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2632,7 +2632,7 @@
     {
       "address": 9205,
       "starting_address": "9205",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2650,7 +2650,7 @@
     {
       "address": 9206,
       "starting_address": "9206",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2668,7 +2668,7 @@
     {
       "address": 9207,
       "starting_address": "9207",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2686,7 +2686,7 @@
     {
       "address": 9208,
       "starting_address": "9208",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2704,7 +2704,7 @@
     {
       "address": 9209,
       "starting_address": "9209",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2722,7 +2722,7 @@
     {
       "address": 9210,
       "starting_address": "9210",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2740,7 +2740,7 @@
     {
       "address": 9211,
       "starting_address": "9211",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2758,7 +2758,7 @@
     {
       "address": 9212,
       "starting_address": "9212",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.o_umschaltventil",
@@ -2776,7 +2776,7 @@
     {
       "address": 9215,
       "starting_address": "9215",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2794,7 +2794,7 @@
     {
       "address": 9217,
       "starting_address": "9217",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2812,7 +2812,7 @@
     {
       "address": 9219,
       "starting_address": "9219",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2830,7 +2830,7 @@
     {
       "address": 9221,
       "starting_address": "9221",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2848,7 +2848,7 @@
     {
       "address": 9223,
       "starting_address": "9223",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2866,7 +2866,7 @@
     {
       "address": 9225,
       "starting_address": "9225",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2884,7 +2884,7 @@
     {
       "address": 9227,
       "starting_address": "9227",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2902,7 +2902,7 @@
     {
       "address": 9229,
       "starting_address": "9229",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2920,7 +2920,7 @@
     {
       "address": 9231,
       "starting_address": "9231",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2938,7 +2938,7 @@
     {
       "address": 9233,
       "starting_address": "9233",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2956,7 +2956,7 @@
     {
       "address": 9235,
       "starting_address": "9235",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2974,7 +2974,7 @@
     {
       "address": 9237,
       "starting_address": "9237",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -2992,7 +2992,7 @@
     {
       "address": 9239,
       "starting_address": "9239",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -3010,7 +3010,7 @@
     {
       "address": 9241,
       "starting_address": "9241",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermeleistung",
@@ -3028,7 +3028,7 @@
     {
       "address": 9245,
       "starting_address": "9245",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3046,7 +3046,7 @@
     {
       "address": 9247,
       "starting_address": "9247",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3064,7 +3064,7 @@
     {
       "address": 9249,
       "starting_address": "9249",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3082,7 +3082,7 @@
     {
       "address": 9251,
       "starting_address": "9251",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3100,7 +3100,7 @@
     {
       "address": 9253,
       "starting_address": "9253",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3118,7 +3118,7 @@
     {
       "address": 9255,
       "starting_address": "9255",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3136,7 +3136,7 @@
     {
       "address": 9257,
       "starting_address": "9257",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3154,7 +3154,7 @@
     {
       "address": 9259,
       "starting_address": "9259",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3172,7 +3172,7 @@
     {
       "address": 9261,
       "starting_address": "9261",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3190,7 +3190,7 @@
     {
       "address": 9263,
       "starting_address": "9263",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3208,7 +3208,7 @@
     {
       "address": 9265,
       "starting_address": "9265",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3226,7 +3226,7 @@
     {
       "address": 9267,
       "starting_address": "9267",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3244,7 +3244,7 @@
     {
       "address": 9269,
       "starting_address": "9269",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3262,7 +3262,7 @@
     {
       "address": 9271,
       "starting_address": "9271",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_tag",
@@ -3280,7 +3280,7 @@
     {
       "address": 9275,
       "starting_address": "9275",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3298,7 +3298,7 @@
     {
       "address": 9277,
       "starting_address": "9277",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3316,7 +3316,7 @@
     {
       "address": 9279,
       "starting_address": "9279",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3334,7 +3334,7 @@
     {
       "address": 9281,
       "starting_address": "9281",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3352,7 +3352,7 @@
     {
       "address": 9283,
       "starting_address": "9283",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3370,7 +3370,7 @@
     {
       "address": 9285,
       "starting_address": "9285",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3388,7 +3388,7 @@
     {
       "address": 9287,
       "starting_address": "9287",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3406,7 +3406,7 @@
     {
       "address": 9289,
       "starting_address": "9289",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3424,7 +3424,7 @@
     {
       "address": 9291,
       "starting_address": "9291",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3442,7 +3442,7 @@
     {
       "address": 9293,
       "starting_address": "9293",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3460,7 +3460,7 @@
     {
       "address": 9295,
       "starting_address": "9295",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3478,7 +3478,7 @@
     {
       "address": 9297,
       "starting_address": "9297",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3496,7 +3496,7 @@
     {
       "address": 9299,
       "starting_address": "9299",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3514,7 +3514,7 @@
     {
       "address": 9301,
       "starting_address": "9301",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "SOL.waermemenge_gesamt",
@@ -3532,7 +3532,7 @@
     {
       "address": 9305,
       "starting_address": "9305",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3550,7 +3550,7 @@
     {
       "address": 9306,
       "starting_address": "9306",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3568,7 +3568,7 @@
     {
       "address": 9307,
       "starting_address": "9307",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3586,7 +3586,7 @@
     {
       "address": 9308,
       "starting_address": "9308",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3604,7 +3604,7 @@
     {
       "address": 9309,
       "starting_address": "9309",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3622,7 +3622,7 @@
     {
       "address": 9310,
       "starting_address": "9310",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3640,7 +3640,7 @@
     {
       "address": 9311,
       "starting_address": "9311",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3658,7 +3658,7 @@
     {
       "address": 9312,
       "starting_address": "9312",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3676,7 +3676,7 @@
     {
       "address": 9313,
       "starting_address": "9313",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3694,7 +3694,7 @@
     {
       "address": 9314,
       "starting_address": "9314",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3712,7 +3712,7 @@
     {
       "address": 9315,
       "starting_address": "9315",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3730,7 +3730,7 @@
     {
       "address": 9316,
       "starting_address": "9316",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3748,7 +3748,7 @@
     {
       "address": 9317,
       "starting_address": "9317",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3766,7 +3766,7 @@
     {
       "address": 9318,
       "starting_address": "9318",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3784,7 +3784,7 @@
     {
       "address": 9319,
       "starting_address": "9319",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3802,7 +3802,7 @@
     {
       "address": 9320,
       "starting_address": "9320",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3820,7 +3820,7 @@
     {
       "address": 9321,
       "starting_address": "9321",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3838,7 +3838,7 @@
     {
       "address": 9322,
       "starting_address": "9322",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3856,7 +3856,7 @@
     {
       "address": 9323,
       "starting_address": "9323",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3874,7 +3874,7 @@
     {
       "address": 9324,
       "starting_address": "9324",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3892,7 +3892,7 @@
     {
       "address": 9325,
       "starting_address": "9325",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3910,7 +3910,7 @@
     {
       "address": 9326,
       "starting_address": "9326",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3928,7 +3928,7 @@
     {
       "address": 9327,
       "starting_address": "9327",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3946,7 +3946,7 @@
     {
       "address": 9328,
       "starting_address": "9328",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -3964,7 +3964,7 @@
     {
       "address": 9329,
       "starting_address": "9329",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -3982,7 +3982,7 @@
     {
       "address": 9330,
       "starting_address": "9330",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -4000,7 +4000,7 @@
     {
       "address": 9331,
       "starting_address": "9331",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.value",
@@ -4018,7 +4018,7 @@
     {
       "address": 9332,
       "starting_address": "9332",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur.status",
@@ -4036,7 +4036,7 @@
     {
       "address": 9335,
       "starting_address": "9335",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4054,7 +4054,7 @@
     {
       "address": 9336,
       "starting_address": "9336",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4072,7 +4072,7 @@
     {
       "address": 9337,
       "starting_address": "9337",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4090,7 +4090,7 @@
     {
       "address": 9338,
       "starting_address": "9338",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4108,7 +4108,7 @@
     {
       "address": 9339,
       "starting_address": "9339",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4126,7 +4126,7 @@
     {
       "address": 9340,
       "starting_address": "9340",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4144,7 +4144,7 @@
     {
       "address": 9341,
       "starting_address": "9341",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4162,7 +4162,7 @@
     {
       "address": 9342,
       "starting_address": "9342",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4180,7 +4180,7 @@
     {
       "address": 9343,
       "starting_address": "9343",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4198,7 +4198,7 @@
     {
       "address": 9344,
       "starting_address": "9344",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4216,7 +4216,7 @@
     {
       "address": 9345,
       "starting_address": "9345",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4234,7 +4234,7 @@
     {
       "address": 9346,
       "starting_address": "9346",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4252,7 +4252,7 @@
     {
       "address": 9347,
       "starting_address": "9347",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4270,7 +4270,7 @@
     {
       "address": 9348,
       "starting_address": "9348",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4288,7 +4288,7 @@
     {
       "address": 9349,
       "starting_address": "9349",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4306,7 +4306,7 @@
     {
       "address": 9350,
       "starting_address": "9350",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4324,7 +4324,7 @@
     {
       "address": 9351,
       "starting_address": "9351",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4342,7 +4342,7 @@
     {
       "address": 9352,
       "starting_address": "9352",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4360,7 +4360,7 @@
     {
       "address": 9353,
       "starting_address": "9353",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4378,7 +4378,7 @@
     {
       "address": 9354,
       "starting_address": "9354",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4396,7 +4396,7 @@
     {
       "address": 9355,
       "starting_address": "9355",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4414,7 +4414,7 @@
     {
       "address": 9356,
       "starting_address": "9356",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4432,7 +4432,7 @@
     {
       "address": 9357,
       "starting_address": "9357",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4450,7 +4450,7 @@
     {
       "address": 9358,
       "starting_address": "9358",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4468,7 +4468,7 @@
     {
       "address": 9359,
       "starting_address": "9359",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4486,7 +4486,7 @@
     {
       "address": 9360,
       "starting_address": "9360",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4504,7 +4504,7 @@
     {
       "address": 9361,
       "starting_address": "9361",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.value",
@@ -4522,7 +4522,7 @@
     {
       "address": 9362,
       "starting_address": "9362",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_ruecklauf_temperatur.status",
@@ -4540,7 +4540,7 @@
     {
       "address": 9365,
       "starting_address": "9365",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4558,7 +4558,7 @@
     {
       "address": 9366,
       "starting_address": "9366",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4576,7 +4576,7 @@
     {
       "address": 9367,
       "starting_address": "9367",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4594,7 +4594,7 @@
     {
       "address": 9368,
       "starting_address": "9368",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4612,7 +4612,7 @@
     {
       "address": 9369,
       "starting_address": "9369",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4630,7 +4630,7 @@
     {
       "address": 9370,
       "starting_address": "9370",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4648,7 +4648,7 @@
     {
       "address": 9371,
       "starting_address": "9371",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4666,7 +4666,7 @@
     {
       "address": 9372,
       "starting_address": "9372",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4684,7 +4684,7 @@
     {
       "address": 9373,
       "starting_address": "9373",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4702,7 +4702,7 @@
     {
       "address": 9374,
       "starting_address": "9374",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4720,7 +4720,7 @@
     {
       "address": 9375,
       "starting_address": "9375",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4738,7 +4738,7 @@
     {
       "address": 9376,
       "starting_address": "9376",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4756,7 +4756,7 @@
     {
       "address": 9377,
       "starting_address": "9377",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4774,7 +4774,7 @@
     {
       "address": 9378,
       "starting_address": "9378",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4792,7 +4792,7 @@
     {
       "address": 9379,
       "starting_address": "9379",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4810,7 +4810,7 @@
     {
       "address": 9380,
       "starting_address": "9380",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4828,7 +4828,7 @@
     {
       "address": 9381,
       "starting_address": "9381",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4846,7 +4846,7 @@
     {
       "address": 9382,
       "starting_address": "9382",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4864,7 +4864,7 @@
     {
       "address": 9383,
       "starting_address": "9383",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4882,7 +4882,7 @@
     {
       "address": 9384,
       "starting_address": "9384",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4900,7 +4900,7 @@
     {
       "address": 9385,
       "starting_address": "9385",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4918,7 +4918,7 @@
     {
       "address": 9386,
       "starting_address": "9386",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4936,7 +4936,7 @@
     {
       "address": 9387,
       "starting_address": "9387",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4954,7 +4954,7 @@
     {
       "address": 9388,
       "starting_address": "9388",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -4972,7 +4972,7 @@
     {
       "address": 9389,
       "starting_address": "9389",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -4990,7 +4990,7 @@
     {
       "address": 9390,
       "starting_address": "9390",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -5008,7 +5008,7 @@
     {
       "address": 9391,
       "starting_address": "9391",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.value",
@@ -5026,7 +5026,7 @@
     {
       "address": 9392,
       "starting_address": "9392",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_kollektor_durchfluss.status",
@@ -5044,7 +5044,7 @@
     {
       "address": 9466,
       "starting_address": "9466",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5062,7 +5062,7 @@
     {
       "address": 9467,
       "starting_address": "9467",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5080,7 +5080,7 @@
     {
       "address": 9468,
       "starting_address": "9468",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5098,7 +5098,7 @@
     {
       "address": 9469,
       "starting_address": "9469",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5116,7 +5116,7 @@
     {
       "address": 9470,
       "starting_address": "9470",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5134,7 +5134,7 @@
     {
       "address": 9471,
       "starting_address": "9471",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5152,7 +5152,7 @@
     {
       "address": 9472,
       "starting_address": "9472",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5170,7 +5170,7 @@
     {
       "address": 9473,
       "starting_address": "9473",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5188,7 +5188,7 @@
     {
       "address": 9474,
       "starting_address": "9474",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5206,7 +5206,7 @@
     {
       "address": 9475,
       "starting_address": "9475",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5224,7 +5224,7 @@
     {
       "address": 9476,
       "starting_address": "9476",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5242,7 +5242,7 @@
     {
       "address": 9477,
       "starting_address": "9477",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5260,7 +5260,7 @@
     {
       "address": 9478,
       "starting_address": "9478",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5278,7 +5278,7 @@
     {
       "address": 9479,
       "starting_address": "9479",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_1_steuerstufe",
@@ -5296,7 +5296,7 @@
     {
       "address": 9481,
       "starting_address": "9481",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5314,7 +5314,7 @@
     {
       "address": 9482,
       "starting_address": "9482",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5332,7 +5332,7 @@
     {
       "address": 9483,
       "starting_address": "9483",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5350,7 +5350,7 @@
     {
       "address": 9484,
       "starting_address": "9484",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5368,7 +5368,7 @@
     {
       "address": 9485,
       "starting_address": "9485",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5386,7 +5386,7 @@
     {
       "address": 9486,
       "starting_address": "9486",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5404,7 +5404,7 @@
     {
       "address": 9487,
       "starting_address": "9487",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5422,7 +5422,7 @@
     {
       "address": 9488,
       "starting_address": "9488",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5440,7 +5440,7 @@
     {
       "address": 9489,
       "starting_address": "9489",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5458,7 +5458,7 @@
     {
       "address": 9490,
       "starting_address": "9490",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5476,7 +5476,7 @@
     {
       "address": 9491,
       "starting_address": "9491",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5494,7 +5494,7 @@
     {
       "address": 9492,
       "starting_address": "9492",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5512,7 +5512,7 @@
     {
       "address": 9493,
       "starting_address": "9493",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5530,7 +5530,7 @@
     {
       "address": 9494,
       "starting_address": "9494",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "SOL.pumpe_2_steuerstufe",
@@ -5548,7 +5548,7 @@
     {
       "address": 9882,
       "starting_address": "9882",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5566,7 +5566,7 @@
     {
       "address": 9883,
       "starting_address": "9883",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5584,7 +5584,7 @@
     {
       "address": 9884,
       "starting_address": "9884",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5602,7 +5602,7 @@
     {
       "address": 9885,
       "starting_address": "9885",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5620,7 +5620,7 @@
     {
       "address": 9886,
       "starting_address": "9886",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5638,7 +5638,7 @@
     {
       "address": 9887,
       "starting_address": "9887",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5656,7 +5656,7 @@
     {
       "address": 9888,
       "starting_address": "9888",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5674,7 +5674,7 @@
     {
       "address": 9889,
       "starting_address": "9889",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5692,7 +5692,7 @@
     {
       "address": 9890,
       "starting_address": "9890",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5710,7 +5710,7 @@
     {
       "address": 9891,
       "starting_address": "9891",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5728,7 +5728,7 @@
     {
       "address": 9892,
       "starting_address": "9892",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5746,7 +5746,7 @@
     {
       "address": 9893,
       "starting_address": "9893",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5764,7 +5764,7 @@
     {
       "address": 9894,
       "starting_address": "9894",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5782,7 +5782,7 @@
     {
       "address": 9895,
       "starting_address": "9895",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5800,7 +5800,7 @@
     {
       "address": 9896,
       "starting_address": "9896",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5818,7 +5818,7 @@
     {
       "address": 9897,
       "starting_address": "9897",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5836,7 +5836,7 @@
     {
       "address": 9898,
       "starting_address": "9898",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5854,7 +5854,7 @@
     {
       "address": 9899,
       "starting_address": "9899",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5872,7 +5872,7 @@
     {
       "address": 9900,
       "starting_address": "9900",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5890,7 +5890,7 @@
     {
       "address": 9901,
       "starting_address": "9901",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5908,7 +5908,7 @@
     {
       "address": 9902,
       "starting_address": "9902",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5926,7 +5926,7 @@
     {
       "address": 9903,
       "starting_address": "9903",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5944,7 +5944,7 @@
     {
       "address": 9904,
       "starting_address": "9904",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5962,7 +5962,7 @@
     {
       "address": 9905,
       "starting_address": "9905",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -5980,7 +5980,7 @@
     {
       "address": 9906,
       "starting_address": "9906",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -5998,7 +5998,7 @@
     {
       "address": 9907,
       "starting_address": "9907",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -6016,7 +6016,7 @@
     {
       "address": 9908,
       "starting_address": "9908",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.value",
@@ -6034,7 +6034,7 @@
     {
       "address": 9909,
       "starting_address": "9909",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_vorlauf_temperatur_sekundaer.status",
@@ -6052,7 +6052,7 @@
     {
       "address": 9912,
       "starting_address": "9912",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6070,7 +6070,7 @@
     {
       "address": 9913,
       "starting_address": "9913",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6088,7 +6088,7 @@
     {
       "address": 9914,
       "starting_address": "9914",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6106,7 +6106,7 @@
     {
       "address": 9915,
       "starting_address": "9915",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6124,7 +6124,7 @@
     {
       "address": 9916,
       "starting_address": "9916",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6142,7 +6142,7 @@
     {
       "address": 9917,
       "starting_address": "9917",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6160,7 +6160,7 @@
     {
       "address": 9918,
       "starting_address": "9918",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6178,7 +6178,7 @@
     {
       "address": 9919,
       "starting_address": "9919",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6196,7 +6196,7 @@
     {
       "address": 9920,
       "starting_address": "9920",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6214,7 +6214,7 @@
     {
       "address": 9921,
       "starting_address": "9921",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6232,7 +6232,7 @@
     {
       "address": 9922,
       "starting_address": "9922",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6250,7 +6250,7 @@
     {
       "address": 9923,
       "starting_address": "9923",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6268,7 +6268,7 @@
     {
       "address": 9924,
       "starting_address": "9924",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6286,7 +6286,7 @@
     {
       "address": 9925,
       "starting_address": "9925",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6304,7 +6304,7 @@
     {
       "address": 9926,
       "starting_address": "9926",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6322,7 +6322,7 @@
     {
       "address": 9927,
       "starting_address": "9927",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6340,7 +6340,7 @@
     {
       "address": 9928,
       "starting_address": "9928",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6358,7 +6358,7 @@
     {
       "address": 9929,
       "starting_address": "9929",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6376,7 +6376,7 @@
     {
       "address": 9930,
       "starting_address": "9930",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6394,7 +6394,7 @@
     {
       "address": 9931,
       "starting_address": "9931",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6412,7 +6412,7 @@
     {
       "address": 9932,
       "starting_address": "9932",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6430,7 +6430,7 @@
     {
       "address": 9933,
       "starting_address": "9933",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6448,7 +6448,7 @@
     {
       "address": 9934,
       "starting_address": "9934",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6466,7 +6466,7 @@
     {
       "address": 9935,
       "starting_address": "9935",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6484,7 +6484,7 @@
     {
       "address": 9936,
       "starting_address": "9936",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6502,7 +6502,7 @@
     {
       "address": 9937,
       "starting_address": "9937",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6520,7 +6520,7 @@
     {
       "address": 9938,
       "starting_address": "9938",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.value",
@@ -6538,7 +6538,7 @@
     {
       "address": 9939,
       "starting_address": "9939",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_sekundaer.status",
@@ -6556,7 +6556,7 @@
     {
       "address": 9942,
       "starting_address": "9942",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6574,7 +6574,7 @@
     {
       "address": 9943,
       "starting_address": "9943",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6592,7 +6592,7 @@
     {
       "address": 9944,
       "starting_address": "9944",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6610,7 +6610,7 @@
     {
       "address": 9945,
       "starting_address": "9945",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6628,7 +6628,7 @@
     {
       "address": 9946,
       "starting_address": "9946",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6646,7 +6646,7 @@
     {
       "address": 9947,
       "starting_address": "9947",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6664,7 +6664,7 @@
     {
       "address": 9948,
       "starting_address": "9948",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6682,7 +6682,7 @@
     {
       "address": 9949,
       "starting_address": "9949",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6700,7 +6700,7 @@
     {
       "address": 9950,
       "starting_address": "9950",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6718,7 +6718,7 @@
     {
       "address": 9951,
       "starting_address": "9951",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6736,7 +6736,7 @@
     {
       "address": 9952,
       "starting_address": "9952",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6754,7 +6754,7 @@
     {
       "address": 9953,
       "starting_address": "9953",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6772,7 +6772,7 @@
     {
       "address": 9954,
       "starting_address": "9954",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6790,7 +6790,7 @@
     {
       "address": 9955,
       "starting_address": "9955",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6808,7 +6808,7 @@
     {
       "address": 9956,
       "starting_address": "9956",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6826,7 +6826,7 @@
     {
       "address": 9957,
       "starting_address": "9957",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6844,7 +6844,7 @@
     {
       "address": 9958,
       "starting_address": "9958",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6862,7 +6862,7 @@
     {
       "address": 9959,
       "starting_address": "9959",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6880,7 +6880,7 @@
     {
       "address": 9960,
       "starting_address": "9960",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6898,7 +6898,7 @@
     {
       "address": 9961,
       "starting_address": "9961",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6916,7 +6916,7 @@
     {
       "address": 9962,
       "starting_address": "9962",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6934,7 +6934,7 @@
     {
       "address": 9963,
       "starting_address": "9963",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6952,7 +6952,7 @@
     {
       "address": 9964,
       "starting_address": "9964",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -6970,7 +6970,7 @@
     {
       "address": 9965,
       "starting_address": "9965",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -6988,7 +6988,7 @@
     {
       "address": 9966,
       "starting_address": "9966",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -7006,7 +7006,7 @@
     {
       "address": 9967,
       "starting_address": "9967",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",
@@ -7024,7 +7024,7 @@
     {
       "address": 9968,
       "starting_address": "9968",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.value",
@@ -7042,7 +7042,7 @@
     {
       "address": 9969,
       "starting_address": "9969",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SOL.i_ruecklauf_temperatur_primaer.status",

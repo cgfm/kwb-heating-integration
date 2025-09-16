@@ -4,7 +4,7 @@
     {
       "address": 8981,
       "starting_address": "8981",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -22,7 +22,7 @@
     {
       "address": 8982,
       "starting_address": "8982",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -40,7 +40,7 @@
     {
       "address": 8983,
       "starting_address": "8983",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -58,7 +58,7 @@
     {
       "address": 8984,
       "starting_address": "8984",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -76,7 +76,7 @@
     {
       "address": 8985,
       "starting_address": "8985",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -94,7 +94,7 @@
     {
       "address": 8986,
       "starting_address": "8986",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -112,7 +112,7 @@
     {
       "address": 8987,
       "starting_address": "8987",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -130,7 +130,7 @@
     {
       "address": 8988,
       "starting_address": "8988",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -148,7 +148,7 @@
     {
       "address": 8989,
       "starting_address": "8989",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -166,7 +166,7 @@
     {
       "address": 8990,
       "starting_address": "8990",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -184,7 +184,7 @@
     {
       "address": 8991,
       "starting_address": "8991",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -202,7 +202,7 @@
     {
       "address": 8992,
       "starting_address": "8992",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -220,7 +220,7 @@
     {
       "address": 8993,
       "starting_address": "8993",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -238,7 +238,7 @@
     {
       "address": 8994,
       "starting_address": "8994",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_pumpe",
@@ -256,7 +256,7 @@
     {
       "address": 8998,
       "starting_address": "8998",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -274,7 +274,7 @@
     {
       "address": 8999,
       "starting_address": "8999",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -292,7 +292,7 @@
     {
       "address": 9000,
       "starting_address": "9000",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -310,7 +310,7 @@
     {
       "address": 9001,
       "starting_address": "9001",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -328,7 +328,7 @@
     {
       "address": 9002,
       "starting_address": "9002",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -346,7 +346,7 @@
     {
       "address": 9003,
       "starting_address": "9003",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -364,7 +364,7 @@
     {
       "address": 9004,
       "starting_address": "9004",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -382,7 +382,7 @@
     {
       "address": 9005,
       "starting_address": "9005",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -400,7 +400,7 @@
     {
       "address": 9006,
       "starting_address": "9006",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -418,7 +418,7 @@
     {
       "address": 9007,
       "starting_address": "9007",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -436,7 +436,7 @@
     {
       "address": 9008,
       "starting_address": "9008",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -454,7 +454,7 @@
     {
       "address": 9009,
       "starting_address": "9009",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -472,7 +472,7 @@
     {
       "address": 9010,
       "starting_address": "9010",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -490,7 +490,7 @@
     {
       "address": 9011,
       "starting_address": "9011",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -508,7 +508,7 @@
     {
       "address": 9012,
       "starting_address": "9012",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -526,7 +526,7 @@
     {
       "address": 9013,
       "starting_address": "9013",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -544,7 +544,7 @@
     {
       "address": 9014,
       "starting_address": "9014",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -562,7 +562,7 @@
     {
       "address": 9015,
       "starting_address": "9015",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -580,7 +580,7 @@
     {
       "address": 9016,
       "starting_address": "9016",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -598,7 +598,7 @@
     {
       "address": 9017,
       "starting_address": "9017",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -616,7 +616,7 @@
     {
       "address": 9018,
       "starting_address": "9018",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -634,7 +634,7 @@
     {
       "address": 9019,
       "starting_address": "9019",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -652,7 +652,7 @@
     {
       "address": 9020,
       "starting_address": "9020",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -670,7 +670,7 @@
     {
       "address": 9021,
       "starting_address": "9021",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -688,7 +688,7 @@
     {
       "address": 9022,
       "starting_address": "9022",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -706,7 +706,7 @@
     {
       "address": 9023,
       "starting_address": "9023",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -724,7 +724,7 @@
     {
       "address": 9024,
       "starting_address": "9024",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.value",
@@ -742,7 +742,7 @@
     {
       "address": 9025,
       "starting_address": "9025",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.i_temperatur.status",
@@ -760,7 +760,7 @@
     {
       "address": 9029,
       "starting_address": "9029",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -778,7 +778,7 @@
     {
       "address": 9030,
       "starting_address": "9030",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -796,7 +796,7 @@
     {
       "address": 9031,
       "starting_address": "9031",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -814,7 +814,7 @@
     {
       "address": 9032,
       "starting_address": "9032",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -832,7 +832,7 @@
     {
       "address": 9033,
       "starting_address": "9033",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -850,7 +850,7 @@
     {
       "address": 9034,
       "starting_address": "9034",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -868,7 +868,7 @@
     {
       "address": 9035,
       "starting_address": "9035",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -886,7 +886,7 @@
     {
       "address": 9036,
       "starting_address": "9036",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -904,7 +904,7 @@
     {
       "address": 9037,
       "starting_address": "9037",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -922,7 +922,7 @@
     {
       "address": 9038,
       "starting_address": "9038",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -940,7 +940,7 @@
     {
       "address": 9039,
       "starting_address": "9039",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -958,7 +958,7 @@
     {
       "address": 9040,
       "starting_address": "9040",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -976,7 +976,7 @@
     {
       "address": 9041,
       "starting_address": "9041",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",
@@ -994,7 +994,7 @@
     {
       "address": 9042,
       "starting_address": "9042",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZK.o_anforderung",

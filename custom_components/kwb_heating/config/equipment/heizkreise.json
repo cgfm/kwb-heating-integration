@@ -4,7 +4,7 @@
     {
       "address": 8260,
       "starting_address": "8260",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -22,7 +22,7 @@
     {
       "address": 8261,
       "starting_address": "8261",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -40,7 +40,7 @@
     {
       "address": 8262,
       "starting_address": "8262",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -58,7 +58,7 @@
     {
       "address": 8263,
       "starting_address": "8263",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -76,7 +76,7 @@
     {
       "address": 8264,
       "starting_address": "8264",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -94,7 +94,7 @@
     {
       "address": 8265,
       "starting_address": "8265",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -112,7 +112,7 @@
     {
       "address": 8266,
       "starting_address": "8266",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -130,7 +130,7 @@
     {
       "address": 8267,
       "starting_address": "8267",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -148,7 +148,7 @@
     {
       "address": 8268,
       "starting_address": "8268",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -166,7 +166,7 @@
     {
       "address": 8269,
       "starting_address": "8269",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -184,7 +184,7 @@
     {
       "address": 8270,
       "starting_address": "8270",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -202,7 +202,7 @@
     {
       "address": 8271,
       "starting_address": "8271",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -220,7 +220,7 @@
     {
       "address": 8272,
       "starting_address": "8272",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -238,7 +238,7 @@
     {
       "address": 8273,
       "starting_address": "8273",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -256,7 +256,7 @@
     {
       "address": 8274,
       "starting_address": "8274",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -274,7 +274,7 @@
     {
       "address": 8275,
       "starting_address": "8275",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -292,7 +292,7 @@
     {
       "address": 8276,
       "starting_address": "8276",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -310,7 +310,7 @@
     {
       "address": 8277,
       "starting_address": "8277",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -328,7 +328,7 @@
     {
       "address": 8278,
       "starting_address": "8278",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -346,7 +346,7 @@
     {
       "address": 8279,
       "starting_address": "8279",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -364,7 +364,7 @@
     {
       "address": 8280,
       "starting_address": "8280",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -382,7 +382,7 @@
     {
       "address": 8281,
       "starting_address": "8281",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -400,7 +400,7 @@
     {
       "address": 8282,
       "starting_address": "8282",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -418,7 +418,7 @@
     {
       "address": 8283,
       "starting_address": "8283",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -436,7 +436,7 @@
     {
       "address": 8284,
       "starting_address": "8284",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -454,7 +454,7 @@
     {
       "address": 8285,
       "starting_address": "8285",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -472,7 +472,7 @@
     {
       "address": 8286,
       "starting_address": "8286",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -490,7 +490,7 @@
     {
       "address": 8287,
       "starting_address": "8287",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -508,7 +508,7 @@
     {
       "address": 8288,
       "starting_address": "8288",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -526,7 +526,7 @@
     {
       "address": 8289,
       "starting_address": "8289",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -544,7 +544,7 @@
     {
       "address": 8290,
       "starting_address": "8290",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -562,7 +562,7 @@
     {
       "address": 8291,
       "starting_address": "8291",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -580,7 +580,7 @@
     {
       "address": 8292,
       "starting_address": "8292",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -598,7 +598,7 @@
     {
       "address": 8293,
       "starting_address": "8293",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -616,7 +616,7 @@
     {
       "address": 8294,
       "starting_address": "8294",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -634,7 +634,7 @@
     {
       "address": 8295,
       "starting_address": "8295",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -652,7 +652,7 @@
     {
       "address": 8296,
       "starting_address": "8296",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -670,7 +670,7 @@
     {
       "address": 8297,
       "starting_address": "8297",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -688,7 +688,7 @@
     {
       "address": 8298,
       "starting_address": "8298",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -706,7 +706,7 @@
     {
       "address": 8299,
       "starting_address": "8299",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -724,7 +724,7 @@
     {
       "address": 8300,
       "starting_address": "8300",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -742,7 +742,7 @@
     {
       "address": 8301,
       "starting_address": "8301",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -760,7 +760,7 @@
     {
       "address": 8302,
       "starting_address": "8302",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -778,7 +778,7 @@
     {
       "address": 8303,
       "starting_address": "8303",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -796,7 +796,7 @@
     {
       "address": 8304,
       "starting_address": "8304",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -814,7 +814,7 @@
     {
       "address": 8305,
       "starting_address": "8305",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -832,7 +832,7 @@
     {
       "address": 8306,
       "starting_address": "8306",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -850,7 +850,7 @@
     {
       "address": 8307,
       "starting_address": "8307",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -868,7 +868,7 @@
     {
       "address": 8308,
       "starting_address": "8308",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -886,7 +886,7 @@
     {
       "address": 8309,
       "starting_address": "8309",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -904,7 +904,7 @@
     {
       "address": 8310,
       "starting_address": "8310",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -922,7 +922,7 @@
     {
       "address": 8311,
       "starting_address": "8311",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -940,7 +940,7 @@
     {
       "address": 8312,
       "starting_address": "8312",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -958,7 +958,7 @@
     {
       "address": 8313,
       "starting_address": "8313",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -976,7 +976,7 @@
     {
       "address": 8314,
       "starting_address": "8314",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.value",
@@ -994,7 +994,7 @@
     {
       "address": 8315,
       "starting_address": "8315",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_vorlauf_temperatur.status",
@@ -1012,7 +1012,7 @@
     {
       "address": 8328,
       "starting_address": "8328",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1030,7 +1030,7 @@
     {
       "address": 8329,
       "starting_address": "8329",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1048,7 +1048,7 @@
     {
       "address": 8330,
       "starting_address": "8330",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1066,7 +1066,7 @@
     {
       "address": 8331,
       "starting_address": "8331",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1084,7 +1084,7 @@
     {
       "address": 8332,
       "starting_address": "8332",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1102,7 +1102,7 @@
     {
       "address": 8333,
       "starting_address": "8333",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1120,7 +1120,7 @@
     {
       "address": 8334,
       "starting_address": "8334",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1138,7 +1138,7 @@
     {
       "address": 8335,
       "starting_address": "8335",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1156,7 +1156,7 @@
     {
       "address": 8336,
       "starting_address": "8336",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1174,7 +1174,7 @@
     {
       "address": 8337,
       "starting_address": "8337",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1192,7 +1192,7 @@
     {
       "address": 8338,
       "starting_address": "8338",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1210,7 +1210,7 @@
     {
       "address": 8339,
       "starting_address": "8339",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1228,7 +1228,7 @@
     {
       "address": 8340,
       "starting_address": "8340",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1246,7 +1246,7 @@
     {
       "address": 8341,
       "starting_address": "8341",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1264,7 +1264,7 @@
     {
       "address": 8342,
       "starting_address": "8342",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1282,7 +1282,7 @@
     {
       "address": 8343,
       "starting_address": "8343",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1300,7 +1300,7 @@
     {
       "address": 8344,
       "starting_address": "8344",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1318,7 +1318,7 @@
     {
       "address": 8345,
       "starting_address": "8345",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1336,7 +1336,7 @@
     {
       "address": 8346,
       "starting_address": "8346",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1354,7 +1354,7 @@
     {
       "address": 8347,
       "starting_address": "8347",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1372,7 +1372,7 @@
     {
       "address": 8348,
       "starting_address": "8348",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1390,7 +1390,7 @@
     {
       "address": 8349,
       "starting_address": "8349",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1408,7 +1408,7 @@
     {
       "address": 8350,
       "starting_address": "8350",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1426,7 +1426,7 @@
     {
       "address": 8351,
       "starting_address": "8351",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1444,7 +1444,7 @@
     {
       "address": 8352,
       "starting_address": "8352",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1462,7 +1462,7 @@
     {
       "address": 8353,
       "starting_address": "8353",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1480,7 +1480,7 @@
     {
       "address": 8354,
       "starting_address": "8354",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1498,7 +1498,7 @@
     {
       "address": 8355,
       "starting_address": "8355",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.vorlauf_temperatur_soll",
@@ -1516,7 +1516,7 @@
     {
       "address": 8365,
       "starting_address": "8365",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1534,7 +1534,7 @@
     {
       "address": 8366,
       "starting_address": "8366",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1552,7 +1552,7 @@
     {
       "address": 8367,
       "starting_address": "8367",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1570,7 +1570,7 @@
     {
       "address": 8368,
       "starting_address": "8368",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1588,7 +1588,7 @@
     {
       "address": 8369,
       "starting_address": "8369",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1606,7 +1606,7 @@
     {
       "address": 8370,
       "starting_address": "8370",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1624,7 +1624,7 @@
     {
       "address": 8371,
       "starting_address": "8371",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1642,7 +1642,7 @@
     {
       "address": 8372,
       "starting_address": "8372",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1660,7 +1660,7 @@
     {
       "address": 8373,
       "starting_address": "8373",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1678,7 +1678,7 @@
     {
       "address": 8374,
       "starting_address": "8374",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1696,7 +1696,7 @@
     {
       "address": 8375,
       "starting_address": "8375",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1714,7 +1714,7 @@
     {
       "address": 8376,
       "starting_address": "8376",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1732,7 +1732,7 @@
     {
       "address": 8377,
       "starting_address": "8377",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1750,7 +1750,7 @@
     {
       "address": 8378,
       "starting_address": "8378",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1768,7 +1768,7 @@
     {
       "address": 8379,
       "starting_address": "8379",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1786,7 +1786,7 @@
     {
       "address": 8380,
       "starting_address": "8380",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1804,7 +1804,7 @@
     {
       "address": 8381,
       "starting_address": "8381",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1822,7 +1822,7 @@
     {
       "address": 8382,
       "starting_address": "8382",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1840,7 +1840,7 @@
     {
       "address": 8383,
       "starting_address": "8383",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1858,7 +1858,7 @@
     {
       "address": 8384,
       "starting_address": "8384",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1876,7 +1876,7 @@
     {
       "address": 8385,
       "starting_address": "8385",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1894,7 +1894,7 @@
     {
       "address": 8386,
       "starting_address": "8386",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1912,7 +1912,7 @@
     {
       "address": 8387,
       "starting_address": "8387",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1930,7 +1930,7 @@
     {
       "address": 8388,
       "starting_address": "8388",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1948,7 +1948,7 @@
     {
       "address": 8389,
       "starting_address": "8389",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -1966,7 +1966,7 @@
     {
       "address": 8390,
       "starting_address": "8390",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -1984,7 +1984,7 @@
     {
       "address": 8391,
       "starting_address": "8391",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2002,7 +2002,7 @@
     {
       "address": 8392,
       "starting_address": "8392",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2020,7 +2020,7 @@
     {
       "address": 8393,
       "starting_address": "8393",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2038,7 +2038,7 @@
     {
       "address": 8394,
       "starting_address": "8394",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2056,7 +2056,7 @@
     {
       "address": 8395,
       "starting_address": "8395",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2074,7 +2074,7 @@
     {
       "address": 8396,
       "starting_address": "8396",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2092,7 +2092,7 @@
     {
       "address": 8397,
       "starting_address": "8397",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2110,7 +2110,7 @@
     {
       "address": 8398,
       "starting_address": "8398",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2128,7 +2128,7 @@
     {
       "address": 8399,
       "starting_address": "8399",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2146,7 +2146,7 @@
     {
       "address": 8400,
       "starting_address": "8400",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2164,7 +2164,7 @@
     {
       "address": 8401,
       "starting_address": "8401",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2182,7 +2182,7 @@
     {
       "address": 8402,
       "starting_address": "8402",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2200,7 +2200,7 @@
     {
       "address": 8403,
       "starting_address": "8403",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2218,7 +2218,7 @@
     {
       "address": 8404,
       "starting_address": "8404",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2236,7 +2236,7 @@
     {
       "address": 8405,
       "starting_address": "8405",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2254,7 +2254,7 @@
     {
       "address": 8406,
       "starting_address": "8406",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2272,7 +2272,7 @@
     {
       "address": 8407,
       "starting_address": "8407",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2290,7 +2290,7 @@
     {
       "address": 8408,
       "starting_address": "8408",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2308,7 +2308,7 @@
     {
       "address": 8409,
       "starting_address": "8409",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2326,7 +2326,7 @@
     {
       "address": 8410,
       "starting_address": "8410",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2344,7 +2344,7 @@
     {
       "address": 8411,
       "starting_address": "8411",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2362,7 +2362,7 @@
     {
       "address": 8412,
       "starting_address": "8412",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2380,7 +2380,7 @@
     {
       "address": 8413,
       "starting_address": "8413",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2398,7 +2398,7 @@
     {
       "address": 8414,
       "starting_address": "8414",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2416,7 +2416,7 @@
     {
       "address": 8415,
       "starting_address": "8415",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2434,7 +2434,7 @@
     {
       "address": 8416,
       "starting_address": "8416",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2452,7 +2452,7 @@
     {
       "address": 8417,
       "starting_address": "8417",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2470,7 +2470,7 @@
     {
       "address": 8418,
       "starting_address": "8418",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2488,7 +2488,7 @@
     {
       "address": 8419,
       "starting_address": "8419",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.value",
@@ -2506,7 +2506,7 @@
     {
       "address": 8420,
       "starting_address": "8420",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_raum_temperatur.status",
@@ -2524,7 +2524,7 @@
     {
       "address": 8435,
       "starting_address": "8435",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2542,7 +2542,7 @@
     {
       "address": 8436,
       "starting_address": "8436",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2560,7 +2560,7 @@
     {
       "address": 8437,
       "starting_address": "8437",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2578,7 +2578,7 @@
     {
       "address": 8438,
       "starting_address": "8438",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2596,7 +2596,7 @@
     {
       "address": 8439,
       "starting_address": "8439",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2614,7 +2614,7 @@
     {
       "address": 8440,
       "starting_address": "8440",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2632,7 +2632,7 @@
     {
       "address": 8441,
       "starting_address": "8441",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2650,7 +2650,7 @@
     {
       "address": 8442,
       "starting_address": "8442",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2668,7 +2668,7 @@
     {
       "address": 8443,
       "starting_address": "8443",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2686,7 +2686,7 @@
     {
       "address": 8444,
       "starting_address": "8444",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2704,7 +2704,7 @@
     {
       "address": 8445,
       "starting_address": "8445",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2722,7 +2722,7 @@
     {
       "address": 8446,
       "starting_address": "8446",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2740,7 +2740,7 @@
     {
       "address": 8447,
       "starting_address": "8447",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2758,7 +2758,7 @@
     {
       "address": 8448,
       "starting_address": "8448",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2776,7 +2776,7 @@
     {
       "address": 8449,
       "starting_address": "8449",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2794,7 +2794,7 @@
     {
       "address": 8450,
       "starting_address": "8450",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2812,7 +2812,7 @@
     {
       "address": 8451,
       "starting_address": "8451",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2830,7 +2830,7 @@
     {
       "address": 8452,
       "starting_address": "8452",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2848,7 +2848,7 @@
     {
       "address": 8453,
       "starting_address": "8453",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2866,7 +2866,7 @@
     {
       "address": 8454,
       "starting_address": "8454",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2884,7 +2884,7 @@
     {
       "address": 8455,
       "starting_address": "8455",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2902,7 +2902,7 @@
     {
       "address": 8456,
       "starting_address": "8456",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2920,7 +2920,7 @@
     {
       "address": 8457,
       "starting_address": "8457",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2938,7 +2938,7 @@
     {
       "address": 8458,
       "starting_address": "8458",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2956,7 +2956,7 @@
     {
       "address": 8459,
       "starting_address": "8459",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -2974,7 +2974,7 @@
     {
       "address": 8460,
       "starting_address": "8460",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -2992,7 +2992,7 @@
     {
       "address": 8461,
       "starting_address": "8461",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3010,7 +3010,7 @@
     {
       "address": 8462,
       "starting_address": "8462",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3028,7 +3028,7 @@
     {
       "address": 8463,
       "starting_address": "8463",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3046,7 +3046,7 @@
     {
       "address": 8464,
       "starting_address": "8464",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3064,7 +3064,7 @@
     {
       "address": 8465,
       "starting_address": "8465",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3082,7 +3082,7 @@
     {
       "address": 8466,
       "starting_address": "8466",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3100,7 +3100,7 @@
     {
       "address": 8467,
       "starting_address": "8467",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3118,7 +3118,7 @@
     {
       "address": 8468,
       "starting_address": "8468",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3136,7 +3136,7 @@
     {
       "address": 8469,
       "starting_address": "8469",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3154,7 +3154,7 @@
     {
       "address": 8470,
       "starting_address": "8470",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3172,7 +3172,7 @@
     {
       "address": 8471,
       "starting_address": "8471",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3190,7 +3190,7 @@
     {
       "address": 8472,
       "starting_address": "8472",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3208,7 +3208,7 @@
     {
       "address": 8473,
       "starting_address": "8473",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3226,7 +3226,7 @@
     {
       "address": 8474,
       "starting_address": "8474",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3244,7 +3244,7 @@
     {
       "address": 8475,
       "starting_address": "8475",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3262,7 +3262,7 @@
     {
       "address": 8476,
       "starting_address": "8476",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3280,7 +3280,7 @@
     {
       "address": 8477,
       "starting_address": "8477",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3298,7 +3298,7 @@
     {
       "address": 8478,
       "starting_address": "8478",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3316,7 +3316,7 @@
     {
       "address": 8479,
       "starting_address": "8479",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3334,7 +3334,7 @@
     {
       "address": 8480,
       "starting_address": "8480",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3352,7 +3352,7 @@
     {
       "address": 8481,
       "starting_address": "8481",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3370,7 +3370,7 @@
     {
       "address": 8482,
       "starting_address": "8482",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3388,7 +3388,7 @@
     {
       "address": 8483,
       "starting_address": "8483",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3406,7 +3406,7 @@
     {
       "address": 8484,
       "starting_address": "8484",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3424,7 +3424,7 @@
     {
       "address": 8485,
       "starting_address": "8485",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3442,7 +3442,7 @@
     {
       "address": 8486,
       "starting_address": "8486",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3460,7 +3460,7 @@
     {
       "address": 8487,
       "starting_address": "8487",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3478,7 +3478,7 @@
     {
       "address": 8488,
       "starting_address": "8488",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3496,7 +3496,7 @@
     {
       "address": 8489,
       "starting_address": "8489",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.value",
@@ -3514,7 +3514,7 @@
     {
       "address": 8490,
       "starting_address": "8490",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.i_aussen_temperatur.status",
@@ -3532,7 +3532,7 @@
     {
       "address": 8503,
       "starting_address": "8503",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3550,7 +3550,7 @@
     {
       "address": 8504,
       "starting_address": "8504",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3568,7 +3568,7 @@
     {
       "address": 8505,
       "starting_address": "8505",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3586,7 +3586,7 @@
     {
       "address": 8506,
       "starting_address": "8506",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3604,7 +3604,7 @@
     {
       "address": 8507,
       "starting_address": "8507",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3622,7 +3622,7 @@
     {
       "address": 8508,
       "starting_address": "8508",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3640,7 +3640,7 @@
     {
       "address": 8509,
       "starting_address": "8509",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3658,7 +3658,7 @@
     {
       "address": 8510,
       "starting_address": "8510",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3676,7 +3676,7 @@
     {
       "address": 8511,
       "starting_address": "8511",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3694,7 +3694,7 @@
     {
       "address": 8512,
       "starting_address": "8512",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3712,7 +3712,7 @@
     {
       "address": 8513,
       "starting_address": "8513",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3730,7 +3730,7 @@
     {
       "address": 8514,
       "starting_address": "8514",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3748,7 +3748,7 @@
     {
       "address": 8515,
       "starting_address": "8515",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3766,7 +3766,7 @@
     {
       "address": 8516,
       "starting_address": "8516",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3784,7 +3784,7 @@
     {
       "address": 8517,
       "starting_address": "8517",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3802,7 +3802,7 @@
     {
       "address": 8518,
       "starting_address": "8518",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3820,7 +3820,7 @@
     {
       "address": 8519,
       "starting_address": "8519",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3838,7 +3838,7 @@
     {
       "address": 8520,
       "starting_address": "8520",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3856,7 +3856,7 @@
     {
       "address": 8521,
       "starting_address": "8521",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3874,7 +3874,7 @@
     {
       "address": 8522,
       "starting_address": "8522",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3892,7 +3892,7 @@
     {
       "address": 8523,
       "starting_address": "8523",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3910,7 +3910,7 @@
     {
       "address": 8524,
       "starting_address": "8524",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3928,7 +3928,7 @@
     {
       "address": 8525,
       "starting_address": "8525",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3946,7 +3946,7 @@
     {
       "address": 8526,
       "starting_address": "8526",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3964,7 +3964,7 @@
     {
       "address": 8527,
       "starting_address": "8527",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -3982,7 +3982,7 @@
     {
       "address": 8528,
       "starting_address": "8528",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -4000,7 +4000,7 @@
     {
       "address": 8529,
       "starting_address": "8529",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -4018,7 +4018,7 @@
     {
       "address": 8530,
       "starting_address": "8530",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.o_pumpe",
@@ -4036,7 +4036,7 @@
     {
       "address": 8538,
       "starting_address": "8538",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4054,7 +4054,7 @@
     {
       "address": 8539,
       "starting_address": "8539",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4072,7 +4072,7 @@
     {
       "address": 8540,
       "starting_address": "8540",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4090,7 +4090,7 @@
     {
       "address": 8541,
       "starting_address": "8541",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4108,7 +4108,7 @@
     {
       "address": 8542,
       "starting_address": "8542",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4126,7 +4126,7 @@
     {
       "address": 8543,
       "starting_address": "8543",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4144,7 +4144,7 @@
     {
       "address": 8544,
       "starting_address": "8544",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4162,7 +4162,7 @@
     {
       "address": 8545,
       "starting_address": "8545",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4180,7 +4180,7 @@
     {
       "address": 8546,
       "starting_address": "8546",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4198,7 +4198,7 @@
     {
       "address": 8547,
       "starting_address": "8547",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4216,7 +4216,7 @@
     {
       "address": 8548,
       "starting_address": "8548",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4234,7 +4234,7 @@
     {
       "address": 8549,
       "starting_address": "8549",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4252,7 +4252,7 @@
     {
       "address": 8550,
       "starting_address": "8550",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4270,7 +4270,7 @@
     {
       "address": 8551,
       "starting_address": "8551",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4288,7 +4288,7 @@
     {
       "address": 8552,
       "starting_address": "8552",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4306,7 +4306,7 @@
     {
       "address": 8553,
       "starting_address": "8553",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4324,7 +4324,7 @@
     {
       "address": 8554,
       "starting_address": "8554",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4342,7 +4342,7 @@
     {
       "address": 8555,
       "starting_address": "8555",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4360,7 +4360,7 @@
     {
       "address": 8556,
       "starting_address": "8556",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4378,7 +4378,7 @@
     {
       "address": 8557,
       "starting_address": "8557",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4396,7 +4396,7 @@
     {
       "address": 8558,
       "starting_address": "8558",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4414,7 +4414,7 @@
     {
       "address": 8559,
       "starting_address": "8559",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4432,7 +4432,7 @@
     {
       "address": 8560,
       "starting_address": "8560",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4450,7 +4450,7 @@
     {
       "address": 8561,
       "starting_address": "8561",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4468,7 +4468,7 @@
     {
       "address": 8562,
       "starting_address": "8562",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4486,7 +4486,7 @@
     {
       "address": 8563,
       "starting_address": "8563",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4504,7 +4504,7 @@
     {
       "address": 8564,
       "starting_address": "8564",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4522,7 +4522,7 @@
     {
       "address": 8565,
       "starting_address": "8565",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll",
@@ -4540,7 +4540,7 @@
     {
       "address": 8573,
       "starting_address": "8573",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4558,7 +4558,7 @@
     {
       "address": 8574,
       "starting_address": "8574",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4576,7 +4576,7 @@
     {
       "address": 8575,
       "starting_address": "8575",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4594,7 +4594,7 @@
     {
       "address": 8576,
       "starting_address": "8576",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4612,7 +4612,7 @@
     {
       "address": 8577,
       "starting_address": "8577",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4630,7 +4630,7 @@
     {
       "address": 8578,
       "starting_address": "8578",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4648,7 +4648,7 @@
     {
       "address": 8579,
       "starting_address": "8579",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4666,7 +4666,7 @@
     {
       "address": 8580,
       "starting_address": "8580",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4684,7 +4684,7 @@
     {
       "address": 8581,
       "starting_address": "8581",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4702,7 +4702,7 @@
     {
       "address": 8582,
       "starting_address": "8582",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4720,7 +4720,7 @@
     {
       "address": 8583,
       "starting_address": "8583",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4738,7 +4738,7 @@
     {
       "address": 8584,
       "starting_address": "8584",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4756,7 +4756,7 @@
     {
       "address": 8585,
       "starting_address": "8585",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4774,7 +4774,7 @@
     {
       "address": 8586,
       "starting_address": "8586",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4792,7 +4792,7 @@
     {
       "address": 8587,
       "starting_address": "8587",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4810,7 +4810,7 @@
     {
       "address": 8588,
       "starting_address": "8588",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4828,7 +4828,7 @@
     {
       "address": 8589,
       "starting_address": "8589",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4846,7 +4846,7 @@
     {
       "address": 8590,
       "starting_address": "8590",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4864,7 +4864,7 @@
     {
       "address": 8591,
       "starting_address": "8591",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4882,7 +4882,7 @@
     {
       "address": 8592,
       "starting_address": "8592",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4900,7 +4900,7 @@
     {
       "address": 8593,
       "starting_address": "8593",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4918,7 +4918,7 @@
     {
       "address": 8594,
       "starting_address": "8594",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4936,7 +4936,7 @@
     {
       "address": 8595,
       "starting_address": "8595",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4954,7 +4954,7 @@
     {
       "address": 8596,
       "starting_address": "8596",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4972,7 +4972,7 @@
     {
       "address": 8597,
       "starting_address": "8597",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -4990,7 +4990,7 @@
     {
       "address": 8598,
       "starting_address": "8598",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -5008,7 +5008,7 @@
     {
       "address": 8599,
       "starting_address": "8599",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -5026,7 +5026,7 @@
     {
       "address": 8600,
       "starting_address": "8600",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "HK.status",
@@ -5044,7 +5044,7 @@
     {
       "address": 24589,
       "starting_address": "24589",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5062,7 +5062,7 @@
     {
       "address": 24590,
       "starting_address": "24590",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5080,7 +5080,7 @@
     {
       "address": 24591,
       "starting_address": "24591",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5098,7 +5098,7 @@
     {
       "address": 24592,
       "starting_address": "24592",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5116,7 +5116,7 @@
     {
       "address": 24593,
       "starting_address": "24593",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5134,7 +5134,7 @@
     {
       "address": 24594,
       "starting_address": "24594",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5152,7 +5152,7 @@
     {
       "address": 24595,
       "starting_address": "24595",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5170,7 +5170,7 @@
     {
       "address": 24596,
       "starting_address": "24596",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5188,7 +5188,7 @@
     {
       "address": 24597,
       "starting_address": "24597",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5206,7 +5206,7 @@
     {
       "address": 24598,
       "starting_address": "24598",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5224,7 +5224,7 @@
     {
       "address": 24599,
       "starting_address": "24599",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5242,7 +5242,7 @@
     {
       "address": 24600,
       "starting_address": "24600",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5260,7 +5260,7 @@
     {
       "address": 24601,
       "starting_address": "24601",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5278,7 +5278,7 @@
     {
       "address": 24602,
       "starting_address": "24602",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5296,7 +5296,7 @@
     {
       "address": 24603,
       "starting_address": "24603",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5314,7 +5314,7 @@
     {
       "address": 24604,
       "starting_address": "24604",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5332,7 +5332,7 @@
     {
       "address": 24605,
       "starting_address": "24605",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5350,7 +5350,7 @@
     {
       "address": 24606,
       "starting_address": "24606",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5368,7 +5368,7 @@
     {
       "address": 24607,
       "starting_address": "24607",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5386,7 +5386,7 @@
     {
       "address": 24608,
       "starting_address": "24608",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5404,7 +5404,7 @@
     {
       "address": 24609,
       "starting_address": "24609",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5422,7 +5422,7 @@
     {
       "address": 24610,
       "starting_address": "24610",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5440,7 +5440,7 @@
     {
       "address": 24611,
       "starting_address": "24611",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5458,7 +5458,7 @@
     {
       "address": 24612,
       "starting_address": "24612",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5476,7 +5476,7 @@
     {
       "address": 24613,
       "starting_address": "24613",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5494,7 +5494,7 @@
     {
       "address": 24614,
       "starting_address": "24614",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5512,7 +5512,7 @@
     {
       "address": 24615,
       "starting_address": "24615",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5530,7 +5530,7 @@
     {
       "address": 24616,
       "starting_address": "24616",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.programm",
@@ -5548,7 +5548,7 @@
     {
       "address": 24624,
       "starting_address": "24624",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5566,7 +5566,7 @@
     {
       "address": 24625,
       "starting_address": "24625",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5584,7 +5584,7 @@
     {
       "address": 24626,
       "starting_address": "24626",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5602,7 +5602,7 @@
     {
       "address": 24627,
       "starting_address": "24627",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5620,7 +5620,7 @@
     {
       "address": 24628,
       "starting_address": "24628",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5638,7 +5638,7 @@
     {
       "address": 24629,
       "starting_address": "24629",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5656,7 +5656,7 @@
     {
       "address": 24630,
       "starting_address": "24630",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5674,7 +5674,7 @@
     {
       "address": 24631,
       "starting_address": "24631",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5692,7 +5692,7 @@
     {
       "address": 24632,
       "starting_address": "24632",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5710,7 +5710,7 @@
     {
       "address": 24633,
       "starting_address": "24633",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5728,7 +5728,7 @@
     {
       "address": 24634,
       "starting_address": "24634",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5746,7 +5746,7 @@
     {
       "address": 24635,
       "starting_address": "24635",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5764,7 +5764,7 @@
     {
       "address": 24636,
       "starting_address": "24636",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5782,7 +5782,7 @@
     {
       "address": 24637,
       "starting_address": "24637",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5800,7 +5800,7 @@
     {
       "address": 24638,
       "starting_address": "24638",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5818,7 +5818,7 @@
     {
       "address": 24639,
       "starting_address": "24639",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5836,7 +5836,7 @@
     {
       "address": 24640,
       "starting_address": "24640",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5854,7 +5854,7 @@
     {
       "address": 24641,
       "starting_address": "24641",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5872,7 +5872,7 @@
     {
       "address": 24642,
       "starting_address": "24642",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5890,7 +5890,7 @@
     {
       "address": 24643,
       "starting_address": "24643",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5908,7 +5908,7 @@
     {
       "address": 24644,
       "starting_address": "24644",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5926,7 +5926,7 @@
     {
       "address": 24645,
       "starting_address": "24645",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5944,7 +5944,7 @@
     {
       "address": 24646,
       "starting_address": "24646",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5962,7 +5962,7 @@
     {
       "address": 24647,
       "starting_address": "24647",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5980,7 +5980,7 @@
     {
       "address": 24648,
       "starting_address": "24648",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -5998,7 +5998,7 @@
     {
       "address": 24649,
       "starting_address": "24649",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -6016,7 +6016,7 @@
     {
       "address": 24650,
       "starting_address": "24650",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -6034,7 +6034,7 @@
     {
       "address": 24651,
       "starting_address": "24651",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_tag",
@@ -6052,7 +6052,7 @@
     {
       "address": 24659,
       "starting_address": "24659",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6070,7 +6070,7 @@
     {
       "address": 24660,
       "starting_address": "24660",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6088,7 +6088,7 @@
     {
       "address": 24661,
       "starting_address": "24661",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6106,7 +6106,7 @@
     {
       "address": 24662,
       "starting_address": "24662",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6124,7 +6124,7 @@
     {
       "address": 24663,
       "starting_address": "24663",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6142,7 +6142,7 @@
     {
       "address": 24664,
       "starting_address": "24664",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6160,7 +6160,7 @@
     {
       "address": 24665,
       "starting_address": "24665",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6178,7 +6178,7 @@
     {
       "address": 24666,
       "starting_address": "24666",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6196,7 +6196,7 @@
     {
       "address": 24667,
       "starting_address": "24667",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6214,7 +6214,7 @@
     {
       "address": 24668,
       "starting_address": "24668",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6232,7 +6232,7 @@
     {
       "address": 24669,
       "starting_address": "24669",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6250,7 +6250,7 @@
     {
       "address": 24670,
       "starting_address": "24670",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6268,7 +6268,7 @@
     {
       "address": 24671,
       "starting_address": "24671",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6286,7 +6286,7 @@
     {
       "address": 24672,
       "starting_address": "24672",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6304,7 +6304,7 @@
     {
       "address": 24673,
       "starting_address": "24673",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6322,7 +6322,7 @@
     {
       "address": 24674,
       "starting_address": "24674",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6340,7 +6340,7 @@
     {
       "address": 24675,
       "starting_address": "24675",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6358,7 +6358,7 @@
     {
       "address": 24676,
       "starting_address": "24676",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6376,7 +6376,7 @@
     {
       "address": 24677,
       "starting_address": "24677",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6394,7 +6394,7 @@
     {
       "address": 24678,
       "starting_address": "24678",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6412,7 +6412,7 @@
     {
       "address": 24679,
       "starting_address": "24679",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6430,7 +6430,7 @@
     {
       "address": 24680,
       "starting_address": "24680",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6448,7 +6448,7 @@
     {
       "address": 24681,
       "starting_address": "24681",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6466,7 +6466,7 @@
     {
       "address": 24682,
       "starting_address": "24682",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6484,7 +6484,7 @@
     {
       "address": 24683,
       "starting_address": "24683",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6502,7 +6502,7 @@
     {
       "address": 24684,
       "starting_address": "24684",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6520,7 +6520,7 @@
     {
       "address": 24685,
       "starting_address": "24685",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6538,7 +6538,7 @@
     {
       "address": 24686,
       "starting_address": "24686",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.raum_temperatur_soll_nacht",
@@ -6556,7 +6556,7 @@
     {
       "address": 24859,
       "starting_address": "24859",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6574,7 +6574,7 @@
     {
       "address": 24860,
       "starting_address": "24860",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6592,7 +6592,7 @@
     {
       "address": 24861,
       "starting_address": "24861",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6610,7 +6610,7 @@
     {
       "address": 24862,
       "starting_address": "24862",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6628,7 +6628,7 @@
     {
       "address": 24863,
       "starting_address": "24863",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6646,7 +6646,7 @@
     {
       "address": 24864,
       "starting_address": "24864",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6664,7 +6664,7 @@
     {
       "address": 24865,
       "starting_address": "24865",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6682,7 +6682,7 @@
     {
       "address": 24866,
       "starting_address": "24866",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6700,7 +6700,7 @@
     {
       "address": 24867,
       "starting_address": "24867",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6718,7 +6718,7 @@
     {
       "address": 24868,
       "starting_address": "24868",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6736,7 +6736,7 @@
     {
       "address": 24869,
       "starting_address": "24869",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6754,7 +6754,7 @@
     {
       "address": 24870,
       "starting_address": "24870",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6772,7 +6772,7 @@
     {
       "address": 24871,
       "starting_address": "24871",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6790,7 +6790,7 @@
     {
       "address": 24872,
       "starting_address": "24872",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6808,7 +6808,7 @@
     {
       "address": 24873,
       "starting_address": "24873",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6826,7 +6826,7 @@
     {
       "address": 24874,
       "starting_address": "24874",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6844,7 +6844,7 @@
     {
       "address": 24875,
       "starting_address": "24875",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6862,7 +6862,7 @@
     {
       "address": 24876,
       "starting_address": "24876",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6880,7 +6880,7 @@
     {
       "address": 24877,
       "starting_address": "24877",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6898,7 +6898,7 @@
     {
       "address": 24878,
       "starting_address": "24878",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6916,7 +6916,7 @@
     {
       "address": 24879,
       "starting_address": "24879",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6934,7 +6934,7 @@
     {
       "address": 24880,
       "starting_address": "24880",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6952,7 +6952,7 @@
     {
       "address": 24881,
       "starting_address": "24881",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6970,7 +6970,7 @@
     {
       "address": 24882,
       "starting_address": "24882",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -6988,7 +6988,7 @@
     {
       "address": 24883,
       "starting_address": "24883",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -7006,7 +7006,7 @@
     {
       "address": 24884,
       "starting_address": "24884",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -7024,7 +7024,7 @@
     {
       "address": 24885,
       "starting_address": "24885",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -7042,7 +7042,7 @@
     {
       "address": 24886,
       "starting_address": "24886",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_anforderung",
@@ -7060,7 +7060,7 @@
     {
       "address": 24894,
       "starting_address": "24894",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7078,7 +7078,7 @@
     {
       "address": 24895,
       "starting_address": "24895",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7096,7 +7096,7 @@
     {
       "address": 24896,
       "starting_address": "24896",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7114,7 +7114,7 @@
     {
       "address": 24897,
       "starting_address": "24897",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7132,7 +7132,7 @@
     {
       "address": 24898,
       "starting_address": "24898",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7150,7 +7150,7 @@
     {
       "address": 24899,
       "starting_address": "24899",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7168,7 +7168,7 @@
     {
       "address": 24900,
       "starting_address": "24900",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7186,7 +7186,7 @@
     {
       "address": 24901,
       "starting_address": "24901",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7204,7 +7204,7 @@
     {
       "address": 24902,
       "starting_address": "24902",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7222,7 +7222,7 @@
     {
       "address": 24903,
       "starting_address": "24903",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7240,7 +7240,7 @@
     {
       "address": 24904,
       "starting_address": "24904",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7258,7 +7258,7 @@
     {
       "address": 24905,
       "starting_address": "24905",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7276,7 +7276,7 @@
     {
       "address": 24906,
       "starting_address": "24906",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7294,7 +7294,7 @@
     {
       "address": 24907,
       "starting_address": "24907",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7312,7 +7312,7 @@
     {
       "address": 24908,
       "starting_address": "24908",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7330,7 +7330,7 @@
     {
       "address": 24909,
       "starting_address": "24909",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7348,7 +7348,7 @@
     {
       "address": 24910,
       "starting_address": "24910",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7366,7 +7366,7 @@
     {
       "address": 24911,
       "starting_address": "24911",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7384,7 +7384,7 @@
     {
       "address": 24912,
       "starting_address": "24912",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7402,7 +7402,7 @@
     {
       "address": 24913,
       "starting_address": "24913",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7420,7 +7420,7 @@
     {
       "address": 24914,
       "starting_address": "24914",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7438,7 +7438,7 @@
     {
       "address": 24915,
       "starting_address": "24915",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7456,7 +7456,7 @@
     {
       "address": 24916,
       "starting_address": "24916",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7474,7 +7474,7 @@
     {
       "address": 24917,
       "starting_address": "24917",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7492,7 +7492,7 @@
     {
       "address": 24918,
       "starting_address": "24918",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7510,7 +7510,7 @@
     {
       "address": 24919,
       "starting_address": "24919",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7528,7 +7528,7 @@
     {
       "address": 24920,
       "starting_address": "24920",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7546,7 +7546,7 @@
     {
       "address": 24921,
       "starting_address": "24921",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "HK.modbus_temperatur",
@@ -7564,7 +7564,7 @@
     {
       "address": 24936,
       "starting_address": "24936",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.hk_modbus_temperatur_auswahl",

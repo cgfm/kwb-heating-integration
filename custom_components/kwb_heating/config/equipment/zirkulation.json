@@ -4,7 +4,7 @@
     {
       "address": 8929,
       "starting_address": "8929",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -22,7 +22,7 @@
     {
       "address": 8930,
       "starting_address": "8930",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -40,7 +40,7 @@
     {
       "address": 8931,
       "starting_address": "8931",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -58,7 +58,7 @@
     {
       "address": 8932,
       "starting_address": "8932",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -76,7 +76,7 @@
     {
       "address": 8933,
       "starting_address": "8933",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -94,7 +94,7 @@
     {
       "address": 8934,
       "starting_address": "8934",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -112,7 +112,7 @@
     {
       "address": 8935,
       "starting_address": "8935",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -130,7 +130,7 @@
     {
       "address": 8936,
       "starting_address": "8936",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -148,7 +148,7 @@
     {
       "address": 8937,
       "starting_address": "8937",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -166,7 +166,7 @@
     {
       "address": 8938,
       "starting_address": "8938",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -184,7 +184,7 @@
     {
       "address": 8939,
       "starting_address": "8939",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -202,7 +202,7 @@
     {
       "address": 8940,
       "starting_address": "8940",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -220,7 +220,7 @@
     {
       "address": 8941,
       "starting_address": "8941",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -238,7 +238,7 @@
     {
       "address": 8942,
       "starting_address": "8942",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -256,7 +256,7 @@
     {
       "address": 8943,
       "starting_address": "8943",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -274,7 +274,7 @@
     {
       "address": 8944,
       "starting_address": "8944",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -292,7 +292,7 @@
     {
       "address": 8945,
       "starting_address": "8945",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -310,7 +310,7 @@
     {
       "address": 8946,
       "starting_address": "8946",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -328,7 +328,7 @@
     {
       "address": 8947,
       "starting_address": "8947",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -346,7 +346,7 @@
     {
       "address": 8948,
       "starting_address": "8948",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -364,7 +364,7 @@
     {
       "address": 8949,
       "starting_address": "8949",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -382,7 +382,7 @@
     {
       "address": 8950,
       "starting_address": "8950",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -400,7 +400,7 @@
     {
       "address": 8951,
       "starting_address": "8951",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -418,7 +418,7 @@
     {
       "address": 8952,
       "starting_address": "8952",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -436,7 +436,7 @@
     {
       "address": 8953,
       "starting_address": "8953",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -454,7 +454,7 @@
     {
       "address": 8954,
       "starting_address": "8954",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -472,7 +472,7 @@
     {
       "address": 8955,
       "starting_address": "8955",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -490,7 +490,7 @@
     {
       "address": 8956,
       "starting_address": "8956",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -508,7 +508,7 @@
     {
       "address": 8957,
       "starting_address": "8957",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.value",
@@ -526,7 +526,7 @@
     {
       "address": 8958,
       "starting_address": "8958",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.i_temperatur.status",
@@ -544,7 +544,7 @@
     {
       "address": 8963,
       "starting_address": "8963",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -562,7 +562,7 @@
     {
       "address": 8964,
       "starting_address": "8964",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -580,7 +580,7 @@
     {
       "address": 8965,
       "starting_address": "8965",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -598,7 +598,7 @@
     {
       "address": 8966,
       "starting_address": "8966",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -616,7 +616,7 @@
     {
       "address": 8967,
       "starting_address": "8967",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -634,7 +634,7 @@
     {
       "address": 8968,
       "starting_address": "8968",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -652,7 +652,7 @@
     {
       "address": 8969,
       "starting_address": "8969",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -670,7 +670,7 @@
     {
       "address": 8970,
       "starting_address": "8970",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -688,7 +688,7 @@
     {
       "address": 8971,
       "starting_address": "8971",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -706,7 +706,7 @@
     {
       "address": 8972,
       "starting_address": "8972",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -724,7 +724,7 @@
     {
       "address": 8973,
       "starting_address": "8973",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -742,7 +742,7 @@
     {
       "address": 8974,
       "starting_address": "8974",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -760,7 +760,7 @@
     {
       "address": 8975,
       "starting_address": "8975",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -778,7 +778,7 @@
     {
       "address": 8976,
       "starting_address": "8976",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -796,7 +796,7 @@
     {
       "address": 8977,
       "starting_address": "8977",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "ZIRK.o_pumpe",
@@ -814,7 +814,7 @@
     {
       "address": 24828,
       "starting_address": "24828",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -832,7 +832,7 @@
     {
       "address": 24829,
       "starting_address": "24829",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -850,7 +850,7 @@
     {
       "address": 24830,
       "starting_address": "24830",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -868,7 +868,7 @@
     {
       "address": 24831,
       "starting_address": "24831",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -886,7 +886,7 @@
     {
       "address": 24832,
       "starting_address": "24832",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -904,7 +904,7 @@
     {
       "address": 24833,
       "starting_address": "24833",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -922,7 +922,7 @@
     {
       "address": 24834,
       "starting_address": "24834",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -940,7 +940,7 @@
     {
       "address": 24835,
       "starting_address": "24835",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -958,7 +958,7 @@
     {
       "address": 24836,
       "starting_address": "24836",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -976,7 +976,7 @@
     {
       "address": 24837,
       "starting_address": "24837",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -994,7 +994,7 @@
     {
       "address": 24838,
       "starting_address": "24838",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -1012,7 +1012,7 @@
     {
       "address": 24839,
       "starting_address": "24839",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -1030,7 +1030,7 @@
     {
       "address": 24840,
       "starting_address": "24840",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -1048,7 +1048,7 @@
     {
       "address": 24841,
       "starting_address": "24841",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",
@@ -1066,7 +1066,7 @@
     {
       "address": 24842,
       "starting_address": "24842",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "ZIRK.programm",

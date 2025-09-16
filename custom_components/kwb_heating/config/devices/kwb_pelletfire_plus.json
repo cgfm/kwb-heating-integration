@@ -4,7 +4,7 @@
     {
       "address": 8197,
       "starting_address": "8197",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_kesseltemp_ist.value",
@@ -22,7 +22,7 @@
     {
       "address": 8198,
       "starting_address": "8198",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_kesseltemp_ist.status",
@@ -40,7 +40,7 @@
     {
       "address": 8199,
       "starting_address": "8199",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.kesseltemp_soll",
@@ -58,7 +58,7 @@
     {
       "address": 8200,
       "starting_address": "8200",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.DO_Kesselpumpe",
@@ -76,7 +76,7 @@
     {
       "address": 8201,
       "starting_address": "8201",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "KSM.kesselpumpe_steuerstufe",
@@ -94,7 +94,7 @@
     {
       "address": 8202,
       "starting_address": "8202",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_ruecklauftemp_ist.value",
@@ -112,7 +112,7 @@
     {
       "address": 8203,
       "starting_address": "8203",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_ruecklauftemp_ist.status",
@@ -130,7 +130,7 @@
     {
       "address": 8206,
       "starting_address": "8206",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.verbraucher_anforderung",
@@ -148,7 +148,7 @@
     {
       "address": 8207,
       "starting_address": "8207",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.brennerleistung",
@@ -166,7 +166,7 @@
     {
       "address": 8208,
       "starting_address": "8208",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.kesselstatus_anzeige",
@@ -184,7 +184,7 @@
     {
       "address": 8209,
       "starting_address": "8209",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "KSM.Betriebsminuten_Summe",
@@ -202,7 +202,7 @@
     {
       "address": 8213,
       "starting_address": "8213",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MF2.Glutbettniveau",
@@ -220,7 +220,7 @@
     {
       "address": 8214,
       "starting_address": "8214",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.O2Ist",
@@ -238,7 +238,7 @@
     {
       "address": 8215,
       "starting_address": "8215",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_flammtemp_ist.value",
@@ -256,7 +256,7 @@
     {
       "address": 8216,
       "starting_address": "8216",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_flammtemp_ist.status",
@@ -274,7 +274,7 @@
     {
       "address": 8218,
       "starting_address": "8218",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.AI_Feuerraum_Unterdruck",
@@ -292,7 +292,7 @@
     {
       "address": 8219,
       "starting_address": "8219",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MF2.i_ausbrandtemp.value",
@@ -310,7 +310,7 @@
     {
       "address": 8220,
       "starting_address": "8220",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MF2.i_ausbrandtemp.status",
@@ -328,7 +328,7 @@
     {
       "address": 8221,
       "starting_address": "8221",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "AK.pl_geblaesestufe",
@@ -346,7 +346,7 @@
     {
       "address": 8222,
       "starting_address": "8222",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MF2.SLGeblaesestufe",
@@ -364,7 +364,7 @@
     {
       "address": 8223,
       "starting_address": "8223",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.Saugzugstufe",
@@ -382,7 +382,7 @@
     {
       "address": 8224,
       "starting_address": "8224",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.ServiceintervallReststunden",
@@ -400,7 +400,7 @@
     {
       "address": 8226,
       "starting_address": "8226",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "FS.o_motor_foerdersystem_1",
@@ -418,7 +418,7 @@
     {
       "address": 8227,
       "starting_address": "8227",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_extern1",
@@ -436,7 +436,7 @@
     {
       "address": 8228,
       "starting_address": "8228",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_extern2",
@@ -454,7 +454,7 @@
     {
       "address": 8229,
       "starting_address": "8229",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.i_extern3",
@@ -472,7 +472,7 @@
     {
       "address": 8230,
       "starting_address": "8230",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MF2.Brennstofffaktor",
@@ -490,7 +490,7 @@
     {
       "address": 8233,
       "starting_address": "8233",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "FS.pelletsverbrauch",
@@ -508,7 +508,7 @@
     {
       "address": 8236,
       "starting_address": "8236",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "AK.externe_brennerleistung",
@@ -526,7 +526,7 @@
     {
       "address": 8237,
       "starting_address": "8237",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "AK.externe_kessel_solltemperatur",
@@ -544,7 +544,7 @@
     {
       "address": 8238,
       "starting_address": "8238",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.DO_Pelletssauger",
@@ -562,7 +562,7 @@
     {
       "address": 8239,
       "starting_address": "8239",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MF2.i_aschebehaelter_90_prz",
@@ -580,7 +580,7 @@
     {
       "address": 8240,
       "starting_address": "8240",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "MF2.luftverschiebung_gesamt",
@@ -598,7 +598,7 @@
     {
       "address": 8250,
       "starting_address": "8250",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SYSTEM.i_aussen_temperatur.value",
@@ -616,7 +616,7 @@
     {
       "address": 8251,
       "starting_address": "8251",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "SYSTEM.i_aussen_temperatur.status",
@@ -634,7 +634,7 @@
     {
       "address": 9044,
       "starting_address": "9044",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.o_multifunktionsausgang_1",
@@ -652,7 +652,7 @@
     {
       "address": 9045,
       "starting_address": "9045",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.o_multifunktionsausgang_2",
@@ -670,7 +670,7 @@
     {
       "address": 9046,
       "starting_address": "9046",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.o_multifunktionsausgang_3",
@@ -688,7 +688,7 @@
     {
       "address": 9047,
       "starting_address": "9047",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.o_multifunktionsausgang_4",
@@ -706,7 +706,7 @@
     {
       "address": 9495,
       "starting_address": "9495",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.modbus_ueberhitzung",
@@ -724,7 +724,7 @@
     {
       "address": 9496,
       "starting_address": "9496",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.modbus_waermeabnahme_max",
@@ -742,7 +742,7 @@
     {
       "address": 9498,
       "starting_address": "9498",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "KSM.i_drehzahl_saugzug",
@@ -760,7 +760,7 @@
     {
       "address": 9877,
       "starting_address": "9877",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "AK.anforderung_bl_ursache",
@@ -778,7 +778,7 @@
     {
       "address": 9878,
       "starting_address": "9878",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "04",
       "unit": "u32",
       "access": "KSM.waermemenge_gesamt",
@@ -796,7 +796,7 @@
     {
       "address": 9970,
       "starting_address": "9970",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "s16",
       "access": "KSM.kesselstatus_anzeige_simple",
@@ -814,7 +814,7 @@
     {
       "address": 9988,
       "starting_address": "9988",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "04",
       "unit": "u16",
       "access": "FS.pelletverbrauch_reset_counter",
@@ -832,7 +832,7 @@
     {
       "address": 24576,
       "starting_address": "24576",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "AK.anlage_ein",
@@ -850,7 +850,7 @@
     {
       "address": 24579,
       "starting_address": "24579",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "MF2.KesseltempSoll1",
@@ -868,7 +868,7 @@
     {
       "address": 24580,
       "starting_address": "24580",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "MF2.KesseltempSoll2",
@@ -886,7 +886,7 @@
     {
       "address": 24581,
       "starting_address": "24581",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.RuecklauftempMin",
@@ -904,7 +904,7 @@
     {
       "address": 24583,
       "starting_address": "24583",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "AK.externe_vorgabe",
@@ -922,7 +922,7 @@
     {
       "address": 24584,
       "starting_address": "24584",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "AK.kesselprogramm",
@@ -940,7 +940,7 @@
     {
       "address": 24849,
       "starting_address": "24849",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "u16",
       "access": "KSM.modbus_lifetick",
@@ -958,7 +958,7 @@
     {
       "address": 24850,
       "starting_address": "24850",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03",
       "unit": "u16",
       "access": "KSM.modbus_commit_lifetick",
@@ -976,7 +976,7 @@
     {
       "address": 24851,
       "starting_address": "24851",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.modbus_kesseltemp_vorgabe",
@@ -994,7 +994,7 @@
     {
       "address": 24852,
       "starting_address": "24852",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.modbus_leistung_vorgabe",
@@ -1012,7 +1012,7 @@
     {
       "address": 24854,
       "starting_address": "24854",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.modbus_kesselanforderung",
@@ -1030,7 +1030,7 @@
     {
       "address": 24927,
       "starting_address": "24927",
-      "description": "2",
+      "number_of_registers": "2",
       "data_type": "03, 06, 16",
       "unit": "u32",
       "access": "KSM.restmenge_brennstofflager",
@@ -1048,7 +1048,7 @@
     {
       "address": 24932,
       "starting_address": "24932",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.modbus_puffertemperatur_oben.value",
@@ -1066,7 +1066,7 @@
     {
       "address": 24933,
       "starting_address": "24933",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.modbus_puffertemperatur_oben.status",
@@ -1084,7 +1084,7 @@
     {
       "address": 24934,
       "starting_address": "24934",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.modbus_puffertemperatur_unten.value",
@@ -1102,7 +1102,7 @@
     {
       "address": 24935,
       "starting_address": "24935",
-      "description": "1",
+      "number_of_registers": "1",
       "data_type": "03, 06, 16",
       "unit": "s16",
       "access": "KSM.modbus_puffertemperatur_unten.status",
