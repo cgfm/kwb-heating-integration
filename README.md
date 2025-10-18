@@ -6,28 +6,31 @@
 
 A comprehensive Home Assistant Custom Component for **KWB heating systems** with Modbus TCP/RTU support.
 
-> **⚠️ Testing Status**: This integration has been tested primarily with **KWB CF2**, **2 heating circuits**, and **1 buffer storage**. Testing with other KWB models and configurations is very welcome! Please help expand compatibility by testing with your setup and reporting results via [GitHub Issues](https://github.com/cgfm/kwb-heating-integration/issues).
-
-> **🇩🇪 Language**: Currently all created entitys and states are german only. If anyone could provide me with a english version of the modbus config a multilanguage support could become an option. 
+> **⚠️ Testing Status**: This integration has been tested primarily with **KWB CF2**, **2 heating circuits**, and **1 buffer storage**. Testing with other KWB models and configurations is very welcome! Please help expand compatibility by testing with your setup and reporting results via [GitHub Issues](https://github.com/cgfm/kwb-heating-integration/issues). 
 
 ## 🔥 Features
 
 - **Complete Modbus TCP/RTU integration** for KWB heating systems
+- **Multi-version & multi-language support** - Automatic version detection and language selection
 - **UI-based configuration** via Home Assistant Config Flow
 - **Access Level System** - UserLevel vs. ExpertLevel for different user groups
 - **Equipment-based configuration** - heating circuits, buffer storage, solar, etc.
 - **All entity types** - sensors, switches, input fields and select menus
 - **Robust communication** with automatic reconnection
 - **Comprehensive device support** for all common KWB models
+- **ModbusInfo Converter** - Tool to convert KWB Excel files to JSON configuration
 
 ## 🏠 Supported KWB Devices
 
 - **KWB Combifire** (all variants)
-- **KWB Easyfire** (all variants) 
+- **KWB Easyfire** (all variants including EF3)
 - **KWB Multifire** (all variants)
 - **KWB Pelletfire Plus** (all variants)
-- **KWB CF1** & **CF1.5** & **CF2** (all variants)
+- **KWB CF1** & **CF1.5** & **CF2** (all variants with Combifire base)
+- **KWB EasyAir Plus** (heat pump, v25.7.1+)
 - Additional KWB devices via universal register configuration
+
+**Note**: CF models (CF 1, CF 1.5, CF 2) inherit all Combifire registers plus model-specific registers.
 
 ## 📋 Requirements
 
@@ -80,14 +83,16 @@ A comprehensive Home Assistant Custom Component for **KWB heating systems** with
 
 Configure the number of your equipment components:
 
-- **Heating Circuits** (0-4)
-- **Buffer Storage** (0-2) 
-- **DHW Storage** (0-2)
-- **Secondary Heat Sources** (0-2)
-- **Circulation** (0-1)
-- **Solar** (0-1)
-- **Boiler Sequence** (0-1)
-- **Heat Meters** (0-4)
+- **Heating Circuits** (0-14) - Up to 14 heating circuits supported
+- **Buffer Storage** (0-15) - Up to 15 buffer storage tanks
+- **DHW Storage** (0-14) - Domestic hot water storage tanks
+- **Secondary Heat Sources** (0-14) - Additional heat sources
+- **Circulation** (0-15) - Hot water circulation pumps
+- **Solar** (0-14) - Solar thermal systems
+- **Boiler Sequence** (0-8) - Boiler sequence control
+- **Heat Meters** (0-36) - Heat quantity meters
+
+**Note**: Actual limits depend on your KWB model and firmware version. The integration automatically filters registers based on equipment count.
 
 ## 📊 Entities
 
@@ -132,17 +137,60 @@ Migration from legacy "rohwert" entities:
 
 ## 🌍 Language Support
 
-Currently supported languages:
-- **German (de)** - Complete translations for all UI elements and alarm codes
-- **English (en)** - UI translations available, alarm code translations in development
+The integration supports **automatic version detection** and **multi-language configurations**:
 
-**Important Note**: All status messages, entity names, and equipment designations from the KWB system are displayed in **German**, as they come directly from the KWB heating system. This includes:
-- Equipment names (Heizkreis, Pufferspeicher, etc.)
-- Status values (Ein/Aus, Automatik/Handbetrieb, etc.)
-- Alarm descriptions and error messages
-- Operating mode descriptions
+### Supported Languages & Versions
+- **German (de)** - Complete support for v22.7.1 and v25.7.1
+- **English (en)** - Complete support for v22.7.1 and v25.7.1
 
-The integration automatically detects your Home Assistant language setting for the user interface. To contribute translations for additional languages, please see our [translation guidelines](https://github.com/cgfm/kwb-heating-integration/discussions).
+### Auto-Detection
+1. **Version Detection**: Automatically detects KWB firmware version via Modbus register 8192
+2. **Language Selection**: Three modes available during setup
+   - **Automatic**: Uses Home Assistant language setting (recommended)
+   - **German (de)**: Force German configuration
+   - **English (en)**: Force English configuration
+
+### Configuration File Structure
+The integration uses version and language-specific configuration files:
+```
+config/versions/
+├── v22.7.1/
+│   ├── de/  # German version 22.7.1
+│   └── en/  # English version 22.7.1
+└── v25.7.1/
+    ├── de/  # German version 25.7.1
+    └── en/  # English version 25.7.1
+```
+
+**Note**: Register names, equipment labels, and status values within the configuration files are in their respective language (German or English), as provided by KWB's ModbusInfo documentation.
+
+## 🔄 ModbusInfo Converter
+
+The **modbusinfoConverter** tool converts KWB's official ModbusInfo Excel files into JSON configuration format.
+
+### Key Features
+- Multi-version support (v22.7.1, v25.7.1, etc.)
+- Multi-language processing (German & English Excel files)
+- Automatic device categorization (universal, device-specific, equipment)
+- Combifire inheritance (CF models inherit from Combifire base)
+- Consistent English filenames for cross-language compatibility
+
+### Quick Start
+```bash
+cd modbusinfoConverter
+# Place ModbusInfo-{lang}-V{version}.xlsx files in modbusinfo/ directory
+python3 convert_modbusinfo.py
+# Generated files appear in config/versions/
+```
+
+### Documentation
+For detailed usage instructions, see [modbusinfoConverter/README.md](modbusinfoConverter/README.md)
+
+### Use Cases
+- **Add new KWB firmware versions**: Convert new ModbusInfo Excel files
+- **Add language support**: Convert English/other language Excel files
+- **Update existing configs**: Re-generate from updated Excel files
+- **Development**: Test with modified register definitions
 
 ## 🔧 Advanced Configuration
 
@@ -249,7 +297,23 @@ pip install -r requirements-dev.txt
 
 # Run tests
 pytest tests/
+
+# Convert ModbusInfo Excel files (optional)
+cd modbusinfoConverter
+pip install openpyxl
+python3 convert_modbusinfo.py
 ```
+
+### Working with ModbusInfo Files
+
+If you have access to KWB's official ModbusInfo Excel files:
+
+1. Place Excel files in `modbusinfoConverter/modbusinfo/`
+2. Run `python3 convert_modbusinfo.py`
+3. Generated JSON configs appear in `modbusinfoConverter/config/versions/`
+4. Copy to integration: `cp -r config/versions/ custom_components/kwb_heating/config/`
+
+See [modbusinfoConverter/README.md](modbusinfoConverter/README.md) for details.
 
 ## 📄 License
 
@@ -257,9 +321,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 🙏 Acknowledgments
 
-- **KWB** for comprehensive Modbus documentation
+- **KWB** for comprehensive Modbus documentation (ModbusInfo Excel files)
 - **Home Assistant Community** for continuous support
 - All **beta testers** for valuable feedback
+- **Contributors** who helped with multi-language support and version management
 
 ## 📞 Support
 

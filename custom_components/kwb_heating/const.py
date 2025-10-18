@@ -21,6 +21,7 @@ CONF_ACCESS_LEVEL = "access_level"
 CONF_UPDATE_INTERVAL = "update_interval"
 CONF_DEVICE_TYPE = "device_type"
 CONF_DEVICE_NAME = "device_name"
+CONF_LANGUAGE = "language"
 
 # System Register Configuration (mit Slider im Config Flow)
 CONF_HEATING_CIRCUITS = "heating_circuits"           # Heizkreise

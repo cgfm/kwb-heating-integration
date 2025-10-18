@@ -1,0 +1,96 @@
+{
+  "registers": [
+    {
+      "starting_address": 10270,
+      "name": "Forward flow temp., act.",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "index": "EAP 0",
+      "unit_value_table": "1/10°C",
+      "id": "2631",
+      "parameter": "EAPDEV.vorlauftemperatur_ist"
+    },
+    {
+      "starting_address": 10271,
+      "name": "Forward flow temp., act.",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "index": "EAP 1",
+      "unit_value_table": "1/10°C",
+      "id": "2631",
+      "parameter": "EAPDEV.vorlauftemperatur_ist"
+    },
+    {
+      "starting_address": 10278,
+      "name": "Return flow temp., actual",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "index": "EAP 0",
+      "unit_value_table": "1/10°C",
+      "id": "2632",
+      "parameter": "EAPDEV.ruecklauftemperatur_ist"
+    },
+    {
+      "starting_address": 10279,
+      "name": "Return flow temp., actual",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "index": "EAP 1",
+      "unit_value_table": "1/10°C",
+      "id": "2632",
+      "parameter": "EAPDEV.ruecklauftemperatur_ist"
+    },
+    {
+      "starting_address": 10438,
+      "name": "Status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "index": "EAP 0",
+      "unit_value_table": "eap_status_t",
+      "id": "2701",
+      "parameter": "EAPDEV.status"
+    },
+    {
+      "starting_address": 10439,
+      "name": "Status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "index": "EAP 1",
+      "unit_value_table": "eap_status_t",
+      "id": "2701",
+      "parameter": "EAPDEV.status"
+    },
+    {
+      "starting_address": 24849,
+      "name": "Modbus Lifetick",
+      "data_type": "03",
+      "type": "u16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "id": "2069",
+      "parameter": "KSM.modbus_lifetick"
+    },
+    {
+      "starting_address": 24850,
+      "name": "Modbus Commit Lifetick",
+      "data_type": "03",
+      "type": "u16",
+      "user_level": "read",
+      "expert_level": "read",
+      "id": "2070",
+      "parameter": "KSM.modbus_commit_lifetick"
+    }
+  ]
+}

@@ -80,3 +80,7 @@ claude*
 coordination/
 memory/
 Backup/
+
+modbusinfoConverter/config/*
+modbusinfoConverter/modbusinfo/*
+modbusinfoConverter/__pycache__/*

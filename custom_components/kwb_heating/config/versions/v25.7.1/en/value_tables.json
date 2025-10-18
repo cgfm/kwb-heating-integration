@@ -1,0 +1,373 @@
+{
+  "value_tables": {
+    "kfk_kesselstatus_t": {
+      "0": "Off",
+      "1": "Standby",
+      "2": "Ignition",
+      "3": "operation",
+      "4": "Afterrun",
+      "5": "Fault",
+      "6": "Ready (LW)",
+      "7": "operation (LW)"
+    },
+    "wmm_rolle_t": {
+      "0": "Autonomous",
+      "1": "BMSC",
+      "2": "Powerfire 1 150-300kW",
+      "3": "EasyAir Plus",
+      "4": "Powerfire 2 400-500kW"
+    },
+    "system_gui_kessel_typ_t": {
+      "0": "-",
+      "1": "KWB Easyfire",
+      "2": "KWB CF 2",
+      "3": "KWB Combifire",
+      "4": "KWB Multifire",
+      "5": "KWB Pelletfire+",
+      "6": "KWB CF 1",
+      "7": "None",
+      "8": "KWB CF 1.5",
+      "9": "KWB Easyfire 3",
+      "10": "KWB CF 1E"
+    },
+    "ak_externe_vorgabe_t": {
+      "0": "Off",
+      "1": "Temp.",
+      "2": "Power",
+      "3": "Modbus",
+      "4": "Modbus"
+    },
+    "ak_anf_bl_ursache_t": {
+      "1": "Normal operation",
+      "2": "Measuring",
+      "3": "Chimney sweep",
+      "4": "External",
+      "5": "External overheated",
+      "6": "Clear stoker",
+      "7": "Min. for cleaning",
+      "8": "Stoker, overheating",
+      "9": "Cycle operation",
+      "10": "Buffer management",
+      "11": "BuMgmt overheated",
+      "12": "Modbus",
+      "13": "Modbus Clee"
+    },
+    "ak_kesselprogramm_t": {
+      "0": "request",
+      "1": "Time program",
+      "2": "Continuous operation",
+      "3": "Modbus temperature",
+      "4": "Modbus output+temperature"
+    },
+    "system_sensor_status_t": {
+      "0": "Faulty",
+      "1": "Missing",
+      "2": "OK"
+    },
+    "cf2_betriebsmodus_t": {
+      "0": "None",
+      "1": "Log wood",
+      "2": "Pellets",
+      "3": "Log wood (PM afterrun)",
+      "4": "Relay test"
+    },
+    "ksm_kesselstatus_anzeige_t": {
+      "0": "Off",
+      "1": "Measuring mode",
+      "2": "Operation (Cleaning):",
+      "3": "Measuring",
+      "4": "operation",
+      "5": "Afterrun",
+      "6": "Restart",
+      "7": "Fault afterrun",
+      "8": "Fault Off",
+      "9": "Maintenance",
+      "10": "Ready (-IgnStart)",
+      "11": "Ignite start suction",
+      "12": "Ignition fill fuel supply",
+      "13": "Ignition feeding 1",
+      "14": "Ignition feeding 3",
+      "15": "Ignition heating",
+      "16": "Heating - complete ignition",
+      "17": "Ignition feeding 2",
+      "18": "Ignition wait",
+      "19": "Complete ignition",
+      "20": "1. IB operation",
+      "21": "Ready (-Ext1)",
+      "22": "Ready (-SecondBoiler)",
+      "23": "Ready (-CS)",
+      "24": "Ready (-Cleaning)",
+      "25": "Ready (+Stop)",
+      "26": "Ready (-Ext3)",
+      "27": "Ready (-lambda probe)",
+      "30": "Ready (-Requ)",
+      "31": "Ready (+Wait time)",
+      "32": "Ready (+Requ)",
+      "34": "Empty out operation",
+      "35": "Off",
+      "36": "Heating-up",
+      "37": "Wait ignition requ.",
+      "38": "Wait ignition rel.",
+      "39": "Start ignition",
+      "40": "Ignition",
+      "41": "Heating",
+      "42": "Fire maintenance",
+      "43": "Fire off",
+      "44": "Fault fire out",
+      "45": "Door open",
+      "46": "Overheating",
+      "47": "Fault, fire maintenance",
+      "49": "Sh off, PM released",
+      "50": "Start pellet module",
+      "51": "Pellet module locked",
+      "52": "Maintenance",
+      "53": "Operation before maint.",
+      "54": "Maintenance switch off"
+    },
+    "cf2_max_befuellgrad_anzeige_t": {
+      "0": "None",
+      "1": "One third",
+      "2": "Two thirds",
+      "3": "Full"
+    },
+    "cf2_automatische_zuendung_t": {
+      "0": "Off",
+      "1": "Selection",
+      "2": "Request",
+      "3": "immediately"
+    },
+    "hk_programm_t": {
+      "0": "Automatic",
+      "1": "Frost protection",
+      "2": "Off",
+      "3": "Comfort",
+      "4": "Reduct"
+    },
+    "hk_status_t": {
+      "0": "Reduct",
+      "1": "Comfort",
+      "2": "Frost protection",
+      "3": "Holiday",
+      "4": "Off",
+      "5": "Screed",
+      "6": "Max. heat reduction",
+      "7": "Max. heat reduction",
+      "8": "Modbus Forward flow temp.",
+      "9": "Modbus Reduct auto",
+      "10": "Modbus Comfort auto",
+      "11": "Modbus Frost protection",
+      "12": "Premixer operation",
+      "13": "Modbus Reduct",
+      "14": "Modbus Comfort"
+    },
+    "ksm_verbraucher_anforderung_t": {
+      "0": "Off",
+      "1": "Heat.circ",
+      "2": "DHWC",
+      "3": "Buffer"
+    },
+    "puffer_programm_t": {
+      "0": "Time",
+      "1": "Temperature",
+      "2": "Off",
+      "3": "Time+",
+      "4": "Summer"
+    },
+    "puffer_o_umschaltventil_t": {
+      "0": "Not available",
+      "1": "Top",
+      "2": "Bottom"
+    },
+    "boiler_programm_t": {
+      "0": "Time",
+      "1": "Temp.",
+      "2": "Off"
+    },
+    "boiler_status_t": {
+      "0": "Fault",
+      "1": "Off",
+      "2": "Legionella protection",
+      "3": "Holiday",
+      "4": "One-time charge",
+      "5": "Outside of charging time",
+      "6": "Charge to target temp.",
+      "7": "Temp. sufficient",
+      "8": "Blocking protection",
+      "9": "Waiting, pump release",
+      "10": "Boiler overheating",
+      "11": "SHS, overheating",
+      "12": "max. heat reduction",
+      "13": "Afterrun",
+      "14": "Afterrun (waiting release)"
+    },
+    "zirk_programm_t": {
+      "0": "Off",
+      "1": "Automatic",
+      "2": "Continuous operation"
+    },
+    "zk_status_t": {
+      "0": "Off",
+      "1": "operation",
+      "2": "Overheating",
+      "3": "Delay",
+      "4": "Fault",
+      "5": "Minimum runtime",
+      "6": "Idle time",
+      "7": "operation Modbus"
+    },
+    "solar_status_t": {
+      "0": "Off",
+      "1": "Manual mode",
+      "2": "Charge storage tank 1",
+      "3": "Charge storage tank 2",
+      "4": "Fault",
+      "5": "Solar protection",
+      "6": "Back cooling 1",
+      "7": "Back cooling 2",
+      "8": "Frost protection"
+    },
+    "solar_status_ursache_t": {
+      "0": "Program Off",
+      "1": "Manual mode",
+      "2": "Collector tem. sufficient",
+      "3": "Tem.Diff.Coll/stor.tank 1 ins.",
+      "4": "Max. tem. storage tank 1 exc.",
+      "5": "Max.tem. storage tank 2 ex.",
+      "6": "Absolute priority (collector temperature too low)",
+      "7": "Blocking protection",
+      "8": "Collector tem.too high",
+      "9": "Alarm active in solar circuit",
+      "10": "Max.tem.Stor.tank 1+2 exce.",
+      "11": "Coll.min.temp.undershot",
+      "12": "Frost protection",
+      "13": "Interval function",
+      "14": "Back cooling"
+    },
+    "kfs_profile_t": {
+      "0": "Winter",
+      "1": "Summer"
+    },
+    "kfs_angeforderte_kessel_t": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "hk_modbus_temperatur_auswahl_t": {
+      "0": "Forward flow temp.",
+      "1": "Room temp."
+    },
+    "comfortenergy_status_t": {
+      "0": "disabled",
+      "1": "offline",
+      "2": "online"
+    },
+    "hk_modbus_programm_t": {
+      "0": "Frost protection",
+      "1": "Reduct  auto",
+      "2": "Comfort auto",
+      "3": "Reduct",
+      "4": "Comfort"
+    },
+    "kesselseriennummer_san_code_t": {
+      "0": "...",
+      "1": "000-",
+      "2": "02SAN",
+      "3": "03SAN",
+      "4": "04SAN",
+      "5": "05SAN",
+      "6": "06SAN",
+      "7": "07SAN",
+      "8": "08SAN",
+      "9": "09SAN",
+      "10": "10SAN",
+      "11": "11SAN",
+      "12": "12SAN",
+      "13": "13SAN",
+      "14": "14SAN",
+      "15": "15SAN",
+      "16": "16SAN",
+      "17": "17SAN",
+      "18": "18SAN",
+      "19": "19SAN",
+      "20": "20SAN",
+      "21": "21SAN",
+      "22": "22SAN",
+      "23": "23SAN",
+      "24": "24SAN",
+      "25": "25SAN",
+      "26": "26SAN",
+      "27": "27SAN",
+      "28": "28SAN",
+      "29": "29SAN",
+      "30": "30SAN",
+      "31": "31SAN",
+      "32": "32SAN",
+      "33": "33SAN",
+      "34": "34SAN",
+      "35": "35SAN",
+      "36": "36SAN",
+      "37": "37SAN",
+      "38": "38SAN",
+      "39": "39SAN",
+      "40": "40SAN",
+      "41": "41SAN",
+      "42": "42SAN",
+      "43": "43SAN",
+      "44": "44SAN",
+      "45": "45SAN",
+      "46": "46SAN",
+      "47": "47SAN",
+      "48": "48SAN",
+      "49": "49SAN",
+      "50": "50SAN"
+    },
+    "boiler_quelle_t": {
+      "0": "Heat pump 1",
+      "1": "Buffer",
+      "2": "HP1 or buffer"
+    },
+    "eap_status_t": {
+      "0": "Off",
+      "1": "Operation",
+      "17": "ESC block"
+    },
+    "uebergabestation_status_t": {
+      "0": "Off",
+      "1": "Forward flow",
+      "2": "operation",
+      "3": "Return flow temp. limitation",
+      "4": "Afterrun",
+      "5": "Emergency operation"
+    },
+    "zus_wq_wp_status_t": {
+      "0": "Off",
+      "1": "operation",
+      "2": "Minimum runtime",
+      "3": "Idle time"
+    },
+    "eap_erweiterter_betriebsstatus_t": {
+      "0": "Off",
+      "1": "Heating heating circuit",
+      "2": "Cooling",
+      "4": "Heating hot water"
+    },
+    "eap_anforderung_ursache_t": {
+      "0": "Off",
+      "1": "Heating heating circuit",
+      "2": "Heating hot water",
+      "3": "Cooling",
+      "4": "Relay test",
+      "5": "Test mode"
+    },
+    "eap_zustand_t": {
+      "0": "Ok",
+      "1": "Error",
+      "2": "Warning"
+    }
+  }
+}

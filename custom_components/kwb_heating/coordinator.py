@@ -32,6 +32,8 @@ from .const import (
 from .data_conversion import KWBDataConverter
 from .modbus_client import KWBModbusClient
 from .async_modular_register_manager import AsyncModularRegisterManager
+from .version_manager import VersionManager
+from .language_manager import LanguageManager
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -46,19 +48,19 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         self.port = entry.data[CONF_PORT]
         self.slave_id = entry.data[CONF_SLAVE_ID]
         self.access_level = entry.data[CONF_ACCESS_LEVEL]
-        
+
         # Merge data and options for complete configuration
         self.config = {**entry.data, **entry.options}
-        
+
         update_interval = self.config.get(CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL)
-        
+
         super().__init__(
             hass,
             _LOGGER,
             name=DOMAIN,
             update_interval=timedelta(seconds=update_interval),
         )
-        
+
         # Initialize modbus client
         self.modbus_client = KWBModbusClient(
             host=self.host,
@@ -66,11 +68,65 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             slave_id=self.slave_id
         )
 
+        # Initialize version and language managers
+        self.version_manager = VersionManager()
+        self.language_manager = LanguageManager()
+
+        # Version and language info (will be detected on first update)
+        self.detected_version: str | None = None
+        self.current_language: str = self.config.get("language", "auto")
+
+    async def _detect_version(self) -> None:
+        """Detect software version from the device."""
+        try:
+            # Ensure connection
+            if not self.modbus_client._connected:
+                await self.modbus_client.connect()
+
+            # Detect version using version manager
+            version = await self.version_manager.detect_version(self.modbus_client)
+            self.detected_version = version
+
+            _LOGGER.info("Detected KWB software version: %s", version)
+
+        except Exception as exc:
+            _LOGGER.warning("Could not detect version, using default: %s", exc)
+            self.detected_version = self.version_manager.default_version
+
     async def _initialize_register_manager(self) -> None:
         """Initialize or reinitialize the register manager asynchronously."""
-        # Initialize async register manager
-        self.register_manager = AsyncModularRegisterManager()
-        
+        # Detect version if not already done
+        if not self.detected_version:
+            await self._detect_version()
+
+        # Resolve language
+        ha_locale = self.hass.config.language if self.hass else None
+        user_language = self.config.get("language", "auto")
+
+        # Get supported languages for detected version
+        supported_languages = self.version_manager.get_supported_languages(
+            self.detected_version or "22.7.1"
+        )
+
+        resolved_language = self.language_manager.resolve_language(
+            user_preference=user_language if user_language != "auto" else None,
+            ha_locale=ha_locale,
+            supported_languages=supported_languages
+        )
+
+        _LOGGER.info(
+            "Initializing register manager for version %s, language %s",
+            self.detected_version, resolved_language
+        )
+
+        # Initialize async register manager with version and language
+        self.register_manager = AsyncModularRegisterManager(
+            version=self.detected_version,
+            language=resolved_language,
+            version_manager=self.version_manager,
+            language_manager=self.language_manager
+        )
+
         # Initialize data converter with value tables (after async init)
         await self.register_manager.initialize()
         value_tables = self.register_manager.value_tables
@@ -287,17 +343,20 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         # Use custom device name if available, otherwise fallback to device type or generic name
         device_name = self.config.get(CONF_DEVICE_NAME) or getattr(self, 'device_type', None) or "KWB Heating System"
         model_name = getattr(self, 'device_type', None) or "Heating System"
-        
+
         # Create consistent device identifier based on host and slave_id
         # This ensures all entities are linked to the same device
         device_identifier = f"{self.host}_{self.slave_id}"
-        
+
+        # Include detected version in sw_version
+        sw_version = self.detected_version if self.detected_version else "Unknown"
+
         return {
             "identifiers": {(DOMAIN, device_identifier)},
             "name": device_name,
             "manufacturer": "KWB",
             "model": model_name,
-            "sw_version": "1.0.0",
+            "sw_version": sw_version,
             "configuration_url": f"http://{self.host}",
         }
 

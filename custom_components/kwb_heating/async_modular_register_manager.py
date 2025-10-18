@@ -16,22 +16,53 @@ _LOGGER = logging.getLogger(__name__)
 class AsyncModularRegisterManager:
     """Manages KWB register definitions from modular configuration files (async)."""
 
-    def __init__(self, config_path: str | None = None):
-        """Initialize the async modular register manager."""
+    def __init__(
+        self,
+        config_path: str | None = None,
+        version: str | None = None,
+        language: str | None = None,
+        version_manager=None,
+        language_manager=None
+    ):
+        """Initialize the async modular register manager.
+
+        Args:
+            config_path: Path to configuration directory. If None, uses default.
+            version: Software version (e.g., "22.7.1"). If None, uses current config.
+            language: Language code (e.g., "de", "en"). If None, uses "de".
+            version_manager: Optional VersionManager instance for version-aware config loading.
+            language_manager: Optional LanguageManager instance for language-aware config loading.
+        """
+        # Store version and language info
+        self._version = version
+        self._language = language or "de"
+        self._version_manager = version_manager
+        self._language_manager = language_manager
+
+        # Determine config directory
         if config_path is None:
-            # Default to config directory in the same directory
             config_path = str(Path(__file__).parent / "config")
-        
-        self.config_dir = Path(config_path)
+
+        # If version and language are provided with managers, use version-specific path
+        if version and language and version_manager:
+            try:
+                self.config_dir = version_manager.get_config_path(version, language)
+                _LOGGER.info("Using version-specific config path: %s", self.config_dir)
+            except Exception as exc:
+                _LOGGER.warning("Could not get version-specific path, using default: %s", exc)
+                self.config_dir = Path(config_path)
+        else:
+            self.config_dir = Path(config_path)
+
         self._meta_config: dict[str, Any] = {}
         self._universal_registers: list[dict] = []
         self._value_tables: dict[str, dict] = {}
         self._alarm_codes: list[dict] = []
-        
+
         # Cache for loaded device and equipment configs
         self._device_cache: dict[str, list[dict]] = {}
         self._equipment_cache: dict[str, list[dict]] = {}
-        
+
         self._initialized = False
 
     async def initialize(self) -> None:
@@ -79,12 +110,13 @@ class AsyncModularRegisterManager:
         # Map device type to filename
         device_file_mapping = {
             "KWB Easyfire": "kwb_easyfire.json",
-            "KWB Multifire": "kwb_multifire.json", 
+            "KWB Multifire": "kwb_multifire.json",
             "KWB Pelletfire+": "kwb_pelletfire_plus.json",
             "KWB Combifire": "kwb_combifire.json",
             "KWB CF 2": "kwb_cf2.json",
             "KWB CF 1": "kwb_cf1.json",
-            "KWB CF 1.5": "kwb_cf1_5.json"
+            "KWB CF 1.5": "kwb_cf1_5.json",
+            "KWB EasyAir Plus": "kwb_easyair_plus.json"
         }
         
         filename = device_file_mapping.get(device_type)
@@ -119,14 +151,15 @@ class AsyncModularRegisterManager:
         
         # Map equipment type to filename
         equipment_file_mapping = {
-            "Heizkreise": "heizkreise.json",
-            "Pufferspeicher": "pufferspeicher.json",
-            "Brauchwasserspeicher": "brauchwasser.json", 
-            "Zweitwärmequellen": "zweitwaermequellen.json",
-            "Zirkulation": "zirkulation.json",
+            "Heizkreise": "heating_circuits.json",
+            "Pufferspeicher": "buffer_storage.json",
+            "Brauchwasserspeicher": "dhw_storage.json",
+            "Zweitwärmequellen": "secondary_heat_sources.json",
+            "Zirkulation": "circulation.json",
             "Solar": "solar.json",
-            "Kesselfolgeschaltung": "kesselfolge.json",
-            "Wärmemengenzähler": "waermemengenzaehler.json"
+            "Kesselfolgeschaltung": "boiler_sequence.json",
+            "Wärmemengenzähler": "heat_meters.json",
+            "Übergabestation": "transfer_station.json"
         }
         
         filename = equipment_file_mapping.get(equipment_type)
@@ -425,3 +458,48 @@ class AsyncModularRegisterManager:
     def alarm_codes(self) -> list[dict]:
         """Get alarm codes."""
         return self._alarm_codes
+
+    async def reload_for_version_language(self, version: str, language: str) -> None:
+        """Reload configuration for a different version and language.
+
+        Args:
+            version: Software version
+            language: Language code
+        """
+        _LOGGER.info("Reloading configuration for version %s, language %s", version, language)
+
+        # Update version and language
+        self._version = version
+        self._language = language
+
+        # Update config directory if version manager is available
+        if self._version_manager:
+            try:
+                self.config_dir = self._version_manager.get_config_path(version, language)
+                _LOGGER.info("Updated config path to: %s", self.config_dir)
+            except Exception as exc:
+                _LOGGER.error("Could not update config path: %s", exc)
+                return
+
+        # Clear all caches
+        self._universal_registers = []
+        self._value_tables = {}
+        self._alarm_codes = []
+        self._device_cache.clear()
+        self._equipment_cache.clear()
+
+        # Mark as uninitialized and reload
+        self._initialized = False
+        await self.initialize()
+
+        _LOGGER.info("Configuration reloaded successfully")
+
+    @property
+    def current_version(self) -> str | None:
+        """Get current version."""
+        return self._version
+
+    @property
+    def current_language(self) -> str:
+        """Get current language."""
+        return self._language

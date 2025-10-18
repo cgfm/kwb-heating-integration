@@ -24,6 +24,7 @@ from .const import (
     DEFAULT_ACCESS_LEVEL,
     CONF_DEVICE_TYPE,
     CONF_DEVICE_NAME,
+    CONF_LANGUAGE,
     CONF_HEATING_CIRCUITS,
     CONF_BUFFER_STORAGE,
     CONF_DHW_STORAGE,
@@ -45,12 +46,20 @@ _LOGGER = logging.getLogger(__name__)
 # Device types from kwb_config.json
 DEVICE_TYPES = {
     "KWB Easyfire": "KWB Easyfire",
-    "KWB Multifire": "KWB Multifire", 
+    "KWB Multifire": "KWB Multifire",
     "KWB Pelletfire+": "KWB Pelletfire+",
     "KWB Combifire": "KWB Combifire",
     "KWB CF 2": "KWB CF 2",
     "KWB CF 1": "KWB CF 1",
     "KWB CF 1.5": "KWB CF 1.5",
+    "KWB EasyAir Plus": "KWB EasyAir Plus",
+}
+
+# Language options
+LANGUAGES = {
+    "auto": "Automatic (use Home Assistant language)",
+    "de": "Deutsch",
+    "en": "English",
 }
 
 STEP_USER_DATA_SCHEMA = vol.Schema({
@@ -63,6 +72,7 @@ STEP_DEVICE_DATA_SCHEMA = vol.Schema({
     vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
     vol.Required(CONF_DEVICE_NAME): cv.string,
     vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
+    vol.Optional(CONF_LANGUAGE, default="auto"): vol.In(LANGUAGES.keys()),
     vol.Optional(CONF_UPDATE_INTERVAL, default=DEFAULT_UPDATE_INTERVAL): vol.All(vol.Coerce(int), vol.Range(min=10, max=300)),
 })
 
@@ -211,6 +221,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
             vol.Required(CONF_DEVICE_NAME, default=suggested_name): cv.string,
             vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
+            vol.Optional(CONF_LANGUAGE, default="auto"): vol.In(LANGUAGES.keys()),
             vol.Optional(CONF_UPDATE_INTERVAL, default=DEFAULT_UPDATE_INTERVAL): vol.All(vol.Coerce(int), vol.Range(min=10, max=300)),
         })
 
@@ -315,8 +326,13 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                                              entry.data.get(CONF_DEVICE_NAME, "KWB Heating"))
             ): cv.string,
             vol.Optional(
-                CONF_HEATING_CIRCUITS, 
-                default=current_equipment.get(CONF_HEATING_CIRCUITS, 
+                CONF_LANGUAGE,
+                default=current_equipment.get(CONF_LANGUAGE,
+                                             entry.data.get(CONF_LANGUAGE, "auto"))
+            ): vol.In(LANGUAGES.keys()),
+            vol.Optional(
+                CONF_HEATING_CIRCUITS,
+                default=current_equipment.get(CONF_HEATING_CIRCUITS,
                                              entry.data.get(CONF_HEATING_CIRCUITS, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
             vol.Optional(
