@@ -30,19 +30,21 @@ CONF_DHW_STORAGE = "dhw_storage"                     # Brauchwasserspeicher
 CONF_SECONDARY_HEAT_SOURCES = "secondary_heat_sources" # Zweitwärmequellen
 CONF_CIRCULATION = "circulation"                     # Zirkulation
 CONF_SOLAR = "solar"                                 # Solar
-CONF_BOILER_SEQUENCE = "boiler_sequence"             # Kesselfolgeschaltung  
+CONF_BOILER_SEQUENCE = "boiler_sequence"             # Kesselfolgeschaltung
 CONF_HEAT_METERS = "heat_meters"                     # Wärmemengenzähler
+CONF_TRANSFER_STATIONS = "transfer_stations"         # Übergabestationen
 
 # System Register Mapping (JSON Schlüssel -> Config Konstante)
 SYSTEM_REGISTER_MAPPING = {
     "Heizkreise": CONF_HEATING_CIRCUITS,
-    "Pufferspeicher": CONF_BUFFER_STORAGE, 
+    "Pufferspeicher": CONF_BUFFER_STORAGE,
     "Brauchwasserspeicher": CONF_DHW_STORAGE,
     "Zweitwärmequellen": CONF_SECONDARY_HEAT_SOURCES,
     "Zirkulation": CONF_CIRCULATION,
     "Solar": CONF_SOLAR,
     "Kesselfolgeschaltung": CONF_BOILER_SEQUENCE,
     "Wärmemengenzähler": CONF_HEAT_METERS,
+    "Übergabestation": CONF_TRANSFER_STATIONS,
 }
 
 # Access Levels

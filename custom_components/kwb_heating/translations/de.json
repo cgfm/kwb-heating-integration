@@ -31,7 +31,12 @@
           "circulation": "Anzahl Zirkulationen (0-15)",
           "solar": "Anzahl Solar-Anlagen (0-14)",
           "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-8)",
-          "heat_meters": "Anzahl Wärmemengenzähler (0-36)"
+          "heat_meters": "Anzahl Wärmemengenzähler (0-36)",
+          "transfer_stations": "Anzahl Übergabestationen (0-14)",
+          "language": "Sprache"
+        },
+        "data_description": {
+          "language": "Wählen Sie die Sprache für Entitätsnamen und Beschreibungen"
         }
       }
     },
@@ -62,8 +67,13 @@
           "solar": "Anzahl Solar-Anlagen (0-14)",
           "boiler_sequence": "Anzahl Kesselfolgeschaltungen (0-8)",
           "heat_meters": "Anzahl Wärmemengenzähler (0-36)",
+          "transfer_stations": "Anzahl Übergabestationen (0-14)",
+          "language": "Sprache",
           "access_level": "Zugriffsstufe",
           "update_interval": "Update-Intervall (Sekunden)"
+        },
+        "data_description": {
+          "language": "Wählen Sie die Sprache für Entitätsnamen und Beschreibungen"
         }
       }
     },
@@ -71,6 +81,15 @@
       "invalid_device_name": "Gerätename darf nicht leer sein.",
       "device_name_too_long": "Gerätename ist zu lang (maximal 50 Zeichen).",
       "unknown": "Unbekannter Fehler beim Aktualisieren der Konfiguration."
+    }
+  },
+  "selector": {
+    "language": {
+      "options": {
+        "auto": "Automatisch (Home Assistant Sprache verwenden)",
+        "de": "Deutsch",
+        "en": "Englisch"
+      }
     }
   }
 }

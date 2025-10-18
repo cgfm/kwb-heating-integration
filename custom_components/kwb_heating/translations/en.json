@@ -31,7 +31,12 @@
           "circulation": "Number of circulations (0-15)",
           "solar": "Number of solar systems (0-14)",
           "boiler_sequence": "Number of boiler sequences (0-8)",
-          "heat_meters": "Number of heat meters (0-36)"
+          "heat_meters": "Number of heat meters (0-36)",
+          "transfer_stations": "Number of transfer stations (0-14)",
+          "language": "Language"
+        },
+        "data_description": {
+          "language": "Select the language for entity names and descriptions"
         }
       }
     },
@@ -62,8 +67,13 @@
           "solar": "Number of solar systems (0-14)",
           "boiler_sequence": "Number of boiler sequences (0-8)",
           "heat_meters": "Number of heat meters (0-36)",
+          "transfer_stations": "Number of transfer stations (0-14)",
+          "language": "Language",
           "access_level": "Access level",
           "update_interval": "Update interval (seconds)"
+        },
+        "data_description": {
+          "language": "Select the language for entity names and descriptions"
         }
       }
     },
@@ -71,6 +81,15 @@
       "invalid_device_name": "Device name cannot be empty.",
       "device_name_too_long": "Device name is too long (maximum 50 characters).",
       "unknown": "Unknown error while updating configuration."
+    }
+  },
+  "selector": {
+    "language": {
+      "options": {
+        "auto": "Automatic (use Home Assistant language)",
+        "de": "German",
+        "en": "English"
+      }
     }
   }
 }

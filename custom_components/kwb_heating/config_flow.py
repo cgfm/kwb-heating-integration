@@ -10,6 +10,7 @@ from homeassistant.const import CONF_HOST, CONF_NAME, CONF_PORT
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.data_entry_flow import FlowResult
 from homeassistant.exceptions import HomeAssistantError
+from homeassistant.helpers import selector
 import homeassistant.helpers.config_validation as cv
 
 from .const import (
@@ -33,6 +34,7 @@ from .const import (
     CONF_SOLAR,
     CONF_BOILER_SEQUENCE,
     CONF_HEAT_METERS,
+    CONF_TRANSFER_STATIONS,
     SYSTEM_REGISTER_MAPPING,
 )
 from .modbus_client import KWBModbusClient
@@ -72,7 +74,13 @@ STEP_DEVICE_DATA_SCHEMA = vol.Schema({
     vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
     vol.Required(CONF_DEVICE_NAME): cv.string,
     vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
-    vol.Optional(CONF_LANGUAGE, default="auto"): vol.In(LANGUAGES.keys()),
+    vol.Optional(CONF_LANGUAGE, default="auto"): selector.SelectSelector(
+        selector.SelectSelectorConfig(
+            options=["auto", "de", "en"],
+            translation_key="language",
+            mode=selector.SelectSelectorMode.DROPDOWN,
+        )
+    ),
     vol.Optional(CONF_UPDATE_INTERVAL, default=DEFAULT_UPDATE_INTERVAL): vol.All(vol.Coerce(int), vol.Range(min=10, max=300)),
 })
 
@@ -108,6 +116,10 @@ STEP_EQUIPMENT_DATA_SCHEMA = vol.Schema({
     # Slider für Anzahl der Wärmemengenzähler (0 = deaktiviert, 1-36 = Anzahl)
     # 216 Register verfügbar, realistisch max. 36 Wärmemengenzähler
     vol.Optional(CONF_HEAT_METERS, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=36)),
+
+    # Slider für Anzahl der Übergabestationen (0 = deaktiviert, 1-14 = Anzahl)
+    # Transfer stations configuration
+    vol.Optional(CONF_TRANSFER_STATIONS, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
 })
 
 
@@ -221,7 +233,13 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
             vol.Required(CONF_DEVICE_NAME, default=suggested_name): cv.string,
             vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
-            vol.Optional(CONF_LANGUAGE, default="auto"): vol.In(LANGUAGES.keys()),
+            vol.Optional(CONF_LANGUAGE, default="auto"): selector.SelectSelector(
+                selector.SelectSelectorConfig(
+                    options=["auto", "de", "en"],
+                    translation_key="language",
+                    mode=selector.SelectSelectorMode.DROPDOWN,
+                )
+            ),
             vol.Optional(CONF_UPDATE_INTERVAL, default=DEFAULT_UPDATE_INTERVAL): vol.All(vol.Coerce(int), vol.Range(min=10, max=300)),
         })
 
@@ -329,7 +347,13 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                 CONF_LANGUAGE,
                 default=current_equipment.get(CONF_LANGUAGE,
                                              entry.data.get(CONF_LANGUAGE, "auto"))
-            ): vol.In(LANGUAGES.keys()),
+            ): selector.SelectSelector(
+                selector.SelectSelectorConfig(
+                    options=["auto", "de", "en"],
+                    translation_key="language",
+                    mode=selector.SelectSelectorMode.DROPDOWN,
+                )
+            ),
             vol.Optional(
                 CONF_HEATING_CIRCUITS,
                 default=current_equipment.get(CONF_HEATING_CIRCUITS,
@@ -366,10 +390,15 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                                              entry.data.get(CONF_BOILER_SEQUENCE, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=8)),
             vol.Optional(
-                CONF_HEAT_METERS, 
+                CONF_HEAT_METERS,
                 default=current_equipment.get(CONF_HEAT_METERS,
                                              entry.data.get(CONF_HEAT_METERS, 0))
             ): vol.All(vol.Coerce(int), vol.Range(min=0, max=36)),
+            vol.Optional(
+                CONF_TRANSFER_STATIONS,
+                default=current_equipment.get(CONF_TRANSFER_STATIONS,
+                                             entry.data.get(CONF_TRANSFER_STATIONS, 0))
+            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
             vol.Optional(
                 CONF_ACCESS_LEVEL,
                 default=current_equipment.get(CONF_ACCESS_LEVEL,
