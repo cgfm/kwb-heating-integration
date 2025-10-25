@@ -512,7 +512,7 @@
     },
     {
       "starting_address": 9970,
-      "name": "Boiler status",
+      "name": "Pellet boiler status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
