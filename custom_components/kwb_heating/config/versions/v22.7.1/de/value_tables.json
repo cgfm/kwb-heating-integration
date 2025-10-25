@@ -218,6 +218,10 @@
     "hk_modbus_temperatur_auswahl_t": {
       "0": "Vorlauftemp. Soll",
       "1": "Raumtemp. Soll"
+    },
+    "system_ein_aus_t": {
+      "0": "Aus",
+      "1": "Ein"
     }
   }
 }

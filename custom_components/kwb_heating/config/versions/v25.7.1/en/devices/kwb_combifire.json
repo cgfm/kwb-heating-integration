@@ -533,7 +533,7 @@
     },
     {
       "starting_address": 24576,
-      "name": "Boiler on/off",
+      "name": "Pellet boiler on/off",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",

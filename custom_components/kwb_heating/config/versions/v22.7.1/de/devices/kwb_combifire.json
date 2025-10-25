@@ -533,7 +533,7 @@
     },
     {
       "starting_address": 24576,
-      "name": "Kessel Ein/Aus",
+      "name": "Pelletkessel Ein/Aus",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",

@@ -374,9 +374,10 @@ class KWBModbusClient:
         # Read registers individually or in small batches to avoid Modbus limits
         for reg in sorted_registers:
             address = reg["starting_address"]
-            
+
             # Determine count based on data type (u32/s32 need 2 registers)
-            data_type = reg.get("unit", "u16")
+            # Use 'type' field from config, fallback to 'unit' field
+            data_type = reg.get("type", reg.get("unit", "u16"))
             count = 2 if data_type in ["u32", "s32"] else 1
             
             try:

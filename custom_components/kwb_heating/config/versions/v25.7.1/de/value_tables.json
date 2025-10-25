@@ -399,6 +399,10 @@
       "0": "Ok",
       "1": "Fehler",
       "2": "Warnung"
+    },
+    "system_ein_aus_t": {
+      "0": "Aus",
+      "1": "Ein"
     }
   }
 }

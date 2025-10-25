@@ -218,6 +218,10 @@
     "hk_modbus_temperatur_auswahl_t": {
       "0": "Forward flow temp.",
       "1": "Room temp."
+    },
+    "system_ein_aus_t": {
+      "0": "Off",
+      "1": "On"
     }
   }
 }

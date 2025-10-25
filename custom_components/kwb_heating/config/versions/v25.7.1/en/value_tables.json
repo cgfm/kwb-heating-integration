@@ -368,6 +368,10 @@
       "0": "Ok",
       "1": "Error",
       "2": "Warning"
+    },
+    "system_ein_aus_t": {
+      "0": "Off",
+      "1": "On"
     }
   }
 }
