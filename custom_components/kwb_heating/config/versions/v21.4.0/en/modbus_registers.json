@@ -1,0 +1,120 @@
+{
+  "universal_registers": [
+    {
+      "starting_address": 8192,
+      "name": "Software (major)",
+      "data_type": "04",
+      "type": "u16",
+      "user_level": "read",
+      "expert_level": "read",
+      "id": "1163",
+      "parameter": "SYSTEM.sw_version.major"
+    },
+    {
+      "starting_address": 8193,
+      "name": "Software (minor)",
+      "data_type": "04",
+      "type": "u16",
+      "user_level": "read",
+      "expert_level": "read",
+      "id": "1163",
+      "parameter": "SYSTEM.sw_version.minor"
+    },
+    {
+      "starting_address": 8194,
+      "name": "Software (patch)",
+      "data_type": "04",
+      "type": "u16",
+      "user_level": "read",
+      "expert_level": "read",
+      "id": "1163",
+      "parameter": "SYSTEM.sw_version.patch"
+    },
+    {
+      "starting_address": 8195,
+      "name": "Revision",
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "number_of_registers": 2,
+      "id": "1171",
+      "parameter": "SYSTEM.sw_revision"
+    },
+    {
+      "starting_address": 8204,
+      "name": "System OK",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "614",
+      "parameter": "KSM.anlage_keine_stoerung"
+    },
+    {
+      "starting_address": 8205,
+      "name": "Boiler fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1192",
+      "parameter": "KSM.anlage_stoerung"
+    },
+    {
+      "starting_address": 8252,
+      "name": "Number of alarms",
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "number_of_registers": 2,
+      "id": "431",
+      "parameter": "SYSTEM.alarme_total"
+    },
+    {
+      "starting_address": 8254,
+      "name": "Number of pending alarms",
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "number_of_registers": 2,
+      "id": "432",
+      "parameter": "SYSTEM.alarme_offen"
+    },
+    {
+      "starting_address": 24582,
+      "name": "Rectify alarms",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1144",
+      "parameter": "SYSTEM.alarme_beheben_von_extern"
+    },
+    {
+      "starting_address": 24849,
+      "name": "Modbus Lifetick",
+      "data_type": "03",
+      "type": "u16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "id": "2069",
+      "parameter": "KSM.modbus_lifetick"
+    },
+    {
+      "starting_address": 24850,
+      "name": "Modbus Commit Lifetick",
+      "data_type": "03",
+      "type": "u16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "id": "2070",
+      "parameter": "KSM.modbus_commit_lifetick"
+    }
+  ]
+}

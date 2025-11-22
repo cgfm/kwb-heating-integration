@@ -76,6 +76,7 @@ secrets.yaml
 *.temp
 *~
 
+.claude/
 claude*
 coordination/
 memory/
