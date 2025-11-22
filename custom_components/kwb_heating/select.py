@@ -32,13 +32,43 @@ async def async_setup_entry(
         await coordinator._initialize_register_manager()
     
     # Create select entities for read-write registers with value tables
+    # Exclude boolean value tables (they become switches instead)
     for register in coordinator._registers:
-        if (register.get("user_level") == "readwrite" and 
-            coordinator.data_converter.has_value_table(register)):
+        if (register.get("user_level") == "readwrite" and
+            coordinator.data_converter.has_value_table(register) and
+            not _is_boolean_value_table(register, coordinator.data_converter)):
             entities.append(KWBSelect(coordinator, register))
     
     _LOGGER.info("Setting up %d KWB select entities", len(entities))
     async_add_entities(entities)
+
+
+def _is_boolean_value_table(register: dict, data_converter) -> bool:
+    """Check if value table represents boolean values (on/off, enabled/disabled)."""
+    unit_value_table = register.get("unit_value_table", "")
+    if not unit_value_table or unit_value_table not in data_converter.value_tables:
+        return False
+
+    value_table = data_converter.value_tables[unit_value_table]
+    if not isinstance(value_table, dict):
+        return False
+
+    # Check if it's a simple boolean mapping (0/1, true/false, etc.)
+    values = list(value_table.keys())
+    if len(values) == 2:
+        # Common boolean patterns
+        boolean_patterns = [
+            ["0", "1"],
+            ["false", "true"],
+            ["off", "on"],
+            ["disabled", "enabled"],
+            ["aus", "ein"],  # German
+        ]
+
+        values_lower = [str(v).lower() for v in sorted(values)]
+        return any(sorted(pattern) == values_lower for pattern in boolean_patterns)
+
+    return False
 
 
 class KWBSelect(CoordinatorEntity, SelectEntity):

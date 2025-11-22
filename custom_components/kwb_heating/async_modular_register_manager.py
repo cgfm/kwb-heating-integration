@@ -76,10 +76,10 @@ class AsyncModularRegisterManager:
     async def _load_base_configuration(self) -> None:
         """Load base configuration (meta, universal, value tables) asynchronously."""
         try:
-            # Load universal registers
-            universal_path = self.config_dir / "universal_registers.json"
-            if universal_path.exists():
-                async with aiofiles.open(universal_path, 'r', encoding='utf-8') as f:
+            # Load universal registers from modbus_registers.json
+            modbus_registers_path = self.config_dir / "modbus_registers.json"
+            if modbus_registers_path.exists():
+                async with aiofiles.open(modbus_registers_path, 'r', encoding='utf-8') as f:
                     content = await f.read()
                     universal_data = json.loads(content)
                     self._universal_registers = universal_data.get("universal_registers", [])
