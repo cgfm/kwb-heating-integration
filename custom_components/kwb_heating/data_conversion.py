@@ -17,33 +17,41 @@ class KWBDataConverter:
     
     def convert_from_modbus(self, raw_value: int, register_config: dict[str, Any]) -> Any:
         """Convert raw Modbus value to Home Assistant value."""
+        # First, handle signed integers if the register type is s16 or s32
+        data_type = register_config.get("type", register_config.get("unit", "u16"))
+        converted_value = self._convert_signed_value(raw_value, data_type)
+
         unit_value_table = register_config.get("unit_value_table", "")
-        
+
         if not unit_value_table:
-            # No conversion needed - return raw value
-            return raw_value
-        
+            # No conversion needed - return converted value (might be negative now)
+            return converted_value
+
         # Check if it's a value table reference
         if unit_value_table in self.value_tables:
-            return self._convert_from_value_table(raw_value, unit_value_table)
-        
+            return self._convert_from_value_table(converted_value, unit_value_table)
+
         # Check if it's a scaling factor (like "1/10°C", "1/100bar", etc.)
-        return self._convert_from_scaling_factor(raw_value, unit_value_table)
+        return self._convert_from_scaling_factor(converted_value, unit_value_table)
     
     def convert_to_modbus(self, ha_value: Any, register_config: dict[str, Any]) -> int:
         """Convert Home Assistant value to raw Modbus value."""
         unit_value_table = register_config.get("unit_value_table", "")
-        
+
+        # First convert the value (apply scaling or value table)
         if not unit_value_table:
-            # No conversion needed - return as integer
-            return int(ha_value)
-        
-        # Check if it's a value table reference
-        if unit_value_table in self.value_tables:
-            return self._convert_to_value_table(ha_value, unit_value_table)
-        
-        # Check if it's a scaling factor
-        return self._convert_to_scaling_factor(ha_value, unit_value_table)
+            # No conversion needed - use value as is
+            modbus_value = int(ha_value)
+        elif unit_value_table in self.value_tables:
+            # Convert using value table
+            modbus_value = self._convert_to_value_table(ha_value, unit_value_table)
+        else:
+            # Convert using scaling factor
+            modbus_value = self._convert_to_scaling_factor(ha_value, unit_value_table)
+
+        # Then handle signed to unsigned conversion for s16/s32 types
+        data_type = register_config.get("type", register_config.get("unit", "u16"))
+        return self._convert_to_unsigned_value(modbus_value, data_type)
     
     def convert_to_ha_value(self, register: dict, raw_value: int) -> Any:
         """Convert raw Modbus value to Home Assistant value (new interface)."""
@@ -52,7 +60,49 @@ class KWBDataConverter:
     def convert_to_modbus_value(self, register: dict, ha_value: Any) -> int:
         """Convert Home Assistant value to Modbus value (new interface)."""
         return self.convert_to_modbus(ha_value, register)
-    
+
+    def _convert_signed_value(self, raw_value: int, data_type: str) -> int:
+        """Convert unsigned Modbus value to signed value if needed.
+
+        Modbus returns values as unsigned integers (0-65535 for 16-bit, 0-4294967295 for 32-bit),
+        but some registers use signed integers. This method converts them properly.
+        """
+        if data_type == "s16":
+            # Convert 16-bit unsigned to signed
+            # If value > 32767, it represents a negative number in two's complement
+            if raw_value > 32767:
+                return raw_value - 65536
+            return raw_value
+        elif data_type == "s32":
+            # Convert 32-bit unsigned to signed
+            # If value > 2147483647, it represents a negative number in two's complement
+            if raw_value > 2147483647:
+                return raw_value - 4294967296
+            return raw_value
+        else:
+            # For u16, u32, and unknown types, return as is
+            return raw_value
+
+    def _convert_to_unsigned_value(self, signed_value: int, data_type: str) -> int:
+        """Convert signed value to unsigned Modbus value if needed.
+
+        When writing to Modbus, we need to convert signed integers back to
+        unsigned format that Modbus expects.
+        """
+        if data_type == "s16":
+            # Convert 16-bit signed to unsigned
+            if signed_value < 0:
+                return signed_value + 65536
+            return signed_value
+        elif data_type == "s32":
+            # Convert 32-bit signed to unsigned
+            if signed_value < 0:
+                return signed_value + 4294967296
+            return signed_value
+        else:
+            # For u16, u32, and unknown types, return as is
+            return signed_value
+
     def _convert_from_value_table(self, raw_value: int, table_name: str) -> str:
         """Convert using value table."""
         value_table = self.value_tables.get(table_name, {})
@@ -76,16 +126,19 @@ class KWBDataConverter:
         
         return 0  # Default fallback
     
-    def _convert_from_scaling_factor(self, raw_value: int, unit_value_table: str) -> float:
-        """Convert using scaling factor like '1/10°C'."""
+    def _convert_from_scaling_factor(self, converted_value: int | float, unit_value_table: str) -> float:
+        """Convert using scaling factor like '1/10°C'.
+
+        Note: converted_value may already be a signed integer (negative for s16/s32 types).
+        """
         # Parse scaling factor pattern like "1/10°C", "1/100bar", etc.
         match = re.match(r"1/(\d+)", unit_value_table)
         if match:
             divisor = int(match.group(1))
-            return round(raw_value / divisor, 3)
-        
-        # If no scaling factor found, return raw value
-        return float(raw_value)
+            return round(converted_value / divisor, 3)
+
+        # If no scaling factor found, return value as float
+        return float(converted_value)
     
     def _convert_to_scaling_factor(self, ha_value: float, unit_value_table: str) -> int:
         """Convert back to raw value using scaling factor."""
