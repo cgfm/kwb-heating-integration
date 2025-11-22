@@ -1,7 +1,7 @@
 {
   "domain": "kwb_heating",
   "name": "KWB Heating Integration",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "documentation": "https://github.com/cgfm/kwb-heating-integration",
   "issue_tracker": "https://github.com/cgfm/kwb-heating-integration/issues",
   "codeowners": ["@cgfm"],
@@ -14,3 +14,4 @@
   "loggers": ["custom_components.kwb_heating"],
   "quality_scale": "silver"
 }
+
