@@ -27,7 +27,7 @@ class VersionManager:
         self.version_mapping_path = self.config_base_path / "version_mapping.json"
         self.version_mapping: dict[str, Any] = {}
         self.fallback_strategy = "closest_match"
-        self.default_version = "22.7.1"
+        self.default_version = "24.7.1"
 
         self._load_version_mapping()
 
@@ -41,7 +41,7 @@ class VersionManager:
 
                     fallback_rules = config.get("fallback_rules", {})
                     self.fallback_strategy = fallback_rules.get("strategy", "closest_match")
-                    self.default_version = fallback_rules.get("default_version", "22.7.1")
+                    self.default_version = fallback_rules.get("default_version", "24.7.1")
 
                     _LOGGER.info(
                         "Loaded version mapping with %d supported versions",
@@ -68,6 +68,14 @@ class VersionManager:
                     "device_info_start": 8000
                 }
             },
+            "24.7.1": {
+                "config_path": "versions/v24.7.1",
+                "supported_languages": ["de", "en"],
+                "register_layouts": {
+                    "software_version": 8192,
+                    "device_info_start": 8000
+                }
+            },            
             "25.7.1": {
                 "config_path": "versions/v25.7.1",
                 "supported_languages": ["de", "en"],
