@@ -1,0 +1,276 @@
+{
+  "value_tables": {
+    "kfk_kesselstatus_t": {
+      "0": "Aus",
+      "1": "Bereitschaft",
+      "2": "Zünden",
+      "3": "Betrieb",
+      "4": "Nachlauf",
+      "5": "Störung",
+      "6": "Bereit (SH)",
+      "7": "Betrieb (SH)"
+    },
+    "wmm_rolle_t": {
+      "0": "Autonom",
+      "1": "KFS",
+      "2": "Powerfire 1 150-300kW",
+      "3": "EasyAir Plus",
+      "4": "Powerfire 2 400-500kW"
+    },
+    "system_gui_kessel_typ_t": {
+      "0": "-",
+      "1": "KWB Easyfire",
+      "2": "KWB CF 2",
+      "3": "KWB Combifire",
+      "4": "KWB Multifire",
+      "5": "KWB Pelletfire+",
+      "6": "KWB CF 1",
+      "7": "Kein",
+      "8": "KWB CF 1.5",
+      "9": "KWB Easyfire 3"
+    },
+    "ak_externe_vorgabe_t": {
+      "0": "Aus",
+      "1": "Temperatur",
+      "2": "Leistung",
+      "3": "Modbus",
+      "4": "Modbus"
+    },
+    "ak_anf_bl_ursache_t": {
+      "1": "Normalbetrieb",
+      "2": "Einmessen",
+      "3": "Kaminkehrer",
+      "4": "Extern",
+      "5": "Extern überhitzt",
+      "6": "Stoker leeren",
+      "7": "Min. für Reinigung",
+      "8": "Stoker Überhitzung",
+      "9": "Zyklusbetrieb",
+      "10": "Puffermanagement",
+      "11": "PuMgmt. überhitzt",
+      "12": "Modbus",
+      "13": "Modbus Clee"
+    },
+    "ak_kesselprogramm_t": {
+      "0": "Anforderung",
+      "1": "Zeitprogramm",
+      "2": "Dauerbetrieb",
+      "3": "Modbus Temperatur",
+      "4": "Modbus Leistung+Temperatur"
+    },
+    "system_sensor_status_t": {
+      "0": "Defekt",
+      "1": "Fehlt",
+      "2": "OK"
+    },
+    "cf2_betriebsmodus_t": {
+      "0": "Kein",
+      "1": "Stückholz",
+      "2": "Pellets",
+      "3": "Stückholz (PM Nachlauf)",
+      "4": "Relaistest"
+    },
+    "ksm_kesselstatus_anzeige_t": {
+      "0": "Aus",
+      "1": "Messbetrieb",
+      "2": "Betrieb (Reinigung)",
+      "3": "Einmessen",
+      "4": "Betrieb",
+      "5": "Nachlauf",
+      "6": "Neustart",
+      "7": "Störung Nachlauf",
+      "8": "Störung Aus",
+      "9": "Wartung",
+      "10": "Bereit (-Zuendanf)",
+      "11": "Zünden Start Saugzug",
+      "12": "Zünden FS Füllen",
+      "13": "Zünden Einschieben 1",
+      "14": "Zünden Einschieben 3",
+      "15": "Zünden Heizen",
+      "16": "Heizen Durchzünden",
+      "17": "Zünden Einschieben 2",
+      "18": "Zünden Warten",
+      "19": "Durchzünden",
+      "20": "1. IB Betrieb",
+      "21": "Bereit (-Ext1)",
+      "22": "Bereit (-Zweitkessel)",
+      "23": "Bereit (-FS)",
+      "24": "Bereit (-Reinigung)",
+      "25": "Bereit (+Stop)",
+      "26": "Bereit (-Ext3)",
+      "27": "Bereit (-Lambdasonde)",
+      "30": "Bereit (-Anf)",
+      "31": "Bereit (+Wartezeit)",
+      "32": "Bereit (+Anf)",
+      "34": "Betrieb Leerschieben",
+      "35": "Aus",
+      "36": "Anheizen",
+      "37": "Warten Zündanf.",
+      "38": "Warten Zündfreig.",
+      "39": "Start Zündung",
+      "40": "Zünden",
+      "41": "Heizen",
+      "42": "Feuerhaltung",
+      "43": "Feuer aus",
+      "44": "Störung Feuer aus",
+      "45": "Tür offen",
+      "46": "Überhitzung",
+      "47": "Störung Feuerhaltung",
+      "49": "Sh aus, PM freigegeben",
+      "50": "Start Pelletmodul",
+      "51": "Pelletmodul Gesperrt",
+      "52": "Wartung",
+      "53": "Betrieb vor Wartung",
+      "54": "Wartungsabschaltung"
+    },
+    "cf2_max_befuellgrad_anzeige_t": {
+      "0": "Keine",
+      "1": "Ein Drittel",
+      "2": "Zwei Drittel",
+      "3": "Voll"
+    },
+    "cf2_automatische_zuendung_t": {
+      "0": "Aus",
+      "1": "Auswahl",
+      "2": "Anforderung",
+      "3": "Sofort"
+    },
+    "hk_programm_t": {
+      "0": "Automatik",
+      "1": "Frostschutz",
+      "2": "Aus",
+      "3": "Komfort",
+      "4": "Absenk"
+    },
+    "hk_status_t": {
+      "0": "Absenk",
+      "1": "Komfort",
+      "2": "Frostschutz",
+      "3": "Urlaub",
+      "4": "Aus",
+      "5": "Estrich",
+      "6": "Max. Wärmeabnahme",
+      "7": "Max. Wärmeabnahme",
+      "8": "Modbus Vorlauftemp. Soll",
+      "9": "Modbus Absenk",
+      "10": "Modbus Komfort",
+      "11": "Modbus Frostschutz",
+      "12": "Vormischer Betrieb"
+    },
+    "ksm_verbraucher_anforderung_t": {
+      "0": "Aus",
+      "1": "Heizkreis",
+      "2": "BWS",
+      "3": "Puffer"
+    },
+    "puffer_programm_t": {
+      "0": "Zeit",
+      "1": "Temperatur",
+      "2": "Aus",
+      "3": "Zeit+",
+      "4": "Sommer"
+    },
+    "puffer_o_umschaltventil_t": {
+      "0": "Nicht vorhanden",
+      "1": "Oben",
+      "2": "Unten"
+    },
+    "boiler_programm_t": {
+      "0": "Zeit",
+      "1": "Temp.",
+      "2": "Aus"
+    },
+    "boiler_status_t": {
+      "0": "Störung",
+      "1": "Aus",
+      "2": "Legionellenschutz",
+      "3": "Urlaub",
+      "4": "Einmalladung",
+      "5": "Außerhalb der Ladezeit",
+      "6": "Laden bis Solltemp.",
+      "7": "Temp. ausreichend",
+      "8": "Blockierschutz",
+      "9": "Warten Pumpenfreigabe",
+      "10": "Kessel Überhitzung",
+      "11": "ZWQ Überhitzung",
+      "12": "max. Wärmeabnahme",
+      "13": "Nachlauf",
+      "14": "Nachlauf (Warten Freig.)"
+    },
+    "zirk_programm_t": {
+      "0": "Aus",
+      "1": "Automatik",
+      "2": "Dauerbetrieb"
+    },
+    "zk_status_t": {
+      "0": "Aus",
+      "1": "Betrieb",
+      "2": "Überhitzung",
+      "3": "Verzögerung",
+      "4": "Störung",
+      "5": "Mindestlaufzeit",
+      "6": "Mindeststehzeit",
+      "7": "Betrieb Modbus"
+    },
+    "solar_status_t": {
+      "0": "Aus",
+      "1": "Handbetrieb",
+      "2": "Laden Speicher 1",
+      "3": "Laden Speicher 2",
+      "4": "Störung",
+      "5": "Solarschutz",
+      "6": "Rückkühlung 1",
+      "7": "Rückkühlung 2"
+    },
+    "solar_status_ursache_t": {
+      "0": "Programm Aus",
+      "1": "Handbetrieb",
+      "2": "Kollektortemperatur ausreichend",
+      "3": "Temperaturdifferenz Kollektor / Speicher 1 zu gering",
+      "4": "Maximaltemperatur Speicher 1 überschritten",
+      "5": "Maximaltemperatur Speicher 2 überschritten",
+      "6": "Absoluter Vorrang (Kollektortemperatur zu gering)",
+      "7": "Blockierschutz",
+      "8": "Kollektortemperatur zu hoch",
+      "9": "Alarm im Solarkreis aktiv",
+      "10": "Maximaltemperatur Speicher 1+2 überschritten",
+      "11": "Kollektorminimaltemperatur unterschritten",
+      "13": "Intervallfunktion",
+      "14": "Rückkühlung"
+    },
+    "kfs_profile_t": {
+      "0": "Winter",
+      "1": "Sommer"
+    },
+    "kfs_angeforderte_kessel_t": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8"
+    },
+    "hk_modbus_temperatur_auswahl_t": {
+      "0": "Vorlauftemp. Soll",
+      "1": "Raumtemp. Soll"
+    },
+    "comfortenergy_status_t": {
+      "0": "deaktiviert",
+      "1": "offline",
+      "2": "online"
+    },
+    "hk_modbus_programm_t": {
+      "0": "Frostschutz",
+      "1": "Absenk",
+      "2": "Komfort"
+    },
+    "zus_wq_wp_status_t": {
+      "0": "Aus",
+      "1": "Betrieb",
+      "2": "Mindestlaufzeit",
+      "3": "Mindeststehzeit"
+    }
+  }
+}
