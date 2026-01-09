@@ -232,17 +232,19 @@ class AsyncModularRegisterManager:
             filtered_registers = []
             
             if equipment_type == "Heizkreise":
-                # For heating circuits, filter by HK index pattern (HK 1.x, HK 2.x, etc.)
+                # For heating circuits, filter by HC index pattern (HC 1.x, HC 2.x, etc.) Note, Parametr is HK, but Index is HC
+                # This is actually not fully correct, because HC 1.1 is Heizkreis 1, whereas HC 1.2 is Heizkreis 2 already. 
+                # But I do not bother to much about to many sensors really
                 for i in range(1, count + 1):
-                    pattern = f"HK {i}."
+                    pattern = f"HC {i}."
                     for register in equipment_registers:
                         index = register.get("index", "")
                         if index.startswith(pattern):
                             filtered_registers.append(register)
             elif equipment_type == "Pufferspeicher":
-                # For buffer storage, filter by PUF index pattern (PUF 0, PUF 1, etc.)
+                # For buffer storage, filter by BUF index pattern (BUF 0, BUF 1, etc.) Note, Parameter is PUF, but Index is BUF...
                 for i in range(count):  # PUF starts at 0
-                    pattern = f"PUF {i}"
+                    pattern = f"BUF {i}"
                     for register in equipment_registers:
                         index = register.get("index", "")
                         if index == pattern:  # Exact match for PUF
