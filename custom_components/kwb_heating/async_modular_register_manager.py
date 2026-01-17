@@ -276,60 +276,76 @@ class AsyncModularRegisterManager:
     async def get_all_registers(self, access_level: str, equipment_config: dict = None, device_type: str | None = None) -> list[dict]:
         """Get all registers for the access level, selected equipment, and device type."""
         await self.initialize()  # Ensure async initialization
-        
+
         registers = []
-        
-        # Universal registers
-        registers.extend(self.get_registers_for_access_level(access_level))
-        
-        # Device-specific registers
+        seen_addresses: set[int] = set()  # Track addresses to prevent duplicates
+
+        def add_registers(new_registers: list[dict]) -> int:
+            """Add registers while preventing duplicates by address."""
+            added = 0
+            for reg in new_registers:
+                addr = reg.get("starting_address")
+                if addr is not None and addr not in seen_addresses:
+                    seen_addresses.add(addr)
+                    registers.append(reg)
+                    added += 1
+                elif addr in seen_addresses:
+                    _LOGGER.debug("Skipping duplicate register at address %s: %s", addr, reg.get("name"))
+            return added
+
+        # Universal registers (added first, take priority)
+        universal_regs = self.get_registers_for_access_level(access_level)
+        add_registers(universal_regs)
+
+        # Device-specific registers (skip duplicates already in universal)
         if device_type:
             device_registers = await self.get_device_specific_registers(device_type, access_level)
-            registers.extend(device_registers)
-            _LOGGER.info("Added %d device-specific registers for %s", len(device_registers), device_type)
-        
+            added = add_registers(device_registers)
+            _LOGGER.info("Added %d device-specific registers for %s (skipped %d duplicates)",
+                        added, device_type, len(device_registers) - added)
+
         # Equipment-specific registers based on configuration (using counts)
         if equipment_config:
             heating_circuits_count = equipment_config.get("heating_circuits", 0)
             if heating_circuits_count > 0:
                 equipment_regs = await self.get_equipment_registers("Heizkreise", access_level, heating_circuits_count)
-                registers.extend(equipment_regs)
-                
+                add_registers(equipment_regs)
+
             buffer_storage_count = equipment_config.get("buffer_storage", 0)
             if buffer_storage_count > 0:
                 equipment_regs = await self.get_equipment_registers("Pufferspeicher", access_level, buffer_storage_count)
-                registers.extend(equipment_regs)
-                
+                add_registers(equipment_regs)
+
             dhw_storage_count = equipment_config.get("dhw_storage", 0)
             if dhw_storage_count > 0:
                 equipment_regs = await self.get_equipment_registers("Brauchwasserspeicher", access_level, dhw_storage_count)
-                registers.extend(equipment_regs)
-                
+                add_registers(equipment_regs)
+
             secondary_heat_sources_count = equipment_config.get("secondary_heat_sources", 0)
             if secondary_heat_sources_count > 0:
                 equipment_regs = await self.get_equipment_registers("Zweitwärmequellen", access_level, secondary_heat_sources_count)
-                registers.extend(equipment_regs)
-                
+                add_registers(equipment_regs)
+
             circulation_count = equipment_config.get("circulation", 0)
             if circulation_count > 0:
                 equipment_regs = await self.get_equipment_registers("Zirkulation", access_level, circulation_count)
-                registers.extend(equipment_regs)
-                
+                add_registers(equipment_regs)
+
             solar_count = equipment_config.get("solar", 0)
             if solar_count > 0:
                 equipment_regs = await self.get_equipment_registers("Solar", access_level, solar_count)
-                registers.extend(equipment_regs)
-                
+                add_registers(equipment_regs)
+
             boiler_sequence_count = equipment_config.get("boiler_sequence", 0)
             if boiler_sequence_count > 0:
                 equipment_regs = await self.get_equipment_registers("Kesselfolgeschaltung", access_level, boiler_sequence_count)
-                registers.extend(equipment_regs)
-                
+                add_registers(equipment_regs)
+
             heat_meters_count = equipment_config.get("heat_meters", 0)
             if heat_meters_count > 0:
                 equipment_regs = await self.get_equipment_registers("Wärmemengenzähler", access_level, heat_meters_count)
-                registers.extend(equipment_regs)
-        
+                add_registers(equipment_regs)
+
         return registers
 
     def _register_allowed_for_access_level(self, register: dict, access_level: str) -> bool:
