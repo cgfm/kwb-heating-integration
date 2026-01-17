@@ -95,6 +95,10 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
 
     async def _initialize_register_manager(self) -> None:
         """Initialize or reinitialize the register manager asynchronously."""
+        # Initialize managers asynchronously (loads config files)
+        await self.version_manager.async_initialize()
+        await self.language_manager.async_initialize()
+
         # Detect version if not already done
         if not self.detected_version:
             await self._detect_version()

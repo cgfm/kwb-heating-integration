@@ -7,6 +7,8 @@ import logging
 from pathlib import Path
 from typing import Any
 
+import aiofiles
+
 from .version_manager import VersionManager
 
 _LOGGER = logging.getLogger(__name__)
@@ -30,15 +32,26 @@ class LanguageManager:
         self.default_language = "en"
         self.use_ha_locale = True
         self.language_mapping: dict[str, str] = {}
+        self._initialized = False
 
-        self._load_language_config()
+        # Create default config immediately (no I/O)
+        self._create_default_config()
 
-    def _load_language_config(self) -> None:
-        """Load language configuration from file."""
+    async def async_initialize(self) -> None:
+        """Async initialization - load config file without blocking."""
+        if self._initialized:
+            return
+
+        await self._async_load_language_config()
+        self._initialized = True
+
+    async def _async_load_language_config(self) -> None:
+        """Load language configuration from file asynchronously."""
         try:
             if self.language_config_path.exists():
-                with open(self.language_config_path, 'r', encoding='utf-8') as f:
-                    self.language_config = json.load(f)
+                async with aiofiles.open(self.language_config_path, 'r', encoding='utf-8') as f:
+                    content = await f.read()
+                    self.language_config = json.loads(content)
 
                 language_detection = self.language_config.get("language_detection", {})
                 self.use_ha_locale = language_detection.get("use_ha_locale", True)
@@ -47,14 +60,12 @@ class LanguageManager:
 
                 _LOGGER.info("Loaded language configuration")
             else:
-                _LOGGER.warning(
+                _LOGGER.debug(
                     "Language config file not found at %s, using defaults",
                     self.language_config_path
                 )
-                self._create_default_config()
         except Exception as exc:
             _LOGGER.error("Failed to load language configuration: %s", exc)
-            self._create_default_config()
 
     def _create_default_config(self) -> None:
         """Create default language configuration."""
