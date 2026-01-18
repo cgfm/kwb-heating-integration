@@ -224,45 +224,56 @@ class AsyncModularRegisterManager:
     async def get_equipment_registers(self, equipment_type: str, access_level: str, count: int | None = None) -> list[dict]:
         """Get equipment-specific registers for the access level, limited by count."""
         registers = []
-        
+
         equipment_registers = await self._load_equipment_registers(equipment_type)
-        
+
+        # Equipment type to index prefix mapping (all use German prefixes)
+        # Format: (prefix, is_zero_indexed)
+        equipment_index_config = {
+            "Heizkreise": ("HK", False),           # HK 1.1, HK 2.1, etc.
+            "Pufferspeicher": ("PUF", True),       # PUF 0, PUF 1, etc. (0-indexed)
+            "Brauchwasserspeicher": ("BWS", False), # BWS 1, BWS 2, etc.
+            "Zweitwärmequellen": ("ZWQ", False),   # ZWQ 1, ZWQ 2, etc.
+            "Zirkulation": ("ZIR", True),          # ZIR 0, ZIR 1, etc. (0-indexed)
+            "Solar": ("SOL", False),               # SOL 1, SOL 2, etc.
+            "Kesselfolgeschaltung": ("KFS", False), # KFS 1, KFS 2, etc.
+            "Wärmemengenzähler": ("WMZ", True),    # WMZ 0, WMZ 1, etc. (0-indexed)
+        }
+
         # If count is specified and > 0, filter by index patterns
         if count is not None and count > 0:
             filtered_registers = []
-            
-            if equipment_type == "Heizkreise":
-                # For heating circuits, filter by HC index pattern (HC 1.x, HC 2.x, etc.) Note, Parametr is HK, but Index is HC
-                # This is actually not fully correct, because HC 1.1 is Heizkreis 1, whereas HC 1.2 is Heizkreis 2 already. 
-                # But I do not bother to much about to many sensors really
-                for i in range(1, count + 1):
-                    pattern = f"HC {i}."
+
+            config = equipment_index_config.get(equipment_type)
+            if config:
+                prefix, is_zero_indexed = config
+                start_idx = 0 if is_zero_indexed else 1
+                end_idx = count if is_zero_indexed else count + 1
+
+                for i in range(start_idx, end_idx):
                     for register in equipment_registers:
                         index = register.get("index", "")
-                        if index.startswith(pattern):
-                            filtered_registers.append(register)
-            elif equipment_type == "Pufferspeicher":
-                # For buffer storage, filter by BUF index pattern (BUF 0, BUF 1, etc.) Note, Parameter is PUF, but Index is BUF...
-                for i in range(count):  # PUF starts at 0
-                    pattern = f"BUF {i}"
-                    for register in equipment_registers:
-                        index = register.get("index", "")
-                        if index == pattern:  # Exact match for PUF
-                            filtered_registers.append(register)
+                        # Handle both exact match (PUF 0) and prefix match (HK 1.)
+                        if equipment_type == "Heizkreise":
+                            # Heating circuits use HK 1.1, HK 1.2, HK 2.1, etc.
+                            if index.startswith(f"{prefix} {i}."):
+                                filtered_registers.append(register)
+                        else:
+                            # Other equipment uses exact match (PUF 0, BWS 1, etc.)
+                            if index == f"{prefix} {i}":
+                                filtered_registers.append(register)
             else:
-                # For other equipment types, use simple count-based filtering
-                # This assumes the first 'count' instances are what we want
+                # For unknown equipment types, use simple count-based filtering
                 instances_seen = set()
                 for register in equipment_registers:
                     index = register.get("index", "")
                     if index:
-                        # Extract instance identifier (e.g., "Something 1" -> "1")
                         instance_id = index.split()[-1] if index.split() else "1"
                         if instance_id not in instances_seen and len(instances_seen) < count:
                             instances_seen.add(instance_id)
                         if instance_id in instances_seen:
                             filtered_registers.append(register)
-                    
+
             limited_registers = filtered_registers
         else:
             limited_registers = equipment_registers
@@ -270,8 +281,8 @@ class AsyncModularRegisterManager:
         for register in limited_registers:
             if self._register_allowed_for_access_level(register, access_level):
                 registers.append(self._normalize_register(register))
-        
-        _LOGGER.info("Selected %d %s registers for access level %s (count: %s)", 
+
+        _LOGGER.info("Selected %d %s registers for access level %s (count: %s)",
                     len(registers), equipment_type, access_level, count)
         return registers
 
@@ -377,39 +388,36 @@ class AsyncModularRegisterManager:
         name = normalized.get("name", "")
         
         if index and name:
-            # Map equipment indices to friendly names
+            # Map equipment indices to friendly names (German)
+            # All config files now use consistent German prefixes (HK, PUF, etc.)
             equipment_prefixes = {
-                "HK": "Heizkreis",
-                "PUF": "Pufferspeicher", 
-                "BWS": "Brauchwasserspeicher",
-                "ZWQ": "Zweitwärmequelle",
-                "ZIR": "Zirkulation",
-                "SOL": "Solar",
-                "KFS": "Kesselfolge", 
-                "WMZ": "Wärmemengenzähler"
+                "HK": ("Heizkreis", False),
+                "PUF": ("Pufferspeicher", True),   # 0-indexed
+                "BWS": ("Brauchwasserspeicher", False),
+                "ZWQ": ("Zweitwärmequelle", False),
+                "ZIR": ("Zirkulation", True),      # 0-indexed
+                "SOL": ("Solar", False),
+                "KFS": ("Kesselfolge", False),
+                "WMZ": ("Wärmemengenzähler", True), # 0-indexed
             }
-            
+
             # Extract equipment type and number from index
-            for prefix, friendly_name in equipment_prefixes.items():
+            for prefix, (friendly_name, is_zero_indexed) in equipment_prefixes.items():
                 if index.startswith(prefix):
                     # Extract the equipment number/identifier
                     equipment_id = index[len(prefix):].strip()
-                    
-                    # Special handling for different equipment types
-                    if prefix == "HK":
-                        # HK 1.1 -> Heizkreis 1.1
-                        new_name = f"{friendly_name} {equipment_id}: {name}"
-                    elif prefix == "PUF":
-                        # PUF 0 -> Pufferspeicher 1 (user-friendly numbering starts at 1)
+
+                    # Handle 0-indexed equipment types (convert to 1-based for display)
+                    if is_zero_indexed:
                         try:
-                            puf_num = int(equipment_id) + 1
-                            new_name = f"{friendly_name} {puf_num}: {name}"
+                            display_num = int(equipment_id) + 1
+                            new_name = f"{friendly_name} {display_num}: {name}"
                         except ValueError:
                             new_name = f"{friendly_name} {equipment_id}: {name}"
                     else:
-                        # Default: BWS 1 -> Brauchwasserspeicher 1
+                        # Default: HC 1.1 -> Heizkreis 1.1
                         new_name = f"{friendly_name} {equipment_id}: {name}"
-                    
+
                     normalized["name"] = new_name
                     break
         

@@ -7,7 +7,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 1",
+      "index": "ZWQ 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -19,7 +19,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 2",
+      "index": "ZWQ 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -31,7 +31,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 3",
+      "index": "ZWQ 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -43,7 +43,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 4",
+      "index": "ZWQ 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -55,7 +55,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 5",
+      "index": "ZWQ 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -67,7 +67,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 6",
+      "index": "ZWQ 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -79,7 +79,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 7",
+      "index": "ZWQ 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -91,7 +91,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 8",
+      "index": "ZWQ 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -103,7 +103,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 9",
+      "index": "ZWQ 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -115,7 +115,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 10",
+      "index": "ZWQ 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -127,7 +127,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 11",
+      "index": "ZWQ 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -139,7 +139,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 12",
+      "index": "ZWQ 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -151,7 +151,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 13",
+      "index": "ZWQ 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -163,7 +163,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 14",
+      "index": "ZWQ 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -175,7 +175,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 1",
+      "index": "ZWQ 1",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -187,7 +187,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 1",
+      "index": "ZWQ 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -199,7 +199,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 2",
+      "index": "ZWQ 2",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -211,7 +211,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 2",
+      "index": "ZWQ 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -223,7 +223,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 3",
+      "index": "ZWQ 3",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -235,7 +235,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 3",
+      "index": "ZWQ 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -247,7 +247,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 4",
+      "index": "ZWQ 4",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -259,7 +259,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 4",
+      "index": "ZWQ 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -271,7 +271,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 5",
+      "index": "ZWQ 5",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -283,7 +283,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 5",
+      "index": "ZWQ 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -295,7 +295,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 6",
+      "index": "ZWQ 6",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -307,7 +307,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 6",
+      "index": "ZWQ 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -319,7 +319,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 7",
+      "index": "ZWQ 7",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -331,7 +331,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 7",
+      "index": "ZWQ 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -343,7 +343,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 8",
+      "index": "ZWQ 8",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -355,7 +355,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 8",
+      "index": "ZWQ 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -367,7 +367,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 9",
+      "index": "ZWQ 9",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -379,7 +379,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 9",
+      "index": "ZWQ 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -391,7 +391,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 10",
+      "index": "ZWQ 10",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -403,7 +403,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 10",
+      "index": "ZWQ 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -415,7 +415,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 11",
+      "index": "ZWQ 11",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -427,7 +427,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 11",
+      "index": "ZWQ 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -439,7 +439,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 12",
+      "index": "ZWQ 12",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -451,7 +451,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 12",
+      "index": "ZWQ 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -463,7 +463,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 13",
+      "index": "ZWQ 13",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -475,7 +475,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 13",
+      "index": "ZWQ 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -487,7 +487,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 14",
+      "index": "ZWQ 14",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -499,7 +499,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 14",
+      "index": "ZWQ 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -511,7 +511,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 1",
+      "index": "ZWQ 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -523,7 +523,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 2",
+      "index": "ZWQ 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -535,7 +535,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 3",
+      "index": "ZWQ 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -547,7 +547,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 4",
+      "index": "ZWQ 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -559,7 +559,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 5",
+      "index": "ZWQ 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -571,7 +571,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 6",
+      "index": "ZWQ 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -583,7 +583,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 7",
+      "index": "ZWQ 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -595,7 +595,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 8",
+      "index": "ZWQ 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -607,7 +607,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 9",
+      "index": "ZWQ 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -619,7 +619,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 10",
+      "index": "ZWQ 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -631,7 +631,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 11",
+      "index": "ZWQ 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -643,7 +643,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 12",
+      "index": "ZWQ 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -655,7 +655,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 13",
+      "index": "ZWQ 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -667,7 +667,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "SHS 14",
+      "index": "ZWQ 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"

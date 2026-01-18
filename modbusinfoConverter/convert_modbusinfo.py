@@ -124,6 +124,30 @@ class ModbusInfoConverter:
 
         return registers
 
+    # Map English index prefixes to German equivalents for consistency
+    INDEX_PREFIX_MAP = {
+        "HC": "HK",      # Heating Circuit -> Heizkreis
+        "BUF": "PUF",    # Buffer -> Puffer
+        "DHWC": "BWS",   # DHW Cylinder -> Brauchwasserspeicher
+        "SHS": "ZWQ",    # Secondary Heat Source -> Zweitwärmequelle
+        "Circ": "ZIR",   # Circulation -> Zirkulation
+        "B": "KFS",      # Boiler (sequence) -> Kesselfolgeschaltung
+        "HQM": "WMZ",    # Heat Quantity Meter -> Wärmemengenzähler
+        # SOL stays as SOL (same in both languages)
+    }
+
+    def _normalize_index(self, index: str) -> str:
+        """Normalize index prefix to use consistent German abbreviations."""
+        if not index:
+            return index
+
+        # Check each English prefix and replace with German equivalent
+        for en_prefix, de_prefix in self.INDEX_PREFIX_MAP.items():
+            if index.startswith(en_prefix + " "):
+                return de_prefix + index[len(en_prefix):]
+
+        return index
+
     def normalize_register(self, data: dict) -> dict | None:
         """Normalize register data to standard format."""
         # Skip if no address
@@ -141,9 +165,9 @@ class ModbusInfoConverter:
             "expert_level": self._parse_access_level(data.get("ExpertLevel")),
         }
 
-        # Optional fields
+        # Optional fields - normalize index to use German prefixes
         if data.get("Index"):
-            register["index"] = str(data.get("Index")).strip()
+            register["index"] = self._normalize_index(str(data.get("Index")).strip())
 
         if data.get("Unit/ValueTable"):
             unit_or_table = str(data.get("Unit/ValueTable")).strip()

@@ -7,7 +7,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 0",
+      "index": "ZIR 0",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -19,7 +19,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 0",
+      "index": "ZIR 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -31,7 +31,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 1",
+      "index": "ZIR 1",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -43,7 +43,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 1",
+      "index": "ZIR 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -55,7 +55,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 2",
+      "index": "ZIR 2",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -67,7 +67,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 2",
+      "index": "ZIR 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -79,7 +79,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 3",
+      "index": "ZIR 3",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -91,7 +91,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 3",
+      "index": "ZIR 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -103,7 +103,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 4",
+      "index": "ZIR 4",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -115,7 +115,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 4",
+      "index": "ZIR 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -127,7 +127,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 5",
+      "index": "ZIR 5",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -139,7 +139,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 5",
+      "index": "ZIR 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -151,7 +151,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 6",
+      "index": "ZIR 6",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -163,7 +163,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 6",
+      "index": "ZIR 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -175,7 +175,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 7",
+      "index": "ZIR 7",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -187,7 +187,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 7",
+      "index": "ZIR 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -199,7 +199,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 8",
+      "index": "ZIR 8",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -211,7 +211,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 8",
+      "index": "ZIR 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -223,7 +223,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 9",
+      "index": "ZIR 9",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -235,7 +235,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 9",
+      "index": "ZIR 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -247,7 +247,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 10",
+      "index": "ZIR 10",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -259,7 +259,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 10",
+      "index": "ZIR 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -271,7 +271,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 11",
+      "index": "ZIR 11",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -283,7 +283,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 11",
+      "index": "ZIR 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -295,7 +295,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 12",
+      "index": "ZIR 12",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -307,7 +307,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 12",
+      "index": "ZIR 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -319,7 +319,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 13",
+      "index": "ZIR 13",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -331,7 +331,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 13",
+      "index": "ZIR 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -343,7 +343,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 14",
+      "index": "ZIR 14",
       "unit_value_table": "1/10°C",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.value"
@@ -355,7 +355,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 14",
+      "index": "ZIR 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "902",
       "parameter": "ZIRK.i_temperatur.status"
@@ -367,7 +367,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 0",
+      "index": "ZIR 0",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -379,7 +379,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 1",
+      "index": "ZIR 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -391,7 +391,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 2",
+      "index": "ZIR 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -403,7 +403,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 3",
+      "index": "ZIR 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -415,7 +415,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 4",
+      "index": "ZIR 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -427,7 +427,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 5",
+      "index": "ZIR 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -439,7 +439,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 6",
+      "index": "ZIR 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -451,7 +451,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 7",
+      "index": "ZIR 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -463,7 +463,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 8",
+      "index": "ZIR 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -475,7 +475,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 9",
+      "index": "ZIR 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -487,7 +487,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 10",
+      "index": "ZIR 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -499,7 +499,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 11",
+      "index": "ZIR 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -511,7 +511,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 12",
+      "index": "ZIR 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -523,7 +523,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 13",
+      "index": "ZIR 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -535,7 +535,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "Circ 14",
+      "index": "ZIR 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "904",
       "parameter": "ZIRK.o_pumpe"
@@ -547,7 +547,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 0",
+      "index": "ZIR 0",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -559,7 +559,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 1",
+      "index": "ZIR 1",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -571,7 +571,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 2",
+      "index": "ZIR 2",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -583,7 +583,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 3",
+      "index": "ZIR 3",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -595,7 +595,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 4",
+      "index": "ZIR 4",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -607,7 +607,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 5",
+      "index": "ZIR 5",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -619,7 +619,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 6",
+      "index": "ZIR 6",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -631,7 +631,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 7",
+      "index": "ZIR 7",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -643,7 +643,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 8",
+      "index": "ZIR 8",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -655,7 +655,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 9",
+      "index": "ZIR 9",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -667,7 +667,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 10",
+      "index": "ZIR 10",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -679,7 +679,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 11",
+      "index": "ZIR 11",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -691,7 +691,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 12",
+      "index": "ZIR 12",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -703,7 +703,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 13",
+      "index": "ZIR 13",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"
@@ -715,7 +715,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "Circ 14",
+      "index": "ZIR 14",
       "unit_value_table": "zirk_programm_t",
       "id": "900",
       "parameter": "ZIRK.programm"

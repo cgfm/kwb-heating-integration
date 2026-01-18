@@ -7,7 +7,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -19,7 +19,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -31,7 +31,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -43,7 +43,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -55,7 +55,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -67,7 +67,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -79,7 +79,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -91,7 +91,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -103,7 +103,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -115,7 +115,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -127,7 +127,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -139,7 +139,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -151,7 +151,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -163,7 +163,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -175,7 +175,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -187,7 +187,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -199,7 +199,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -211,7 +211,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -223,7 +223,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -235,7 +235,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -247,7 +247,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -259,7 +259,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -271,7 +271,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -283,7 +283,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -295,7 +295,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -307,7 +307,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -319,7 +319,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -331,7 +331,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -343,7 +343,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -355,7 +355,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -367,7 +367,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -379,7 +379,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -391,7 +391,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -403,7 +403,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -415,7 +415,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -427,7 +427,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -439,7 +439,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -451,7 +451,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -463,7 +463,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -475,7 +475,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -487,7 +487,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -499,7 +499,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -511,7 +511,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -523,7 +523,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -535,7 +535,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -547,7 +547,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -559,7 +559,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -571,7 +571,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -583,7 +583,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -595,7 +595,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -607,7 +607,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -619,7 +619,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -631,7 +631,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -643,7 +643,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -655,7 +655,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -667,7 +667,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -679,7 +679,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -691,7 +691,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -703,7 +703,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -715,7 +715,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -727,7 +727,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -739,7 +739,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -751,7 +751,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -763,7 +763,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -775,7 +775,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -787,7 +787,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -799,7 +799,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -811,7 +811,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -823,7 +823,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -835,7 +835,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -847,7 +847,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -859,7 +859,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -871,7 +871,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -883,7 +883,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -895,7 +895,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -907,7 +907,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -919,7 +919,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -931,7 +931,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -943,7 +943,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -955,7 +955,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -967,7 +967,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -979,7 +979,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -991,7 +991,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -1003,7 +1003,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1015,7 +1015,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -1027,7 +1027,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1039,7 +1039,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -1051,7 +1051,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1063,7 +1063,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -1075,7 +1075,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1087,7 +1087,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1099,7 +1099,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1111,7 +1111,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1123,7 +1123,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1135,7 +1135,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1147,7 +1147,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1159,7 +1159,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1171,7 +1171,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1183,7 +1183,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1195,7 +1195,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1207,7 +1207,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1219,7 +1219,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1231,7 +1231,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1243,7 +1243,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1255,7 +1255,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1267,7 +1267,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1279,7 +1279,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1291,7 +1291,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1303,7 +1303,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1315,7 +1315,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1327,7 +1327,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1339,7 +1339,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1351,7 +1351,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1363,7 +1363,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1375,7 +1375,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1387,7 +1387,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1399,7 +1399,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1411,7 +1411,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1423,7 +1423,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1435,7 +1435,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1447,7 +1447,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1459,7 +1459,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1471,7 +1471,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1483,7 +1483,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1495,7 +1495,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1507,7 +1507,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1519,7 +1519,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1531,7 +1531,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1543,7 +1543,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1555,7 +1555,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1567,7 +1567,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1579,7 +1579,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1591,7 +1591,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1603,7 +1603,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1615,7 +1615,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1627,7 +1627,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1639,7 +1639,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1651,7 +1651,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1663,7 +1663,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1675,7 +1675,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1687,7 +1687,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1699,7 +1699,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1711,7 +1711,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1723,7 +1723,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1735,7 +1735,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1747,7 +1747,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1759,7 +1759,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1771,7 +1771,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1783,7 +1783,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1795,7 +1795,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1807,7 +1807,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1819,7 +1819,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1831,7 +1831,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1843,7 +1843,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1855,7 +1855,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1867,7 +1867,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1879,7 +1879,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1891,7 +1891,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1903,7 +1903,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1915,7 +1915,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1927,7 +1927,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1939,7 +1939,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1951,7 +1951,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1963,7 +1963,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1975,7 +1975,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1987,7 +1987,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -1999,7 +1999,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2011,7 +2011,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2023,7 +2023,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2035,7 +2035,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2047,7 +2047,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2059,7 +2059,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2071,7 +2071,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2083,7 +2083,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2095,7 +2095,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2107,7 +2107,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2119,7 +2119,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2131,7 +2131,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2143,7 +2143,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2155,7 +2155,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2167,7 +2167,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2179,7 +2179,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2191,7 +2191,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2203,7 +2203,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2215,7 +2215,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2227,7 +2227,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2239,7 +2239,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2251,7 +2251,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2263,7 +2263,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2275,7 +2275,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2287,7 +2287,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2299,7 +2299,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2311,7 +2311,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2323,7 +2323,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2335,7 +2335,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2527,7 +2527,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2539,7 +2539,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2551,7 +2551,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2563,7 +2563,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2575,7 +2575,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2587,7 +2587,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2599,7 +2599,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2611,7 +2611,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2623,7 +2623,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2635,7 +2635,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2647,7 +2647,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2659,7 +2659,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2671,7 +2671,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2683,7 +2683,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2695,7 +2695,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -2707,7 +2707,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2721,7 +2721,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2735,7 +2735,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2749,7 +2749,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2763,7 +2763,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2777,7 +2777,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2791,7 +2791,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2805,7 +2805,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2819,7 +2819,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2833,7 +2833,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2847,7 +2847,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2861,7 +2861,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2875,7 +2875,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2889,7 +2889,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2903,7 +2903,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2917,7 +2917,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2931,7 +2931,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2945,7 +2945,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2959,7 +2959,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2973,7 +2973,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -2987,7 +2987,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3001,7 +3001,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3015,7 +3015,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3029,7 +3029,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3043,7 +3043,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3057,7 +3057,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3071,7 +3071,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3085,7 +3085,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3099,7 +3099,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3113,7 +3113,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3127,7 +3127,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 0",
+      "index": "PUF 0",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3141,7 +3141,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 1",
+      "index": "PUF 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3155,7 +3155,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 2",
+      "index": "PUF 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3169,7 +3169,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 3",
+      "index": "PUF 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3183,7 +3183,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 4",
+      "index": "PUF 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3197,7 +3197,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 5",
+      "index": "PUF 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3211,7 +3211,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 6",
+      "index": "PUF 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3225,7 +3225,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 7",
+      "index": "PUF 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3239,7 +3239,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 8",
+      "index": "PUF 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3253,7 +3253,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 9",
+      "index": "PUF 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3267,7 +3267,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 10",
+      "index": "PUF 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3281,7 +3281,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 11",
+      "index": "PUF 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3295,7 +3295,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 12",
+      "index": "PUF 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3309,7 +3309,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 13",
+      "index": "PUF 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3323,7 +3323,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BUF 14",
+      "index": "PUF 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,

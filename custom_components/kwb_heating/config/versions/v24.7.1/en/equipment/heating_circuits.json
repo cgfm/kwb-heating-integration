@@ -7,7 +7,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -19,7 +19,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -31,7 +31,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -43,7 +43,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -55,7 +55,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -67,7 +67,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -79,7 +79,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -91,7 +91,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -103,7 +103,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -115,7 +115,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -127,7 +127,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -139,7 +139,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -151,7 +151,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -163,7 +163,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -175,7 +175,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -187,7 +187,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -199,7 +199,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -211,7 +211,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -223,7 +223,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -235,7 +235,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -247,7 +247,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -259,7 +259,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -271,7 +271,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -283,7 +283,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -295,7 +295,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -307,7 +307,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -319,7 +319,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -331,7 +331,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -343,7 +343,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -355,7 +355,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -367,7 +367,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -379,7 +379,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -391,7 +391,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -403,7 +403,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -415,7 +415,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -427,7 +427,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -439,7 +439,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -451,7 +451,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -463,7 +463,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -475,7 +475,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -487,7 +487,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -499,7 +499,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -511,7 +511,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -523,7 +523,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -535,7 +535,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -547,7 +547,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -559,7 +559,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -571,7 +571,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -583,7 +583,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -595,7 +595,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -607,7 +607,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -619,7 +619,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -631,7 +631,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -643,7 +643,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -655,7 +655,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.value"
@@ -667,7 +667,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "336",
       "parameter": "HK.i_vorlauf_temperatur.status"
@@ -679,7 +679,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -691,7 +691,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -703,7 +703,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -715,7 +715,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -727,7 +727,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -739,7 +739,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -751,7 +751,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -763,7 +763,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -775,7 +775,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -787,7 +787,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -799,7 +799,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -811,7 +811,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -823,7 +823,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -835,7 +835,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -847,7 +847,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -859,7 +859,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -871,7 +871,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -883,7 +883,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -895,7 +895,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -907,7 +907,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -919,7 +919,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -931,7 +931,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -943,7 +943,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -955,7 +955,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -967,7 +967,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -979,7 +979,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -991,7 +991,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -1003,7 +1003,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "id": "350",
       "parameter": "HK.vorlauf_temperatur_soll"
@@ -1015,7 +1015,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1027,7 +1027,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1039,7 +1039,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1051,7 +1051,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1063,7 +1063,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1075,7 +1075,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1087,7 +1087,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1099,7 +1099,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1111,7 +1111,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1123,7 +1123,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1135,7 +1135,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1147,7 +1147,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1159,7 +1159,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1171,7 +1171,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1183,7 +1183,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1195,7 +1195,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1207,7 +1207,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1219,7 +1219,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1231,7 +1231,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1243,7 +1243,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1255,7 +1255,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1267,7 +1267,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1279,7 +1279,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1291,7 +1291,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1303,7 +1303,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1315,7 +1315,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1327,7 +1327,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1339,7 +1339,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1351,7 +1351,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1363,7 +1363,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1375,7 +1375,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1387,7 +1387,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1399,7 +1399,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1411,7 +1411,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1423,7 +1423,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1435,7 +1435,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1447,7 +1447,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1459,7 +1459,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1471,7 +1471,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1483,7 +1483,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1495,7 +1495,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1507,7 +1507,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1519,7 +1519,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1531,7 +1531,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1543,7 +1543,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1555,7 +1555,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1567,7 +1567,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1579,7 +1579,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1591,7 +1591,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1603,7 +1603,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1615,7 +1615,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1627,7 +1627,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1639,7 +1639,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1651,7 +1651,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1663,7 +1663,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.value"
@@ -1675,7 +1675,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "335",
       "parameter": "HK.i_raum_temperatur.status"
@@ -1687,7 +1687,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1699,7 +1699,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1711,7 +1711,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1723,7 +1723,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1735,7 +1735,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1747,7 +1747,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1759,7 +1759,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1771,7 +1771,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1783,7 +1783,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1795,7 +1795,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1807,7 +1807,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1819,7 +1819,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1831,7 +1831,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1843,7 +1843,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1855,7 +1855,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1867,7 +1867,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1879,7 +1879,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1891,7 +1891,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1903,7 +1903,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1915,7 +1915,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1927,7 +1927,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1939,7 +1939,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1951,7 +1951,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1963,7 +1963,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1975,7 +1975,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -1987,7 +1987,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -1999,7 +1999,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2011,7 +2011,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2023,7 +2023,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2035,7 +2035,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2047,7 +2047,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2059,7 +2059,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2071,7 +2071,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2083,7 +2083,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2095,7 +2095,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2107,7 +2107,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2119,7 +2119,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2131,7 +2131,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2143,7 +2143,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2155,7 +2155,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2167,7 +2167,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2179,7 +2179,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2191,7 +2191,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2203,7 +2203,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2215,7 +2215,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2227,7 +2227,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2239,7 +2239,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2251,7 +2251,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2263,7 +2263,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2275,7 +2275,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2287,7 +2287,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2299,7 +2299,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2311,7 +2311,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2323,7 +2323,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2335,7 +2335,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.value"
@@ -2347,7 +2347,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "system_sensor_status_t",
       "id": "334",
       "parameter": "HK.i_aussen_temperatur.status"
@@ -2359,7 +2359,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2371,7 +2371,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2383,7 +2383,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2395,7 +2395,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2407,7 +2407,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2419,7 +2419,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2431,7 +2431,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2443,7 +2443,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2455,7 +2455,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2467,7 +2467,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2479,7 +2479,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2491,7 +2491,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2503,7 +2503,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2515,7 +2515,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2527,7 +2527,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2539,7 +2539,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2551,7 +2551,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2563,7 +2563,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2575,7 +2575,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2587,7 +2587,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2599,7 +2599,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2611,7 +2611,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2623,7 +2623,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2635,7 +2635,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2647,7 +2647,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2659,7 +2659,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2671,7 +2671,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2683,7 +2683,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "340",
       "parameter": "HK.o_pumpe"
@@ -2695,7 +2695,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2707,7 +2707,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2719,7 +2719,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2731,7 +2731,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2743,7 +2743,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2755,7 +2755,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2767,7 +2767,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2779,7 +2779,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2791,7 +2791,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2803,7 +2803,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2815,7 +2815,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2827,7 +2827,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2839,7 +2839,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2851,7 +2851,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2863,7 +2863,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2875,7 +2875,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2887,7 +2887,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2899,7 +2899,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2911,7 +2911,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2923,7 +2923,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2935,7 +2935,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2947,7 +2947,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2959,7 +2959,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2971,7 +2971,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2983,7 +2983,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -2995,7 +2995,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -3007,7 +3007,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -3019,7 +3019,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "id": "343",
       "parameter": "HK.raum_temperatur_soll"
@@ -3031,7 +3031,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3043,7 +3043,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3055,7 +3055,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3067,7 +3067,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3079,7 +3079,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3091,7 +3091,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3103,7 +3103,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3115,7 +3115,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3127,7 +3127,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3139,7 +3139,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3151,7 +3151,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3163,7 +3163,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3175,7 +3175,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3187,7 +3187,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3199,7 +3199,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3211,7 +3211,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3223,7 +3223,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3235,7 +3235,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3247,7 +3247,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3259,7 +3259,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3271,7 +3271,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3283,7 +3283,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3295,7 +3295,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3307,7 +3307,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3319,7 +3319,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3331,7 +3331,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3343,7 +3343,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3355,7 +3355,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "hk_status_t",
       "id": "346",
       "parameter": "HK.status"
@@ -3367,7 +3367,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3379,7 +3379,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3391,7 +3391,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3403,7 +3403,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3415,7 +3415,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3427,7 +3427,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3439,7 +3439,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3451,7 +3451,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3463,7 +3463,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3475,7 +3475,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3487,7 +3487,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3499,7 +3499,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3511,7 +3511,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3523,7 +3523,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3535,7 +3535,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3547,7 +3547,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3559,7 +3559,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3571,7 +3571,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3583,7 +3583,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3595,7 +3595,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3607,7 +3607,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3619,7 +3619,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3631,7 +3631,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3643,7 +3643,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3655,7 +3655,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3667,7 +3667,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3679,7 +3679,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3691,7 +3691,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "hk_programm_t",
       "id": "342",
       "parameter": "HK.programm"
@@ -3703,7 +3703,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3717,7 +3717,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3731,7 +3731,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3745,7 +3745,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3759,7 +3759,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3773,7 +3773,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3787,7 +3787,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3801,7 +3801,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3815,7 +3815,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3829,7 +3829,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3843,7 +3843,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3857,7 +3857,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3871,7 +3871,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3885,7 +3885,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3899,7 +3899,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3913,7 +3913,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3927,7 +3927,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3941,7 +3941,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3955,7 +3955,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3969,7 +3969,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3983,7 +3983,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -3997,7 +3997,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4011,7 +4011,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4025,7 +4025,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4039,7 +4039,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4053,7 +4053,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4067,7 +4067,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4081,7 +4081,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4095,7 +4095,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4109,7 +4109,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4123,7 +4123,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4137,7 +4137,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4151,7 +4151,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4165,7 +4165,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4179,7 +4179,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4193,7 +4193,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4207,7 +4207,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4221,7 +4221,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4235,7 +4235,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4249,7 +4249,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4263,7 +4263,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4277,7 +4277,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4291,7 +4291,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4305,7 +4305,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4319,7 +4319,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4333,7 +4333,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4347,7 +4347,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4361,7 +4361,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4375,7 +4375,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4389,7 +4389,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4403,7 +4403,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4417,7 +4417,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4431,7 +4431,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4445,7 +4445,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4459,7 +4459,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4473,7 +4473,7 @@
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 350,
@@ -4487,7 +4487,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4499,7 +4499,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4511,7 +4511,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4523,7 +4523,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4535,7 +4535,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4547,7 +4547,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4559,7 +4559,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4571,7 +4571,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4583,7 +4583,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4595,7 +4595,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4607,7 +4607,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4619,7 +4619,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4631,7 +4631,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4643,7 +4643,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4655,7 +4655,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4667,7 +4667,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4679,7 +4679,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4691,7 +4691,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4703,7 +4703,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4715,7 +4715,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4727,7 +4727,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4739,7 +4739,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4751,7 +4751,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4763,7 +4763,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4775,7 +4775,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4787,7 +4787,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4799,7 +4799,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4811,7 +4811,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2148",
       "parameter": "HK.modbus_anforderung"
@@ -4823,7 +4823,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4835,7 +4835,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4847,7 +4847,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4859,7 +4859,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4871,7 +4871,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4883,7 +4883,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4895,7 +4895,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4907,7 +4907,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4919,7 +4919,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4931,7 +4931,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4943,7 +4943,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4955,7 +4955,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4967,7 +4967,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4979,7 +4979,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -4991,7 +4991,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5003,7 +5003,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5015,7 +5015,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5027,7 +5027,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5039,7 +5039,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5051,7 +5051,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5063,7 +5063,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5075,7 +5075,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5087,7 +5087,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5099,7 +5099,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5111,7 +5111,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5123,7 +5123,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5135,7 +5135,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5147,7 +5147,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "1/10°C",
       "id": "2149",
       "parameter": "HK.modbus_temperatur"
@@ -5170,7 +5170,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 1.1",
+      "index": "HK 1.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5182,7 +5182,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 1.2",
+      "index": "HK 1.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5194,7 +5194,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 2.1",
+      "index": "HK 2.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5206,7 +5206,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 2.2",
+      "index": "HK 2.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5218,7 +5218,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 3.1",
+      "index": "HK 3.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5230,7 +5230,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 3.2",
+      "index": "HK 3.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5242,7 +5242,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 4.1",
+      "index": "HK 4.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5254,7 +5254,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 4.2",
+      "index": "HK 4.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5266,7 +5266,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 5.1",
+      "index": "HK 5.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5278,7 +5278,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 5.2",
+      "index": "HK 5.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5290,7 +5290,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 6.1",
+      "index": "HK 6.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5302,7 +5302,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 6.2",
+      "index": "HK 6.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5314,7 +5314,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 7.1",
+      "index": "HK 7.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5326,7 +5326,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 7.2",
+      "index": "HK 7.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5338,7 +5338,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 8.1",
+      "index": "HK 8.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5350,7 +5350,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 8.2",
+      "index": "HK 8.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5362,7 +5362,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 9.1",
+      "index": "HK 9.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5374,7 +5374,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 9.2",
+      "index": "HK 9.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5386,7 +5386,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 10.1",
+      "index": "HK 10.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5398,7 +5398,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 10.2",
+      "index": "HK 10.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5410,7 +5410,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 11.1",
+      "index": "HK 11.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5422,7 +5422,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 11.2",
+      "index": "HK 11.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5434,7 +5434,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 12.1",
+      "index": "HK 12.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5446,7 +5446,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 12.2",
+      "index": "HK 12.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5458,7 +5458,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 13.1",
+      "index": "HK 13.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5470,7 +5470,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 13.2",
+      "index": "HK 13.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5482,7 +5482,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 14.1",
+      "index": "HK 14.1",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"
@@ -5494,7 +5494,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "HC 14.2",
+      "index": "HK 14.2",
       "unit_value_table": "hk_modbus_programm_t",
       "id": "2504",
       "parameter": "HK.modbus_programm"

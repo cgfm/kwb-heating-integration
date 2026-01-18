@@ -84,7 +84,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 1",
+      "index": "KFS 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -96,7 +96,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 2",
+      "index": "KFS 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -108,7 +108,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 3",
+      "index": "KFS 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -120,7 +120,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 4",
+      "index": "KFS 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -132,7 +132,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 5",
+      "index": "KFS 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -144,7 +144,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 6",
+      "index": "KFS 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -156,7 +156,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 7",
+      "index": "KFS 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -168,7 +168,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 8",
+      "index": "KFS 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "1353",
       "parameter": "KFK.o_anforderung"
@@ -180,7 +180,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 1",
+      "index": "KFS 1",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
@@ -192,7 +192,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 2",
+      "index": "KFS 2",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
@@ -204,7 +204,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 3",
+      "index": "KFS 3",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
@@ -216,7 +216,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 4",
+      "index": "KFS 4",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
@@ -228,7 +228,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 5",
+      "index": "KFS 5",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
@@ -240,7 +240,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 6",
+      "index": "KFS 6",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
@@ -252,7 +252,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 7",
+      "index": "KFS 7",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
@@ -264,7 +264,7 @@
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "B 8",
+      "index": "KFS 8",
       "unit_value_table": "system_yes_no_t",
       "id": "1371",
       "parameter": "KFK.i_stoerung"
