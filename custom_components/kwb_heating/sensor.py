@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+from datetime import datetime
 from typing import Any
 
 from homeassistant.components.sensor import (
@@ -17,14 +18,48 @@ from homeassistant.const import (
     UnitOfPower,
     PERCENTAGE,
 )
-from homeassistant.core import HomeAssistant
+from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.entity import EntityCategory
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
+from homeassistant.helpers.restore_state import RestoreEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
 from .icon_utils import get_entity_icon
+
+# Device types that support firewood (Stückholz)
+FIREWOOD_DEVICE_TYPES = [
+    "KWB CF 1",
+    "KWB CF 1.5",
+    "KWB CF 2",
+    "KWB Combifire",
+    "KWB Multifire",
+]
+
+# Modbus address for operating mode (Betriebsmodus)
+OPERATING_MODE_ADDRESS = 8244
+
+# Operating mode values indicating firewood operation
+FIREWOOD_MODE_VALUES = [1, 3]  # 1 = Stückholz, 3 = Stückholz (PM Nachlauf)
+
+# Translations for the Last Firewood Fire sensor
+FIREWOOD_SENSOR_TRANSLATIONS = {
+    "de": {
+        "name": "Letztes Stückholzfeuer",
+        "entity_id_suffix": "letztes_stueckholzfeuer",
+        "attr_firewood_active": "stueckholz_aktiv",
+        "attr_operating_mode_raw": "betriebsmodus_rohwert",
+        "attr_operating_mode": "betriebsmodus",
+    },
+    "en": {
+        "name": "Last Firewood Fire",
+        "entity_id_suffix": "last_firewood_fire",
+        "attr_firewood_active": "firewood_currently_active",
+        "attr_operating_mode_raw": "operating_mode_raw",
+        "attr_operating_mode": "operating_mode",
+    },
+}
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -71,6 +106,20 @@ async def async_setup_entry(
             _LOGGER.debug("Creating sensor for register: %s", register.get("name", "Unknown"))
             entities.append(KWBSensor(coordinator, register))
     
+    # Add computed sensor for firewood devices: "Last Firewood Fire"
+    device_type = coordinator.config.get("device_type", "")
+    if device_type in FIREWOOD_DEVICE_TYPES:
+        # Check if the operating mode register is available
+        has_operating_mode = any(
+            reg.get("starting_address") == OPERATING_MODE_ADDRESS
+            for reg in coordinator._registers
+        )
+        if has_operating_mode:
+            _LOGGER.info("Adding 'Last Firewood Fire' sensor for device type: %s", device_type)
+            entities.append(KWBLastFirewoodFireSensor(coordinator))
+        else:
+            _LOGGER.debug("Operating mode register not found, skipping 'Last Firewood Fire' sensor")
+
     _LOGGER.info("Setting up %d KWB sensor entities", len(entities))
     async_add_entities(entities)
 
@@ -217,13 +266,130 @@ class KWBSensor(CoordinatorEntity, SensorEntity):
         """Generate proper entity name and unique ID."""
         # Get base name from register
         base_name = register["name"]
-        
+
         # Add device name prefix to entity name
         device_prefix = coordinator.device_name_prefix
         entity_name = f"{device_prefix} {base_name}"
-        
+
         # Use coordinator's centralized unique ID generation
         unique_id = coordinator.generate_entity_unique_id(register)
-        
+
         return entity_name, unique_id
+
+
+class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
+    """Sensor that tracks when the last firewood fire was active."""
+
+    def __init__(self, coordinator: KWBDataUpdateCoordinator) -> None:
+        """Initialize the sensor."""
+        super().__init__(coordinator)
+
+        # Store the last timestamp when firewood was active
+        self._last_firewood_time: datetime | None = None
+        self._was_firewood_active: bool = False
+
+        # Get language from register manager (default to "de" if not available)
+        language = "de"
+        if hasattr(coordinator, 'register_manager') and coordinator.register_manager:
+            language = getattr(coordinator.register_manager, '_language', 'de') or 'de'
+
+        # Get translations for the current language (fallback to English)
+        translations = FIREWOOD_SENSOR_TRANSLATIONS.get(
+            language, FIREWOOD_SENSOR_TRANSLATIONS["en"]
+        )
+
+        # Set entity attributes
+        device_prefix = coordinator.device_name_prefix
+        self._attr_name = f"{device_prefix} {translations['name']}"
+
+        # Generate unique ID (always use English for consistency)
+        device_identifier = f"{coordinator.host}_{coordinator.slave_id}"
+        device_prefix_id = coordinator.sanitize_for_entity_id(device_prefix)
+        self._attr_unique_id = f"kwb_heating_{device_identifier}_{device_prefix_id}_last_firewood_fire"
+
+        # Set explicit entity_id using language-specific suffix
+        self._attr_entity_id = f"sensor.{device_prefix_id}_{translations['entity_id_suffix']}"
+
+        # Set device info
+        self._attr_device_info = coordinator.device_info
+
+        # Sensor configuration
+        self._attr_device_class = SensorDeviceClass.TIMESTAMP
+        self._attr_icon = "mdi:fire-alert"
+
+        # Store language for attribute translations
+        self._language = language
+
+    async def async_added_to_hass(self) -> None:
+        """Restore previous state when added to hass."""
+        await super().async_added_to_hass()
+
+        # Restore previous state if available
+        if (last_state := await self.async_get_last_state()) is not None:
+            if last_state.state not in (None, "unknown", "unavailable"):
+                try:
+                    self._last_firewood_time = datetime.fromisoformat(last_state.state)
+                    _LOGGER.debug(
+                        "Restored last firewood fire timestamp: %s",
+                        self._last_firewood_time
+                    )
+                except (ValueError, TypeError) as exc:
+                    _LOGGER.warning("Could not restore last firewood state: %s", exc)
+
+    @callback
+    def _handle_coordinator_update(self) -> None:
+        """Handle updated data from the coordinator."""
+        if self.coordinator.data and OPERATING_MODE_ADDRESS in self.coordinator.data:
+            register_data = self.coordinator.data[OPERATING_MODE_ADDRESS]
+            raw_value = register_data.get("raw_value")
+
+            if raw_value is not None:
+                is_firewood_active = raw_value in FIREWOOD_MODE_VALUES
+
+                # Update timestamp when firewood mode becomes active or stays active
+                if is_firewood_active:
+                    self._last_firewood_time = datetime.now()
+                    if not self._was_firewood_active:
+                        _LOGGER.info("Firewood fire started at %s", self._last_firewood_time)
+
+                self._was_firewood_active = is_firewood_active
+
+        self.async_write_ha_state()
+
+    @property
+    def native_value(self) -> datetime | None:
+        """Return the last time firewood was active."""
+        return self._last_firewood_time
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """Return additional state attributes."""
+        attributes = {}
+
+        # Get translations for attribute names
+        translations = FIREWOOD_SENSOR_TRANSLATIONS.get(
+            self._language, FIREWOOD_SENSOR_TRANSLATIONS["en"]
+        )
+
+        if self.coordinator.data and OPERATING_MODE_ADDRESS in self.coordinator.data:
+            register_data = self.coordinator.data[OPERATING_MODE_ADDRESS]
+            raw_value = register_data.get("raw_value")
+
+            if raw_value is not None:
+                attributes[translations["attr_firewood_active"]] = raw_value in FIREWOOD_MODE_VALUES
+                attributes[translations["attr_operating_mode_raw"]] = raw_value
+
+                # Add display value if available
+                if "display_value" in register_data:
+                    attributes[translations["attr_operating_mode"]] = register_data["display_value"]
+
+        return attributes
+
+    @property
+    def available(self) -> bool:
+        """Return True if entity is available."""
+        return (
+            self.coordinator.last_update_success
+            and self.coordinator.data is not None
+        )
 

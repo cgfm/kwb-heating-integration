@@ -16,6 +16,7 @@ A comprehensive Home Assistant Custom Component for **KWB heating systems** with
 - **Access Level System** - UserLevel vs. ExpertLevel for different user groups
 - **Equipment-based configuration** - heating circuits, buffer storage, solar, etc.
 - **All entity types** - sensors, switches, input fields and select menus
+- **Computed sensors** - "Last Firewood Fire" tracking for Combifire/Multifire devices
 - **Robust communication** with automatic reconnection
 - **Comprehensive device support** for all common KWB models
 - **ModbusInfo Converter** - Tool to convert KWB Excel files to JSON configuration
@@ -98,13 +99,52 @@ Configure the number of your equipment components:
 
 ### Sensors (Read-Only)
 - **Temperatures** (boiler, heating circuits, buffer storage, etc.)
-- **Status information** (operating mode, faults, etc.) - displayed in German
+- **Status information** (operating mode, faults, etc.) - displayed in configured language
 - **Performance data** (modulation level, burner starts, etc.)
-- **Alarm status** with German descriptions
+- **Alarm status** with localized descriptions
+
+### Computed Sensors
+
+#### Last Firewood Fire / Letztes Stückholzfeuer
+For devices that support firewood operation (Stückholz), a special computed sensor tracks when the last firewood fire was active:
+
+| Language | Sensor Name | Entity ID |
+|----------|-------------|-----------|
+| German | `{Prefix} Letztes Stückholzfeuer` | `sensor.{prefix}_letztes_stueckholzfeuer` |
+| English | `{Prefix} Last Firewood Fire` | `sensor.{prefix}_last_firewood_fire` |
+
+**Supported devices**: KWB CF 1, KWB CF 1.5, KWB CF 2, KWB Combifire, KWB Multifire
+
+**Features**:
+- **Device class**: `timestamp` - displays relative time (e.g., "2 hours ago")
+- **Persistent**: Timestamp survives Home Assistant restarts
+- **Automatic detection**: Only created for devices with firewood support
+
+**Attributes** (German/English):
+| German | English | Description |
+|--------|---------|-------------|
+| `stueckholz_aktiv` | `firewood_currently_active` | Boolean - is firewood mode currently active |
+| `betriebsmodus_rohwert` | `operating_mode_raw` | Raw operating mode value (1=Stückholz, 3=Stückholz PM Nachlauf) |
+| `betriebsmodus` | `operating_mode` | Display name of current operating mode |
+
+**Example usage in automations**:
+```yaml
+# Notify when no firewood fire for 24 hours (German entity)
+automation:
+  - alias: "Stückholz Erinnerung"
+    trigger:
+      - platform: template
+        value_template: >
+          {{ (now() - states('sensor.cf2_letztes_stueckholzfeuer') | as_datetime).total_seconds() > 86400 }}
+    action:
+      - service: notify.mobile_app
+        data:
+          message: "Seit 24 Stunden kein Stückholzfeuer mehr!"
+```
 
 ### Control (Read-Write)
 - **Target temperatures** for heating circuits
-- **Operating modes** (automatic, manual, off) - labels in German
+- **Operating modes** (automatic, manual, off) - labels in configured language
 - **Time programs** enable/disable
 - **Pumps** manual control
 
@@ -140,8 +180,8 @@ Migration from legacy "rohwert" entities:
 The integration supports **automatic version detection** and **multi-language configurations**:
 
 ### Supported Languages & Versions
-- **German (de)** - Complete support for v22.7.1 and v25.7.1
-- **English (en)** - Complete support for v22.7.1 and v25.7.1
+- **German (de)** - Complete support for v21.4.0, v22.7.1, v24.7.1 and v25.7.1
+- **English (en)** - Complete support for v21.4.0, v22.7.1, v24.7.1 and v25.7.1
 
 ### Auto-Detection
 1. **Version Detection**: Automatically detects KWB firmware version via Modbus register 8192
@@ -154,9 +194,15 @@ The integration supports **automatic version detection** and **multi-language co
 The integration uses version and language-specific configuration files:
 ```
 config/versions/
+├── v21.4.0/
+│   ├── de/  # German version 21.4.0
+│   └── en/  # English version 21.4.0
 ├── v22.7.1/
 │   ├── de/  # German version 22.7.1
 │   └── en/  # English version 22.7.1
+├── v24.7.1/
+│   ├── de/  # German version 24.7.1
+│   └── en/  # English version 24.7.1
 └── v25.7.1/
     ├── de/  # German version 25.7.1
     └── en/  # English version 25.7.1
@@ -294,9 +340,6 @@ cd kwb-heating-integration
 
 # Install dependencies
 pip install -r requirements-dev.txt
-
-# Run tests
-pytest tests/
 
 # Convert ModbusInfo Excel files (optional)
 cd modbusinfoConverter
