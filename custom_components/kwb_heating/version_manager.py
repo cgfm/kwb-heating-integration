@@ -1,11 +1,14 @@
 """Version manager for KWB heating systems."""
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
 import re
 from pathlib import Path
 from typing import Any
+
+import aiofiles
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -27,16 +30,27 @@ class VersionManager:
         self.version_mapping_path = self.config_base_path / "version_mapping.json"
         self.version_mapping: dict[str, Any] = {}
         self.fallback_strategy = "closest_match"
-        self.default_version = "24.7.1"
+        self.default_version = "22.7.1"
+        self._initialized = False
 
-        self._load_version_mapping()
+        # Create default mapping immediately (no I/O)
+        self._create_default_mapping()
 
-    def _load_version_mapping(self) -> None:
-        """Load version mapping from configuration file."""
+    async def async_initialize(self) -> None:
+        """Async initialization - load config file without blocking."""
+        if self._initialized:
+            return
+
+        await self._async_load_version_mapping()
+        self._initialized = True
+
+    async def _async_load_version_mapping(self) -> None:
+        """Load version mapping from configuration file asynchronously."""
         try:
             if self.version_mapping_path.exists():
-                with open(self.version_mapping_path, 'r', encoding='utf-8') as f:
-                    config = json.load(f)
+                async with aiofiles.open(self.version_mapping_path, 'r', encoding='utf-8') as f:
+                    content = await f.read()
+                    config = json.loads(content)
                     self.version_mapping = config.get("supported_versions", {})
 
                     fallback_rules = config.get("fallback_rules", {})
@@ -48,14 +62,12 @@ class VersionManager:
                         len(self.version_mapping)
                     )
             else:
-                _LOGGER.warning(
+                _LOGGER.debug(
                     "Version mapping file not found at %s, using defaults",
                     self.version_mapping_path
                 )
-                self._create_default_mapping()
         except Exception as exc:
             _LOGGER.error("Failed to load version mapping: %s", exc)
-            self._create_default_mapping()
 
     def _create_default_mapping(self) -> None:
         """Create default version mapping."""

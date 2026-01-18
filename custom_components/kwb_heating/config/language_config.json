@@ -1,0 +1,16 @@
+{
+  "language_detection": {
+    "use_ha_locale": true,
+    "fallback_language": "en"
+  },
+  "language_mapping": {
+    "de": "de",
+    "de-DE": "de",
+    "de-AT": "de",
+    "de-CH": "de",
+    "en": "en",
+    "en-US": "en",
+    "en-GB": "en",
+    "en-AU": "en"
+  }
+}
