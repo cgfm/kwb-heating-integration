@@ -50,7 +50,7 @@
       "expert_level": "read",
       "unit_value_table": "system_yes_no_t",
       "id": "614",
-      "parameter": "KSM.anlage_kein_alarm_keine_stoerung"
+      "parameter": "KSM.anlage_keine_stoerung"
     },
     {
       "starting_address": 8205,
@@ -61,7 +61,7 @@
       "expert_level": "read",
       "unit_value_table": "system_yes_no_t",
       "id": "1192",
-      "parameter": "KSM.summen_alarm_oder_stoerung"
+      "parameter": "KSM.summen_stoerung"
     },
     {
       "starting_address": 8252,
@@ -94,7 +94,7 @@
       "expert_level": "read",
       "unit_value_table": "system_yes_no_t",
       "id": "2598",
-      "parameter": "KSM.anlage_stoerung_mit_abschaltung"
+      "parameter": "KSM.anlage_stoerung"
     },
     {
       "starting_address": 10024,
@@ -117,17 +117,6 @@
       "unit_value_table": "wmm_rolle_t",
       "id": "2063",
       "parameter": "SYSTEM.wmm_rolle"
-    },
-    {
-      "starting_address": 10228,
-      "name": "BGE",
-      "data_type": "04",
-      "type": "u32",
-      "user_level": "read",
-      "expert_level": "read",
-      "number_of_registers": 2,
-      "id": "1569",
-      "parameter": "SYSTEM.bge_serial_number"
     },
     {
       "starting_address": 24582,
@@ -175,14 +164,14 @@
     },
     {
       "starting_address": 25162,
-      "name": "Modbus Lifetick Zweitwärmequellen ignorieren (Wärmepumpe oder Kessel)",
+      "name": "Modbus Lifetick Zweitwärmequellen Wärmepumpen ignorieren",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
       "unit_value_table": "system_yes_no_t",
       "id": "3031",
-      "parameter": "SYSTEM.modbus_lifetick_ignore_zwq"
+      "parameter": "SYSTEM.modbus_lifetick_ignore_wp_zwq"
     },
     {
       "starting_address": 25163,
@@ -205,39 +194,6 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3033",
       "parameter": "SYSTEM.modbus_lifetick_ignor_uestrommfa"
-    },
-    {
-      "starting_address": 25165,
-      "name": "SAN Code",
-      "data_type": "03",
-      "type": "s16",
-      "user_level": "read",
-      "expert_level": "read",
-      "unit_value_table": "kesselseriennummer_san_code_t",
-      "id": "2523",
-      "parameter": "SYSTEM.kessel_seriennummer_san_code"
-    },
-    {
-      "starting_address": 25166,
-      "name": "Seriennummer",
-      "data_type": "03",
-      "type": "u32",
-      "user_level": "read",
-      "expert_level": "read",
-      "number_of_registers": 2,
-      "id": "407",
-      "parameter": "SYSTEM.kessel_seriennummer"
-    },
-    {
-      "starting_address": 25304,
-      "name": "Modbus Lifetick Wärmepumpe ignorieren",
-      "data_type": "03",
-      "type": "s16",
-      "user_level": "read",
-      "expert_level": "readwrite",
-      "unit_value_table": "system_yes_no_t",
-      "id": "3309",
-      "parameter": "SYSTEM.modbus_lifetick_ignore_wp"
     }
   ]
 }

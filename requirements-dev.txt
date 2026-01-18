@@ -6,7 +6,7 @@ pymodbus>=3.0.0
 # Development and testing
 pytest>=7.0.0
 pytest-asyncio>=0.20.0
-pytest-cov>=4.0.0
+pytest-cov>=3.0.0
 pytest-homeassistant-custom-component>=0.13.0
 
 # Code quality
@@ -16,7 +16,7 @@ mypy>=0.991
 pre-commit>=2.20.0
 
 # Home Assistant development
-homeassistant>=2023.1.0
+homeassistant>=2023.7.0
 
 # Additional utilities
 pyyaml>=6.0

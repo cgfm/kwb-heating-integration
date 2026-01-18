@@ -238,26 +238,6 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3309",
       "parameter": "SYSTEM.modbus_lifetick_ignore_wp"
-    },
-    {
-      "starting_address": 24849,
-      "name": "Modbus Lifetick",
-      "data_type": "03",
-      "type": "u16",
-      "user_level": "read",
-      "expert_level": "readwrite",
-      "id": "2069",
-      "parameter": "KSM.modbus_lifetick"
-    },
-    {
-      "starting_address": 24850,
-      "name": "Modbus Commit Lifetick",
-      "data_type": "03",
-      "type": "u16",
-      "user_level": "read",
-      "expert_level": "read",
-      "id": "2070",
-      "parameter": "KSM.modbus_commit_lifetick"
     }
   ]
 }

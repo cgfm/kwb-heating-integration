@@ -22,9 +22,9 @@ class ModbusInfoConverter:
     """Converts ModbusInfo Excel files to JSON configuration."""
 
     # Sheet categories
-    UNIVERSAL_SHEET = "Universal"
+    #UNIVERSAL_SHEET = "Universal"
     # WMM Autonom is NOT a device - it contains universal Modbus lifetick registers
-    UNIVERSAL_SHEETS = ["Universal", "WMM Autonom"]
+    UNIVERSAL_SHEETS = ["Universal"]
 
     DEVICE_SHEETS = [
         "KWB Easyfire", "KWB EF3", "KWB Multifire", "KWB Pelletfire+",

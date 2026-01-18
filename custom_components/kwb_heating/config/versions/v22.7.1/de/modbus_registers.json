@@ -95,26 +95,6 @@
       "unit_value_table": "system_ein_aus_t",
       "id": "1144",
       "parameter": "SYSTEM.alarme_beheben_von_extern"
-    },
-    {
-      "starting_address": 24849,
-      "name": "Modbus Lifetick",
-      "data_type": "03",
-      "type": "u16",
-      "user_level": "read",
-      "expert_level": "readwrite",
-      "id": "2069",
-      "parameter": "KSM.modbus_lifetick"
-    },
-    {
-      "starting_address": 24850,
-      "name": "Modbus Commit Lifetick",
-      "data_type": "03",
-      "type": "u16",
-      "user_level": "read",
-      "expert_level": "read",
-      "id": "2070",
-      "parameter": "KSM.modbus_commit_lifetick"
     }
   ]
 }
