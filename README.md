@@ -6,7 +6,35 @@
 
 A comprehensive Home Assistant Custom Component for **KWB heating systems** with Modbus TCP/RTU support.
 
-> **⚠️ Testing Status**: This integration has been tested primarily with **KWB CF2**, **2 heating circuits**, and **1 buffer storage**. Testing with other KWB models and configurations is very welcome! Please help expand compatibility by testing with your setup and reporting results via [GitHub Issues](https://github.com/cgfm/kwb-heating-integration/issues). 
+> **⚠️ Testing Status**: This integration has been tested primarily with **KWB CF2**, **2 heating circuits**, and **1 buffer storage**. Testing with other KWB models and configurations is very welcome! Please help expand compatibility by testing with your setup and reporting results via [GitHub Issues](https://github.com/cgfm/kwb-heating-integration/issues).
+
+## ⚠️ Breaking Changes (v0.4.0)
+
+**If you are upgrading from a previous version, please read this section carefully.**
+
+### Entity ID Changes for Equipment
+
+Equipment index prefixes have been standardized to German across all language configurations. This ensures entity IDs remain stable regardless of language selection, but requires migration for existing users.
+
+| Equipment Type | Old Prefix (EN) | New Prefix (All) |
+|----------------|-----------------|------------------|
+| Heating Circuits | `HC` | `HK` |
+| Buffer Storage | `BUF` | `PUF` |
+| DHW Storage | `DHWC` | `BWS` |
+| Secondary Heat | `SHS` | `ZWQ` |
+| Circulation | `CIR` | `ZIR` |
+| Boiler Sequence | `BS` | `KFS` |
+| Heat Meters | `HM` | `WMZ` |
+
+**Example change**:
+- Old: `sensor.easyfire_heating_circuit_1_1_forward_flow_temp`
+- New: `sensor.easyfire_heizkreis_1_1_forward_flow_temp`
+
+**Why German?** KWB is an Austrian company and their internal Modbus register definitions use German naming. Using German prefixes ensures entity IDs are consistent and don't change when switching languages. Display names in the UI are still localized.
+
+**Migration**: Update any automations, scripts, dashboards, or Lovelace cards that reference the old entity IDs.
+
+See [CHANGELOG.md](CHANGELOG.md) for full details.
 
 ## 🔥 Features
 

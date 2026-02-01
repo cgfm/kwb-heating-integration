@@ -7,17 +7,10 @@ from typing import Any
 
 from homeassistant.components.sensor import (
     SensorEntity,
-    SensorEntityDescription,
     SensorDeviceClass,
     SensorStateClass,
 )
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import (
-    UnitOfTemperature,
-    UnitOfPressure,
-    UnitOfPower,
-    PERCENTAGE,
-)
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.entity import EntityCategory
@@ -26,6 +19,7 @@ from homeassistant.helpers.restore_state import RestoreEntity
 
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .entity import KWBBaseEntity
 from .icon_utils import get_entity_icon
 
 # Device types that support firewood (Stückholz)
@@ -124,7 +118,7 @@ async def async_setup_entry(
     async_add_entities(entities)
 
 
-class KWBSensor(CoordinatorEntity, SensorEntity):
+class KWBSensor(KWBBaseEntity, SensorEntity):
     """Representation of a KWB heating system sensor."""
 
     def __init__(
@@ -133,21 +127,8 @@ class KWBSensor(CoordinatorEntity, SensorEntity):
         register: dict,
     ) -> None:
         """Initialize the sensor."""
-        super().__init__(coordinator)
-        self._register = register
-        self._address = register["starting_address"]
-        
-        # Generate proper entity name and unique ID based on index and equipment category
-        self._attr_name, self._attr_unique_id = self._generate_entity_name_and_id(register, coordinator)
-        
-        # Set explicit entity_id to ensure device name prefix is included
-        device_prefix = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
-        register_name = coordinator.sanitize_for_entity_id(register["name"])
-        self._attr_entity_id = f"sensor.{device_prefix}_{register_name}"
-        
-        # Set device info
-        self._attr_device_info = coordinator.device_info
-        
+        super().__init__(coordinator, register, "sensor")
+
         # Configure sensor properties based on register
         self._configure_sensor()
 
@@ -234,47 +215,6 @@ class KWBSensor(CoordinatorEntity, SensorEntity):
             and self.coordinator.data is not None
             and self._address in self.coordinator.data
         )
-
-    @property
-    def icon(self) -> str | None:
-        """Return icon for the sensor."""
-        # Provide icons based on sensor name/type
-        name_lower = self._register["name"].lower()
-        
-        if "temperature" in name_lower or "temp" in name_lower:
-            return "mdi:thermometer"
-        elif "pressure" in name_lower:
-            return "mdi:gauge"
-        elif "power" in name_lower or "leistung" in name_lower:
-            return "mdi:flash"
-        elif "pump" in name_lower or "pumpe" in name_lower:
-            return "mdi:pump"
-        elif "fan" in name_lower or "gebläse" in name_lower:
-            return "mdi:fan"
-        elif "valve" in name_lower or "ventil" in name_lower:
-            return "mdi:valve"
-        elif "alarm" in name_lower or "error" in name_lower:
-            return "mdi:alert"
-        elif "version" in name_lower or "software" in name_lower:
-            return "mdi:information"
-        elif "status" in name_lower:
-            return "mdi:checkbox-marked-circle"
-        
-        return None
-
-    def _generate_entity_name_and_id(self, register: dict, coordinator) -> tuple[str, str]:
-        """Generate proper entity name and unique ID."""
-        # Get base name from register
-        base_name = register["name"]
-
-        # Add device name prefix to entity name
-        device_prefix = coordinator.device_name_prefix
-        entity_name = f"{device_prefix} {base_name}"
-
-        # Use coordinator's centralized unique ID generation
-        unique_id = coordinator.generate_entity_unique_id(register)
-
-        return entity_name, unique_id
 
 
 class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):

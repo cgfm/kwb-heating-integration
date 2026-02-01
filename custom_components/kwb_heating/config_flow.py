@@ -6,7 +6,7 @@ from typing import Any
 
 import voluptuous as vol
 from homeassistant import config_entries
-from homeassistant.const import CONF_HOST, CONF_NAME, CONF_PORT
+from homeassistant.const import CONF_HOST, CONF_PORT
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.data_entry_flow import FlowResult
 from homeassistant.exceptions import HomeAssistantError
@@ -35,10 +35,8 @@ from .const import (
     CONF_BOILER_SEQUENCE,
     CONF_HEAT_METERS,
     CONF_TRANSFER_STATIONS,
-    SYSTEM_REGISTER_MAPPING,
 )
 from .modbus_client import KWBModbusClient
-from .register_manager import RegisterManager
 
 _LOGGER = logging.getLogger(__name__)
 

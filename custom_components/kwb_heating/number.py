@@ -8,10 +8,9 @@ from homeassistant.components.number import NumberEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
-from homeassistant.helpers.update_coordinator import CoordinatorEntity
-
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .entity import KWBBaseEntity
 from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
@@ -42,7 +41,7 @@ async def async_setup_entry(
     async_add_entities(entities)
 
 
-class KWBNumber(CoordinatorEntity, NumberEntity):
+class KWBNumber(KWBBaseEntity, NumberEntity):
     """Representation of a KWB heating system number control."""
 
     def __init__(
@@ -51,26 +50,11 @@ class KWBNumber(CoordinatorEntity, NumberEntity):
         register: dict,
     ) -> None:
         """Initialize the number entity."""
-        super().__init__(coordinator)
-        self._register = register
-        self._address = register["starting_address"]
-        
-        # Generate structured entity name and unique ID
-        entity_name, unique_id = self._generate_entity_name_and_id(register, coordinator)
-        self._attr_name = entity_name
-        self._attr_unique_id = unique_id
-        
-        # Set explicit entity_id to ensure device name prefix is included
-        device_prefix = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
-        register_name = coordinator.sanitize_for_entity_id(register["name"])
-        self._attr_entity_id = f"number.{device_prefix}_{register_name}"
-        
-        # Set device info
-        self._attr_device_info = coordinator.device_info
-        
+        super().__init__(coordinator, register, "number")
+
         # Set icon based on register definition
         self._attr_icon = get_entity_icon(self._register, "number")
-        
+
         # Configure number properties
         self._configure_number()
 
@@ -136,40 +120,3 @@ class KWBNumber(CoordinatorEntity, NumberEntity):
             and self.coordinator.data is not None
             and self._address in self.coordinator.data
         )
-
-    @property
-    def icon(self) -> str | None:
-        """Return icon for the number entity."""
-        # Wenn ein Icon direkt im Register definiert ist, verwende dieses
-        if "icon" in self._register and self._register["icon"]:
-            return self._register["icon"]
-            
-        # Ansonsten fallback auf bestehende Logik
-        name_lower = self._register["name"].lower()
-        
-        if "temperature" in name_lower or "temp" in name_lower:
-            return "mdi:thermometer"
-        elif "pressure" in name_lower:
-            return "mdi:gauge"
-        elif "speed" in name_lower or "drehzahl" in name_lower:
-            return "mdi:speedometer"
-        elif "power" in name_lower or "leistung" in name_lower:
-            return "mdi:flash"
-        elif "setpoint" in name_lower or "sollwert" in name_lower:
-            return "mdi:target"
-        
-        return "mdi:numeric"
-    
-    def _generate_entity_name_and_id(self, register: dict, coordinator) -> tuple[str, str]:
-        """Generate proper entity name and unique ID."""
-        # Get base name from register
-        base_name = register["name"]
-        
-        # Add device name prefix to entity name
-        device_prefix = coordinator.device_name_prefix
-        entity_name = f"{device_prefix} {base_name}"
-        
-        # Use coordinator's centralized unique ID generation
-        unique_id = coordinator.generate_entity_unique_id(register)
-        
-        return entity_name, unique_id

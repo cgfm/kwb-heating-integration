@@ -8,10 +8,9 @@ from homeassistant.components.select import SelectEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
-from homeassistant.helpers.update_coordinator import CoordinatorEntity
-
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
+from .entity import KWBBaseEntity
 from .icon_utils import get_entity_icon
 
 _LOGGER = logging.getLogger(__name__)
@@ -36,42 +35,14 @@ async def async_setup_entry(
     for register in coordinator._registers:
         if (register.get("user_level") == "readwrite" and
             coordinator.data_converter.has_value_table(register) and
-            not _is_boolean_value_table(register, coordinator.data_converter)):
+            not coordinator.data_converter.is_boolean_value_table(register)):
             entities.append(KWBSelect(coordinator, register))
-    
+
     _LOGGER.info("Setting up %d KWB select entities", len(entities))
     async_add_entities(entities)
 
 
-def _is_boolean_value_table(register: dict, data_converter) -> bool:
-    """Check if value table represents boolean values (on/off, enabled/disabled)."""
-    unit_value_table = register.get("unit_value_table", "")
-    if not unit_value_table or unit_value_table not in data_converter.value_tables:
-        return False
-
-    value_table = data_converter.value_tables[unit_value_table]
-    if not isinstance(value_table, dict):
-        return False
-
-    # Check if it's a simple boolean mapping (0/1, true/false, etc.)
-    values = list(value_table.keys())
-    if len(values) == 2:
-        # Common boolean patterns
-        boolean_patterns = [
-            ["0", "1"],
-            ["false", "true"],
-            ["off", "on"],
-            ["disabled", "enabled"],
-            ["aus", "ein"],  # German
-        ]
-
-        values_lower = [str(v).lower() for v in sorted(values)]
-        return any(sorted(pattern) == values_lower for pattern in boolean_patterns)
-
-    return False
-
-
-class KWBSelect(CoordinatorEntity, SelectEntity):
+class KWBSelect(KWBBaseEntity, SelectEntity):
     """Representation of a KWB heating system select control."""
 
     def __init__(
@@ -80,26 +51,11 @@ class KWBSelect(CoordinatorEntity, SelectEntity):
         register: dict,
     ) -> None:
         """Initialize the select entity."""
-        super().__init__(coordinator)
-        self._register = register
-        self._address = register["starting_address"]
-        
-        # Generate structured entity name and unique ID
-        entity_name, unique_id = self._generate_entity_name_and_id(register, coordinator)
-        self._attr_name = entity_name
-        self._attr_unique_id = unique_id
-        
-        # Set explicit entity_id to ensure device name prefix is included
-        device_prefix = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
-        register_name = coordinator.sanitize_for_entity_id(register["name"])
-        self._attr_entity_id = f"select.{device_prefix}_{register_name}"
-        
-        # Set device info
-        self._attr_device_info = coordinator.device_info
-        
+        super().__init__(coordinator, register, "select")
+
         # Set icon based on register definition
         self._attr_icon = get_entity_icon(self._register, "select")
-        
+
         # Configure select properties
         self._configure_select()
 
@@ -179,22 +135,6 @@ class KWBSelect(CoordinatorEntity, SelectEntity):
         )
 
     @property
-    def icon(self) -> str | None:
-        """Return icon for the select entity."""
-        name_lower = self._register["name"].lower()
-        
-        if "mode" in name_lower or "modus" in name_lower:
-            return "mdi:cog"
-        elif "program" in name_lower or "programm" in name_lower:
-            return "mdi:calendar-clock"
-        elif "level" in name_lower or "stufe" in name_lower:
-            return "mdi:format-list-numbered"
-        elif "status" in name_lower:
-            return "mdi:information"
-        
-        return "mdi:format-list-bulleted"
-
-    @property
     def extra_state_attributes(self) -> dict[str, Any]:
         """Return additional state attributes, including raw Modbus value."""
         if not self.coordinator.data or self._address not in self.coordinator.data:
@@ -208,17 +148,3 @@ class KWBSelect(CoordinatorEntity, SelectEntity):
         }
 
         return attrs
-
-    def _generate_entity_name_and_id(self, register: dict, coordinator) -> tuple[str, str]:
-        """Generate proper entity name and unique ID."""
-        # Get base name from register
-        base_name = register["name"]
-        
-        # Add device name prefix to entity name
-        device_prefix = coordinator.device_name_prefix
-        entity_name = f"{device_prefix} {base_name}"
-        
-        # Use coordinator's centralized unique ID generation
-        unique_id = coordinator.generate_entity_unique_id(register)
-        
-        return entity_name, unique_id

@@ -27,6 +27,11 @@ class KWBModbusClient:
         self._lock = asyncio.Lock()
         self._unit_kwarg: str = "unit"  # will be auto-detected on connect
 
+    @property
+    def is_connected(self) -> bool:
+        """Return True if the client is connected to the Modbus device."""
+        return self._connected
+
     async def _invoke_with_unit_kwarg(self, method_name: str, *args):
         """Call a pymodbus client method with unit/slave in a version-agnostic way.
 

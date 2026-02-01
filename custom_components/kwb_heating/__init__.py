@@ -11,9 +11,9 @@ from typing import Any
 
 import voluptuous as vol
 from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import Platform
 from homeassistant.core import HomeAssistant
-from homeassistant.helpers import config_validation as cv
+from homeassistant.exceptions import ConfigEntryNotReady
+from homeassistant.helpers.update_coordinator import UpdateFailed
 
 from .const import DOMAIN, PLATFORMS
 from .coordinator import KWBDataUpdateCoordinator
@@ -40,7 +40,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     try:
         await coordinator.async_config_entry_first_refresh()
         _LOGGER.info("Initial data refresh successful")
-    except Exception as exc:
+    except (UpdateFailed, ConfigEntryNotReady, ConnectionError, TimeoutError, OSError) as exc:
         _LOGGER.warning("Initial data refresh failed, will retry: %s", exc)
         # Continue with setup anyway - coordinator will retry periodically
     

@@ -196,17 +196,24 @@ class KWBDataConverter:
         
         return None
     
-    def get_device_class(self, register_config: dict[str, Any]) -> str | None:
-        """Determine device class based on unit."""
-        unit = self.get_unit_of_measurement(register_config)
-        
+    def get_device_class(self, register: dict) -> str | None:
+        """Get device class for Home Assistant based on unit.
+
+        Args:
+            register: Register configuration dictionary
+
+        Returns:
+            Device class string or None if not applicable
+        """
+        unit = self.get_unit_of_measurement(register)
+
         if not unit:
             return None
-        
+
         # Map units to device classes
         device_class_mapping = {
             "°C": "temperature",
-            "°F": "temperature", 
+            "°F": "temperature",
             "%": None,  # Could be humidity, battery, etc. - let HA decide
             "bar": "pressure",
             "Pa": "pressure",
@@ -216,29 +223,7 @@ class KWBDataConverter:
             "A": "current",
             "Hz": "frequency",
         }
-        
-        return device_class_mapping.get(unit)
-    
-    def get_device_class(self, register: dict) -> str | None:
-        """Get device class for Home Assistant (new interface)."""
-        unit = self.get_unit_of_measurement(register)
-        
-        if not unit:
-            return None
-        
-        # Map units to device classes (return string constants instead of enums)
-        device_class_mapping = {
-            "°C": "temperature",
-            "°F": "temperature", 
-            "bar": "pressure",
-            "Pa": "pressure",
-            "kW": "power",
-            "W": "power",
-            "V": "voltage",
-            "A": "current",
-            "Hz": "frequency",
-        }
-        
+
         return device_class_mapping.get(unit)
     
     def is_read_write_register(self, register_config: dict[str, Any], access_level: str) -> bool:
@@ -316,7 +301,41 @@ class KWBDataConverter:
             return True
         
         return False
-    
+
+    def is_boolean_value_table(self, register: dict) -> bool:
+        """Check if value table represents boolean values (on/off, enabled/disabled).
+
+        Args:
+            register: Register configuration dictionary
+
+        Returns:
+            True if the value table has exactly 2 values matching boolean patterns
+        """
+        unit_value_table = register.get("unit_value_table", "")
+        if not unit_value_table or unit_value_table not in self.value_tables:
+            return False
+
+        value_table = self.value_tables[unit_value_table]
+        if not isinstance(value_table, dict):
+            return False
+
+        # Check if it's a simple boolean mapping (0/1, true/false, etc.)
+        values = list(value_table.keys())
+        if len(values) == 2:
+            # Common boolean patterns
+            boolean_patterns = [
+                ["0", "1"],
+                ["false", "true"],
+                ["off", "on"],
+                ["disabled", "enabled"],
+                ["aus", "ein"],  # German
+            ]
+
+            values_lower = [str(v).lower() for v in sorted(values)]
+            return any(sorted(pattern) == values_lower for pattern in boolean_patterns)
+
+        return False
+
     def get_display_value(self, register: dict, raw_value: int) -> str | None:
         """Get display value from value table if available."""
         unit_value_table = register.get("unit_value_table", "")

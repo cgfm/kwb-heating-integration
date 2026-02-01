@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import asyncio
 import logging
+import re
 from datetime import timedelta
 from typing import Any
 
@@ -36,6 +37,17 @@ from .version_manager import VersionManager
 from .language_manager import LanguageManager
 
 _LOGGER = logging.getLogger(__name__)
+
+# Pre-compiled regex for entity ID sanitization (more efficient than chained replace)
+_ENTITY_ID_INVALID_CHARS = re.compile(r"[^a-z0-9_]")
+
+# Character replacements for entity ID sanitization
+_ENTITY_ID_REPLACEMENTS = str.maketrans({
+    " ": "_", ".": "_", "/": "_", "-": "_", ":": "_",
+    "ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss",
+    "&": "and", "@": "at",
+    "(": "", ")": "", "#": "", "!": "", "?": "", ",": "", ";": "", "'": "", '"': "",
+})
 
 
 class KWBDataUpdateCoordinator(DataUpdateCoordinator):
@@ -80,7 +92,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         """Detect software version from the device."""
         try:
             # Ensure connection
-            if not self.modbus_client._connected:
+            if not self.modbus_client.is_connected:
                 await self.modbus_client.connect()
 
             # Detect version using version manager
@@ -216,7 +228,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
 
         try:
             # Ensure connection
-            if not self.modbus_client._connected:
+            if not self.modbus_client.is_connected:
                 _LOGGER.info("Connecting to KWB heating system at %s:%d", self.host, self.port)
                 await self.modbus_client.connect()
             
@@ -274,7 +286,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         """Write value to a register."""
         try:
             # Ensure connection
-            if not self.modbus_client._connected:
+            if not self.modbus_client.is_connected:
                 await self.modbus_client.connect()
             
             # Find register definition
@@ -376,28 +388,14 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         return device_name
 
     def sanitize_for_entity_id(self, text: str) -> str:
-        """Sanitize text for use in entity IDs - shared method for consistent entity naming."""
-        return (text.lower()
-               .replace(" ", "_")
-               .replace(".", "_")
-               .replace("(", "")
-               .replace(")", "")
-               .replace("/", "_")
-               .replace("-", "_")
-               .replace(":", "_")
-               .replace("ä", "ae")
-               .replace("ö", "oe") 
-               .replace("ü", "ue")
-               .replace("ß", "ss")
-               .replace("&", "and")
-               .replace("#", "")
-               .replace("@", "at")
-               .replace("!", "")
-               .replace("?", "")
-               .replace(",", "")
-               .replace(";", "")
-               .replace("'", "")
-               .replace('"', ""))
+        """Sanitize text for use in entity IDs - shared method for consistent entity naming.
+
+        Uses pre-compiled translation table and regex for better performance.
+        """
+        # Apply character translations and convert to lowercase
+        result = text.lower().translate(_ENTITY_ID_REPLACEMENTS)
+        # Remove any remaining invalid characters
+        return _ENTITY_ID_INVALID_CHARS.sub("", result)
 
     def generate_entity_unique_id(self, register: dict) -> str:
         """Generate consistent unique ID for entities based on device identifier."""
