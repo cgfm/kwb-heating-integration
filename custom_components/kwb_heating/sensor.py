@@ -31,11 +31,19 @@ FIREWOOD_DEVICE_TYPES = [
     "KWB Multifire",
 ]
 
-# Modbus address for operating mode (Betriebsmodus)
-OPERATING_MODE_ADDRESS = 8244
+# Modbus address for firewood boiler status (Status Stückholz)
+FIREWOOD_STATUS_ADDRESS = 8212
 
-# Operating mode values indicating firewood operation
-FIREWOOD_MODE_VALUES = [1, 3]  # 1 = Stückholz, 3 = Stückholz (PM Nachlauf)
+# Boiler status values indicating active firewood operation (ksm_kesselstatus_anzeige_t)
+FIREWOOD_ACTIVE_VALUES = [
+    36,  # Anheizen
+    37,  # Warten Zündanf.
+    38,  # Warten Zündfreig.
+    39,  # Start Zündung
+    40,  # Zünden
+    41,  # Heizen
+    42,  # Feuerhaltung
+]
 
 # Translations for the Last Firewood Fire sensor
 FIREWOOD_SENSOR_TRANSLATIONS = {
@@ -43,15 +51,15 @@ FIREWOOD_SENSOR_TRANSLATIONS = {
         "name": "Letztes Stückholzfeuer",
         "entity_id_suffix": "letztes_stueckholzfeuer",
         "attr_firewood_active": "stueckholz_aktiv",
-        "attr_operating_mode_raw": "betriebsmodus_rohwert",
-        "attr_operating_mode": "betriebsmodus",
+        "attr_boiler_status_raw": "kesselstatus_rohwert",
+        "attr_boiler_status": "kesselstatus",
     },
     "en": {
         "name": "Last Firewood Fire",
         "entity_id_suffix": "last_firewood_fire",
         "attr_firewood_active": "firewood_currently_active",
-        "attr_operating_mode_raw": "operating_mode_raw",
-        "attr_operating_mode": "operating_mode",
+        "attr_boiler_status_raw": "boiler_status_raw",
+        "attr_boiler_status": "boiler_status",
     },
 }
 
@@ -103,16 +111,16 @@ async def async_setup_entry(
     # Add computed sensor for firewood devices: "Last Firewood Fire"
     device_type = coordinator.config.get("device_type", "")
     if device_type in FIREWOOD_DEVICE_TYPES:
-        # Check if the operating mode register is available
-        has_operating_mode = any(
-            reg.get("starting_address") == OPERATING_MODE_ADDRESS
+        # Check if the firewood status register is available
+        has_firewood_status = any(
+            reg.get("starting_address") == FIREWOOD_STATUS_ADDRESS
             for reg in coordinator._registers
         )
-        if has_operating_mode:
+        if has_firewood_status:
             _LOGGER.info("Adding 'Last Firewood Fire' sensor for device type: %s", device_type)
             entities.append(KWBLastFirewoodFireSensor(coordinator))
         else:
-            _LOGGER.debug("Operating mode register not found, skipping 'Last Firewood Fire' sensor")
+            _LOGGER.debug("Firewood status register not found, skipping 'Last Firewood Fire' sensor")
 
     _LOGGER.info("Setting up %d KWB sensor entities", len(entities))
     async_add_entities(entities)
@@ -282,14 +290,14 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
     @callback
     def _handle_coordinator_update(self) -> None:
         """Handle updated data from the coordinator."""
-        if self.coordinator.data and OPERATING_MODE_ADDRESS in self.coordinator.data:
-            register_data = self.coordinator.data[OPERATING_MODE_ADDRESS]
+        if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
+            register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
             raw_value = register_data.get("raw_value")
 
             if raw_value is not None:
-                is_firewood_active = raw_value in FIREWOOD_MODE_VALUES
+                is_firewood_active = raw_value in FIREWOOD_ACTIVE_VALUES
 
-                # Update timestamp when firewood mode becomes active or stays active
+                # Update timestamp when firewood becomes active or stays active
                 if is_firewood_active:
                     self._last_firewood_time = datetime.now(tz=timezone.utc)
                     if not self._was_firewood_active:
@@ -314,17 +322,17 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
             self._language, FIREWOOD_SENSOR_TRANSLATIONS["en"]
         )
 
-        if self.coordinator.data and OPERATING_MODE_ADDRESS in self.coordinator.data:
-            register_data = self.coordinator.data[OPERATING_MODE_ADDRESS]
+        if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
+            register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
             raw_value = register_data.get("raw_value")
 
             if raw_value is not None:
-                attributes[translations["attr_firewood_active"]] = raw_value in FIREWOOD_MODE_VALUES
-                attributes[translations["attr_operating_mode_raw"]] = raw_value
+                attributes[translations["attr_firewood_active"]] = raw_value in FIREWOOD_ACTIVE_VALUES
+                attributes[translations["attr_boiler_status_raw"]] = raw_value
 
                 # Add display value if available
                 if "display_value" in register_data:
-                    attributes[translations["attr_operating_mode"]] = register_data["display_value"]
+                    attributes[translations["attr_boiler_status"]] = register_data["display_value"]
 
         return attributes
 
