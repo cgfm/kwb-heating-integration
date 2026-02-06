@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enhanced firewood detection with comprehensive boiler status values (Anheizen, Zünden, Heizen, Feuerhaltung, etc.)
 - Updated sensor attributes: `operating_mode` → `boiler_status`, `betriebsmodus` → `kesselstatus`
 
+### Fixed
+- **Invalid entity IDs**: Entity IDs containing double underscores (`__`) or trailing underscores (e.g., from register names with parentheses or special characters like `%`) are now properly sanitized, fixing "Invalid entity ID" errors that prevented equipment entities (heating circuits, buffer storage, etc.) from loading
+- **Timezone-naive datetime error**: Last Firewood Fire sensor now uses timezone-aware UTC timestamps, fixing `ValueError: missing timezone information` for `SensorDeviceClass.TIMESTAMP` entities
+
 ## [0.4.1] - 2026-02-01
 
 ### Added
