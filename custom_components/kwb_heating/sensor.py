@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import logging
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Any
 
 from homeassistant.components.sensor import (
@@ -268,7 +268,10 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
         if (last_state := await self.async_get_last_state()) is not None:
             if last_state.state not in (None, "unknown", "unavailable"):
                 try:
-                    self._last_firewood_time = datetime.fromisoformat(last_state.state)
+                    restored = datetime.fromisoformat(last_state.state)
+                    if restored.tzinfo is None:
+                        restored = restored.replace(tzinfo=timezone.utc)
+                    self._last_firewood_time = restored
                     _LOGGER.debug(
                         "Restored last firewood fire timestamp: %s",
                         self._last_firewood_time
@@ -288,7 +291,7 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
 
                 # Update timestamp when firewood mode becomes active or stays active
                 if is_firewood_active:
-                    self._last_firewood_time = datetime.now()
+                    self._last_firewood_time = datetime.now(tz=timezone.utc)
                     if not self._was_firewood_active:
                         _LOGGER.info("Firewood fire started at %s", self._last_firewood_time)
 

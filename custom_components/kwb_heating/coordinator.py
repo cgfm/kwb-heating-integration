@@ -395,7 +395,10 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         # Apply character translations and convert to lowercase
         result = text.lower().translate(_ENTITY_ID_REPLACEMENTS)
         # Remove any remaining invalid characters
-        return _ENTITY_ID_INVALID_CHARS.sub("", result)
+        result = _ENTITY_ID_INVALID_CHARS.sub("", result)
+        # Collapse multiple underscores and strip leading/trailing underscores
+        result = re.sub(r"_+", "_", result).strip("_")
+        return result
 
     def generate_entity_unique_id(self, register: dict) -> str:
         """Generate consistent unique ID for entities based on device identifier."""
