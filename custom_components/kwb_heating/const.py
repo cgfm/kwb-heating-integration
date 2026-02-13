@@ -14,14 +14,24 @@ PLATFORMS: list[Platform] = [
 ]
 
 # Configuration
+CONF_CONNECTION_TYPE = "connection_type"
 CONF_HOST = "host"
 CONF_PORT = "port"
+CONF_SERIAL_PORT = "serial_port"
+CONF_BAUDRATE = "baudrate"
+CONF_PARITY = "parity"
+CONF_STOPBITS = "stopbits"
+CONF_BYTESIZE = "bytesize"
 CONF_SLAVE_ID = "slave_id"
 CONF_ACCESS_LEVEL = "access_level"
 CONF_UPDATE_INTERVAL = "update_interval"
 CONF_DEVICE_TYPE = "device_type"
 CONF_DEVICE_NAME = "device_name"
 CONF_LANGUAGE = "language"
+
+# Connection types
+CONNECTION_TYPE_TCP = "tcp"
+CONNECTION_TYPE_SERIAL = "serial"
 
 # System Register Configuration (mit Slider im Config Flow)
 CONF_HEATING_CIRCUITS = "heating_circuits"           # Heizkreise
@@ -58,6 +68,10 @@ DEFAULT_PORT = 502
 DEFAULT_SLAVE_ID = 1
 DEFAULT_UPDATE_INTERVAL = 30
 DEFAULT_ACCESS_LEVEL = "UserLevel"
+DEFAULT_BAUDRATE = 19200
+DEFAULT_PARITY = "N"
+DEFAULT_STOPBITS = 1
+DEFAULT_BYTESIZE = 8
 
 # Modbus configuration
 MODBUS_FUNCTION_CODES = {

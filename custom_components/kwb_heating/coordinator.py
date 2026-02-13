@@ -15,11 +15,17 @@ from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, Upda
 
 from .const import (
     DOMAIN,
+    CONF_CONNECTION_TYPE,
     CONF_SLAVE_ID,
     CONF_ACCESS_LEVEL,
     CONF_UPDATE_INTERVAL,
     CONF_DEVICE_TYPE,
     CONF_DEVICE_NAME,
+    CONF_SERIAL_PORT,
+    CONF_BAUDRATE,
+    CONF_PARITY,
+    CONF_STOPBITS,
+    CONF_BYTESIZE,
     CONF_HEATING_CIRCUITS,
     CONF_BUFFER_STORAGE,
     CONF_DHW_STORAGE,
@@ -28,7 +34,14 @@ from .const import (
     CONF_SOLAR,
     CONF_BOILER_SEQUENCE,
     CONF_HEAT_METERS,
+    CONNECTION_TYPE_TCP,
+    CONNECTION_TYPE_SERIAL,
+    DEFAULT_PORT,
     DEFAULT_UPDATE_INTERVAL,
+    DEFAULT_BAUDRATE,
+    DEFAULT_PARITY,
+    DEFAULT_STOPBITS,
+    DEFAULT_BYTESIZE,
 )
 from .data_conversion import KWBDataConverter
 from .modbus_client import KWBModbusClient
@@ -56,9 +69,10 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
     def __init__(self, hass: HomeAssistant, entry: ConfigEntry) -> None:
         """Initialize the coordinator."""
         self.entry = entry
-        self.host = entry.data[CONF_HOST]
-        self.port = entry.data[CONF_PORT]
-        self.slave_id = entry.data[CONF_SLAVE_ID]
+        self.connection_type = entry.data.get(CONF_CONNECTION_TYPE, CONNECTION_TYPE_TCP)
+        self.host = entry.data.get(CONF_HOST)
+        self.port = entry.data.get(CONF_PORT, DEFAULT_PORT)
+        self.slave_id = entry.data.get(CONF_SLAVE_ID, 1)
         self.access_level = entry.data[CONF_ACCESS_LEVEL]
 
         # Merge data and options for complete configuration
@@ -75,9 +89,15 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
 
         # Initialize modbus client
         self.modbus_client = KWBModbusClient(
+            connection_type=self.connection_type,
             host=self.host,
             port=self.port,
-            slave_id=self.slave_id
+            serial_port=entry.data.get(CONF_SERIAL_PORT),
+            baudrate=entry.data.get(CONF_BAUDRATE, DEFAULT_BAUDRATE),
+            parity=entry.data.get(CONF_PARITY, DEFAULT_PARITY),
+            stopbits=entry.data.get(CONF_STOPBITS, DEFAULT_STOPBITS),
+            bytesize=entry.data.get(CONF_BYTESIZE, DEFAULT_BYTESIZE),
+            slave_id=self.slave_id,
         )
 
         # Initialize version and language managers
@@ -229,7 +249,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         try:
             # Ensure connection
             if not self.modbus_client.is_connected:
-                _LOGGER.info("Connecting to KWB heating system at %s:%d", self.host, self.port)
+                _LOGGER.info("Connecting to KWB heating system at %s", self.modbus_client._connection_label)
                 await self.modbus_client.connect()
             
             # Read registers in batches for efficiency
@@ -360,21 +380,29 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         device_name = self.config.get(CONF_DEVICE_NAME) or getattr(self, 'device_type', None) or "KWB Heating System"
         model_name = getattr(self, 'device_type', None) or "Heating System"
 
-        # Create consistent device identifier based on host and slave_id
-        # This ensures all entities are linked to the same device
-        device_identifier = f"{self.host}_{self.slave_id}"
+        # Create consistent device identifier based on connection and slave_id
+        if self.connection_type == CONNECTION_TYPE_SERIAL:
+            serial_port = self.config.get(CONF_SERIAL_PORT, "serial")
+            device_identifier = f"{serial_port}_{self.slave_id}"
+        else:
+            device_identifier = f"{self.host}_{self.slave_id}"
 
         # Include detected version in sw_version
         sw_version = self.detected_version if self.detected_version else "Unknown"
 
-        return {
+        info: dict[str, Any] = {
             "identifiers": {(DOMAIN, device_identifier)},
             "name": device_name,
             "manufacturer": "KWB",
             "model": model_name,
             "sw_version": sw_version,
-            "configuration_url": f"http://{self.host}",
         }
+
+        # Only add configuration_url for TCP connections
+        if self.connection_type == CONNECTION_TYPE_TCP and self.host:
+            info["configuration_url"] = f"http://{self.host}"
+
+        return info
 
     @property
     def device_name_prefix(self) -> str:
@@ -405,9 +433,13 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         # Get base name from register
         base_name = register["name"]
         address = register["starting_address"]
-        
+
         # Use the same device identifier as in device_info
-        device_identifier = f"{self.host}_{self.slave_id}"
+        if self.connection_type == CONNECTION_TYPE_SERIAL:
+            serial_port = self.config.get(CONF_SERIAL_PORT, "serial")
+            device_identifier = f"{serial_port}_{self.slave_id}"
+        else:
+            device_identifier = f"{self.host}_{self.slave_id}"
         
         # Get device name prefix for entity naming
         device_prefix = self.device_name_prefix.lower().replace(" ", "_")
