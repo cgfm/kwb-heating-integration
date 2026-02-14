@@ -9,35 +9,30 @@ from .const import ENTITY_ICONS, DEVICE_TYPE_ICONS
 
 def get_entity_icon(register: dict, entity_type: str = "sensor") -> str:
     """
-    Bestimme das passende Icon für eine Entity basierend auf dem Register.
+    Determine the appropriate icon for an entity based on the register data.
+    This logic is language-independent.
     
     Args:
-        register: Register-Definition mit optionalem "icon"-Schlüssel
-        entity_type: Typ der Entity (sensor, switch, number, select)
+        register: The register definition dictionary.
+        entity_type: The type of the entity (sensor, switch, number, select).
         
     Returns:
-        Icon string im Format "mdi:icon-name"
+        An icon string in the format "mdi:icon-name".
     """
-    # Wenn ein Icon direkt im Register definiert ist, verwende dieses
+    # 1. If an icon is explicitly defined in the register config, it takes highest precedence.
     if "icon" in register and register["icon"]:
         return register["icon"]
     
-    # Ansonsten fallback auf die alte Logik mit dem Register-Namen
-    register_name = register.get("name", "")
-    # Handle non-string names (e.g., localized dicts)
-    if isinstance(register_name, dict):
-        # Prefer German, then English, then any value
-        register_name = register_name.get("de") or register_name.get("en") or next(iter(register_name.values()), "")
-    elif register_name is None:
-        register_name = ""
-    name_lower = str(register_name).lower()
+    # 2. Use the stable, language-independent 'entity_id' for keyword matching.
+    entity_id_str = register.get("entity_id", "")
     
-    # Prüfe spezifische Begriffe im Namen
+    # Check for keywords from the ENTITY_ICONS dictionary within the entity_id string.
+    # The dictionary in const.py is ordered from most to least specific to ensure the best match.
     for keyword, icon in ENTITY_ICONS.items():
-        if keyword in name_lower:
+        if keyword in entity_id_str:
             return icon
-    
-    # Fallback basierend auf Entity-Typ
+            
+    # 3. If no keyword match is found, fall back to a default icon based on the entity type.
     fallback_icons = {
         "sensor": ENTITY_ICONS["default_sensor"],
         "switch": ENTITY_ICONS["default_switch"], 
@@ -50,26 +45,26 @@ def get_entity_icon(register: dict, entity_type: str = "sensor") -> str:
 
 def get_device_icon(device_type: str) -> str:
     """
-    Bestimme das Icon für einen Gerätetyp.
+    Determine the icon for a device type.
     
     Args:
-        device_type: KWB Gerätetyp (z.B. "KWB CF2", "KWB Easyfire")
+        device_type: KWB device type (e.g., "KWB CF2", "KWB Easyfire")
         
     Returns:
-        Icon string im Format "mdi:icon-name"
+        Icon string in the format "mdi:icon-name"
     """
     return DEVICE_TYPE_ICONS.get(device_type, DEVICE_TYPE_ICONS["default"])
 
 
 def get_category_icon(category: str) -> str:
     """
-    Bestimme das Icon für eine Entity-Kategorie.
+    Determine the icon for an entity category.
     
     Args:
-        category: Kategorie wie "heating", "temperature", "pump" etc.
+        category: Category like "heating", "temperature", "pump" etc.
         
     Returns:
-        Icon string im Format "mdi:icon-name"
+        Icon string in the format "mdi:icon-name"
     """
     category_icons = {
         "heating": "mdi:radiator",
@@ -87,15 +82,15 @@ def get_category_icon(category: str) -> str:
 
 def extract_equipment_info(register_name: str) -> tuple[Optional[str], Optional[int]]:
     """
-    Extrahiere Equipment-Typ und -Nummer aus Register-Namen.
+    Extract equipment type and number from register names.
     
     Args:
-        register_name: Register-Name wie "HK 1 Pumpe", "BWS 2 Temperatur"
+        register_name: Register name like "HK 1 Pumpe", "BWS 2 Temperatur"
         
     Returns:
-        Tuple von (equipment_type, equipment_number) oder (None, None)
+        Tuple of (equipment_type, equipment_number) or (None, None)
     """
-    # Muster für verschiedene Equipment-Typen
+    # Patterns for different equipment types
     patterns = [
         (r"HK\s*(\d+)", "heating_circuit"),
         (r"Heizkreis\s*(\d+)", "heating_circuit"),

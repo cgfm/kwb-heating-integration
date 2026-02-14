@@ -218,14 +218,22 @@ class VersionManager:
         version_info = self.version_mapping.get(version, {})
         config_path = version_info.get("config_path", f"versions/v{version}")
 
-        # Check if language is supported
-        supported_languages = version_info.get("supported_languages", ["de", "en"])
+        # Ensure language is supported, fallback to English or the first available
+        supported_languages = version_info.get("supported_languages", ["en", "de"])
         if language not in supported_languages:
             _LOGGER.warning(
-                "Language %s not supported for version %s, falling back to %s",
-                language, version, supported_languages[0]
+                "Language '%s' not explicitly supported for version %s. Supported: %s.",
+                language, version, ", ".join(supported_languages)
             )
-            language = supported_languages[0]
+            # Fallback priority: English, then the first language in the list
+            if "en" in supported_languages:
+                language = "en"
+            elif supported_languages:
+                language = supported_languages[0]
+            else:
+                # Last resort if supported_languages is empty
+                language = "en"
+            _LOGGER.info("Falling back to language '%s'", language)
 
         full_path = self.config_base_path / config_path / language
         return full_path

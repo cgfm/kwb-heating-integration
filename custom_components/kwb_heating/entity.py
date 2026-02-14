@@ -40,11 +40,29 @@ class KWBBaseEntity(CoordinatorEntity):
             register, coordinator
         )
 
-        # Set explicit entity_id to ensure device name prefix is included
-        # Use pre-generated entity_id from register config (language-independent, includes equipment index)
-        # Otherwise fall back to sanitizing the localized register name
+        # Generate a stable entity ID that does not depend on the language.
         device_prefix = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
-        register_entity_id = register.get("entity_id") or coordinator.sanitize_for_entity_id(register["name"])
+        
+        # The 'entity_id' field from the JSON config is the primary, language-independent identifier.
+        register_entity_id = register.get("entity_id")
+
+        if not register_entity_id:
+            # Fallback for registers without a pre-defined 'entity_id' (e.g., universal registers).
+            # The 'parameter' field is a stable, unique key from the manufacturer's specification.
+            parameter = register.get("parameter")
+            if parameter:
+                # Sanitize the parameter to be a valid component for an entity_id.
+                register_entity_id = coordinator.sanitize_for_entity_id(parameter)
+            else:
+                # As an absolute fallback, use the register address, which is guaranteed to be unique and stable.
+                # This avoids using the translated 'name' field.
+                _LOGGER.warning(
+                    "Could not generate entity_id from 'entity_id' or 'parameter' for register at address %s. "
+                    "Falling back to address-based ID. Please consider defining an 'entity_id' in the JSON config.",
+                    self._address
+                )
+                register_entity_id = f"register_{self._address}"
+
         self.entity_id = f"{platform}.{device_prefix}_{register_entity_id}"
 
         # Set device info

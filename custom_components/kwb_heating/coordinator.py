@@ -429,23 +429,31 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         return result
 
     def generate_entity_unique_id(self, register: dict) -> str:
-        """Generate consistent unique ID for entities based on device identifier."""
-        # Get base name from register
-        base_name = register["name"]
-        address = register["starting_address"]
-
-        # Use the same device identifier as in device_info
+        """Generate a stable, language-independent unique ID for an entity."""
+        # Determine the unique device identifier, which is stable for the connection
         if self.connection_type == CONNECTION_TYPE_SERIAL:
-            serial_port = self.config.get(CONF_SERIAL_PORT, "serial")
-            device_identifier = f"{serial_port}_{self.slave_id}"
+            device_identifier = f"{self.config.get(CONF_SERIAL_PORT, 'serial')}_{self.slave_id}"
         else:
             device_identifier = f"{self.host}_{self.slave_id}"
-        
-        # Get device name prefix for entity naming
-        device_prefix = self.device_name_prefix.lower().replace(" ", "_")
-        
-        # Sanitize the base name for use in entity ID
-        base_id = self.sanitize_for_entity_id(base_name)
-        
-        # Create unique ID with device prefix, consistent device identifier and proper prefix
-        return f"kwb_heating_{device_identifier}_{device_prefix}_{base_id}_{address}"
+
+        # The 'entity_id' from the JSON file is the primary stable identifier. It is language-independent.
+        stable_id = register.get("entity_id")
+        if stable_id:
+            return f"{device_identifier}_{stable_id}"
+
+        # Fallback for universal or older registers without a pre-defined 'entity_id'.
+        # The 'parameter' field from the manufacturer's spec is a good stable key.
+        parameter = register.get("parameter")
+        address = register["starting_address"]
+        if parameter:
+            # Sanitize the parameter to be a valid component in a unique_id
+            sanitized_parameter = re.sub(r'[^a-zA-Z0-9_.]', '_', parameter).replace('.', '_')
+            return f"{device_identifier}_{sanitized_parameter}_{address}"
+
+        # Absolute fallback using only the address, which is guaranteed to be unique and stable.
+        _LOGGER.warning(
+            "Register '%s' at address %d has no 'entity_id' or 'parameter' for unique ID generation. "
+            "Falling back to address-only ID. This may be unstable if addresses change.",
+            register.get('name', 'Unknown'), address
+        )
+        return f"{device_identifier}_{address}"

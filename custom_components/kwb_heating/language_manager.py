@@ -140,14 +140,19 @@ class LanguageManager:
                 _LOGGER.debug("Using Home Assistant locale language: %s", normalized)
                 return normalized
 
-        # 3. Fall back to default language
+        # 3. Fall back to default language if it's supported
         if self.default_language in supported_languages:
             _LOGGER.debug("Using default language: %s", self.default_language)
             return self.default_language
+            
+        # 4. Fall back to English if it's supported
+        if "en" in supported_languages:
+            _LOGGER.debug("Falling back to English as default is not available.")
+            return "en"
 
-        # 4. Use first supported language as last resort
+        # 5. Use first supported language as an absolute last resort
         if supported_languages:
-            _LOGGER.debug("Using first supported language: %s", supported_languages[0])
+            _LOGGER.debug("Using first supported language as fallback: %s", supported_languages[0])
             return supported_languages[0]
 
         return "en"
