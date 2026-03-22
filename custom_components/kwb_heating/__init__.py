@@ -59,10 +59,9 @@ async def async_update_options(hass: HomeAssistant, entry: ConfigEntry) -> None:
     """Update options."""
     _LOGGER.info("Updating KWB Heating options")
     
-    # Get coordinator
-    coordinator = hass.data[DOMAIN][entry.entry_id]
+    coordinator: KWBDataUpdateCoordinator = hass.data[DOMAIN][entry.entry_id]
     
-    # Check if equipment configuration changed (requires entity reload)
+    # Check for changes that require a full integration reload
     old_config = coordinator.config.copy()
     new_config = {**entry.data, **entry.options}
     
@@ -72,17 +71,26 @@ async def async_update_options(hass: HomeAssistant, entry: ConfigEntry) -> None:
         "boiler_sequence", "heat_meters"
     ]
     
+    # Check if any equipment counts have changed
     equipment_changed = any(
-        old_config.get(key, 0) != new_config.get(key, 0)
+        old_config.get(key) != new_config.get(key)
         for key in equipment_keys
     )
     
-    if equipment_changed:
-        _LOGGER.info("Equipment configuration changed, reloading integration")
-        # Reload the entire integration to recreate entities
+    # Check if the access level has changed
+    access_level_changed = old_config.get("access_level") != new_config.get("access_level")
+    
+    # A full reload is needed if equipment or access level changes, as this can add/remove entities
+    if equipment_changed or access_level_changed:
+        if equipment_changed:
+            _LOGGER.info("Equipment configuration changed, reloading integration.")
+        if access_level_changed:
+            _LOGGER.info("Access level changed, reloading integration.")
+            
         await hass.config_entries.async_reload(entry.entry_id)
     else:
-        # Only update coordinator configuration for non-equipment changes
+        # For other minor changes, just update the coordinator and refresh
+        _LOGGER.info("Performing a soft update for non-structural changes.")
         await coordinator.async_update_config(entry.data, entry.options)
         await coordinator.async_request_refresh()
 

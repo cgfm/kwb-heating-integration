@@ -3,11 +3,12 @@
     {
       "starting_address": 8608,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_1_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -15,11 +16,12 @@
     {
       "starting_address": 8609,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_1_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -27,11 +29,12 @@
     {
       "starting_address": 8610,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_2_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -39,11 +42,12 @@
     {
       "starting_address": 8611,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_2_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -51,11 +55,12 @@
     {
       "starting_address": 8612,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_3_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -63,11 +68,12 @@
     {
       "starting_address": 8613,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_3_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -75,11 +81,12 @@
     {
       "starting_address": 8614,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_4_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -87,11 +94,12 @@
     {
       "starting_address": 8615,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_4_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -99,11 +107,12 @@
     {
       "starting_address": 8616,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_5_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -111,11 +120,12 @@
     {
       "starting_address": 8617,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_5_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -123,11 +133,12 @@
     {
       "starting_address": 8618,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_6_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -135,11 +146,12 @@
     {
       "starting_address": 8619,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_6_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -147,11 +159,12 @@
     {
       "starting_address": 8620,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_7_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -159,11 +172,12 @@
     {
       "starting_address": 8621,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_7_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -171,11 +185,12 @@
     {
       "starting_address": 8622,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_8_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -183,11 +198,12 @@
     {
       "starting_address": 8623,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_8_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -195,11 +211,12 @@
     {
       "starting_address": 8624,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_9_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -207,11 +224,12 @@
     {
       "starting_address": 8625,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_9_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -219,11 +237,12 @@
     {
       "starting_address": 8626,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_10_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -231,11 +250,12 @@
     {
       "starting_address": 8627,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_10_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -243,11 +263,12 @@
     {
       "starting_address": 8628,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_11_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -255,11 +276,12 @@
     {
       "starting_address": 8629,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_11_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -267,11 +289,12 @@
     {
       "starting_address": 8630,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_12_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -279,11 +302,12 @@
     {
       "starting_address": 8631,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_12_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -291,11 +315,12 @@
     {
       "starting_address": 8632,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_13_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -303,11 +328,12 @@
     {
       "starting_address": 8633,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_13_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -315,11 +341,12 @@
     {
       "starting_address": 8634,
       "name": "Temperature actual (value)",
+      "entity_id": "dhwc_14_temperature_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "1/10°C",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.value"
@@ -327,11 +354,12 @@
     {
       "starting_address": 8635,
       "name": "Temperature actual (status)",
+      "entity_id": "dhwc_14_temperature_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "487",
       "parameter": "BOI.i_ist_temperatur.status"
@@ -339,11 +367,12 @@
     {
       "starting_address": 8641,
       "name": "Charging pump",
+      "entity_id": "dhwc_1_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -351,11 +380,12 @@
     {
       "starting_address": 8642,
       "name": "Charging pump",
+      "entity_id": "dhwc_2_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -363,11 +393,12 @@
     {
       "starting_address": 8643,
       "name": "Charging pump",
+      "entity_id": "dhwc_3_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -375,11 +406,12 @@
     {
       "starting_address": 8644,
       "name": "Charging pump",
+      "entity_id": "dhwc_4_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -387,11 +419,12 @@
     {
       "starting_address": 8645,
       "name": "Charging pump",
+      "entity_id": "dhwc_5_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -399,11 +432,12 @@
     {
       "starting_address": 8646,
       "name": "Charging pump",
+      "entity_id": "dhwc_6_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -411,11 +445,12 @@
     {
       "starting_address": 8647,
       "name": "Charging pump",
+      "entity_id": "dhwc_7_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -423,11 +458,12 @@
     {
       "starting_address": 8648,
       "name": "Charging pump",
+      "entity_id": "dhwc_8_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -435,11 +471,12 @@
     {
       "starting_address": 8649,
       "name": "Charging pump",
+      "entity_id": "dhwc_9_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -447,11 +484,12 @@
     {
       "starting_address": 8650,
       "name": "Charging pump",
+      "entity_id": "dhwc_10_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -459,11 +497,12 @@
     {
       "starting_address": 8651,
       "name": "Charging pump",
+      "entity_id": "dhwc_11_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -471,11 +510,12 @@
     {
       "starting_address": 8652,
       "name": "Charging pump",
+      "entity_id": "dhwc_12_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -483,11 +523,12 @@
     {
       "starting_address": 8653,
       "name": "Charging pump",
+      "entity_id": "dhwc_13_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -495,11 +536,12 @@
     {
       "starting_address": 8654,
       "name": "Charging pump",
+      "entity_id": "dhwc_14_charging_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "491",
       "parameter": "BOI.o_pumpe"
@@ -507,11 +549,12 @@
     {
       "starting_address": 8658,
       "name": "Request",
+      "entity_id": "dhwc_1_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -519,11 +562,12 @@
     {
       "starting_address": 8659,
       "name": "Request",
+      "entity_id": "dhwc_2_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -531,11 +575,12 @@
     {
       "starting_address": 8660,
       "name": "Request",
+      "entity_id": "dhwc_3_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -543,11 +588,12 @@
     {
       "starting_address": 8661,
       "name": "Request",
+      "entity_id": "dhwc_4_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -555,11 +601,12 @@
     {
       "starting_address": 8662,
       "name": "Request",
+      "entity_id": "dhwc_5_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -567,11 +614,12 @@
     {
       "starting_address": 8663,
       "name": "Request",
+      "entity_id": "dhwc_6_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -579,11 +627,12 @@
     {
       "starting_address": 8664,
       "name": "Request",
+      "entity_id": "dhwc_7_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -591,11 +640,12 @@
     {
       "starting_address": 8665,
       "name": "Request",
+      "entity_id": "dhwc_8_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -603,11 +653,12 @@
     {
       "starting_address": 8666,
       "name": "Request",
+      "entity_id": "dhwc_9_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -615,11 +666,12 @@
     {
       "starting_address": 8667,
       "name": "Request",
+      "entity_id": "dhwc_10_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -627,11 +679,12 @@
     {
       "starting_address": 8668,
       "name": "Request",
+      "entity_id": "dhwc_11_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -639,11 +692,12 @@
     {
       "starting_address": 8669,
       "name": "Request",
+      "entity_id": "dhwc_12_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -651,11 +705,12 @@
     {
       "starting_address": 8670,
       "name": "Request",
+      "entity_id": "dhwc_13_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -663,11 +718,12 @@
     {
       "starting_address": 8671,
       "name": "Request",
+      "entity_id": "dhwc_14_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "485",
       "parameter": "BOI.anforderung"
@@ -675,11 +731,12 @@
     {
       "starting_address": 8675,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_1_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -687,11 +744,12 @@
     {
       "starting_address": 8676,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_2_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -699,11 +757,12 @@
     {
       "starting_address": 8677,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_3_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -711,11 +770,12 @@
     {
       "starting_address": 8678,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_4_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -723,11 +783,12 @@
     {
       "starting_address": 8679,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_5_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -735,11 +796,12 @@
     {
       "starting_address": 8680,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_6_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -747,11 +809,12 @@
     {
       "starting_address": 8681,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_7_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -759,11 +822,12 @@
     {
       "starting_address": 8682,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_8_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -771,11 +835,12 @@
     {
       "starting_address": 8683,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_9_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -783,11 +848,12 @@
     {
       "starting_address": 8684,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_10_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -795,11 +861,12 @@
     {
       "starting_address": 8685,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_11_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -807,11 +874,12 @@
     {
       "starting_address": 8686,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_12_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -819,11 +887,12 @@
     {
       "starting_address": 8687,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_13_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -831,11 +900,12 @@
     {
       "starting_address": 8688,
       "name": "Temperature setpoint",
+      "entity_id": "dhwc_14_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "1/10°C",
       "id": "507",
       "parameter": "BOI.soll_temperatur"
@@ -843,11 +913,12 @@
     {
       "starting_address": 8692,
       "name": "Status",
+      "entity_id": "dhwc_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -855,11 +926,12 @@
     {
       "starting_address": 8693,
       "name": "Status",
+      "entity_id": "dhwc_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -867,11 +939,12 @@
     {
       "starting_address": 8694,
       "name": "Status",
+      "entity_id": "dhwc_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -879,11 +952,12 @@
     {
       "starting_address": 8695,
       "name": "Status",
+      "entity_id": "dhwc_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -891,11 +965,12 @@
     {
       "starting_address": 8696,
       "name": "Status",
+      "entity_id": "dhwc_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -903,11 +978,12 @@
     {
       "starting_address": 8697,
       "name": "Status",
+      "entity_id": "dhwc_6_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -915,11 +991,12 @@
     {
       "starting_address": 8698,
       "name": "Status",
+      "entity_id": "dhwc_7_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -927,11 +1004,12 @@
     {
       "starting_address": 8699,
       "name": "Status",
+      "entity_id": "dhwc_8_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -939,11 +1017,12 @@
     {
       "starting_address": 8700,
       "name": "Status",
+      "entity_id": "dhwc_9_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -951,11 +1030,12 @@
     {
       "starting_address": 8701,
       "name": "Status",
+      "entity_id": "dhwc_10_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -963,11 +1043,12 @@
     {
       "starting_address": 8702,
       "name": "Status",
+      "entity_id": "dhwc_11_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -975,11 +1056,12 @@
     {
       "starting_address": 8703,
       "name": "Status",
+      "entity_id": "dhwc_12_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -987,11 +1069,12 @@
     {
       "starting_address": 8704,
       "name": "Status",
+      "entity_id": "dhwc_13_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -999,11 +1082,12 @@
     {
       "starting_address": 8705,
       "name": "Status",
+      "entity_id": "dhwc_14_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "boiler_status_t",
       "id": "513",
       "parameter": "BOI.status"
@@ -1011,11 +1095,12 @@
     {
       "starting_address": 9433,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_1_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1023,11 +1108,12 @@
     {
       "starting_address": 9434,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_1_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1035,11 +1121,12 @@
     {
       "starting_address": 9435,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_2_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1047,11 +1134,12 @@
     {
       "starting_address": 9436,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_2_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1059,11 +1147,12 @@
     {
       "starting_address": 9437,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_3_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1071,11 +1160,12 @@
     {
       "starting_address": 9438,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_3_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1083,11 +1173,12 @@
     {
       "starting_address": 9439,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_4_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1095,11 +1186,12 @@
     {
       "starting_address": 9440,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_4_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1107,11 +1199,12 @@
     {
       "starting_address": 9441,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_5_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1119,11 +1212,12 @@
     {
       "starting_address": 9442,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_5_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1131,11 +1225,12 @@
     {
       "starting_address": 9443,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_6_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1143,11 +1238,12 @@
     {
       "starting_address": 9444,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_6_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1155,11 +1251,12 @@
     {
       "starting_address": 9445,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_7_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1167,11 +1264,12 @@
     {
       "starting_address": 9446,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_7_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1179,11 +1277,12 @@
     {
       "starting_address": 9447,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_8_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1191,11 +1290,12 @@
     {
       "starting_address": 9448,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_8_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1203,11 +1303,12 @@
     {
       "starting_address": 9449,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_9_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1215,11 +1316,12 @@
     {
       "starting_address": 9450,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_9_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1227,11 +1329,12 @@
     {
       "starting_address": 9451,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_10_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1239,11 +1342,12 @@
     {
       "starting_address": 9452,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_10_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1251,11 +1355,12 @@
     {
       "starting_address": 9453,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_11_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1263,11 +1368,12 @@
     {
       "starting_address": 9454,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_11_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1275,11 +1381,12 @@
     {
       "starting_address": 9455,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_12_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1287,11 +1394,12 @@
     {
       "starting_address": 9456,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_12_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1299,11 +1407,12 @@
     {
       "starting_address": 9457,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_13_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1311,11 +1420,12 @@
     {
       "starting_address": 9458,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_13_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1323,11 +1433,12 @@
     {
       "starting_address": 9459,
       "name": "Temperature 2 (value)",
+      "entity_id": "dhwc_14_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "1/10°C",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.value"
@@ -1335,11 +1446,12 @@
     {
       "starting_address": 9460,
       "name": "Temperature 2 (status)",
+      "entity_id": "dhwc_14_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "1403",
       "parameter": "BOI.i_ist_temperatur_2.status"
@@ -1347,11 +1459,12 @@
     {
       "starting_address": 24693,
       "name": "Select program",
+      "entity_id": "dhwc_1_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1359,11 +1472,12 @@
     {
       "starting_address": 24694,
       "name": "Select program",
+      "entity_id": "dhwc_2_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1371,11 +1485,12 @@
     {
       "starting_address": 24695,
       "name": "Select program",
+      "entity_id": "dhwc_3_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1383,11 +1498,12 @@
     {
       "starting_address": 24696,
       "name": "Select program",
+      "entity_id": "dhwc_4_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1395,11 +1511,12 @@
     {
       "starting_address": 24697,
       "name": "Select program",
+      "entity_id": "dhwc_5_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1407,11 +1524,12 @@
     {
       "starting_address": 24698,
       "name": "Select program",
+      "entity_id": "dhwc_6_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1419,11 +1537,12 @@
     {
       "starting_address": 24699,
       "name": "Select program",
+      "entity_id": "dhwc_7_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1431,11 +1550,12 @@
     {
       "starting_address": 24700,
       "name": "Select program",
+      "entity_id": "dhwc_8_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1443,11 +1563,12 @@
     {
       "starting_address": 24701,
       "name": "Select program",
+      "entity_id": "dhwc_9_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1455,11 +1576,12 @@
     {
       "starting_address": 24702,
       "name": "Select program",
+      "entity_id": "dhwc_10_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1467,11 +1589,12 @@
     {
       "starting_address": 24703,
       "name": "Select program",
+      "entity_id": "dhwc_11_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1479,11 +1602,12 @@
     {
       "starting_address": 24704,
       "name": "Select program",
+      "entity_id": "dhwc_12_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1491,11 +1615,12 @@
     {
       "starting_address": 24705,
       "name": "Select program",
+      "entity_id": "dhwc_13_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1503,11 +1628,12 @@
     {
       "starting_address": 24706,
       "name": "Select program",
+      "entity_id": "dhwc_14_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "boiler_programm_t",
       "id": "492",
       "parameter": "BOI.programm"
@@ -1515,11 +1641,12 @@
     {
       "starting_address": 24711,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_1_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1529,11 +1656,12 @@
     {
       "starting_address": 24712,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_1_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1543,11 +1671,12 @@
     {
       "starting_address": 24713,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_2_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1557,11 +1686,12 @@
     {
       "starting_address": 24714,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_2_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1571,11 +1701,12 @@
     {
       "starting_address": 24715,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_3_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1585,11 +1716,12 @@
     {
       "starting_address": 24716,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_3_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1599,11 +1731,12 @@
     {
       "starting_address": 24717,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_4_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1613,11 +1746,12 @@
     {
       "starting_address": 24718,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_4_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1627,11 +1761,12 @@
     {
       "starting_address": 24719,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_5_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1641,11 +1776,12 @@
     {
       "starting_address": 24720,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_5_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1655,11 +1791,12 @@
     {
       "starting_address": 24721,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_6_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1669,11 +1806,12 @@
     {
       "starting_address": 24722,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_6_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1683,11 +1821,12 @@
     {
       "starting_address": 24723,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_7_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1697,11 +1836,12 @@
     {
       "starting_address": 24724,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_7_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1711,11 +1851,12 @@
     {
       "starting_address": 24725,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_8_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1725,11 +1866,12 @@
     {
       "starting_address": 24726,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_8_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1739,11 +1881,12 @@
     {
       "starting_address": 24727,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_9_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1753,11 +1896,12 @@
     {
       "starting_address": 24728,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_9_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1767,11 +1911,12 @@
     {
       "starting_address": 24729,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_10_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1781,11 +1926,12 @@
     {
       "starting_address": 24730,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_10_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1795,11 +1941,12 @@
     {
       "starting_address": 24731,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_11_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1809,11 +1956,12 @@
     {
       "starting_address": 24732,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_11_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1823,11 +1971,12 @@
     {
       "starting_address": 24733,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_12_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1837,11 +1986,12 @@
     {
       "starting_address": 24734,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_12_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1851,11 +2001,12 @@
     {
       "starting_address": 24735,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_13_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1865,11 +2016,12 @@
     {
       "starting_address": 24736,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_13_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1879,11 +2031,12 @@
     {
       "starting_address": 24737,
       "name": "Temp. min/max (min)",
+      "entity_id": "dhwc_14_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1893,11 +2046,12 @@
     {
       "starting_address": 24738,
       "name": "Temp. min/max (max)",
+      "entity_id": "dhwc_14_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -1907,11 +2061,12 @@
     {
       "starting_address": 24744,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_1_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 1",
+      "index": "DHWC 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -1919,11 +2074,12 @@
     {
       "starting_address": 24745,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_2_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 2",
+      "index": "DHWC 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -1931,11 +2087,12 @@
     {
       "starting_address": 24746,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_3_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 3",
+      "index": "DHWC 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -1943,11 +2100,12 @@
     {
       "starting_address": 24747,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_4_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 4",
+      "index": "DHWC 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -1955,11 +2113,12 @@
     {
       "starting_address": 24748,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_5_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 5",
+      "index": "DHWC 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -1967,11 +2126,12 @@
     {
       "starting_address": 24749,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_6_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 6",
+      "index": "DHWC 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -1979,11 +2139,12 @@
     {
       "starting_address": 24750,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_7_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 7",
+      "index": "DHWC 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -1991,11 +2152,12 @@
     {
       "starting_address": 24751,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_8_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 8",
+      "index": "DHWC 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -2003,11 +2165,12 @@
     {
       "starting_address": 24752,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_9_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 9",
+      "index": "DHWC 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -2015,11 +2178,12 @@
     {
       "starting_address": 24753,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_10_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 10",
+      "index": "DHWC 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -2027,11 +2191,12 @@
     {
       "starting_address": 24754,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_11_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 11",
+      "index": "DHWC 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -2039,11 +2204,12 @@
     {
       "starting_address": 24755,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_12_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 12",
+      "index": "DHWC 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -2051,11 +2217,12 @@
     {
       "starting_address": 24756,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_13_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 13",
+      "index": "DHWC 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"
@@ -2063,11 +2230,12 @@
     {
       "starting_address": 24757,
       "name": "Heat DHW 1x",
+      "entity_id": "dhwc_14_heat_dhw_1x",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "BWS 14",
+      "index": "DHWC 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "493",
       "parameter": "BOI.schnellladung"

@@ -3,6 +3,7 @@
     {
       "starting_address": 10270,
       "name": "Forward flow temp., act.",
+      "entity_id": "eap_0_forward_flow_temp_act",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -15,6 +16,7 @@
     {
       "starting_address": 10271,
       "name": "Forward flow temp., act.",
+      "entity_id": "eap_1_forward_flow_temp_act",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -27,6 +29,7 @@
     {
       "starting_address": 10278,
       "name": "Return flow temp., actual",
+      "entity_id": "eap_0_return_flow_temp_actual",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -39,6 +42,7 @@
     {
       "starting_address": 10279,
       "name": "Return flow temp., actual",
+      "entity_id": "eap_1_return_flow_temp_actual",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -51,6 +55,7 @@
     {
       "starting_address": 10438,
       "name": "Status",
+      "entity_id": "eap_0_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -63,6 +68,7 @@
     {
       "starting_address": 10439,
       "name": "Status",
+      "entity_id": "eap_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -75,6 +81,7 @@
     {
       "starting_address": 24849,
       "name": "Modbus Lifetick",
+      "entity_id": "modbus_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -85,6 +92,7 @@
     {
       "starting_address": 24850,
       "name": "Modbus Commit Lifetick",
+      "entity_id": "modbus_commit_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",

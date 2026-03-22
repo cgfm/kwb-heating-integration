@@ -14,8 +14,14 @@ PLATFORMS: list[Platform] = [
 ]
 
 # Configuration
+CONF_CONNECTION_TYPE = "connection_type"
 CONF_HOST = "host"
 CONF_PORT = "port"
+CONF_SERIAL_PORT = "serial_port"
+CONF_BAUDRATE = "baudrate"
+CONF_PARITY = "parity"
+CONF_STOPBITS = "stopbits"
+CONF_BYTESIZE = "bytesize"
 CONF_SLAVE_ID = "slave_id"
 CONF_ACCESS_LEVEL = "access_level"
 CONF_UPDATE_INTERVAL = "update_interval"
@@ -23,18 +29,22 @@ CONF_DEVICE_TYPE = "device_type"
 CONF_DEVICE_NAME = "device_name"
 CONF_LANGUAGE = "language"
 
-# System Register Configuration (mit Slider im Config Flow)
-CONF_HEATING_CIRCUITS = "heating_circuits"           # Heizkreise
-CONF_BUFFER_STORAGE = "buffer_storage"               # Pufferspeicher  
-CONF_DHW_STORAGE = "dhw_storage"                     # Brauchwasserspeicher
-CONF_SECONDARY_HEAT_SOURCES = "secondary_heat_sources" # Zweitwärmequellen
-CONF_CIRCULATION = "circulation"                     # Zirkulation
-CONF_SOLAR = "solar"                                 # Solar
-CONF_BOILER_SEQUENCE = "boiler_sequence"             # Kesselfolgeschaltung
-CONF_HEAT_METERS = "heat_meters"                     # Wärmemengenzähler
-CONF_TRANSFER_STATIONS = "transfer_stations"         # Übergabestationen
+# Connection types
+CONNECTION_TYPE_TCP = "tcp"
+CONNECTION_TYPE_SERIAL = "serial"
 
-# System Register Mapping (JSON Schlüssel -> Config Konstante)
+# System Register Configuration (with slider in Config Flow)
+CONF_HEATING_CIRCUITS = "heating_circuits"           # Heating circuits
+CONF_BUFFER_STORAGE = "buffer_storage"               # Buffer storage
+CONF_DHW_STORAGE = "dhw_storage"                     # DHW storage
+CONF_SECONDARY_HEAT_SOURCES = "secondary_heat_sources" # Secondary heat sources
+CONF_CIRCULATION = "circulation"                     # Circulation
+CONF_SOLAR = "solar"                                 # Solar
+CONF_BOILER_SEQUENCE = "boiler_sequence"             # Boiler sequence control
+CONF_HEAT_METERS = "heat_meters"                     # Heat meters
+CONF_TRANSFER_STATIONS = "transfer_stations"         # Transfer stations
+
+# System Register Mapping (JSON key -> Config constant)
 SYSTEM_REGISTER_MAPPING = {
     "Heizkreise": CONF_HEATING_CIRCUITS,
     "Pufferspeicher": CONF_BUFFER_STORAGE,
@@ -49,8 +59,8 @@ SYSTEM_REGISTER_MAPPING = {
 
 # Access Levels
 ACCESS_LEVELS = {
-    "UserLevel": "Standardfunktionen für Endbenutzer",
-    "ExpertLevel": "Vollzugriff für Experten/Service"
+    "UserLevel": "Standard functions for end users",
+    "ExpertLevel": "Full access for experts/service"
 }
 
 # Default values
@@ -58,6 +68,10 @@ DEFAULT_PORT = 502
 DEFAULT_SLAVE_ID = 1
 DEFAULT_UPDATE_INTERVAL = 30
 DEFAULT_ACCESS_LEVEL = "UserLevel"
+DEFAULT_BAUDRATE = 19200
+DEFAULT_PARITY = "N"
+DEFAULT_STOPBITS = 1
+DEFAULT_BYTESIZE = 8
 
 # Modbus configuration
 MODBUS_FUNCTION_CODES = {
@@ -82,62 +96,61 @@ DATA_TYPES = {
 
 # Icon mapping for different entity types based on register names/types
 ENTITY_ICONS = {
-    # Temperature related
+    # Order matters: more specific keywords should come first.
+
+    # Temperature
+    "forward_flow": "mdi:thermometer-chevron-up",
+    "return_flow": "mdi:thermometer-chevron-down",
+    "outdoor_temp": "mdi:thermometer",
+    "outside_temp": "mdi:thermometer",
+    "room_temp": "mdi:home-thermometer",
+    "boiler_temp": "mdi:thermometer-lines",
+    "buffer_temp": "mdi:storage-tank-thermometer",
+    "dhw_temp": "mdi:water-thermometer",
+    "temp_setpoint": "mdi:thermometer-auto",
     "temperature": "mdi:thermometer",
     "temp": "mdi:thermometer",
-    "kesseltemperatur": "mdi:thermometer-lines",
-    "aussentemperatur": "mdi:thermometer",
-    "vorlauftemperatur": "mdi:thermometer-chevron-up",
-    "rücklauftemperatur": "mdi:thermometer-chevron-down",
-    "rücklauf": "mdi:thermometer-chevron-down",
-    "solltemperatur": "mdi:thermometer-auto",
-    
-    # Heating/Boiler related
-    "kessel": "mdi:fire",
-    "brenner": "mdi:fire",
-    "heizung": "mdi:radiator",
-    "heizkreis": "mdi:heating-coil",
-    "hk": "mdi:heating-coil",
-    
+
+    # Heating/Boiler
+    "heating_circuit": "mdi:heating-coil",
+    "hc": "mdi:heating-coil",
+    "boiler": "mdi:fire",
+    "burner": "mdi:fire",
+    "heating": "mdi:radiator",
+
     # Pumps and circulation
-    "pumpe": "mdi:pump",
     "pump": "mdi:pump",
-    "zirkulation": "mdi:rotate-3d-variant",
-    
+    "circulation": "mdi:rotate-3d-variant",
+    "circ": "mdi:rotate-3d-variant",
+
     # Water/Storage
-    "speicher": "mdi:storage-tank",
-    "puffer": "mdi:storage-tank",
-    "brauchwasser": "mdi:water-thermometer",
-    "warmwasser": "mdi:water-thermometer",
-    "bws": "mdi:water-thermometer",
+    "buffer": "mdi:storage-tank",
+    "buf": "mdi:storage-tank",
+    "dhw": "mdi:water-thermometer",
+    "storage": "mdi:storage-tank",
     
     # Solar
+    "collector": "mdi:solar-panel-large",
     "solar": "mdi:solar-power-variant",
-    "kollektor": "mdi:solar-panel-large",
-    
-    # Sensors and inputs
-    "sensor": "mdi:gauge",
-    "fühler": "mdi:thermometer-probe",
-    "eingang": "mdi:import",
-    "ausgang": "mdi:export",
+    "sol": "mdi:solar-power-variant",
     
     # System/Status
-    "status": "mdi:information-outline",
-    "störung": "mdi:alert-circle",
+    "fault": "mdi:alert-circle",
     "alarm": "mdi:alert",
-    "betrieb": "mdi:play-circle",
-    "anforderung": "mdi:gesture-tap",
-    "freigabe": "mdi:check-circle",
+    "status": "mdi:information-outline",
+    "mode": "mdi:play-circle",
+    "request": "mdi:gesture-tap",
+    "release": "mdi:check-circle",
     
     # Power/Energy
-    "leistung": "mdi:lightning-bolt",
     "power": "mdi:lightning-bolt",
-    "energie": "mdi:flash",
-    
+    "energy": "mdi:flash",
+    "current": "mdi:current-ac",
+
     # Time/Program
-    "zeit": "mdi:clock",
+    "time": "mdi:clock",
     "timer": "mdi:timer",
-    "programm": "mdi:cog",
+    "program": "mdi:cog",
     
     # Default fallbacks
     "default_sensor": "mdi:gauge",

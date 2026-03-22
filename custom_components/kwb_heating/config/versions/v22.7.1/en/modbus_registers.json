@@ -3,6 +3,7 @@
     {
       "starting_address": 8192,
       "name": "Software (major)",
+      "entity_id": "software_major",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -13,6 +14,7 @@
     {
       "starting_address": 8193,
       "name": "Software (minor)",
+      "entity_id": "software_minor",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -23,6 +25,7 @@
     {
       "starting_address": 8194,
       "name": "Software (patch)",
+      "entity_id": "software_patch",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -33,6 +36,7 @@
     {
       "starting_address": 8195,
       "name": "Revision",
+      "entity_id": "revision",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -44,6 +48,7 @@
     {
       "starting_address": 8204,
       "name": "System OK",
+      "entity_id": "system_ok",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -55,6 +60,7 @@
     {
       "starting_address": 8205,
       "name": "Boiler fault",
+      "entity_id": "boiler_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -66,6 +72,7 @@
     {
       "starting_address": 8252,
       "name": "Number of alarms",
+      "entity_id": "number_of_alarms",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -77,6 +84,7 @@
     {
       "starting_address": 8254,
       "name": "Number of pending alarms",
+      "entity_id": "number_of_pending_alarms",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -88,6 +96,7 @@
     {
       "starting_address": 24582,
       "name": "Rectify alarms",
+      "entity_id": "rectify_alarms",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",

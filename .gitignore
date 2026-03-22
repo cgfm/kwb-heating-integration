@@ -76,12 +76,12 @@ secrets.yaml
 *.temp
 *~
 
-.claude/
+.claude
 claude*
 coordination/
 memory/
 Backup/
 
-modbusinfoConverter/config/*
+#modbusinfoConverter/config/*
 modbusinfoConverter/modbusinfo/*
 modbusinfoConverter/__pycache__/*

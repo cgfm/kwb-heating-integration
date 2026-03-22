@@ -3,6 +3,7 @@
     {
       "starting_address": 10463,
       "name": "Status",
+      "entity_id": "ugs_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -15,6 +16,7 @@
     {
       "starting_address": 10464,
       "name": "Status",
+      "entity_id": "ugs_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -27,6 +29,7 @@
     {
       "starting_address": 10465,
       "name": "Status",
+      "entity_id": "ugs_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -39,6 +42,7 @@
     {
       "starting_address": 10466,
       "name": "Status",
+      "entity_id": "ugs_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -51,6 +55,7 @@
     {
       "starting_address": 10467,
       "name": "Status",
+      "entity_id": "ugs_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -63,6 +68,7 @@
     {
       "starting_address": 10468,
       "name": "Status",
+      "entity_id": "ugs_6_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -75,6 +81,7 @@
     {
       "starting_address": 10469,
       "name": "Status",
+      "entity_id": "ugs_7_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -87,6 +94,7 @@
     {
       "starting_address": 10470,
       "name": "Status",
+      "entity_id": "ugs_8_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -99,6 +107,7 @@
     {
       "starting_address": 10471,
       "name": "Status",
+      "entity_id": "ugs_9_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -111,6 +120,7 @@
     {
       "starting_address": 10472,
       "name": "Status",
+      "entity_id": "ugs_10_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -123,6 +133,7 @@
     {
       "starting_address": 10473,
       "name": "Status",
+      "entity_id": "ugs_11_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -135,6 +146,7 @@
     {
       "starting_address": 10474,
       "name": "Status",
+      "entity_id": "ugs_12_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -147,6 +159,7 @@
     {
       "starting_address": 10475,
       "name": "Status",
+      "entity_id": "ugs_13_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -159,6 +172,7 @@
     {
       "starting_address": 10476,
       "name": "Status",
+      "entity_id": "ugs_14_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -171,6 +185,7 @@
     {
       "starting_address": 10479,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_1_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -183,6 +198,7 @@
     {
       "starting_address": 10480,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_1_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -195,6 +211,7 @@
     {
       "starting_address": 10481,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_2_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -207,6 +224,7 @@
     {
       "starting_address": 10482,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_2_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -219,6 +237,7 @@
     {
       "starting_address": 10483,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_3_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -231,6 +250,7 @@
     {
       "starting_address": 10484,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_3_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -243,6 +263,7 @@
     {
       "starting_address": 10485,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_4_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -255,6 +276,7 @@
     {
       "starting_address": 10486,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_4_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -267,6 +289,7 @@
     {
       "starting_address": 10487,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_5_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -279,6 +302,7 @@
     {
       "starting_address": 10488,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_5_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -291,6 +315,7 @@
     {
       "starting_address": 10489,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_6_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -303,6 +328,7 @@
     {
       "starting_address": 10490,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_6_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,6 +341,7 @@
     {
       "starting_address": 10491,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_7_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -327,6 +354,7 @@
     {
       "starting_address": 10492,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_7_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -339,6 +367,7 @@
     {
       "starting_address": 10493,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_8_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -351,6 +380,7 @@
     {
       "starting_address": 10494,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_8_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -363,6 +393,7 @@
     {
       "starting_address": 10495,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_9_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -375,6 +406,7 @@
     {
       "starting_address": 10496,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_9_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -387,6 +419,7 @@
     {
       "starting_address": 10497,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_10_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -399,6 +432,7 @@
     {
       "starting_address": 10498,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_10_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -411,6 +445,7 @@
     {
       "starting_address": 10499,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_11_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -423,6 +458,7 @@
     {
       "starting_address": 10500,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_11_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -435,6 +471,7 @@
     {
       "starting_address": 10501,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_12_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -447,6 +484,7 @@
     {
       "starting_address": 10502,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_12_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -459,6 +497,7 @@
     {
       "starting_address": 10503,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_13_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -471,6 +510,7 @@
     {
       "starting_address": 10504,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_13_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -483,6 +523,7 @@
     {
       "starting_address": 10505,
       "name": "Vorlauftemperatur Sekundär (value)",
+      "entity_id": "ugs_14_forw_flow_temp_sec_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -495,6 +536,7 @@
     {
       "starting_address": 10506,
       "name": "Vorlauftemperatur Sekundär (status)",
+      "entity_id": "ugs_14_forw_flow_temp_sec_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -507,6 +549,7 @@
     {
       "starting_address": 10508,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_1_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -519,6 +562,7 @@
     {
       "starting_address": 10509,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_2_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -531,6 +575,7 @@
     {
       "starting_address": 10510,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_3_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -543,6 +588,7 @@
     {
       "starting_address": 10511,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_4_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -555,6 +601,7 @@
     {
       "starting_address": 10512,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_5_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -567,6 +614,7 @@
     {
       "starting_address": 10513,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_6_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -579,6 +627,7 @@
     {
       "starting_address": 10514,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_7_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -591,6 +640,7 @@
     {
       "starting_address": 10515,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_8_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -603,6 +653,7 @@
     {
       "starting_address": 10516,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_9_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -615,6 +666,7 @@
     {
       "starting_address": 10517,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_10_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -627,6 +679,7 @@
     {
       "starting_address": 10518,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_11_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -639,6 +692,7 @@
     {
       "starting_address": 10519,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_12_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -651,6 +705,7 @@
     {
       "starting_address": 10520,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_13_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -663,6 +718,7 @@
     {
       "starting_address": 10521,
       "name": "Vorlauftemperatur Soll",
+      "entity_id": "ugs_14_forward_flow_temp_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -675,6 +731,7 @@
     {
       "starting_address": 10524,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_1_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -687,6 +744,7 @@
     {
       "starting_address": 10525,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_1_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -699,6 +757,7 @@
     {
       "starting_address": 10526,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_2_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -711,6 +770,7 @@
     {
       "starting_address": 10527,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_2_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -723,6 +783,7 @@
     {
       "starting_address": 10528,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_3_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -735,6 +796,7 @@
     {
       "starting_address": 10529,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_3_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -747,6 +809,7 @@
     {
       "starting_address": 10530,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_4_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -759,6 +822,7 @@
     {
       "starting_address": 10531,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_4_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -771,6 +835,7 @@
     {
       "starting_address": 10532,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_5_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -783,6 +848,7 @@
     {
       "starting_address": 10533,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_5_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -795,6 +861,7 @@
     {
       "starting_address": 10534,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_6_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -807,6 +874,7 @@
     {
       "starting_address": 10535,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_6_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -819,6 +887,7 @@
     {
       "starting_address": 10536,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_7_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -831,6 +900,7 @@
     {
       "starting_address": 10537,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_7_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -843,6 +913,7 @@
     {
       "starting_address": 10538,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_8_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -855,6 +926,7 @@
     {
       "starting_address": 10539,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_8_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -867,6 +939,7 @@
     {
       "starting_address": 10540,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_9_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -879,6 +952,7 @@
     {
       "starting_address": 10541,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_9_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -891,6 +965,7 @@
     {
       "starting_address": 10542,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_10_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -903,6 +978,7 @@
     {
       "starting_address": 10543,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_10_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -915,6 +991,7 @@
     {
       "starting_address": 10544,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_11_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -927,6 +1004,7 @@
     {
       "starting_address": 10545,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_11_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -939,6 +1017,7 @@
     {
       "starting_address": 10546,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_12_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -951,6 +1030,7 @@
     {
       "starting_address": 10547,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_12_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -963,6 +1043,7 @@
     {
       "starting_address": 10548,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_13_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -975,6 +1056,7 @@
     {
       "starting_address": 10549,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_13_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -987,6 +1069,7 @@
     {
       "starting_address": 10550,
       "name": "Vorlauftemperatur Primär (value)",
+      "entity_id": "ugs_14_forw_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -999,6 +1082,7 @@
     {
       "starting_address": 10551,
       "name": "Vorlauftemperatur Primär (status)",
+      "entity_id": "ugs_14_forw_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1011,6 +1095,7 @@
     {
       "starting_address": 10554,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_1_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1023,6 +1108,7 @@
     {
       "starting_address": 10555,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_1_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1035,6 +1121,7 @@
     {
       "starting_address": 10556,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_2_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1047,6 +1134,7 @@
     {
       "starting_address": 10557,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_2_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1059,6 +1147,7 @@
     {
       "starting_address": 10558,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_3_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1071,6 +1160,7 @@
     {
       "starting_address": 10559,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_3_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1083,6 +1173,7 @@
     {
       "starting_address": 10560,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_4_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1095,6 +1186,7 @@
     {
       "starting_address": 10561,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_4_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1107,6 +1199,7 @@
     {
       "starting_address": 10562,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_5_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1119,6 +1212,7 @@
     {
       "starting_address": 10563,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_5_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1131,6 +1225,7 @@
     {
       "starting_address": 10564,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_6_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1143,6 +1238,7 @@
     {
       "starting_address": 10565,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_6_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1155,6 +1251,7 @@
     {
       "starting_address": 10566,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_7_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1167,6 +1264,7 @@
     {
       "starting_address": 10567,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_7_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1179,6 +1277,7 @@
     {
       "starting_address": 10568,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_8_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1191,6 +1290,7 @@
     {
       "starting_address": 10569,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_8_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1203,6 +1303,7 @@
     {
       "starting_address": 10570,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_9_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1215,6 +1316,7 @@
     {
       "starting_address": 10571,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_9_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1227,6 +1329,7 @@
     {
       "starting_address": 10572,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_10_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1239,6 +1342,7 @@
     {
       "starting_address": 10573,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_10_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1251,6 +1355,7 @@
     {
       "starting_address": 10574,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_11_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1263,6 +1368,7 @@
     {
       "starting_address": 10575,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_11_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1275,6 +1381,7 @@
     {
       "starting_address": 10576,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_12_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1287,6 +1394,7 @@
     {
       "starting_address": 10577,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_12_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1299,6 +1407,7 @@
     {
       "starting_address": 10578,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_13_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1311,6 +1420,7 @@
     {
       "starting_address": 10579,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_13_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1323,6 +1433,7 @@
     {
       "starting_address": 10580,
       "name": "Rücklauftemperatur Primär (value)",
+      "entity_id": "ugs_14_ret_flow_temp_prim_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1335,6 +1446,7 @@
     {
       "starting_address": 10581,
       "name": "Rücklauftemperatur Primär (status)",
+      "entity_id": "ugs_14_ret_flow_temp_prim_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1347,6 +1459,7 @@
     {
       "starting_address": 10583,
       "name": "Ventil",
+      "entity_id": "ugs_1_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1359,6 +1472,7 @@
     {
       "starting_address": 10584,
       "name": "Ventil",
+      "entity_id": "ugs_2_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1371,6 +1485,7 @@
     {
       "starting_address": 10585,
       "name": "Ventil",
+      "entity_id": "ugs_3_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1383,6 +1498,7 @@
     {
       "starting_address": 10586,
       "name": "Ventil",
+      "entity_id": "ugs_4_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1395,6 +1511,7 @@
     {
       "starting_address": 10587,
       "name": "Ventil",
+      "entity_id": "ugs_5_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1407,6 +1524,7 @@
     {
       "starting_address": 10588,
       "name": "Ventil",
+      "entity_id": "ugs_6_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1419,6 +1537,7 @@
     {
       "starting_address": 10589,
       "name": "Ventil",
+      "entity_id": "ugs_7_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1431,6 +1550,7 @@
     {
       "starting_address": 10590,
       "name": "Ventil",
+      "entity_id": "ugs_8_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1443,6 +1563,7 @@
     {
       "starting_address": 10591,
       "name": "Ventil",
+      "entity_id": "ugs_9_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1455,6 +1576,7 @@
     {
       "starting_address": 10592,
       "name": "Ventil",
+      "entity_id": "ugs_10_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1467,6 +1589,7 @@
     {
       "starting_address": 10593,
       "name": "Ventil",
+      "entity_id": "ugs_11_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1479,6 +1602,7 @@
     {
       "starting_address": 10594,
       "name": "Ventil",
+      "entity_id": "ugs_12_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1491,6 +1615,7 @@
     {
       "starting_address": 10595,
       "name": "Ventil",
+      "entity_id": "ugs_13_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1503,6 +1628,7 @@
     {
       "starting_address": 10596,
       "name": "Ventil",
+      "entity_id": "ugs_14_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1515,6 +1641,7 @@
     {
       "starting_address": 25306,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_1_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1529,6 +1656,7 @@
     {
       "starting_address": 25307,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_2_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1543,6 +1671,7 @@
     {
       "starting_address": 25308,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_3_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1557,6 +1686,7 @@
     {
       "starting_address": 25309,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_4_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1571,6 +1701,7 @@
     {
       "starting_address": 25310,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_5_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1585,6 +1716,7 @@
     {
       "starting_address": 25311,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_6_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1599,6 +1731,7 @@
     {
       "starting_address": 25312,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_7_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1613,6 +1746,7 @@
     {
       "starting_address": 25313,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_8_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1627,6 +1761,7 @@
     {
       "starting_address": 25314,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_9_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1641,6 +1776,7 @@
     {
       "starting_address": 25315,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_10_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1655,6 +1791,7 @@
     {
       "starting_address": 25316,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_11_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1669,6 +1806,7 @@
     {
       "starting_address": 25317,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_12_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1683,6 +1821,7 @@
     {
       "starting_address": 25318,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_13_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1697,6 +1836,7 @@
     {
       "starting_address": 25319,
       "name": "Temperaturerhöhung",
+      "entity_id": "ugs_14_temperature_increase",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1711,6 +1851,7 @@
     {
       "starting_address": 25321,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_1_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1723,6 +1864,7 @@
     {
       "starting_address": 25322,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_2_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1735,6 +1877,7 @@
     {
       "starting_address": 25323,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_3_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1747,6 +1890,7 @@
     {
       "starting_address": 25324,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_4_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1759,6 +1903,7 @@
     {
       "starting_address": 25325,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_5_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1771,6 +1916,7 @@
     {
       "starting_address": 25326,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_6_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1783,6 +1929,7 @@
     {
       "starting_address": 25327,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_7_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1795,6 +1942,7 @@
     {
       "starting_address": 25328,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_8_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1807,6 +1955,7 @@
     {
       "starting_address": 25329,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_9_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1819,6 +1968,7 @@
     {
       "starting_address": 25330,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_10_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1831,6 +1981,7 @@
     {
       "starting_address": 25331,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_11_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1843,6 +1994,7 @@
     {
       "starting_address": 25332,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_12_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1855,6 +2007,7 @@
     {
       "starting_address": 25333,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_13_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1867,6 +2020,7 @@
     {
       "starting_address": 25334,
       "name": "Rücklauftemp. Begrenzung",
+      "entity_id": "ugs_14_return_flow_temp_restriction",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1879,6 +2033,7 @@
     {
       "starting_address": 25336,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_1_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1893,6 +2048,7 @@
     {
       "starting_address": 25337,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_2_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1907,6 +2063,7 @@
     {
       "starting_address": 25338,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_3_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1921,6 +2078,7 @@
     {
       "starting_address": 25339,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_4_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1935,6 +2093,7 @@
     {
       "starting_address": 25340,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_5_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1949,6 +2108,7 @@
     {
       "starting_address": 25341,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_6_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1963,6 +2123,7 @@
     {
       "starting_address": 25342,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_7_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1977,6 +2138,7 @@
     {
       "starting_address": 25343,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_8_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1991,6 +2153,7 @@
     {
       "starting_address": 25344,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_9_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2005,6 +2168,7 @@
     {
       "starting_address": 25345,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_10_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2019,6 +2183,7 @@
     {
       "starting_address": 25346,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_11_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2033,6 +2198,7 @@
     {
       "starting_address": 25347,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_12_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2047,6 +2213,7 @@
     {
       "starting_address": 25348,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_13_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2061,6 +2228,7 @@
     {
       "starting_address": 25349,
       "name": "Grenztemperatur",
+      "entity_id": "ugs_14_limit_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

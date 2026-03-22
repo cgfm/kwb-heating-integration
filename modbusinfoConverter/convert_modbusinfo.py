@@ -21,6 +21,36 @@ logger = logging.getLogger(__name__)
 class ModbusInfoConverter:
     """Converts ModbusInfo Excel files to JSON configuration."""
 
+    # Character replacements for entity ID sanitization (same as coordinator.py)
+    _ENTITY_ID_REPLACEMENTS = str.maketrans({
+        " ": "_",
+        ".": "_",
+        "/": "_",
+        "-": "_",
+        ":": "_",
+        "ä": "ae",
+        "ö": "oe",
+        "ü": "ue",
+        "Ä": "ae",
+        "Ö": "oe",
+        "Ü": "ue",
+        "ß": "ss",
+        "&": "and",
+        "@": "at",
+        "(": "",
+        ")": "",
+        "#": "",
+        "!": "",
+        "?": "",
+        ",": "",
+        ";": "",
+        "'": "",
+        '"': "",
+    })
+
+    # Equipment prefixes that are 0-indexed (need +1 for entity_id)
+    ZERO_INDEXED_PREFIXES = {"PUF", "BUF", "ZIR", "Circ", "WMZ", "HQM", "Zirk"}
+
     # Sheet categories
     #UNIVERSAL_SHEET = "Universal"
     # WMM Autonom is NOT a device - it contains universal Modbus lifetick registers
@@ -48,6 +78,15 @@ class ModbusInfoConverter:
 
     ALARMS_SHEET = "Alarms"
     VALUE_TABLES_SHEET = "ValueTables"
+
+    # Required value tables that must always be present (may be missing from Excel)
+    # Format: {table_name: {language: {value: translation}}}
+    REQUIRED_VALUE_TABLES = {
+        "system_ein_aus_t": {
+            "en": {"0": "Off", "1": "On"},
+            "de": {"0": "Aus", "1": "Ein"},
+        }
+    }
 
     # Use consistent English filenames for equipment
     EQUIPMENT_FILE_MAP = {
@@ -87,6 +126,34 @@ class ModbusInfoConverter:
         """Initialize converter."""
         self.input_dir = Path(input_dir)
         self.output_dir = Path(output_dir)
+        # Cache for English data lookup: {version: {starting_address: {"name": str, "index": str}}}
+        self._english_data_cache: dict[str, dict[int, dict[str, str]]] = {}
+
+    def sanitize_for_entity_id(self, name: str) -> str:
+        """Sanitize a string for use in Home Assistant entity IDs.
+
+        This mirrors the sanitization logic in coordinator.py to ensure
+        entity IDs are valid and consistent.
+        """
+        if not name:
+            return ""
+
+        # Apply character replacements
+        result = name.translate(self._ENTITY_ID_REPLACEMENTS)
+
+        # Convert to lowercase
+        result = result.lower()
+
+        # Remove any remaining invalid characters
+        result = re.sub(r'[^a-z0-9_]', '', result)
+
+        # Collapse multiple underscores
+        result = re.sub(r'_+', '_', result)
+
+        # Strip leading/trailing underscores
+        result = result.strip('_')
+
+        return result
 
     def parse_filename(self, filename: str) -> dict[str, str]:
         """Parse ModbusInfo filename to extract version and language."""
@@ -97,8 +164,84 @@ class ModbusInfoConverter:
             return {"language": language, "version": version}
         return {}
 
-    def read_register_sheet(self, workbook: openpyxl.Workbook, sheet_name: str) -> list[dict]:
-        """Read register data from Excel sheet."""
+    def load_english_data(self, version: str) -> dict[int, dict[str, str]]:
+        """Load English register data (name and index) for a specific version.
+
+        Returns a mapping of starting_address -> {"name": str, "index": str} for use
+        in generating language-independent entity IDs.
+        """
+        if version in self._english_data_cache:
+            return self._english_data_cache[version]
+
+        english_data: dict[int, dict[str, str]] = {}
+        en_file = self.input_dir / f"ModbusInfo-en-V{version}.xlsx"
+
+        if not en_file.exists():
+            logger.warning(f"English file not found for version {version}: {en_file}")
+            self._english_data_cache[version] = english_data
+            return english_data
+
+        try:
+            workbook = openpyxl.load_workbook(en_file, data_only=True)
+
+            # Collect data from all relevant sheets
+            all_sheets = (
+                self.UNIVERSAL_SHEETS +
+                self.DEVICE_SHEETS +
+                list(self.EQUIPMENT_SHEETS.keys()) +
+                list(self.EQUIPMENT_SHEETS.values())
+            )
+
+            for sheet_name in all_sheets:
+                if sheet_name not in workbook.sheetnames:
+                    continue
+
+                sheet = workbook[sheet_name]
+                headers = [cell.value for cell in sheet[1]]
+
+                for row in sheet.iter_rows(min_row=2, values_only=True):
+                    if not any(row) or row[0] is None:
+                        continue
+
+                    # Get StartingAddress, Name, and Index
+                    row_dict = {}
+                    for i, value in enumerate(row):
+                        if i < len(headers) and headers[i]:
+                            row_dict[headers[i]] = value
+
+                    address = row_dict.get("StartingAddress")
+                    name = row_dict.get("Name")
+                    index = row_dict.get("Index")
+
+                    if address is not None and name:
+                        data = {"name": str(name).strip()}
+                        if index:
+                            data["index"] = str(index).strip()
+                        english_data[int(address)] = data
+
+            workbook.close()
+            logger.info(f"  Loaded {len(english_data)} English entries for version {version}")
+
+        except Exception as exc:
+            logger.error(f"Error loading English data for version {version}: {exc}")
+
+        self._english_data_cache[version] = english_data
+        return english_data
+
+    def read_register_sheet(
+        self,
+        workbook: openpyxl.Workbook,
+        sheet_name: str,
+        english_data: dict[int, dict[str, str]] | None = None
+    ) -> list[dict]:
+        """Read register data from Excel sheet.
+
+        Args:
+            workbook: The Excel workbook
+            sheet_name: Name of the sheet to read
+            english_data: Optional mapping of starting_address -> {"name": str, "index": str}
+                          for generating language-independent entity IDs
+        """
         if sheet_name not in workbook.sheetnames:
             return []
 
@@ -118,56 +261,103 @@ class ModbusInfoConverter:
                 if i < len(headers) and headers[i]:
                     row_dict[headers[i]] = value
 
-            register = self.normalize_register(row_dict)
+            register = self.normalize_register(row_dict, english_data)
             if register:
                 registers.append(register)
 
         return registers
 
-    # Map English index prefixes to German equivalents for consistency
-    INDEX_PREFIX_MAP = {
-        "HC": "HK",      # Heating Circuit -> Heizkreis
-        "BUF": "PUF",    # Buffer -> Puffer
-        "DHWC": "BWS",   # DHW Cylinder -> Brauchwasserspeicher
-        "SHS": "ZWQ",    # Secondary Heat Source -> Zweitwärmequelle
-        "Circ": "ZIR",   # Circulation -> Zirkulation
-        "B": "KFS",      # Boiler (sequence) -> Kesselfolgeschaltung
-        "HQM": "WMZ",    # Heat Quantity Meter -> Wärmemengenzähler
-        # SOL stays as SOL (same in both languages)
-    }
+    def _sanitize_index_for_entity_id(self, index: str) -> str | None:
+        """Sanitize an index string for use in entity_id.
 
-    def _normalize_index(self, index: str) -> str:
-        """Normalize index prefix to use consistent German abbreviations."""
+        Converts index like "SOL 1", "PUF 0", "HK 1.1" to entity_id format
+        like "sol_1", "puf_1", "hk_1_1". Handles 0-indexed equipment by converting to 1-based.
+
+        Args:
+            index: The index string (e.g., "SOL 1", "PUF 0", "HK 1.1")
+
+        Returns:
+            Sanitized index string like "sol_1", "hk_1_1", or None if not applicable
+        """
         if not index:
-            return index
+            return None
 
-        # Check each English prefix and replace with German equivalent
-        for en_prefix, de_prefix in self.INDEX_PREFIX_MAP.items():
-            if index.startswith(en_prefix + " "):
-                return de_prefix + index[len(en_prefix):]
+        # Split into prefix and number part
+        parts = index.split(" ", 1)
+        if len(parts) != 2:
+            return None
 
-        return index
+        prefix = parts[0].strip()
+        number_part = parts[1].strip()
 
-    def normalize_register(self, data: dict) -> dict | None:
-        """Normalize register data to standard format."""
+        # Convert 0-indexed equipment to 1-based
+        if prefix in self.ZERO_INDEXED_PREFIXES:
+            try:
+                num = int(number_part)
+                number_part = str(num + 1)
+            except ValueError:
+                pass  # Keep original if not a simple number
+
+        # Replace dots with underscores for heating circuits (HK 1.1 -> hk_1_1)
+        sanitized_number = number_part.replace(".", "_")
+
+        # Sanitize the prefix (lowercase, handle special chars)
+        sanitized_prefix = self.sanitize_for_entity_id(prefix)
+
+        return f"{sanitized_prefix}_{sanitized_number}"
+
+    def normalize_register(
+        self,
+        data: dict,
+        english_data: dict[int, dict[str, str]] | None = None
+    ) -> dict | None:
+        """Normalize register data to standard format.
+
+        Args:
+            data: Raw register data from Excel row
+            english_data: Optional mapping of starting_address -> {"name": str, "index": str}
+                          for generating language-independent entity IDs
+        """
         # Skip if no address
         address = data.get("StartingAddress")
         if address is None:
             return None
 
+        address_int = int(address)
+        name = str(data.get("Name", "")).strip() if data.get("Name") else ""
+
+        # Get English data for language-independent entity_id
+        en_data = english_data.get(address_int, {}) if english_data else {}
+        english_name = en_data.get("name", name)
+        english_index = en_data.get("index", "")
+
+        # Generate entity_id from English name (language-independent)
+        base_entity_id = self.sanitize_for_entity_id(english_name)
+
+        # Include English index in entity_id if present
+        if english_index:
+            index_prefix = self._sanitize_index_for_entity_id(english_index)
+            if index_prefix:
+                entity_id = f"{index_prefix}_{base_entity_id}"
+            else:
+                entity_id = base_entity_id
+        else:
+            entity_id = base_entity_id
+
         # Build normalized register
         register = {
-            "starting_address": int(address),
-            "name": str(data.get("Name", "")).strip() if data.get("Name") else "",
+            "starting_address": address_int,
+            "name": name,
+            "entity_id": entity_id,
             "data_type": self._parse_function_code(data.get("Functions")),
             "type": str(data.get("Type", "u16")).strip().lower(),
             "user_level": self._parse_access_level(data.get("UserLevel")),
             "expert_level": self._parse_access_level(data.get("ExpertLevel")),
         }
 
-        # Optional fields - normalize index to use German prefixes
+        # Keep the original index field for display purposes
         if data.get("Index"):
-            register["index"] = self._normalize_index(str(data.get("Index")).strip())
+            register["index"] = str(data.get("Index")).strip()
 
         if data.get("Unit/ValueTable"):
             unit_or_table = str(data.get("Unit/ValueTable")).strip()
@@ -250,6 +440,32 @@ class ModbusInfoConverter:
 
         return value_tables
 
+    def ensure_required_value_tables(self, value_tables: dict, language: str) -> dict:
+        """Ensure all required value tables are present.
+
+        Some value tables (like system_ein_aus_t) are referenced in equipment files
+        but may be missing from the Excel ValueTables sheet. This method adds them
+        if they're not present.
+
+        Args:
+            value_tables: The value tables read from Excel
+            language: The language code ('en' or 'de')
+
+        Returns:
+            Updated value_tables dict with required tables added if missing
+        """
+        for table_name, translations in self.REQUIRED_VALUE_TABLES.items():
+            if table_name not in value_tables:
+                if language in translations:
+                    value_tables[table_name] = translations[language]
+                    logger.info(f"    Added missing required value table: {table_name}")
+                elif "en" in translations:
+                    # Fallback to English if language not found
+                    value_tables[table_name] = translations["en"]
+                    logger.info(f"    Added missing required value table: {table_name} (fallback to en)")
+
+        return value_tables
+
     def read_alarm_codes(self, workbook: openpyxl.Workbook) -> list[dict]:
         """Read alarm codes from Excel."""
         if self.ALARMS_SHEET not in workbook.sheetnames:
@@ -308,6 +524,9 @@ class ModbusInfoConverter:
         version = file_info["version"]
         language = file_info["language"]
 
+        # Load English names for entity_id generation (language-independent IDs)
+        english_data = self.load_english_data(version)
+
         # Create output directory structure
         version_dir = self.output_dir / f"v{version}" / language
         version_dir.mkdir(parents=True, exist_ok=True)
@@ -330,7 +549,7 @@ class ModbusInfoConverter:
         for sheet_name in self.UNIVERSAL_SHEETS:
             if sheet_name in workbook.sheetnames:
                 logger.info(f"  Reading {sheet_name} sheet...")
-                registers = self.read_register_sheet(workbook, sheet_name)
+                registers = self.read_register_sheet(workbook, sheet_name, english_data)
                 universal_registers.extend(registers)
                 logger.info(f"    Found {len(registers)} registers")
 
@@ -346,7 +565,7 @@ class ModbusInfoConverter:
         combifire_base_registers = []
         if "KWB Combifire" in workbook.sheetnames:
             logger.info(f"  Reading KWB Combifire sheet (base for CF models)...")
-            combifire_base_registers = self.read_register_sheet(workbook, "KWB Combifire")
+            combifire_base_registers = self.read_register_sheet(workbook, "KWB Combifire", english_data)
             logger.info(f"    Found {len(combifire_base_registers)} base registers")
 
         # CF models that inherit from Combifire
@@ -360,7 +579,7 @@ class ModbusInfoConverter:
 
             if sheet_name in workbook.sheetnames:
                 logger.info(f"  Reading {sheet_name} sheet...")
-                device_registers = self.read_register_sheet(workbook, sheet_name)
+                device_registers = self.read_register_sheet(workbook, sheet_name, english_data)
 
                 # Special handling for CF models: merge with Combifire base
                 if sheet_name in cf_models and combifire_base_registers:
@@ -397,7 +616,7 @@ class ModbusInfoConverter:
                 filename = self.EQUIPMENT_FILE_MAP.get(sheet_name)
                 if filename and filename not in processed_equipment:
                     logger.info(f"  Reading {sheet_name} sheet...")
-                    equipment_registers = self.read_register_sheet(workbook, sheet_name)
+                    equipment_registers = self.read_register_sheet(workbook, sheet_name, english_data)
                     if equipment_registers:
                         equipment_file = equipment_dir / filename
                         with open(equipment_file, 'w', encoding='utf-8') as f:
@@ -410,6 +629,8 @@ class ModbusInfoConverter:
         # Read and save value tables
         logger.info(f"  Reading {self.VALUE_TABLES_SHEET}...")
         value_tables = self.read_value_tables(workbook)
+        # Ensure required value tables are present (some may be missing from Excel)
+        value_tables = self.ensure_required_value_tables(value_tables, language)
         value_tables_file = version_dir / "value_tables.json"
         with open(value_tables_file, 'w', encoding='utf-8') as f:
             json.dump({

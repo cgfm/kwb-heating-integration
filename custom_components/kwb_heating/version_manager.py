@@ -72,6 +72,14 @@ class VersionManager:
     def _create_default_mapping(self) -> None:
         """Create default version mapping."""
         self.version_mapping = {
+            "21.4.0": {
+                "config_path": "versions/v21.4.0",
+                "supported_languages": ["de", "en"],
+                "register_layouts": {
+                    "software_version": 8192,
+                    "device_info_start": 8000
+                }
+            },
             "22.7.1": {
                 "config_path": "versions/v22.7.1",
                 "supported_languages": ["de", "en"],
@@ -87,7 +95,15 @@ class VersionManager:
                     "software_version": 8192,
                     "device_info_start": 8000
                 }
-            },            
+            },
+            "25.4.0": {
+                "config_path": "versions/v25.4.0",
+                "supported_languages": ["de", "en"],
+                "register_layouts": {
+                    "software_version": 8192,
+                    "device_info_start": 8000
+                }
+            },
             "25.7.1": {
                 "config_path": "versions/v25.7.1",
                 "supported_languages": ["de", "en"],
@@ -98,21 +114,33 @@ class VersionManager:
             }
         }
 
-    def parse_version(self, version_raw: int | str) -> str:
+    def parse_version(
+        self, version_raw: int | str | tuple[int, int, int]
+    ) -> str:
         """Parse raw version value into normalized version string.
 
         Args:
-            version_raw: Raw version value from register (int) or version string
+            version_raw: Raw version value - can be:
+                - tuple of (major, minor, patch) integers from registers
+                - single int (major version only, legacy)
+                - version string
 
         Returns:
             Normalized version string (e.g., "22.7.1")
         """
+        if isinstance(version_raw, tuple) and len(version_raw) == 3:
+            # Full version from registers 8192, 8193, 8194
+            major, minor, patch = version_raw
+            return f"{major}.{minor}.{patch}"
+
         if isinstance(version_raw, int):
-            # Assuming version format: major version is the integer value
-            # For KWB systems, register 8192 contains major version (22, 25, etc.)
-            # This is a simplified parsing - adjust based on actual format
+            # Legacy: only major version available
+            # Fall back to default minor.patch pattern
             major = version_raw
-            # Default to x.7.1 pattern observed in ModbusInfo files
+            _LOGGER.warning(
+                "Only major version %d available, defaulting to %d.7.1",
+                major, major
+            )
             return f"{major}.7.1"
 
         if isinstance(version_raw, str):
@@ -190,14 +218,22 @@ class VersionManager:
         version_info = self.version_mapping.get(version, {})
         config_path = version_info.get("config_path", f"versions/v{version}")
 
-        # Check if language is supported
-        supported_languages = version_info.get("supported_languages", ["de", "en"])
+        # Ensure language is supported, fallback to English or the first available
+        supported_languages = version_info.get("supported_languages", ["en", "de"])
         if language not in supported_languages:
             _LOGGER.warning(
-                "Language %s not supported for version %s, falling back to %s",
-                language, version, supported_languages[0]
+                "Language '%s' not explicitly supported for version %s. Supported: %s.",
+                language, version, ", ".join(supported_languages)
             )
-            language = supported_languages[0]
+            # Fallback priority: English, then the first language in the list
+            if "en" in supported_languages:
+                language = "en"
+            elif supported_languages:
+                language = supported_languages[0]
+            else:
+                # Last resort if supported_languages is empty
+                language = "en"
+            _LOGGER.info("Falling back to language '%s'", language)
 
         full_path = self.config_base_path / config_path / language
         return full_path
@@ -256,6 +292,9 @@ class VersionManager:
     async def detect_version(self, modbus_client) -> str:
         """Detect software version from device.
 
+        Reads registers 8192 (major), 8193 (minor), 8194 (patch) to get
+        the full version number.
+
         Args:
             modbus_client: Instance of KWBModbusClient
 
@@ -264,18 +303,28 @@ class VersionManager:
         """
         try:
             register_address = self.get_version_register_address()
-            _LOGGER.debug("Reading version from register %d", register_address)
+            _LOGGER.debug("Reading version from registers %d-%d", register_address, register_address + 2)
 
-            # Read version register
-            result = await modbus_client.read_input_registers(register_address, 1)
+            # Read 3 consecutive version registers: major, minor, patch
+            result = await modbus_client.read_input_registers(register_address, 3)
 
-            if result and len(result) > 0:
-                version_raw = result[0]
-                version = self.parse_version(version_raw)
-                _LOGGER.info("Detected software version: %s (raw: %d)", version, version_raw)
+            if result and len(result) >= 3:
+                major, minor, patch = result[0], result[1], result[2]
+                version = self.parse_version((major, minor, patch))
+                _LOGGER.info(
+                    "Detected software version: %s (raw: major=%d, minor=%d, patch=%d)",
+                    version, major, minor, patch
+                )
+                return version
+            elif result and len(result) > 0:
+                # Fallback: only major version available
+                _LOGGER.warning(
+                    "Could only read %d version register(s), expected 3", len(result)
+                )
+                version = self.parse_version(result[0])
                 return version
             else:
-                _LOGGER.warning("Could not read version register, using default")
+                _LOGGER.warning("Could not read version registers, using default")
                 return self.default_version
 
         except Exception as exc:

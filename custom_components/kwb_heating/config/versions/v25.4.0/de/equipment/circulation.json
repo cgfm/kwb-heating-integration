@@ -3,6 +3,7 @@
     {
       "starting_address": 8929,
       "name": "Temperatur (value)",
+      "entity_id": "circ_1_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -15,6 +16,7 @@
     {
       "starting_address": 8930,
       "name": "Temperatur (status)",
+      "entity_id": "circ_1_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -27,6 +29,7 @@
     {
       "starting_address": 8931,
       "name": "Temperatur (value)",
+      "entity_id": "circ_2_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -39,6 +42,7 @@
     {
       "starting_address": 8932,
       "name": "Temperatur (status)",
+      "entity_id": "circ_2_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -51,6 +55,7 @@
     {
       "starting_address": 8933,
       "name": "Temperatur (value)",
+      "entity_id": "circ_3_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -63,6 +68,7 @@
     {
       "starting_address": 8934,
       "name": "Temperatur (status)",
+      "entity_id": "circ_3_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -75,6 +81,7 @@
     {
       "starting_address": 8935,
       "name": "Temperatur (value)",
+      "entity_id": "circ_4_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -87,6 +94,7 @@
     {
       "starting_address": 8936,
       "name": "Temperatur (status)",
+      "entity_id": "circ_4_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -99,6 +107,7 @@
     {
       "starting_address": 8937,
       "name": "Temperatur (value)",
+      "entity_id": "circ_5_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -111,6 +120,7 @@
     {
       "starting_address": 8938,
       "name": "Temperatur (status)",
+      "entity_id": "circ_5_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -123,6 +133,7 @@
     {
       "starting_address": 8939,
       "name": "Temperatur (value)",
+      "entity_id": "circ_6_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -135,6 +146,7 @@
     {
       "starting_address": 8940,
       "name": "Temperatur (status)",
+      "entity_id": "circ_6_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -147,6 +159,7 @@
     {
       "starting_address": 8941,
       "name": "Temperatur (value)",
+      "entity_id": "circ_7_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -159,6 +172,7 @@
     {
       "starting_address": 8942,
       "name": "Temperatur (status)",
+      "entity_id": "circ_7_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -171,6 +185,7 @@
     {
       "starting_address": 8943,
       "name": "Temperatur (value)",
+      "entity_id": "circ_8_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -183,6 +198,7 @@
     {
       "starting_address": 8944,
       "name": "Temperatur (status)",
+      "entity_id": "circ_8_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -195,6 +211,7 @@
     {
       "starting_address": 8945,
       "name": "Temperatur (value)",
+      "entity_id": "circ_9_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -207,6 +224,7 @@
     {
       "starting_address": 8946,
       "name": "Temperatur (status)",
+      "entity_id": "circ_9_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -219,6 +237,7 @@
     {
       "starting_address": 8947,
       "name": "Temperatur (value)",
+      "entity_id": "circ_10_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -231,6 +250,7 @@
     {
       "starting_address": 8948,
       "name": "Temperatur (status)",
+      "entity_id": "circ_10_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -243,6 +263,7 @@
     {
       "starting_address": 8949,
       "name": "Temperatur (value)",
+      "entity_id": "circ_11_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -255,6 +276,7 @@
     {
       "starting_address": 8950,
       "name": "Temperatur (status)",
+      "entity_id": "circ_11_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -267,6 +289,7 @@
     {
       "starting_address": 8951,
       "name": "Temperatur (value)",
+      "entity_id": "circ_12_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -279,6 +302,7 @@
     {
       "starting_address": 8952,
       "name": "Temperatur (status)",
+      "entity_id": "circ_12_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -291,6 +315,7 @@
     {
       "starting_address": 8953,
       "name": "Temperatur (value)",
+      "entity_id": "circ_13_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -303,6 +328,7 @@
     {
       "starting_address": 8954,
       "name": "Temperatur (status)",
+      "entity_id": "circ_13_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,6 +341,7 @@
     {
       "starting_address": 8955,
       "name": "Temperatur (value)",
+      "entity_id": "circ_14_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -327,6 +354,7 @@
     {
       "starting_address": 8956,
       "name": "Temperatur (status)",
+      "entity_id": "circ_14_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -339,6 +367,7 @@
     {
       "starting_address": 8957,
       "name": "Temperatur (value)",
+      "entity_id": "circ_15_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -351,6 +380,7 @@
     {
       "starting_address": 8958,
       "name": "Temperatur (status)",
+      "entity_id": "circ_15_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -363,6 +393,7 @@
     {
       "starting_address": 8963,
       "name": "Pumpe",
+      "entity_id": "circ_1_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -375,6 +406,7 @@
     {
       "starting_address": 8964,
       "name": "Pumpe",
+      "entity_id": "circ_2_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -387,6 +419,7 @@
     {
       "starting_address": 8965,
       "name": "Pumpe",
+      "entity_id": "circ_3_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -399,6 +432,7 @@
     {
       "starting_address": 8966,
       "name": "Pumpe",
+      "entity_id": "circ_4_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -411,6 +445,7 @@
     {
       "starting_address": 8967,
       "name": "Pumpe",
+      "entity_id": "circ_5_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -423,6 +458,7 @@
     {
       "starting_address": 8968,
       "name": "Pumpe",
+      "entity_id": "circ_6_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -435,6 +471,7 @@
     {
       "starting_address": 8969,
       "name": "Pumpe",
+      "entity_id": "circ_7_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -447,6 +484,7 @@
     {
       "starting_address": 8970,
       "name": "Pumpe",
+      "entity_id": "circ_8_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -459,6 +497,7 @@
     {
       "starting_address": 8971,
       "name": "Pumpe",
+      "entity_id": "circ_9_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -471,6 +510,7 @@
     {
       "starting_address": 8972,
       "name": "Pumpe",
+      "entity_id": "circ_10_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -483,6 +523,7 @@
     {
       "starting_address": 8973,
       "name": "Pumpe",
+      "entity_id": "circ_11_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -495,6 +536,7 @@
     {
       "starting_address": 8974,
       "name": "Pumpe",
+      "entity_id": "circ_12_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -507,6 +549,7 @@
     {
       "starting_address": 8975,
       "name": "Pumpe",
+      "entity_id": "circ_13_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -519,6 +562,7 @@
     {
       "starting_address": 8976,
       "name": "Pumpe",
+      "entity_id": "circ_14_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -531,6 +575,7 @@
     {
       "starting_address": 8977,
       "name": "Pumpe",
+      "entity_id": "circ_15_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -543,6 +588,7 @@
     {
       "starting_address": 24828,
       "name": "Programm wählen",
+      "entity_id": "circ_1_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -555,6 +601,7 @@
     {
       "starting_address": 24829,
       "name": "Programm wählen",
+      "entity_id": "circ_2_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -567,6 +614,7 @@
     {
       "starting_address": 24830,
       "name": "Programm wählen",
+      "entity_id": "circ_3_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -579,6 +627,7 @@
     {
       "starting_address": 24831,
       "name": "Programm wählen",
+      "entity_id": "circ_4_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -591,6 +640,7 @@
     {
       "starting_address": 24832,
       "name": "Programm wählen",
+      "entity_id": "circ_5_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -603,6 +653,7 @@
     {
       "starting_address": 24833,
       "name": "Programm wählen",
+      "entity_id": "circ_6_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -615,6 +666,7 @@
     {
       "starting_address": 24834,
       "name": "Programm wählen",
+      "entity_id": "circ_7_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -627,6 +679,7 @@
     {
       "starting_address": 24835,
       "name": "Programm wählen",
+      "entity_id": "circ_8_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -639,6 +692,7 @@
     {
       "starting_address": 24836,
       "name": "Programm wählen",
+      "entity_id": "circ_9_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -651,6 +705,7 @@
     {
       "starting_address": 24837,
       "name": "Programm wählen",
+      "entity_id": "circ_10_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -663,6 +718,7 @@
     {
       "starting_address": 24838,
       "name": "Programm wählen",
+      "entity_id": "circ_11_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -675,6 +731,7 @@
     {
       "starting_address": 24839,
       "name": "Programm wählen",
+      "entity_id": "circ_12_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -687,6 +744,7 @@
     {
       "starting_address": 24840,
       "name": "Programm wählen",
+      "entity_id": "circ_13_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -699,6 +757,7 @@
     {
       "starting_address": 24841,
       "name": "Programm wählen",
+      "entity_id": "circ_14_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -711,6 +770,7 @@
     {
       "starting_address": 24842,
       "name": "Programm wählen",
+      "entity_id": "circ_15_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="165mm"
+   height="165mm"
+   viewBox="0 0 165 165"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   sodipodi:docname="boiler.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview2712"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.67578695"
+     inkscape:cx="-224.18308"
+     inkscape:cy="174.61124"
+     inkscape:window-width="1368"
+     inkscape:window-height="840"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" /><defs
+     id="defs1"><!-- CSS Styles for Dark Mode directly in SVG --><style
+       id="style274">
+    <![CDATA[
+      /* Dark mode detection for elements inside this SVG */
+      @media (prefers-color-scheme: dark) {
+        [stroke="#000000"],
+        [style*="stroke:#000000"],
+        path[style*="stroke:#000000"],
+        rect[style*="stroke:#000000"] {
+          stroke: #ffffff !important;
+        }
+        [fill="#ffffff"],
+        [style*="fill:#ffffff"],
+        path[style*="fill:#ffffff"] {
+          fill: #2a2a2a !important;
+        }
+        [fill="#000000"],
+        [style*="fill:#000000"] {
+          fill: #ffffff !important;
+        }
+        stop[style*="stop-color:#ffffff"] {
+          stop-color: #2a2a2a !important;
+        }
+      }
+    ]]>
+  </style><!-- Dynamic gradient for Aschekasten --><linearGradient
+       id="aschekasten-gradient"
+       x1="2.3776314"
+       y1="460.72769"
+       x2="17.482843"
+       y2="460.72769"
+       gradientTransform="scale(3.4059104,0.29360726)"
+       gradientUnits="userSpaceOnUse">
+    <stop
+   offset="0%"
+   style="stop-color:#888888;stop-opacity:1"
+   id="stop271" />
+    <stop
+   offset="var(--fill-percentage, 0%)"
+   style="stop-color:#888888;stop-opacity:1"
+   id="stop273" />
+    <stop
+   offset="var(--fill-percentage, 0%)"
+   style="stop-color:transparent;stop-opacity:0"
+   id="stop275" />
+    <stop
+   offset="100%"
+   style="stop-color:transparent;stop-opacity:0"
+   id="stop277" />
+  </linearGradient><!-- Dynamic gradient for Pelletspeicher --><linearGradient
+       id="pelletspeicher-gradient"
+       x1="3.2189653"
+       y1="316.34616"
+       x2="23.669212"
+       y2="316.34616"
+       gradientTransform="scale(2.5157152,0.39750128)"
+       gradientUnits="userSpaceOnUse">
+    <stop
+   offset="0%"
+   style="stop-color:#9a3737;stop-opacity:1"
+   id="stop280" />
+    <stop
+   offset="var(--fill-percentage, 0%)"
+   style="stop-color:#9a3737;stop-opacity:1"
+   id="stop282" />
+    <stop
+   offset="var(--fill-percentage, 0%)"
+   style="stop-color:transparent;stop-opacity:0"
+   id="stop284" />
+    <stop
+   offset="100%"
+   style="stop-color:transparent;stop-opacity:0"
+   id="stop286" />
+  </linearGradient><!-- Vertical gradients for Nachlegebalken (bottom to top filling) --><linearGradient
+       id="linearGradient36"><stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop36" /><stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0.87575758"
+         id="stop38" /><stop
+         style="stop-color:#ff0000;stop-opacity:0;"
+         offset="0.87575758"
+         id="stop37" /></linearGradient><linearGradient
+       id="linearGradient15"><stop
+         style="stop-color:#00ff00;stop-opacity:1;"
+         offset="0"
+         id="stop15" /><stop
+         style="stop-color:#00ff00;stop-opacity:1;"
+         offset="0.60000002"
+         id="stop17" /><stop
+         style="stop-color:#00ff00;stop-opacity:0;"
+         offset="0.60000002"
+         id="stop16" /></linearGradient><linearGradient
+       id="linearGradient13"><stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop13" /><stop
+         style="stop-color:#fff000;stop-opacity:1;"
+         offset="1"
+         id="stop14" /></linearGradient><linearGradient
+       id="linearGradient11"><stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop11" /><stop
+         style="stop-color:#fff000;stop-opacity:1;"
+         offset="1"
+         id="stop12" /></linearGradient><linearGradient
+       id="linearGradient7"><stop
+         style="stop-color:#a100ff;stop-opacity:1;"
+         offset="0"
+         id="stop7" /><stop
+         style="stop-color:#a100ff;stop-opacity:1;"
+         offset="0.37931642"
+         id="stop9" /><stop
+         style="stop-color:#a100ff;stop-opacity:0;"
+         offset="0.37931642"
+         id="stop8" /></linearGradient><linearGradient
+       id="linearGradient4"><stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop4" /><stop
+         style="stop-color:#fff000;stop-opacity:1;"
+         offset="1"
+         id="stop5" /></linearGradient><linearGradient
+       id="linearGradient1"><stop
+         style="stop-color:#ff0000;stop-opacity:1;"
+         offset="0"
+         id="stop1" /><stop
+         style="stop-color:#fff000;stop-opacity:1;"
+         offset="1"
+         id="stop2" /></linearGradient><linearGradient
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="33.333908"
+       y1="123.17129"
+       x2="33.543747"
+       y2="104.36614"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,-5.2998757)" /><linearGradient
+       xlink:href="#linearGradient4"
+       id="linearGradient5"
+       x1="33.182709"
+       y1="128.27493"
+       x2="33.397011"
+       y2="98.186707"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,-5.2998757)" /><linearGradient
+       xlink:href="#linearGradient7"
+       id="linearGradient8"
+       x1="44.713409"
+       y1="69.529091"
+       x2="44.450924"
+       y2="14.448205"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       xlink:href="#linearGradient11"
+       id="linearGradient12"
+       x1="124.90651"
+       y1="117.96087"
+       x2="125.2422"
+       y2="64.093224"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       xlink:href="#linearGradient13"
+       id="linearGradient14"
+       x1="125.95826"
+       y1="108.03363"
+       x2="125.24368"
+       y2="71.879219"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       xlink:href="#linearGradient15"
+       id="linearGradient16"
+       x1="44.47076"
+       y1="69.529091"
+       x2="43.965633"
+       y2="14.690852"
+       gradientUnits="userSpaceOnUse" /><linearGradient
+       xlink:href="#linearGradient36"
+       id="linearGradient37"
+       x1="43.98547"
+       y1="69.771736"
+       x2="43.722984"
+       y2="13.962912"
+       gradientUnits="userSpaceOnUse" /><filter
+       id="text-glow-light"
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%"><feMorphology
+         in="SourceAlpha"
+         operator="dilate"
+         radius="2"
+         result="expanded" /><feGaussianBlur
+         in="expanded"
+         stdDeviation="3"
+         result="blurred" /><feFlood
+         flood-color="#ffffff"
+         flood-opacity="1"
+         result="flood" /><feComposite
+         in="flood"
+         in2="blurred"
+         operator="in"
+         result="bg" /><feMerge><feMergeNode
+           in="bg" /><feMergeNode
+           in="SourceGraphic" /></feMerge></filter><filter
+       id="text-glow-dark"
+       x="-50%"
+       y="-50%"
+       width="200%"
+       height="200%"><feMorphology
+         in="SourceAlpha"
+         operator="dilate"
+         radius="2"
+         result="expanded" /><feGaussianBlur
+         in="expanded"
+         stdDeviation="3"
+         result="blurred" /><feFlood
+         flood-color="#000000"
+         flood-opacity="1"
+         result="flood" /><feComposite
+         in="flood"
+         in2="blurred"
+         operator="in"
+         result="bg" /><feMerge><feMergeNode
+           in="bg" /><feMergeNode
+           in="SourceGraphic" /></feMerge></filter><linearGradient
+       id="nachlegebalken-gradient-33"
+       x1="0" y1="1" x2="0" y2="0"
+       gradientUnits="objectBoundingBox"><stop
+         offset="0" style="stop-color:#9a3737;stop-opacity:1" /><stop
+         offset="0.33" style="stop-color:#9a3737;stop-opacity:1" /><stop
+         offset="0.33" style="stop-color:#ffffff;stop-opacity:1" /><stop
+         offset="1" style="stop-color:#ffffff;stop-opacity:1" /></linearGradient><linearGradient
+       id="nachlegebalken-gradient-67"
+       x1="0" y1="1" x2="0" y2="0"
+       gradientUnits="objectBoundingBox"><stop
+         offset="0" style="stop-color:#9a3737;stop-opacity:1" /><stop
+         offset="0.67" style="stop-color:#9a3737;stop-opacity:1" /><stop
+         offset="0.67" style="stop-color:#ffffff;stop-opacity:1" /><stop
+         offset="1" style="stop-color:#ffffff;stop-opacity:1" /></linearGradient><linearGradient
+       id="nachlegebalken-gradient-100"
+       x1="0" y1="1" x2="0" y2="0"
+       gradientUnits="objectBoundingBox"><stop
+         offset="0" style="stop-color:#9a3737;stop-opacity:1" /><stop
+         offset="1" style="stop-color:#9a3737;stop-opacity:1" /></linearGradient></defs><g
+     id="layer2"
+     style="display:inline"><path
+       id="Kessel"
+       style="display:inline;fill:#ff0000;fill-opacity:0;stroke:#000000;stroke-width:4.02905"
+       d="m 70.286666,12.475724 c -4.432811,0 -8.001579,3.541984 -8.001579,7.942151 v 12.279354 l 96.781173,0.342614 V 20.417875 c 0,-4.400167 -3.56877,-7.942151 -8.00158,-7.942151 z M 159.06626,33.039843 62.285087,32.697229 V 136.25473 c 0,4.40017 3.568768,7.94267 8.001579,7.94267 h 80.778014 c 4.43281,0 8.00158,-3.5425 8.00158,-7.94267 z M 78.343022,104.63031 c 2.6467,0 4.792472,2.14525 4.792472,4.79195 0,2.6467 -2.145772,4.79247 -4.792472,4.79247 -2.646701,0 -4.792473,-2.14577 -4.792473,-4.79247 0,-2.6467 2.145772,-4.79195 4.792473,-4.79195 z m 65.589278,0.0501 c 2.6467,0 4.79247,2.14526 4.79247,4.79196 0,2.6467 -2.14577,4.79247 -4.79247,4.79247 -2.6467,0 -4.79247,-2.14577 -4.79247,-4.79247 0,-2.6467 2.14577,-4.79196 4.79247,-4.79196 z m -56.116988,13.94644 h 47.329408 c 2.85723,0 5.15783,2.71415 5.15783,6.08541 v 1.66347 c 0,3.37127 -2.3006,6.08542 -5.15783,6.08542 H 87.815312 c -2.857212,0 -5.157308,-2.71415 -5.157308,-6.08542 v -1.66347 c 0,-3.37126 2.300096,-6.08541 5.157308,-6.08541 z m -9.47229,-13.99654 c -2.646701,0 -4.792473,2.14525 -4.792473,4.79195 0,2.6467 2.145772,4.79247 4.792473,4.79247 2.6467,0 4.792472,-2.14577 4.792472,-4.79247 0,-2.6467 -2.145772,-4.79195 -4.792472,-4.79195 z m 65.589278,0.0501 c -2.6467,0 -4.79247,2.14526 -4.79247,4.79196 0,2.6467 2.14577,4.79247 4.79247,4.79247 2.6467,0 4.79247,-2.14577 4.79247,-4.79247 0,-2.6467 -2.14577,-4.79196 -4.79247,-4.79196 z m -19.28254,39.98723 v 5.8353 h 20.76255 v -5.8353 z m -48.566032,0.0248 v 5.8353 h 20.762557 v -5.8353 z" /><path
+       style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.36;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       d="m 63.884525,23.020238 61.424715,0.343155"
+       id="KesselZierlinie" /><path
+       d="m 87.815312,118.62687 c -2.857212,0 -5.157308,2.71415 -5.157308,6.08541 v 1.66347 c 0,3.37127 2.300096,6.08542 5.157308,6.08542 h 47.329408 c 2.85723,0 5.15783,-2.71415 5.15783,-6.08542 v -1.66347 c 0,-3.37126 -2.3006,-6.08541 -5.15783,-6.08541 z"
+       style="display:inline;fill:#00cd34;fill-opacity:1;stroke:#000000;stroke-width:4.02905"
+       id="KesselOval" /><path
+       style="display:inline;fill:#ff0000;fill-opacity:0;stroke:#000000;stroke-width:4;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 93.681248,64.856249 0.221833,25.493959 c 0.522022,34.785232 62.419909,33.947082 62.495799,-0.242645 l 0.0797,-25.59447 z"
+       id="KesselFeuerklappeAus"
+       transform="translate(-14.287503,-12.170835)" /><path
+       style="display:inline;fill:url(#linearGradient12);stroke:#000000;stroke-width:4;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 93.681248,64.856249 0.221833,25.493959 c 0.522022,34.785232 62.419909,33.947082 62.495799,-0.242645 l 0.0797,-25.59447 z"
+       id="KesselFeuerklappeEin"
+       transform="translate(-14.287503,-12.170835)" /><path
+       id="KesselFlammeAus"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 124.47794,86.988969 c 7.37857,7.114188 -4.4079,8.016945 2.30515,19.290441 m -1.91674,-33.899733 c -7.01233,8.67377 -5.03372,5.583872 -10.06985,13.34559 -14.56907,28.032803 36.55543,27.538843 19.89706,-0.727942 -2.79535,-5.166651 -6.43179,-8.651127 -9.82721,-12.617648 z"
+       transform="translate(-14.287503,-12.170835)" /><path
+       id="KesselFlammeEin"
+       style="display:inline;fill:url(#linearGradient14);stroke:#000000;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 124.47794,86.988969 c 7.37857,7.114188 -4.4079,8.016945 2.30515,19.290441 m -1.91674,-33.899733 c -7.01233,8.67377 -5.03372,5.583872 -10.06985,13.34559 -14.56907,28.032803 36.55543,27.538843 19.89706,-0.727942 -2.79535,-5.166651 -6.43179,-8.651127 -9.82721,-12.617648 z"
+       transform="translate(-14.287503,-12.170835)" /><path
+       style="display:inline;fill:#ff1111;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+       d="m 76.433821,18.771569 h 23.05147 l 5.095589,61.632352 -15.044119,0.242647 10.19118,58.477952 -28.632354,-71.82354 17.227934,-0.242647 z"
+       id="KesselStoerung" /></g><g
+     id="layer3"
+     style="display:inline">
+     <rect
+   style="fill:url(#aschekasten-gradient);stroke:none"
+   id="PelletmodulAschekasten"
+   width="51.446999"
+   height="4.4349999"
+   x="8.0979996"
+   y="135.27299" /><rect
+   style="fill:url(#pelletspeicher-gradient);stroke:none"
+   id="Pelletspeicher"
+   width="51.446999"
+   height="8.1289997"
+   x="8.0979996"
+   y="125.748" /><path
+   id="Pelletmodul"
+   style="display:inline;fill:#ff0000;fill-opacity:0;stroke:#000000;stroke-width:4;stroke-linecap:round"
+   d="m 10.688753,76.599976 c -2.544295,0 -4.5924843,1.796818 -4.5924843,4.028694 v 58.75507 c 0,2.23187 2.0481893,4.02869 4.5924843,4.02869 h 46.364095 c 2.544297,0 4.592485,-1.79682 4.592485,-4.02869 V 80.62867 c 0,-2.231876 -2.048188,-4.028694 -4.592485,-4.028694 z m 3.783232,67.309074 v 6.36653 h 14.001729 v -6.36653 z m 25.9302,0.0651 v 6.36705 h 14.002246 v -6.36705 z" /><path
+   style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.36;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+   d="m 6.7182903,135.0082 53.3368577,0.0455"
+   id="path67" /><path
+   style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.36;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+   d="m 6.7182903,124.95397 53.3368577,0.0455"
+   id="path532" /><path
+   d="m 16.939535,81.326299 c -2.128954,0 -3.843177,1.642695 -3.843177,3.68298 v 1.007173 c 0,2.040276 1.714223,3.682463 3.843177,3.682463 h 33.688382 c 2.128954,0 3.84266,-1.642187 3.84266,-3.682463 v -1.007173 c 0,-2.040285 -1.713706,-3.68298 -3.84266,-3.68298 z"
+   style="display:inline;fill:#00cd34;fill-opacity:1;stroke:#000000;stroke-width:2.36;stroke-linecap:round;stroke-dasharray:none"
+   id="PelletmodulOval" /><path
+   style="display:inline;fill:#ff0000;fill-opacity:0;stroke:#000000;stroke-width:2.36;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+   d="m 13.506993,93.881433 0.141079,13.955937 c 0.331992,19.04219 39.697305,18.58337 39.745569,-0.13283 l 0.05069,-14.010957 z"
+   id="PelletmodulFeuerklappeAus" /><path
+   style="display:inline;fill:url(#linearGradient5);stroke:#000000;stroke-width:2.36;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+   d="m 13.506993,93.881433 0.141079,13.955937 c 0.331992,19.04219 39.697305,18.58337 39.745569,-0.13283 l 0.05069,-14.010957 z"
+   id="PelletmodulFeuerklappeEin" /><path
+   id="PelletmodulFlammeAus"
+   style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2.36;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+   d="m 33.092822,105.99736 c 4.692563,3.89446 -2.8033,4.38865 1.466011,10.56 M 33.33984,97.99991 c -4.459645,4.74821 -3.201304,3.05674 -6.404141,7.30567 -9.265519,15.34576 23.248224,15.07536 12.65397,-0.39849 -1.777764,-2.82834 -4.090438,-4.73582 -6.249829,-6.90718 z" /><path
+   id="PelletmodulFlammeEin"
+   style="display:inline;fill:url(#linearGradient2);stroke:#000000;stroke-width:2.36;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+   d="m 33.092822,105.99736 c 4.692563,3.89446 -2.8033,4.38865 1.466011,10.56 M 33.33984,97.99991 c -4.459645,4.74821 -3.201304,3.05674 -6.404141,7.30567 -9.265519,15.34576 23.248224,15.07536 12.65397,-0.39849 -1.777764,-2.82834 -4.090438,-4.73582 -6.249829,-6.90718 z" /><path
+   style="display:inline;fill:#ff1111;fill-opacity:1;stroke:#000000;stroke-width:1.03273;stroke-dasharray:none;stroke-opacity:1"
+   d="m 23.278579,78.944277 h 13.512098 l 2.986885,28.034813 -8.818422,0.11038 5.973772,26.59996 -16.78345,-32.6705 10.098511,-0.11037 z"
+   id="PelletmodulStoerung" /></g><g
+     id="Zusatzanzeigen"
+     style="display:inline"><rect
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.49327;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       id="Nachlegebalken"
+       inkscape:label="Nachlegebalken"
+       width="26.344795"
+       height="114.11762"
+       x="123.73454"
+       y="21.392157"
+       rx="1.5189623"
+       ry="2.5084381" /><path
+       style="display:inline;fill:url(#linearGradient8);fill-rule:nonzero;stroke:#000000;stroke-width:3.92623;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 39.631006,51.621705 c -11.677759,8.497426 -3.529424,18.231042 4.716029,18.216379 8.245453,-0.01466 16.074318,-10.809106 4.261204,-18.216379 l 0.0109,-17.131099 0.01089,-17.131099 c -0.05649,-1.930011 -2.267374,-2.94969 -4.483568,-2.977026 -2.216193,-0.02734 -4.4377,0.937669 -4.515449,2.977027 l -3e-6,17.131098 z"
+       id="ThermometerKalt" /><path
+       style="display:inline;fill:url(#linearGradient16);fill-rule:nonzero;stroke:#000000;stroke-width:3.92623;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 39.631006,51.621705 c -11.677759,8.497426 -3.529424,18.231042 4.716029,18.216379 8.245453,-0.01466 16.074318,-10.809106 4.261204,-18.216379 l 0.0109,-17.131099 0.01089,-17.131099 c -0.05649,-1.930011 -2.267374,-2.94969 -4.483568,-2.977026 -2.216193,-0.02734 -4.4377,0.937669 -4.515449,2.977027 l -3e-6,17.131098 z"
+       id="ThermometerNormal" /><path
+       style="display:inline;fill:url(#linearGradient37);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.92623;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+       d="m 39.631006,51.621705 c -11.677759,8.497426 -3.529424,18.231042 4.716029,18.216379 8.245453,-0.01466 16.074318,-10.809106 4.261204,-18.216379 l 0.0109,-17.131099 0.01089,-17.131099 c -0.05649,-1.930011 -2.267374,-2.94969 -4.483568,-2.977026 -2.216193,-0.02734 -4.4377,0.937669 -4.515449,2.977027 l -3e-6,17.131098 z"
+       id="ThermometerHeiss" /><text
+       id="TemperaturText"
+       x="5"
+       y="35"
+       ></text><g
+       id="PelletmodulFreigegeben"
+       transform="matrix(0.89852001,0,0,1.0034392,-1.1782565,6.6203229)"><rect
+         style="display:inline;fill:#00cd34;fill-opacity:1;stroke:#00a701;stroke-width:1.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect1"
+         width="19.638647"
+         height="13.063529"
+         x="4.3755298"
+         y="74.148384" /><path
+         style="display:inline;fill:#010b00;fill-opacity:1;stroke:#00a701;stroke-width:0.947458;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 11.355224,84.528367 c 1.325778,0.01973 4.839085,-0.05918 4.839085,-0.05918 -0.419827,-1.755723 -1.518728,-3.858219 -1.259489,-4.214447 3.915696,-5.380727 -6.25066,-5.556431 -2.518976,0 0.157938,0.235161 -1.06062,4.273636 -1.06062,4.273631 z"
+         id="path2" /><path
+         style="fill:none;fill-opacity:1;stroke:#00a701;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 20.546571,73.964461 c 0.02614,-1.132679 0.05229,-2.265358 0.08558,-4.046649 0.03329,-1.78129 0.07373,-4.211143 -2.056784,-5.426119 -2.130517,-1.214976 -6.431733,-1.214976 -8.602692,-0.114014 -2.170959,1.100962 -2.2113992,3.302795 -2.2518404,5.504676"
+         id="path3" /></g><g
+       id="PelletmodulGesperrt"
+       transform="matrix(1.3995623,0,0,1.4231519,-4.9607506,-24.365665)"
+       style="display:inline;stroke:#a00000;stroke-opacity:1"><rect
+         style="display:inline;fill:#ff0b0b;fill-opacity:1;stroke:#a00000;stroke-width:1.38577;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         id="rect5"
+         width="17.264887"
+         height="12.682558"
+         x="5.6581006"
+         y="74.09127" /><path
+         style="display:inline;fill:#010b00;fill-opacity:1;stroke:#a00000;stroke-width:0.93801;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 12.003235,84.891945 c 1.298384,0.01975 4.739094,-0.05923 4.739094,-0.05923 -0.411152,-1.757188 -1.487346,-3.861438 -1.233463,-4.217964 3.834785,-5.385218 -6.1215014,-5.561069 -2.466927,0 0.154675,0.235357 -1.038704,4.277203 -1.038704,4.277198 z"
+         id="path5" /><path
+         style="fill:none;fill-opacity:1;stroke:#a00000;stroke-width:2;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+         d="m 20.625001,71.446062 c 0.04044,-2.723115 0.08088,-5.446174 -2.049635,-6.807759 -2.130517,-1.361586 -6.431733,-1.361586 -8.5801368,-0.03507 -2.1484038,1.326514 -2.1437355,3.979434 -2.1390672,6.632412"
+         id="path6"
+         transform="translate(0,2.3610104)" /></g></g></svg>

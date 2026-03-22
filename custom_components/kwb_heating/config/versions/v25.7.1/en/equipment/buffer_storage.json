@@ -3,11 +3,12 @@
     {
       "starting_address": 8708,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_1_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -15,11 +16,12 @@
     {
       "starting_address": 8709,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_1_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -27,11 +29,12 @@
     {
       "starting_address": 8710,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_2_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -39,11 +42,12 @@
     {
       "starting_address": 8711,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_2_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -51,11 +55,12 @@
     {
       "starting_address": 8712,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_3_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -63,11 +68,12 @@
     {
       "starting_address": 8713,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_3_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -75,11 +81,12 @@
     {
       "starting_address": 8714,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_4_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -87,11 +94,12 @@
     {
       "starting_address": 8715,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_4_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -99,11 +107,12 @@
     {
       "starting_address": 8716,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_5_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -111,11 +120,12 @@
     {
       "starting_address": 8717,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_5_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -123,11 +133,12 @@
     {
       "starting_address": 8718,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_6_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -135,11 +146,12 @@
     {
       "starting_address": 8719,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_6_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -147,11 +159,12 @@
     {
       "starting_address": 8720,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_7_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -159,11 +172,12 @@
     {
       "starting_address": 8721,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_7_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -171,11 +185,12 @@
     {
       "starting_address": 8722,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_8_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -183,11 +198,12 @@
     {
       "starting_address": 8723,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_8_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -195,11 +211,12 @@
     {
       "starting_address": 8724,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_9_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -207,11 +224,12 @@
     {
       "starting_address": 8725,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_9_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -219,11 +237,12 @@
     {
       "starting_address": 8726,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_10_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -231,11 +250,12 @@
     {
       "starting_address": 8727,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_10_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -243,11 +263,12 @@
     {
       "starting_address": 8728,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_11_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -255,11 +276,12 @@
     {
       "starting_address": 8729,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_11_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -267,11 +289,12 @@
     {
       "starting_address": 8730,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_12_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -279,11 +302,12 @@
     {
       "starting_address": 8731,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_12_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -291,11 +315,12 @@
     {
       "starting_address": 8732,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_13_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -303,11 +328,12 @@
     {
       "starting_address": 8733,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_13_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -315,11 +341,12 @@
     {
       "starting_address": 8734,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_14_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -327,11 +354,12 @@
     {
       "starting_address": 8735,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_14_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -339,11 +367,12 @@
     {
       "starting_address": 8736,
       "name": "Temperature 1 (value)",
+      "entity_id": "buf_15_temperature_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.value"
@@ -351,11 +380,12 @@
     {
       "starting_address": 8737,
       "name": "Temperature 1 (status)",
+      "entity_id": "buf_15_temperature_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "442",
       "parameter": "PUF.i_ist_temperatur_1.status"
@@ -363,11 +393,12 @@
     {
       "starting_address": 8742,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_1_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -375,11 +406,12 @@
     {
       "starting_address": 8743,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_1_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -387,11 +419,12 @@
     {
       "starting_address": 8744,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_2_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -399,11 +432,12 @@
     {
       "starting_address": 8745,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_2_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -411,11 +445,12 @@
     {
       "starting_address": 8746,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_3_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -423,11 +458,12 @@
     {
       "starting_address": 8747,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_3_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -435,11 +471,12 @@
     {
       "starting_address": 8748,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_4_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -447,11 +484,12 @@
     {
       "starting_address": 8749,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_4_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -459,11 +497,12 @@
     {
       "starting_address": 8750,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_5_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -471,11 +510,12 @@
     {
       "starting_address": 8751,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_5_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -483,11 +523,12 @@
     {
       "starting_address": 8752,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_6_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -495,11 +536,12 @@
     {
       "starting_address": 8753,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_6_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -507,11 +549,12 @@
     {
       "starting_address": 8754,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_7_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -519,11 +562,12 @@
     {
       "starting_address": 8755,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_7_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -531,11 +575,12 @@
     {
       "starting_address": 8756,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_8_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -543,11 +588,12 @@
     {
       "starting_address": 8757,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_8_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -555,11 +601,12 @@
     {
       "starting_address": 8758,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_9_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -567,11 +614,12 @@
     {
       "starting_address": 8759,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_9_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -579,11 +627,12 @@
     {
       "starting_address": 8760,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_10_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -591,11 +640,12 @@
     {
       "starting_address": 8761,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_10_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -603,11 +653,12 @@
     {
       "starting_address": 8762,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_11_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -615,11 +666,12 @@
     {
       "starting_address": 8763,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_11_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -627,11 +679,12 @@
     {
       "starting_address": 8764,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_12_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -639,11 +692,12 @@
     {
       "starting_address": 8765,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_12_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -651,11 +705,12 @@
     {
       "starting_address": 8766,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_13_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -663,11 +718,12 @@
     {
       "starting_address": 8767,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_13_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -675,11 +731,12 @@
     {
       "starting_address": 8768,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_14_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -687,11 +744,12 @@
     {
       "starting_address": 8769,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_14_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -699,11 +757,12 @@
     {
       "starting_address": 8770,
       "name": "Temperature 2 (value)",
+      "entity_id": "buf_15_temperature_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.value"
@@ -711,11 +770,12 @@
     {
       "starting_address": 8771,
       "name": "Temperature 2 (status)",
+      "entity_id": "buf_15_temperature_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "443",
       "parameter": "PUF.i_ist_temperatur_2.status"
@@ -723,11 +783,12 @@
     {
       "starting_address": 8776,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_1_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -735,11 +796,12 @@
     {
       "starting_address": 8777,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_1_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -747,11 +809,12 @@
     {
       "starting_address": 8778,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_2_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -759,11 +822,12 @@
     {
       "starting_address": 8779,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_2_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -771,11 +835,12 @@
     {
       "starting_address": 8780,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_3_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -783,11 +848,12 @@
     {
       "starting_address": 8781,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_3_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -795,11 +861,12 @@
     {
       "starting_address": 8782,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_4_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -807,11 +874,12 @@
     {
       "starting_address": 8783,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_4_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -819,11 +887,12 @@
     {
       "starting_address": 8784,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_5_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -831,11 +900,12 @@
     {
       "starting_address": 8785,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_5_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -843,11 +913,12 @@
     {
       "starting_address": 8786,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_6_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -855,11 +926,12 @@
     {
       "starting_address": 8787,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_6_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -867,11 +939,12 @@
     {
       "starting_address": 8788,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_7_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -879,11 +952,12 @@
     {
       "starting_address": 8789,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_7_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -891,11 +965,12 @@
     {
       "starting_address": 8790,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_8_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -903,11 +978,12 @@
     {
       "starting_address": 8791,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_8_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -915,11 +991,12 @@
     {
       "starting_address": 8792,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_9_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -927,11 +1004,12 @@
     {
       "starting_address": 8793,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_9_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -939,11 +1017,12 @@
     {
       "starting_address": 8794,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_10_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -951,11 +1030,12 @@
     {
       "starting_address": 8795,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_10_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -963,11 +1043,12 @@
     {
       "starting_address": 8796,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_11_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -975,11 +1056,12 @@
     {
       "starting_address": 8797,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_11_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -987,11 +1069,12 @@
     {
       "starting_address": 8798,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_12_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -999,11 +1082,12 @@
     {
       "starting_address": 8799,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_12_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1011,11 +1095,12 @@
     {
       "starting_address": 8800,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_13_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -1023,11 +1108,12 @@
     {
       "starting_address": 8801,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_13_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1035,11 +1121,12 @@
     {
       "starting_address": 8802,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_14_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -1047,11 +1134,12 @@
     {
       "starting_address": 8803,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_14_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1059,11 +1147,12 @@
     {
       "starting_address": 8804,
       "name": "Temperature 3 (value)",
+      "entity_id": "buf_15_temperature_3_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.value"
@@ -1071,11 +1160,12 @@
     {
       "starting_address": 8805,
       "name": "Temperature 3 (status)",
+      "entity_id": "buf_15_temperature_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "444",
       "parameter": "PUF.i_ist_temperatur_3.status"
@@ -1083,11 +1173,12 @@
     {
       "starting_address": 8810,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_1_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1095,11 +1186,12 @@
     {
       "starting_address": 8811,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_1_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1107,11 +1199,12 @@
     {
       "starting_address": 8812,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_2_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1119,11 +1212,12 @@
     {
       "starting_address": 8813,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_2_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1131,11 +1225,12 @@
     {
       "starting_address": 8814,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_3_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1143,11 +1238,12 @@
     {
       "starting_address": 8815,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_3_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1155,11 +1251,12 @@
     {
       "starting_address": 8816,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_4_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1167,11 +1264,12 @@
     {
       "starting_address": 8817,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_4_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1179,11 +1277,12 @@
     {
       "starting_address": 8818,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_5_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1191,11 +1290,12 @@
     {
       "starting_address": 8819,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_5_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1203,11 +1303,12 @@
     {
       "starting_address": 8820,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_6_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1215,11 +1316,12 @@
     {
       "starting_address": 8821,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_6_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1227,11 +1329,12 @@
     {
       "starting_address": 8822,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_7_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1239,11 +1342,12 @@
     {
       "starting_address": 8823,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_7_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1251,11 +1355,12 @@
     {
       "starting_address": 8824,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_8_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1263,11 +1368,12 @@
     {
       "starting_address": 8825,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_8_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1275,11 +1381,12 @@
     {
       "starting_address": 8826,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_9_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1287,11 +1394,12 @@
     {
       "starting_address": 8827,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_9_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1299,11 +1407,12 @@
     {
       "starting_address": 8828,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_10_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1311,11 +1420,12 @@
     {
       "starting_address": 8829,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_10_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1323,11 +1433,12 @@
     {
       "starting_address": 8830,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_11_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1335,11 +1446,12 @@
     {
       "starting_address": 8831,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_11_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1347,11 +1459,12 @@
     {
       "starting_address": 8832,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_12_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1359,11 +1472,12 @@
     {
       "starting_address": 8833,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_12_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1371,11 +1485,12 @@
     {
       "starting_address": 8834,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_13_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1383,11 +1498,12 @@
     {
       "starting_address": 8835,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_13_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1395,11 +1511,12 @@
     {
       "starting_address": 8836,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_14_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1407,11 +1524,12 @@
     {
       "starting_address": 8837,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_14_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1419,11 +1537,12 @@
     {
       "starting_address": 8838,
       "name": "Temperature 4 (value)",
+      "entity_id": "buf_15_temperature_4_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.value"
@@ -1431,11 +1550,12 @@
     {
       "starting_address": 8839,
       "name": "Temperature 4 (status)",
+      "entity_id": "buf_15_temperature_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "445",
       "parameter": "PUF.i_ist_temperatur_4.status"
@@ -1443,11 +1563,12 @@
     {
       "starting_address": 8844,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_1_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1455,11 +1576,12 @@
     {
       "starting_address": 8845,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_1_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1467,11 +1589,12 @@
     {
       "starting_address": 8846,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_2_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1479,11 +1602,12 @@
     {
       "starting_address": 8847,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_2_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1491,11 +1615,12 @@
     {
       "starting_address": 8848,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_3_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1503,11 +1628,12 @@
     {
       "starting_address": 8849,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_3_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1515,11 +1641,12 @@
     {
       "starting_address": 8850,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_4_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1527,11 +1654,12 @@
     {
       "starting_address": 8851,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_4_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1539,11 +1667,12 @@
     {
       "starting_address": 8852,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_5_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1551,11 +1680,12 @@
     {
       "starting_address": 8853,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_5_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1563,11 +1693,12 @@
     {
       "starting_address": 8854,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_6_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1575,11 +1706,12 @@
     {
       "starting_address": 8855,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_6_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1587,11 +1719,12 @@
     {
       "starting_address": 8856,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_7_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1599,11 +1732,12 @@
     {
       "starting_address": 8857,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_7_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1611,11 +1745,12 @@
     {
       "starting_address": 8858,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_8_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1623,11 +1758,12 @@
     {
       "starting_address": 8859,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_8_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1635,11 +1771,12 @@
     {
       "starting_address": 8860,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_9_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1647,11 +1784,12 @@
     {
       "starting_address": 8861,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_9_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1659,11 +1797,12 @@
     {
       "starting_address": 8862,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_10_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1671,11 +1810,12 @@
     {
       "starting_address": 8863,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_10_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1683,11 +1823,12 @@
     {
       "starting_address": 8864,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_11_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1695,11 +1836,12 @@
     {
       "starting_address": 8865,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_11_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1707,11 +1849,12 @@
     {
       "starting_address": 8866,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_12_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1719,11 +1862,12 @@
     {
       "starting_address": 8867,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_12_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1731,11 +1875,12 @@
     {
       "starting_address": 8868,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_13_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1743,11 +1888,12 @@
     {
       "starting_address": 8869,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_13_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1755,11 +1901,12 @@
     {
       "starting_address": 8870,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_14_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1767,11 +1914,12 @@
     {
       "starting_address": 8871,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_14_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1779,11 +1927,12 @@
     {
       "starting_address": 8872,
       "name": "Temperature 5 (value)",
+      "entity_id": "buf_15_temperature_5_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.value"
@@ -1791,11 +1940,12 @@
     {
       "starting_address": 8873,
       "name": "Temperature 5 (status)",
+      "entity_id": "buf_15_temperature_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "446",
       "parameter": "PUF.i_ist_temperatur_5.status"
@@ -1803,11 +1953,12 @@
     {
       "starting_address": 8878,
       "name": "Pump",
+      "entity_id": "buf_1_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1815,11 +1966,12 @@
     {
       "starting_address": 8879,
       "name": "Pump",
+      "entity_id": "buf_2_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1827,11 +1979,12 @@
     {
       "starting_address": 8880,
       "name": "Pump",
+      "entity_id": "buf_3_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1839,11 +1992,12 @@
     {
       "starting_address": 8881,
       "name": "Pump",
+      "entity_id": "buf_4_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1851,11 +2005,12 @@
     {
       "starting_address": 8882,
       "name": "Pump",
+      "entity_id": "buf_5_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1863,11 +2018,12 @@
     {
       "starting_address": 8883,
       "name": "Pump",
+      "entity_id": "buf_6_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1875,11 +2031,12 @@
     {
       "starting_address": 8884,
       "name": "Pump",
+      "entity_id": "buf_7_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1887,11 +2044,12 @@
     {
       "starting_address": 8885,
       "name": "Pump",
+      "entity_id": "buf_8_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1899,11 +2057,12 @@
     {
       "starting_address": 8886,
       "name": "Pump",
+      "entity_id": "buf_9_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1911,11 +2070,12 @@
     {
       "starting_address": 8887,
       "name": "Pump",
+      "entity_id": "buf_10_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1923,11 +2083,12 @@
     {
       "starting_address": 8888,
       "name": "Pump",
+      "entity_id": "buf_11_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1935,11 +2096,12 @@
     {
       "starting_address": 8889,
       "name": "Pump",
+      "entity_id": "buf_12_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1947,11 +2109,12 @@
     {
       "starting_address": 8890,
       "name": "Pump",
+      "entity_id": "buf_13_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1959,11 +2122,12 @@
     {
       "starting_address": 8891,
       "name": "Pump",
+      "entity_id": "buf_14_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1971,11 +2135,12 @@
     {
       "starting_address": 8892,
       "name": "Pump",
+      "entity_id": "buf_15_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "450",
       "parameter": "PUF.o_pumpe"
@@ -1983,11 +2148,12 @@
     {
       "starting_address": 8895,
       "name": "Request",
+      "entity_id": "buf_1_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -1995,11 +2161,12 @@
     {
       "starting_address": 8896,
       "name": "Request",
+      "entity_id": "buf_2_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2007,11 +2174,12 @@
     {
       "starting_address": 8897,
       "name": "Request",
+      "entity_id": "buf_3_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2019,11 +2187,12 @@
     {
       "starting_address": 8898,
       "name": "Request",
+      "entity_id": "buf_4_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2031,11 +2200,12 @@
     {
       "starting_address": 8899,
       "name": "Request",
+      "entity_id": "buf_5_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2043,11 +2213,12 @@
     {
       "starting_address": 8900,
       "name": "Request",
+      "entity_id": "buf_6_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2055,11 +2226,12 @@
     {
       "starting_address": 8901,
       "name": "Request",
+      "entity_id": "buf_7_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2067,11 +2239,12 @@
     {
       "starting_address": 8902,
       "name": "Request",
+      "entity_id": "buf_8_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2079,11 +2252,12 @@
     {
       "starting_address": 8903,
       "name": "Request",
+      "entity_id": "buf_9_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2091,11 +2265,12 @@
     {
       "starting_address": 8904,
       "name": "Request",
+      "entity_id": "buf_10_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2103,11 +2278,12 @@
     {
       "starting_address": 8905,
       "name": "Request",
+      "entity_id": "buf_11_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2115,11 +2291,12 @@
     {
       "starting_address": 8906,
       "name": "Request",
+      "entity_id": "buf_12_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2127,11 +2304,12 @@
     {
       "starting_address": 8907,
       "name": "Request",
+      "entity_id": "buf_13_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2139,11 +2317,12 @@
     {
       "starting_address": 8908,
       "name": "Request",
+      "entity_id": "buf_14_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2151,11 +2330,12 @@
     {
       "starting_address": 8909,
       "name": "Request",
+      "entity_id": "buf_15_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "440",
       "parameter": "PUF.anforderung"
@@ -2163,11 +2343,12 @@
     {
       "starting_address": 8912,
       "name": "Reversing valve",
+      "entity_id": "buf_1_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2175,11 +2356,12 @@
     {
       "starting_address": 8913,
       "name": "Reversing valve",
+      "entity_id": "buf_2_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2187,11 +2369,12 @@
     {
       "starting_address": 8914,
       "name": "Reversing valve",
+      "entity_id": "buf_3_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2199,11 +2382,12 @@
     {
       "starting_address": 8915,
       "name": "Reversing valve",
+      "entity_id": "buf_4_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2211,11 +2395,12 @@
     {
       "starting_address": 8916,
       "name": "Reversing valve",
+      "entity_id": "buf_5_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2223,11 +2408,12 @@
     {
       "starting_address": 8917,
       "name": "Reversing valve",
+      "entity_id": "buf_6_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2235,11 +2421,12 @@
     {
       "starting_address": 8918,
       "name": "Reversing valve",
+      "entity_id": "buf_7_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2247,11 +2434,12 @@
     {
       "starting_address": 8919,
       "name": "Reversing valve",
+      "entity_id": "buf_8_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2259,11 +2447,12 @@
     {
       "starting_address": 8920,
       "name": "Reversing valve",
+      "entity_id": "buf_9_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2271,11 +2460,12 @@
     {
       "starting_address": 8921,
       "name": "Reversing valve",
+      "entity_id": "buf_10_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2283,11 +2473,12 @@
     {
       "starting_address": 8922,
       "name": "Reversing valve",
+      "entity_id": "buf_11_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2295,11 +2486,12 @@
     {
       "starting_address": 8923,
       "name": "Reversing valve",
+      "entity_id": "buf_12_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2307,11 +2499,12 @@
     {
       "starting_address": 8924,
       "name": "Reversing valve",
+      "entity_id": "buf_13_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2319,11 +2512,12 @@
     {
       "starting_address": 8925,
       "name": "Reversing valve",
+      "entity_id": "buf_14_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2331,11 +2525,12 @@
     {
       "starting_address": 8926,
       "name": "Reversing valve",
+      "entity_id": "buf_15_reversing_valve",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "puffer_o_umschaltventil_t",
       "id": "468",
       "parameter": "PUF.o_umschaltventil"
@@ -2343,6 +2538,7 @@
     {
       "starting_address": 9971,
       "name": "Consumer setpoint",
+      "entity_id": "fp_0_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2355,6 +2551,7 @@
     {
       "starting_address": 9972,
       "name": "Consumer setpoint",
+      "entity_id": "fp_1_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2367,6 +2564,7 @@
     {
       "starting_address": 9973,
       "name": "Consumer setpoint",
+      "entity_id": "fp_2_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2379,6 +2577,7 @@
     {
       "starting_address": 9974,
       "name": "Consumer setpoint",
+      "entity_id": "fp_3_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2391,6 +2590,7 @@
     {
       "starting_address": 9975,
       "name": "Consumer setpoint",
+      "entity_id": "fp_4_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2403,6 +2603,7 @@
     {
       "starting_address": 9976,
       "name": "Consumer setpoint",
+      "entity_id": "fp_5_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2415,6 +2616,7 @@
     {
       "starting_address": 9977,
       "name": "Consumer setpoint",
+      "entity_id": "fp_6_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2427,6 +2629,7 @@
     {
       "starting_address": 9978,
       "name": "Consumer setpoint",
+      "entity_id": "fp_7_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2439,6 +2642,7 @@
     {
       "starting_address": 9979,
       "name": "Consumer setpoint",
+      "entity_id": "fp_8_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2451,6 +2655,7 @@
     {
       "starting_address": 9980,
       "name": "Consumer setpoint",
+      "entity_id": "fp_9_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2463,6 +2668,7 @@
     {
       "starting_address": 9981,
       "name": "Consumer setpoint",
+      "entity_id": "fp_10_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2475,6 +2681,7 @@
     {
       "starting_address": 9982,
       "name": "Consumer setpoint",
+      "entity_id": "fp_11_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2487,6 +2694,7 @@
     {
       "starting_address": 9983,
       "name": "Consumer setpoint",
+      "entity_id": "fp_12_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2499,6 +2707,7 @@
     {
       "starting_address": 9984,
       "name": "Consumer setpoint",
+      "entity_id": "fp_13_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2511,6 +2720,7 @@
     {
       "starting_address": 9985,
       "name": "Consumer setpoint",
+      "entity_id": "fp_14_consumer_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2523,11 +2733,12 @@
     {
       "starting_address": 10058,
       "name": "Request heating rod",
+      "entity_id": "buf_1_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2535,11 +2746,12 @@
     {
       "starting_address": 10059,
       "name": "Request heating rod",
+      "entity_id": "buf_2_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2547,11 +2759,12 @@
     {
       "starting_address": 10060,
       "name": "Request heating rod",
+      "entity_id": "buf_3_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2559,11 +2772,12 @@
     {
       "starting_address": 10061,
       "name": "Request heating rod",
+      "entity_id": "buf_4_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2571,11 +2785,12 @@
     {
       "starting_address": 10062,
       "name": "Request heating rod",
+      "entity_id": "buf_5_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2583,11 +2798,12 @@
     {
       "starting_address": 10063,
       "name": "Request heating rod",
+      "entity_id": "buf_6_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2595,11 +2811,12 @@
     {
       "starting_address": 10064,
       "name": "Request heating rod",
+      "entity_id": "buf_7_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2607,11 +2824,12 @@
     {
       "starting_address": 10065,
       "name": "Request heating rod",
+      "entity_id": "buf_8_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2619,11 +2837,12 @@
     {
       "starting_address": 10066,
       "name": "Request heating rod",
+      "entity_id": "buf_9_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2631,11 +2850,12 @@
     {
       "starting_address": 10067,
       "name": "Request heating rod",
+      "entity_id": "buf_10_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2643,11 +2863,12 @@
     {
       "starting_address": 10068,
       "name": "Request heating rod",
+      "entity_id": "buf_11_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2655,11 +2876,12 @@
     {
       "starting_address": 10069,
       "name": "Request heating rod",
+      "entity_id": "buf_12_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2667,11 +2889,12 @@
     {
       "starting_address": 10070,
       "name": "Request heating rod",
+      "entity_id": "buf_13_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2679,11 +2902,12 @@
     {
       "starting_address": 10071,
       "name": "Request heating rod",
+      "entity_id": "buf_14_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2691,11 +2915,12 @@
     {
       "starting_address": 10072,
       "name": "Request heating rod",
+      "entity_id": "buf_15_request_heating_rod",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "3004",
       "parameter": "PUF.o_heizstab_anforderung"
@@ -2703,11 +2928,12 @@
     {
       "starting_address": 10075,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_1_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2715,11 +2941,12 @@
     {
       "starting_address": 10076,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_1_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2727,11 +2954,12 @@
     {
       "starting_address": 10077,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_2_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2739,11 +2967,12 @@
     {
       "starting_address": 10078,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_2_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2751,11 +2980,12 @@
     {
       "starting_address": 10079,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_3_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2763,11 +2993,12 @@
     {
       "starting_address": 10080,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_3_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2775,11 +3006,12 @@
     {
       "starting_address": 10081,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_4_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2787,11 +3019,12 @@
     {
       "starting_address": 10082,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_4_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2799,11 +3032,12 @@
     {
       "starting_address": 10083,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_5_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2811,11 +3045,12 @@
     {
       "starting_address": 10084,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_5_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2823,11 +3058,12 @@
     {
       "starting_address": 10085,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_6_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2835,11 +3071,12 @@
     {
       "starting_address": 10086,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_6_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2847,11 +3084,12 @@
     {
       "starting_address": 10087,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_7_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2859,11 +3097,12 @@
     {
       "starting_address": 10088,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_7_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2871,11 +3110,12 @@
     {
       "starting_address": 10089,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_8_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2883,11 +3123,12 @@
     {
       "starting_address": 10090,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_8_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2895,11 +3136,12 @@
     {
       "starting_address": 10091,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_9_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2907,11 +3149,12 @@
     {
       "starting_address": 10092,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_9_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2919,11 +3162,12 @@
     {
       "starting_address": 10093,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_10_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2931,11 +3175,12 @@
     {
       "starting_address": 10094,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_10_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2943,11 +3188,12 @@
     {
       "starting_address": 10095,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_11_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2955,11 +3201,12 @@
     {
       "starting_address": 10096,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_11_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2967,11 +3214,12 @@
     {
       "starting_address": 10097,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_12_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -2979,11 +3227,12 @@
     {
       "starting_address": 10098,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_12_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -2991,11 +3240,12 @@
     {
       "starting_address": 10099,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_13_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -3003,11 +3253,12 @@
     {
       "starting_address": 10100,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_13_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -3015,11 +3266,12 @@
     {
       "starting_address": 10101,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_14_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -3027,11 +3279,12 @@
     {
       "starting_address": 10102,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_14_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -3039,11 +3292,12 @@
     {
       "starting_address": 10103,
       "name": "Temperature at heating rod (value)",
+      "entity_id": "buf_15_temperature_at_heating_rod_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.value"
@@ -3051,11 +3305,12 @@
     {
       "starting_address": 10104,
       "name": "Temperature at heating rod (status)",
+      "entity_id": "buf_15_temperature_at_heating_rod_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "3006",
       "parameter": "PUF.i_temp_heizstab_bei_sensorwahl.status"
@@ -3063,11 +3318,12 @@
     {
       "starting_address": 24760,
       "name": "Select program",
+      "entity_id": "buf_1_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3075,11 +3331,12 @@
     {
       "starting_address": 24761,
       "name": "Select program",
+      "entity_id": "buf_2_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3087,11 +3344,12 @@
     {
       "starting_address": 24762,
       "name": "Select program",
+      "entity_id": "buf_3_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3099,11 +3357,12 @@
     {
       "starting_address": 24763,
       "name": "Select program",
+      "entity_id": "buf_4_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3111,11 +3370,12 @@
     {
       "starting_address": 24764,
       "name": "Select program",
+      "entity_id": "buf_5_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3123,11 +3383,12 @@
     {
       "starting_address": 24765,
       "name": "Select program",
+      "entity_id": "buf_6_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3135,11 +3396,12 @@
     {
       "starting_address": 24766,
       "name": "Select program",
+      "entity_id": "buf_7_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3147,11 +3409,12 @@
     {
       "starting_address": 24767,
       "name": "Select program",
+      "entity_id": "buf_8_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3159,11 +3422,12 @@
     {
       "starting_address": 24768,
       "name": "Select program",
+      "entity_id": "buf_9_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3171,11 +3435,12 @@
     {
       "starting_address": 24769,
       "name": "Select program",
+      "entity_id": "buf_10_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3183,11 +3448,12 @@
     {
       "starting_address": 24770,
       "name": "Select program",
+      "entity_id": "buf_11_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3195,11 +3461,12 @@
     {
       "starting_address": 24771,
       "name": "Select program",
+      "entity_id": "buf_12_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3207,11 +3474,12 @@
     {
       "starting_address": 24772,
       "name": "Select program",
+      "entity_id": "buf_13_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3219,11 +3487,12 @@
     {
       "starting_address": 24773,
       "name": "Select program",
+      "entity_id": "buf_14_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3231,11 +3500,12 @@
     {
       "starting_address": 24774,
       "name": "Select program",
+      "entity_id": "buf_15_select_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "puffer_programm_t",
       "id": "451",
       "parameter": "PUF.programm"
@@ -3243,11 +3513,12 @@
     {
       "starting_address": 24777,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_1_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3257,11 +3528,12 @@
     {
       "starting_address": 24778,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_1_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3271,11 +3543,12 @@
     {
       "starting_address": 24779,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_2_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3285,11 +3558,12 @@
     {
       "starting_address": 24780,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_2_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3299,11 +3573,12 @@
     {
       "starting_address": 24781,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_3_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3313,11 +3588,12 @@
     {
       "starting_address": 24782,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_3_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3327,11 +3603,12 @@
     {
       "starting_address": 24783,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_4_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3341,11 +3618,12 @@
     {
       "starting_address": 24784,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_4_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3355,11 +3633,12 @@
     {
       "starting_address": 24785,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_5_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3369,11 +3648,12 @@
     {
       "starting_address": 24786,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_5_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3383,11 +3663,12 @@
     {
       "starting_address": 24787,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_6_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3397,11 +3678,12 @@
     {
       "starting_address": 24788,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_6_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3411,11 +3693,12 @@
     {
       "starting_address": 24789,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_7_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3425,11 +3708,12 @@
     {
       "starting_address": 24790,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_7_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3439,11 +3723,12 @@
     {
       "starting_address": 24791,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_8_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3453,11 +3738,12 @@
     {
       "starting_address": 24792,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_8_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3467,11 +3753,12 @@
     {
       "starting_address": 24793,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_9_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3481,11 +3768,12 @@
     {
       "starting_address": 24794,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_9_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3495,11 +3783,12 @@
     {
       "starting_address": 24795,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_10_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3509,11 +3798,12 @@
     {
       "starting_address": 24796,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_10_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3523,11 +3813,12 @@
     {
       "starting_address": 24797,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_11_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3537,11 +3828,12 @@
     {
       "starting_address": 24798,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_11_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3551,11 +3843,12 @@
     {
       "starting_address": 24799,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_12_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3565,11 +3858,12 @@
     {
       "starting_address": 24800,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_12_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3579,11 +3873,12 @@
     {
       "starting_address": 24801,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_13_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3593,11 +3888,12 @@
     {
       "starting_address": 24802,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_13_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3607,11 +3903,12 @@
     {
       "starting_address": 24803,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_14_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3621,11 +3918,12 @@
     {
       "starting_address": 24804,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_14_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3635,11 +3933,12 @@
     {
       "starting_address": 24805,
       "name": "Temp. min/max (min)",
+      "entity_id": "buf_15_temp_min_max_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3649,11 +3948,12 @@
     {
       "starting_address": 24806,
       "name": "Temp. min/max (max)",
+      "entity_id": "buf_15_temp_min_max_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 800,
@@ -3663,11 +3963,12 @@
     {
       "starting_address": 24811,
       "name": "DHW temp. min.",
+      "entity_id": "buf_1_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3677,11 +3978,12 @@
     {
       "starting_address": 24812,
       "name": "DHW temp. min.",
+      "entity_id": "buf_2_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3691,11 +3993,12 @@
     {
       "starting_address": 24813,
       "name": "DHW temp. min.",
+      "entity_id": "buf_3_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3705,11 +4008,12 @@
     {
       "starting_address": 24814,
       "name": "DHW temp. min.",
+      "entity_id": "buf_4_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3719,11 +4023,12 @@
     {
       "starting_address": 24815,
       "name": "DHW temp. min.",
+      "entity_id": "buf_5_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3733,11 +4038,12 @@
     {
       "starting_address": 24816,
       "name": "DHW temp. min.",
+      "entity_id": "buf_6_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3747,11 +4053,12 @@
     {
       "starting_address": 24817,
       "name": "DHW temp. min.",
+      "entity_id": "buf_7_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3761,11 +4068,12 @@
     {
       "starting_address": 24818,
       "name": "DHW temp. min.",
+      "entity_id": "buf_8_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3775,11 +4083,12 @@
     {
       "starting_address": 24819,
       "name": "DHW temp. min.",
+      "entity_id": "buf_9_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3789,11 +4098,12 @@
     {
       "starting_address": 24820,
       "name": "DHW temp. min.",
+      "entity_id": "buf_10_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3803,11 +4113,12 @@
     {
       "starting_address": 24821,
       "name": "DHW temp. min.",
+      "entity_id": "buf_11_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3817,11 +4128,12 @@
     {
       "starting_address": 24822,
       "name": "DHW temp. min.",
+      "entity_id": "buf_12_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3831,11 +4143,12 @@
     {
       "starting_address": 24823,
       "name": "DHW temp. min.",
+      "entity_id": "buf_13_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3845,11 +4158,12 @@
     {
       "starting_address": 24824,
       "name": "DHW temp. min.",
+      "entity_id": "buf_14_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3859,11 +4173,12 @@
     {
       "starting_address": 24825,
       "name": "DHW temp. min.",
+      "entity_id": "buf_15_dhw_temp_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
       "expert_level": "readwrite",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "min": 0,
       "max": 700,
@@ -3873,11 +4188,12 @@
     {
       "starting_address": 25057,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_1_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3887,11 +4203,12 @@
     {
       "starting_address": 25058,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_2_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3901,11 +4218,12 @@
     {
       "starting_address": 25059,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_3_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3915,11 +4233,12 @@
     {
       "starting_address": 25060,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_4_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3929,11 +4248,12 @@
     {
       "starting_address": 25061,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_5_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3943,11 +4263,12 @@
     {
       "starting_address": 25062,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_6_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3957,11 +4278,12 @@
     {
       "starting_address": 25063,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_7_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3971,11 +4293,12 @@
     {
       "starting_address": 25064,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_8_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3985,11 +4308,12 @@
     {
       "starting_address": 25065,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_9_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -3999,11 +4323,12 @@
     {
       "starting_address": 25066,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_10_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -4013,11 +4338,12 @@
     {
       "starting_address": 25067,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_11_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -4027,11 +4353,12 @@
     {
       "starting_address": 25068,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_12_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -4041,11 +4368,12 @@
     {
       "starting_address": 25069,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_13_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -4055,11 +4383,12 @@
     {
       "starting_address": 25070,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_14_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -4069,11 +4398,12 @@
     {
       "starting_address": 25071,
       "name": "Max. temp. heating rod",
+      "entity_id": "buf_15_max_temp_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "1/10°C",
       "min": 300,
       "max": 850,
@@ -4083,11 +4413,12 @@
     {
       "starting_address": 25074,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_1_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 0",
+      "index": "BUF 0",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4095,11 +4426,12 @@
     {
       "starting_address": 25075,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_2_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 1",
+      "index": "BUF 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4107,11 +4439,12 @@
     {
       "starting_address": 25076,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_3_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 2",
+      "index": "BUF 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4119,11 +4452,12 @@
     {
       "starting_address": 25077,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_4_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 3",
+      "index": "BUF 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4131,11 +4465,12 @@
     {
       "starting_address": 25078,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_5_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 4",
+      "index": "BUF 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4143,11 +4478,12 @@
     {
       "starting_address": 25079,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_6_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 5",
+      "index": "BUF 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4155,11 +4491,12 @@
     {
       "starting_address": 25080,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_7_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 6",
+      "index": "BUF 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4167,11 +4504,12 @@
     {
       "starting_address": 25081,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_8_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 7",
+      "index": "BUF 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4179,11 +4517,12 @@
     {
       "starting_address": 25082,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_9_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 8",
+      "index": "BUF 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4191,11 +4530,12 @@
     {
       "starting_address": 25083,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_10_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 9",
+      "index": "BUF 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4203,11 +4543,12 @@
     {
       "starting_address": 25084,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_11_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 10",
+      "index": "BUF 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4215,11 +4556,12 @@
     {
       "starting_address": 25085,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_12_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 11",
+      "index": "BUF 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4227,11 +4569,12 @@
     {
       "starting_address": 25086,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_13_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 12",
+      "index": "BUF 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4239,11 +4582,12 @@
     {
       "starting_address": 25087,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_14_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 13",
+      "index": "BUF 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"
@@ -4251,11 +4595,12 @@
     {
       "starting_address": 25088,
       "name": "Modbus request heating rod",
+      "entity_id": "buf_15_modbus_request_heating_rod",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "PUF 14",
+      "index": "BUF 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "3005",
       "parameter": "PUF.heizstab_modbus_anforderung"

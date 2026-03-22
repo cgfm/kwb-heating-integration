@@ -8,31 +8,63 @@ A comprehensive Home Assistant Custom Component for **KWB heating systems** with
 
 > **⚠️ Testing Status**: This integration has been tested primarily with **KWB CF2**, **2 heating circuits**, and **1 buffer storage**. Testing with other KWB models and configurations is very welcome! Please help expand compatibility by testing with your setup and reporting results via [GitHub Issues](https://github.com/cgfm/kwb-heating-integration/issues).
 
-## ⚠️ Breaking Changes (v0.4.0)
+## ⚠️ Breaking Changes (v0.5.0)
 
 **If you are upgrading from a previous version, please read this section carefully.**
 
-### Entity ID Changes for Equipment
+### Entity ID Changes - Language-Independent with Equipment Index
 
-Equipment index prefixes have been standardized to German across all language configurations. This ensures entity IDs remain stable regardless of language selection, but requires migration for existing users.
+Entity IDs have been redesigned to be **fully language-independent** and now include the **equipment index prefix** for multi-instance equipment. This ensures entity IDs remain stable regardless of language selection and prevents Home Assistant from appending `_2`, `_3` suffixes.
 
-| Equipment Type | Old Prefix (EN) | New Prefix (All) |
-|----------------|-----------------|------------------|
-| Heating Circuits | `HC` | `HK` |
-| Buffer Storage | `BUF` | `PUF` |
-| DHW Storage | `DHWC` | `BWS` |
-| Secondary Heat | `SHS` | `ZWQ` |
-| Circulation | `CIR` | `ZIR` |
-| Boiler Sequence | `BS` | `KFS` |
-| Heat Meters | `HM` | `WMZ` |
+#### New Entity ID Format
 
-**Example change**:
-- Old: `sensor.easyfire_heating_circuit_1_1_forward_flow_temp`
-- New: `sensor.easyfire_heizkreis_1_1_forward_flow_temp`
+Entity IDs now follow this pattern:
+```
+sensor.{device_prefix}_{equipment_index}_{register_name}
+```
 
-**Why German?** KWB is an Austrian company and their internal Modbus register definitions use German naming. Using German prefixes ensures entity IDs are consistent and don't change when switching languages. Display names in the UI are still localized.
+**Examples:**
+| Old Entity ID | New Entity ID |
+|---------------|---------------|
+| `sensor.cf2_temperature_1_value` | `sensor.cf2_buf_1_temperature_1_value` |
+| `sensor.cf2_temperature_1_value_2` | `sensor.cf2_buf_2_temperature_1_value` |
+| `sensor.cf2_forward_flow_temp` | `sensor.cf2_hc_1_forward_flow_temp` |
+| `sensor.cf2_temperature_actual_value` | `sensor.cf2_dhwc_1_temperature_actual_value` |
 
-**Migration**: Update any automations, scripts, dashboards, or Lovelace cards that reference the old entity IDs.
+#### Equipment Index Prefixes
+
+All entity IDs use English-derived prefixes (language-independent):
+
+| Equipment Type | Entity ID Prefix | Example |
+|----------------|------------------|---------|
+| Buffer Storage | `buf_1`, `buf_2`, ... | `sensor.cf2_buf_1_temperature_1_value` |
+| DHW Storage | `dhwc_1`, `dhwc_2`, ... | `sensor.cf2_dhwc_1_temperature_actual_value` |
+| Heating Circuits | `hc_1`, `hc_1_1`, ... | `sensor.cf2_hc_1_forward_flow_temp` |
+| Solar | `sol_1`, `sol_2`, ... | `sensor.cf2_sol_1_collector_temp` |
+| Circulation | `zir_1`, `zir_2`, ... | `sensor.cf2_zir_1_temperature_value` |
+| Heat Meters | `hqm_1`, `hqm_2`, ... | `sensor.cf2_hqm_1_power_value` |
+| Boiler Sequence | `b_1`, `b_2`, ... | `sensor.cf2_b_1_status` |
+| Secondary Heat | `shs_1`, `shs_2`, ... | `sensor.cf2_shs_1_temperature` |
+
+**Note:** 0-indexed equipment in the source data (BUF 0, Circ 0, etc.) is automatically converted to 1-based indexing in entity IDs for user-friendliness.
+
+#### Why This Change?
+
+1. **Language Independence**: Entity IDs are always derived from English data, ensuring they never change when switching languages
+2. **Unique Entity IDs**: Each equipment instance has a unique entity ID, preventing Home Assistant from appending numeric suffixes
+3. **Predictable Naming**: You can now reliably reference entities in automations knowing the exact format
+4. **Display Names**: The UI still shows localized names (German/English) - only the entity_id is standardized
+
+#### Migration
+
+Update any automations, scripts, dashboards, or Lovelace cards that reference the old entity IDs. The new format includes the equipment prefix before the register name.
+
+**Find affected entities:**
+```yaml
+# Check Developer Tools → States for entities matching your device prefix
+# Old pattern: sensor.cf2_temperature_1_value
+# New pattern: sensor.cf2_buf_1_temperature_1_value
+```
 
 See [CHANGELOG.md](CHANGELOG.md) for full details.
 
@@ -243,11 +275,21 @@ config/versions/
 The **modbusinfoConverter** tool converts KWB's official ModbusInfo Excel files into JSON configuration format.
 
 ### Key Features
-- Multi-version support (v22.7.1, v25.7.1, etc.)
+- Multi-version support (v21.4.0, v22.7.1, v24.7.1, v25.4.0, v25.7.1, etc.)
 - Multi-language processing (German & English Excel files)
+- Language-independent entity_id generation (derived from English data)
+- Equipment index prefixes included in entity_ids
 - Automatic device categorization (universal, device-specific, equipment)
 - Combifire inheritance (CF models inherit from Combifire base)
 - Consistent English filenames for cross-language compatibility
+
+### Available Scripts
+
+| Script | Purpose |
+|--------|---------|
+| `convert_modbusinfo.py` | Convert Excel files to JSON configs |
+| `json_to_excel.py` | Generate Excel files from existing JSON configs |
+| `add_entity_ids_from_json.py` | Update entity_ids in existing JSON configs |
 
 ### Quick Start
 ```bash
@@ -257,6 +299,14 @@ python3 convert_modbusinfo.py
 # Generated files appear in config/versions/
 ```
 
+### Generate Excel from JSON
+If you need to recreate Excel files from existing JSON configs (useful when original Excel is unavailable):
+```bash
+cd modbusinfoConverter
+python3 json_to_excel.py [version]
+# Example: python3 json_to_excel.py 24.7.1
+```
+
 ### Documentation
 For detailed usage instructions, see [modbusinfoConverter/README.md](modbusinfoConverter/README.md)
 
@@ -264,6 +314,7 @@ For detailed usage instructions, see [modbusinfoConverter/README.md](modbusinfoC
 - **Add new KWB firmware versions**: Convert new ModbusInfo Excel files
 - **Add language support**: Convert English/other language Excel files
 - **Update existing configs**: Re-generate from updated Excel files
+- **Recreate missing Excel files**: Generate Excel from JSON when source is unavailable
 - **Development**: Test with modified register definitions
 
 ## 🔧 Advanced Configuration

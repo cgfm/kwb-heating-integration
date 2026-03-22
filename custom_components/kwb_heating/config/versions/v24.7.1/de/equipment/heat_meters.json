@@ -3,6 +3,7 @@
     {
       "starting_address": 9517,
       "name": "Leistung",
+      "entity_id": "hqm_1_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -16,6 +17,7 @@
     {
       "starting_address": 9519,
       "name": "Leistung",
+      "entity_id": "hqm_2_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -29,6 +31,7 @@
     {
       "starting_address": 9521,
       "name": "Leistung",
+      "entity_id": "hqm_3_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -42,6 +45,7 @@
     {
       "starting_address": 9523,
       "name": "Leistung",
+      "entity_id": "hqm_4_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -55,6 +59,7 @@
     {
       "starting_address": 9525,
       "name": "Leistung",
+      "entity_id": "hqm_5_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -68,6 +73,7 @@
     {
       "starting_address": 9527,
       "name": "Leistung",
+      "entity_id": "hqm_6_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -81,6 +87,7 @@
     {
       "starting_address": 9529,
       "name": "Leistung",
+      "entity_id": "hqm_7_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -94,6 +101,7 @@
     {
       "starting_address": 9531,
       "name": "Leistung",
+      "entity_id": "hqm_8_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -107,6 +115,7 @@
     {
       "starting_address": 9533,
       "name": "Leistung",
+      "entity_id": "hqm_9_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -120,6 +129,7 @@
     {
       "starting_address": 9535,
       "name": "Leistung",
+      "entity_id": "hqm_10_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -133,6 +143,7 @@
     {
       "starting_address": 9537,
       "name": "Leistung",
+      "entity_id": "hqm_11_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -146,6 +157,7 @@
     {
       "starting_address": 9539,
       "name": "Leistung",
+      "entity_id": "hqm_12_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -159,6 +171,7 @@
     {
       "starting_address": 9541,
       "name": "Leistung",
+      "entity_id": "hqm_13_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -172,6 +185,7 @@
     {
       "starting_address": 9543,
       "name": "Leistung",
+      "entity_id": "hqm_14_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -185,6 +199,7 @@
     {
       "starting_address": 9545,
       "name": "Leistung",
+      "entity_id": "hqm_15_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -198,6 +213,7 @@
     {
       "starting_address": 9547,
       "name": "Leistung",
+      "entity_id": "hqm_16_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -211,6 +227,7 @@
     {
       "starting_address": 9549,
       "name": "Leistung",
+      "entity_id": "hqm_17_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -224,6 +241,7 @@
     {
       "starting_address": 9551,
       "name": "Leistung",
+      "entity_id": "hqm_18_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -237,6 +255,7 @@
     {
       "starting_address": 9553,
       "name": "Leistung",
+      "entity_id": "hqm_19_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -250,6 +269,7 @@
     {
       "starting_address": 9555,
       "name": "Leistung",
+      "entity_id": "hqm_20_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -263,6 +283,7 @@
     {
       "starting_address": 9557,
       "name": "Leistung",
+      "entity_id": "hqm_21_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -276,6 +297,7 @@
     {
       "starting_address": 9559,
       "name": "Leistung",
+      "entity_id": "hqm_22_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -289,6 +311,7 @@
     {
       "starting_address": 9561,
       "name": "Leistung",
+      "entity_id": "hqm_23_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -302,6 +325,7 @@
     {
       "starting_address": 9563,
       "name": "Leistung",
+      "entity_id": "hqm_24_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -315,6 +339,7 @@
     {
       "starting_address": 9565,
       "name": "Leistung",
+      "entity_id": "hqm_25_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -328,6 +353,7 @@
     {
       "starting_address": 9567,
       "name": "Leistung",
+      "entity_id": "hqm_26_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -341,6 +367,7 @@
     {
       "starting_address": 9569,
       "name": "Leistung",
+      "entity_id": "hqm_27_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -354,6 +381,7 @@
     {
       "starting_address": 9571,
       "name": "Leistung",
+      "entity_id": "hqm_28_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -367,6 +395,7 @@
     {
       "starting_address": 9573,
       "name": "Leistung",
+      "entity_id": "hqm_29_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -380,6 +409,7 @@
     {
       "starting_address": 9575,
       "name": "Leistung",
+      "entity_id": "hqm_30_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -393,6 +423,7 @@
     {
       "starting_address": 9577,
       "name": "Leistung",
+      "entity_id": "hqm_31_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -406,6 +437,7 @@
     {
       "starting_address": 9579,
       "name": "Leistung",
+      "entity_id": "hqm_32_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -419,6 +451,7 @@
     {
       "starting_address": 9581,
       "name": "Leistung",
+      "entity_id": "hqm_33_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -432,6 +465,7 @@
     {
       "starting_address": 9583,
       "name": "Leistung",
+      "entity_id": "hqm_34_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -445,6 +479,7 @@
     {
       "starting_address": 9585,
       "name": "Leistung",
+      "entity_id": "hqm_35_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -458,6 +493,7 @@
     {
       "starting_address": 9587,
       "name": "Leistung",
+      "entity_id": "hqm_36_power",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -471,6 +507,7 @@
     {
       "starting_address": 9589,
       "name": "Vorlauf",
+      "entity_id": "hqm_1_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -483,6 +520,7 @@
     {
       "starting_address": 9590,
       "name": "Vorlauf",
+      "entity_id": "hqm_2_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -495,6 +533,7 @@
     {
       "starting_address": 9591,
       "name": "Vorlauf",
+      "entity_id": "hqm_3_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -507,6 +546,7 @@
     {
       "starting_address": 9592,
       "name": "Vorlauf",
+      "entity_id": "hqm_4_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -519,6 +559,7 @@
     {
       "starting_address": 9593,
       "name": "Vorlauf",
+      "entity_id": "hqm_5_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -531,6 +572,7 @@
     {
       "starting_address": 9594,
       "name": "Vorlauf",
+      "entity_id": "hqm_6_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -543,6 +585,7 @@
     {
       "starting_address": 9595,
       "name": "Vorlauf",
+      "entity_id": "hqm_7_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -555,6 +598,7 @@
     {
       "starting_address": 9596,
       "name": "Vorlauf",
+      "entity_id": "hqm_8_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -567,6 +611,7 @@
     {
       "starting_address": 9597,
       "name": "Vorlauf",
+      "entity_id": "hqm_9_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -579,6 +624,7 @@
     {
       "starting_address": 9598,
       "name": "Vorlauf",
+      "entity_id": "hqm_10_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -591,6 +637,7 @@
     {
       "starting_address": 9599,
       "name": "Vorlauf",
+      "entity_id": "hqm_11_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -603,6 +650,7 @@
     {
       "starting_address": 9600,
       "name": "Vorlauf",
+      "entity_id": "hqm_12_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -615,6 +663,7 @@
     {
       "starting_address": 9601,
       "name": "Vorlauf",
+      "entity_id": "hqm_13_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -627,6 +676,7 @@
     {
       "starting_address": 9602,
       "name": "Vorlauf",
+      "entity_id": "hqm_14_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -639,6 +689,7 @@
     {
       "starting_address": 9603,
       "name": "Vorlauf",
+      "entity_id": "hqm_15_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -651,6 +702,7 @@
     {
       "starting_address": 9604,
       "name": "Vorlauf",
+      "entity_id": "hqm_16_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -663,6 +715,7 @@
     {
       "starting_address": 9605,
       "name": "Vorlauf",
+      "entity_id": "hqm_17_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -675,6 +728,7 @@
     {
       "starting_address": 9606,
       "name": "Vorlauf",
+      "entity_id": "hqm_18_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -687,6 +741,7 @@
     {
       "starting_address": 9607,
       "name": "Vorlauf",
+      "entity_id": "hqm_19_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -699,6 +754,7 @@
     {
       "starting_address": 9608,
       "name": "Vorlauf",
+      "entity_id": "hqm_20_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -711,6 +767,7 @@
     {
       "starting_address": 9609,
       "name": "Vorlauf",
+      "entity_id": "hqm_21_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -723,6 +780,7 @@
     {
       "starting_address": 9610,
       "name": "Vorlauf",
+      "entity_id": "hqm_22_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -735,6 +793,7 @@
     {
       "starting_address": 9611,
       "name": "Vorlauf",
+      "entity_id": "hqm_23_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -747,6 +806,7 @@
     {
       "starting_address": 9612,
       "name": "Vorlauf",
+      "entity_id": "hqm_24_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -759,6 +819,7 @@
     {
       "starting_address": 9613,
       "name": "Vorlauf",
+      "entity_id": "hqm_25_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -771,6 +832,7 @@
     {
       "starting_address": 9614,
       "name": "Vorlauf",
+      "entity_id": "hqm_26_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -783,6 +845,7 @@
     {
       "starting_address": 9615,
       "name": "Vorlauf",
+      "entity_id": "hqm_27_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -795,6 +858,7 @@
     {
       "starting_address": 9616,
       "name": "Vorlauf",
+      "entity_id": "hqm_28_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -807,6 +871,7 @@
     {
       "starting_address": 9617,
       "name": "Vorlauf",
+      "entity_id": "hqm_29_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -819,6 +884,7 @@
     {
       "starting_address": 9618,
       "name": "Vorlauf",
+      "entity_id": "hqm_30_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -831,6 +897,7 @@
     {
       "starting_address": 9619,
       "name": "Vorlauf",
+      "entity_id": "hqm_31_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -843,6 +910,7 @@
     {
       "starting_address": 9620,
       "name": "Vorlauf",
+      "entity_id": "hqm_32_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -855,6 +923,7 @@
     {
       "starting_address": 9621,
       "name": "Vorlauf",
+      "entity_id": "hqm_33_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -867,6 +936,7 @@
     {
       "starting_address": 9622,
       "name": "Vorlauf",
+      "entity_id": "hqm_34_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -879,6 +949,7 @@
     {
       "starting_address": 9623,
       "name": "Vorlauf",
+      "entity_id": "hqm_35_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -891,6 +962,7 @@
     {
       "starting_address": 9624,
       "name": "Vorlauf",
+      "entity_id": "hqm_36_forward_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -903,6 +975,7 @@
     {
       "starting_address": 9625,
       "name": "Rücklauf",
+      "entity_id": "hqm_1_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -915,6 +988,7 @@
     {
       "starting_address": 9626,
       "name": "Rücklauf",
+      "entity_id": "hqm_2_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -927,6 +1001,7 @@
     {
       "starting_address": 9627,
       "name": "Rücklauf",
+      "entity_id": "hqm_3_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -939,6 +1014,7 @@
     {
       "starting_address": 9628,
       "name": "Rücklauf",
+      "entity_id": "hqm_4_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -951,6 +1027,7 @@
     {
       "starting_address": 9629,
       "name": "Rücklauf",
+      "entity_id": "hqm_5_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -963,6 +1040,7 @@
     {
       "starting_address": 9630,
       "name": "Rücklauf",
+      "entity_id": "hqm_6_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -975,6 +1053,7 @@
     {
       "starting_address": 9631,
       "name": "Rücklauf",
+      "entity_id": "hqm_7_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -987,6 +1066,7 @@
     {
       "starting_address": 9632,
       "name": "Rücklauf",
+      "entity_id": "hqm_8_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -999,6 +1079,7 @@
     {
       "starting_address": 9633,
       "name": "Rücklauf",
+      "entity_id": "hqm_9_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1011,6 +1092,7 @@
     {
       "starting_address": 9634,
       "name": "Rücklauf",
+      "entity_id": "hqm_10_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1023,6 +1105,7 @@
     {
       "starting_address": 9635,
       "name": "Rücklauf",
+      "entity_id": "hqm_11_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1035,6 +1118,7 @@
     {
       "starting_address": 9636,
       "name": "Rücklauf",
+      "entity_id": "hqm_12_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1047,6 +1131,7 @@
     {
       "starting_address": 9637,
       "name": "Rücklauf",
+      "entity_id": "hqm_13_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1059,6 +1144,7 @@
     {
       "starting_address": 9638,
       "name": "Rücklauf",
+      "entity_id": "hqm_14_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1071,6 +1157,7 @@
     {
       "starting_address": 9639,
       "name": "Rücklauf",
+      "entity_id": "hqm_15_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1083,6 +1170,7 @@
     {
       "starting_address": 9640,
       "name": "Rücklauf",
+      "entity_id": "hqm_16_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1095,6 +1183,7 @@
     {
       "starting_address": 9641,
       "name": "Rücklauf",
+      "entity_id": "hqm_17_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1107,6 +1196,7 @@
     {
       "starting_address": 9642,
       "name": "Rücklauf",
+      "entity_id": "hqm_18_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1119,6 +1209,7 @@
     {
       "starting_address": 9643,
       "name": "Rücklauf",
+      "entity_id": "hqm_19_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1131,6 +1222,7 @@
     {
       "starting_address": 9644,
       "name": "Rücklauf",
+      "entity_id": "hqm_20_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1143,6 +1235,7 @@
     {
       "starting_address": 9645,
       "name": "Rücklauf",
+      "entity_id": "hqm_21_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1155,6 +1248,7 @@
     {
       "starting_address": 9646,
       "name": "Rücklauf",
+      "entity_id": "hqm_22_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1167,6 +1261,7 @@
     {
       "starting_address": 9647,
       "name": "Rücklauf",
+      "entity_id": "hqm_23_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1179,6 +1274,7 @@
     {
       "starting_address": 9648,
       "name": "Rücklauf",
+      "entity_id": "hqm_24_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1191,6 +1287,7 @@
     {
       "starting_address": 9649,
       "name": "Rücklauf",
+      "entity_id": "hqm_25_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1203,6 +1300,7 @@
     {
       "starting_address": 9650,
       "name": "Rücklauf",
+      "entity_id": "hqm_26_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1215,6 +1313,7 @@
     {
       "starting_address": 9651,
       "name": "Rücklauf",
+      "entity_id": "hqm_27_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1227,6 +1326,7 @@
     {
       "starting_address": 9652,
       "name": "Rücklauf",
+      "entity_id": "hqm_28_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1239,6 +1339,7 @@
     {
       "starting_address": 9653,
       "name": "Rücklauf",
+      "entity_id": "hqm_29_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1251,6 +1352,7 @@
     {
       "starting_address": 9654,
       "name": "Rücklauf",
+      "entity_id": "hqm_30_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1263,6 +1365,7 @@
     {
       "starting_address": 9655,
       "name": "Rücklauf",
+      "entity_id": "hqm_31_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1275,6 +1378,7 @@
     {
       "starting_address": 9656,
       "name": "Rücklauf",
+      "entity_id": "hqm_32_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1287,6 +1391,7 @@
     {
       "starting_address": 9657,
       "name": "Rücklauf",
+      "entity_id": "hqm_33_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1299,6 +1404,7 @@
     {
       "starting_address": 9658,
       "name": "Rücklauf",
+      "entity_id": "hqm_34_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1311,6 +1417,7 @@
     {
       "starting_address": 9659,
       "name": "Rücklauf",
+      "entity_id": "hqm_35_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1323,6 +1430,7 @@
     {
       "starting_address": 9660,
       "name": "Rücklauf",
+      "entity_id": "hqm_36_return_flow",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1335,6 +1443,7 @@
     {
       "starting_address": 9661,
       "name": "Energie",
+      "entity_id": "hqm_1_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1348,6 +1457,7 @@
     {
       "starting_address": 9663,
       "name": "Energie",
+      "entity_id": "hqm_2_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1361,6 +1471,7 @@
     {
       "starting_address": 9665,
       "name": "Energie",
+      "entity_id": "hqm_3_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1374,6 +1485,7 @@
     {
       "starting_address": 9667,
       "name": "Energie",
+      "entity_id": "hqm_4_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1387,6 +1499,7 @@
     {
       "starting_address": 9669,
       "name": "Energie",
+      "entity_id": "hqm_5_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1400,6 +1513,7 @@
     {
       "starting_address": 9671,
       "name": "Energie",
+      "entity_id": "hqm_6_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1413,6 +1527,7 @@
     {
       "starting_address": 9673,
       "name": "Energie",
+      "entity_id": "hqm_7_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1426,6 +1541,7 @@
     {
       "starting_address": 9675,
       "name": "Energie",
+      "entity_id": "hqm_8_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1439,6 +1555,7 @@
     {
       "starting_address": 9677,
       "name": "Energie",
+      "entity_id": "hqm_9_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1452,6 +1569,7 @@
     {
       "starting_address": 9679,
       "name": "Energie",
+      "entity_id": "hqm_10_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1465,6 +1583,7 @@
     {
       "starting_address": 9681,
       "name": "Energie",
+      "entity_id": "hqm_11_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1478,6 +1597,7 @@
     {
       "starting_address": 9683,
       "name": "Energie",
+      "entity_id": "hqm_12_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1491,6 +1611,7 @@
     {
       "starting_address": 9685,
       "name": "Energie",
+      "entity_id": "hqm_13_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1504,6 +1625,7 @@
     {
       "starting_address": 9687,
       "name": "Energie",
+      "entity_id": "hqm_14_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1517,6 +1639,7 @@
     {
       "starting_address": 9689,
       "name": "Energie",
+      "entity_id": "hqm_15_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1530,6 +1653,7 @@
     {
       "starting_address": 9691,
       "name": "Energie",
+      "entity_id": "hqm_16_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1543,6 +1667,7 @@
     {
       "starting_address": 9693,
       "name": "Energie",
+      "entity_id": "hqm_17_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1556,6 +1681,7 @@
     {
       "starting_address": 9695,
       "name": "Energie",
+      "entity_id": "hqm_18_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1569,6 +1695,7 @@
     {
       "starting_address": 9697,
       "name": "Energie",
+      "entity_id": "hqm_19_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1582,6 +1709,7 @@
     {
       "starting_address": 9699,
       "name": "Energie",
+      "entity_id": "hqm_20_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1595,6 +1723,7 @@
     {
       "starting_address": 9701,
       "name": "Energie",
+      "entity_id": "hqm_21_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1608,6 +1737,7 @@
     {
       "starting_address": 9703,
       "name": "Energie",
+      "entity_id": "hqm_22_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1621,6 +1751,7 @@
     {
       "starting_address": 9705,
       "name": "Energie",
+      "entity_id": "hqm_23_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1634,6 +1765,7 @@
     {
       "starting_address": 9707,
       "name": "Energie",
+      "entity_id": "hqm_24_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1647,6 +1779,7 @@
     {
       "starting_address": 9709,
       "name": "Energie",
+      "entity_id": "hqm_25_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1660,6 +1793,7 @@
     {
       "starting_address": 9711,
       "name": "Energie",
+      "entity_id": "hqm_26_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1673,6 +1807,7 @@
     {
       "starting_address": 9713,
       "name": "Energie",
+      "entity_id": "hqm_27_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1686,6 +1821,7 @@
     {
       "starting_address": 9715,
       "name": "Energie",
+      "entity_id": "hqm_28_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1699,6 +1835,7 @@
     {
       "starting_address": 9717,
       "name": "Energie",
+      "entity_id": "hqm_29_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1712,6 +1849,7 @@
     {
       "starting_address": 9719,
       "name": "Energie",
+      "entity_id": "hqm_30_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1725,6 +1863,7 @@
     {
       "starting_address": 9721,
       "name": "Energie",
+      "entity_id": "hqm_31_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1738,6 +1877,7 @@
     {
       "starting_address": 9723,
       "name": "Energie",
+      "entity_id": "hqm_32_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1751,6 +1891,7 @@
     {
       "starting_address": 9725,
       "name": "Energie",
+      "entity_id": "hqm_33_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1764,6 +1905,7 @@
     {
       "starting_address": 9727,
       "name": "Energie",
+      "entity_id": "hqm_34_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1777,6 +1919,7 @@
     {
       "starting_address": 9729,
       "name": "Energie",
+      "entity_id": "hqm_35_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1790,6 +1933,7 @@
     {
       "starting_address": 9731,
       "name": "Energie",
+      "entity_id": "hqm_36_energy",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -1803,6 +1947,7 @@
     {
       "starting_address": 9733,
       "name": "Volumen akt.",
+      "entity_id": "hqm_1_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1816,6 +1961,7 @@
     {
       "starting_address": 9735,
       "name": "Volumen akt.",
+      "entity_id": "hqm_2_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1829,6 +1975,7 @@
     {
       "starting_address": 9737,
       "name": "Volumen akt.",
+      "entity_id": "hqm_3_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1842,6 +1989,7 @@
     {
       "starting_address": 9739,
       "name": "Volumen akt.",
+      "entity_id": "hqm_4_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1855,6 +2003,7 @@
     {
       "starting_address": 9741,
       "name": "Volumen akt.",
+      "entity_id": "hqm_5_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1868,6 +2017,7 @@
     {
       "starting_address": 9743,
       "name": "Volumen akt.",
+      "entity_id": "hqm_6_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1881,6 +2031,7 @@
     {
       "starting_address": 9745,
       "name": "Volumen akt.",
+      "entity_id": "hqm_7_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1894,6 +2045,7 @@
     {
       "starting_address": 9747,
       "name": "Volumen akt.",
+      "entity_id": "hqm_8_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1907,6 +2059,7 @@
     {
       "starting_address": 9749,
       "name": "Volumen akt.",
+      "entity_id": "hqm_9_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1920,6 +2073,7 @@
     {
       "starting_address": 9751,
       "name": "Volumen akt.",
+      "entity_id": "hqm_10_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1933,6 +2087,7 @@
     {
       "starting_address": 9753,
       "name": "Volumen akt.",
+      "entity_id": "hqm_11_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1946,6 +2101,7 @@
     {
       "starting_address": 9755,
       "name": "Volumen akt.",
+      "entity_id": "hqm_12_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1959,6 +2115,7 @@
     {
       "starting_address": 9757,
       "name": "Volumen akt.",
+      "entity_id": "hqm_13_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1972,6 +2129,7 @@
     {
       "starting_address": 9759,
       "name": "Volumen akt.",
+      "entity_id": "hqm_14_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1985,6 +2143,7 @@
     {
       "starting_address": 9761,
       "name": "Volumen akt.",
+      "entity_id": "hqm_15_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -1998,6 +2157,7 @@
     {
       "starting_address": 9763,
       "name": "Volumen akt.",
+      "entity_id": "hqm_16_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2011,6 +2171,7 @@
     {
       "starting_address": 9765,
       "name": "Volumen akt.",
+      "entity_id": "hqm_17_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2024,6 +2185,7 @@
     {
       "starting_address": 9767,
       "name": "Volumen akt.",
+      "entity_id": "hqm_18_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2037,6 +2199,7 @@
     {
       "starting_address": 9769,
       "name": "Volumen akt.",
+      "entity_id": "hqm_19_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2050,6 +2213,7 @@
     {
       "starting_address": 9771,
       "name": "Volumen akt.",
+      "entity_id": "hqm_20_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2063,6 +2227,7 @@
     {
       "starting_address": 9773,
       "name": "Volumen akt.",
+      "entity_id": "hqm_21_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2076,6 +2241,7 @@
     {
       "starting_address": 9775,
       "name": "Volumen akt.",
+      "entity_id": "hqm_22_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2089,6 +2255,7 @@
     {
       "starting_address": 9777,
       "name": "Volumen akt.",
+      "entity_id": "hqm_23_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2102,6 +2269,7 @@
     {
       "starting_address": 9779,
       "name": "Volumen akt.",
+      "entity_id": "hqm_24_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2115,6 +2283,7 @@
     {
       "starting_address": 9781,
       "name": "Volumen akt.",
+      "entity_id": "hqm_25_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2128,6 +2297,7 @@
     {
       "starting_address": 9783,
       "name": "Volumen akt.",
+      "entity_id": "hqm_26_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2141,6 +2311,7 @@
     {
       "starting_address": 9785,
       "name": "Volumen akt.",
+      "entity_id": "hqm_27_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2154,6 +2325,7 @@
     {
       "starting_address": 9787,
       "name": "Volumen akt.",
+      "entity_id": "hqm_28_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2167,6 +2339,7 @@
     {
       "starting_address": 9789,
       "name": "Volumen akt.",
+      "entity_id": "hqm_29_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2180,6 +2353,7 @@
     {
       "starting_address": 9791,
       "name": "Volumen akt.",
+      "entity_id": "hqm_30_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2193,6 +2367,7 @@
     {
       "starting_address": 9793,
       "name": "Volumen akt.",
+      "entity_id": "hqm_31_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2206,6 +2381,7 @@
     {
       "starting_address": 9795,
       "name": "Volumen akt.",
+      "entity_id": "hqm_32_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2219,6 +2395,7 @@
     {
       "starting_address": 9797,
       "name": "Volumen akt.",
+      "entity_id": "hqm_33_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2232,6 +2409,7 @@
     {
       "starting_address": 9799,
       "name": "Volumen akt.",
+      "entity_id": "hqm_34_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2245,6 +2423,7 @@
     {
       "starting_address": 9801,
       "name": "Volumen akt.",
+      "entity_id": "hqm_35_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2258,6 +2437,7 @@
     {
       "starting_address": 9803,
       "name": "Volumen akt.",
+      "entity_id": "hqm_36_volume_act",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2271,6 +2451,7 @@
     {
       "starting_address": 9805,
       "name": "Volumen ges.",
+      "entity_id": "hqm_1_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2284,6 +2465,7 @@
     {
       "starting_address": 9807,
       "name": "Volumen ges.",
+      "entity_id": "hqm_2_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2297,6 +2479,7 @@
     {
       "starting_address": 9809,
       "name": "Volumen ges.",
+      "entity_id": "hqm_3_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2310,6 +2493,7 @@
     {
       "starting_address": 9811,
       "name": "Volumen ges.",
+      "entity_id": "hqm_4_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2323,6 +2507,7 @@
     {
       "starting_address": 9813,
       "name": "Volumen ges.",
+      "entity_id": "hqm_5_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2336,6 +2521,7 @@
     {
       "starting_address": 9815,
       "name": "Volumen ges.",
+      "entity_id": "hqm_6_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2349,6 +2535,7 @@
     {
       "starting_address": 9817,
       "name": "Volumen ges.",
+      "entity_id": "hqm_7_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2362,6 +2549,7 @@
     {
       "starting_address": 9819,
       "name": "Volumen ges.",
+      "entity_id": "hqm_8_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2375,6 +2563,7 @@
     {
       "starting_address": 9821,
       "name": "Volumen ges.",
+      "entity_id": "hqm_9_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2388,6 +2577,7 @@
     {
       "starting_address": 9823,
       "name": "Volumen ges.",
+      "entity_id": "hqm_10_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2401,6 +2591,7 @@
     {
       "starting_address": 9825,
       "name": "Volumen ges.",
+      "entity_id": "hqm_11_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2414,6 +2605,7 @@
     {
       "starting_address": 9827,
       "name": "Volumen ges.",
+      "entity_id": "hqm_12_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2427,6 +2619,7 @@
     {
       "starting_address": 9829,
       "name": "Volumen ges.",
+      "entity_id": "hqm_13_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2440,6 +2633,7 @@
     {
       "starting_address": 9831,
       "name": "Volumen ges.",
+      "entity_id": "hqm_14_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2453,6 +2647,7 @@
     {
       "starting_address": 9833,
       "name": "Volumen ges.",
+      "entity_id": "hqm_15_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2466,6 +2661,7 @@
     {
       "starting_address": 9835,
       "name": "Volumen ges.",
+      "entity_id": "hqm_16_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2479,6 +2675,7 @@
     {
       "starting_address": 9837,
       "name": "Volumen ges.",
+      "entity_id": "hqm_17_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2492,6 +2689,7 @@
     {
       "starting_address": 9839,
       "name": "Volumen ges.",
+      "entity_id": "hqm_18_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2505,6 +2703,7 @@
     {
       "starting_address": 9841,
       "name": "Volumen ges.",
+      "entity_id": "hqm_19_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2518,6 +2717,7 @@
     {
       "starting_address": 9843,
       "name": "Volumen ges.",
+      "entity_id": "hqm_20_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2531,6 +2731,7 @@
     {
       "starting_address": 9845,
       "name": "Volumen ges.",
+      "entity_id": "hqm_21_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2544,6 +2745,7 @@
     {
       "starting_address": 9847,
       "name": "Volumen ges.",
+      "entity_id": "hqm_22_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2557,6 +2759,7 @@
     {
       "starting_address": 9849,
       "name": "Volumen ges.",
+      "entity_id": "hqm_23_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2570,6 +2773,7 @@
     {
       "starting_address": 9851,
       "name": "Volumen ges.",
+      "entity_id": "hqm_24_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2583,6 +2787,7 @@
     {
       "starting_address": 9853,
       "name": "Volumen ges.",
+      "entity_id": "hqm_25_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2596,6 +2801,7 @@
     {
       "starting_address": 9855,
       "name": "Volumen ges.",
+      "entity_id": "hqm_26_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2609,6 +2815,7 @@
     {
       "starting_address": 9857,
       "name": "Volumen ges.",
+      "entity_id": "hqm_27_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2622,6 +2829,7 @@
     {
       "starting_address": 9859,
       "name": "Volumen ges.",
+      "entity_id": "hqm_28_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2635,6 +2843,7 @@
     {
       "starting_address": 9861,
       "name": "Volumen ges.",
+      "entity_id": "hqm_29_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2648,6 +2857,7 @@
     {
       "starting_address": 9863,
       "name": "Volumen ges.",
+      "entity_id": "hqm_30_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2661,6 +2871,7 @@
     {
       "starting_address": 9865,
       "name": "Volumen ges.",
+      "entity_id": "hqm_31_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2674,6 +2885,7 @@
     {
       "starting_address": 9867,
       "name": "Volumen ges.",
+      "entity_id": "hqm_32_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2687,6 +2899,7 @@
     {
       "starting_address": 9869,
       "name": "Volumen ges.",
+      "entity_id": "hqm_33_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2700,6 +2913,7 @@
     {
       "starting_address": 9871,
       "name": "Volumen ges.",
+      "entity_id": "hqm_34_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2713,6 +2927,7 @@
     {
       "starting_address": 9873,
       "name": "Volumen ges.",
+      "entity_id": "hqm_35_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",
@@ -2726,6 +2941,7 @@
     {
       "starting_address": 9875,
       "name": "Volumen ges.",
+      "entity_id": "hqm_36_volume_total",
       "data_type": "04",
       "type": "s32",
       "user_level": "read",

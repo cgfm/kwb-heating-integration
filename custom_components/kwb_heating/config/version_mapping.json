@@ -24,6 +24,14 @@
         "device_info_start": 8000
       }
     },
+    "25.4.0": {
+      "config_path": "versions/v25.4.0",
+      "supported_languages": ["de", "en"],
+      "register_layouts": {
+        "software_version": 8192,
+        "device_info_start": 8000
+      }
+    },
     "25.7.1": {
       "config_path": "versions/v25.7.1",
       "supported_languages": ["de", "en"],

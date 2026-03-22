@@ -1,0 +1,74 @@
+/* ==========================================================
+   Dark Mode Detection via floorplan.dataset_set
+   hass.themes.darkMode sets data-theme="dark" on <svg id="svg1">
+   ========================================================== */
+
+/* Black strokes → white in dark mode */
+svg[data-theme="dark"] [stroke="#000000"],
+svg[data-theme="dark"] [style*="stroke:#000000"] {
+  stroke: #ffffff !important;
+}
+
+/* White fills → dark background in dark mode */
+svg[data-theme="dark"] [fill="#ffffff"],
+svg[data-theme="dark"] [style*="fill:#ffffff"] {
+  fill: #1a1a1a !important;
+}
+
+/* Black fills (text, icons) → white in dark mode */
+svg[data-theme="dark"] [fill="#000000"],
+svg[data-theme="dark"] [style*="fill:#000000"] {
+  fill: #ffffff !important;
+}
+
+/* Gradient stops with white → dark in dark mode */
+svg[data-theme="dark"] stop[style*="stop-color:#ffffff"] {
+  stop-color: #1a1a1a !important;
+}
+
+/* ==========================================================
+   Floorplan class_set classes
+   ========================================================== */
+.hidden { display: none !important; }
+.oval-active { fill-opacity: 1; }
+.oval-inactive { fill-opacity: 0; }
+
+
+/* Temperatur Text – weißer Glow hinter schwarzem Text (Light Mode) */
+#TemperaturText {
+  font-size: 16px;
+  font-family: sans-serif;
+  filter: url(#text-glow-light);
+}
+
+/* Dark Mode – schwarzer Glow hinter weißem Text */
+svg[data-theme="dark"] #TemperaturText {
+  filter: url(#text-glow-dark);
+}
+
+/* ==========================================================
+   Element-specific styling
+   ========================================================== */
+
+/* Aschekasten base styling */
+#PelletmodulAschekasten {
+  fill: #888888;
+  transition: clip-path 0.3s ease-in-out;
+}
+
+/* Pelletspeicher base styling */
+#Pelletspeicher {
+  fill: #9a3737;
+  transition: clip-path 0.3s ease-in-out;
+}
+
+/* Nachlegebalken base styling */
+#Nachlegebalken {
+  transition: fill 0.3s ease-in-out;
+}
+
+/* Alternative: Using transform scale for fill animation */
+.fill-animation {
+  transform-origin: left center;
+  transition: transform 0.3s ease-in-out;
+}

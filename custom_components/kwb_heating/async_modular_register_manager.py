@@ -16,6 +16,73 @@ _LOGGER = logging.getLogger(__name__)
 class AsyncModularRegisterManager:
     """Manages KWB register definitions from modular configuration files (async)."""
 
+    EQUIPMENT_KEY_CONFIG = {
+        "heating_circuits": {
+            "is_zero_indexed": False,
+            "filename": "heating_circuits.json",
+            "lang": {
+                "de": {"name": "Heizkreise", "prefix": "HK"},
+                "en": {"name": "Heating Circuits", "prefix": "HC"}
+            }
+        },
+        "buffer_storage": {
+            "is_zero_indexed": True,
+            "filename": "buffer_storage.json",
+            "lang": {
+                "de": {"name": "Pufferspeicher", "prefix": "PUF"},
+                "en": {"name": "Buffer Storage", "prefix": "BUF"}
+            }
+        },
+        "dhw_storage": {
+            "is_zero_indexed": False,
+            "filename": "dhw_storage.json",
+            "lang": {
+                "de": {"name": "Brauchwasserspeicher", "prefix": "BWS"},
+                "en": {"name": "DHW Storage", "prefix": "DHW"}
+            }
+        },
+        "secondary_heat_sources": {
+            "is_zero_indexed": False,
+            "filename": "secondary_heat_sources.json",
+            "lang": {
+                "de": {"name": "Zweitwärmequellen", "prefix": "ZWQ"},
+                "en": {"name": "Secondary Heat Sources", "prefix": "SHS"}
+            }
+        },
+        "circulation": {
+            "is_zero_indexed": True,
+            "filename": "circulation.json",
+            "lang": {
+                "de": {"name": "Zirkulation", "prefix": "ZIR"},
+                "en": {"name": "Circulation", "prefix": "CIRC"}
+            }
+        },
+        "solar": {
+            "is_zero_indexed": False,
+            "filename": "solar.json",
+            "lang": {
+                "de": {"name": "Solar", "prefix": "SOL"},
+                "en": {"name": "Solar", "prefix": "SOL"}
+            }
+        },
+        "boiler_sequence": {
+            "is_zero_indexed": False,
+            "filename": "boiler_sequence.json",
+            "lang": {
+                "de": {"name": "Kesselfolgeschaltung", "prefix": "KFS"},
+                "en": {"name": "Boiler Sequence", "prefix": "BSEQ"}
+            }
+        },
+        "heat_meters": {
+            "is_zero_indexed": True,
+            "filename": "heat_meters.json",
+            "lang": {
+                "de": {"name": "Wärmemengenzähler", "prefix": "WMZ"},
+                "en": {"name": "Heat Meters", "prefix": "HM"}
+            }
+        }
+    }
+
     def __init__(
         self,
         config_path: str | None = None,
@@ -144,47 +211,35 @@ class AsyncModularRegisterManager:
             self._device_cache[device_type] = []
             return []
 
-    async def _load_equipment_registers(self, equipment_type: str) -> list[dict]:
+    async def _load_equipment_registers(self, equipment_key: str) -> list[dict]:
         """Load equipment-specific registers on demand asynchronously."""
-        if equipment_type in self._equipment_cache:
-            return self._equipment_cache[equipment_type]
-        
-        # Map equipment type to filename
-        equipment_file_mapping = {
-            "Heizkreise": "heating_circuits.json",
-            "Pufferspeicher": "buffer_storage.json",
-            "Brauchwasserspeicher": "dhw_storage.json",
-            "Zweitwärmequellen": "secondary_heat_sources.json",
-            "Zirkulation": "circulation.json",
-            "Solar": "solar.json",
-            "Kesselfolgeschaltung": "boiler_sequence.json",
-            "Wärmemengenzähler": "heat_meters.json",
-            "Übergabestation": "transfer_station.json"
-        }
-        
-        filename = equipment_file_mapping.get(equipment_type)
-        if not filename:
-            _LOGGER.warning("Unknown equipment type: %s", equipment_type)
-            self._equipment_cache[equipment_type] = []
+        if equipment_key in self._equipment_cache:
+            return self._equipment_cache[equipment_key]
+
+        config = self.EQUIPMENT_KEY_CONFIG.get(equipment_key)
+        if not config:
+            _LOGGER.warning("Unknown equipment key: %s", equipment_key)
+            self._equipment_cache[equipment_key] = []
             return []
-        
+
+        filename = config["filename"]
         equipment_path = self.config_dir / "equipment" / filename
         try:
             async with aiofiles.open(equipment_path, 'r', encoding='utf-8') as f:
                 content = await f.read()
                 equipment_data = json.loads(content)
                 registers = equipment_data.get("registers", [])
-                self._equipment_cache[equipment_type] = registers
-                _LOGGER.info("Loaded %d registers for equipment type %s", len(registers), equipment_type)
+                self._equipment_cache[equipment_key] = registers
+                _LOGGER.info("Loaded %d registers for equipment key %s", len(registers), equipment_key)
                 return registers
-                
+
         except FileNotFoundError:
             _LOGGER.warning("Equipment configuration not found: %s", equipment_path)
-            self._equipment_cache[equipment_type] = []
+            self._equipment_cache[equipment_key] = []
             return []
         except json.JSONDecodeError as exc:
             _LOGGER.error("Invalid JSON in equipment configuration %s: %s", equipment_path, exc)
-            self._equipment_cache[equipment_type] = []
+            self._equipment_cache[equipment_key] = []
             return []
 
     def get_registers_for_access_level(self, access_level: str, limit: int = 1000) -> list[dict]:
@@ -221,59 +276,40 @@ class AsyncModularRegisterManager:
         
         return registers
 
-    async def get_equipment_registers(self, equipment_type: str, access_level: str, count: int | None = None) -> list[dict]:
+    async def get_equipment_registers(self, equipment_key: str, access_level: str, count: int | None = None) -> list[dict]:
         """Get equipment-specific registers for the access level, limited by count."""
         registers = []
 
-        equipment_registers = await self._load_equipment_registers(equipment_type)
+        equipment_registers = await self._load_equipment_registers(equipment_key)
+        
+        config = self.EQUIPMENT_KEY_CONFIG.get(equipment_key)
+        if not config:
+            return []
 
-        # Equipment type to index prefix mapping (all use German prefixes)
-        # Format: (prefix, is_zero_indexed)
-        equipment_index_config = {
-            "Heizkreise": ("HK", False),           # HK 1.1, HK 2.1, etc.
-            "Pufferspeicher": ("PUF", True),       # PUF 0, PUF 1, etc. (0-indexed)
-            "Brauchwasserspeicher": ("BWS", False), # BWS 1, BWS 2, etc.
-            "Zweitwärmequellen": ("ZWQ", False),   # ZWQ 1, ZWQ 2, etc.
-            "Zirkulation": ("ZIR", True),          # ZIR 0, ZIR 1, etc. (0-indexed)
-            "Solar": ("SOL", False),               # SOL 1, SOL 2, etc.
-            "Kesselfolgeschaltung": ("KFS", False), # KFS 1, KFS 2, etc.
-            "Wärmemengenzähler": ("WMZ", True),    # WMZ 0, WMZ 1, etc. (0-indexed)
-        }
+        # Get language-specific prefix from config, fallback to 'en' then 'de'
+        lang_config = config["lang"].get(self._language) or config["lang"].get("en") or config["lang"]["de"]
+        prefix = lang_config["prefix"]
+        is_zero_indexed = config["is_zero_indexed"]
 
         # If count is specified and > 0, filter by index patterns
         if count is not None and count > 0:
             filtered_registers = []
+            start_idx = 0 if is_zero_indexed else 1
+            end_idx = count if is_zero_indexed else count + 1
 
-            config = equipment_index_config.get(equipment_type)
-            if config:
-                prefix, is_zero_indexed = config
-                start_idx = 0 if is_zero_indexed else 1
-                end_idx = count if is_zero_indexed else count + 1
-
-                for i in range(start_idx, end_idx):
-                    for register in equipment_registers:
-                        index = register.get("index", "")
-                        # Handle both exact match (PUF 0) and prefix match (HK 1.)
-                        if equipment_type == "Heizkreise":
-                            # Heating circuits use HK 1.1, HK 1.2, HK 2.1, etc.
-                            if index.startswith(f"{prefix} {i}."):
-                                filtered_registers.append(register)
-                        else:
-                            # Other equipment uses exact match (PUF 0, BWS 1, etc.)
-                            if index == f"{prefix} {i}":
-                                filtered_registers.append(register)
-            else:
-                # For unknown equipment types, use simple count-based filtering
-                instances_seen = set()
+            for i in range(start_idx, end_idx):
                 for register in equipment_registers:
                     index = register.get("index", "")
-                    if index:
-                        instance_id = index.split()[-1] if index.split() else "1"
-                        if instance_id not in instances_seen and len(instances_seen) < count:
-                            instances_seen.add(instance_id)
-                        if instance_id in instances_seen:
+                    # Handle both exact match (PUF 0) and prefix match (HK 1.)
+                    if equipment_key == "heating_circuits":
+                        # Heating circuits use HK 1.1, HK 1.2, HK 2.1, etc.
+                        if index.startswith(f"{prefix} {i}."):
                             filtered_registers.append(register)
-
+                    else:
+                        # Other equipment uses exact match (PUF 0, BWS 1, etc.)
+                        if index == f"{prefix} {i}":
+                            filtered_registers.append(register)
+            
             limited_registers = filtered_registers
         else:
             limited_registers = equipment_registers
@@ -283,7 +319,7 @@ class AsyncModularRegisterManager:
                 registers.append(self._normalize_register(register))
 
         _LOGGER.info("Selected %d %s registers for access level %s (count: %s)",
-                    len(registers), equipment_type, access_level, count)
+                    len(registers), equipment_key, access_level, count)
         return registers
 
     async def get_all_registers(self, access_level: str, equipment_config: dict = None, device_type: str | None = None) -> list[dict]:
@@ -319,46 +355,12 @@ class AsyncModularRegisterManager:
 
         # Equipment-specific registers based on configuration (using counts)
         if equipment_config:
-            heating_circuits_count = equipment_config.get("heating_circuits", 0)
-            if heating_circuits_count > 0:
-                equipment_regs = await self.get_equipment_registers("Heizkreise", access_level, heating_circuits_count)
-                add_registers(equipment_regs)
-
-            buffer_storage_count = equipment_config.get("buffer_storage", 0)
-            if buffer_storage_count > 0:
-                equipment_regs = await self.get_equipment_registers("Pufferspeicher", access_level, buffer_storage_count)
-                add_registers(equipment_regs)
-
-            dhw_storage_count = equipment_config.get("dhw_storage", 0)
-            if dhw_storage_count > 0:
-                equipment_regs = await self.get_equipment_registers("Brauchwasserspeicher", access_level, dhw_storage_count)
-                add_registers(equipment_regs)
-
-            secondary_heat_sources_count = equipment_config.get("secondary_heat_sources", 0)
-            if secondary_heat_sources_count > 0:
-                equipment_regs = await self.get_equipment_registers("Zweitwärmequellen", access_level, secondary_heat_sources_count)
-                add_registers(equipment_regs)
-
-            circulation_count = equipment_config.get("circulation", 0)
-            if circulation_count > 0:
-                equipment_regs = await self.get_equipment_registers("Zirkulation", access_level, circulation_count)
-                add_registers(equipment_regs)
-
-            solar_count = equipment_config.get("solar", 0)
-            if solar_count > 0:
-                equipment_regs = await self.get_equipment_registers("Solar", access_level, solar_count)
-                add_registers(equipment_regs)
-
-            boiler_sequence_count = equipment_config.get("boiler_sequence", 0)
-            if boiler_sequence_count > 0:
-                equipment_regs = await self.get_equipment_registers("Kesselfolgeschaltung", access_level, boiler_sequence_count)
-                add_registers(equipment_regs)
-
-            heat_meters_count = equipment_config.get("heat_meters", 0)
-            if heat_meters_count > 0:
-                equipment_regs = await self.get_equipment_registers("Wärmemengenzähler", access_level, heat_meters_count)
-                add_registers(equipment_regs)
-
+            for key, config in self.EQUIPMENT_KEY_CONFIG.items():
+                count = equipment_config.get(key, 0)
+                if count > 0:
+                    equipment_regs = await self.get_equipment_registers(key, access_level, count)
+                    add_registers(equipment_regs)
+                    
         return registers
 
     def _register_allowed_for_access_level(self, register: dict, access_level: str) -> bool:
@@ -388,34 +390,25 @@ class AsyncModularRegisterManager:
         name = normalized.get("name", "")
         
         if index and name:
-            # Map equipment indices to friendly names (German)
-            # All config files now use consistent German prefixes (HK, PUF, etc.)
-            equipment_prefixes = {
-                "HK": ("Heizkreis", False),
-                "PUF": ("Pufferspeicher", True),   # 0-indexed
-                "BWS": ("Brauchwasserspeicher", False),
-                "ZWQ": ("Zweitwärmequelle", False),
-                "ZIR": ("Zirkulation", True),      # 0-indexed
-                "SOL": ("Solar", False),
-                "KFS": ("Kesselfolge", False),
-                "WMZ": ("Wärmemengenzähler", True), # 0-indexed
-            }
+            for key, config in self.EQUIPMENT_KEY_CONFIG.items():
+                # Get language-specific prefix and name
+                lang_config = config["lang"].get(self._language) or config["lang"].get("en") or config["lang"]["de"]
+                prefix = lang_config["prefix"]
+                friendly_name = lang_config["name"]
 
-            # Extract equipment type and number from index
-            for prefix, (friendly_name, is_zero_indexed) in equipment_prefixes.items():
                 if index.startswith(prefix):
                     # Extract the equipment number/identifier
                     equipment_id = index[len(prefix):].strip()
 
                     # Handle 0-indexed equipment types (convert to 1-based for display)
-                    if is_zero_indexed:
+                    if config["is_zero_indexed"]:
                         try:
                             display_num = int(equipment_id) + 1
                             new_name = f"{friendly_name} {display_num}: {name}"
                         except ValueError:
                             new_name = f"{friendly_name} {equipment_id}: {name}"
                     else:
-                        # Default: HC 1.1 -> Heizkreis 1.1
+                        # Default: HC 1.1 -> Heating Circuit 1.1
                         new_name = f"{friendly_name} {equipment_id}: {name}"
 
                     normalized["name"] = new_name

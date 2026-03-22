@@ -3,6 +3,7 @@
     {
       "starting_address": 8197,
       "name": "Kesseltemperatur Ist (value)",
+      "entity_id": "boiler_temp_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -14,6 +15,7 @@
     {
       "starting_address": 8198,
       "name": "Kesseltemperatur Ist (status)",
+      "entity_id": "boiler_temp_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -25,6 +27,7 @@
     {
       "starting_address": 8199,
       "name": "Kesseltemperatur Soll",
+      "entity_id": "boiler_temperature_setpoint",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -36,6 +39,7 @@
     {
       "starting_address": 8200,
       "name": "Kesselpumpe",
+      "entity_id": "boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -47,6 +51,7 @@
     {
       "starting_address": 8201,
       "name": "Kesselpumpe %",
+      "entity_id": "boiler_pump",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -58,6 +63,7 @@
     {
       "starting_address": 8202,
       "name": "Rücklauftemperatur Ist (value)",
+      "entity_id": "return_flow_temp_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -69,6 +75,7 @@
     {
       "starting_address": 8203,
       "name": "Rücklauftemperatur Ist (status)",
+      "entity_id": "return_flow_temp_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -80,6 +87,7 @@
     {
       "starting_address": 8206,
       "name": "Verbraucher Anforderung",
+      "entity_id": "consumer_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -91,6 +99,7 @@
     {
       "starting_address": 8207,
       "name": "Kesselleistung",
+      "entity_id": "boiler_output",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -102,6 +111,7 @@
     {
       "starting_address": 8208,
       "name": "Kesselstatus",
+      "entity_id": "boiler_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -113,6 +123,7 @@
     {
       "starting_address": 8209,
       "name": "Volllaststunden",
+      "entity_id": "full_load_hours",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -125,6 +136,7 @@
     {
       "starting_address": 8213,
       "name": "Glutbett",
+      "entity_id": "fuel_bed",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -135,6 +147,7 @@
     {
       "starting_address": 8214,
       "name": "Sauerstoff Ist",
+      "entity_id": "oxygen_actual",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -146,6 +159,7 @@
     {
       "starting_address": 8215,
       "name": "Flammtemperatur Ist (value)",
+      "entity_id": "flame_temp_actual_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -157,6 +171,7 @@
     {
       "starting_address": 8216,
       "name": "Flammtemperatur Ist (status)",
+      "entity_id": "flame_temp_actual_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -168,6 +183,7 @@
     {
       "starting_address": 8217,
       "name": "Ultraschallsensor ist",
+      "entity_id": "ultrasound_sensor_is",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -179,6 +195,7 @@
     {
       "starting_address": 8218,
       "name": "Unterdruck Ist",
+      "entity_id": "negative_pressure_actual",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -190,6 +207,7 @@
     {
       "starting_address": 8219,
       "name": "Ausbrandtemperatur (value)",
+      "entity_id": "burnout_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -201,6 +219,7 @@
     {
       "starting_address": 8220,
       "name": "Ausbrandtemperatur (status)",
+      "entity_id": "burnout_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -212,6 +231,7 @@
     {
       "starting_address": 8221,
       "name": "Primärgebläse",
+      "entity_id": "primary_fan",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -223,6 +243,7 @@
     {
       "starting_address": 8222,
       "name": "Sekundärgebläse",
+      "entity_id": "secondary_fan",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -234,6 +255,7 @@
     {
       "starting_address": 8223,
       "name": "Saugzugstufe",
+      "entity_id": "induced_draught_phase",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -245,6 +267,7 @@
     {
       "starting_address": 8224,
       "name": "Nächste Wartung in",
+      "entity_id": "next_maintenance_in",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -256,6 +279,7 @@
     {
       "starting_address": 8226,
       "name": "Antrieb Fördersystem",
+      "entity_id": "drive_conveyor_system",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -267,6 +291,7 @@
     {
       "starting_address": 8227,
       "name": "Extern 1",
+      "entity_id": "external_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -278,6 +303,7 @@
     {
       "starting_address": 8228,
       "name": "Extern 2",
+      "entity_id": "external_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -289,6 +315,7 @@
     {
       "starting_address": 8229,
       "name": "Extern 3",
+      "entity_id": "external3",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -300,6 +327,7 @@
     {
       "starting_address": 8230,
       "name": "Brennstofffaktor",
+      "entity_id": "fuel_factor",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -311,6 +339,7 @@
     {
       "starting_address": 8236,
       "name": "Brennerleistung extern",
+      "entity_id": "burner_output_external",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -322,6 +351,7 @@
     {
       "starting_address": 8237,
       "name": "Kesseltemp. Soll Extern",
+      "entity_id": "boiler_temp_setpoint_extern",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -333,6 +363,7 @@
     {
       "starting_address": 8239,
       "name": "Asche 90% voll",
+      "entity_id": "ash_90_filled",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -344,6 +375,7 @@
     {
       "starting_address": 8240,
       "name": "Luftverschiebung",
+      "entity_id": "air_change",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -355,6 +387,7 @@
     {
       "starting_address": 8241,
       "name": "Zwischenbehälter Füllstand",
+      "entity_id": "hopper_fill_level",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -366,6 +399,7 @@
     {
       "starting_address": 8250,
       "name": "Außentemperatur Istwert (value)",
+      "entity_id": "outside_temp_act_value_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -377,6 +411,7 @@
     {
       "starting_address": 8251,
       "name": "Außentemperatur Istwert (status)",
+      "entity_id": "outside_temp_act_value_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -388,6 +423,7 @@
     {
       "starting_address": 9044,
       "name": "Multifunktionsausgang 1 (125)",
+      "entity_id": "multi_function_output_1_125",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -399,6 +435,7 @@
     {
       "starting_address": 9045,
       "name": "Multifunktionsausgang 2 (127)",
+      "entity_id": "multi_function_output_2_127",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -410,6 +447,7 @@
     {
       "starting_address": 9046,
       "name": "Multifunktionsausgang 3 (124)",
+      "entity_id": "multi_function_output_3_124",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -421,6 +459,7 @@
     {
       "starting_address": 9047,
       "name": "Multifunktionsausgang 4 (126)",
+      "entity_id": "multi_function_output_4_126",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -432,6 +471,7 @@
     {
       "starting_address": 9495,
       "name": "Modbus Überhitzung",
+      "entity_id": "modbus_overheating",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -443,6 +483,7 @@
     {
       "starting_address": 9496,
       "name": "Modbus Wärmeabnahme Max",
+      "entity_id": "modbus_heat_consumption_max",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -454,6 +495,7 @@
     {
       "starting_address": 9498,
       "name": "Drehzahl Saugzug",
+      "entity_id": "induced_draught_speed",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -465,6 +507,7 @@
     {
       "starting_address": 9877,
       "name": "Brennerleistung bestimmt durch",
+      "entity_id": "burner_output_determined_by",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -476,6 +519,7 @@
     {
       "starting_address": 9878,
       "name": "Wärmemenge gesamt",
+      "entity_id": "heat_quant_tot",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -488,6 +532,7 @@
     {
       "starting_address": 9970,
       "name": "Kesselstatus",
+      "entity_id": "boiler_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -499,6 +544,7 @@
     {
       "starting_address": 24576,
       "name": "Kessel Ein/Aus",
+      "entity_id": "boiler_on_off",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -510,6 +556,7 @@
     {
       "starting_address": 24579,
       "name": "Solltemperatur 1",
+      "entity_id": "setpoint_temperature_1",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -523,6 +570,7 @@
     {
       "starting_address": 24580,
       "name": "Solltemperatur 2",
+      "entity_id": "setpoint_temperature_2",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -536,6 +584,7 @@
     {
       "starting_address": 24581,
       "name": "Rücklauftemperatur Minimum",
+      "entity_id": "return_flow_temperature_minimum",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -549,6 +598,7 @@
     {
       "starting_address": 24583,
       "name": "Externe Vorgabe",
+      "entity_id": "external_specification",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -560,6 +610,7 @@
     {
       "starting_address": 24584,
       "name": "Kesselprogramm",
+      "entity_id": "boiler_program",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -571,6 +622,7 @@
     {
       "starting_address": 24849,
       "name": "Modbus Lifetick",
+      "entity_id": "modbus_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -581,6 +633,7 @@
     {
       "starting_address": 24850,
       "name": "Modbus Commit Lifetick",
+      "entity_id": "modbus_commit_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -591,6 +644,7 @@
     {
       "starting_address": 24851,
       "name": "Modbus Kesseltemperatur",
+      "entity_id": "modbus_boiler_temperature",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -602,6 +656,7 @@
     {
       "starting_address": 24852,
       "name": "Modbus Kesselleistung",
+      "entity_id": "modbus_boiler_output",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -613,6 +668,7 @@
     {
       "starting_address": 24854,
       "name": "Modbus Kesselanforderung",
+      "entity_id": "modbus_boiler_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -624,6 +680,7 @@
     {
       "starting_address": 24932,
       "name": "Modbus Puffertemperatur oben für Restwärmenutzung (value)",
+      "entity_id": "modbus_buffer_temperature_top_for_residual_heat_use_value",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -635,6 +692,7 @@
     {
       "starting_address": 24933,
       "name": "Modbus Puffertemperatur oben für Restwärmenutzung (status)",
+      "entity_id": "modbus_buffer_temperature_top_for_residual_heat_use_status",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -646,6 +704,7 @@
     {
       "starting_address": 24934,
       "name": "Modbus Puffertemperatur unten für Restwärmenutzung (value)",
+      "entity_id": "modbus_buffer_temperature_bottom_for_residual_heat_use_value",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -657,6 +716,7 @@
     {
       "starting_address": 24935,
       "name": "Modbus Puffertemperatur unten für Restwärmenutzung (status)",
+      "entity_id": "modbus_buffer_temperature_bottom_for_residual_heat_use_status",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -668,6 +728,7 @@
     {
       "starting_address": 25040,
       "name": "Modbus Überstromnutzung",
+      "entity_id": "modbus_overcurrent_usage",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

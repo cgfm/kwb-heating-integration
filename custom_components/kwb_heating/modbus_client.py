@@ -9,7 +9,17 @@ import inspect
 from pymodbus.client import AsyncModbusTcpClient
 from pymodbus.exceptions import ModbusException
 
-from .const import MODBUS_FUNCTION_CODES, ERROR_CONNECTION, ERROR_TIMEOUT
+from .const import (
+    MODBUS_FUNCTION_CODES,
+    ERROR_CONNECTION,
+    ERROR_TIMEOUT,
+    CONNECTION_TYPE_TCP,
+    CONNECTION_TYPE_SERIAL,
+    DEFAULT_BAUDRATE,
+    DEFAULT_PARITY,
+    DEFAULT_STOPBITS,
+    DEFAULT_BYTESIZE,
+)
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -17,12 +27,29 @@ _LOGGER = logging.getLogger(__name__)
 class KWBModbusClient:
     """Modbus client for KWB heating systems."""
 
-    def __init__(self, host: str, port: int = 502, slave_id: int = 1):
+    def __init__(
+        self,
+        host: str | None = None,
+        port: int = 502,
+        slave_id: int = 1,
+        connection_type: str = CONNECTION_TYPE_TCP,
+        serial_port: str | None = None,
+        baudrate: int = DEFAULT_BAUDRATE,
+        parity: str = DEFAULT_PARITY,
+        stopbits: int = DEFAULT_STOPBITS,
+        bytesize: int = DEFAULT_BYTESIZE,
+    ):
         """Initialize the Modbus client."""
+        self.connection_type = connection_type
         self.host = host
         self.port = port
+        self.serial_port = serial_port
+        self.baudrate = baudrate
+        self.parity = parity
+        self.stopbits = stopbits
+        self.bytesize = bytesize
         self.slave_id = slave_id
-        self._client: AsyncModbusTcpClient | None = None
+        self._client: Any = None
         self._connected = False
         self._lock = asyncio.Lock()
         self._unit_kwarg: str = "unit"  # will be auto-detected on connect
@@ -134,6 +161,32 @@ class KWBModbusClient:
                 except TypeError:
                     raise e_unit
 
+    @property
+    def _connection_label(self) -> str:
+        """Return a human-readable label for the current connection."""
+        if self.connection_type == CONNECTION_TYPE_SERIAL:
+            return f"{self.serial_port} (RTU, {self.baudrate} baud)"
+        return f"{self.host}:{self.port}"
+
+    def _create_client(self) -> Any:
+        """Create the appropriate pymodbus client based on connection type."""
+        if self.connection_type == CONNECTION_TYPE_SERIAL:
+            from pymodbus.client import AsyncModbusSerialClient
+
+            return AsyncModbusSerialClient(
+                port=self.serial_port,
+                baudrate=self.baudrate,
+                parity=self.parity,
+                stopbits=self.stopbits,
+                bytesize=self.bytesize,
+                timeout=10,
+            )
+        return AsyncModbusTcpClient(
+            host=self.host,
+            port=self.port,
+            timeout=10,
+        )
+
     async def connect(self) -> None:
         """Connect to the Modbus device."""
         async with self._lock:
@@ -151,16 +204,12 @@ class KWBModbusClient:
                         pass
                     self._client = None
 
-                self._client = AsyncModbusTcpClient(
-                    host=self.host,
-                    port=self.port,
-                    timeout=10,
-                )
+                self._client = self._create_client()
 
                 connection_result = await self._client.connect()
                 if connection_result:
                     self._connected = True
-                    _LOGGER.info("Connected to KWB heating system at %s:%d", self.host, self.port)
+                    _LOGGER.info("Connected to KWB heating system at %s", self._connection_label)
                     # Detect correct kwarg name for unit/slave depending on pymodbus version
                     try:
                         sig = inspect.signature(self._client.read_holding_registers)
@@ -175,7 +224,7 @@ class KWBModbusClient:
                     except Exception:
                         self._unit_kwarg = "unit"
                 else:
-                    _LOGGER.error("Failed to establish connection to %s:%d", self.host, self.port)
+                    _LOGGER.error("Failed to establish connection to %s", self._connection_label)
                     # Ensure client is closed on failure
                     try:
                         close_result = self._client.close()
@@ -188,7 +237,7 @@ class KWBModbusClient:
                     raise ConnectionError("Could not establish Modbus connection")
 
             except Exception as exc:
-                _LOGGER.error("Failed to connect to %s:%d - %s", self.host, self.port, exc)
+                _LOGGER.error("Failed to connect to %s - %s", self._connection_label, exc)
                 # Ensure we don't keep a half-open client
                 if self._client is not None:
                     try:

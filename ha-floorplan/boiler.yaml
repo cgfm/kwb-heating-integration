@@ -1,0 +1,214 @@
+type: custom:floorplan-card
+config:
+  defaults:
+    hover_action: hover-info
+    hover_info_filter:
+      - raw_value
+      - icon
+      - color_mode
+      - entity_picture
+      - supported_features
+      - device_class
+      - state_class
+      - assumed_state
+      - attribution
+      - entity_id
+      - last_changed
+      - last_updated
+      - context
+      - editable
+      - order
+    tap_action:
+      action: navigate
+      navigation_path: /lovelace/heizung
+  image:
+    location: /local/floorplan/kwb/boiler.svg
+    cache: false
+  functions: |
+    > return {
+      isIn: (val, arr) => arr.includes(val),
+      inRange: (val, min, max) => val >= min && val <= max
+    };
+  startup_action:
+    - action: call-service
+      service: floorplan.dataset_set
+      service_data:
+        element: svg1
+        key: theme
+        value: '${hass.themes.darkMode ? "dark" : "light"}'
+  rules:
+    - element: svg1
+      entity: sensor.heizung_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.dataset_set
+        service_data:
+          key: theme
+          value: '${hass.themes.darkMode ? "dark" : "light"}'
+    - element: ThermometerKalt
+      entity: sensor.heizung_buf_1_temperature_2_value
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${entity.state >= 60 ? "hidden" : ""}'
+    - element: ThermometerNormal
+      entity: sensor.heizung_buf_1_temperature_2_value
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${entity.state < 60 || entity.state >= 80 ? "hidden" : ""}'
+    - element: ThermometerHeiss
+      entity: sensor.heizung_buf_1_temperature_2_value
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${entity.state < 80 ? "hidden" : ""}'
+    - element: TemperaturText
+      entity: sensor.heizung_buf_1_temperature_2_value
+      state_action:
+        action: call-service
+        service: floorplan.text_set
+        service_data:
+          text: '${entity.state}°C'
+    - element: KesselStoerung
+      entity: sensor.heizung_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [7,8,44,47]) ? "" : "hidden"}'
+    - element: KesselFeuerklappeEin
+      entity: sensor.heizung_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [2,4,41,42]) ? "" : "hidden"}'
+    - element: KesselFeuerklappeAus
+      entity: sensor.heizung_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.inRange(entity.attributes.raw_value, 2, 4) || functions.inRange(entity.attributes.raw_value, 41, 42) ? "hidden" : ""}'
+    - element: KesselFlammeEin
+      entity: sensor.heizung_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [2,4]) || functions.inRange(entity.attributes.raw_value, 11, 19) || functions.inRange(entity.attributes.raw_value, 39, 42) ? "" : "hidden"}'
+    - element: KesselFlammeAus
+      entity: sensor.heizung_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [2,4]) || functions.inRange(entity.attributes.raw_value, 11, 19) || functions.inRange(entity.attributes.raw_value, 39, 42) ? "hidden" : ""}'
+    - element: KesselOval
+      entity: sensor.heizung_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.inRange(entity.attributes.raw_value, 21, 32) ? "oval-active" : "oval-inactive"}'
+    - element: Nachlegebalken
+      entity: sensor.heizung_maximum_fill_level
+      state_action:
+        action: call-service
+        service: floorplan.style_set
+        service_data:
+          style: >-
+            ${entity.attributes.raw_value == 0 ? "display: none;" :
+             "stroke: #000000; stroke-width: 3.49327;" + (
+             entity.attributes.raw_value == 1 ? " fill: url(#nachlegebalken-gradient-33);" :
+             entity.attributes.raw_value == 2 ? " fill: url(#nachlegebalken-gradient-67);" :
+             entity.attributes.raw_value == 3 ? " fill: url(#nachlegebalken-gradient-100);" : "")}
+    - element: PelletmodulStoerung
+      entity: sensor.heizung_pellet_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${entity.attributes.raw_value == 5 ? "" : "hidden"}'
+    - element: PelletmodulFeuerklappeEin
+      entity: sensor.heizung_pellet_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [3,4]) ? "" : "hidden"}'
+    - element: PelletmodulFeuerklappeAus
+      entity: sensor.heizung_pellet_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [3,4]) ? "hidden" : ""}'
+    - element: PelletmodulFlammeEin
+      entity: sensor.heizung_pellet_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [2,3]) ? "" : "hidden"}'
+    - element: PelletmodulFlammeAus
+      entity: sensor.heizung_pellet_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${functions.isIn(entity.attributes.raw_value, [2,3]) ? "hidden" : ""}'
+    - element: PelletmodulGesperrt
+      entity: switch.heizung_boiler_on_off
+      tap_action:
+        action: call-service
+        service: homeassistant.toggle
+        service_data:
+          entity_id: switch.heizung_boiler_on_off
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${entity.attributes.raw_value == 0 ? "" : "hidden"}'
+    - element: PelletmodulFreigegeben
+      entity: switch.heizung_boiler_on_off
+      tap_action:
+        action: call-service
+        service: homeassistant.toggle
+        service_data:
+          entity_id: switch.heizung_boiler_on_off
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${entity.attributes.raw_value == 1 ? "" : "hidden"}'
+    - element: PelletmodulOval
+      entity: sensor.heizung_pellet_boiler_status
+      state_action:
+        action: call-service
+        service: floorplan.class_set
+        service_data:
+          class: '${entity.attributes.raw_value == 1 ? "oval-active" : "oval-inactive"}'
+    - element: PelletmodulAschekasten
+      entity: sensor.heizung_fill_level_ash_container
+      state_action:
+        action: call-service
+        service: floorplan.style_set
+        service_data:
+          style: >-
+            fill: #888888; clip-path: polygon(0% 0%, ${entity.state}% 0%,
+            ${entity.state}% 100%, 0% 100%);
+    - element: Pelletspeicher
+      entity: number.heizung_residual_amount_fuel_storage
+      state_action:
+        action: call-service
+        service: floorplan.style_set
+        service_data:
+          style: >-
+            fill: #9a3737; clip-path: polygon(0% 0%, ${entity.state}% 0%,
+            ${entity.state}% 100%, 0% 100%);
+  stylesheet: /local/floorplan/kwb/boiler.css

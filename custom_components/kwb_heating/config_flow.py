@@ -15,6 +15,7 @@ import homeassistant.helpers.config_validation as cv
 
 from .const import (
     DOMAIN,
+    CONF_CONNECTION_TYPE,
     CONF_SLAVE_ID,
     CONF_ACCESS_LEVEL,
     CONF_UPDATE_INTERVAL,
@@ -26,6 +27,11 @@ from .const import (
     CONF_DEVICE_TYPE,
     CONF_DEVICE_NAME,
     CONF_LANGUAGE,
+    CONF_SERIAL_PORT,
+    CONF_BAUDRATE,
+    CONF_PARITY,
+    CONF_STOPBITS,
+    CONF_BYTESIZE,
     CONF_HEATING_CIRCUITS,
     CONF_BUFFER_STORAGE,
     CONF_DHW_STORAGE,
@@ -35,6 +41,12 @@ from .const import (
     CONF_BOILER_SEQUENCE,
     CONF_HEAT_METERS,
     CONF_TRANSFER_STATIONS,
+    CONNECTION_TYPE_TCP,
+    CONNECTION_TYPE_SERIAL,
+    DEFAULT_BAUDRATE,
+    DEFAULT_PARITY,
+    DEFAULT_STOPBITS,
+    DEFAULT_BYTESIZE,
 )
 from .modbus_client import KWBModbusClient
 
@@ -63,8 +75,27 @@ LANGUAGES = {
 }
 
 STEP_USER_DATA_SCHEMA = vol.Schema({
+    vol.Required(CONF_CONNECTION_TYPE, default=CONNECTION_TYPE_TCP): selector.SelectSelector(
+        selector.SelectSelectorConfig(
+            options=[CONNECTION_TYPE_TCP, CONNECTION_TYPE_SERIAL],
+            translation_key="connection_type",
+            mode=selector.SelectSelectorMode.DROPDOWN,
+        )
+    ),
+})
+
+STEP_TCP_DATA_SCHEMA = vol.Schema({
     vol.Required(CONF_HOST): cv.string,
     vol.Optional(CONF_PORT, default=DEFAULT_PORT): cv.port,
+    vol.Optional(CONF_SLAVE_ID, default=DEFAULT_SLAVE_ID): vol.All(vol.Coerce(int), vol.Range(min=1, max=255)),
+})
+
+STEP_SERIAL_DATA_SCHEMA = vol.Schema({
+    vol.Required(CONF_SERIAL_PORT): cv.string,
+    vol.Optional(CONF_BAUDRATE, default=DEFAULT_BAUDRATE): vol.In([9600, 19200, 38400, 57600, 115200]),
+    vol.Optional(CONF_PARITY, default=DEFAULT_PARITY): vol.In({"N": "None", "E": "Even", "O": "Odd"}),
+    vol.Optional(CONF_STOPBITS, default=DEFAULT_STOPBITS): vol.In([1, 2]),
+    vol.Optional(CONF_BYTESIZE, default=DEFAULT_BYTESIZE): vol.In([7, 8]),
     vol.Optional(CONF_SLAVE_ID, default=DEFAULT_SLAVE_ID): vol.All(vol.Coerce(int), vol.Range(min=1, max=255)),
 })
 
@@ -123,13 +154,20 @@ STEP_EQUIPMENT_DATA_SCHEMA = vol.Schema({
 
 async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str, Any]:
     """Validate the user input allows us to connect."""
-    
+    connection_type = data.get(CONF_CONNECTION_TYPE, CONNECTION_TYPE_TCP)
+
     client = KWBModbusClient(
-        host=data[CONF_HOST],
-        port=data[CONF_PORT],
-        slave_id=data[CONF_SLAVE_ID]
+        connection_type=connection_type,
+        host=data.get(CONF_HOST),
+        port=data.get(CONF_PORT, DEFAULT_PORT),
+        serial_port=data.get(CONF_SERIAL_PORT),
+        baudrate=data.get(CONF_BAUDRATE, DEFAULT_BAUDRATE),
+        parity=data.get(CONF_PARITY, DEFAULT_PARITY),
+        stopbits=data.get(CONF_STOPBITS, DEFAULT_STOPBITS),
+        bytesize=data.get(CONF_BYTESIZE, DEFAULT_BYTESIZE),
+        slave_id=data.get(CONF_SLAVE_ID, DEFAULT_SLAVE_ID),
     )
-    
+
     try:
         # Test connection by reading a basic register
         await client.connect()
@@ -140,10 +178,14 @@ async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str,
     except Exception as exc:
         _LOGGER.error("Cannot connect to KWB heating system: %s", exc)
         raise CannotConnect from exc
-    
+
     # Return info that you want to store in the config entry.
+    if connection_type == CONNECTION_TYPE_SERIAL:
+        title = f"KWB Heating ({data[CONF_SERIAL_PORT]})"
+    else:
+        title = f"KWB Heating ({data[CONF_HOST]})"
     return {
-        "title": f"KWB Heating ({data[CONF_HOST]})",
+        "title": title,
         **data,
     }
 
@@ -166,22 +208,35 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     async def async_step_user(
         self, user_input: dict[str, Any] | None = None
     ) -> FlowResult:
-        """Handle the initial step - connection settings."""
-        errors: dict[str, str] = {}
-        
+        """Handle the initial step - connection type selection."""
         if user_input is not None:
+            self.data[CONF_CONNECTION_TYPE] = user_input[CONF_CONNECTION_TYPE]
+            if user_input[CONF_CONNECTION_TYPE] == CONNECTION_TYPE_SERIAL:
+                return await self.async_step_serial()
+            return await self.async_step_tcp()
+
+        return self.async_show_form(
+            step_id="user",
+            data_schema=STEP_USER_DATA_SCHEMA,
+        )
+
+    async def async_step_tcp(
+        self, user_input: dict[str, Any] | None = None
+    ) -> FlowResult:
+        """Handle TCP connection settings."""
+        errors: dict[str, str] = {}
+
+        if user_input is not None:
+            self.data.update(user_input)
             try:
-                info = await validate_input(self.hass, user_input)
-                self.data.update(user_input)
-                
-                # Create unique_id from host and slave_id
+                await validate_input(self.hass, self.data)
+
                 unique_id = f"{user_input[CONF_HOST]}_{user_input[CONF_SLAVE_ID]}"
                 await self.async_set_unique_id(unique_id)
                 self._abort_if_unique_id_configured()
-                
-                # Move to device selection step
+
                 return await self.async_step_device()
-                
+
             except CannotConnect:
                 errors["base"] = "cannot_connect"
             except InvalidHost:
@@ -191,12 +246,38 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 errors["base"] = "unknown"
 
         return self.async_show_form(
-            step_id="user",
-            data_schema=STEP_USER_DATA_SCHEMA,
+            step_id="tcp",
+            data_schema=STEP_TCP_DATA_SCHEMA,
             errors=errors,
-            description_placeholders={
-                "access_levels": ", ".join(f"{k}: {v}" for k, v in ACCESS_LEVELS.items())
-            }
+        )
+
+    async def async_step_serial(
+        self, user_input: dict[str, Any] | None = None
+    ) -> FlowResult:
+        """Handle serial/RTU connection settings."""
+        errors: dict[str, str] = {}
+
+        if user_input is not None:
+            self.data.update(user_input)
+            try:
+                await validate_input(self.hass, self.data)
+
+                unique_id = f"{user_input[CONF_SERIAL_PORT]}_{user_input[CONF_SLAVE_ID]}"
+                await self.async_set_unique_id(unique_id)
+                self._abort_if_unique_id_configured()
+
+                return await self.async_step_device()
+
+            except CannotConnect:
+                errors["base"] = "cannot_connect"
+            except Exception:  # pylint: disable=broad-except
+                _LOGGER.exception("Unexpected exception")
+                errors["base"] = "unknown"
+
+        return self.async_show_form(
+            step_id="serial",
+            data_schema=STEP_SERIAL_DATA_SCHEMA,
+            errors=errors,
         )
 
     async def async_step_device(
@@ -261,7 +342,11 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             self.data.update(user_input)
             
             # Create the final config entry using the custom device name
-            title = f"{self.data[CONF_DEVICE_NAME]} ({self.data[CONF_HOST]})"
+            if self.data.get(CONF_CONNECTION_TYPE) == CONNECTION_TYPE_SERIAL:
+                connection_label = self.data.get(CONF_SERIAL_PORT, "serial")
+            else:
+                connection_label = self.data.get(CONF_HOST, "unknown")
+            title = f"{self.data[CONF_DEVICE_NAME]} ({connection_label})"
             
             return self.async_create_entry(
                 title=title,
@@ -316,10 +401,14 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                         updated_data = {**self._config_entry.data, CONF_DEVICE_NAME: user_input[CONF_DEVICE_NAME]}
                         
                         # Update config entry with new data and title
+                        if updated_data.get(CONF_CONNECTION_TYPE) == CONNECTION_TYPE_SERIAL:
+                            conn_label = updated_data.get(CONF_SERIAL_PORT, "serial")
+                        else:
+                            conn_label = updated_data.get(CONF_HOST, "unknown")
                         self.hass.config_entries.async_update_entry(
                             self._config_entry,
                             data=updated_data,
-                            title=f"{user_input[CONF_DEVICE_NAME]} ({updated_data[CONF_HOST]})"
+                            title=f"{user_input[CONF_DEVICE_NAME]} ({conn_label})"
                         )
                     
                     # Create options entry with equipment settings (excluding device name from options)

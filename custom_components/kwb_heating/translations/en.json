@@ -2,11 +2,30 @@
   "config": {
     "step": {
       "user": {
-        "title": "KWB Heating System - Connection",
-        "description": "Configure your KWB heating system connection.\n\nAccess Levels:\n{access_levels}",
+        "title": "KWB Heating System - Connection Type",
+        "description": "Select how your KWB heating system is connected.",
+        "data": {
+          "connection_type": "Connection Type"
+        }
+      },
+      "tcp": {
+        "title": "KWB Heating System - TCP Connection",
+        "description": "Configure the Modbus TCP connection to your KWB heating system.",
         "data": {
           "host": "IP Address or Hostname",
           "port": "Modbus TCP Port",
+          "slave_id": "Modbus Slave ID"
+        }
+      },
+      "serial": {
+        "title": "KWB Heating System - Serial Connection (RTU)",
+        "description": "Configure the Modbus RTU serial connection to your KWB heating system.\n\nConnect a USB/RS485 adapter to your Home Assistant host.",
+        "data": {
+          "serial_port": "Serial Port (e.g. /dev/ttyUSB0)",
+          "baudrate": "Baud Rate",
+          "parity": "Parity",
+          "stopbits": "Stop Bits",
+          "bytesize": "Data Bits",
           "slave_id": "Modbus Slave ID"
         }
       },
@@ -84,6 +103,12 @@
     }
   },
   "selector": {
+    "connection_type": {
+      "options": {
+        "tcp": "Modbus TCP (Network)",
+        "serial": "Modbus RTU (USB/RS485)"
+      }
+    },
     "language": {
       "options": {
         "auto": "Automatic (use Home Assistant language)",

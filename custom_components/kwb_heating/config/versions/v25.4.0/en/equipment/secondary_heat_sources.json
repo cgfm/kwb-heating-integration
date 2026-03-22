@@ -3,11 +3,12 @@
     {
       "starting_address": 8981,
       "name": "Boiler pump",
+      "entity_id": "shs_1_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -15,11 +16,12 @@
     {
       "starting_address": 8982,
       "name": "Boiler pump",
+      "entity_id": "shs_2_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -27,11 +29,12 @@
     {
       "starting_address": 8983,
       "name": "Boiler pump",
+      "entity_id": "shs_3_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -39,11 +42,12 @@
     {
       "starting_address": 8984,
       "name": "Boiler pump",
+      "entity_id": "shs_4_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -51,11 +55,12 @@
     {
       "starting_address": 8985,
       "name": "Boiler pump",
+      "entity_id": "shs_5_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -63,11 +68,12 @@
     {
       "starting_address": 8986,
       "name": "Boiler pump",
+      "entity_id": "shs_6_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -75,11 +81,12 @@
     {
       "starting_address": 8987,
       "name": "Boiler pump",
+      "entity_id": "shs_7_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -87,11 +94,12 @@
     {
       "starting_address": 8988,
       "name": "Boiler pump",
+      "entity_id": "shs_8_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -99,11 +107,12 @@
     {
       "starting_address": 8989,
       "name": "Boiler pump",
+      "entity_id": "shs_9_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -111,11 +120,12 @@
     {
       "starting_address": 8990,
       "name": "Boiler pump",
+      "entity_id": "shs_10_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -123,11 +133,12 @@
     {
       "starting_address": 8991,
       "name": "Boiler pump",
+      "entity_id": "shs_11_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -135,11 +146,12 @@
     {
       "starting_address": 8992,
       "name": "Boiler pump",
+      "entity_id": "shs_12_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -147,11 +159,12 @@
     {
       "starting_address": 8993,
       "name": "Boiler pump",
+      "entity_id": "shs_13_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -159,11 +172,12 @@
     {
       "starting_address": 8994,
       "name": "Boiler pump",
+      "entity_id": "shs_14_boiler_pump",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "524",
       "parameter": "ZK.o_pumpe"
@@ -171,11 +185,12 @@
     {
       "starting_address": 8998,
       "name": "Temperature (value)",
+      "entity_id": "shs_1_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -183,11 +198,12 @@
     {
       "starting_address": 8999,
       "name": "Temperature (status)",
+      "entity_id": "shs_1_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -195,11 +211,12 @@
     {
       "starting_address": 9000,
       "name": "Temperature (value)",
+      "entity_id": "shs_2_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -207,11 +224,12 @@
     {
       "starting_address": 9001,
       "name": "Temperature (status)",
+      "entity_id": "shs_2_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -219,11 +237,12 @@
     {
       "starting_address": 9002,
       "name": "Temperature (value)",
+      "entity_id": "shs_3_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -231,11 +250,12 @@
     {
       "starting_address": 9003,
       "name": "Temperature (status)",
+      "entity_id": "shs_3_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -243,11 +263,12 @@
     {
       "starting_address": 9004,
       "name": "Temperature (value)",
+      "entity_id": "shs_4_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -255,11 +276,12 @@
     {
       "starting_address": 9005,
       "name": "Temperature (status)",
+      "entity_id": "shs_4_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -267,11 +289,12 @@
     {
       "starting_address": 9006,
       "name": "Temperature (value)",
+      "entity_id": "shs_5_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -279,11 +302,12 @@
     {
       "starting_address": 9007,
       "name": "Temperature (status)",
+      "entity_id": "shs_5_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -291,11 +315,12 @@
     {
       "starting_address": 9008,
       "name": "Temperature (value)",
+      "entity_id": "shs_6_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -303,11 +328,12 @@
     {
       "starting_address": 9009,
       "name": "Temperature (status)",
+      "entity_id": "shs_6_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -315,11 +341,12 @@
     {
       "starting_address": 9010,
       "name": "Temperature (value)",
+      "entity_id": "shs_7_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -327,11 +354,12 @@
     {
       "starting_address": 9011,
       "name": "Temperature (status)",
+      "entity_id": "shs_7_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -339,11 +367,12 @@
     {
       "starting_address": 9012,
       "name": "Temperature (value)",
+      "entity_id": "shs_8_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -351,11 +380,12 @@
     {
       "starting_address": 9013,
       "name": "Temperature (status)",
+      "entity_id": "shs_8_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -363,11 +393,12 @@
     {
       "starting_address": 9014,
       "name": "Temperature (value)",
+      "entity_id": "shs_9_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -375,11 +406,12 @@
     {
       "starting_address": 9015,
       "name": "Temperature (status)",
+      "entity_id": "shs_9_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -387,11 +419,12 @@
     {
       "starting_address": 9016,
       "name": "Temperature (value)",
+      "entity_id": "shs_10_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -399,11 +432,12 @@
     {
       "starting_address": 9017,
       "name": "Temperature (status)",
+      "entity_id": "shs_10_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -411,11 +445,12 @@
     {
       "starting_address": 9018,
       "name": "Temperature (value)",
+      "entity_id": "shs_11_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -423,11 +458,12 @@
     {
       "starting_address": 9019,
       "name": "Temperature (status)",
+      "entity_id": "shs_11_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -435,11 +471,12 @@
     {
       "starting_address": 9020,
       "name": "Temperature (value)",
+      "entity_id": "shs_12_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -447,11 +484,12 @@
     {
       "starting_address": 9021,
       "name": "Temperature (status)",
+      "entity_id": "shs_12_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -459,11 +497,12 @@
     {
       "starting_address": 9022,
       "name": "Temperature (value)",
+      "entity_id": "shs_13_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -471,11 +510,12 @@
     {
       "starting_address": 9023,
       "name": "Temperature (status)",
+      "entity_id": "shs_13_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -483,11 +523,12 @@
     {
       "starting_address": 9024,
       "name": "Temperature (value)",
+      "entity_id": "shs_14_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "1/10°C",
       "id": "521",
       "parameter": "ZK.i_temperatur.value"
@@ -495,11 +536,12 @@
     {
       "starting_address": 9025,
       "name": "Temperature (status)",
+      "entity_id": "shs_14_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "521",
       "parameter": "ZK.i_temperatur.status"
@@ -507,11 +549,12 @@
     {
       "starting_address": 9029,
       "name": "Request",
+      "entity_id": "shs_1_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -519,11 +562,12 @@
     {
       "starting_address": 9030,
       "name": "Request",
+      "entity_id": "shs_2_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -531,11 +575,12 @@
     {
       "starting_address": 9031,
       "name": "Request",
+      "entity_id": "shs_3_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -543,11 +588,12 @@
     {
       "starting_address": 9032,
       "name": "Request",
+      "entity_id": "shs_4_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -555,11 +601,12 @@
     {
       "starting_address": 9033,
       "name": "Request",
+      "entity_id": "shs_5_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -567,11 +614,12 @@
     {
       "starting_address": 9034,
       "name": "Request",
+      "entity_id": "shs_6_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -579,11 +627,12 @@
     {
       "starting_address": 9035,
       "name": "Request",
+      "entity_id": "shs_7_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -591,11 +640,12 @@
     {
       "starting_address": 9036,
       "name": "Request",
+      "entity_id": "shs_8_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -603,11 +653,12 @@
     {
       "starting_address": 9037,
       "name": "Request",
+      "entity_id": "shs_9_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -615,11 +666,12 @@
     {
       "starting_address": 9038,
       "name": "Request",
+      "entity_id": "shs_10_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -627,11 +679,12 @@
     {
       "starting_address": 9039,
       "name": "Request",
+      "entity_id": "shs_11_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -639,11 +692,12 @@
     {
       "starting_address": 9040,
       "name": "Request",
+      "entity_id": "shs_12_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -651,11 +705,12 @@
     {
       "starting_address": 9041,
       "name": "Request",
+      "entity_id": "shs_13_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -663,11 +718,12 @@
     {
       "starting_address": 9042,
       "name": "Request",
+      "entity_id": "shs_14_request",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "523",
       "parameter": "ZK.o_anforderung"
@@ -675,11 +731,12 @@
     {
       "starting_address": 9991,
       "name": "Status",
+      "entity_id": "shs_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -687,11 +744,12 @@
     {
       "starting_address": 9992,
       "name": "Status",
+      "entity_id": "shs_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -699,11 +757,12 @@
     {
       "starting_address": 9993,
       "name": "Status",
+      "entity_id": "shs_3_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -711,11 +770,12 @@
     {
       "starting_address": 9994,
       "name": "Status",
+      "entity_id": "shs_4_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -723,11 +783,12 @@
     {
       "starting_address": 9995,
       "name": "Status",
+      "entity_id": "shs_5_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -735,11 +796,12 @@
     {
       "starting_address": 9996,
       "name": "Status",
+      "entity_id": "shs_6_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -747,11 +809,12 @@
     {
       "starting_address": 9997,
       "name": "Status",
+      "entity_id": "shs_7_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -759,11 +822,12 @@
     {
       "starting_address": 9998,
       "name": "Status",
+      "entity_id": "shs_8_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -771,11 +835,12 @@
     {
       "starting_address": 9999,
       "name": "Status",
+      "entity_id": "shs_9_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -783,11 +848,12 @@
     {
       "starting_address": 10000,
       "name": "Status",
+      "entity_id": "shs_10_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -795,11 +861,12 @@
     {
       "starting_address": 10001,
       "name": "Status",
+      "entity_id": "shs_11_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -807,11 +874,12 @@
     {
       "starting_address": 10002,
       "name": "Status",
+      "entity_id": "shs_12_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -819,11 +887,12 @@
     {
       "starting_address": 10003,
       "name": "Status",
+      "entity_id": "shs_13_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -831,11 +900,12 @@
     {
       "starting_address": 10004,
       "name": "Status",
+      "entity_id": "shs_14_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "zk_status_t",
       "id": "525",
       "parameter": "ZK.status"
@@ -843,11 +913,12 @@
     {
       "starting_address": 10007,
       "name": "Fault",
+      "entity_id": "shs_1_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -855,11 +926,12 @@
     {
       "starting_address": 10008,
       "name": "Fault",
+      "entity_id": "shs_2_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -867,11 +939,12 @@
     {
       "starting_address": 10009,
       "name": "Fault",
+      "entity_id": "shs_3_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -879,11 +952,12 @@
     {
       "starting_address": 10010,
       "name": "Fault",
+      "entity_id": "shs_4_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -891,11 +965,12 @@
     {
       "starting_address": 10011,
       "name": "Fault",
+      "entity_id": "shs_5_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -903,11 +978,12 @@
     {
       "starting_address": 10012,
       "name": "Fault",
+      "entity_id": "shs_6_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -915,11 +991,12 @@
     {
       "starting_address": 10013,
       "name": "Fault",
+      "entity_id": "shs_7_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -927,11 +1004,12 @@
     {
       "starting_address": 10014,
       "name": "Fault",
+      "entity_id": "shs_8_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -939,11 +1017,12 @@
     {
       "starting_address": 10015,
       "name": "Fault",
+      "entity_id": "shs_9_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -951,11 +1030,12 @@
     {
       "starting_address": 10016,
       "name": "Fault",
+      "entity_id": "shs_10_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -963,11 +1043,12 @@
     {
       "starting_address": 10017,
       "name": "Fault",
+      "entity_id": "shs_11_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -975,11 +1056,12 @@
     {
       "starting_address": 10018,
       "name": "Fault",
+      "entity_id": "shs_12_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -987,11 +1069,12 @@
     {
       "starting_address": 10019,
       "name": "Fault",
+      "entity_id": "shs_13_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -999,11 +1082,12 @@
     {
       "starting_address": 10020,
       "name": "Fault",
+      "entity_id": "shs_14_fault",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "system_yes_no_t",
       "id": "2508",
       "parameter": "ZK.i_stoerung"
@@ -1011,11 +1095,12 @@
     {
       "starting_address": 10028,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_1_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1023,11 +1108,12 @@
     {
       "starting_address": 10029,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_1_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1035,11 +1121,12 @@
     {
       "starting_address": 10030,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_2_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1047,11 +1134,12 @@
     {
       "starting_address": 10031,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_2_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1059,11 +1147,12 @@
     {
       "starting_address": 10032,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_3_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1071,11 +1160,12 @@
     {
       "starting_address": 10033,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_3_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1083,11 +1173,12 @@
     {
       "starting_address": 10034,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_4_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1095,11 +1186,12 @@
     {
       "starting_address": 10035,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_4_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1107,11 +1199,12 @@
     {
       "starting_address": 10036,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_5_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1119,11 +1212,12 @@
     {
       "starting_address": 10037,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_5_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1131,11 +1225,12 @@
     {
       "starting_address": 10038,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_6_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1143,11 +1238,12 @@
     {
       "starting_address": 10039,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_6_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1155,11 +1251,12 @@
     {
       "starting_address": 10040,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_7_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1167,11 +1264,12 @@
     {
       "starting_address": 10041,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_7_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1179,11 +1277,12 @@
     {
       "starting_address": 10042,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_8_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1191,11 +1290,12 @@
     {
       "starting_address": 10043,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_8_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1203,11 +1303,12 @@
     {
       "starting_address": 10044,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_9_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1215,11 +1316,12 @@
     {
       "starting_address": 10045,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_9_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1227,11 +1329,12 @@
     {
       "starting_address": 10046,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_10_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1239,11 +1342,12 @@
     {
       "starting_address": 10047,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_10_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1251,11 +1355,12 @@
     {
       "starting_address": 10048,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_11_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1263,11 +1368,12 @@
     {
       "starting_address": 10049,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_11_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1275,11 +1381,12 @@
     {
       "starting_address": 10050,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_12_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1287,11 +1394,12 @@
     {
       "starting_address": 10051,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_12_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1299,11 +1407,12 @@
     {
       "starting_address": 10052,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_13_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1311,11 +1420,12 @@
     {
       "starting_address": 10053,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_13_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1323,11 +1433,12 @@
     {
       "starting_address": 10054,
       "name": "Buffer temperature (value)",
+      "entity_id": "shs_14_buffer_temperature_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "1/10°C",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value"
@@ -1335,11 +1446,12 @@
     {
       "starting_address": 10055,
       "name": "Buffer temperature (status)",
+      "entity_id": "shs_14_buffer_temperature_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "system_sensor_status_t",
       "id": "2985",
       "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status"
@@ -1347,11 +1459,12 @@
     {
       "starting_address": 25024,
       "name": "Modbus Request",
+      "entity_id": "shs_1_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1359,11 +1472,12 @@
     {
       "starting_address": 25025,
       "name": "Modbus Request",
+      "entity_id": "shs_2_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1371,11 +1485,12 @@
     {
       "starting_address": 25026,
       "name": "Modbus Request",
+      "entity_id": "shs_3_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1383,11 +1498,12 @@
     {
       "starting_address": 25027,
       "name": "Modbus Request",
+      "entity_id": "shs_4_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1395,11 +1511,12 @@
     {
       "starting_address": 25028,
       "name": "Modbus Request",
+      "entity_id": "shs_5_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1407,11 +1524,12 @@
     {
       "starting_address": 25029,
       "name": "Modbus Request",
+      "entity_id": "shs_6_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1419,11 +1537,12 @@
     {
       "starting_address": 25030,
       "name": "Modbus Request",
+      "entity_id": "shs_7_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1431,11 +1550,12 @@
     {
       "starting_address": 25031,
       "name": "Modbus Request",
+      "entity_id": "shs_8_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1443,11 +1563,12 @@
     {
       "starting_address": 25032,
       "name": "Modbus Request",
+      "entity_id": "shs_9_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1455,11 +1576,12 @@
     {
       "starting_address": 25033,
       "name": "Modbus Request",
+      "entity_id": "shs_10_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1467,11 +1589,12 @@
     {
       "starting_address": 25034,
       "name": "Modbus Request",
+      "entity_id": "shs_11_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1479,11 +1602,12 @@
     {
       "starting_address": 25035,
       "name": "Modbus Request",
+      "entity_id": "shs_12_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1491,11 +1615,12 @@
     {
       "starting_address": 25036,
       "name": "Modbus Request",
+      "entity_id": "shs_13_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1503,11 +1628,12 @@
     {
       "starting_address": 25037,
       "name": "Modbus Request",
+      "entity_id": "shs_14_modbus_request",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "system_ein_aus_t",
       "id": "2595",
       "parameter": "ZK.waermepumpe_modbus_anforderung"
@@ -1515,11 +1641,12 @@
     {
       "starting_address": 25042,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_1_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 1",
+      "index": "SHS 1",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1529,11 +1656,12 @@
     {
       "starting_address": 25043,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_2_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 2",
+      "index": "SHS 2",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1543,11 +1671,12 @@
     {
       "starting_address": 25044,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_3_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 3",
+      "index": "SHS 3",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1557,11 +1686,12 @@
     {
       "starting_address": 25045,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_4_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 4",
+      "index": "SHS 4",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1571,11 +1701,12 @@
     {
       "starting_address": 25046,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_5_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 5",
+      "index": "SHS 5",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1585,11 +1716,12 @@
     {
       "starting_address": 25047,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_6_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 6",
+      "index": "SHS 6",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1599,11 +1731,12 @@
     {
       "starting_address": 25048,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_7_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 7",
+      "index": "SHS 7",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1613,11 +1746,12 @@
     {
       "starting_address": 25049,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_8_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 8",
+      "index": "SHS 8",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1627,11 +1761,12 @@
     {
       "starting_address": 25050,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_9_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 9",
+      "index": "SHS 9",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1641,11 +1776,12 @@
     {
       "starting_address": 25051,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_10_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 10",
+      "index": "SHS 10",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1655,11 +1791,12 @@
     {
       "starting_address": 25052,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_11_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 11",
+      "index": "SHS 11",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1669,11 +1806,12 @@
     {
       "starting_address": 25053,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_12_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 12",
+      "index": "SHS 12",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1683,11 +1821,12 @@
     {
       "starting_address": 25054,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_13_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 13",
+      "index": "SHS 13",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,
@@ -1697,11 +1836,12 @@
     {
       "starting_address": 25055,
       "name": "Buffer temperature max.",
+      "entity_id": "shs_14_buffer_temperature_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
       "expert_level": "readwrite",
-      "index": "ZWQ 14",
+      "index": "SHS 14",
       "unit_value_table": "1/10°C",
       "min": 200,
       "max": 800,

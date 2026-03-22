@@ -22,7 +22,7 @@ from .coordinator import KWBDataUpdateCoordinator
 from .entity import KWBBaseEntity
 from .icon_utils import get_entity_icon
 
-# Device types that support firewood (Stückholz)
+# Device types that support firewood (logwood)
 FIREWOOD_DEVICE_TYPES = [
     "KWB CF 1",
     "KWB CF 1.5",
@@ -31,18 +31,18 @@ FIREWOOD_DEVICE_TYPES = [
     "KWB Multifire",
 ]
 
-# Modbus address for firewood boiler status (Status Stückholz)
+# Modbus address for firewood boiler status (logwood status)
 FIREWOOD_STATUS_ADDRESS = 8212
 
-# Boiler status values indicating active firewood operation (ksm_kesselstatus_anzeige_t)
+# Boiler status values indicating active firewood operation (boiler status display_t)
 FIREWOOD_ACTIVE_VALUES = [
-    36,  # Anheizen
-    37,  # Warten Zündanf.
-    38,  # Warten Zündfreig.
-    39,  # Start Zündung
-    40,  # Zünden
-    41,  # Heizen
-    42,  # Feuerhaltung
+    36,  # Igniting
+    37,  # Waiting for ignition start
+    38,  # Waiting for ignition release
+    39,  # Start ignition
+    40,  # Igniting
+    41,  # Heating
+    42,  # Fire holding
 ]
 
 # Translations for the Last Firewood Fire sensor
@@ -255,8 +255,9 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
         device_prefix_id = coordinator.sanitize_for_entity_id(device_prefix)
         self._attr_unique_id = f"kwb_heating_{device_identifier}_{device_prefix_id}_last_firewood_fire"
 
-        # Set explicit entity_id using language-specific suffix
-        self._attr_entity_id = f"sensor.{device_prefix_id}_{translations['entity_id_suffix']}"
+        # Set explicit entity_id - always use English for language-independent IDs
+        english_suffix = FIREWOOD_SENSOR_TRANSLATIONS["en"]["entity_id_suffix"]
+        self._attr_entity_id = f"sensor.{device_prefix_id}_{english_suffix}"
 
         # Set device info
         self._attr_device_info = coordinator.device_info

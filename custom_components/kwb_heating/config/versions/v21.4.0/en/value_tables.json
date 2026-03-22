@@ -193,6 +193,10 @@
     "kfs_profile_t": {
       "0": "Winter",
       "1": "Summer"
+    },
+    "system_ein_aus_t": {
+      "0": "Off",
+      "1": "On"
     }
   }
 }
