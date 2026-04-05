@@ -10,7 +10,6 @@ from typing import Any
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_HOST, CONF_PORT
 from homeassistant.core import HomeAssistant
-from homeassistant.exceptions import ConfigEntryNotReady
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 
 from .const import (
@@ -34,6 +33,7 @@ from .const import (
     CONF_SOLAR,
     CONF_BOILER_SEQUENCE,
     CONF_HEAT_METERS,
+    EQUIPMENT_KEYS,
     CONNECTION_TYPE_TCP,
     CONNECTION_TYPE_SERIAL,
     DEFAULT_PORT,
@@ -87,6 +87,9 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             update_interval=timedelta(seconds=update_interval),
         )
 
+        # Lock to protect _registers during re-initialization (issue #11)
+        self._init_lock = asyncio.Lock()
+
         # Initialize modbus client
         self.modbus_client = KWBModbusClient(
             connection_type=self.connection_type,
@@ -108,6 +111,15 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         self.detected_version: str | None = None
         self.current_language: str = self.config.get("language", "auto")
 
+    async def ensure_initialized(self) -> None:
+        """Ensure the register manager is initialized.
+
+        Public helper to avoid duplicating the init guard across all platform
+        setup functions (issue #17).
+        """
+        if not hasattr(self, '_registers') or self._registers is None:
+            await self._initialize_register_manager()
+
     async def _detect_version(self) -> None:
         """Detect software version from the device."""
         try:
@@ -126,7 +138,16 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             self.detected_version = self.version_manager.default_version
 
     async def _initialize_register_manager(self) -> None:
-        """Initialize or reinitialize the register manager asynchronously."""
+        """Initialize or reinitialize the register manager asynchronously.
+
+        Protected by _init_lock to prevent race conditions when called
+        concurrently from _async_update_data and async_update_config.
+        """
+        async with self._init_lock:
+            await self._initialize_register_manager_locked()
+
+    async def _initialize_register_manager_locked(self) -> None:
+        """Internal register manager initialization (must hold _init_lock)."""
         # Initialize managers asynchronously (loads config files)
         await self.version_manager.async_initialize()
         await self.language_manager.async_initialize()
@@ -217,9 +238,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         
         equipment_changed = any(
             old_config.get(key) != self.config.get(key)
-            for key in [CONF_HEATING_CIRCUITS, CONF_BUFFER_STORAGE, CONF_DHW_STORAGE, 
-                       CONF_SECONDARY_HEAT_SOURCES, CONF_CIRCULATION, CONF_SOLAR,
-                       CONF_BOILER_SEQUENCE, CONF_HEAT_METERS]
+            for key in EQUIPMENT_KEYS
         )
         
         # Update interval changed
@@ -270,9 +289,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             return processed_data
             
         except Exception as exc:
-            _LOGGER.warning("Error updating data from KWB heating system: %s", exc)
-            # Return empty dict instead of raising exception to allow retry
-            return {}
+            raise UpdateFailed(f"Error communicating with KWB heating system: {exc}") from exc
 
     def _process_register_value(self, register: dict, raw_value: int) -> dict[str, Any]:
         """Process raw register value according to register definition."""
@@ -320,10 +337,17 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
                 _LOGGER.error("Register %d not found in configuration", address)
                 return False
             
-            # Check if register is writable
-            user_level = register.get("user_level", "")
-            if user_level != "readwrite":
-                _LOGGER.error("Register %d is not writable (user_level: %s)", address, user_level)
+            # Check if register is writable at the configured access level
+            access_level = self.config.get(CONF_ACCESS_LEVEL, self.access_level)
+            if access_level == "ExpertLevel":
+                write_access = register.get("expert_level", "")
+            else:
+                write_access = register.get("user_level", "")
+            if write_access != "readwrite":
+                _LOGGER.error(
+                    "Register %d is not writable at %s (access: %s)",
+                    address, access_level, write_access,
+                )
                 return False
                 
             # Check if this is a 32-bit register (2 Modbus registers)
@@ -344,8 +368,9 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             
             if success:
                 _LOGGER.debug("Successfully wrote value %d to register %d", value, address)
-                # Update our data immediately
-                await self.async_request_refresh()
+                # The calling entity performs an optimistic local update.
+                # The next scheduled poll will confirm the value — no need for
+                # a full refresh of all registers here (issue #13).
             else:
                 _LOGGER.error("Failed to write value %d to register %d", value, address)
             
@@ -362,11 +387,6 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
                 if register.get("starting_address") == address:
                     return register
         return None
-
-    def get_registers_by_category(self, category: str) -> list[dict]:
-        """Get registers filtered by category."""
-        # This could be enhanced to categorize registers
-        return [reg for reg in self._registers if category.lower() in reg["name"].lower()]
 
     @property
     def registers(self) -> list[dict]:

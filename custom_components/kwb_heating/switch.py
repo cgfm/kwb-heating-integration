@@ -26,9 +26,7 @@ async def async_setup_entry(
     
     entities = []
     
-    # Wait for register manager initialization if needed
-    if not hasattr(coordinator, '_registers') or coordinator._registers is None:
-        await coordinator._initialize_register_manager()
+    await coordinator.ensure_initialized()
     
     # Create switch entities for read-write registers with boolean values
     for register in coordinator._registers:
@@ -139,10 +137,7 @@ class KWBSwitch(KWBBaseEntity, SwitchEntity):
             else:
                 _LOGGER.error("Failed to turn off switch %s", self.name)
 
-    @property
-    def available(self) -> bool:
-        """Return if entity is available."""
-        return self.coordinator.last_update_success
+    # available property inherited from KWBBaseEntity (now also checks address in data)
 
     @property
     def extra_state_attributes(self) -> dict[str, Any]:

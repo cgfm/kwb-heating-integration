@@ -12,10 +12,8 @@ from typing import Any
 import voluptuous as vol
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
-from homeassistant.exceptions import ConfigEntryNotReady
-from homeassistant.helpers.update_coordinator import UpdateFailed
 
-from .const import DOMAIN, PLATFORMS
+from .const import DOMAIN, PLATFORMS, EQUIPMENT_KEYS
 from .coordinator import KWBDataUpdateCoordinator
 
 _LOGGER = logging.getLogger(__name__)
@@ -36,13 +34,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     
     coordinator = KWBDataUpdateCoordinator(hass, entry)
     
-    # Try initial refresh, but don't fail setup if connection fails
-    try:
-        await coordinator.async_config_entry_first_refresh()
-        _LOGGER.info("Initial data refresh successful")
-    except (UpdateFailed, ConfigEntryNotReady, ConnectionError, TimeoutError, OSError) as exc:
-        _LOGGER.warning("Initial data refresh failed, will retry: %s", exc)
-        # Continue with setup anyway - coordinator will retry periodically
+    await coordinator.async_config_entry_first_refresh()
     
     hass.data[DOMAIN][entry.entry_id] = coordinator
     
@@ -65,16 +57,10 @@ async def async_update_options(hass: HomeAssistant, entry: ConfigEntry) -> None:
     old_config = coordinator.config.copy()
     new_config = {**entry.data, **entry.options}
     
-    equipment_keys = [
-        "heating_circuits", "buffer_storage", "dhw_storage", 
-        "secondary_heat_sources", "circulation", "solar",
-        "boiler_sequence", "heat_meters"
-    ]
-    
     # Check if any equipment counts have changed
     equipment_changed = any(
         old_config.get(key) != new_config.get(key)
-        for key in equipment_keys
+        for key in EQUIPMENT_KEYS
     )
     
     # Check if the access level has changed
@@ -102,7 +88,8 @@ async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     unload_ok = await hass.config_entries.async_unload_platforms(entry, PLATFORMS)
     
     if unload_ok:
-        hass.data[DOMAIN].pop(entry.entry_id)
+        coordinator = hass.data[DOMAIN].pop(entry.entry_id)
+        await coordinator.modbus_client.disconnect()
     
     return unload_ok
 
@@ -111,3 +98,16 @@ async def async_reload_entry(hass: HomeAssistant, entry: ConfigEntry) -> None:
     """Reload config entry."""
     await async_unload_entry(hass, entry)
     await async_setup_entry(hass, entry)
+
+
+async def async_migrate_entry(hass: HomeAssistant, config_entry: ConfigEntry) -> bool:
+    """Migrate old entry."""
+    _LOGGER.debug("Migrating from version %s", config_entry.version)
+
+    if config_entry.version == 1:
+        # No migration needed from version 1
+        pass
+
+    _LOGGER.info("Migration to version %s successful", config_entry.version)
+
+    return True

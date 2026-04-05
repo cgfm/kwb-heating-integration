@@ -26,9 +26,7 @@ async def async_setup_entry(
     
     entities = []
     
-    # Wait for register manager initialization if needed
-    if not hasattr(coordinator, '_registers') or coordinator._registers is None:
-        await coordinator._initialize_register_manager()
+    await coordinator.ensure_initialized()
     
     # Create select entities for read-write registers with value tables
     # Exclude boolean value tables (they become switches instead)
@@ -125,14 +123,7 @@ class KWBSelect(KWBBaseEntity, SelectEntity):
             self.coordinator.data[self._address]["display_value"] = option
             self.async_write_ha_state()
 
-    @property
-    def available(self) -> bool:
-        """Return True if entity is available."""
-        return (
-            self.coordinator.last_update_success
-            and self.coordinator.data is not None
-            and self._address in self.coordinator.data
-        )
+    # available property inherited from KWBBaseEntity
 
     @property
     def extra_state_attributes(self) -> dict[str, Any]:

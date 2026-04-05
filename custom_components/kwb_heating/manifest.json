@@ -6,7 +6,7 @@
   "documentation": "https://github.com/cgfm/kwb-heating-integration",
   "issue_tracker": "https://github.com/cgfm/kwb-heating-integration/issues",
   "codeowners": ["@cgfm"],
-  "requirements": ["pymodbus>=3.0.0", "pyserial>=3.5", "aiofiles>=23.0.0"],
+  "requirements": ["pymodbus>=3.5.0,<4.0.0", "pyserial>=3.5,<4.0.0", "aiofiles>=23.0.0,<25.0.0"],
   "config_flow": true,
   "dependencies": [],
   "after_dependencies": [],

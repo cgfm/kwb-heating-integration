@@ -76,10 +76,8 @@ async def async_setup_entry(
     
     entities = []
     
-    # Wait for register manager initialization if needed
-    if not hasattr(coordinator, '_registers') or coordinator._registers is None:
-        await coordinator._initialize_register_manager()
-    
+    await coordinator.ensure_initialized()
+
     _LOGGER.debug("Processing %d registers for sensor entities", len(coordinator._registers) if coordinator._registers else 0)
     
     # Create sensor entities for all read-only registers and RW registers that should show values
@@ -140,6 +138,21 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         # Configure sensor properties based on register
         self._configure_sensor()
 
+        # Cache static attributes that never change (issue #35)
+        self._static_attrs: dict[str, Any] = {
+            "register_address": self._address,
+            "register_type": register.get("type"),
+            "data_type": register.get("data_type"),
+        }
+        if register.get("description"):
+            self._static_attrs["description"] = register["description"]
+        if register.get("access_level"):
+            self._static_attrs["access_level"] = register["access_level"]
+        if register.get("min"):
+            self._static_attrs["min_value"] = register["min"]
+        if register.get("max"):
+            self._static_attrs["max_value"] = register["max"]
+
     def _configure_sensor(self) -> None:
         """Configure sensor properties based on register definition."""
         # Use data converter for unit and device class
@@ -187,43 +200,14 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         """Return additional state attributes."""
         if not self.coordinator.data or self._address not in self.coordinator.data:
             return {}
-        
-        register_data = self.coordinator.data[self._address]
-        
-        attributes = {
-            "register_address": self._address,
-            "register_type": self._register.get("type"),
-            "data_type": self._register.get("data_type"),
-            "raw_value": register_data.get("raw_value"),
-        }
 
-        # Keep only snake_case attributes for consistency
-        
-        # Add register description if available
-        if self._register.get("description"):
-            attributes["description"] = self._register["description"]
-        
-        # Add access level info
-        if self._register.get("access_level"):
-            attributes["access_level"] = self._register["access_level"]
-        
-        # Add min/max values if available
-        if self._register.get("min"):
-            attributes["min_value"] = self._register["min"]
-        if self._register.get("max"):
-            attributes["max_value"] = self._register["max"]
-        
+        register_data = self.coordinator.data[self._address]
+
+        # Merge cached static attributes with dynamic raw_value (issue #35)
+        attributes = {**self._static_attrs, "raw_value": register_data.get("raw_value")}
         return attributes
 
-    @property
-    def available(self) -> bool:
-        """Return True if entity is available."""
-        return (
-            self.coordinator.last_update_success
-            and self.coordinator.data is not None
-            and self._address in self.coordinator.data
-        )
-
+    # available property inherited from KWBBaseEntity
 
 class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
     """Sensor that tracks when the last firewood fire was active."""
@@ -246,13 +230,13 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
             language, FIREWOOD_SENSOR_TRANSLATIONS["en"]
         )
 
-        # Set entity attributes
-        device_prefix = coordinator.device_name_prefix
-        self._attr_name = f"{device_prefix} {translations['name']}"
+        # Set entity attributes — use has_entity_name so HA prefixes the device name
+        self._attr_has_entity_name = True
+        self._attr_name = translations['name']
 
         # Generate unique ID (always use English for consistency)
         device_identifier = f"{coordinator.host}_{coordinator.slave_id}"
-        device_prefix_id = coordinator.sanitize_for_entity_id(device_prefix)
+        device_prefix_id = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
         self._attr_unique_id = f"kwb_heating_{device_identifier}_{device_prefix_id}_last_firewood_fire"
 
         # Set explicit entity_id - always use English for language-independent IDs
@@ -290,7 +274,13 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
 
     @callback
     def _handle_coordinator_update(self) -> None:
-        """Handle updated data from the coordinator."""
+        """Handle updated data from the coordinator.
+
+        Only writes HA state when the firewood status actually changes,
+        avoiding unnecessary DB writes every poll cycle (issue #23).
+        """
+        state_changed = False
+
         if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
             register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
             raw_value = register_data.get("raw_value")
@@ -301,12 +291,17 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
                 # Update timestamp when firewood becomes active or stays active
                 if is_firewood_active:
                     self._last_firewood_time = datetime.now(tz=timezone.utc)
+                    state_changed = True
                     if not self._was_firewood_active:
                         _LOGGER.info("Firewood fire started at %s", self._last_firewood_time)
 
+                if is_firewood_active != self._was_firewood_active:
+                    state_changed = True
+
                 self._was_firewood_active = is_firewood_active
 
-        self.async_write_ha_state()
+        if state_changed:
+            self.async_write_ha_state()
 
     @property
     def native_value(self) -> datetime | None:

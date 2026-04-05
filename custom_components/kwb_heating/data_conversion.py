@@ -7,6 +7,10 @@ from typing import Any
 
 _LOGGER = logging.getLogger(__name__)
 
+# Pre-compiled regex for scaling factor patterns like "1/10°C", "1/100bar" (issue #34)
+_SCALING_FACTOR_RE = re.compile(r"1/(\d+)")
+_SCALING_FACTOR_UNIT_RE = re.compile(r"1/\d+(.+)")
+
 
 class KWBDataConverter:
     """Handle data conversion between Modbus values and Home Assistant values."""
@@ -109,22 +113,29 @@ class KWBDataConverter:
         return value_table.get(str(raw_value), f"Unknown ({raw_value})")
     
     def _convert_to_value_table(self, ha_value: str, table_name: str) -> int:
-        """Convert back to raw value using value table."""
+        """Convert back to raw value using value table.
+
+        Raises ValueError if the value cannot be found, to prevent silently
+        writing an incorrect value (e.g. 0) to the heating system.
+        """
         value_table = self.value_tables.get(table_name, {})
-        
+
         # Find the key for the given value
         for key, value in value_table.items():
             if value == ha_value:
                 return int(key)
-        
+
         # If not found, try to extract number from unknown format
         if "Unknown (" in ha_value and ")" in ha_value:
             try:
                 return int(ha_value.split("(")[1].split(")")[0])
             except (ValueError, IndexError):
                 pass
-        
-        return 0  # Default fallback
+
+        raise ValueError(
+            f"Value '{ha_value}' not found in value table '{table_name}'. "
+            f"Available values: {list(value_table.values())}"
+        )
     
     def _convert_from_scaling_factor(self, converted_value: int | float, unit_value_table: str) -> float:
         """Convert using scaling factor like '1/10°C'.
@@ -132,7 +143,7 @@ class KWBDataConverter:
         Note: converted_value may already be a signed integer (negative for s16/s32 types).
         """
         # Parse scaling factor pattern like "1/10°C", "1/100bar", etc.
-        match = re.match(r"1/(\d+)", unit_value_table)
+        match = _SCALING_FACTOR_RE.match(unit_value_table)
         if match:
             divisor = int(match.group(1))
             return round(converted_value / divisor, 3)
@@ -143,7 +154,7 @@ class KWBDataConverter:
     def _convert_to_scaling_factor(self, ha_value: float, unit_value_table: str) -> int:
         """Convert back to raw value using scaling factor."""
         # Parse scaling factor pattern
-        match = re.match(r"1/(\d+)", unit_value_table)
+        match = _SCALING_FACTOR_RE.match(unit_value_table)
         if match:
             multiplier = int(match.group(1))
             return int(round(ha_value * multiplier))
@@ -185,7 +196,7 @@ class KWBDataConverter:
         }
         
         # Extract unit from scaling factor like "1/10°C" -> "°C"
-        match = re.match(r"1/\d+(.+)", unit_value_table)
+        match = _SCALING_FACTOR_UNIT_RE.match(unit_value_table)
         if match:
             unit = match.group(1)
             return unit_mapping.get(unit, unit)
@@ -249,7 +260,7 @@ class KWBDataConverter:
             return False
         
         # If it has scaling (like "1/10°C"), it's numeric
-        if re.match(r"1/\d+", unit_value_table):
+        if _SCALING_FACTOR_RE.match(unit_value_table):
             return True
         
         # Common unit suffixes that indicate numeric values
@@ -374,7 +385,7 @@ class KWBDataConverter:
         unit_value_table = register.get("unit_value_table", "")
         
         # Check for scaling factor
-        match = re.match(r"1/(\d+)", unit_value_table)
+        match = _SCALING_FACTOR_RE.match(unit_value_table)
         if match:
             scale_factor = int(match.group(1))
             return 1.0 / scale_factor

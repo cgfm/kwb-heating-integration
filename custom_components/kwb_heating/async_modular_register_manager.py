@@ -8,7 +8,6 @@ from pathlib import Path
 from typing import Any
 import aiofiles
 
-from .const import DATA_TYPES
 
 _LOGGER = logging.getLogger(__name__)
 

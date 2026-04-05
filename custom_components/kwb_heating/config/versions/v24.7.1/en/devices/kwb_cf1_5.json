@@ -51,7 +51,7 @@
     {
       "starting_address": 8201,
       "name": "Boiler pump %",
-      "entity_id": "boiler_pump",
+      "entity_id": "boiler_pump_percent",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -425,7 +425,7 @@
     {
       "starting_address": 8248,
       "name": "Full load hours",
-      "entity_id": "full_load_hours",
+      "entity_id": "full_load_hours_pm",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -660,7 +660,7 @@
     {
       "starting_address": 24585,
       "name": "Boiler temperature, setpoint",
-      "entity_id": "boiler_temperature_setpoint",
+      "entity_id": "boiler_temperature_setpoint_setting",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",

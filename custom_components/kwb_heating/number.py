@@ -7,6 +7,7 @@ from typing import Any
 from homeassistant.components.number import NumberEntity
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
+from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
@@ -26,9 +27,7 @@ async def async_setup_entry(
     
     entities = []
     
-    # Wait for register manager initialization if needed
-    if not hasattr(coordinator, '_registers') or coordinator._registers is None:
-        await coordinator._initialize_register_manager()
+    await coordinator.ensure_initialized()
     
     # Create number entities for read-write registers with numeric values (no value table)
     for register in coordinator._registers:
@@ -97,7 +96,12 @@ class KWBNumber(KWBBaseEntity, NumberEntity):
     async def async_set_native_value(self, value: float) -> None:
         """Set new value."""
         # Use data converter to convert Home Assistant value back to Modbus value
-        modbus_value = self.coordinator.data_converter.convert_to_modbus_value(self._register, value)
+        try:
+            modbus_value = self.coordinator.data_converter.convert_to_modbus_value(self._register, value)
+        except ValueError as exc:
+            raise HomeAssistantError(
+                f"Cannot convert value '{value}' for register {self._address}: {exc}"
+            ) from exc
         
         # Write to device
         success = await self.coordinator.async_write_register(self._address, modbus_value)
@@ -112,11 +116,4 @@ class KWBNumber(KWBBaseEntity, NumberEntity):
             self.coordinator.data[self._address]["value"] = value
             self.async_write_ha_state()
 
-    @property
-    def available(self) -> bool:
-        """Return True if entity is available."""
-        return (
-            self.coordinator.last_update_success
-            and self.coordinator.data is not None
-            and self._address in self.coordinator.data
-        )
+    # available property inherited from KWBBaseEntity

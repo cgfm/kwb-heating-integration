@@ -1,5 +1,6 @@
 """Base entity for KWB Heating integration."""
 from __future__ import annotations
+import logging
 
 from typing import TYPE_CHECKING, Any
 
@@ -8,6 +9,7 @@ from homeassistant.helpers.update_coordinator import CoordinatorEntity
 if TYPE_CHECKING:
     from .coordinator import KWBDataUpdateCoordinator
 
+_LOGGER = logging.getLogger(__name__)
 
 class KWBBaseEntity(CoordinatorEntity):
     """Base class for KWB heating system entities.
@@ -16,7 +18,11 @@ class KWBBaseEntity(CoordinatorEntity):
     - Entity name and unique ID generation
     - Device info assignment
     - Entity ID sanitization
+    - Availability check
     """
+
+    # Let HA handle device name prefixing automatically (issue #16)
+    _attr_has_entity_name = True
 
     def __init__(
         self,
@@ -35,14 +41,16 @@ class KWBBaseEntity(CoordinatorEntity):
         self._register = register
         self._address = register["starting_address"]
 
-        # Generate structured entity name and unique ID
-        self._attr_name, self._attr_unique_id = self._generate_entity_name_and_id(
-            register, coordinator
-        )
+        # Entity name is ONLY the entity-specific part (no device prefix).
+        # With _attr_has_entity_name = True, HA prepends the device name automatically.
+        self._attr_name = register["name"]
+
+        # Use coordinator's centralized unique ID generation
+        self._attr_unique_id = coordinator.generate_entity_unique_id(register)
 
         # Generate a stable entity ID that does not depend on the language.
         device_prefix = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
-        
+
         # The 'entity_id' field from the JSON config is the primary, language-independent identifier.
         register_entity_id = register.get("entity_id")
 
@@ -68,26 +76,11 @@ class KWBBaseEntity(CoordinatorEntity):
         # Set device info
         self._attr_device_info = coordinator.device_info
 
-    def _generate_entity_name_and_id(
-        self, register: dict[str, Any], coordinator: "KWBDataUpdateCoordinator"
-    ) -> tuple[str, str]:
-        """Generate proper entity name and unique ID.
-
-        Args:
-            register: Register configuration dictionary
-            coordinator: The data update coordinator
-
-        Returns:
-            Tuple of (entity_name, unique_id)
-        """
-        # Get base name from register
-        base_name = register["name"]
-
-        # Add device name prefix to entity name
-        device_prefix = coordinator.device_name_prefix
-        entity_name = f"{device_prefix} {base_name}"
-
-        # Use coordinator's centralized unique ID generation
-        unique_id = coordinator.generate_entity_unique_id(register)
-
-        return entity_name, unique_id
+    @property
+    def available(self) -> bool:
+        """Return True if entity is available (issue #18 — centralized)."""
+        return (
+            self.coordinator.last_update_success
+            and self.coordinator.data is not None
+            and self._address in self.coordinator.data
+        )
