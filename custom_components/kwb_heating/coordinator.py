@@ -73,10 +73,14 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         self.host = entry.data.get(CONF_HOST)
         self.port = entry.data.get(CONF_PORT, DEFAULT_PORT)
         self.slave_id = entry.data.get(CONF_SLAVE_ID, 1)
-        self.access_level = entry.data[CONF_ACCESS_LEVEL]
 
-        # Merge data and options for complete configuration
+        # Merge data and options for complete configuration. Options take
+        # precedence so that changes made via the options flow (e.g. access
+        # level) are honored without requiring entry.data to be rewritten.
         self.config = {**entry.data, **entry.options}
+        self.access_level = self.config.get(
+            CONF_ACCESS_LEVEL, entry.data.get(CONF_ACCESS_LEVEL)
+        )
 
         update_interval = self.config.get(CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL)
 
@@ -248,6 +252,9 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         
         if access_level_changed or equipment_changed:
             _LOGGER.info("Equipment or access level changed, reinitializing registers")
+            # Keep cached access_level attribute in sync with the merged config
+            # so platforms reading coordinator.access_level see the new value.
+            self.access_level = self.config.get(CONF_ACCESS_LEVEL, self.access_level)
             await self._initialize_register_manager()
         
         if update_interval_changed:
