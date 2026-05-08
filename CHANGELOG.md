@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Fixed
+- **Expert Level did not unlock additional controls**: `number`, `select`, and `switch` platforms only checked the `user_level` field of each register and ignored the configured access level. Switching the integration to Expert Level now correctly creates the additional read/write entities for registers that are writable only at the expert level (e.g. heating-circuit, DHW, buffer-storage and secondary-heat-source parameters).
+- **Sensor visibility for read-only registers**: `sensor.py` used a list match against `["read", "write"]`, which never matched the actual register value `"readwrite"`. The check now compares the active access level's field exactly against `"read"`, ensuring read-only registers always become sensors and read-write registers become controls.
+- **Unique-ID collisions**: Register loading now also deduplicates by `entity_id` (in addition to `starting_address`), preventing "Platform kwb_heating does not generate unique IDs" warnings when the same logical register appears in multiple sources.
+
+### Changed
+- **German UI labels for access levels**: "Zugriffsstufe" → "Zugriffsebene", "UserLevel"/"ExpertLevel" dropdown values are now shown as "Benutzerebene" / "Fachkraftebene" in the German UI ("User Level" / "Expert Level" in English). Internal config values (`UserLevel`, `ExpertLevel`) are unchanged, so existing entries keep working without migration.
+
 ## [0.4.2] - 2026-02-06
 
 ### Changed

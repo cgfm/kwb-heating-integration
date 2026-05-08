@@ -326,19 +326,36 @@ class AsyncModularRegisterManager:
         await self.initialize()  # Ensure async initialization
 
         registers = []
-        seen_addresses: set[int] = set()  # Track addresses to prevent duplicates
+        seen_addresses: set[int] = set()
+        seen_entity_ids: set[str] = set()
 
         def add_registers(new_registers: list[dict]) -> int:
-            """Add registers while preventing duplicates by address."""
+            """Add registers, deduplicating by both starting_address and entity_id.
+
+            Entity-id dedup prevents Home Assistant unique_id collisions when the
+            same logical register appears in multiple sources (universal + device,
+            or device + equipment) with different addresses but the same entity_id.
+            """
             added = 0
             for reg in new_registers:
                 addr = reg.get("starting_address")
-                if addr is not None and addr not in seen_addresses:
-                    seen_addresses.add(addr)
-                    registers.append(reg)
-                    added += 1
-                elif addr in seen_addresses:
+                eid = reg.get("entity_id")
+                if addr is not None and addr in seen_addresses:
                     _LOGGER.debug("Skipping duplicate register at address %s: %s", addr, reg.get("name"))
+                    continue
+                if eid and eid in seen_entity_ids:
+                    _LOGGER.warning(
+                        "Skipping register with duplicate entity_id '%s' at address %s (%s) — "
+                        "would cause unique_id collision",
+                        eid, addr, reg.get("name"),
+                    )
+                    continue
+                if addr is not None:
+                    seen_addresses.add(addr)
+                if eid:
+                    seen_entity_ids.add(eid)
+                registers.append(reg)
+                added += 1
             return added
 
         # Universal registers (added first, take priority)

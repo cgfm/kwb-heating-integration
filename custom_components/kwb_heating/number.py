@@ -28,10 +28,12 @@ async def async_setup_entry(
     entities = []
     
     await coordinator.ensure_initialized()
-    
+
+    level_field = "user_level" if coordinator.access_level == "UserLevel" else "expert_level"
+
     # Create number entities for read-write registers with numeric values (no value table)
     for register in coordinator._registers:
-        if (register.get("user_level") == "readwrite" and 
+        if (register.get(level_field) == "readwrite" and
             coordinator.data_converter.is_numeric(register) and
             not coordinator.data_converter.has_value_table(register)):
             entities.append(KWBNumber(coordinator, register))

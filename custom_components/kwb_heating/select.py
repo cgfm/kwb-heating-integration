@@ -27,11 +27,13 @@ async def async_setup_entry(
     entities = []
     
     await coordinator.ensure_initialized()
-    
+
+    level_field = "user_level" if coordinator.access_level == "UserLevel" else "expert_level"
+
     # Create select entities for read-write registers with value tables
     # Exclude boolean value tables (they become switches instead)
     for register in coordinator._registers:
-        if (register.get("user_level") == "readwrite" and
+        if (register.get(level_field) == "readwrite" and
             coordinator.data_converter.has_value_table(register) and
             not coordinator.data_converter.is_boolean_value_table(register)):
             entities.append(KWBSelect(coordinator, register))

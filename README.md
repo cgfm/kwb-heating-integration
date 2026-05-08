@@ -73,7 +73,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full details.
 - **Complete Modbus TCP/RTU integration** for KWB heating systems
 - **Multi-version & multi-language support** - Automatic version detection and language selection
 - **UI-based configuration** via Home Assistant Config Flow
-- **Access Level System** - UserLevel vs. ExpertLevel for different user groups
+- **Access Level System** - User Level (Benutzerebene) vs. Expert Level (Fachkraftebene) for different user groups; Expert Level unlocks additional read/write controls (number/select/switch)
 - **Equipment-based configuration** - heating circuits, buffer storage, solar, etc.
 - **All entity types** - sensors, switches, input fields and select menus
 - **Computed sensors** - "Last Firewood Fire" tracking for Combifire/Multifire devices
@@ -136,9 +136,10 @@ See [CHANGELOG.md](CHANGELOG.md) for full details.
 - **Port**: Modbus TCP port (default: 502)
 - **Slave ID**: Modbus Slave ID (default: 1)
 - **Device Type**: Select your KWB model
-- **Access Level**: 
-  - **UserLevel**: Basic functions for end users
-  - **ExpertLevel**: Full access for service personnel
+- **Access Level / Zugriffsebene**:
+  - **User Level / Benutzerebene**: Basic read access and writable controls available at the user level on the KWB control panel
+  - **Expert Level / Fachkraftebene**: Full access — unlocks all readable registers and additional writable controls (number/select/switch) that are reserved for service personnel on the KWB unit
+  - The selected level must match (or be authorized by) the access level configured on the KWB heating system itself; the integration only exposes entities according to the chosen level.
 
 ### 3. Equipment Configuration
 

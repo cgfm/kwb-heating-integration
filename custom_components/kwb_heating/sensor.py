@@ -80,30 +80,19 @@ async def async_setup_entry(
 
     _LOGGER.debug("Processing %d registers for sensor entities", len(coordinator._registers) if coordinator._registers else 0)
     
-    # Create sensor entities for all read-only registers and RW registers that should show values
+    access_level = coordinator.access_level
+    level_field = "user_level" if access_level == "UserLevel" else "expert_level"
+
+    # Sensors are only created for read-only registers at the active access level.
+    # Read-write registers become number/select/switch entities instead.
     for register in coordinator._registers:
-        # Sensors are created for:
-        # 1. Read-only registers (access="R")
-        # 2. Read-write registers that have value tables (display values)
-        # 3. Read-write registers that are diagnostic or informational
-        # Get access level and determine if this register should create a sensor
-        user_level = register.get("user_level", "")
-        expert_level = register.get("expert_level", "")
-        access_level = coordinator.access_level  # UserLevel or ExpertLevel
-        
-        # Check if this register is accessible at the current access level
-        is_readable = False
-        if access_level == "UserLevel" and user_level in ["read", "write"]:
-            is_readable = True
-        elif access_level == "ExpertLevel" and expert_level in ["read", "write"]:
-            is_readable = True
-        
-        _LOGGER.debug("Register %s: user_level=%s, expert_level=%s, current_access=%s, readable=%s", 
-                      register.get("name", "Unknown"), user_level, expert_level, access_level, is_readable)
-        
-        # Create sensor for readable registers
+        level_value = register.get(level_field, "")
+        is_readable = level_value == "read"
+
+        _LOGGER.debug("Register %s: %s=%s, current_access=%s, readable=%s",
+                      register.get("name", "Unknown"), level_field, level_value, access_level, is_readable)
+
         if is_readable:
-            _LOGGER.debug("Creating sensor for register: %s", register.get("name", "Unknown"))
             entities.append(KWBSensor(coordinator, register))
     
     # Add computed sensor for firewood devices: "Last Firewood Fire"

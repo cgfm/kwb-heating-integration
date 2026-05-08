@@ -112,7 +112,13 @@ STEP_SERIAL_DATA_SCHEMA = vol.Schema({
 STEP_DEVICE_DATA_SCHEMA = vol.Schema({
     vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
     vol.Required(CONF_DEVICE_NAME): cv.string,
-    vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
+    vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): selector.SelectSelector(
+        selector.SelectSelectorConfig(
+            options=list(ACCESS_LEVELS.keys()),
+            translation_key="access_level",
+            mode=selector.SelectSelectorMode.DROPDOWN,
+        )
+    ),
     vol.Optional(CONF_LANGUAGE, default="auto"): selector.SelectSelector(
         selector.SelectSelectorConfig(
             options=["auto", "de", "en"],
@@ -330,7 +336,13 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         device_schema = vol.Schema({
             vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
             vol.Required(CONF_DEVICE_NAME, default=suggested_name): cv.string,
-            vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
+            vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): selector.SelectSelector(
+                selector.SelectSelectorConfig(
+                    options=list(ACCESS_LEVELS.keys()),
+                    translation_key="access_level",
+                    mode=selector.SelectSelectorMode.DROPDOWN,
+                )
+            ),
             vol.Optional(CONF_LANGUAGE, default="auto"): selector.SelectSelector(
                 selector.SelectSelectorConfig(
                     options=["auto", "de", "en"],
@@ -347,7 +359,6 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             errors=errors,
             description_placeholders={
                 "device_types": ", ".join(DEVICE_TYPES.keys()),
-                "access_levels": ", ".join(f"{k}: {v}" for k, v in ACCESS_LEVELS.items())
             }
         )
 
@@ -505,7 +516,13 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                 CONF_ACCESS_LEVEL,
                 default=current_equipment.get(CONF_ACCESS_LEVEL,
                                              entry.data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL))
-            ): vol.In(ACCESS_LEVELS.keys()),
+            ): selector.SelectSelector(
+                selector.SelectSelectorConfig(
+                    options=list(ACCESS_LEVELS.keys()),
+                    translation_key="access_level",
+                    mode=selector.SelectSelectorMode.DROPDOWN,
+                )
+            ),
             vol.Optional(
                 CONF_UPDATE_INTERVAL,
                 default=current_equipment.get(CONF_UPDATE_INTERVAL,

@@ -31,7 +31,7 @@
       },
       "device": {
         "title": "KWB Heating System - Device Type",
-        "description": "Select your KWB heating type and give it a custom name.\n\nAvailable devices: {device_types}\n\nAccess Levels:\n{access_levels}",
+        "description": "Select your KWB heating type and give it a custom name.\n\nAvailable devices: {device_types}\n\nAccess Levels:\n• User Level: Standard functions for end users\n• Expert Level: Full access for experts/service",
         "data": {
           "device_type": "KWB Device Type",
           "device_name": "Device Name (for identification)",
@@ -115,6 +115,12 @@
         "auto": "Automatic (use Home Assistant language)",
         "de": "German",
         "en": "English"
+      }
+    },
+    "access_level": {
+      "options": {
+        "UserLevel": "User Level",
+        "ExpertLevel": "Expert Level"
       }
     }
   }
