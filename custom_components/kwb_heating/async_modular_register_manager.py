@@ -3,87 +3,132 @@ from __future__ import annotations
 
 import json
 import logging
+import re
+from collections import Counter
 from pathlib import Path
 from typing import Any
 import aiofiles
 
 _LOGGER = logging.getLogger(__name__)
 
+# Matches an equipment index like "Zirk 0" or "HK 1.1" -> prefix="Zirk"/"HK",
+# number=0/1 (the first number is enough to tell 0- from 1-indexed).
+_INDEX_PREFIX_RE = re.compile(r"^(\D+?)\s*(\d+)")
+
+
+def _derive_index_prefixes(registers: list[dict]) -> dict[str, bool]:
+    """Derive every index prefix in an equipment's data, each mapped to
+    whether it's 0- or 1-indexed - directly from the data itself.
+
+    This used to be a single hardcoded prefix + indexing flag per equipment
+    type in EQUIPMENT_KEY_CONFIG, and a hardcoded copy can silently drift out
+    of sync with what's actually in the JSON - which is exactly what happened
+    for the prefix: circulation, boiler_sequence, and the English side of
+    dhw_storage/heat_meters all had a mismatched prefix, which meant
+    get_equipment_registers()'s exact-match filtering never matched anything
+    and equipment loading was silently a no-op. Deriving it from the loaded
+    registers' own `index` field instead makes that class of bug impossible -
+    it's always whatever the data actually says.
+
+    Most equipment files use exactly one prefix throughout (e.g. "Zirk" for
+    circulation). A few contain a second, minor prefix for a related but
+    distinct property tied 1:1 to the same instance count (e.g.
+    buffer_storage.json also has "ZUB"/"FP" registers - one per buffer
+    instance, for that buffer's associated consumer-group demand
+    temperature). Both should be indexed by the SAME configured count as the
+    equipment type overall, so this returns every prefix found, not just the
+    dominant one - ordered most-common first, so callers that only want "the"
+    primary prefix can take the first entry.
+    """
+    counts: Counter[str] = Counter()
+    numbers_by_prefix: dict[str, list[int]] = {}
+    for register in registers:
+        index = register.get("index")
+        if not index:
+            continue
+        match = _INDEX_PREFIX_RE.match(index)
+        if not match:
+            continue
+        prefix = match.group(1).strip()
+        counts[prefix] += 1
+        numbers_by_prefix.setdefault(prefix, []).append(int(match.group(2)))
+
+    return {
+        prefix: min(numbers_by_prefix[prefix]) == 0
+        for prefix, _ in counts.most_common()
+    }
+
 
 class AsyncModularRegisterManager:
     """Manages KWB register definitions from modular configuration files (async)."""
 
+    # Which JSON file to load and what to call each equipment type in each
+    # language - nothing about how the data is structured (index prefix,
+    # 0- vs 1-indexing) is hardcoded here; both are derived from the file's
+    # own `index` field at load time (see _derive_index_prefixes()), since a
+    # hardcoded copy of either can silently drift out of sync with the data.
     EQUIPMENT_KEY_CONFIG = {
         "heating_circuits": {
-            "is_zero_indexed": False,
             "filename": "heating_circuits.json",
             "lang": {
-                "de": {"name": "Heizkreise", "prefix": "HK"},
-                "en": {"name": "Heating Circuits", "prefix": "HC"}
+                "de": {"name": "Heizkreise"},
+                "en": {"name": "Heating Circuits"}
             }
         },
         "buffer_storage": {
-            "is_zero_indexed": True,
             "filename": "buffer_storage.json",
             "lang": {
-                "de": {"name": "Pufferspeicher", "prefix": "PUF"},
-                "en": {"name": "Buffer Storage", "prefix": "BUF"}
+                "de": {"name": "Pufferspeicher"},
+                "en": {"name": "Buffer Storage"}
             }
         },
         "dhw_storage": {
-            "is_zero_indexed": False,
             "filename": "dhw_storage.json",
             "lang": {
-                "de": {"name": "Brauchwasserspeicher", "prefix": "BWS"},
-                "en": {"name": "DHW Storage", "prefix": "DHW"}
+                "de": {"name": "Brauchwasserspeicher"},
+                "en": {"name": "DHW Storage"}
             }
         },
         "secondary_heat_sources": {
-            "is_zero_indexed": False,
             "filename": "secondary_heat_sources.json",
             "lang": {
-                "de": {"name": "Zweitwärmequellen", "prefix": "ZWQ"},
-                "en": {"name": "Secondary Heat Sources", "prefix": "SHS"}
+                "de": {"name": "Zweitwärmequellen"},
+                "en": {"name": "Secondary Heat Sources"}
             }
         },
         "circulation": {
-            "is_zero_indexed": True,
             "filename": "circulation.json",
             "lang": {
-                "de": {"name": "Zirkulation", "prefix": "ZIR"},
-                "en": {"name": "Circulation", "prefix": "CIRC"}
+                "de": {"name": "Zirkulation"},
+                "en": {"name": "Circulation"}
             }
         },
         "solar": {
-            "is_zero_indexed": False,
             "filename": "solar.json",
             "lang": {
-                "de": {"name": "Solar", "prefix": "SOL"},
-                "en": {"name": "Solar", "prefix": "SOL"}
+                "de": {"name": "Solar"},
+                "en": {"name": "Solar"}
             }
         },
         "boiler_sequence": {
-            "is_zero_indexed": False,
             "filename": "boiler_sequence.json",
             "lang": {
-                "de": {"name": "Kesselfolgeschaltung", "prefix": "KFS"},
-                "en": {"name": "Boiler Sequence", "prefix": "BSEQ"}
+                "de": {"name": "Kesselfolgeschaltung"},
+                "en": {"name": "Boiler Sequence"}
             }
         },
         "heat_meters": {
-            "is_zero_indexed": True,
             "filename": "heat_meters.json",
             "lang": {
-                "de": {"name": "Wärmemengenzähler", "prefix": "WMZ"},
-                "en": {"name": "Heat Meters", "prefix": "HM"}
+                "de": {"name": "Wärmemengenzähler"},
+                "en": {"name": "Heat Meters"}
             }
         },
         "transfer_stations": {
-            "is_zero_indexed": False,
             "filename": "transfer_station.json",
             "lang": {
-                "de": {"name": "Übergabestation", "prefix": "ÜGS"},
-                "en": {"name": "Transfer Station", "prefix": "TS"}
+                "de": {"name": "Übergabestation"},
+                "en": {"name": "Transfer Station"}
             }
         }
     }
@@ -134,6 +179,10 @@ class AsyncModularRegisterManager:
         # Cache for loaded device and equipment configs
         self._device_cache: dict[str, list[dict]] = {}
         self._equipment_cache: dict[str, list[dict]] = {}
+        # All index prefixes for an equipment type (e.g. {"PUF": True, "ZUB": True}
+        # for buffer_storage), derived from its own data once loaded - see
+        # _derive_index_prefixes(). Ordered most-common prefix first.
+        self._equipment_prefixes_cache: dict[str, dict[str, bool]] = {}
 
         self._initialized = False
 
@@ -235,7 +284,20 @@ class AsyncModularRegisterManager:
                 equipment_data = json.loads(content)
                 registers = equipment_data.get("registers", [])
                 self._equipment_cache[equipment_key] = registers
-                _LOGGER.info("Loaded %d registers for equipment key %s", len(registers), equipment_key)
+
+                prefixes = _derive_index_prefixes(registers)
+                if prefixes:
+                    self._equipment_prefixes_cache[equipment_key] = prefixes
+                else:
+                    _LOGGER.warning(
+                        "Could not derive an index prefix for equipment %s from %s - "
+                        "it has no usable 'index' values", equipment_key, equipment_path
+                    )
+
+                _LOGGER.info(
+                    "Loaded %d registers for equipment key %s (index prefixes: %s)",
+                    len(registers), equipment_key, prefixes
+                )
                 return registers
 
         except FileNotFoundError:
@@ -286,35 +348,44 @@ class AsyncModularRegisterManager:
         registers = []
 
         equipment_registers = await self._load_equipment_registers(equipment_key)
-        
+
         config = self.EQUIPMENT_KEY_CONFIG.get(equipment_key)
         if not config:
             return []
 
-        # Get language-specific prefix from config, fallback to 'en' then 'de'
-        lang_config = config["lang"].get(self._language) or config["lang"].get("en") or config["lang"]["de"]
-        prefix = lang_config["prefix"]
-        is_zero_indexed = config["is_zero_indexed"]
-
         # If count is specified and > 0, filter by index patterns
         if count is not None and count > 0:
-            filtered_registers = []
-            start_idx = 0 if is_zero_indexed else 1
-            end_idx = count if is_zero_indexed else count + 1
+            # Derived from the equipment file's own data by
+            # _load_equipment_registers() above, not hardcoded - see
+            # _derive_index_prefixes(). Usually one prefix, occasionally more
+            # (e.g. buffer_storage's minor "ZUB"/"FP" consumer-group registers,
+            # tied 1:1 to the same buffer count) - every prefix found is
+            # filtered by the SAME configured count.
+            prefixes = self._equipment_prefixes_cache.get(equipment_key)
+            if not prefixes:
+                _LOGGER.warning(
+                    "No index prefix available for equipment %s, cannot filter by count", equipment_key
+                )
+                return []
 
-            for i in range(start_idx, end_idx):
-                for register in equipment_registers:
-                    index = register.get("index", "")
-                    # Handle both exact match (PUF 0) and prefix match (HK 1.)
-                    if equipment_key == "heating_circuits":
-                        # Heating circuits use HK 1.1, HK 1.2, HK 2.1, etc.
-                        if index.startswith(f"{prefix} {i}."):
-                            filtered_registers.append(register)
-                    else:
-                        # Other equipment uses exact match (PUF 0, BWS 1, etc.)
-                        if index == f"{prefix} {i}":
-                            filtered_registers.append(register)
-            
+            filtered_registers = []
+            for prefix, is_zero_indexed in prefixes.items():
+                start_idx = 0 if is_zero_indexed else 1
+                end_idx = count if is_zero_indexed else count + 1
+
+                for i in range(start_idx, end_idx):
+                    for register in equipment_registers:
+                        index = register.get("index", "")
+                        # Handle both exact match (PUF 0) and prefix match (HK 1.)
+                        if equipment_key == "heating_circuits":
+                            # Heating circuits use HK 1.1, HK 1.2, HK 2.1, etc.
+                            if index.startswith(f"{prefix} {i}."):
+                                filtered_registers.append(register)
+                        else:
+                            # Other equipment uses exact match (PUF 0, BWS 1, etc.)
+                            if index == f"{prefix} {i}":
+                                filtered_registers.append(register)
+
             limited_registers = filtered_registers
         else:
             limited_registers = equipment_registers
@@ -396,28 +467,43 @@ class AsyncModularRegisterManager:
         
         if index and name:
             for key, config in self.EQUIPMENT_KEY_CONFIG.items():
-                # Get language-specific prefix and name
+                # All prefixes for this equipment type, derived from its own
+                # data (see _derive_index_prefixes()); only populated once
+                # that equipment's file has actually been loaded.
+                prefixes = self._equipment_prefixes_cache.get(key)
+                if not prefixes:
+                    continue
+
+                # Match on a full token, not a bare substring - e.g. a lone
+                # "B" prefix (boiler_sequence) must not match "BUF 3"
+                # (buffer_storage) just because "BUF".startswith("B").
+                matched_prefix = next(
+                    (p for p in prefixes if index.startswith(f"{p} ") or index == p),
+                    None
+                )
+                if matched_prefix is None:
+                    continue
+
+                is_zero_indexed = prefixes[matched_prefix]
                 lang_config = config["lang"].get(self._language) or config["lang"].get("en") or config["lang"]["de"]
-                prefix = lang_config["prefix"]
                 friendly_name = lang_config["name"]
 
-                if index.startswith(prefix):
-                    # Extract the equipment number/identifier
-                    equipment_id = index[len(prefix):].strip()
+                # Extract the equipment number/identifier
+                equipment_id = index[len(matched_prefix):].strip()
 
-                    # Handle 0-indexed equipment types (convert to 1-based for display)
-                    if config["is_zero_indexed"]:
-                        try:
-                            display_num = int(equipment_id) + 1
-                            new_name = f"{friendly_name} {display_num}: {name}"
-                        except ValueError:
-                            new_name = f"{friendly_name} {equipment_id}: {name}"
-                    else:
-                        # Default: HC 1.1 -> Heating Circuit 1.1
+                # Handle 0-indexed equipment types (convert to 1-based for display)
+                if is_zero_indexed:
+                    try:
+                        display_num = int(equipment_id) + 1
+                        new_name = f"{friendly_name} {display_num}: {name}"
+                    except ValueError:
                         new_name = f"{friendly_name} {equipment_id}: {name}"
+                else:
+                    # Default: HC 1.1 -> Heating Circuit 1.1
+                    new_name = f"{friendly_name} {equipment_id}: {name}"
 
-                    normalized["name"] = new_name
-                    break
+                normalized["name"] = new_name
+                break
         
         # Add default access level if missing
         if "access_level" not in normalized:
