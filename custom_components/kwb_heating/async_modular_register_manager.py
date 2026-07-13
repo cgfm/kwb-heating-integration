@@ -1,14 +1,11 @@
 """Async modular register manager for KWB configuration."""
 from __future__ import annotations
 
-import asyncio
 import json
 import logging
 from pathlib import Path
 from typing import Any
 import aiofiles
-
-from .const import DATA_TYPES
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -79,6 +76,14 @@ class AsyncModularRegisterManager:
             "lang": {
                 "de": {"name": "Wärmemengenzähler", "prefix": "WMZ"},
                 "en": {"name": "Heat Meters", "prefix": "HM"}
+            }
+        },
+        "transfer_stations": {
+            "is_zero_indexed": False,
+            "filename": "transfer_station.json",
+            "lang": {
+                "de": {"name": "Übergabestation", "prefix": "ÜGS"},
+                "en": {"name": "Transfer Station", "prefix": "TS"}
             }
         }
     }

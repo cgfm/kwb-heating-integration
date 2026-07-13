@@ -66,9 +66,9 @@ async def async_update_options(hass: HomeAssistant, entry: ConfigEntry) -> None:
     new_config = {**entry.data, **entry.options}
     
     equipment_keys = [
-        "heating_circuits", "buffer_storage", "dhw_storage", 
+        "heating_circuits", "buffer_storage", "dhw_storage",
         "secondary_heat_sources", "circulation", "solar",
-        "boiler_sequence", "heat_meters"
+        "boiler_sequence", "heat_meters", "transfer_stations"
     ]
     
     # Check if any equipment counts have changed

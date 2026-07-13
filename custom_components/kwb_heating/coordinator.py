@@ -34,6 +34,7 @@ from .const import (
     CONF_SOLAR,
     CONF_BOILER_SEQUENCE,
     CONF_HEAT_METERS,
+    CONF_TRANSFER_STATIONS,
     CONNECTION_TYPE_TCP,
     CONNECTION_TYPE_SERIAL,
     DEFAULT_PORT,
@@ -187,6 +188,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             "solar": self.config.get(CONF_SOLAR, 0),
             "boiler_sequence": self.config.get(CONF_BOILER_SEQUENCE, 0),
             "heat_meters": self.config.get(CONF_HEAT_METERS, 0),
+            "transfer_stations": self.config.get(CONF_TRANSFER_STATIONS, 0),
         }
         
         # Store equipment counts for register filtering
@@ -217,9 +219,9 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         
         equipment_changed = any(
             old_config.get(key) != self.config.get(key)
-            for key in [CONF_HEATING_CIRCUITS, CONF_BUFFER_STORAGE, CONF_DHW_STORAGE, 
+            for key in [CONF_HEATING_CIRCUITS, CONF_BUFFER_STORAGE, CONF_DHW_STORAGE,
                        CONF_SECONDARY_HEAT_SOURCES, CONF_CIRCULATION, CONF_SOLAR,
-                       CONF_BOILER_SEQUENCE, CONF_HEAT_METERS]
+                       CONF_BOILER_SEQUENCE, CONF_HEAT_METERS, CONF_TRANSFER_STATIONS]
         )
         
         # Update interval changed
