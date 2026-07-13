@@ -22,17 +22,11 @@ from .coordinator import KWBDataUpdateCoordinator
 from .entity import KWBBaseEntity
 from .icon_utils import get_entity_icon
 
-# Device types that support firewood (logwood)
-FIREWOOD_DEVICE_TYPES = [
-    "KWB CF 1",
-    "KWB CF 1.5",
-    "KWB CF 2",
-    "KWB Combifire",
-    "KWB Multifire",
-]
-
-# Modbus address for firewood boiler status (logwood status)
-FIREWOOD_STATUS_ADDRESS = 8212
+# KWB parameter path for firewood boiler status (logwood status). Looked up
+# by parameter rather than a hardcoded address, since the JSON config is the
+# source of truth for register addresses (they're also not guaranteed to
+# match across versions/devices, even though they happen to today).
+FIREWOOD_STATUS_PARAMETER = "CF2.kesselstatus_anzeige_sh"
 
 # Boiler status values indicating active firewood operation (boiler status display_t)
 FIREWOOD_ACTIVE_VALUES = [
@@ -63,7 +57,46 @@ FIREWOOD_SENSOR_TRANSLATIONS = {
     },
 }
 
+# CF2.betriebsmodus (operating mode) - the only signal that distinguishes
+# which fuel is currently burning on a dual-fuel Combifire-family boiler.
+FUEL_MODE_PARAMETER = "CF2.betriebsmodus"
+# cf2_betriebsmodus_t raw values: 0=Kein, 1=Stückholz, 2=Pellets,
+# 3=Stückholz (PM Nachlauf), 4=Relaistest. Off/relay-test periods are
+# intentionally left unattributed to either fuel.
+PELLET_MODE_VALUES = {2}
+LOG_WOOD_MODE_VALUES = {1, 3}
+
+# KSM.waermemenge_gesamt_kwh - the boiler's single combined lifetime heat
+# output counter. KWB does not expose separate per-fuel energy registers, so
+# this is split after the fact using FUEL_MODE_PARAMETER above.
+TOTAL_HEAT_PARAMETER = "KSM.waermemenge_gesamt_kwh"
+
+FUEL_SPLIT_TRANSLATIONS = {
+    "pellets": {
+        "de": {"name": "Pellet-Energie Gesamt", "entity_id_suffix": "pellet_energie_gesamt"},
+        "en": {"name": "Pellet Energy Total", "entity_id_suffix": "pellet_energy_total"},
+    },
+    "log_wood": {
+        "de": {"name": "Stückholz-Energie Gesamt", "entity_id_suffix": "stueckholz_energie_gesamt"},
+        "en": {"name": "Log Wood Energy Total", "entity_id_suffix": "log_wood_energy_total"},
+    },
+}
+
 _LOGGER = logging.getLogger(__name__)
+
+
+def _find_register_address(registers: list[dict], parameter: str) -> int | None:
+    """Look up a register's Modbus address by its stable KWB parameter path.
+
+    Register addresses live in the JSON config, not in Python code - looking
+    them up by parameter (rather than hardcoding an address) keeps computed
+    sensors correct if a device/version ever places a register elsewhere,
+    and naturally handles a parameter being absent on older firmware.
+    """
+    for register in registers:
+        if register.get("parameter") == parameter:
+            return register.get("starting_address")
+    return None
 
 
 async def async_setup_entry(
@@ -108,19 +141,37 @@ async def async_setup_entry(
             _LOGGER.debug("Creating sensor for register: %s", register.get("name", "Unknown"))
             entities.append(KWBSensor(coordinator, register))
     
-    # Add computed sensor for firewood devices: "Last Firewood Fire"
-    device_type = coordinator.config.get("device_type", "")
-    if device_type in FIREWOOD_DEVICE_TYPES:
-        # Check if the firewood status register is available
-        has_firewood_status = any(
-            reg.get("starting_address") == FIREWOOD_STATUS_ADDRESS
-            for reg in coordinator._registers
+    # Add computed sensor for firewood devices: "Last Firewood Fire".
+    # Gated purely on whether the register actually exists for this device -
+    # no hardcoded device-type list, since that would just be a second,
+    # independently-maintained copy of the same information already in the
+    # JSON config (and one that had already drifted: it used to list
+    # Multifire, which has never actually had this register).
+    firewood_status_address = _find_register_address(
+        coordinator._registers, FIREWOOD_STATUS_PARAMETER
+    )
+    if firewood_status_address is not None:
+        _LOGGER.info("Adding 'Last Firewood Fire' sensor (register found at address %d)", firewood_status_address)
+        entities.append(KWBLastFirewoodFireSensor(coordinator, firewood_status_address))
+    else:
+        _LOGGER.debug("Firewood status register not found, skipping 'Last Firewood Fire' sensor")
+
+    # Add computed sensors for dual-fuel devices: pellet/log-wood energy
+    # split. Same reasoning - gated on register presence, not device type.
+    mode_address = _find_register_address(coordinator._registers, FUEL_MODE_PARAMETER)
+    total_heat_address = _find_register_address(coordinator._registers, TOTAL_HEAT_PARAMETER)
+    if mode_address is not None and total_heat_address is not None:
+        _LOGGER.info("Adding pellet/log-wood energy split sensors (registers found)")
+        entities.append(KWBFuelSplitEnergySensor(
+            coordinator, "pellets", PELLET_MODE_VALUES, mode_address, total_heat_address
+        ))
+        entities.append(KWBFuelSplitEnergySensor(
+            coordinator, "log_wood", LOG_WOOD_MODE_VALUES, mode_address, total_heat_address
+        ))
+    else:
+        _LOGGER.debug(
+            "Operating mode or total heat register not found, skipping fuel energy split sensors"
         )
-        if has_firewood_status:
-            _LOGGER.info("Adding 'Last Firewood Fire' sensor for device type: %s", device_type)
-            entities.append(KWBLastFirewoodFireSensor(coordinator))
-        else:
-            _LOGGER.debug("Firewood status register not found, skipping 'Last Firewood Fire' sensor")
 
     _LOGGER.info("Setting up %d KWB sensor entities", len(entities))
     async_add_entities(entities)
@@ -228,9 +279,11 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
 class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
     """Sensor that tracks when the last firewood fire was active."""
 
-    def __init__(self, coordinator: KWBDataUpdateCoordinator) -> None:
+    def __init__(self, coordinator: KWBDataUpdateCoordinator, status_address: int) -> None:
         """Initialize the sensor."""
         super().__init__(coordinator)
+
+        self._status_address = status_address
 
         # Store the last timestamp when firewood was active
         self._last_firewood_time: datetime | None = None
@@ -291,8 +344,8 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
     @callback
     def _handle_coordinator_update(self) -> None:
         """Handle updated data from the coordinator."""
-        if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
-            register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
+        if self.coordinator.data and self._status_address in self.coordinator.data:
+            register_data = self.coordinator.data[self._status_address]
             raw_value = register_data.get("raw_value")
 
             if raw_value is not None:
@@ -323,8 +376,8 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
             self._language, FIREWOOD_SENSOR_TRANSLATIONS["en"]
         )
 
-        if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
-            register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
+        if self.coordinator.data and self._status_address in self.coordinator.data:
+            register_data = self.coordinator.data[self._status_address]
             raw_value = register_data.get("raw_value")
 
             if raw_value is not None:
@@ -335,6 +388,129 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
                 if "display_value" in register_data:
                     attributes[translations["attr_boiler_status"]] = register_data["display_value"]
 
+        return attributes
+
+    @property
+    def available(self) -> bool:
+        """Return True if entity is available."""
+        return (
+            self.coordinator.last_update_success
+            and self.coordinator.data is not None
+        )
+
+
+class KWBFuelSplitEnergySensor(CoordinatorEntity, RestoreEntity, SensorEntity):
+    """Cumulative energy attributed to one fuel on a dual-fuel boiler.
+
+    KWB only exposes a single combined lifetime heat-output counter
+    (KSM.waermemenge_gesamt_kwh) on Combifire-family boilers that can burn
+    both log wood and pellets - there is no separate per-fuel energy
+    register. This sensor splits it after the fact: each time the combined
+    counter increases, the delta is attributed to whichever fuel
+    CF2.betriebsmodus reports as active at that moment. Off/relay-test
+    periods are left unattributed to either fuel.
+
+    This produces a lifetime cumulative total per fuel (state_class
+    total_increasing), suitable for wrapping in a Home Assistant Utility
+    Meter helper (daily cycle) to get daily energy per fuel.
+    """
+
+    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_state_class = SensorStateClass.TOTAL_INCREASING
+    _attr_native_unit_of_measurement = "kWh"
+
+    def __init__(
+        self,
+        coordinator: KWBDataUpdateCoordinator,
+        fuel: str,
+        mode_values: set[int],
+        mode_address: int,
+        total_heat_address: int,
+    ) -> None:
+        """Initialize the sensor."""
+        super().__init__(coordinator)
+
+        self._fuel = fuel
+        self._mode_values = mode_values
+        self._mode_address = mode_address
+        self._total_heat_address = total_heat_address
+        self._accumulated_kwh: float = 0.0
+        self._last_total_heat: float | None = None
+
+        # Get language from register manager (default to "de" if not available)
+        language = "de"
+        if hasattr(coordinator, 'register_manager') and coordinator.register_manager:
+            language = getattr(coordinator.register_manager, '_language', 'de') or 'de'
+
+        translations = FUEL_SPLIT_TRANSLATIONS[fuel].get(
+            language, FUEL_SPLIT_TRANSLATIONS[fuel]["en"]
+        )
+
+        device_prefix = coordinator.device_name_prefix
+        self._attr_name = f"{device_prefix} {translations['name']}"
+
+        # Generate unique ID and entity_id (always English, for consistency)
+        device_identifier = f"{coordinator.host}_{coordinator.slave_id}"
+        device_prefix_id = coordinator.sanitize_for_entity_id(device_prefix)
+        english_suffix = FUEL_SPLIT_TRANSLATIONS[fuel]["en"]["entity_id_suffix"]
+        self._attr_unique_id = f"kwb_heating_{device_identifier}_{device_prefix_id}_{english_suffix}"
+        self._attr_entity_id = f"sensor.{device_prefix_id}_{english_suffix}"
+
+        self._attr_device_info = coordinator.device_info
+        self._attr_icon = "mdi:pine-tree" if fuel == "log_wood" else "mdi:grain"
+
+    async def async_added_to_hass(self) -> None:
+        """Restore previous state when added to hass."""
+        await super().async_added_to_hass()
+
+        if (last_state := await self.async_get_last_state()) is not None:
+            if last_state.state not in (None, "unknown", "unavailable"):
+                try:
+                    self._accumulated_kwh = float(last_state.state)
+                except (ValueError, TypeError) as exc:
+                    _LOGGER.warning("Could not restore %s energy total: %s", self._fuel, exc)
+
+            last_total_heat = last_state.attributes.get("source_total_heat_kwh")
+            if last_total_heat is not None:
+                try:
+                    self._last_total_heat = float(last_total_heat)
+                except (ValueError, TypeError):
+                    pass
+
+    @callback
+    def _handle_coordinator_update(self) -> None:
+        """Handle updated data from the coordinator."""
+        if (
+            self.coordinator.data
+            and self._total_heat_address in self.coordinator.data
+            and self._mode_address in self.coordinator.data
+        ):
+            current_total = self.coordinator.data[self._total_heat_address].get("value")
+            current_mode = self.coordinator.data[self._mode_address].get("raw_value")
+
+            if current_total is not None:
+                if self._last_total_heat is not None:
+                    delta = current_total - self._last_total_heat
+                    # A negative delta means the source counter was reset
+                    # (e.g. by a technician) - treat as "nothing to
+                    # attribute yet" rather than corrupting our own total.
+                    if delta > 0 and current_mode in self._mode_values:
+                        self._accumulated_kwh += delta
+                self._last_total_heat = current_total
+
+        self.async_write_ha_state()
+
+    @property
+    def native_value(self) -> float:
+        """Return the accumulated energy for this fuel."""
+        return round(self._accumulated_kwh, 3)
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """Return additional state attributes."""
+        attributes: dict[str, Any] = {"fuel": self._fuel}
+        if self._last_total_heat is not None:
+            attributes["source_total_heat_kwh"] = self._last_total_heat
         return attributes
 
     @property
