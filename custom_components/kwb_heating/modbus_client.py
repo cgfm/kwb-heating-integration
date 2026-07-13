@@ -10,9 +10,6 @@ from pymodbus.client import AsyncModbusTcpClient
 from pymodbus.exceptions import ModbusException
 
 from .const import (
-    MODBUS_FUNCTION_CODES,
-    ERROR_CONNECTION,
-    ERROR_TIMEOUT,
     CONNECTION_TYPE_TCP,
     CONNECTION_TYPE_SERIAL,
     DEFAULT_BAUDRATE,
@@ -59,41 +56,19 @@ class KWBModbusClient:
         """Return True if the client is connected to the Modbus device."""
         return self._connected
 
-    async def _invoke_with_unit_kwarg(self, method_name: str, *args):
-        """Call a pymodbus client method with unit/slave in a version-agnostic way.
+    def _kwarg_attempt_order(self) -> list[str]:
+        """Order of unit/slave kwargs to try, cached kwarg first.
 
-        1) Try positional unit/slave as last arg (most compatible)
-        2) Try keyword 'unit'
-        3) Try keyword 'slave'
-        Caches the working keyword for later debug logging.
+        Once the correct kwarg for the installed pymodbus version is known
+        (from connect()'s signature inspection or a prior successful call),
+        try it first instead of always re-running the full fallback cascade
+        on every single register read/write.
         """
-        if not self._client:
-            raise ConnectionError("Modbus client is not initialized")
-
-        method = getattr(self._client, method_name)
-
-        # 1) Positional attempt
-        try:
-            res_pos = await method(*args, self.slave_id)
-            _LOGGER.debug("pymodbus call %s used positional unit arg", method_name)
-            return res_pos
-        except TypeError as e_pos:
-            # 2) Keyword 'unit'
-            try:
-                res = await method(*args, unit=self.slave_id)
-                self._unit_kwarg = "unit"
-                _LOGGER.info("pymodbus call %s works with kwarg 'unit'", method_name)
-                return res
-            except TypeError as e_unit:
-                # 3) Keyword 'slave'
-                try:
-                    res2 = await method(*args, slave=self.slave_id)
-                    self._unit_kwarg = "slave"
-                    _LOGGER.info("pymodbus call %s works with kwarg 'slave'", method_name)
-                    return res2
-                except TypeError:
-                    # Re-raise the first error for clearer context
-                    raise e_pos
+        order = ["unit", "slave"]
+        if self._unit_kwarg in order:
+            order.remove(self._unit_kwarg)
+            order.insert(0, self._unit_kwarg)
+        return order
 
     async def _invoke_read(self, method_name: str, *, address: int, count: int):
         """Call a pymodbus read method in a version-agnostic way.
@@ -106,30 +81,27 @@ class KWBModbusClient:
 
         method = getattr(self._client, method_name)
 
-        # Try unit kwarg
-        try:
-            res = await method(address, count=count, unit=self.slave_id)
-            self._unit_kwarg = "unit"
-            return res
-        except TypeError as e_unit:
-            # Try slave kwarg
+        first_error: TypeError | None = None
+        for kwarg in self._kwarg_attempt_order():
             try:
-                res2 = await method(address, count=count, slave=self.slave_id)
-                self._unit_kwarg = "slave"
-                return res2
-            except TypeError as e_slave:
-                # Try without unit/slave
-                try:
-                    res3 = await method(address, count=count)
-                    return res3
-                except TypeError:
-                    # As last resort, try positional count only
-                    try:
-                        res4 = await method(address, count)
-                        return res4
-                    except TypeError:
-                        # Propagate the earliest informative error
-                        raise e_unit
+                result = await method(address, count=count, **{kwarg: self.slave_id})
+                self._unit_kwarg = kwarg
+                return result
+            except TypeError as exc:
+                first_error = first_error or exc
+
+        # Some pymodbus versions accept neither kwarg.
+        try:
+            return await method(address, count=count)
+        except TypeError:
+            pass
+
+        # As last resort, try positional count only.
+        try:
+            return await method(address, count)
+        except TypeError:
+            # Propagate the earliest informative error
+            raise first_error
 
     async def _invoke_write(self, method_name: str, *, address: int, value: Any):
         """Call a pymodbus write method in a version-agnostic way.
@@ -142,24 +114,20 @@ class KWBModbusClient:
 
         method = getattr(self._client, method_name)
 
-        # Try with 'unit'
-        try:
-            res = await method(address, value, unit=self.slave_id)
-            self._unit_kwarg = "unit"
-            return res
-        except TypeError as e_unit:
-            # Try with 'slave'
+        first_error: TypeError | None = None
+        for kwarg in self._kwarg_attempt_order():
             try:
-                res2 = await method(address, value, slave=self.slave_id)
-                self._unit_kwarg = "slave"
-                return res2
-            except TypeError:
-                # Try without unit/slave
-                try:
-                    res3 = await method(address, value)
-                    return res3
-                except TypeError:
-                    raise e_unit
+                result = await method(address, value, **{kwarg: self.slave_id})
+                self._unit_kwarg = kwarg
+                return result
+            except TypeError as exc:
+                first_error = first_error or exc
+
+        # Try without unit/slave
+        try:
+            return await method(address, value)
+        except TypeError:
+            raise first_error
 
     @property
     def _connection_label(self) -> str:

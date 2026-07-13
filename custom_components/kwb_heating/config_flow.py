@@ -99,56 +99,23 @@ STEP_SERIAL_DATA_SCHEMA = vol.Schema({
     vol.Optional(CONF_SLAVE_ID, default=DEFAULT_SLAVE_ID): vol.All(vol.Coerce(int), vol.Range(min=1, max=255)),
 })
 
-STEP_DEVICE_DATA_SCHEMA = vol.Schema({
-    vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
-    vol.Required(CONF_DEVICE_NAME): cv.string,
-    vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
-    vol.Optional(CONF_LANGUAGE, default="auto"): selector.SelectSelector(
-        selector.SelectSelectorConfig(
-            options=["auto", "de", "en"],
-            translation_key="language",
-            mode=selector.SelectSelectorMode.DROPDOWN,
-        )
-    ),
-    vol.Optional(CONF_UPDATE_INTERVAL, default=DEFAULT_UPDATE_INTERVAL): vol.All(vol.Coerce(int), vol.Range(min=10, max=300)),
-})
+# Maximum configurable count per equipment type, shared by the initial setup
+# schema and the options-flow schema so the two can't silently drift apart.
+EQUIPMENT_RANGES: dict[str, int] = {
+    CONF_HEATING_CIRCUITS: 14,
+    CONF_BUFFER_STORAGE: 15,
+    CONF_DHW_STORAGE: 14,
+    CONF_SECONDARY_HEAT_SOURCES: 14,
+    CONF_CIRCULATION: 15,
+    CONF_SOLAR: 14,
+    CONF_BOILER_SEQUENCE: 8,
+    CONF_HEAT_METERS: 36,
+    CONF_TRANSFER_STATIONS: 14,
+}
 
 STEP_EQUIPMENT_DATA_SCHEMA = vol.Schema({
-    # Slider für Anzahl der Heizkreise (0 = deaktiviert, 1-14 = Anzahl)
-    # 421 Register verfügbar, realistisch max. 14 Heizkreise
-    vol.Optional(CONF_HEATING_CIRCUITS, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-
-    # Slider für Anzahl der Pufferspeicher (0 = deaktiviert, 1-15 = Anzahl)
-    # 270 Register verfügbar, realistisch max. 15 Pufferspeicher
-    vol.Optional(CONF_BUFFER_STORAGE, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=15)),
-
-    # Slider für Anzahl der Brauchwasserspeicher (0 = deaktiviert, 1-14 = Anzahl)
-    # 168 Register verfügbar, realistisch max. 14 Brauchwasserspeicher
-    vol.Optional(CONF_DHW_STORAGE, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-    
-    # Slider für Anzahl der Zweitwärmequellen (0 = deaktiviert, 1-14 = Anzahl)
-    # 56 Register verfügbar, realistisch max. 14 Zweitwärmequellen
-    vol.Optional(CONF_SECONDARY_HEAT_SOURCES, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-
-    # Slider für Anzahl der Zirkulationen (0 = deaktiviert, 1-15 = Anzahl)
-    # 60 Register verfügbar, realistisch max. 15 Zirkulationen
-    vol.Optional(CONF_CIRCULATION, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=15)),
-
-    # Slider für Anzahl der Solar-Anlagen (0 = deaktiviert, 1-14 = Anzahl)
-    # 392 Register verfügbar, realistisch max. 14 Solar-Anlagen
-    vol.Optional(CONF_SOLAR, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-
-    # Slider für Anzahl der Kesselfolgeschaltungen (0 = deaktiviert, 1-8 = Anzahl)
-    # 45 Register verfügbar, realistisch max. 8 Kesselfolgeschaltungen
-    vol.Optional(CONF_BOILER_SEQUENCE, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=8)),
-
-    # Slider für Anzahl der Wärmemengenzähler (0 = deaktiviert, 1-36 = Anzahl)
-    # 216 Register verfügbar, realistisch max. 36 Wärmemengenzähler
-    vol.Optional(CONF_HEAT_METERS, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=36)),
-
-    # Slider für Anzahl der Übergabestationen (0 = deaktiviert, 1-14 = Anzahl)
-    # Transfer stations configuration
-    vol.Optional(CONF_TRANSFER_STATIONS, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
+    vol.Optional(key, default=0): vol.All(vol.Coerce(int), vol.Range(min=0, max=max_count))
+    for key, max_count in EQUIPMENT_RANGES.items()
 })
 
 
@@ -228,13 +195,19 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             self.data.update(user_input)
+
+            # Set and check the unique ID *before* the try/except below - it
+            # raises AbortFlow, which is itself an Exception subclass and
+            # would otherwise be swallowed by the broad `except Exception`
+            # into a generic "unknown" error instead of properly aborting.
+            # Checking first also avoids testing the connection for a device
+            # that's already configured.
+            unique_id = f"{user_input[CONF_HOST]}_{user_input[CONF_SLAVE_ID]}"
+            await self.async_set_unique_id(unique_id)
+            self._abort_if_unique_id_configured()
+
             try:
                 await validate_input(self.hass, self.data)
-
-                unique_id = f"{user_input[CONF_HOST]}_{user_input[CONF_SLAVE_ID]}"
-                await self.async_set_unique_id(unique_id)
-                self._abort_if_unique_id_configured()
-
                 return await self.async_step_device()
 
             except CannotConnect:
@@ -259,13 +232,14 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         if user_input is not None:
             self.data.update(user_input)
+
+            # See async_step_tcp for why this must happen before the try/except.
+            unique_id = f"{user_input[CONF_SERIAL_PORT]}_{user_input[CONF_SLAVE_ID]}"
+            await self.async_set_unique_id(unique_id)
+            self._abort_if_unique_id_configured()
+
             try:
                 await validate_input(self.hass, self.data)
-
-                unique_id = f"{user_input[CONF_SERIAL_PORT]}_{user_input[CONF_SLAVE_ID]}"
-                await self.async_set_unique_id(unique_id)
-                self._abort_if_unique_id_configured()
-
                 return await self.async_step_device()
 
             except CannotConnect:
@@ -423,17 +397,20 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
         entry = getattr(self, "config_entry", None) or self._config_entry
         current_equipment = entry.options
         
-        # Create schema with current values as defaults
+        def _current_default(key: str, fallback: Any) -> Any:
+            return current_equipment.get(key, entry.data.get(key, fallback))
+
+        # Create schema with current values as defaults. Equipment count
+        # fields are built from EQUIPMENT_RANGES so their max values can't
+        # drift from the initial-setup schema.
         equipment_schema = vol.Schema({
             vol.Optional(
                 CONF_DEVICE_NAME,
-                default=current_equipment.get(CONF_DEVICE_NAME,
-                                             entry.data.get(CONF_DEVICE_NAME, "KWB Heating"))
+                default=_current_default(CONF_DEVICE_NAME, "KWB Heating")
             ): cv.string,
             vol.Optional(
                 CONF_LANGUAGE,
-                default=current_equipment.get(CONF_LANGUAGE,
-                                             entry.data.get(CONF_LANGUAGE, "auto"))
+                default=_current_default(CONF_LANGUAGE, "auto")
             ): selector.SelectSelector(
                 selector.SelectSelectorConfig(
                     options=["auto", "de", "en"],
@@ -441,60 +418,19 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                     mode=selector.SelectSelectorMode.DROPDOWN,
                 )
             ),
-            vol.Optional(
-                CONF_HEATING_CIRCUITS,
-                default=current_equipment.get(CONF_HEATING_CIRCUITS,
-                                             entry.data.get(CONF_HEATING_CIRCUITS, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-            vol.Optional(
-                CONF_BUFFER_STORAGE, 
-                default=current_equipment.get(CONF_BUFFER_STORAGE,
-                                             entry.data.get(CONF_BUFFER_STORAGE, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=15)),
-            vol.Optional(
-                CONF_DHW_STORAGE, 
-                default=current_equipment.get(CONF_DHW_STORAGE,
-                                             entry.data.get(CONF_DHW_STORAGE, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-            vol.Optional(
-                CONF_SECONDARY_HEAT_SOURCES, 
-                default=current_equipment.get(CONF_SECONDARY_HEAT_SOURCES,
-                                             entry.data.get(CONF_SECONDARY_HEAT_SOURCES, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-            vol.Optional(
-                CONF_CIRCULATION, 
-                default=current_equipment.get(CONF_CIRCULATION,
-                                             entry.data.get(CONF_CIRCULATION, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=15)),
-            vol.Optional(
-                CONF_SOLAR, 
-                default=current_equipment.get(CONF_SOLAR,
-                                             entry.data.get(CONF_SOLAR, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
-            vol.Optional(
-                CONF_BOILER_SEQUENCE, 
-                default=current_equipment.get(CONF_BOILER_SEQUENCE,
-                                             entry.data.get(CONF_BOILER_SEQUENCE, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=8)),
-            vol.Optional(
-                CONF_HEAT_METERS,
-                default=current_equipment.get(CONF_HEAT_METERS,
-                                             entry.data.get(CONF_HEAT_METERS, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=36)),
-            vol.Optional(
-                CONF_TRANSFER_STATIONS,
-                default=current_equipment.get(CONF_TRANSFER_STATIONS,
-                                             entry.data.get(CONF_TRANSFER_STATIONS, 0))
-            ): vol.All(vol.Coerce(int), vol.Range(min=0, max=14)),
+            **{
+                vol.Optional(key, default=_current_default(key, 0)): vol.All(
+                    vol.Coerce(int), vol.Range(min=0, max=max_count)
+                )
+                for key, max_count in EQUIPMENT_RANGES.items()
+            },
             vol.Optional(
                 CONF_ACCESS_LEVEL,
-                default=current_equipment.get(CONF_ACCESS_LEVEL,
-                                             entry.data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL))
+                default=_current_default(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL)
             ): vol.In(ACCESS_LEVELS.keys()),
             vol.Optional(
                 CONF_UPDATE_INTERVAL,
-                default=current_equipment.get(CONF_UPDATE_INTERVAL,
-                                             entry.data.get(CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL))
+                default=_current_default(CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL)
             ): vol.All(vol.Coerce(int), vol.Range(min=10, max=300)),
         })
 

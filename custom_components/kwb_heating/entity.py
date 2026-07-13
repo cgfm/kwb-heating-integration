@@ -1,12 +1,15 @@
 """Base entity for KWB Heating integration."""
 from __future__ import annotations
 
+import logging
 from typing import TYPE_CHECKING, Any
 
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 if TYPE_CHECKING:
     from .coordinator import KWBDataUpdateCoordinator
+
+_LOGGER = logging.getLogger(__name__)
 
 
 class KWBBaseEntity(CoordinatorEntity):
