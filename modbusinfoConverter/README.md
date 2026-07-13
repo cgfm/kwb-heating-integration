@@ -144,10 +144,14 @@ INFO: ✓ Successfully converted ModbusInfo-de-V22.7.1.xlsx
 
 ## 📂 Output Structure
 
-The converter creates a version and language-specific directory structure:
+The converter writes directly into the integration's own config tree at
+`../custom_components/kwb_heating/config/versions/` - this is the single
+source of truth for register JSON; there is no separate copy inside
+`modbusinfoConverter/` to keep in sync. It creates a version and
+language-specific directory structure:
 
 ```
-config/versions/
+custom_components/kwb_heating/config/versions/
 ├── v22.7.1/
 │   ├── de/
 │   │   ├── modbus_registers.json       # Universal + WMM Autonom registers
@@ -320,35 +324,11 @@ Equipment files use English names regardless of Excel language:
 
 ## 🔄 Integration with Home Assistant
 
-After successful conversion, integrate the generated files:
+Since the converter writes directly into `custom_components/kwb_heating/config/versions/`, there is no copy step - re-running `convert_modbusinfo.py` updates the live integration config in place.
 
-### Method 1: Copy to Integration (Development)
+If a specific version isn't in `custom_components/kwb_heating/config/version_mapping.json` yet, add an entry there too (see `custom_components/kwb_heating/version_manager.py`'s `_create_default_mapping()` for the expected shape) - the register JSON alone isn't enough for the integration to pick up a new version.
 
-```bash
-# From modbusinfoConverter directory
-cp -r config/versions/ ../custom_components/kwb_heating/config/
-```
-
-### Method 2: Replace Existing Config
-
-```bash
-# Backup existing config
-mv ../custom_components/kwb_heating/config/versions \
-   ../custom_components/kwb_heating/config/versions.backup
-
-# Copy new config
-cp -r config/versions ../custom_components/kwb_heating/config/
-```
-
-### Method 3: Update Specific Version/Language
-
-```bash
-# Update only German v25.7.1
-cp -r config/versions/v25.7.1/de \
-   ../custom_components/kwb_heating/config/versions/v25.7.1/
-```
-
-### After Integration
+### After Conversion
 
 1. Restart Home Assistant
 2. The integration will automatically use version-specific configs
@@ -498,7 +478,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(levelname)s: %(message)s')
 Use Python to validate generated JSON:
 
 ```bash
-python3 -m json.tool config/versions/v22.7.1/de/modbus_registers.json
+python3 -m json.tool ../custom_components/kwb_heating/config/versions/v22.7.1/de/modbus_registers.json
 ```
 
 ## 🔄 Version History

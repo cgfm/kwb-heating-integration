@@ -8,6 +8,20 @@ A comprehensive Home Assistant Custom Component for **KWB heating systems** with
 
 > **⚠️ Testing Status**: This integration has been tested primarily with **KWB CF2**, **2 heating circuits**, and **1 buffer storage**. Testing with other KWB models and configurations is very welcome! Please help expand compatibility by testing with your setup and reporting results via [GitHub Issues](https://github.com/cgfm/kwb-heating-integration/issues).
 
+## ⚠️ Breaking Changes (v0.6.0)
+
+**If you are upgrading from a previous version, please read this section carefully.**
+
+### Entity IDs Now Derived From the KWB Parameter Path
+
+Entity IDs are now generated from each register's internal KWB `parameter` path (e.g. `SOL.pumpe_1_steuerstufe`) instead of its translated display name. Two different KWB registers can share an identical display name (e.g. a pump's on/off status and its separate speed-percentage register were both just called "Pump 1"), which silently dropped one of the two entities entirely. Using the parameter path - the manufacturer's own unique key - fixes this at the root.
+
+**Impact**: every entity's `entity_id` changes on upgrade, for example `sensor.cf2_sol_1_pump_1` → `sensor.cf2_sol_1_sol_pumpe_1_steuerstufe`.
+
+**Migration**: After upgrading, check **Developer Tools → States** for your device prefix and update any automations, scripts, or dashboards referencing old entity IDs. You may also notice a few previously-missing entities appear for the first time (e.g. solar/boiler pump modulation-level sensors) - these existed as registers all along but were never created due to the naming collision above.
+
+See [CHANGELOG.md](CHANGELOG.md) for full details.
+
 ## ⚠️ Breaking Changes (v0.5.0)
 
 **If you are upgrading from a previous version, please read this section carefully.**
@@ -173,7 +187,7 @@ For devices that support firewood operation (Stückholz), a special computed sen
 | German | `{Prefix} Letztes Stückholzfeuer` | `sensor.{prefix}_letztes_stueckholzfeuer` |
 | English | `{Prefix} Last Firewood Fire` | `sensor.{prefix}_last_firewood_fire` |
 
-**Supported devices**: KWB CF 1, KWB CF 1.5, KWB CF 2, KWB Combifire, KWB Multifire
+**Supported devices**: KWB CF 1, KWB CF 1.5, KWB CF 2, KWB Combifire - automatically detected from whether the required register exists for your device, not from a hardcoded device list.
 
 **Features**:
 - **Device class**: `timestamp` - displays relative time (e.g., "2 hours ago")
@@ -201,6 +215,29 @@ automation:
         data:
           message: "Seit 24 Stunden kein Stückholzfeuer mehr!"
 ```
+
+#### Pellet / Log Wood Energy Split
+
+For dual-fuel devices (KWB CF 1, CF 1.5, CF 2, Combifire - **not** Multifire, which supports firewood but lacks the register this needs), two computed sensors split the boiler's single combined lifetime heat-output counter by fuel, using the operating-mode register (`CF2.betriebsmodus`) to attribute each increase to whichever fuel was active at the time:
+
+| Entity ID | Description |
+|-----------|-------------|
+| `sensor.{prefix}_pellet_energy_total` | Lifetime energy (kWh) produced while running on pellets |
+| `sensor.{prefix}_log_wood_energy_total` | Lifetime energy (kWh) produced while running on log wood |
+
+Both are `state_class: total_increasing`, so they can be added directly to the Energy Dashboard's "Individual devices" section, or wrapped in a [Utility Meter](https://www.home-assistant.io/integrations/utility_meter/) helper for daily/weekly/monthly statistics. Example `configuration.yaml` for daily totals:
+
+```yaml
+utility_meter:
+  pellet_energy_daily:
+    source: sensor.cf2_pellet_energy_total
+    cycle: daily
+  log_wood_energy_daily:
+    source: sensor.cf2_log_wood_energy_total
+    cycle: daily
+```
+
+(Utility Meter helpers can also be created via **Settings → Devices & Services → Helpers → Create Helper → Utility Meter** in the UI instead of YAML.) Time spent off or in relay-test mode isn't attributed to either fuel. If the source counter is ever reset by a technician, the split sensors detect the reset and don't subtract from their own totals.
 
 ### Control (Read-Write)
 - **Target temperatures** for heating circuits
@@ -296,7 +333,8 @@ The **modbusinfoConverter** tool converts KWB's official ModbusInfo Excel files 
 cd modbusinfoConverter
 # Place ModbusInfo-{lang}-V{version}.xlsx files in modbusinfo/ directory
 python3 convert_modbusinfo.py
-# Generated files appear in config/versions/
+# Writes directly into custom_components/kwb_heating/config/versions/ -
+# that's the single source of truth, there's no separate copy to sync.
 ```
 
 ### Generate Excel from JSON
@@ -432,8 +470,7 @@ If you have access to KWB's official ModbusInfo Excel files:
 
 1. Place Excel files in `modbusinfoConverter/modbusinfo/`
 2. Run `python3 convert_modbusinfo.py`
-3. Generated JSON configs appear in `modbusinfoConverter/config/versions/`
-4. Copy to integration: `cp -r config/versions/ custom_components/kwb_heating/config/`
+3. Generated JSON configs are written directly into `custom_components/kwb_heating/config/versions/` - no separate copy step
 
 See [modbusinfoConverter/README.md](modbusinfoConverter/README.md) for details.
 
