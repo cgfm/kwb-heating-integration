@@ -3,7 +3,7 @@
     {
       "starting_address": 8197,
       "name": "Boiler temp., actual (value)",
-      "entity_id": "boiler_temp_actual_value",
+      "entity_id": "ksm_i_kesseltemp_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -15,7 +15,7 @@
     {
       "starting_address": 8198,
       "name": "Boiler temp., actual (status)",
-      "entity_id": "boiler_temp_actual_status",
+      "entity_id": "ksm_i_kesseltemp_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -27,7 +27,7 @@
     {
       "starting_address": 8199,
       "name": "Boiler temperature, setpoint",
-      "entity_id": "boiler_temperature_setpoint",
+      "entity_id": "ksm_kesseltemp_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -39,7 +39,7 @@
     {
       "starting_address": 8200,
       "name": "Boiler pump",
-      "entity_id": "boiler_pump",
+      "entity_id": "ksm_do_kesselpumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -51,7 +51,7 @@
     {
       "starting_address": 8201,
       "name": "Boiler pump %",
-      "entity_id": "boiler_pump",
+      "entity_id": "ksm_kesselpumpe_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -63,7 +63,7 @@
     {
       "starting_address": 8202,
       "name": "Return flow temp., actual (value)",
-      "entity_id": "return_flow_temp_actual_value",
+      "entity_id": "ksm_i_ruecklauftemp_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -75,7 +75,7 @@
     {
       "starting_address": 8203,
       "name": "Return flow temp., actual (status)",
-      "entity_id": "return_flow_temp_actual_status",
+      "entity_id": "ksm_i_ruecklauftemp_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -87,7 +87,7 @@
     {
       "starting_address": 8206,
       "name": "Consumer request",
-      "entity_id": "consumer_request",
+      "entity_id": "ksm_verbraucher_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -99,7 +99,7 @@
     {
       "starting_address": 8207,
       "name": "Boiler output",
-      "entity_id": "boiler_output",
+      "entity_id": "ksm_brennerleistung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -111,7 +111,7 @@
     {
       "starting_address": 8208,
       "name": "Boiler status",
-      "entity_id": "boiler_status",
+      "entity_id": "ksm_kesselstatus_anzeige",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -123,7 +123,7 @@
     {
       "starting_address": 8209,
       "name": "Full load hours",
-      "entity_id": "full_load_hours",
+      "entity_id": "ksm_betriebsminuten_summe",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -136,7 +136,7 @@
     {
       "starting_address": 8213,
       "name": "Fuel bed",
-      "entity_id": "fuel_bed",
+      "entity_id": "mf2_glutbettniveau",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -147,7 +147,7 @@
     {
       "starting_address": 8214,
       "name": "Oxygen, actual",
-      "entity_id": "oxygen_actual",
+      "entity_id": "ksm_o2ist",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -159,7 +159,7 @@
     {
       "starting_address": 8215,
       "name": "Flame temp., actual (value)",
-      "entity_id": "flame_temp_actual_value",
+      "entity_id": "ksm_i_flammtemp_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -171,7 +171,7 @@
     {
       "starting_address": 8216,
       "name": "Flame temp., actual (status)",
-      "entity_id": "flame_temp_actual_status",
+      "entity_id": "ksm_i_flammtemp_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -183,7 +183,7 @@
     {
       "starting_address": 8218,
       "name": "Negative pressure, actual",
-      "entity_id": "negative_pressure_actual",
+      "entity_id": "ksm_ai_feuerraum_unterdruck",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -195,7 +195,7 @@
     {
       "starting_address": 8219,
       "name": "Burnout temperature (value)",
-      "entity_id": "burnout_temperature_value",
+      "entity_id": "mf2_i_ausbrandtemp_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -207,7 +207,7 @@
     {
       "starting_address": 8220,
       "name": "Burnout temperature (status)",
-      "entity_id": "burnout_temperature_status",
+      "entity_id": "mf2_i_ausbrandtemp_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -219,7 +219,7 @@
     {
       "starting_address": 8221,
       "name": "Primary fan",
-      "entity_id": "primary_fan",
+      "entity_id": "ak_pl_geblaesestufe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -231,7 +231,7 @@
     {
       "starting_address": 8222,
       "name": "Secondary fan",
-      "entity_id": "secondary_fan",
+      "entity_id": "mf2_slgeblaesestufe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -243,7 +243,7 @@
     {
       "starting_address": 8223,
       "name": "Induced draught phase",
-      "entity_id": "induced_draught_phase",
+      "entity_id": "ksm_saugzugstufe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -255,7 +255,7 @@
     {
       "starting_address": 8224,
       "name": "Next maintenance in",
-      "entity_id": "next_maintenance_in",
+      "entity_id": "ksm_serviceintervallreststunden",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -267,7 +267,7 @@
     {
       "starting_address": 8226,
       "name": "Drive, conveyor system",
-      "entity_id": "drive_conveyor_system",
+      "entity_id": "fs_o_motor_foerdersystem_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -279,7 +279,7 @@
     {
       "starting_address": 8227,
       "name": "External 1",
-      "entity_id": "external_1",
+      "entity_id": "ksm_i_extern1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -291,7 +291,7 @@
     {
       "starting_address": 8228,
       "name": "External 2",
-      "entity_id": "external_2",
+      "entity_id": "ksm_i_extern2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -303,7 +303,7 @@
     {
       "starting_address": 8229,
       "name": "External 3",
-      "entity_id": "external3",
+      "entity_id": "ksm_i_extern3",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,7 +315,7 @@
     {
       "starting_address": 8230,
       "name": "Fuel factor",
-      "entity_id": "fuel_factor",
+      "entity_id": "mf2_brennstofffaktor",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -327,7 +327,7 @@
     {
       "starting_address": 8233,
       "name": "Fuel consumption",
-      "entity_id": "fuel_consumption",
+      "entity_id": "fs_pelletsverbrauch",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -340,7 +340,7 @@
     {
       "starting_address": 8236,
       "name": "burner output external",
-      "entity_id": "burner_output_external",
+      "entity_id": "ak_externe_brennerleistung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -352,7 +352,7 @@
     {
       "starting_address": 8237,
       "name": "Boiler temp. Setpoint extern.",
-      "entity_id": "boiler_temp_setpoint_extern",
+      "entity_id": "ak_externe_kessel_solltemperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -364,7 +364,7 @@
     {
       "starting_address": 8238,
       "name": "Suction turbine",
-      "entity_id": "suction_turbine",
+      "entity_id": "ksm_do_pelletssauger",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -376,7 +376,7 @@
     {
       "starting_address": 8239,
       "name": "Ash 90% filled",
-      "entity_id": "ash_90_filled",
+      "entity_id": "mf2_i_aschebehaelter_90_prz",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -388,7 +388,7 @@
     {
       "starting_address": 8240,
       "name": "Air change",
-      "entity_id": "air_change",
+      "entity_id": "mf2_luftverschiebung_gesamt",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -400,7 +400,7 @@
     {
       "starting_address": 8250,
       "name": "Outside temp. act. value (value)",
-      "entity_id": "outside_temp_act_value_value",
+      "entity_id": "system_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -412,7 +412,7 @@
     {
       "starting_address": 8251,
       "name": "Outside temp. act. value (status)",
-      "entity_id": "outside_temp_act_value_status",
+      "entity_id": "system_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -424,7 +424,7 @@
     {
       "starting_address": 9044,
       "name": "Multi-function output 1 (125)",
-      "entity_id": "multi_function_output_1_125",
+      "entity_id": "ksm_o_multifunktionsausgang_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -436,7 +436,7 @@
     {
       "starting_address": 9045,
       "name": "Multi-function output 2 (127)",
-      "entity_id": "multi_function_output_2_127",
+      "entity_id": "ksm_o_multifunktionsausgang_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -448,7 +448,7 @@
     {
       "starting_address": 9046,
       "name": "Multi-function output 3 (124)",
-      "entity_id": "multi_function_output_3_124",
+      "entity_id": "ksm_o_multifunktionsausgang_3",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -460,7 +460,7 @@
     {
       "starting_address": 9047,
       "name": "Multi-function output 4 (126)",
-      "entity_id": "multi_function_output_4_126",
+      "entity_id": "ksm_o_multifunktionsausgang_4",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -472,7 +472,7 @@
     {
       "starting_address": 9495,
       "name": "Modbus overheating",
-      "entity_id": "modbus_overheating",
+      "entity_id": "ksm_modbus_ueberhitzung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -484,7 +484,7 @@
     {
       "starting_address": 9496,
       "name": "Modbus heat consumption Max",
-      "entity_id": "modbus_heat_consumption_max",
+      "entity_id": "ksm_modbus_waermeabnahme_max",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -496,7 +496,7 @@
     {
       "starting_address": 9498,
       "name": "Induced draught speed",
-      "entity_id": "induced_draught_speed",
+      "entity_id": "ksm_i_drehzahl_saugzug",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -508,7 +508,7 @@
     {
       "starting_address": 9877,
       "name": "Burner output determined by",
-      "entity_id": "burner_output_determined_by",
+      "entity_id": "ak_anforderung_bl_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -520,7 +520,7 @@
     {
       "starting_address": 9878,
       "name": "Heat quant. tot.",
-      "entity_id": "heat_quant_tot",
+      "entity_id": "ksm_waermemenge_gesamt",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -533,7 +533,7 @@
     {
       "starting_address": 9970,
       "name": "Boiler status",
-      "entity_id": "pellet_boiler_status",
+      "entity_id": "ksm_kesselstatus_anzeige_simple",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -545,7 +545,7 @@
     {
       "starting_address": 9988,
       "name": "Fuel consumption reset counter",
-      "entity_id": "fuel_consumption_reset_counter",
+      "entity_id": "fs_pelletverbrauch_reset_counter",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -556,7 +556,7 @@
     {
       "starting_address": 24576,
       "name": "Boiler on/off",
-      "entity_id": "boiler_on_off",
+      "entity_id": "ak_anlage_ein",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -568,7 +568,7 @@
     {
       "starting_address": 24579,
       "name": "Setpoint temperature 1",
-      "entity_id": "setpoint_temperature_1",
+      "entity_id": "mf2_kesseltempsoll1",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -582,7 +582,7 @@
     {
       "starting_address": 24580,
       "name": "Setpoint temperature 2",
-      "entity_id": "setpoint_temperature_2",
+      "entity_id": "mf2_kesseltempsoll2",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -596,7 +596,7 @@
     {
       "starting_address": 24581,
       "name": "Return flow temperature, minimum",
-      "entity_id": "return_flow_temperature_minimum",
+      "entity_id": "ksm_ruecklauftempmin",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -610,7 +610,7 @@
     {
       "starting_address": 24583,
       "name": "External specification",
-      "entity_id": "external_specification",
+      "entity_id": "ak_externe_vorgabe",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -622,7 +622,7 @@
     {
       "starting_address": 24584,
       "name": "Boiler program",
-      "entity_id": "boiler_program",
+      "entity_id": "ak_kesselprogramm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -634,7 +634,7 @@
     {
       "starting_address": 24849,
       "name": "Modbus Lifetick",
-      "entity_id": "modbus_lifetick",
+      "entity_id": "ksm_modbus_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -645,7 +645,7 @@
     {
       "starting_address": 24850,
       "name": "Modbus Commit Lifetick",
-      "entity_id": "modbus_commit_lifetick",
+      "entity_id": "ksm_modbus_commit_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -656,7 +656,7 @@
     {
       "starting_address": 24851,
       "name": "Modbus boiler temperature",
-      "entity_id": "modbus_boiler_temperature",
+      "entity_id": "ksm_modbus_kesseltemp_vorgabe",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -668,7 +668,7 @@
     {
       "starting_address": 24852,
       "name": "Modbus boiler output",
-      "entity_id": "modbus_boiler_output",
+      "entity_id": "ksm_modbus_leistung_vorgabe",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -680,7 +680,7 @@
     {
       "starting_address": 24854,
       "name": "Modbus boiler request",
-      "entity_id": "modbus_boiler_request",
+      "entity_id": "ksm_modbus_kesselanforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -692,7 +692,7 @@
     {
       "starting_address": 24927,
       "name": "Residual amount fuel storage",
-      "entity_id": "residual_amount_fuel_storage",
+      "entity_id": "ksm_restmenge_brennstofflager",
       "data_type": "03",
       "type": "u32",
       "user_level": "readwrite",
@@ -707,7 +707,7 @@
     {
       "starting_address": 24932,
       "name": "Modbus buffer temperature top for residual heat use (value)",
-      "entity_id": "modbus_buffer_temperature_top_for_residual_heat_use_value",
+      "entity_id": "ksm_modbus_puffertemperatur_oben_value",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -719,7 +719,7 @@
     {
       "starting_address": 24933,
       "name": "Modbus buffer temperature top for residual heat use (status)",
-      "entity_id": "modbus_buffer_temperature_top_for_residual_heat_use_status",
+      "entity_id": "ksm_modbus_puffertemperatur_oben_status",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -731,7 +731,7 @@
     {
       "starting_address": 24934,
       "name": "Modbus buffer temperature bottom for residual heat use (value)",
-      "entity_id": "modbus_buffer_temperature_bottom_for_residual_heat_use_value",
+      "entity_id": "ksm_modbus_puffertemperatur_unten_value",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -743,7 +743,7 @@
     {
       "starting_address": 24935,
       "name": "Modbus buffer temperature bottom for residual heat use (status)",
-      "entity_id": "modbus_buffer_temperature_bottom_for_residual_heat_use_status",
+      "entity_id": "ksm_modbus_puffertemperatur_unten_status",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

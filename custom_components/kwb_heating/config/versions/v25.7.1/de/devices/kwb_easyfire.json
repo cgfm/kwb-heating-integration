@@ -3,7 +3,7 @@
     {
       "starting_address": 8197,
       "name": "Kesseltemperatur Ist (value)",
-      "entity_id": "boiler_temp_actual_value",
+      "entity_id": "ksm_i_kesseltemp_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -15,7 +15,7 @@
     {
       "starting_address": 8198,
       "name": "Kesseltemperatur Ist (status)",
-      "entity_id": "boiler_temp_actual_status",
+      "entity_id": "ksm_i_kesseltemp_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -27,7 +27,7 @@
     {
       "starting_address": 8199,
       "name": "Kesseltemperatur Soll",
-      "entity_id": "boiler_temperature_setpoint",
+      "entity_id": "ksm_kesseltemp_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -39,7 +39,7 @@
     {
       "starting_address": 8200,
       "name": "Kesselpumpe",
-      "entity_id": "boiler_pump",
+      "entity_id": "ksm_do_kesselpumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -51,7 +51,7 @@
     {
       "starting_address": 8201,
       "name": "Kesselpumpe %",
-      "entity_id": "boiler_pump",
+      "entity_id": "ksm_kesselpumpe_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -63,7 +63,7 @@
     {
       "starting_address": 8202,
       "name": "Rücklauftemperatur Ist (value)",
-      "entity_id": "return_flow_temp_actual_value",
+      "entity_id": "ksm_i_ruecklauftemp_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -75,7 +75,7 @@
     {
       "starting_address": 8203,
       "name": "Rücklauftemperatur Ist (status)",
-      "entity_id": "return_flow_temp_actual_status",
+      "entity_id": "ksm_i_ruecklauftemp_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -87,7 +87,7 @@
     {
       "starting_address": 8207,
       "name": "Kesselleistung",
-      "entity_id": "boiler_output",
+      "entity_id": "ksm_brennerleistung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -99,7 +99,7 @@
     {
       "starting_address": 8208,
       "name": "Kesselstatus",
-      "entity_id": "boiler_status",
+      "entity_id": "ksm_kesselstatus_anzeige",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -111,7 +111,7 @@
     {
       "starting_address": 8209,
       "name": "Volllaststunden",
-      "entity_id": "full_load_hours",
+      "entity_id": "ksm_betriebsminuten_summe",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -124,7 +124,7 @@
     {
       "starting_address": 8214,
       "name": "Sauerstoff Ist",
-      "entity_id": "oxygen_actual",
+      "entity_id": "ksm_o2ist",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -136,7 +136,7 @@
     {
       "starting_address": 8215,
       "name": "Flammtemperatur Ist (value)",
-      "entity_id": "flame_temp_actual_value",
+      "entity_id": "ksm_i_flammtemp_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -148,7 +148,7 @@
     {
       "starting_address": 8216,
       "name": "Flammtemperatur Ist (status)",
-      "entity_id": "flame_temp_actual_status",
+      "entity_id": "ksm_i_flammtemp_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -160,7 +160,7 @@
     {
       "starting_address": 8218,
       "name": "Unterdruck Ist",
-      "entity_id": "negative_pressure_actual",
+      "entity_id": "ksm_ai_feuerraum_unterdruck",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -172,7 +172,7 @@
     {
       "starting_address": 8221,
       "name": "Primärgebläse",
-      "entity_id": "primary_fan",
+      "entity_id": "ak_pl_geblaesestufe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -184,7 +184,7 @@
     {
       "starting_address": 8223,
       "name": "Saugzugstufe",
-      "entity_id": "induced_draught_phase",
+      "entity_id": "ksm_saugzugstufe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -196,7 +196,7 @@
     {
       "starting_address": 8224,
       "name": "Nächste Wartung in",
-      "entity_id": "next_maintenance_in",
+      "entity_id": "ksm_serviceintervallreststunden",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -208,7 +208,7 @@
     {
       "starting_address": 8226,
       "name": "Antrieb Fördersystem",
-      "entity_id": "drive_conveyor_system",
+      "entity_id": "fs_o_motor_foerdersystem_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -220,7 +220,7 @@
     {
       "starting_address": 8227,
       "name": "Extern 1",
-      "entity_id": "external_1",
+      "entity_id": "ksm_i_extern1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -232,7 +232,7 @@
     {
       "starting_address": 8228,
       "name": "Extern 2",
-      "entity_id": "external_2",
+      "entity_id": "ksm_i_extern2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -244,7 +244,7 @@
     {
       "starting_address": 8229,
       "name": "Extern 3",
-      "entity_id": "external3",
+      "entity_id": "ksm_i_extern3",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -256,7 +256,7 @@
     {
       "starting_address": 8231,
       "name": "Abgastemperatur (value)",
-      "entity_id": "exhaust_gas_temperature_value",
+      "entity_id": "ksm_i_rauchgastemp_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -267,7 +267,7 @@
     {
       "starting_address": 8232,
       "name": "Abgastemperatur (status)",
-      "entity_id": "exhaust_gas_temperature_status",
+      "entity_id": "ksm_i_rauchgastemp_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -278,7 +278,7 @@
     {
       "starting_address": 8233,
       "name": "Brennstoffverbrauch",
-      "entity_id": "fuel_consumption",
+      "entity_id": "fs_pelletsverbrauch",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -291,7 +291,7 @@
     {
       "starting_address": 8235,
       "name": "Brennstofffaktor",
-      "entity_id": "fuel_factor",
+      "entity_id": "ef2_brennstofffaktor",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -303,7 +303,7 @@
     {
       "starting_address": 8236,
       "name": "Brennerleistung extern",
-      "entity_id": "burner_output_external",
+      "entity_id": "ak_externe_brennerleistung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,7 +315,7 @@
     {
       "starting_address": 8237,
       "name": "Kesseltemp. Soll Extern",
-      "entity_id": "boiler_temp_setpoint_extern",
+      "entity_id": "ak_externe_kessel_solltemperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -327,7 +327,7 @@
     {
       "starting_address": 8238,
       "name": "Saugturbine",
-      "entity_id": "suction_turbine",
+      "entity_id": "ksm_do_pelletssauger",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -339,7 +339,7 @@
     {
       "starting_address": 8250,
       "name": "Außentemperatur Istwert (value)",
-      "entity_id": "outside_temp_act_value_value",
+      "entity_id": "system_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -351,7 +351,7 @@
     {
       "starting_address": 8251,
       "name": "Außentemperatur Istwert (status)",
-      "entity_id": "outside_temp_act_value_status",
+      "entity_id": "system_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -363,7 +363,7 @@
     {
       "starting_address": 9044,
       "name": "Multifunktionsausgang 1 (125)",
-      "entity_id": "multi_function_output_1_125",
+      "entity_id": "ksm_o_multifunktionsausgang_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -375,7 +375,7 @@
     {
       "starting_address": 9045,
       "name": "Multifunktionsausgang 2 (127)",
-      "entity_id": "multi_function_output_2_127",
+      "entity_id": "ksm_o_multifunktionsausgang_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -387,7 +387,7 @@
     {
       "starting_address": 9046,
       "name": "Multifunktionsausgang 3 (124)",
-      "entity_id": "multi_function_output_3_124",
+      "entity_id": "ksm_o_multifunktionsausgang_3",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -399,7 +399,7 @@
     {
       "starting_address": 9047,
       "name": "Multifunktionsausgang 4 (126)",
-      "entity_id": "multi_function_output_4_126",
+      "entity_id": "ksm_o_multifunktionsausgang_4",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -411,7 +411,7 @@
     {
       "starting_address": 9495,
       "name": "Modbus Überhitzung",
-      "entity_id": "modbus_overheating",
+      "entity_id": "ksm_modbus_ueberhitzung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -423,7 +423,7 @@
     {
       "starting_address": 9496,
       "name": "Modbus Wärmeabnahme Max",
-      "entity_id": "modbus_heat_consumption_max",
+      "entity_id": "ksm_modbus_waermeabnahme_max",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -435,7 +435,7 @@
     {
       "starting_address": 9497,
       "name": "Füllstand Aschebehälter",
-      "entity_id": "fill_level_ash_container",
+      "entity_id": "ksm_aschefuellstand",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -447,7 +447,7 @@
     {
       "starting_address": 9498,
       "name": "Drehzahl Saugzug",
-      "entity_id": "induced_draught_speed",
+      "entity_id": "ksm_i_drehzahl_saugzug",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -459,7 +459,7 @@
     {
       "starting_address": 9877,
       "name": "Brennerleistung bestimmt durch",
-      "entity_id": "burner_output_determined_by",
+      "entity_id": "ak_anforderung_bl_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -471,7 +471,7 @@
     {
       "starting_address": 9878,
       "name": "Wärmemenge gesamt",
-      "entity_id": "heat_quant_tot",
+      "entity_id": "ksm_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -484,7 +484,7 @@
     {
       "starting_address": 9970,
       "name": "Kesselstatus",
-      "entity_id": "pellet_boiler_status",
+      "entity_id": "ksm_kesselstatus_anzeige_simple",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -496,7 +496,7 @@
     {
       "starting_address": 9988,
       "name": "Brennstoffverbrauch Rücksetzzähler",
-      "entity_id": "fuel_consumption_reset_counter",
+      "entity_id": "fs_pelletverbrauch_reset_counter",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -507,7 +507,7 @@
     {
       "starting_address": 9989,
       "name": "Clee Status",
-      "entity_id": "clee_status",
+      "entity_id": "system_comfortenergy_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -519,7 +519,7 @@
     {
       "starting_address": 24576,
       "name": "Kessel Ein/Aus",
-      "entity_id": "boiler_on_off",
+      "entity_id": "ak_anlage_ein",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -531,7 +531,7 @@
     {
       "starting_address": 24577,
       "name": "Solltemperatur 1",
-      "entity_id": "setpoint_temperature_1",
+      "entity_id": "ef2_kesseltempsoll1",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -545,7 +545,7 @@
     {
       "starting_address": 24578,
       "name": "Solltemperatur 2",
-      "entity_id": "setpoint_temperature_2",
+      "entity_id": "ef2_kesseltempsoll2",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -559,7 +559,7 @@
     {
       "starting_address": 24581,
       "name": "Rücklauftemperatur Minimum",
-      "entity_id": "return_flow_temperature_minimum",
+      "entity_id": "ksm_ruecklauftempmin",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -573,7 +573,7 @@
     {
       "starting_address": 24583,
       "name": "Externe Vorgabe",
-      "entity_id": "external_specification",
+      "entity_id": "ak_externe_vorgabe",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -585,7 +585,7 @@
     {
       "starting_address": 24584,
       "name": "Kesselprogramm",
-      "entity_id": "boiler_program",
+      "entity_id": "ak_kesselprogramm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -597,7 +597,7 @@
     {
       "starting_address": 24849,
       "name": "Modbus Lifetick",
-      "entity_id": "modbus_lifetick",
+      "entity_id": "ksm_modbus_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -608,7 +608,7 @@
     {
       "starting_address": 24850,
       "name": "Modbus Commit Lifetick",
-      "entity_id": "modbus_commit_lifetick",
+      "entity_id": "ksm_modbus_commit_lifetick",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -619,7 +619,7 @@
     {
       "starting_address": 24851,
       "name": "Modbus Kesseltemperatur",
-      "entity_id": "modbus_boiler_temperature",
+      "entity_id": "ksm_modbus_kesseltemp_vorgabe",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -631,7 +631,7 @@
     {
       "starting_address": 24852,
       "name": "Modbus Kesselleistung",
-      "entity_id": "modbus_boiler_output",
+      "entity_id": "ksm_modbus_leistung_vorgabe",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -643,7 +643,7 @@
     {
       "starting_address": 24854,
       "name": "Modbus Kesselanforderung",
-      "entity_id": "modbus_boiler_request",
+      "entity_id": "ksm_modbus_kesselanforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -655,7 +655,7 @@
     {
       "starting_address": 24927,
       "name": "Restmenge Brennstofflager",
-      "entity_id": "residual_amount_fuel_storage",
+      "entity_id": "ksm_restmenge_brennstofflager",
       "data_type": "03",
       "type": "u32",
       "user_level": "readwrite",
@@ -670,7 +670,7 @@
     {
       "starting_address": 24932,
       "name": "Modbus Puffertemperatur oben für Restwärmenutzung (value)",
-      "entity_id": "modbus_buffer_temperature_top_for_residual_heat_use_value",
+      "entity_id": "ksm_modbus_puffertemperatur_oben_value",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -682,7 +682,7 @@
     {
       "starting_address": 24933,
       "name": "Modbus Puffertemperatur oben für Restwärmenutzung (status)",
-      "entity_id": "modbus_buffer_temperature_top_for_residual_heat_use_status",
+      "entity_id": "ksm_modbus_puffertemperatur_oben_status",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -694,7 +694,7 @@
     {
       "starting_address": 24934,
       "name": "Modbus Puffertemperatur unten für Restwärmenutzung (value)",
-      "entity_id": "modbus_buffer_temperature_bottom_for_residual_heat_use_value",
+      "entity_id": "ksm_modbus_puffertemperatur_unten_value",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -706,7 +706,7 @@
     {
       "starting_address": 24935,
       "name": "Modbus Puffertemperatur unten für Restwärmenutzung (status)",
-      "entity_id": "modbus_buffer_temperature_bottom_for_residual_heat_use_status",
+      "entity_id": "ksm_modbus_puffertemperatur_unten_status",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -718,7 +718,7 @@
     {
       "starting_address": 25040,
       "name": "Modbus Überstromnutzung",
-      "entity_id": "modbus_overcurrent_usage",
+      "entity_id": "system_modbus_clee_ueberschusstrom",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

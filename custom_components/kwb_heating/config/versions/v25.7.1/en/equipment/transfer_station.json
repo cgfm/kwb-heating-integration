@@ -3,7 +3,7 @@
     {
       "starting_address": 10463,
       "name": "Status",
-      "entity_id": "ts_1_status",
+      "entity_id": "ts_1_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -16,7 +16,7 @@
     {
       "starting_address": 10464,
       "name": "Status",
-      "entity_id": "ts_2_status",
+      "entity_id": "ts_2_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -29,7 +29,7 @@
     {
       "starting_address": 10465,
       "name": "Status",
-      "entity_id": "ts_3_status",
+      "entity_id": "ts_3_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -42,7 +42,7 @@
     {
       "starting_address": 10466,
       "name": "Status",
-      "entity_id": "ts_4_status",
+      "entity_id": "ts_4_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -55,7 +55,7 @@
     {
       "starting_address": 10467,
       "name": "Status",
-      "entity_id": "ts_5_status",
+      "entity_id": "ts_5_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -68,7 +68,7 @@
     {
       "starting_address": 10468,
       "name": "Status",
-      "entity_id": "ts_6_status",
+      "entity_id": "ts_6_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -81,7 +81,7 @@
     {
       "starting_address": 10469,
       "name": "Status",
-      "entity_id": "ts_7_status",
+      "entity_id": "ts_7_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -94,7 +94,7 @@
     {
       "starting_address": 10470,
       "name": "Status",
-      "entity_id": "ts_8_status",
+      "entity_id": "ts_8_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -107,7 +107,7 @@
     {
       "starting_address": 10471,
       "name": "Status",
-      "entity_id": "ts_9_status",
+      "entity_id": "ts_9_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -120,7 +120,7 @@
     {
       "starting_address": 10472,
       "name": "Status",
-      "entity_id": "ts_10_status",
+      "entity_id": "ts_10_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -133,7 +133,7 @@
     {
       "starting_address": 10473,
       "name": "Status",
-      "entity_id": "ts_11_status",
+      "entity_id": "ts_11_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -146,7 +146,7 @@
     {
       "starting_address": 10474,
       "name": "Status",
-      "entity_id": "ts_12_status",
+      "entity_id": "ts_12_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -159,7 +159,7 @@
     {
       "starting_address": 10475,
       "name": "Status",
-      "entity_id": "ts_13_status",
+      "entity_id": "ts_13_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -172,7 +172,7 @@
     {
       "starting_address": 10476,
       "name": "Status",
-      "entity_id": "ts_14_status",
+      "entity_id": "ts_14_uebergabe_uegs_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -185,7 +185,7 @@
     {
       "starting_address": 10479,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_1_forw_flow_temp_sec_value",
+      "entity_id": "ts_1_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -198,7 +198,7 @@
     {
       "starting_address": 10480,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_1_forw_flow_temp_sec_status",
+      "entity_id": "ts_1_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -211,7 +211,7 @@
     {
       "starting_address": 10481,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_2_forw_flow_temp_sec_value",
+      "entity_id": "ts_2_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -224,7 +224,7 @@
     {
       "starting_address": 10482,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_2_forw_flow_temp_sec_status",
+      "entity_id": "ts_2_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -237,7 +237,7 @@
     {
       "starting_address": 10483,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_3_forw_flow_temp_sec_value",
+      "entity_id": "ts_3_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -250,7 +250,7 @@
     {
       "starting_address": 10484,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_3_forw_flow_temp_sec_status",
+      "entity_id": "ts_3_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -263,7 +263,7 @@
     {
       "starting_address": 10485,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_4_forw_flow_temp_sec_value",
+      "entity_id": "ts_4_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -276,7 +276,7 @@
     {
       "starting_address": 10486,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_4_forw_flow_temp_sec_status",
+      "entity_id": "ts_4_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -289,7 +289,7 @@
     {
       "starting_address": 10487,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_5_forw_flow_temp_sec_value",
+      "entity_id": "ts_5_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -302,7 +302,7 @@
     {
       "starting_address": 10488,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_5_forw_flow_temp_sec_status",
+      "entity_id": "ts_5_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,7 +315,7 @@
     {
       "starting_address": 10489,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_6_forw_flow_temp_sec_value",
+      "entity_id": "ts_6_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -328,7 +328,7 @@
     {
       "starting_address": 10490,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_6_forw_flow_temp_sec_status",
+      "entity_id": "ts_6_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -341,7 +341,7 @@
     {
       "starting_address": 10491,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_7_forw_flow_temp_sec_value",
+      "entity_id": "ts_7_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -354,7 +354,7 @@
     {
       "starting_address": 10492,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_7_forw_flow_temp_sec_status",
+      "entity_id": "ts_7_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -367,7 +367,7 @@
     {
       "starting_address": 10493,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_8_forw_flow_temp_sec_value",
+      "entity_id": "ts_8_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -380,7 +380,7 @@
     {
       "starting_address": 10494,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_8_forw_flow_temp_sec_status",
+      "entity_id": "ts_8_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -393,7 +393,7 @@
     {
       "starting_address": 10495,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_9_forw_flow_temp_sec_value",
+      "entity_id": "ts_9_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -406,7 +406,7 @@
     {
       "starting_address": 10496,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_9_forw_flow_temp_sec_status",
+      "entity_id": "ts_9_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -419,7 +419,7 @@
     {
       "starting_address": 10497,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_10_forw_flow_temp_sec_value",
+      "entity_id": "ts_10_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -432,7 +432,7 @@
     {
       "starting_address": 10498,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_10_forw_flow_temp_sec_status",
+      "entity_id": "ts_10_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -445,7 +445,7 @@
     {
       "starting_address": 10499,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_11_forw_flow_temp_sec_value",
+      "entity_id": "ts_11_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -458,7 +458,7 @@
     {
       "starting_address": 10500,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_11_forw_flow_temp_sec_status",
+      "entity_id": "ts_11_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -471,7 +471,7 @@
     {
       "starting_address": 10501,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_12_forw_flow_temp_sec_value",
+      "entity_id": "ts_12_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -484,7 +484,7 @@
     {
       "starting_address": 10502,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_12_forw_flow_temp_sec_status",
+      "entity_id": "ts_12_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -497,7 +497,7 @@
     {
       "starting_address": 10503,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_13_forw_flow_temp_sec_value",
+      "entity_id": "ts_13_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -510,7 +510,7 @@
     {
       "starting_address": 10504,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_13_forw_flow_temp_sec_status",
+      "entity_id": "ts_13_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -523,7 +523,7 @@
     {
       "starting_address": 10505,
       "name": "Forw. flow temp. sec. (value)",
-      "entity_id": "ts_14_forw_flow_temp_sec_value",
+      "entity_id": "ts_14_uebergabe_vorlauftemp_sekundaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -536,7 +536,7 @@
     {
       "starting_address": 10506,
       "name": "Forw. flow temp. sec. (status)",
-      "entity_id": "ts_14_forw_flow_temp_sec_status",
+      "entity_id": "ts_14_uebergabe_vorlauftemp_sekundaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -549,7 +549,7 @@
     {
       "starting_address": 10508,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_1_forward_flow_temp_setpoint",
+      "entity_id": "ts_1_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -562,7 +562,7 @@
     {
       "starting_address": 10509,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_2_forward_flow_temp_setpoint",
+      "entity_id": "ts_2_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -575,7 +575,7 @@
     {
       "starting_address": 10510,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_3_forward_flow_temp_setpoint",
+      "entity_id": "ts_3_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -588,7 +588,7 @@
     {
       "starting_address": 10511,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_4_forward_flow_temp_setpoint",
+      "entity_id": "ts_4_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -601,7 +601,7 @@
     {
       "starting_address": 10512,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_5_forward_flow_temp_setpoint",
+      "entity_id": "ts_5_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -614,7 +614,7 @@
     {
       "starting_address": 10513,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_6_forward_flow_temp_setpoint",
+      "entity_id": "ts_6_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -627,7 +627,7 @@
     {
       "starting_address": 10514,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_7_forward_flow_temp_setpoint",
+      "entity_id": "ts_7_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -640,7 +640,7 @@
     {
       "starting_address": 10515,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_8_forward_flow_temp_setpoint",
+      "entity_id": "ts_8_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -653,7 +653,7 @@
     {
       "starting_address": 10516,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_9_forward_flow_temp_setpoint",
+      "entity_id": "ts_9_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -666,7 +666,7 @@
     {
       "starting_address": 10517,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_10_forward_flow_temp_setpoint",
+      "entity_id": "ts_10_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -679,7 +679,7 @@
     {
       "starting_address": 10518,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_11_forward_flow_temp_setpoint",
+      "entity_id": "ts_11_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -692,7 +692,7 @@
     {
       "starting_address": 10519,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_12_forward_flow_temp_setpoint",
+      "entity_id": "ts_12_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -705,7 +705,7 @@
     {
       "starting_address": 10520,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_13_forward_flow_temp_setpoint",
+      "entity_id": "ts_13_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -718,7 +718,7 @@
     {
       "starting_address": 10521,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "ts_14_forward_flow_temp_setpoint",
+      "entity_id": "ts_14_uebergabe_vorlauftemp_sekundaer_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -731,7 +731,7 @@
     {
       "starting_address": 10524,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_1_forw_flow_temp_prim_value",
+      "entity_id": "ts_1_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -744,7 +744,7 @@
     {
       "starting_address": 10525,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_1_forw_flow_temp_prim_status",
+      "entity_id": "ts_1_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -757,7 +757,7 @@
     {
       "starting_address": 10526,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_2_forw_flow_temp_prim_value",
+      "entity_id": "ts_2_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -770,7 +770,7 @@
     {
       "starting_address": 10527,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_2_forw_flow_temp_prim_status",
+      "entity_id": "ts_2_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -783,7 +783,7 @@
     {
       "starting_address": 10528,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_3_forw_flow_temp_prim_value",
+      "entity_id": "ts_3_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -796,7 +796,7 @@
     {
       "starting_address": 10529,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_3_forw_flow_temp_prim_status",
+      "entity_id": "ts_3_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -809,7 +809,7 @@
     {
       "starting_address": 10530,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_4_forw_flow_temp_prim_value",
+      "entity_id": "ts_4_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -822,7 +822,7 @@
     {
       "starting_address": 10531,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_4_forw_flow_temp_prim_status",
+      "entity_id": "ts_4_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -835,7 +835,7 @@
     {
       "starting_address": 10532,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_5_forw_flow_temp_prim_value",
+      "entity_id": "ts_5_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -848,7 +848,7 @@
     {
       "starting_address": 10533,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_5_forw_flow_temp_prim_status",
+      "entity_id": "ts_5_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -861,7 +861,7 @@
     {
       "starting_address": 10534,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_6_forw_flow_temp_prim_value",
+      "entity_id": "ts_6_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -874,7 +874,7 @@
     {
       "starting_address": 10535,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_6_forw_flow_temp_prim_status",
+      "entity_id": "ts_6_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -887,7 +887,7 @@
     {
       "starting_address": 10536,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_7_forw_flow_temp_prim_value",
+      "entity_id": "ts_7_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -900,7 +900,7 @@
     {
       "starting_address": 10537,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_7_forw_flow_temp_prim_status",
+      "entity_id": "ts_7_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -913,7 +913,7 @@
     {
       "starting_address": 10538,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_8_forw_flow_temp_prim_value",
+      "entity_id": "ts_8_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -926,7 +926,7 @@
     {
       "starting_address": 10539,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_8_forw_flow_temp_prim_status",
+      "entity_id": "ts_8_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -939,7 +939,7 @@
     {
       "starting_address": 10540,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_9_forw_flow_temp_prim_value",
+      "entity_id": "ts_9_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -952,7 +952,7 @@
     {
       "starting_address": 10541,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_9_forw_flow_temp_prim_status",
+      "entity_id": "ts_9_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -965,7 +965,7 @@
     {
       "starting_address": 10542,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_10_forw_flow_temp_prim_value",
+      "entity_id": "ts_10_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -978,7 +978,7 @@
     {
       "starting_address": 10543,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_10_forw_flow_temp_prim_status",
+      "entity_id": "ts_10_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -991,7 +991,7 @@
     {
       "starting_address": 10544,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_11_forw_flow_temp_prim_value",
+      "entity_id": "ts_11_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1004,7 +1004,7 @@
     {
       "starting_address": 10545,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_11_forw_flow_temp_prim_status",
+      "entity_id": "ts_11_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1017,7 +1017,7 @@
     {
       "starting_address": 10546,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_12_forw_flow_temp_prim_value",
+      "entity_id": "ts_12_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1030,7 +1030,7 @@
     {
       "starting_address": 10547,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_12_forw_flow_temp_prim_status",
+      "entity_id": "ts_12_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1043,7 +1043,7 @@
     {
       "starting_address": 10548,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_13_forw_flow_temp_prim_value",
+      "entity_id": "ts_13_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1056,7 +1056,7 @@
     {
       "starting_address": 10549,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_13_forw_flow_temp_prim_status",
+      "entity_id": "ts_13_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1069,7 +1069,7 @@
     {
       "starting_address": 10550,
       "name": "Forw. flow temp. prim. (value)",
-      "entity_id": "ts_14_forw_flow_temp_prim_value",
+      "entity_id": "ts_14_uebergabe_vorlauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1082,7 +1082,7 @@
     {
       "starting_address": 10551,
       "name": "Forw. flow temp. prim. (status)",
-      "entity_id": "ts_14_forw_flow_temp_prim_status",
+      "entity_id": "ts_14_uebergabe_vorlauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1095,7 +1095,7 @@
     {
       "starting_address": 10554,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_1_ret_flow_temp_prim_value",
+      "entity_id": "ts_1_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1108,7 +1108,7 @@
     {
       "starting_address": 10555,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_1_ret_flow_temp_prim_status",
+      "entity_id": "ts_1_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1121,7 +1121,7 @@
     {
       "starting_address": 10556,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_2_ret_flow_temp_prim_value",
+      "entity_id": "ts_2_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1134,7 +1134,7 @@
     {
       "starting_address": 10557,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_2_ret_flow_temp_prim_status",
+      "entity_id": "ts_2_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1147,7 +1147,7 @@
     {
       "starting_address": 10558,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_3_ret_flow_temp_prim_value",
+      "entity_id": "ts_3_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1160,7 +1160,7 @@
     {
       "starting_address": 10559,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_3_ret_flow_temp_prim_status",
+      "entity_id": "ts_3_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1173,7 +1173,7 @@
     {
       "starting_address": 10560,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_4_ret_flow_temp_prim_value",
+      "entity_id": "ts_4_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1186,7 +1186,7 @@
     {
       "starting_address": 10561,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_4_ret_flow_temp_prim_status",
+      "entity_id": "ts_4_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1199,7 +1199,7 @@
     {
       "starting_address": 10562,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_5_ret_flow_temp_prim_value",
+      "entity_id": "ts_5_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1212,7 +1212,7 @@
     {
       "starting_address": 10563,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_5_ret_flow_temp_prim_status",
+      "entity_id": "ts_5_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1225,7 +1225,7 @@
     {
       "starting_address": 10564,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_6_ret_flow_temp_prim_value",
+      "entity_id": "ts_6_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1238,7 +1238,7 @@
     {
       "starting_address": 10565,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_6_ret_flow_temp_prim_status",
+      "entity_id": "ts_6_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1251,7 +1251,7 @@
     {
       "starting_address": 10566,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_7_ret_flow_temp_prim_value",
+      "entity_id": "ts_7_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1264,7 +1264,7 @@
     {
       "starting_address": 10567,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_7_ret_flow_temp_prim_status",
+      "entity_id": "ts_7_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1277,7 +1277,7 @@
     {
       "starting_address": 10568,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_8_ret_flow_temp_prim_value",
+      "entity_id": "ts_8_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1290,7 +1290,7 @@
     {
       "starting_address": 10569,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_8_ret_flow_temp_prim_status",
+      "entity_id": "ts_8_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1303,7 +1303,7 @@
     {
       "starting_address": 10570,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_9_ret_flow_temp_prim_value",
+      "entity_id": "ts_9_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1316,7 +1316,7 @@
     {
       "starting_address": 10571,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_9_ret_flow_temp_prim_status",
+      "entity_id": "ts_9_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1329,7 +1329,7 @@
     {
       "starting_address": 10572,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_10_ret_flow_temp_prim_value",
+      "entity_id": "ts_10_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1342,7 +1342,7 @@
     {
       "starting_address": 10573,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_10_ret_flow_temp_prim_status",
+      "entity_id": "ts_10_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1355,7 +1355,7 @@
     {
       "starting_address": 10574,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_11_ret_flow_temp_prim_value",
+      "entity_id": "ts_11_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1368,7 +1368,7 @@
     {
       "starting_address": 10575,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_11_ret_flow_temp_prim_status",
+      "entity_id": "ts_11_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1381,7 +1381,7 @@
     {
       "starting_address": 10576,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_12_ret_flow_temp_prim_value",
+      "entity_id": "ts_12_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1394,7 +1394,7 @@
     {
       "starting_address": 10577,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_12_ret_flow_temp_prim_status",
+      "entity_id": "ts_12_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1407,7 +1407,7 @@
     {
       "starting_address": 10578,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_13_ret_flow_temp_prim_value",
+      "entity_id": "ts_13_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1420,7 +1420,7 @@
     {
       "starting_address": 10579,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_13_ret_flow_temp_prim_status",
+      "entity_id": "ts_13_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1433,7 +1433,7 @@
     {
       "starting_address": 10580,
       "name": "Ret. flow temp. prim. (value)",
-      "entity_id": "ts_14_ret_flow_temp_prim_value",
+      "entity_id": "ts_14_uebergabe_ruecklauftemp_primaer_ist_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1446,7 +1446,7 @@
     {
       "starting_address": 10581,
       "name": "Ret. flow temp. prim. (status)",
-      "entity_id": "ts_14_ret_flow_temp_prim_status",
+      "entity_id": "ts_14_uebergabe_ruecklauftemp_primaer_ist_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1459,7 +1459,7 @@
     {
       "starting_address": 10583,
       "name": "Valve",
-      "entity_id": "ts_1_valve",
+      "entity_id": "ts_1_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1472,7 +1472,7 @@
     {
       "starting_address": 10584,
       "name": "Valve",
-      "entity_id": "ts_2_valve",
+      "entity_id": "ts_2_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1485,7 +1485,7 @@
     {
       "starting_address": 10585,
       "name": "Valve",
-      "entity_id": "ts_3_valve",
+      "entity_id": "ts_3_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1498,7 +1498,7 @@
     {
       "starting_address": 10586,
       "name": "Valve",
-      "entity_id": "ts_4_valve",
+      "entity_id": "ts_4_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1511,7 +1511,7 @@
     {
       "starting_address": 10587,
       "name": "Valve",
-      "entity_id": "ts_5_valve",
+      "entity_id": "ts_5_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1524,7 +1524,7 @@
     {
       "starting_address": 10588,
       "name": "Valve",
-      "entity_id": "ts_6_valve",
+      "entity_id": "ts_6_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1537,7 +1537,7 @@
     {
       "starting_address": 10589,
       "name": "Valve",
-      "entity_id": "ts_7_valve",
+      "entity_id": "ts_7_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1550,7 +1550,7 @@
     {
       "starting_address": 10590,
       "name": "Valve",
-      "entity_id": "ts_8_valve",
+      "entity_id": "ts_8_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1563,7 +1563,7 @@
     {
       "starting_address": 10591,
       "name": "Valve",
-      "entity_id": "ts_9_valve",
+      "entity_id": "ts_9_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1576,7 +1576,7 @@
     {
       "starting_address": 10592,
       "name": "Valve",
-      "entity_id": "ts_10_valve",
+      "entity_id": "ts_10_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1589,7 +1589,7 @@
     {
       "starting_address": 10593,
       "name": "Valve",
-      "entity_id": "ts_11_valve",
+      "entity_id": "ts_11_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1602,7 +1602,7 @@
     {
       "starting_address": 10594,
       "name": "Valve",
-      "entity_id": "ts_12_valve",
+      "entity_id": "ts_12_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1615,7 +1615,7 @@
     {
       "starting_address": 10595,
       "name": "Valve",
-      "entity_id": "ts_13_valve",
+      "entity_id": "ts_13_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1628,7 +1628,7 @@
     {
       "starting_address": 10596,
       "name": "Valve",
-      "entity_id": "ts_14_valve",
+      "entity_id": "ts_14_uebergabe_o_ventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1641,7 +1641,7 @@
     {
       "starting_address": 25306,
       "name": "Temperature increase",
-      "entity_id": "ts_1_temperature_increase",
+      "entity_id": "ts_1_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1656,7 +1656,7 @@
     {
       "starting_address": 25307,
       "name": "Temperature increase",
-      "entity_id": "ts_2_temperature_increase",
+      "entity_id": "ts_2_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1671,7 +1671,7 @@
     {
       "starting_address": 25308,
       "name": "Temperature increase",
-      "entity_id": "ts_3_temperature_increase",
+      "entity_id": "ts_3_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1686,7 +1686,7 @@
     {
       "starting_address": 25309,
       "name": "Temperature increase",
-      "entity_id": "ts_4_temperature_increase",
+      "entity_id": "ts_4_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1701,7 +1701,7 @@
     {
       "starting_address": 25310,
       "name": "Temperature increase",
-      "entity_id": "ts_5_temperature_increase",
+      "entity_id": "ts_5_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1716,7 +1716,7 @@
     {
       "starting_address": 25311,
       "name": "Temperature increase",
-      "entity_id": "ts_6_temperature_increase",
+      "entity_id": "ts_6_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1731,7 +1731,7 @@
     {
       "starting_address": 25312,
       "name": "Temperature increase",
-      "entity_id": "ts_7_temperature_increase",
+      "entity_id": "ts_7_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1746,7 +1746,7 @@
     {
       "starting_address": 25313,
       "name": "Temperature increase",
-      "entity_id": "ts_8_temperature_increase",
+      "entity_id": "ts_8_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1761,7 +1761,7 @@
     {
       "starting_address": 25314,
       "name": "Temperature increase",
-      "entity_id": "ts_9_temperature_increase",
+      "entity_id": "ts_9_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1776,7 +1776,7 @@
     {
       "starting_address": 25315,
       "name": "Temperature increase",
-      "entity_id": "ts_10_temperature_increase",
+      "entity_id": "ts_10_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1791,7 +1791,7 @@
     {
       "starting_address": 25316,
       "name": "Temperature increase",
-      "entity_id": "ts_11_temperature_increase",
+      "entity_id": "ts_11_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1806,7 +1806,7 @@
     {
       "starting_address": 25317,
       "name": "Temperature increase",
-      "entity_id": "ts_12_temperature_increase",
+      "entity_id": "ts_12_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1821,7 +1821,7 @@
     {
       "starting_address": 25318,
       "name": "Temperature increase",
-      "entity_id": "ts_13_temperature_increase",
+      "entity_id": "ts_13_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1836,7 +1836,7 @@
     {
       "starting_address": 25319,
       "name": "Temperature increase",
-      "entity_id": "ts_14_temperature_increase",
+      "entity_id": "ts_14_uebergabe_temperatur_anhebung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1851,7 +1851,7 @@
     {
       "starting_address": 25321,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_1_return_flow_temp_restriction",
+      "entity_id": "ts_1_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1864,7 +1864,7 @@
     {
       "starting_address": 25322,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_2_return_flow_temp_restriction",
+      "entity_id": "ts_2_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1877,7 +1877,7 @@
     {
       "starting_address": 25323,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_3_return_flow_temp_restriction",
+      "entity_id": "ts_3_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1890,7 +1890,7 @@
     {
       "starting_address": 25324,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_4_return_flow_temp_restriction",
+      "entity_id": "ts_4_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1903,7 +1903,7 @@
     {
       "starting_address": 25325,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_5_return_flow_temp_restriction",
+      "entity_id": "ts_5_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1916,7 +1916,7 @@
     {
       "starting_address": 25326,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_6_return_flow_temp_restriction",
+      "entity_id": "ts_6_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1929,7 +1929,7 @@
     {
       "starting_address": 25327,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_7_return_flow_temp_restriction",
+      "entity_id": "ts_7_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1942,7 +1942,7 @@
     {
       "starting_address": 25328,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_8_return_flow_temp_restriction",
+      "entity_id": "ts_8_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1955,7 +1955,7 @@
     {
       "starting_address": 25329,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_9_return_flow_temp_restriction",
+      "entity_id": "ts_9_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1968,7 +1968,7 @@
     {
       "starting_address": 25330,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_10_return_flow_temp_restriction",
+      "entity_id": "ts_10_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1981,7 +1981,7 @@
     {
       "starting_address": 25331,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_11_return_flow_temp_restriction",
+      "entity_id": "ts_11_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1994,7 +1994,7 @@
     {
       "starting_address": 25332,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_12_return_flow_temp_restriction",
+      "entity_id": "ts_12_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2007,7 +2007,7 @@
     {
       "starting_address": 25333,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_13_return_flow_temp_restriction",
+      "entity_id": "ts_13_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2020,7 +2020,7 @@
     {
       "starting_address": 25334,
       "name": "Return flow temp. restriction",
-      "entity_id": "ts_14_return_flow_temp_restriction",
+      "entity_id": "ts_14_uebergabe_ruecklauftemp_begrenzung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2033,7 +2033,7 @@
     {
       "starting_address": 25336,
       "name": "Limit temperature",
-      "entity_id": "ts_1_limit_temperature",
+      "entity_id": "ts_1_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2048,7 +2048,7 @@
     {
       "starting_address": 25337,
       "name": "Limit temperature",
-      "entity_id": "ts_2_limit_temperature",
+      "entity_id": "ts_2_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2063,7 +2063,7 @@
     {
       "starting_address": 25338,
       "name": "Limit temperature",
-      "entity_id": "ts_3_limit_temperature",
+      "entity_id": "ts_3_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2078,7 +2078,7 @@
     {
       "starting_address": 25339,
       "name": "Limit temperature",
-      "entity_id": "ts_4_limit_temperature",
+      "entity_id": "ts_4_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2093,7 +2093,7 @@
     {
       "starting_address": 25340,
       "name": "Limit temperature",
-      "entity_id": "ts_5_limit_temperature",
+      "entity_id": "ts_5_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2108,7 +2108,7 @@
     {
       "starting_address": 25341,
       "name": "Limit temperature",
-      "entity_id": "ts_6_limit_temperature",
+      "entity_id": "ts_6_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2123,7 +2123,7 @@
     {
       "starting_address": 25342,
       "name": "Limit temperature",
-      "entity_id": "ts_7_limit_temperature",
+      "entity_id": "ts_7_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2138,7 +2138,7 @@
     {
       "starting_address": 25343,
       "name": "Limit temperature",
-      "entity_id": "ts_8_limit_temperature",
+      "entity_id": "ts_8_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2153,7 +2153,7 @@
     {
       "starting_address": 25344,
       "name": "Limit temperature",
-      "entity_id": "ts_9_limit_temperature",
+      "entity_id": "ts_9_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2168,7 +2168,7 @@
     {
       "starting_address": 25345,
       "name": "Limit temperature",
-      "entity_id": "ts_10_limit_temperature",
+      "entity_id": "ts_10_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2183,7 +2183,7 @@
     {
       "starting_address": 25346,
       "name": "Limit temperature",
-      "entity_id": "ts_11_limit_temperature",
+      "entity_id": "ts_11_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2198,7 +2198,7 @@
     {
       "starting_address": 25347,
       "name": "Limit temperature",
-      "entity_id": "ts_12_limit_temperature",
+      "entity_id": "ts_12_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2213,7 +2213,7 @@
     {
       "starting_address": 25348,
       "name": "Limit temperature",
-      "entity_id": "ts_13_limit_temperature",
+      "entity_id": "ts_13_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -2228,7 +2228,7 @@
     {
       "starting_address": 25349,
       "name": "Limit temperature",
-      "entity_id": "ts_14_limit_temperature",
+      "entity_id": "ts_14_uebergabe_grenz_temp",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

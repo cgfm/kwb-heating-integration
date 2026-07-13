@@ -3,7 +3,7 @@
     {
       "starting_address": 9049,
       "name": "Status",
-      "entity_id": "sol_1_status",
+      "entity_id": "sol_1_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -16,7 +16,7 @@
     {
       "starting_address": 9050,
       "name": "Status",
-      "entity_id": "sol_2_status",
+      "entity_id": "sol_2_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -29,7 +29,7 @@
     {
       "starting_address": 9051,
       "name": "Status",
-      "entity_id": "sol_3_status",
+      "entity_id": "sol_3_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -42,7 +42,7 @@
     {
       "starting_address": 9052,
       "name": "Status",
-      "entity_id": "sol_4_status",
+      "entity_id": "sol_4_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -55,7 +55,7 @@
     {
       "starting_address": 9053,
       "name": "Status",
-      "entity_id": "sol_5_status",
+      "entity_id": "sol_5_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -68,7 +68,7 @@
     {
       "starting_address": 9054,
       "name": "Status",
-      "entity_id": "sol_6_status",
+      "entity_id": "sol_6_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -81,7 +81,7 @@
     {
       "starting_address": 9055,
       "name": "Status",
-      "entity_id": "sol_7_status",
+      "entity_id": "sol_7_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -94,7 +94,7 @@
     {
       "starting_address": 9056,
       "name": "Status",
-      "entity_id": "sol_8_status",
+      "entity_id": "sol_8_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -107,7 +107,7 @@
     {
       "starting_address": 9057,
       "name": "Status",
-      "entity_id": "sol_9_status",
+      "entity_id": "sol_9_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -120,7 +120,7 @@
     {
       "starting_address": 9058,
       "name": "Status",
-      "entity_id": "sol_10_status",
+      "entity_id": "sol_10_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -133,7 +133,7 @@
     {
       "starting_address": 9059,
       "name": "Status",
-      "entity_id": "sol_11_status",
+      "entity_id": "sol_11_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -146,7 +146,7 @@
     {
       "starting_address": 9060,
       "name": "Status",
-      "entity_id": "sol_12_status",
+      "entity_id": "sol_12_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -159,7 +159,7 @@
     {
       "starting_address": 9061,
       "name": "Status",
-      "entity_id": "sol_13_status",
+      "entity_id": "sol_13_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -172,7 +172,7 @@
     {
       "starting_address": 9062,
       "name": "Status",
-      "entity_id": "sol_14_status",
+      "entity_id": "sol_14_sol_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -185,7 +185,7 @@
     {
       "starting_address": 9064,
       "name": "Statusursache",
-      "entity_id": "sol_1_stat_r",
+      "entity_id": "sol_1_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -198,7 +198,7 @@
     {
       "starting_address": 9065,
       "name": "Statusursache",
-      "entity_id": "sol_2_stat_r",
+      "entity_id": "sol_2_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -211,7 +211,7 @@
     {
       "starting_address": 9066,
       "name": "Statusursache",
-      "entity_id": "sol_3_stat_r",
+      "entity_id": "sol_3_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -224,7 +224,7 @@
     {
       "starting_address": 9067,
       "name": "Statusursache",
-      "entity_id": "sol_4_stat_r",
+      "entity_id": "sol_4_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -237,7 +237,7 @@
     {
       "starting_address": 9068,
       "name": "Statusursache",
-      "entity_id": "sol_5_stat_r",
+      "entity_id": "sol_5_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -250,7 +250,7 @@
     {
       "starting_address": 9069,
       "name": "Statusursache",
-      "entity_id": "sol_6_stat_r",
+      "entity_id": "sol_6_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -263,7 +263,7 @@
     {
       "starting_address": 9070,
       "name": "Statusursache",
-      "entity_id": "sol_7_stat_r",
+      "entity_id": "sol_7_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -276,7 +276,7 @@
     {
       "starting_address": 9071,
       "name": "Statusursache",
-      "entity_id": "sol_8_stat_r",
+      "entity_id": "sol_8_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -289,7 +289,7 @@
     {
       "starting_address": 9072,
       "name": "Statusursache",
-      "entity_id": "sol_9_stat_r",
+      "entity_id": "sol_9_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -302,7 +302,7 @@
     {
       "starting_address": 9073,
       "name": "Statusursache",
-      "entity_id": "sol_10_stat_r",
+      "entity_id": "sol_10_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,7 +315,7 @@
     {
       "starting_address": 9074,
       "name": "Statusursache",
-      "entity_id": "sol_11_stat_r",
+      "entity_id": "sol_11_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -328,7 +328,7 @@
     {
       "starting_address": 9075,
       "name": "Statusursache",
-      "entity_id": "sol_12_stat_r",
+      "entity_id": "sol_12_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -341,7 +341,7 @@
     {
       "starting_address": 9076,
       "name": "Statusursache",
-      "entity_id": "sol_13_stat_r",
+      "entity_id": "sol_13_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -354,7 +354,7 @@
     {
       "starting_address": 9077,
       "name": "Statusursache",
-      "entity_id": "sol_14_stat_r",
+      "entity_id": "sol_14_sol_status_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -367,7 +367,7 @@
     {
       "starting_address": 9080,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_1_collector_temperature_value",
+      "entity_id": "sol_1_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -380,7 +380,7 @@
     {
       "starting_address": 9081,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_1_collector_temperature_status",
+      "entity_id": "sol_1_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -393,7 +393,7 @@
     {
       "starting_address": 9082,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_2_collector_temperature_value",
+      "entity_id": "sol_2_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -406,7 +406,7 @@
     {
       "starting_address": 9083,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_2_collector_temperature_status",
+      "entity_id": "sol_2_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -419,7 +419,7 @@
     {
       "starting_address": 9084,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_3_collector_temperature_value",
+      "entity_id": "sol_3_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -432,7 +432,7 @@
     {
       "starting_address": 9085,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_3_collector_temperature_status",
+      "entity_id": "sol_3_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -445,7 +445,7 @@
     {
       "starting_address": 9086,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_4_collector_temperature_value",
+      "entity_id": "sol_4_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -458,7 +458,7 @@
     {
       "starting_address": 9087,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_4_collector_temperature_status",
+      "entity_id": "sol_4_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -471,7 +471,7 @@
     {
       "starting_address": 9088,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_5_collector_temperature_value",
+      "entity_id": "sol_5_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -484,7 +484,7 @@
     {
       "starting_address": 9089,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_5_collector_temperature_status",
+      "entity_id": "sol_5_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -497,7 +497,7 @@
     {
       "starting_address": 9090,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_6_collector_temperature_value",
+      "entity_id": "sol_6_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -510,7 +510,7 @@
     {
       "starting_address": 9091,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_6_collector_temperature_status",
+      "entity_id": "sol_6_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -523,7 +523,7 @@
     {
       "starting_address": 9092,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_7_collector_temperature_value",
+      "entity_id": "sol_7_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -536,7 +536,7 @@
     {
       "starting_address": 9093,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_7_collector_temperature_status",
+      "entity_id": "sol_7_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -549,7 +549,7 @@
     {
       "starting_address": 9094,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_8_collector_temperature_value",
+      "entity_id": "sol_8_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -562,7 +562,7 @@
     {
       "starting_address": 9095,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_8_collector_temperature_status",
+      "entity_id": "sol_8_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -575,7 +575,7 @@
     {
       "starting_address": 9096,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_9_collector_temperature_value",
+      "entity_id": "sol_9_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -588,7 +588,7 @@
     {
       "starting_address": 9097,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_9_collector_temperature_status",
+      "entity_id": "sol_9_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -601,7 +601,7 @@
     {
       "starting_address": 9098,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_10_collector_temperature_value",
+      "entity_id": "sol_10_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -614,7 +614,7 @@
     {
       "starting_address": 9099,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_10_collector_temperature_status",
+      "entity_id": "sol_10_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -627,7 +627,7 @@
     {
       "starting_address": 9100,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_11_collector_temperature_value",
+      "entity_id": "sol_11_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -640,7 +640,7 @@
     {
       "starting_address": 9101,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_11_collector_temperature_status",
+      "entity_id": "sol_11_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -653,7 +653,7 @@
     {
       "starting_address": 9102,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_12_collector_temperature_value",
+      "entity_id": "sol_12_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -666,7 +666,7 @@
     {
       "starting_address": 9103,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_12_collector_temperature_status",
+      "entity_id": "sol_12_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -679,7 +679,7 @@
     {
       "starting_address": 9104,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_13_collector_temperature_value",
+      "entity_id": "sol_13_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -692,7 +692,7 @@
     {
       "starting_address": 9105,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_13_collector_temperature_status",
+      "entity_id": "sol_13_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -705,7 +705,7 @@
     {
       "starting_address": 9106,
       "name": "Kollektortemperatur (value)",
-      "entity_id": "sol_14_collector_temperature_value",
+      "entity_id": "sol_14_sol_i_kollektor_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -718,7 +718,7 @@
     {
       "starting_address": 9107,
       "name": "Kollektortemperatur (status)",
-      "entity_id": "sol_14_collector_temperature_status",
+      "entity_id": "sol_14_sol_i_kollektor_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -731,7 +731,7 @@
     {
       "starting_address": 9110,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_1_temperature_storage_tank_1_value",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -744,7 +744,7 @@
     {
       "starting_address": 9111,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_1_temperature_storage_tank_1_status",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -757,7 +757,7 @@
     {
       "starting_address": 9112,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_2_temperature_storage_tank_1_value",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -770,7 +770,7 @@
     {
       "starting_address": 9113,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_2_temperature_storage_tank_1_status",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -783,7 +783,7 @@
     {
       "starting_address": 9114,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_3_temperature_storage_tank_1_value",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -796,7 +796,7 @@
     {
       "starting_address": 9115,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_3_temperature_storage_tank_1_status",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -809,7 +809,7 @@
     {
       "starting_address": 9116,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_4_temperature_storage_tank_1_value",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -822,7 +822,7 @@
     {
       "starting_address": 9117,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_4_temperature_storage_tank_1_status",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -835,7 +835,7 @@
     {
       "starting_address": 9118,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_5_temperature_storage_tank_1_value",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -848,7 +848,7 @@
     {
       "starting_address": 9119,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_5_temperature_storage_tank_1_status",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -861,7 +861,7 @@
     {
       "starting_address": 9120,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_6_temperature_storage_tank_1_value",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -874,7 +874,7 @@
     {
       "starting_address": 9121,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_6_temperature_storage_tank_1_status",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -887,7 +887,7 @@
     {
       "starting_address": 9122,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_7_temperature_storage_tank_1_value",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -900,7 +900,7 @@
     {
       "starting_address": 9123,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_7_temperature_storage_tank_1_status",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -913,7 +913,7 @@
     {
       "starting_address": 9124,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_8_temperature_storage_tank_1_value",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -926,7 +926,7 @@
     {
       "starting_address": 9125,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_8_temperature_storage_tank_1_status",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -939,7 +939,7 @@
     {
       "starting_address": 9126,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_9_temperature_storage_tank_1_value",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -952,7 +952,7 @@
     {
       "starting_address": 9127,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_9_temperature_storage_tank_1_status",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -965,7 +965,7 @@
     {
       "starting_address": 9128,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_10_temperature_storage_tank_1_value",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -978,7 +978,7 @@
     {
       "starting_address": 9129,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_10_temperature_storage_tank_1_status",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -991,7 +991,7 @@
     {
       "starting_address": 9130,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_11_temperature_storage_tank_1_value",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1004,7 +1004,7 @@
     {
       "starting_address": 9131,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_11_temperature_storage_tank_1_status",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1017,7 +1017,7 @@
     {
       "starting_address": 9132,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_12_temperature_storage_tank_1_value",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1030,7 +1030,7 @@
     {
       "starting_address": 9133,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_12_temperature_storage_tank_1_status",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1043,7 +1043,7 @@
     {
       "starting_address": 9134,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_13_temperature_storage_tank_1_value",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1056,7 +1056,7 @@
     {
       "starting_address": 9135,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_13_temperature_storage_tank_1_status",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1069,7 +1069,7 @@
     {
       "starting_address": 9136,
       "name": "Temperatur Speicher 1 (value)",
-      "entity_id": "sol_14_temperature_storage_tank_1_value",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_1_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1082,7 +1082,7 @@
     {
       "starting_address": 9137,
       "name": "Temperatur Speicher 1 (status)",
-      "entity_id": "sol_14_temperature_storage_tank_1_status",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_1_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1095,7 +1095,7 @@
     {
       "starting_address": 9140,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_1_temperature_storage_tank_2_value",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1108,7 +1108,7 @@
     {
       "starting_address": 9141,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_1_temperature_storage_tank_2_status",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1121,7 +1121,7 @@
     {
       "starting_address": 9142,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_2_temperature_storage_tank_2_value",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1134,7 +1134,7 @@
     {
       "starting_address": 9143,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_2_temperature_storage_tank_2_status",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1147,7 +1147,7 @@
     {
       "starting_address": 9144,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_3_temperature_storage_tank_2_value",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1160,7 +1160,7 @@
     {
       "starting_address": 9145,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_3_temperature_storage_tank_2_status",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1173,7 +1173,7 @@
     {
       "starting_address": 9146,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_4_temperature_storage_tank_2_value",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1186,7 +1186,7 @@
     {
       "starting_address": 9147,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_4_temperature_storage_tank_2_status",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1199,7 +1199,7 @@
     {
       "starting_address": 9148,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_5_temperature_storage_tank_2_value",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1212,7 +1212,7 @@
     {
       "starting_address": 9149,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_5_temperature_storage_tank_2_status",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1225,7 +1225,7 @@
     {
       "starting_address": 9150,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_6_temperature_storage_tank_2_value",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1238,7 +1238,7 @@
     {
       "starting_address": 9151,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_6_temperature_storage_tank_2_status",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1251,7 +1251,7 @@
     {
       "starting_address": 9152,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_7_temperature_storage_tank_2_value",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1264,7 +1264,7 @@
     {
       "starting_address": 9153,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_7_temperature_storage_tank_2_status",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1277,7 +1277,7 @@
     {
       "starting_address": 9154,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_8_temperature_storage_tank_2_value",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1290,7 +1290,7 @@
     {
       "starting_address": 9155,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_8_temperature_storage_tank_2_status",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1303,7 +1303,7 @@
     {
       "starting_address": 9156,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_9_temperature_storage_tank_2_value",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1316,7 +1316,7 @@
     {
       "starting_address": 9157,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_9_temperature_storage_tank_2_status",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1329,7 +1329,7 @@
     {
       "starting_address": 9158,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_10_temperature_storage_tank_2_value",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1342,7 +1342,7 @@
     {
       "starting_address": 9159,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_10_temperature_storage_tank_2_status",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1355,7 +1355,7 @@
     {
       "starting_address": 9160,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_11_temperature_storage_tank_2_value",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1368,7 +1368,7 @@
     {
       "starting_address": 9161,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_11_temperature_storage_tank_2_status",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1381,7 +1381,7 @@
     {
       "starting_address": 9162,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_12_temperature_storage_tank_2_value",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1394,7 +1394,7 @@
     {
       "starting_address": 9163,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_12_temperature_storage_tank_2_status",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1407,7 +1407,7 @@
     {
       "starting_address": 9164,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_13_temperature_storage_tank_2_value",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1420,7 +1420,7 @@
     {
       "starting_address": 9165,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_13_temperature_storage_tank_2_status",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1433,7 +1433,7 @@
     {
       "starting_address": 9166,
       "name": "Temperatur Speicher 2 (value)",
-      "entity_id": "sol_14_temperature_storage_tank_2_value",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1446,7 +1446,7 @@
     {
       "starting_address": 9167,
       "name": "Temperatur Speicher 2 (status)",
-      "entity_id": "sol_14_temperature_storage_tank_2_status",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1459,7 +1459,7 @@
     {
       "starting_address": 9169,
       "name": "Pumpe 1",
-      "entity_id": "sol_1_pump_1",
+      "entity_id": "sol_1_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1472,7 +1472,7 @@
     {
       "starting_address": 9170,
       "name": "Pumpe 1",
-      "entity_id": "sol_2_pump_1",
+      "entity_id": "sol_2_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1485,7 +1485,7 @@
     {
       "starting_address": 9171,
       "name": "Pumpe 1",
-      "entity_id": "sol_3_pump_1",
+      "entity_id": "sol_3_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1498,7 +1498,7 @@
     {
       "starting_address": 9172,
       "name": "Pumpe 1",
-      "entity_id": "sol_4_pump_1",
+      "entity_id": "sol_4_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1511,7 +1511,7 @@
     {
       "starting_address": 9173,
       "name": "Pumpe 1",
-      "entity_id": "sol_5_pump_1",
+      "entity_id": "sol_5_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1524,7 +1524,7 @@
     {
       "starting_address": 9174,
       "name": "Pumpe 1",
-      "entity_id": "sol_6_pump_1",
+      "entity_id": "sol_6_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1537,7 +1537,7 @@
     {
       "starting_address": 9175,
       "name": "Pumpe 1",
-      "entity_id": "sol_7_pump_1",
+      "entity_id": "sol_7_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1550,7 +1550,7 @@
     {
       "starting_address": 9176,
       "name": "Pumpe 1",
-      "entity_id": "sol_8_pump_1",
+      "entity_id": "sol_8_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1563,7 +1563,7 @@
     {
       "starting_address": 9177,
       "name": "Pumpe 1",
-      "entity_id": "sol_9_pump_1",
+      "entity_id": "sol_9_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1576,7 +1576,7 @@
     {
       "starting_address": 9178,
       "name": "Pumpe 1",
-      "entity_id": "sol_10_pump_1",
+      "entity_id": "sol_10_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1589,7 +1589,7 @@
     {
       "starting_address": 9179,
       "name": "Pumpe 1",
-      "entity_id": "sol_11_pump_1",
+      "entity_id": "sol_11_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1602,7 +1602,7 @@
     {
       "starting_address": 9180,
       "name": "Pumpe 1",
-      "entity_id": "sol_12_pump_1",
+      "entity_id": "sol_12_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1615,7 +1615,7 @@
     {
       "starting_address": 9181,
       "name": "Pumpe 1",
-      "entity_id": "sol_13_pump_1",
+      "entity_id": "sol_13_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1628,7 +1628,7 @@
     {
       "starting_address": 9182,
       "name": "Pumpe 1",
-      "entity_id": "sol_14_pump_1",
+      "entity_id": "sol_14_sol_o_pumpe_1",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1641,7 +1641,7 @@
     {
       "starting_address": 9184,
       "name": "Pumpe 2",
-      "entity_id": "sol_1_pump_2",
+      "entity_id": "sol_1_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1654,7 +1654,7 @@
     {
       "starting_address": 9185,
       "name": "Pumpe 2",
-      "entity_id": "sol_2_pump_2",
+      "entity_id": "sol_2_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1667,7 +1667,7 @@
     {
       "starting_address": 9186,
       "name": "Pumpe 2",
-      "entity_id": "sol_3_pump_2",
+      "entity_id": "sol_3_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1680,7 +1680,7 @@
     {
       "starting_address": 9187,
       "name": "Pumpe 2",
-      "entity_id": "sol_4_pump_2",
+      "entity_id": "sol_4_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1693,7 +1693,7 @@
     {
       "starting_address": 9188,
       "name": "Pumpe 2",
-      "entity_id": "sol_5_pump_2",
+      "entity_id": "sol_5_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1706,7 +1706,7 @@
     {
       "starting_address": 9189,
       "name": "Pumpe 2",
-      "entity_id": "sol_6_pump_2",
+      "entity_id": "sol_6_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1719,7 +1719,7 @@
     {
       "starting_address": 9190,
       "name": "Pumpe 2",
-      "entity_id": "sol_7_pump_2",
+      "entity_id": "sol_7_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1732,7 +1732,7 @@
     {
       "starting_address": 9191,
       "name": "Pumpe 2",
-      "entity_id": "sol_8_pump_2",
+      "entity_id": "sol_8_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1745,7 +1745,7 @@
     {
       "starting_address": 9192,
       "name": "Pumpe 2",
-      "entity_id": "sol_9_pump_2",
+      "entity_id": "sol_9_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1758,7 +1758,7 @@
     {
       "starting_address": 9193,
       "name": "Pumpe 2",
-      "entity_id": "sol_10_pump_2",
+      "entity_id": "sol_10_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1771,7 +1771,7 @@
     {
       "starting_address": 9194,
       "name": "Pumpe 2",
-      "entity_id": "sol_11_pump_2",
+      "entity_id": "sol_11_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1784,7 +1784,7 @@
     {
       "starting_address": 9195,
       "name": "Pumpe 2",
-      "entity_id": "sol_12_pump_2",
+      "entity_id": "sol_12_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1797,7 +1797,7 @@
     {
       "starting_address": 9196,
       "name": "Pumpe 2",
-      "entity_id": "sol_13_pump_2",
+      "entity_id": "sol_13_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1810,7 +1810,7 @@
     {
       "starting_address": 9197,
       "name": "Pumpe 2",
-      "entity_id": "sol_14_pump_2",
+      "entity_id": "sol_14_sol_o_pumpe_2",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1823,7 +1823,7 @@
     {
       "starting_address": 9199,
       "name": "Umschaltventil",
-      "entity_id": "sol_1_switchover_valve",
+      "entity_id": "sol_1_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1836,7 +1836,7 @@
     {
       "starting_address": 9200,
       "name": "Umschaltventil",
-      "entity_id": "sol_2_switchover_valve",
+      "entity_id": "sol_2_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1849,7 +1849,7 @@
     {
       "starting_address": 9201,
       "name": "Umschaltventil",
-      "entity_id": "sol_3_switchover_valve",
+      "entity_id": "sol_3_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1862,7 +1862,7 @@
     {
       "starting_address": 9202,
       "name": "Umschaltventil",
-      "entity_id": "sol_4_switchover_valve",
+      "entity_id": "sol_4_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1875,7 +1875,7 @@
     {
       "starting_address": 9203,
       "name": "Umschaltventil",
-      "entity_id": "sol_5_switchover_valve",
+      "entity_id": "sol_5_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1888,7 +1888,7 @@
     {
       "starting_address": 9204,
       "name": "Umschaltventil",
-      "entity_id": "sol_6_switchover_valve",
+      "entity_id": "sol_6_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1901,7 +1901,7 @@
     {
       "starting_address": 9205,
       "name": "Umschaltventil",
-      "entity_id": "sol_7_switchover_valve",
+      "entity_id": "sol_7_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1914,7 +1914,7 @@
     {
       "starting_address": 9206,
       "name": "Umschaltventil",
-      "entity_id": "sol_8_switchover_valve",
+      "entity_id": "sol_8_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1927,7 +1927,7 @@
     {
       "starting_address": 9207,
       "name": "Umschaltventil",
-      "entity_id": "sol_9_switchover_valve",
+      "entity_id": "sol_9_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1940,7 +1940,7 @@
     {
       "starting_address": 9208,
       "name": "Umschaltventil",
-      "entity_id": "sol_10_switchover_valve",
+      "entity_id": "sol_10_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1953,7 +1953,7 @@
     {
       "starting_address": 9209,
       "name": "Umschaltventil",
-      "entity_id": "sol_11_switchover_valve",
+      "entity_id": "sol_11_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1966,7 +1966,7 @@
     {
       "starting_address": 9210,
       "name": "Umschaltventil",
-      "entity_id": "sol_12_switchover_valve",
+      "entity_id": "sol_12_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1979,7 +1979,7 @@
     {
       "starting_address": 9211,
       "name": "Umschaltventil",
-      "entity_id": "sol_13_switchover_valve",
+      "entity_id": "sol_13_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1992,7 +1992,7 @@
     {
       "starting_address": 9212,
       "name": "Umschaltventil",
-      "entity_id": "sol_14_switchover_valve",
+      "entity_id": "sol_14_sol_o_umschaltventil",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2005,7 +2005,7 @@
     {
       "starting_address": 9215,
       "name": "Wärmeleistung",
-      "entity_id": "sol_1_thermal_output",
+      "entity_id": "sol_1_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2019,7 +2019,7 @@
     {
       "starting_address": 9217,
       "name": "Wärmeleistung",
-      "entity_id": "sol_2_thermal_output",
+      "entity_id": "sol_2_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2033,7 +2033,7 @@
     {
       "starting_address": 9219,
       "name": "Wärmeleistung",
-      "entity_id": "sol_3_thermal_output",
+      "entity_id": "sol_3_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2047,7 +2047,7 @@
     {
       "starting_address": 9221,
       "name": "Wärmeleistung",
-      "entity_id": "sol_4_thermal_output",
+      "entity_id": "sol_4_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2061,7 +2061,7 @@
     {
       "starting_address": 9223,
       "name": "Wärmeleistung",
-      "entity_id": "sol_5_thermal_output",
+      "entity_id": "sol_5_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2075,7 +2075,7 @@
     {
       "starting_address": 9225,
       "name": "Wärmeleistung",
-      "entity_id": "sol_6_thermal_output",
+      "entity_id": "sol_6_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2089,7 +2089,7 @@
     {
       "starting_address": 9227,
       "name": "Wärmeleistung",
-      "entity_id": "sol_7_thermal_output",
+      "entity_id": "sol_7_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2103,7 +2103,7 @@
     {
       "starting_address": 9229,
       "name": "Wärmeleistung",
-      "entity_id": "sol_8_thermal_output",
+      "entity_id": "sol_8_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2117,7 +2117,7 @@
     {
       "starting_address": 9231,
       "name": "Wärmeleistung",
-      "entity_id": "sol_9_thermal_output",
+      "entity_id": "sol_9_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2131,7 +2131,7 @@
     {
       "starting_address": 9233,
       "name": "Wärmeleistung",
-      "entity_id": "sol_10_thermal_output",
+      "entity_id": "sol_10_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2145,7 +2145,7 @@
     {
       "starting_address": 9235,
       "name": "Wärmeleistung",
-      "entity_id": "sol_11_thermal_output",
+      "entity_id": "sol_11_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2159,7 +2159,7 @@
     {
       "starting_address": 9237,
       "name": "Wärmeleistung",
-      "entity_id": "sol_12_thermal_output",
+      "entity_id": "sol_12_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2173,7 +2173,7 @@
     {
       "starting_address": 9239,
       "name": "Wärmeleistung",
-      "entity_id": "sol_13_thermal_output",
+      "entity_id": "sol_13_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2187,7 +2187,7 @@
     {
       "starting_address": 9241,
       "name": "Wärmeleistung",
-      "entity_id": "sol_14_thermal_output",
+      "entity_id": "sol_14_sol_waermeleistung",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2201,7 +2201,7 @@
     {
       "starting_address": 9245,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_1_heat_amount_day",
+      "entity_id": "sol_1_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2215,7 +2215,7 @@
     {
       "starting_address": 9247,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_2_heat_amount_day",
+      "entity_id": "sol_2_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2229,7 +2229,7 @@
     {
       "starting_address": 9249,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_3_heat_amount_day",
+      "entity_id": "sol_3_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2243,7 +2243,7 @@
     {
       "starting_address": 9251,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_4_heat_amount_day",
+      "entity_id": "sol_4_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2257,7 +2257,7 @@
     {
       "starting_address": 9253,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_5_heat_amount_day",
+      "entity_id": "sol_5_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2271,7 +2271,7 @@
     {
       "starting_address": 9255,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_6_heat_amount_day",
+      "entity_id": "sol_6_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2285,7 +2285,7 @@
     {
       "starting_address": 9257,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_7_heat_amount_day",
+      "entity_id": "sol_7_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2299,7 +2299,7 @@
     {
       "starting_address": 9259,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_8_heat_amount_day",
+      "entity_id": "sol_8_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2313,7 +2313,7 @@
     {
       "starting_address": 9261,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_9_heat_amount_day",
+      "entity_id": "sol_9_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2327,7 +2327,7 @@
     {
       "starting_address": 9263,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_10_heat_amount_day",
+      "entity_id": "sol_10_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2341,7 +2341,7 @@
     {
       "starting_address": 9265,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_11_heat_amount_day",
+      "entity_id": "sol_11_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2355,7 +2355,7 @@
     {
       "starting_address": 9267,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_12_heat_amount_day",
+      "entity_id": "sol_12_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2369,7 +2369,7 @@
     {
       "starting_address": 9269,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_13_heat_amount_day",
+      "entity_id": "sol_13_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2383,7 +2383,7 @@
     {
       "starting_address": 9271,
       "name": "Wärmemenge Tag",
-      "entity_id": "sol_14_heat_amount_day",
+      "entity_id": "sol_14_sol_waermemenge_tag",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2397,7 +2397,7 @@
     {
       "starting_address": 9275,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_1_heat_amount_total",
+      "entity_id": "sol_1_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2411,7 +2411,7 @@
     {
       "starting_address": 9277,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_2_heat_amount_total",
+      "entity_id": "sol_2_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2425,7 +2425,7 @@
     {
       "starting_address": 9279,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_3_heat_amount_total",
+      "entity_id": "sol_3_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2439,7 +2439,7 @@
     {
       "starting_address": 9281,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_4_heat_amount_total",
+      "entity_id": "sol_4_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2453,7 +2453,7 @@
     {
       "starting_address": 9283,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_5_heat_amount_total",
+      "entity_id": "sol_5_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2467,7 +2467,7 @@
     {
       "starting_address": 9285,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_6_heat_amount_total",
+      "entity_id": "sol_6_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2481,7 +2481,7 @@
     {
       "starting_address": 9287,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_7_heat_amount_total",
+      "entity_id": "sol_7_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2495,7 +2495,7 @@
     {
       "starting_address": 9289,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_8_heat_amount_total",
+      "entity_id": "sol_8_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2509,7 +2509,7 @@
     {
       "starting_address": 9291,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_9_heat_amount_total",
+      "entity_id": "sol_9_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2523,7 +2523,7 @@
     {
       "starting_address": 9293,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_10_heat_amount_total",
+      "entity_id": "sol_10_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2537,7 +2537,7 @@
     {
       "starting_address": 9295,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_11_heat_amount_total",
+      "entity_id": "sol_11_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2551,7 +2551,7 @@
     {
       "starting_address": 9297,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_12_heat_amount_total",
+      "entity_id": "sol_12_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2565,7 +2565,7 @@
     {
       "starting_address": 9299,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_13_heat_amount_total",
+      "entity_id": "sol_13_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2579,7 +2579,7 @@
     {
       "starting_address": 9301,
       "name": "Wärmemenge gesamt",
-      "entity_id": "sol_14_heat_amount_total",
+      "entity_id": "sol_14_sol_waermemenge_gesamt_kwh",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -2593,7 +2593,7 @@
     {
       "starting_address": 9305,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_1_collector_forward_flow_temp_value",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2606,7 +2606,7 @@
     {
       "starting_address": 9306,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_1_collector_forward_flow_temp_status",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2619,7 +2619,7 @@
     {
       "starting_address": 9307,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_2_collector_forward_flow_temp_value",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2632,7 +2632,7 @@
     {
       "starting_address": 9308,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_2_collector_forward_flow_temp_status",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2645,7 +2645,7 @@
     {
       "starting_address": 9309,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_3_collector_forward_flow_temp_value",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2658,7 +2658,7 @@
     {
       "starting_address": 9310,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_3_collector_forward_flow_temp_status",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2671,7 +2671,7 @@
     {
       "starting_address": 9311,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_4_collector_forward_flow_temp_value",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2684,7 +2684,7 @@
     {
       "starting_address": 9312,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_4_collector_forward_flow_temp_status",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2697,7 +2697,7 @@
     {
       "starting_address": 9313,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_5_collector_forward_flow_temp_value",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2710,7 +2710,7 @@
     {
       "starting_address": 9314,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_5_collector_forward_flow_temp_status",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2723,7 +2723,7 @@
     {
       "starting_address": 9315,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_6_collector_forward_flow_temp_value",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2736,7 +2736,7 @@
     {
       "starting_address": 9316,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_6_collector_forward_flow_temp_status",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2749,7 +2749,7 @@
     {
       "starting_address": 9317,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_7_collector_forward_flow_temp_value",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2762,7 +2762,7 @@
     {
       "starting_address": 9318,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_7_collector_forward_flow_temp_status",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2775,7 +2775,7 @@
     {
       "starting_address": 9319,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_8_collector_forward_flow_temp_value",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2788,7 +2788,7 @@
     {
       "starting_address": 9320,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_8_collector_forward_flow_temp_status",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2801,7 +2801,7 @@
     {
       "starting_address": 9321,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_9_collector_forward_flow_temp_value",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2814,7 +2814,7 @@
     {
       "starting_address": 9322,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_9_collector_forward_flow_temp_status",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2827,7 +2827,7 @@
     {
       "starting_address": 9323,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_10_collector_forward_flow_temp_value",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2840,7 +2840,7 @@
     {
       "starting_address": 9324,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_10_collector_forward_flow_temp_status",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2853,7 +2853,7 @@
     {
       "starting_address": 9325,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_11_collector_forward_flow_temp_value",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2866,7 +2866,7 @@
     {
       "starting_address": 9326,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_11_collector_forward_flow_temp_status",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2879,7 +2879,7 @@
     {
       "starting_address": 9327,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_12_collector_forward_flow_temp_value",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2892,7 +2892,7 @@
     {
       "starting_address": 9328,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_12_collector_forward_flow_temp_status",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2905,7 +2905,7 @@
     {
       "starting_address": 9329,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_13_collector_forward_flow_temp_value",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2918,7 +2918,7 @@
     {
       "starting_address": 9330,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_13_collector_forward_flow_temp_status",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2931,7 +2931,7 @@
     {
       "starting_address": 9331,
       "name": "Kollektor Vorlauftemperatur (value)",
-      "entity_id": "sol_14_collector_forward_flow_temp_value",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2944,7 +2944,7 @@
     {
       "starting_address": 9332,
       "name": "Kollektor Vorlauftemperatur (status)",
-      "entity_id": "sol_14_collector_forward_flow_temp_status",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2957,7 +2957,7 @@
     {
       "starting_address": 9335,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_1_collector_return_flow_temp_value",
+      "entity_id": "sol_1_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2970,7 +2970,7 @@
     {
       "starting_address": 9336,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_1_collector_return_flow_temp_status",
+      "entity_id": "sol_1_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2983,7 +2983,7 @@
     {
       "starting_address": 9337,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_2_collector_return_flow_temp_value",
+      "entity_id": "sol_2_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2996,7 +2996,7 @@
     {
       "starting_address": 9338,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_2_collector_return_flow_temp_status",
+      "entity_id": "sol_2_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3009,7 +3009,7 @@
     {
       "starting_address": 9339,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_3_collector_return_flow_temp_value",
+      "entity_id": "sol_3_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3022,7 +3022,7 @@
     {
       "starting_address": 9340,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_3_collector_return_flow_temp_status",
+      "entity_id": "sol_3_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3035,7 +3035,7 @@
     {
       "starting_address": 9341,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_4_collector_return_flow_temp_value",
+      "entity_id": "sol_4_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3048,7 +3048,7 @@
     {
       "starting_address": 9342,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_4_collector_return_flow_temp_status",
+      "entity_id": "sol_4_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3061,7 +3061,7 @@
     {
       "starting_address": 9343,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_5_collector_return_flow_temp_value",
+      "entity_id": "sol_5_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3074,7 +3074,7 @@
     {
       "starting_address": 9344,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_5_collector_return_flow_temp_status",
+      "entity_id": "sol_5_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3087,7 +3087,7 @@
     {
       "starting_address": 9345,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_6_collector_return_flow_temp_value",
+      "entity_id": "sol_6_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3100,7 +3100,7 @@
     {
       "starting_address": 9346,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_6_collector_return_flow_temp_status",
+      "entity_id": "sol_6_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3113,7 +3113,7 @@
     {
       "starting_address": 9347,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_7_collector_return_flow_temp_value",
+      "entity_id": "sol_7_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3126,7 +3126,7 @@
     {
       "starting_address": 9348,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_7_collector_return_flow_temp_status",
+      "entity_id": "sol_7_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3139,7 +3139,7 @@
     {
       "starting_address": 9349,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_8_collector_return_flow_temp_value",
+      "entity_id": "sol_8_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3152,7 +3152,7 @@
     {
       "starting_address": 9350,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_8_collector_return_flow_temp_status",
+      "entity_id": "sol_8_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3165,7 +3165,7 @@
     {
       "starting_address": 9351,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_9_collector_return_flow_temp_value",
+      "entity_id": "sol_9_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3178,7 +3178,7 @@
     {
       "starting_address": 9352,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_9_collector_return_flow_temp_status",
+      "entity_id": "sol_9_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3191,7 +3191,7 @@
     {
       "starting_address": 9353,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_10_collector_return_flow_temp_value",
+      "entity_id": "sol_10_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3204,7 +3204,7 @@
     {
       "starting_address": 9354,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_10_collector_return_flow_temp_status",
+      "entity_id": "sol_10_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3217,7 +3217,7 @@
     {
       "starting_address": 9355,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_11_collector_return_flow_temp_value",
+      "entity_id": "sol_11_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3230,7 +3230,7 @@
     {
       "starting_address": 9356,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_11_collector_return_flow_temp_status",
+      "entity_id": "sol_11_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3243,7 +3243,7 @@
     {
       "starting_address": 9357,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_12_collector_return_flow_temp_value",
+      "entity_id": "sol_12_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3256,7 +3256,7 @@
     {
       "starting_address": 9358,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_12_collector_return_flow_temp_status",
+      "entity_id": "sol_12_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3269,7 +3269,7 @@
     {
       "starting_address": 9359,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_13_collector_return_flow_temp_value",
+      "entity_id": "sol_13_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3282,7 +3282,7 @@
     {
       "starting_address": 9360,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_13_collector_return_flow_temp_status",
+      "entity_id": "sol_13_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3295,7 +3295,7 @@
     {
       "starting_address": 9361,
       "name": "Kollektor Rücklauftemperatur (value)",
-      "entity_id": "sol_14_collector_return_flow_temp_value",
+      "entity_id": "sol_14_sol_i_kollektor_ruecklauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3308,7 +3308,7 @@
     {
       "starting_address": 9362,
       "name": "Kollektor Rücklauftemperatur (status)",
-      "entity_id": "sol_14_collector_return_flow_temp_status",
+      "entity_id": "sol_14_sol_i_kollektor_ruecklauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3321,7 +3321,7 @@
     {
       "starting_address": 9365,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_1_flow_through_value",
+      "entity_id": "sol_1_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3334,7 +3334,7 @@
     {
       "starting_address": 9366,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_1_flow_through_status",
+      "entity_id": "sol_1_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3347,7 +3347,7 @@
     {
       "starting_address": 9367,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_2_flow_through_value",
+      "entity_id": "sol_2_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3360,7 +3360,7 @@
     {
       "starting_address": 9368,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_2_flow_through_status",
+      "entity_id": "sol_2_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3373,7 +3373,7 @@
     {
       "starting_address": 9369,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_3_flow_through_value",
+      "entity_id": "sol_3_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3386,7 +3386,7 @@
     {
       "starting_address": 9370,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_3_flow_through_status",
+      "entity_id": "sol_3_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3399,7 +3399,7 @@
     {
       "starting_address": 9371,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_4_flow_through_value",
+      "entity_id": "sol_4_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3412,7 +3412,7 @@
     {
       "starting_address": 9372,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_4_flow_through_status",
+      "entity_id": "sol_4_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3425,7 +3425,7 @@
     {
       "starting_address": 9373,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_5_flow_through_value",
+      "entity_id": "sol_5_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3438,7 +3438,7 @@
     {
       "starting_address": 9374,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_5_flow_through_status",
+      "entity_id": "sol_5_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3451,7 +3451,7 @@
     {
       "starting_address": 9375,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_6_flow_through_value",
+      "entity_id": "sol_6_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3464,7 +3464,7 @@
     {
       "starting_address": 9376,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_6_flow_through_status",
+      "entity_id": "sol_6_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3477,7 +3477,7 @@
     {
       "starting_address": 9377,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_7_flow_through_value",
+      "entity_id": "sol_7_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3490,7 +3490,7 @@
     {
       "starting_address": 9378,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_7_flow_through_status",
+      "entity_id": "sol_7_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3503,7 +3503,7 @@
     {
       "starting_address": 9379,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_8_flow_through_value",
+      "entity_id": "sol_8_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3516,7 +3516,7 @@
     {
       "starting_address": 9380,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_8_flow_through_status",
+      "entity_id": "sol_8_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3529,7 +3529,7 @@
     {
       "starting_address": 9381,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_9_flow_through_value",
+      "entity_id": "sol_9_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3542,7 +3542,7 @@
     {
       "starting_address": 9382,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_9_flow_through_status",
+      "entity_id": "sol_9_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3555,7 +3555,7 @@
     {
       "starting_address": 9383,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_10_flow_through_value",
+      "entity_id": "sol_10_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3568,7 +3568,7 @@
     {
       "starting_address": 9384,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_10_flow_through_status",
+      "entity_id": "sol_10_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3581,7 +3581,7 @@
     {
       "starting_address": 9385,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_11_flow_through_value",
+      "entity_id": "sol_11_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3594,7 +3594,7 @@
     {
       "starting_address": 9386,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_11_flow_through_status",
+      "entity_id": "sol_11_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3607,7 +3607,7 @@
     {
       "starting_address": 9387,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_12_flow_through_value",
+      "entity_id": "sol_12_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3620,7 +3620,7 @@
     {
       "starting_address": 9388,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_12_flow_through_status",
+      "entity_id": "sol_12_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3633,7 +3633,7 @@
     {
       "starting_address": 9389,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_13_flow_through_value",
+      "entity_id": "sol_13_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3646,7 +3646,7 @@
     {
       "starting_address": 9390,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_13_flow_through_status",
+      "entity_id": "sol_13_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3659,7 +3659,7 @@
     {
       "starting_address": 9391,
       "name": "Durchfluss (value)",
-      "entity_id": "sol_14_flow_through_value",
+      "entity_id": "sol_14_sol_i_kollektor_durchfluss_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3672,7 +3672,7 @@
     {
       "starting_address": 9392,
       "name": "Durchfluss (status)",
-      "entity_id": "sol_14_flow_through_status",
+      "entity_id": "sol_14_sol_i_kollektor_durchfluss_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3685,7 +3685,7 @@
     {
       "starting_address": 9466,
       "name": "Pumpe 1",
-      "entity_id": "sol_1_pump_1",
+      "entity_id": "sol_1_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3698,7 +3698,7 @@
     {
       "starting_address": 9467,
       "name": "Pumpe 1",
-      "entity_id": "sol_2_pump_1",
+      "entity_id": "sol_2_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3711,7 +3711,7 @@
     {
       "starting_address": 9468,
       "name": "Pumpe 1",
-      "entity_id": "sol_3_pump_1",
+      "entity_id": "sol_3_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3724,7 +3724,7 @@
     {
       "starting_address": 9469,
       "name": "Pumpe 1",
-      "entity_id": "sol_4_pump_1",
+      "entity_id": "sol_4_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3737,7 +3737,7 @@
     {
       "starting_address": 9470,
       "name": "Pumpe 1",
-      "entity_id": "sol_5_pump_1",
+      "entity_id": "sol_5_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3750,7 +3750,7 @@
     {
       "starting_address": 9471,
       "name": "Pumpe 1",
-      "entity_id": "sol_6_pump_1",
+      "entity_id": "sol_6_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3763,7 +3763,7 @@
     {
       "starting_address": 9472,
       "name": "Pumpe 1",
-      "entity_id": "sol_7_pump_1",
+      "entity_id": "sol_7_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3776,7 +3776,7 @@
     {
       "starting_address": 9473,
       "name": "Pumpe 1",
-      "entity_id": "sol_8_pump_1",
+      "entity_id": "sol_8_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3789,7 +3789,7 @@
     {
       "starting_address": 9474,
       "name": "Pumpe 1",
-      "entity_id": "sol_9_pump_1",
+      "entity_id": "sol_9_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3802,7 +3802,7 @@
     {
       "starting_address": 9475,
       "name": "Pumpe 1",
-      "entity_id": "sol_10_pump_1",
+      "entity_id": "sol_10_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3815,7 +3815,7 @@
     {
       "starting_address": 9476,
       "name": "Pumpe 1",
-      "entity_id": "sol_11_pump_1",
+      "entity_id": "sol_11_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3828,7 +3828,7 @@
     {
       "starting_address": 9477,
       "name": "Pumpe 1",
-      "entity_id": "sol_12_pump_1",
+      "entity_id": "sol_12_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3841,7 +3841,7 @@
     {
       "starting_address": 9478,
       "name": "Pumpe 1",
-      "entity_id": "sol_13_pump_1",
+      "entity_id": "sol_13_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3854,7 +3854,7 @@
     {
       "starting_address": 9479,
       "name": "Pumpe 1",
-      "entity_id": "sol_14_pump_1",
+      "entity_id": "sol_14_sol_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3867,7 +3867,7 @@
     {
       "starting_address": 9481,
       "name": "Pumpe 2",
-      "entity_id": "sol_1_pump_2",
+      "entity_id": "sol_1_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3880,7 +3880,7 @@
     {
       "starting_address": 9482,
       "name": "Pumpe 2",
-      "entity_id": "sol_2_pump_2",
+      "entity_id": "sol_2_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3893,7 +3893,7 @@
     {
       "starting_address": 9483,
       "name": "Pumpe 2",
-      "entity_id": "sol_3_pump_2",
+      "entity_id": "sol_3_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3906,7 +3906,7 @@
     {
       "starting_address": 9484,
       "name": "Pumpe 2",
-      "entity_id": "sol_4_pump_2",
+      "entity_id": "sol_4_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3919,7 +3919,7 @@
     {
       "starting_address": 9485,
       "name": "Pumpe 2",
-      "entity_id": "sol_5_pump_2",
+      "entity_id": "sol_5_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3932,7 +3932,7 @@
     {
       "starting_address": 9486,
       "name": "Pumpe 2",
-      "entity_id": "sol_6_pump_2",
+      "entity_id": "sol_6_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3945,7 +3945,7 @@
     {
       "starting_address": 9487,
       "name": "Pumpe 2",
-      "entity_id": "sol_7_pump_2",
+      "entity_id": "sol_7_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3958,7 +3958,7 @@
     {
       "starting_address": 9488,
       "name": "Pumpe 2",
-      "entity_id": "sol_8_pump_2",
+      "entity_id": "sol_8_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3971,7 +3971,7 @@
     {
       "starting_address": 9489,
       "name": "Pumpe 2",
-      "entity_id": "sol_9_pump_2",
+      "entity_id": "sol_9_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3984,7 +3984,7 @@
     {
       "starting_address": 9490,
       "name": "Pumpe 2",
-      "entity_id": "sol_10_pump_2",
+      "entity_id": "sol_10_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3997,7 +3997,7 @@
     {
       "starting_address": 9491,
       "name": "Pumpe 2",
-      "entity_id": "sol_11_pump_2",
+      "entity_id": "sol_11_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -4010,7 +4010,7 @@
     {
       "starting_address": 9492,
       "name": "Pumpe 2",
-      "entity_id": "sol_12_pump_2",
+      "entity_id": "sol_12_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -4023,7 +4023,7 @@
     {
       "starting_address": 9493,
       "name": "Pumpe 2",
-      "entity_id": "sol_13_pump_2",
+      "entity_id": "sol_13_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -4036,7 +4036,7 @@
     {
       "starting_address": 9494,
       "name": "Pumpe 2",
-      "entity_id": "sol_14_pump_2",
+      "entity_id": "sol_14_sol_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -4049,7 +4049,7 @@
     {
       "starting_address": 9882,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_1_forw_flow_temp_sec_value",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4062,7 +4062,7 @@
     {
       "starting_address": 9883,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_1_forw_flow_temp_sec_status",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4075,7 +4075,7 @@
     {
       "starting_address": 9884,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_2_forw_flow_temp_sec_value",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4088,7 +4088,7 @@
     {
       "starting_address": 9885,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_2_forw_flow_temp_sec_status",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4101,7 +4101,7 @@
     {
       "starting_address": 9886,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_3_forw_flow_temp_sec_value",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4114,7 +4114,7 @@
     {
       "starting_address": 9887,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_3_forw_flow_temp_sec_status",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4127,7 +4127,7 @@
     {
       "starting_address": 9888,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_4_forw_flow_temp_sec_value",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4140,7 +4140,7 @@
     {
       "starting_address": 9889,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_4_forw_flow_temp_sec_status",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4153,7 +4153,7 @@
     {
       "starting_address": 9890,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_5_forw_flow_temp_sec_value",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4166,7 +4166,7 @@
     {
       "starting_address": 9891,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_5_forw_flow_temp_sec_status",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4179,7 +4179,7 @@
     {
       "starting_address": 9892,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_6_forw_flow_temp_sec_value",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4192,7 +4192,7 @@
     {
       "starting_address": 9893,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_6_forw_flow_temp_sec_status",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4205,7 +4205,7 @@
     {
       "starting_address": 9894,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_7_forw_flow_temp_sec_value",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4218,7 +4218,7 @@
     {
       "starting_address": 9895,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_7_forw_flow_temp_sec_status",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4231,7 +4231,7 @@
     {
       "starting_address": 9896,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_8_forw_flow_temp_sec_value",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4244,7 +4244,7 @@
     {
       "starting_address": 9897,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_8_forw_flow_temp_sec_status",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4257,7 +4257,7 @@
     {
       "starting_address": 9898,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_9_forw_flow_temp_sec_value",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4270,7 +4270,7 @@
     {
       "starting_address": 9899,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_9_forw_flow_temp_sec_status",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4283,7 +4283,7 @@
     {
       "starting_address": 9900,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_10_forw_flow_temp_sec_value",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4296,7 +4296,7 @@
     {
       "starting_address": 9901,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_10_forw_flow_temp_sec_status",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4309,7 +4309,7 @@
     {
       "starting_address": 9902,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_11_forw_flow_temp_sec_value",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4322,7 +4322,7 @@
     {
       "starting_address": 9903,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_11_forw_flow_temp_sec_status",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4335,7 +4335,7 @@
     {
       "starting_address": 9904,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_12_forw_flow_temp_sec_value",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4348,7 +4348,7 @@
     {
       "starting_address": 9905,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_12_forw_flow_temp_sec_status",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4361,7 +4361,7 @@
     {
       "starting_address": 9906,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_13_forw_flow_temp_sec_value",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4374,7 +4374,7 @@
     {
       "starting_address": 9907,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_13_forw_flow_temp_sec_status",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4387,7 +4387,7 @@
     {
       "starting_address": 9908,
       "name": "Vorlauftemperatur Sekundär (value)",
-      "entity_id": "sol_14_forw_flow_temp_sec_value",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4400,7 +4400,7 @@
     {
       "starting_address": 9909,
       "name": "Vorlauftemperatur Sekundär (status)",
-      "entity_id": "sol_14_forw_flow_temp_sec_status",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4413,7 +4413,7 @@
     {
       "starting_address": 9912,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_1_ret_flow_temp_sec_value",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4426,7 +4426,7 @@
     {
       "starting_address": 9913,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_1_ret_flow_temp_sec_status",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4439,7 +4439,7 @@
     {
       "starting_address": 9914,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_2_ret_flow_temp_sec_value",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4452,7 +4452,7 @@
     {
       "starting_address": 9915,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_2_ret_flow_temp_sec_status",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4465,7 +4465,7 @@
     {
       "starting_address": 9916,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_3_ret_flow_temp_sec_value",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4478,7 +4478,7 @@
     {
       "starting_address": 9917,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_3_ret_flow_temp_sec_status",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4491,7 +4491,7 @@
     {
       "starting_address": 9918,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_4_ret_flow_temp_sec_value",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4504,7 +4504,7 @@
     {
       "starting_address": 9919,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_4_ret_flow_temp_sec_status",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4517,7 +4517,7 @@
     {
       "starting_address": 9920,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_5_ret_flow_temp_sec_value",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4530,7 +4530,7 @@
     {
       "starting_address": 9921,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_5_ret_flow_temp_sec_status",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4543,7 +4543,7 @@
     {
       "starting_address": 9922,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_6_ret_flow_temp_sec_value",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4556,7 +4556,7 @@
     {
       "starting_address": 9923,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_6_ret_flow_temp_sec_status",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4569,7 +4569,7 @@
     {
       "starting_address": 9924,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_7_ret_flow_temp_sec_value",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4582,7 +4582,7 @@
     {
       "starting_address": 9925,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_7_ret_flow_temp_sec_status",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4595,7 +4595,7 @@
     {
       "starting_address": 9926,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_8_ret_flow_temp_sec_value",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4608,7 +4608,7 @@
     {
       "starting_address": 9927,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_8_ret_flow_temp_sec_status",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4621,7 +4621,7 @@
     {
       "starting_address": 9928,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_9_ret_flow_temp_sec_value",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4634,7 +4634,7 @@
     {
       "starting_address": 9929,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_9_ret_flow_temp_sec_status",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4647,7 +4647,7 @@
     {
       "starting_address": 9930,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_10_ret_flow_temp_sec_value",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4660,7 +4660,7 @@
     {
       "starting_address": 9931,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_10_ret_flow_temp_sec_status",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4673,7 +4673,7 @@
     {
       "starting_address": 9932,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_11_ret_flow_temp_sec_value",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4686,7 +4686,7 @@
     {
       "starting_address": 9933,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_11_ret_flow_temp_sec_status",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4699,7 +4699,7 @@
     {
       "starting_address": 9934,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_12_ret_flow_temp_sec_value",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4712,7 +4712,7 @@
     {
       "starting_address": 9935,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_12_ret_flow_temp_sec_status",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4725,7 +4725,7 @@
     {
       "starting_address": 9936,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_13_ret_flow_temp_sec_value",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4738,7 +4738,7 @@
     {
       "starting_address": 9937,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_13_ret_flow_temp_sec_status",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4751,7 +4751,7 @@
     {
       "starting_address": 9938,
       "name": "Rücklauftemperatur Sekundär (value)",
-      "entity_id": "sol_14_ret_flow_temp_sec_value",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_sekundaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4764,7 +4764,7 @@
     {
       "starting_address": 9939,
       "name": "Rücklauftemperatur Sekundär (status)",
-      "entity_id": "sol_14_ret_flow_temp_sec_status",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_sekundaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4777,7 +4777,7 @@
     {
       "starting_address": 9942,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_1_ret_flow_temp_prim_value",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4790,7 +4790,7 @@
     {
       "starting_address": 9943,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_1_ret_flow_temp_prim_status",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4803,7 +4803,7 @@
     {
       "starting_address": 9944,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_2_ret_flow_temp_prim_value",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4816,7 +4816,7 @@
     {
       "starting_address": 9945,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_2_ret_flow_temp_prim_status",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4829,7 +4829,7 @@
     {
       "starting_address": 9946,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_3_ret_flow_temp_prim_value",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4842,7 +4842,7 @@
     {
       "starting_address": 9947,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_3_ret_flow_temp_prim_status",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4855,7 +4855,7 @@
     {
       "starting_address": 9948,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_4_ret_flow_temp_prim_value",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4868,7 +4868,7 @@
     {
       "starting_address": 9949,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_4_ret_flow_temp_prim_status",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4881,7 +4881,7 @@
     {
       "starting_address": 9950,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_5_ret_flow_temp_prim_value",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4894,7 +4894,7 @@
     {
       "starting_address": 9951,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_5_ret_flow_temp_prim_status",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4907,7 +4907,7 @@
     {
       "starting_address": 9952,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_6_ret_flow_temp_prim_value",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4920,7 +4920,7 @@
     {
       "starting_address": 9953,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_6_ret_flow_temp_prim_status",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4933,7 +4933,7 @@
     {
       "starting_address": 9954,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_7_ret_flow_temp_prim_value",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4946,7 +4946,7 @@
     {
       "starting_address": 9955,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_7_ret_flow_temp_prim_status",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4959,7 +4959,7 @@
     {
       "starting_address": 9956,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_8_ret_flow_temp_prim_value",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4972,7 +4972,7 @@
     {
       "starting_address": 9957,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_8_ret_flow_temp_prim_status",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4985,7 +4985,7 @@
     {
       "starting_address": 9958,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_9_ret_flow_temp_prim_value",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -4998,7 +4998,7 @@
     {
       "starting_address": 9959,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_9_ret_flow_temp_prim_status",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5011,7 +5011,7 @@
     {
       "starting_address": 9960,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_10_ret_flow_temp_prim_value",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5024,7 +5024,7 @@
     {
       "starting_address": 9961,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_10_ret_flow_temp_prim_status",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5037,7 +5037,7 @@
     {
       "starting_address": 9962,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_11_ret_flow_temp_prim_value",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5050,7 +5050,7 @@
     {
       "starting_address": 9963,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_11_ret_flow_temp_prim_status",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5063,7 +5063,7 @@
     {
       "starting_address": 9964,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_12_ret_flow_temp_prim_value",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5076,7 +5076,7 @@
     {
       "starting_address": 9965,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_12_ret_flow_temp_prim_status",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5089,7 +5089,7 @@
     {
       "starting_address": 9966,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_13_ret_flow_temp_prim_value",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5102,7 +5102,7 @@
     {
       "starting_address": 9967,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_13_ret_flow_temp_prim_status",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5115,7 +5115,7 @@
     {
       "starting_address": 9968,
       "name": "Rücklauftemperatur Primär (value)",
-      "entity_id": "sol_14_ret_flow_temp_prim_value",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_primaer_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5128,7 +5128,7 @@
     {
       "starting_address": 9969,
       "name": "Rücklauftemperatur Primär (status)",
-      "entity_id": "sol_14_ret_flow_temp_prim_status",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_primaer_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -5141,7 +5141,7 @@
     {
       "starting_address": 25009,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_1_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5156,7 +5156,7 @@
     {
       "starting_address": 25010,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_2_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5171,7 +5171,7 @@
     {
       "starting_address": 25011,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_3_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_3_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5186,7 +5186,7 @@
     {
       "starting_address": 25012,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_4_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_4_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5201,7 +5201,7 @@
     {
       "starting_address": 25013,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_5_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_5_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5216,7 +5216,7 @@
     {
       "starting_address": 25014,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_6_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_6_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5231,7 +5231,7 @@
     {
       "starting_address": 25015,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_7_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_7_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5246,7 +5246,7 @@
     {
       "starting_address": 25016,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_8_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_8_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5261,7 +5261,7 @@
     {
       "starting_address": 25017,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_9_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_9_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5276,7 +5276,7 @@
     {
       "starting_address": 25018,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_10_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_10_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5291,7 +5291,7 @@
     {
       "starting_address": 25019,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_11_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_11_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5306,7 +5306,7 @@
     {
       "starting_address": 25020,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_12_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_12_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5321,7 +5321,7 @@
     {
       "starting_address": 25021,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_13_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_13_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5336,7 +5336,7 @@
     {
       "starting_address": 25022,
       "name": "Modbus Vorlauftemp. Soll",
-      "entity_id": "sol_14_modbus_forward_flow_temp_setpoint",
+      "entity_id": "sol_14_sol_modbus_vorlauf_temperatur_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

@@ -14,42 +14,14 @@ except ImportError:
     print("Error: openpyxl library is required. Install with: pip install openpyxl")
     sys.exit(1)
 
+from entity_id_generation import compute_entity_id
+
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
 
 
 class ModbusInfoConverter:
     """Converts ModbusInfo Excel files to JSON configuration."""
-
-    # Character replacements for entity ID sanitization (same as coordinator.py)
-    _ENTITY_ID_REPLACEMENTS = str.maketrans({
-        " ": "_",
-        ".": "_",
-        "/": "_",
-        "-": "_",
-        ":": "_",
-        "ä": "ae",
-        "ö": "oe",
-        "ü": "ue",
-        "Ä": "ae",
-        "Ö": "oe",
-        "Ü": "ue",
-        "ß": "ss",
-        "&": "and",
-        "@": "at",
-        "(": "",
-        ")": "",
-        "#": "",
-        "!": "",
-        "?": "",
-        ",": "",
-        ";": "",
-        "'": "",
-        '"': "",
-    })
-
-    # Equipment prefixes that are 0-indexed (need +1 for entity_id)
-    ZERO_INDEXED_PREFIXES = {"PUF", "BUF", "ZIR", "Circ", "WMZ", "HQM", "Zirk"}
 
     # Sheet categories
     #UNIVERSAL_SHEET = "Universal"
@@ -128,32 +100,6 @@ class ModbusInfoConverter:
         self.output_dir = Path(output_dir)
         # Cache for English data lookup: {version: {starting_address: {"name": str, "index": str}}}
         self._english_data_cache: dict[str, dict[int, dict[str, str]]] = {}
-
-    def sanitize_for_entity_id(self, name: str) -> str:
-        """Sanitize a string for use in Home Assistant entity IDs.
-
-        This mirrors the sanitization logic in coordinator.py to ensure
-        entity IDs are valid and consistent.
-        """
-        if not name:
-            return ""
-
-        # Apply character replacements
-        result = name.translate(self._ENTITY_ID_REPLACEMENTS)
-
-        # Convert to lowercase
-        result = result.lower()
-
-        # Remove any remaining invalid characters
-        result = re.sub(r'[^a-z0-9_]', '', result)
-
-        # Collapse multiple underscores
-        result = re.sub(r'_+', '_', result)
-
-        # Strip leading/trailing underscores
-        result = result.strip('_')
-
-        return result
 
     def parse_filename(self, filename: str) -> dict[str, str]:
         """Parse ModbusInfo filename to extract version and language."""
@@ -267,45 +213,6 @@ class ModbusInfoConverter:
 
         return registers
 
-    def _sanitize_index_for_entity_id(self, index: str) -> str | None:
-        """Sanitize an index string for use in entity_id.
-
-        Converts index like "SOL 1", "PUF 0", "HK 1.1" to entity_id format
-        like "sol_1", "puf_1", "hk_1_1". Handles 0-indexed equipment by converting to 1-based.
-
-        Args:
-            index: The index string (e.g., "SOL 1", "PUF 0", "HK 1.1")
-
-        Returns:
-            Sanitized index string like "sol_1", "hk_1_1", or None if not applicable
-        """
-        if not index:
-            return None
-
-        # Split into prefix and number part
-        parts = index.split(" ", 1)
-        if len(parts) != 2:
-            return None
-
-        prefix = parts[0].strip()
-        number_part = parts[1].strip()
-
-        # Convert 0-indexed equipment to 1-based
-        if prefix in self.ZERO_INDEXED_PREFIXES:
-            try:
-                num = int(number_part)
-                number_part = str(num + 1)
-            except ValueError:
-                pass  # Keep original if not a simple number
-
-        # Replace dots with underscores for heating circuits (HK 1.1 -> hk_1_1)
-        sanitized_number = number_part.replace(".", "_")
-
-        # Sanitize the prefix (lowercase, handle special chars)
-        sanitized_prefix = self.sanitize_for_entity_id(prefix)
-
-        return f"{sanitized_prefix}_{sanitized_number}"
-
     def normalize_register(
         self,
         data: dict,
@@ -316,7 +223,7 @@ class ModbusInfoConverter:
         Args:
             data: Raw register data from Excel row
             english_data: Optional mapping of starting_address -> {"name": str, "index": str}
-                          for generating language-independent entity IDs
+                          for language-independent equipment-index lookup
         """
         # Skip if no address
         address = data.get("StartingAddress")
@@ -326,29 +233,10 @@ class ModbusInfoConverter:
         address_int = int(address)
         name = str(data.get("Name", "")).strip() if data.get("Name") else ""
 
-        # Get English data for language-independent entity_id
-        en_data = english_data.get(address_int, {}) if english_data else {}
-        english_name = en_data.get("name", name)
-        english_index = en_data.get("index", "")
-
-        # Generate entity_id from English name (language-independent)
-        base_entity_id = self.sanitize_for_entity_id(english_name)
-
-        # Include English index in entity_id if present
-        if english_index:
-            index_prefix = self._sanitize_index_for_entity_id(english_index)
-            if index_prefix:
-                entity_id = f"{index_prefix}_{base_entity_id}"
-            else:
-                entity_id = base_entity_id
-        else:
-            entity_id = base_entity_id
-
         # Build normalized register
         register = {
             "starting_address": address_int,
             "name": name,
-            "entity_id": entity_id,
             "data_type": self._parse_function_code(data.get("Functions")),
             "type": str(data.get("Type", "u16")).strip().lower(),
             "user_level": self._parse_access_level(data.get("UserLevel")),
@@ -379,6 +267,12 @@ class ModbusInfoConverter:
 
         if data.get("Parameter"):
             register["parameter"] = str(data.get("Parameter"))
+
+        # entity_id is derived from "parameter" (and "index"), so compute it
+        # last, once both are set on the register.
+        entity_id = compute_entity_id(register, english_data)
+        if entity_id:
+            register["entity_id"] = entity_id
 
         # Remove empty string values
         register = {k: v for k, v in register.items() if v not in [None, ""]}
@@ -678,7 +572,11 @@ def main():
     """Main entry point."""
     script_dir = Path(__file__).parent
     input_dir = script_dir / "modbusinfo"
-    output_dir = script_dir / "config" / "versions"
+    # Write directly into the integration's own config tree - this is the
+    # single source of truth for register JSON. Do not also write to a
+    # modbusinfoConverter-local config/versions/ copy; a second copy drifts
+    # out of sync silently (as it did before this was consolidated).
+    output_dir = script_dir.parent / "custom_components" / "kwb_heating" / "config" / "versions"
 
     if not input_dir.exists():
         logger.error(f"Input directory not found: {input_dir}")

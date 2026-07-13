@@ -3,7 +3,7 @@
     {
       "starting_address": 8260,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_1_1_forward_flow_temp_act_value",
+      "entity_id": "hc_1_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -16,7 +16,7 @@
     {
       "starting_address": 8261,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_1_1_forward_flow_temp_act_status",
+      "entity_id": "hc_1_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -29,7 +29,7 @@
     {
       "starting_address": 8262,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_1_2_forward_flow_temp_act_value",
+      "entity_id": "hc_1_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -42,7 +42,7 @@
     {
       "starting_address": 8263,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_1_2_forward_flow_temp_act_status",
+      "entity_id": "hc_1_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -55,7 +55,7 @@
     {
       "starting_address": 8264,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_2_1_forward_flow_temp_act_value",
+      "entity_id": "hc_2_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -68,7 +68,7 @@
     {
       "starting_address": 8265,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_2_1_forward_flow_temp_act_status",
+      "entity_id": "hc_2_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -81,7 +81,7 @@
     {
       "starting_address": 8266,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_2_2_forward_flow_temp_act_value",
+      "entity_id": "hc_2_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -94,7 +94,7 @@
     {
       "starting_address": 8267,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_2_2_forward_flow_temp_act_status",
+      "entity_id": "hc_2_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -107,7 +107,7 @@
     {
       "starting_address": 8268,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_3_1_forward_flow_temp_act_value",
+      "entity_id": "hc_3_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -120,7 +120,7 @@
     {
       "starting_address": 8269,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_3_1_forward_flow_temp_act_status",
+      "entity_id": "hc_3_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -133,7 +133,7 @@
     {
       "starting_address": 8270,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_3_2_forward_flow_temp_act_value",
+      "entity_id": "hc_3_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -146,7 +146,7 @@
     {
       "starting_address": 8271,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_3_2_forward_flow_temp_act_status",
+      "entity_id": "hc_3_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -159,7 +159,7 @@
     {
       "starting_address": 8272,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_4_1_forward_flow_temp_act_value",
+      "entity_id": "hc_4_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -172,7 +172,7 @@
     {
       "starting_address": 8273,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_4_1_forward_flow_temp_act_status",
+      "entity_id": "hc_4_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -185,7 +185,7 @@
     {
       "starting_address": 8274,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_4_2_forward_flow_temp_act_value",
+      "entity_id": "hc_4_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -198,7 +198,7 @@
     {
       "starting_address": 8275,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_4_2_forward_flow_temp_act_status",
+      "entity_id": "hc_4_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -211,7 +211,7 @@
     {
       "starting_address": 8276,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_5_1_forward_flow_temp_act_value",
+      "entity_id": "hc_5_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -224,7 +224,7 @@
     {
       "starting_address": 8277,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_5_1_forward_flow_temp_act_status",
+      "entity_id": "hc_5_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -237,7 +237,7 @@
     {
       "starting_address": 8278,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_5_2_forward_flow_temp_act_value",
+      "entity_id": "hc_5_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -250,7 +250,7 @@
     {
       "starting_address": 8279,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_5_2_forward_flow_temp_act_status",
+      "entity_id": "hc_5_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -263,7 +263,7 @@
     {
       "starting_address": 8280,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_6_1_forward_flow_temp_act_value",
+      "entity_id": "hc_6_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -276,7 +276,7 @@
     {
       "starting_address": 8281,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_6_1_forward_flow_temp_act_status",
+      "entity_id": "hc_6_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -289,7 +289,7 @@
     {
       "starting_address": 8282,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_6_2_forward_flow_temp_act_value",
+      "entity_id": "hc_6_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -302,7 +302,7 @@
     {
       "starting_address": 8283,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_6_2_forward_flow_temp_act_status",
+      "entity_id": "hc_6_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,7 +315,7 @@
     {
       "starting_address": 8284,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_7_1_forward_flow_temp_act_value",
+      "entity_id": "hc_7_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -328,7 +328,7 @@
     {
       "starting_address": 8285,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_7_1_forward_flow_temp_act_status",
+      "entity_id": "hc_7_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -341,7 +341,7 @@
     {
       "starting_address": 8286,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_7_2_forward_flow_temp_act_value",
+      "entity_id": "hc_7_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -354,7 +354,7 @@
     {
       "starting_address": 8287,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_7_2_forward_flow_temp_act_status",
+      "entity_id": "hc_7_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -367,7 +367,7 @@
     {
       "starting_address": 8288,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_8_1_forward_flow_temp_act_value",
+      "entity_id": "hc_8_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -380,7 +380,7 @@
     {
       "starting_address": 8289,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_8_1_forward_flow_temp_act_status",
+      "entity_id": "hc_8_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -393,7 +393,7 @@
     {
       "starting_address": 8290,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_8_2_forward_flow_temp_act_value",
+      "entity_id": "hc_8_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -406,7 +406,7 @@
     {
       "starting_address": 8291,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_8_2_forward_flow_temp_act_status",
+      "entity_id": "hc_8_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -419,7 +419,7 @@
     {
       "starting_address": 8292,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_9_1_forward_flow_temp_act_value",
+      "entity_id": "hc_9_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -432,7 +432,7 @@
     {
       "starting_address": 8293,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_9_1_forward_flow_temp_act_status",
+      "entity_id": "hc_9_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -445,7 +445,7 @@
     {
       "starting_address": 8294,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_9_2_forward_flow_temp_act_value",
+      "entity_id": "hc_9_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -458,7 +458,7 @@
     {
       "starting_address": 8295,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_9_2_forward_flow_temp_act_status",
+      "entity_id": "hc_9_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -471,7 +471,7 @@
     {
       "starting_address": 8296,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_10_1_forward_flow_temp_act_value",
+      "entity_id": "hc_10_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -484,7 +484,7 @@
     {
       "starting_address": 8297,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_10_1_forward_flow_temp_act_status",
+      "entity_id": "hc_10_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -497,7 +497,7 @@
     {
       "starting_address": 8298,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_10_2_forward_flow_temp_act_value",
+      "entity_id": "hc_10_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -510,7 +510,7 @@
     {
       "starting_address": 8299,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_10_2_forward_flow_temp_act_status",
+      "entity_id": "hc_10_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -523,7 +523,7 @@
     {
       "starting_address": 8300,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_11_1_forward_flow_temp_act_value",
+      "entity_id": "hc_11_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -536,7 +536,7 @@
     {
       "starting_address": 8301,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_11_1_forward_flow_temp_act_status",
+      "entity_id": "hc_11_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -549,7 +549,7 @@
     {
       "starting_address": 8302,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_11_2_forward_flow_temp_act_value",
+      "entity_id": "hc_11_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -562,7 +562,7 @@
     {
       "starting_address": 8303,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_11_2_forward_flow_temp_act_status",
+      "entity_id": "hc_11_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -575,7 +575,7 @@
     {
       "starting_address": 8304,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_12_1_forward_flow_temp_act_value",
+      "entity_id": "hc_12_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -588,7 +588,7 @@
     {
       "starting_address": 8305,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_12_1_forward_flow_temp_act_status",
+      "entity_id": "hc_12_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -601,7 +601,7 @@
     {
       "starting_address": 8306,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_12_2_forward_flow_temp_act_value",
+      "entity_id": "hc_12_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -614,7 +614,7 @@
     {
       "starting_address": 8307,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_12_2_forward_flow_temp_act_status",
+      "entity_id": "hc_12_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -627,7 +627,7 @@
     {
       "starting_address": 8308,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_13_1_forward_flow_temp_act_value",
+      "entity_id": "hc_13_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -640,7 +640,7 @@
     {
       "starting_address": 8309,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_13_1_forward_flow_temp_act_status",
+      "entity_id": "hc_13_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -653,7 +653,7 @@
     {
       "starting_address": 8310,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_13_2_forward_flow_temp_act_value",
+      "entity_id": "hc_13_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -666,7 +666,7 @@
     {
       "starting_address": 8311,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_13_2_forward_flow_temp_act_status",
+      "entity_id": "hc_13_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -679,7 +679,7 @@
     {
       "starting_address": 8312,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_14_1_forward_flow_temp_act_value",
+      "entity_id": "hc_14_1_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -692,7 +692,7 @@
     {
       "starting_address": 8313,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_14_1_forward_flow_temp_act_status",
+      "entity_id": "hc_14_1_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -705,7 +705,7 @@
     {
       "starting_address": 8314,
       "name": "Forward flow temp., act. (value)",
-      "entity_id": "hc_14_2_forward_flow_temp_act_value",
+      "entity_id": "hc_14_2_hk_i_vorlauf_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -718,7 +718,7 @@
     {
       "starting_address": 8315,
       "name": "Forward flow temp., act. (status)",
-      "entity_id": "hc_14_2_forward_flow_temp_act_status",
+      "entity_id": "hc_14_2_hk_i_vorlauf_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -731,7 +731,7 @@
     {
       "starting_address": 8328,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_1_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_1_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -744,7 +744,7 @@
     {
       "starting_address": 8329,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_1_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_1_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -757,7 +757,7 @@
     {
       "starting_address": 8330,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_2_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_2_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -770,7 +770,7 @@
     {
       "starting_address": 8331,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_2_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_2_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -783,7 +783,7 @@
     {
       "starting_address": 8332,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_3_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_3_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -796,7 +796,7 @@
     {
       "starting_address": 8333,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_3_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_3_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -809,7 +809,7 @@
     {
       "starting_address": 8334,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_4_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_4_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -822,7 +822,7 @@
     {
       "starting_address": 8335,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_4_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_4_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -835,7 +835,7 @@
     {
       "starting_address": 8336,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_5_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_5_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -848,7 +848,7 @@
     {
       "starting_address": 8337,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_5_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_5_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -861,7 +861,7 @@
     {
       "starting_address": 8338,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_6_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_6_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -874,7 +874,7 @@
     {
       "starting_address": 8339,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_6_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_6_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -887,7 +887,7 @@
     {
       "starting_address": 8340,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_7_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_7_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -900,7 +900,7 @@
     {
       "starting_address": 8341,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_7_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_7_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -913,7 +913,7 @@
     {
       "starting_address": 8342,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_8_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_8_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -926,7 +926,7 @@
     {
       "starting_address": 8343,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_8_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_8_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -939,7 +939,7 @@
     {
       "starting_address": 8344,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_9_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_9_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -952,7 +952,7 @@
     {
       "starting_address": 8345,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_9_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_9_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -965,7 +965,7 @@
     {
       "starting_address": 8346,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_10_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_10_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -978,7 +978,7 @@
     {
       "starting_address": 8347,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_10_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_10_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -991,7 +991,7 @@
     {
       "starting_address": 8348,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_11_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_11_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1004,7 +1004,7 @@
     {
       "starting_address": 8349,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_11_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_11_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1017,7 +1017,7 @@
     {
       "starting_address": 8350,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_12_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_12_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1030,7 +1030,7 @@
     {
       "starting_address": 8351,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_12_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_12_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1043,7 +1043,7 @@
     {
       "starting_address": 8352,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_13_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_13_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1056,7 +1056,7 @@
     {
       "starting_address": 8353,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_13_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_13_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1069,7 +1069,7 @@
     {
       "starting_address": 8354,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_14_1_forward_flow_temp_setpoint",
+      "entity_id": "hc_14_1_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1082,7 +1082,7 @@
     {
       "starting_address": 8355,
       "name": "Forward flow temp. Setpoint",
-      "entity_id": "hc_14_2_forward_flow_temp_setpoint",
+      "entity_id": "hc_14_2_hk_vorlauf_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1095,7 +1095,7 @@
     {
       "starting_address": 8365,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_1_1_room_temp_actual_value",
+      "entity_id": "hc_1_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1108,7 +1108,7 @@
     {
       "starting_address": 8366,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_1_1_room_temp_actual_status",
+      "entity_id": "hc_1_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1121,7 +1121,7 @@
     {
       "starting_address": 8367,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_1_2_room_temp_actual_value",
+      "entity_id": "hc_1_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1134,7 +1134,7 @@
     {
       "starting_address": 8368,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_1_2_room_temp_actual_status",
+      "entity_id": "hc_1_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1147,7 +1147,7 @@
     {
       "starting_address": 8369,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_2_1_room_temp_actual_value",
+      "entity_id": "hc_2_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1160,7 +1160,7 @@
     {
       "starting_address": 8370,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_2_1_room_temp_actual_status",
+      "entity_id": "hc_2_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1173,7 +1173,7 @@
     {
       "starting_address": 8371,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_2_2_room_temp_actual_value",
+      "entity_id": "hc_2_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1186,7 +1186,7 @@
     {
       "starting_address": 8372,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_2_2_room_temp_actual_status",
+      "entity_id": "hc_2_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1199,7 +1199,7 @@
     {
       "starting_address": 8373,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_3_1_room_temp_actual_value",
+      "entity_id": "hc_3_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1212,7 +1212,7 @@
     {
       "starting_address": 8374,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_3_1_room_temp_actual_status",
+      "entity_id": "hc_3_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1225,7 +1225,7 @@
     {
       "starting_address": 8375,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_3_2_room_temp_actual_value",
+      "entity_id": "hc_3_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1238,7 +1238,7 @@
     {
       "starting_address": 8376,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_3_2_room_temp_actual_status",
+      "entity_id": "hc_3_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1251,7 +1251,7 @@
     {
       "starting_address": 8377,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_4_1_room_temp_actual_value",
+      "entity_id": "hc_4_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1264,7 +1264,7 @@
     {
       "starting_address": 8378,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_4_1_room_temp_actual_status",
+      "entity_id": "hc_4_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1277,7 +1277,7 @@
     {
       "starting_address": 8379,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_4_2_room_temp_actual_value",
+      "entity_id": "hc_4_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1290,7 +1290,7 @@
     {
       "starting_address": 8380,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_4_2_room_temp_actual_status",
+      "entity_id": "hc_4_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1303,7 +1303,7 @@
     {
       "starting_address": 8381,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_5_1_room_temp_actual_value",
+      "entity_id": "hc_5_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1316,7 +1316,7 @@
     {
       "starting_address": 8382,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_5_1_room_temp_actual_status",
+      "entity_id": "hc_5_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1329,7 +1329,7 @@
     {
       "starting_address": 8383,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_5_2_room_temp_actual_value",
+      "entity_id": "hc_5_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1342,7 +1342,7 @@
     {
       "starting_address": 8384,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_5_2_room_temp_actual_status",
+      "entity_id": "hc_5_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1355,7 +1355,7 @@
     {
       "starting_address": 8385,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_6_1_room_temp_actual_value",
+      "entity_id": "hc_6_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1368,7 +1368,7 @@
     {
       "starting_address": 8386,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_6_1_room_temp_actual_status",
+      "entity_id": "hc_6_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1381,7 +1381,7 @@
     {
       "starting_address": 8387,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_6_2_room_temp_actual_value",
+      "entity_id": "hc_6_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1394,7 +1394,7 @@
     {
       "starting_address": 8388,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_6_2_room_temp_actual_status",
+      "entity_id": "hc_6_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1407,7 +1407,7 @@
     {
       "starting_address": 8389,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_7_1_room_temp_actual_value",
+      "entity_id": "hc_7_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1420,7 +1420,7 @@
     {
       "starting_address": 8390,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_7_1_room_temp_actual_status",
+      "entity_id": "hc_7_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1433,7 +1433,7 @@
     {
       "starting_address": 8391,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_7_2_room_temp_actual_value",
+      "entity_id": "hc_7_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1446,7 +1446,7 @@
     {
       "starting_address": 8392,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_7_2_room_temp_actual_status",
+      "entity_id": "hc_7_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1459,7 +1459,7 @@
     {
       "starting_address": 8393,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_8_1_room_temp_actual_value",
+      "entity_id": "hc_8_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1472,7 +1472,7 @@
     {
       "starting_address": 8394,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_8_1_room_temp_actual_status",
+      "entity_id": "hc_8_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1485,7 +1485,7 @@
     {
       "starting_address": 8395,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_8_2_room_temp_actual_value",
+      "entity_id": "hc_8_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1498,7 +1498,7 @@
     {
       "starting_address": 8396,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_8_2_room_temp_actual_status",
+      "entity_id": "hc_8_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1511,7 +1511,7 @@
     {
       "starting_address": 8397,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_9_1_room_temp_actual_value",
+      "entity_id": "hc_9_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1524,7 +1524,7 @@
     {
       "starting_address": 8398,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_9_1_room_temp_actual_status",
+      "entity_id": "hc_9_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1537,7 +1537,7 @@
     {
       "starting_address": 8399,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_9_2_room_temp_actual_value",
+      "entity_id": "hc_9_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1550,7 +1550,7 @@
     {
       "starting_address": 8400,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_9_2_room_temp_actual_status",
+      "entity_id": "hc_9_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1563,7 +1563,7 @@
     {
       "starting_address": 8401,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_10_1_room_temp_actual_value",
+      "entity_id": "hc_10_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1576,7 +1576,7 @@
     {
       "starting_address": 8402,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_10_1_room_temp_actual_status",
+      "entity_id": "hc_10_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1589,7 +1589,7 @@
     {
       "starting_address": 8403,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_10_2_room_temp_actual_value",
+      "entity_id": "hc_10_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1602,7 +1602,7 @@
     {
       "starting_address": 8404,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_10_2_room_temp_actual_status",
+      "entity_id": "hc_10_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1615,7 +1615,7 @@
     {
       "starting_address": 8405,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_11_1_room_temp_actual_value",
+      "entity_id": "hc_11_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1628,7 +1628,7 @@
     {
       "starting_address": 8406,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_11_1_room_temp_actual_status",
+      "entity_id": "hc_11_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1641,7 +1641,7 @@
     {
       "starting_address": 8407,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_11_2_room_temp_actual_value",
+      "entity_id": "hc_11_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1654,7 +1654,7 @@
     {
       "starting_address": 8408,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_11_2_room_temp_actual_status",
+      "entity_id": "hc_11_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1667,7 +1667,7 @@
     {
       "starting_address": 8409,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_12_1_room_temp_actual_value",
+      "entity_id": "hc_12_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1680,7 +1680,7 @@
     {
       "starting_address": 8410,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_12_1_room_temp_actual_status",
+      "entity_id": "hc_12_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1693,7 +1693,7 @@
     {
       "starting_address": 8411,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_12_2_room_temp_actual_value",
+      "entity_id": "hc_12_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1706,7 +1706,7 @@
     {
       "starting_address": 8412,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_12_2_room_temp_actual_status",
+      "entity_id": "hc_12_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1719,7 +1719,7 @@
     {
       "starting_address": 8413,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_13_1_room_temp_actual_value",
+      "entity_id": "hc_13_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1732,7 +1732,7 @@
     {
       "starting_address": 8414,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_13_1_room_temp_actual_status",
+      "entity_id": "hc_13_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1745,7 +1745,7 @@
     {
       "starting_address": 8415,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_13_2_room_temp_actual_value",
+      "entity_id": "hc_13_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1758,7 +1758,7 @@
     {
       "starting_address": 8416,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_13_2_room_temp_actual_status",
+      "entity_id": "hc_13_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1771,7 +1771,7 @@
     {
       "starting_address": 8417,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_14_1_room_temp_actual_value",
+      "entity_id": "hc_14_1_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1784,7 +1784,7 @@
     {
       "starting_address": 8418,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_14_1_room_temp_actual_status",
+      "entity_id": "hc_14_1_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1797,7 +1797,7 @@
     {
       "starting_address": 8419,
       "name": "Room temp., actual (value)",
-      "entity_id": "hc_14_2_room_temp_actual_value",
+      "entity_id": "hc_14_2_hk_i_raum_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1810,7 +1810,7 @@
     {
       "starting_address": 8420,
       "name": "Room temp., actual (status)",
-      "entity_id": "hc_14_2_room_temp_actual_status",
+      "entity_id": "hc_14_2_hk_i_raum_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1823,7 +1823,7 @@
     {
       "starting_address": 8435,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_1_1_actual_outside_temperature_value",
+      "entity_id": "hc_1_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1836,7 +1836,7 @@
     {
       "starting_address": 8436,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_1_1_actual_outside_temperature_status",
+      "entity_id": "hc_1_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1849,7 +1849,7 @@
     {
       "starting_address": 8437,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_1_2_actual_outside_temperature_value",
+      "entity_id": "hc_1_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1862,7 +1862,7 @@
     {
       "starting_address": 8438,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_1_2_actual_outside_temperature_status",
+      "entity_id": "hc_1_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1875,7 +1875,7 @@
     {
       "starting_address": 8439,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_2_1_actual_outside_temperature_value",
+      "entity_id": "hc_2_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1888,7 +1888,7 @@
     {
       "starting_address": 8440,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_2_1_actual_outside_temperature_status",
+      "entity_id": "hc_2_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1901,7 +1901,7 @@
     {
       "starting_address": 8441,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_2_2_actual_outside_temperature_value",
+      "entity_id": "hc_2_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1914,7 +1914,7 @@
     {
       "starting_address": 8442,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_2_2_actual_outside_temperature_status",
+      "entity_id": "hc_2_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1927,7 +1927,7 @@
     {
       "starting_address": 8443,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_3_1_actual_outside_temperature_value",
+      "entity_id": "hc_3_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1940,7 +1940,7 @@
     {
       "starting_address": 8444,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_3_1_actual_outside_temperature_status",
+      "entity_id": "hc_3_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1953,7 +1953,7 @@
     {
       "starting_address": 8445,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_3_2_actual_outside_temperature_value",
+      "entity_id": "hc_3_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1966,7 +1966,7 @@
     {
       "starting_address": 8446,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_3_2_actual_outside_temperature_status",
+      "entity_id": "hc_3_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1979,7 +1979,7 @@
     {
       "starting_address": 8447,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_4_1_actual_outside_temperature_value",
+      "entity_id": "hc_4_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1992,7 +1992,7 @@
     {
       "starting_address": 8448,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_4_1_actual_outside_temperature_status",
+      "entity_id": "hc_4_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2005,7 +2005,7 @@
     {
       "starting_address": 8449,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_4_2_actual_outside_temperature_value",
+      "entity_id": "hc_4_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2018,7 +2018,7 @@
     {
       "starting_address": 8450,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_4_2_actual_outside_temperature_status",
+      "entity_id": "hc_4_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2031,7 +2031,7 @@
     {
       "starting_address": 8451,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_5_1_actual_outside_temperature_value",
+      "entity_id": "hc_5_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2044,7 +2044,7 @@
     {
       "starting_address": 8452,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_5_1_actual_outside_temperature_status",
+      "entity_id": "hc_5_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2057,7 +2057,7 @@
     {
       "starting_address": 8453,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_5_2_actual_outside_temperature_value",
+      "entity_id": "hc_5_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2070,7 +2070,7 @@
     {
       "starting_address": 8454,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_5_2_actual_outside_temperature_status",
+      "entity_id": "hc_5_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2083,7 +2083,7 @@
     {
       "starting_address": 8455,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_6_1_actual_outside_temperature_value",
+      "entity_id": "hc_6_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2096,7 +2096,7 @@
     {
       "starting_address": 8456,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_6_1_actual_outside_temperature_status",
+      "entity_id": "hc_6_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2109,7 +2109,7 @@
     {
       "starting_address": 8457,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_6_2_actual_outside_temperature_value",
+      "entity_id": "hc_6_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2122,7 +2122,7 @@
     {
       "starting_address": 8458,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_6_2_actual_outside_temperature_status",
+      "entity_id": "hc_6_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2135,7 +2135,7 @@
     {
       "starting_address": 8459,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_7_1_actual_outside_temperature_value",
+      "entity_id": "hc_7_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2148,7 +2148,7 @@
     {
       "starting_address": 8460,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_7_1_actual_outside_temperature_status",
+      "entity_id": "hc_7_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2161,7 +2161,7 @@
     {
       "starting_address": 8461,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_7_2_actual_outside_temperature_value",
+      "entity_id": "hc_7_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2174,7 +2174,7 @@
     {
       "starting_address": 8462,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_7_2_actual_outside_temperature_status",
+      "entity_id": "hc_7_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2187,7 +2187,7 @@
     {
       "starting_address": 8463,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_8_1_actual_outside_temperature_value",
+      "entity_id": "hc_8_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2200,7 +2200,7 @@
     {
       "starting_address": 8464,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_8_1_actual_outside_temperature_status",
+      "entity_id": "hc_8_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2213,7 +2213,7 @@
     {
       "starting_address": 8465,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_8_2_actual_outside_temperature_value",
+      "entity_id": "hc_8_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2226,7 +2226,7 @@
     {
       "starting_address": 8466,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_8_2_actual_outside_temperature_status",
+      "entity_id": "hc_8_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2239,7 +2239,7 @@
     {
       "starting_address": 8467,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_9_1_actual_outside_temperature_value",
+      "entity_id": "hc_9_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2252,7 +2252,7 @@
     {
       "starting_address": 8468,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_9_1_actual_outside_temperature_status",
+      "entity_id": "hc_9_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2265,7 +2265,7 @@
     {
       "starting_address": 8469,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_9_2_actual_outside_temperature_value",
+      "entity_id": "hc_9_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2278,7 +2278,7 @@
     {
       "starting_address": 8470,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_9_2_actual_outside_temperature_status",
+      "entity_id": "hc_9_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2291,7 +2291,7 @@
     {
       "starting_address": 8471,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_10_1_actual_outside_temperature_value",
+      "entity_id": "hc_10_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2304,7 +2304,7 @@
     {
       "starting_address": 8472,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_10_1_actual_outside_temperature_status",
+      "entity_id": "hc_10_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2317,7 +2317,7 @@
     {
       "starting_address": 8473,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_10_2_actual_outside_temperature_value",
+      "entity_id": "hc_10_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2330,7 +2330,7 @@
     {
       "starting_address": 8474,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_10_2_actual_outside_temperature_status",
+      "entity_id": "hc_10_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2343,7 +2343,7 @@
     {
       "starting_address": 8475,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_11_1_actual_outside_temperature_value",
+      "entity_id": "hc_11_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2356,7 +2356,7 @@
     {
       "starting_address": 8476,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_11_1_actual_outside_temperature_status",
+      "entity_id": "hc_11_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2369,7 +2369,7 @@
     {
       "starting_address": 8477,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_11_2_actual_outside_temperature_value",
+      "entity_id": "hc_11_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2382,7 +2382,7 @@
     {
       "starting_address": 8478,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_11_2_actual_outside_temperature_status",
+      "entity_id": "hc_11_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2395,7 +2395,7 @@
     {
       "starting_address": 8479,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_12_1_actual_outside_temperature_value",
+      "entity_id": "hc_12_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2408,7 +2408,7 @@
     {
       "starting_address": 8480,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_12_1_actual_outside_temperature_status",
+      "entity_id": "hc_12_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2421,7 +2421,7 @@
     {
       "starting_address": 8481,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_12_2_actual_outside_temperature_value",
+      "entity_id": "hc_12_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2434,7 +2434,7 @@
     {
       "starting_address": 8482,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_12_2_actual_outside_temperature_status",
+      "entity_id": "hc_12_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2447,7 +2447,7 @@
     {
       "starting_address": 8483,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_13_1_actual_outside_temperature_value",
+      "entity_id": "hc_13_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2460,7 +2460,7 @@
     {
       "starting_address": 8484,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_13_1_actual_outside_temperature_status",
+      "entity_id": "hc_13_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2473,7 +2473,7 @@
     {
       "starting_address": 8485,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_13_2_actual_outside_temperature_value",
+      "entity_id": "hc_13_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2486,7 +2486,7 @@
     {
       "starting_address": 8486,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_13_2_actual_outside_temperature_status",
+      "entity_id": "hc_13_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2499,7 +2499,7 @@
     {
       "starting_address": 8487,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_14_1_actual_outside_temperature_value",
+      "entity_id": "hc_14_1_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2512,7 +2512,7 @@
     {
       "starting_address": 8488,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_14_1_actual_outside_temperature_status",
+      "entity_id": "hc_14_1_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2525,7 +2525,7 @@
     {
       "starting_address": 8489,
       "name": "Actual outside temperature (value)",
-      "entity_id": "hc_14_2_actual_outside_temperature_value",
+      "entity_id": "hc_14_2_hk_i_aussen_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2538,7 +2538,7 @@
     {
       "starting_address": 8490,
       "name": "Actual outside temperature (status)",
-      "entity_id": "hc_14_2_actual_outside_temperature_status",
+      "entity_id": "hc_14_2_hk_i_aussen_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2551,7 +2551,7 @@
     {
       "starting_address": 8503,
       "name": "Pump",
-      "entity_id": "hc_1_1_pump",
+      "entity_id": "hc_1_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2564,7 +2564,7 @@
     {
       "starting_address": 8504,
       "name": "Pump",
-      "entity_id": "hc_1_2_pump",
+      "entity_id": "hc_1_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2577,7 +2577,7 @@
     {
       "starting_address": 8505,
       "name": "Pump",
-      "entity_id": "hc_2_1_pump",
+      "entity_id": "hc_2_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2590,7 +2590,7 @@
     {
       "starting_address": 8506,
       "name": "Pump",
-      "entity_id": "hc_2_2_pump",
+      "entity_id": "hc_2_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2603,7 +2603,7 @@
     {
       "starting_address": 8507,
       "name": "Pump",
-      "entity_id": "hc_3_1_pump",
+      "entity_id": "hc_3_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2616,7 +2616,7 @@
     {
       "starting_address": 8508,
       "name": "Pump",
-      "entity_id": "hc_3_2_pump",
+      "entity_id": "hc_3_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2629,7 +2629,7 @@
     {
       "starting_address": 8509,
       "name": "Pump",
-      "entity_id": "hc_4_1_pump",
+      "entity_id": "hc_4_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2642,7 +2642,7 @@
     {
       "starting_address": 8510,
       "name": "Pump",
-      "entity_id": "hc_4_2_pump",
+      "entity_id": "hc_4_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2655,7 +2655,7 @@
     {
       "starting_address": 8511,
       "name": "Pump",
-      "entity_id": "hc_5_1_pump",
+      "entity_id": "hc_5_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2668,7 +2668,7 @@
     {
       "starting_address": 8512,
       "name": "Pump",
-      "entity_id": "hc_5_2_pump",
+      "entity_id": "hc_5_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2681,7 +2681,7 @@
     {
       "starting_address": 8513,
       "name": "Pump",
-      "entity_id": "hc_6_1_pump",
+      "entity_id": "hc_6_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2694,7 +2694,7 @@
     {
       "starting_address": 8514,
       "name": "Pump",
-      "entity_id": "hc_6_2_pump",
+      "entity_id": "hc_6_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2707,7 +2707,7 @@
     {
       "starting_address": 8515,
       "name": "Pump",
-      "entity_id": "hc_7_1_pump",
+      "entity_id": "hc_7_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2720,7 +2720,7 @@
     {
       "starting_address": 8516,
       "name": "Pump",
-      "entity_id": "hc_7_2_pump",
+      "entity_id": "hc_7_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2733,7 +2733,7 @@
     {
       "starting_address": 8517,
       "name": "Pump",
-      "entity_id": "hc_8_1_pump",
+      "entity_id": "hc_8_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2746,7 +2746,7 @@
     {
       "starting_address": 8518,
       "name": "Pump",
-      "entity_id": "hc_8_2_pump",
+      "entity_id": "hc_8_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2759,7 +2759,7 @@
     {
       "starting_address": 8519,
       "name": "Pump",
-      "entity_id": "hc_9_1_pump",
+      "entity_id": "hc_9_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2772,7 +2772,7 @@
     {
       "starting_address": 8520,
       "name": "Pump",
-      "entity_id": "hc_9_2_pump",
+      "entity_id": "hc_9_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2785,7 +2785,7 @@
     {
       "starting_address": 8521,
       "name": "Pump",
-      "entity_id": "hc_10_1_pump",
+      "entity_id": "hc_10_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2798,7 +2798,7 @@
     {
       "starting_address": 8522,
       "name": "Pump",
-      "entity_id": "hc_10_2_pump",
+      "entity_id": "hc_10_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2811,7 +2811,7 @@
     {
       "starting_address": 8523,
       "name": "Pump",
-      "entity_id": "hc_11_1_pump",
+      "entity_id": "hc_11_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2824,7 +2824,7 @@
     {
       "starting_address": 8524,
       "name": "Pump",
-      "entity_id": "hc_11_2_pump",
+      "entity_id": "hc_11_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2837,7 +2837,7 @@
     {
       "starting_address": 8525,
       "name": "Pump",
-      "entity_id": "hc_12_1_pump",
+      "entity_id": "hc_12_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2850,7 +2850,7 @@
     {
       "starting_address": 8526,
       "name": "Pump",
-      "entity_id": "hc_12_2_pump",
+      "entity_id": "hc_12_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2863,7 +2863,7 @@
     {
       "starting_address": 8527,
       "name": "Pump",
-      "entity_id": "hc_13_1_pump",
+      "entity_id": "hc_13_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2876,7 +2876,7 @@
     {
       "starting_address": 8528,
       "name": "Pump",
-      "entity_id": "hc_13_2_pump",
+      "entity_id": "hc_13_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2889,7 +2889,7 @@
     {
       "starting_address": 8529,
       "name": "Pump",
-      "entity_id": "hc_14_1_pump",
+      "entity_id": "hc_14_1_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2902,7 +2902,7 @@
     {
       "starting_address": 8530,
       "name": "Pump",
-      "entity_id": "hc_14_2_pump",
+      "entity_id": "hc_14_2_hk_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2915,7 +2915,7 @@
     {
       "starting_address": 8538,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_1_1_room_temp_setpoint",
+      "entity_id": "hc_1_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2928,7 +2928,7 @@
     {
       "starting_address": 8539,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_1_2_room_temp_setpoint",
+      "entity_id": "hc_1_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2941,7 +2941,7 @@
     {
       "starting_address": 8540,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_2_1_room_temp_setpoint",
+      "entity_id": "hc_2_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2954,7 +2954,7 @@
     {
       "starting_address": 8541,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_2_2_room_temp_setpoint",
+      "entity_id": "hc_2_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2967,7 +2967,7 @@
     {
       "starting_address": 8542,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_3_1_room_temp_setpoint",
+      "entity_id": "hc_3_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2980,7 +2980,7 @@
     {
       "starting_address": 8543,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_3_2_room_temp_setpoint",
+      "entity_id": "hc_3_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -2993,7 +2993,7 @@
     {
       "starting_address": 8544,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_4_1_room_temp_setpoint",
+      "entity_id": "hc_4_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3006,7 +3006,7 @@
     {
       "starting_address": 8545,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_4_2_room_temp_setpoint",
+      "entity_id": "hc_4_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3019,7 +3019,7 @@
     {
       "starting_address": 8546,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_5_1_room_temp_setpoint",
+      "entity_id": "hc_5_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3032,7 +3032,7 @@
     {
       "starting_address": 8547,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_5_2_room_temp_setpoint",
+      "entity_id": "hc_5_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3045,7 +3045,7 @@
     {
       "starting_address": 8548,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_6_1_room_temp_setpoint",
+      "entity_id": "hc_6_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3058,7 +3058,7 @@
     {
       "starting_address": 8549,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_6_2_room_temp_setpoint",
+      "entity_id": "hc_6_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3071,7 +3071,7 @@
     {
       "starting_address": 8550,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_7_1_room_temp_setpoint",
+      "entity_id": "hc_7_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3084,7 +3084,7 @@
     {
       "starting_address": 8551,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_7_2_room_temp_setpoint",
+      "entity_id": "hc_7_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3097,7 +3097,7 @@
     {
       "starting_address": 8552,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_8_1_room_temp_setpoint",
+      "entity_id": "hc_8_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3110,7 +3110,7 @@
     {
       "starting_address": 8553,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_8_2_room_temp_setpoint",
+      "entity_id": "hc_8_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3123,7 +3123,7 @@
     {
       "starting_address": 8554,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_9_1_room_temp_setpoint",
+      "entity_id": "hc_9_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3136,7 +3136,7 @@
     {
       "starting_address": 8555,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_9_2_room_temp_setpoint",
+      "entity_id": "hc_9_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3149,7 +3149,7 @@
     {
       "starting_address": 8556,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_10_1_room_temp_setpoint",
+      "entity_id": "hc_10_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3162,7 +3162,7 @@
     {
       "starting_address": 8557,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_10_2_room_temp_setpoint",
+      "entity_id": "hc_10_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3175,7 +3175,7 @@
     {
       "starting_address": 8558,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_11_1_room_temp_setpoint",
+      "entity_id": "hc_11_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3188,7 +3188,7 @@
     {
       "starting_address": 8559,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_11_2_room_temp_setpoint",
+      "entity_id": "hc_11_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3201,7 +3201,7 @@
     {
       "starting_address": 8560,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_12_1_room_temp_setpoint",
+      "entity_id": "hc_12_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3214,7 +3214,7 @@
     {
       "starting_address": 8561,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_12_2_room_temp_setpoint",
+      "entity_id": "hc_12_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3227,7 +3227,7 @@
     {
       "starting_address": 8562,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_13_1_room_temp_setpoint",
+      "entity_id": "hc_13_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3240,7 +3240,7 @@
     {
       "starting_address": 8563,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_13_2_room_temp_setpoint",
+      "entity_id": "hc_13_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3253,7 +3253,7 @@
     {
       "starting_address": 8564,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_14_1_room_temp_setpoint",
+      "entity_id": "hc_14_1_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3266,7 +3266,7 @@
     {
       "starting_address": 8565,
       "name": "Room temp., setpoint",
-      "entity_id": "hc_14_2_room_temp_setpoint",
+      "entity_id": "hc_14_2_hk_raum_temperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3279,7 +3279,7 @@
     {
       "starting_address": 8573,
       "name": "Status",
-      "entity_id": "hc_1_1_status",
+      "entity_id": "hc_1_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3292,7 +3292,7 @@
     {
       "starting_address": 8574,
       "name": "Status",
-      "entity_id": "hc_1_2_status",
+      "entity_id": "hc_1_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3305,7 +3305,7 @@
     {
       "starting_address": 8575,
       "name": "Status",
-      "entity_id": "hc_2_1_status",
+      "entity_id": "hc_2_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3318,7 +3318,7 @@
     {
       "starting_address": 8576,
       "name": "Status",
-      "entity_id": "hc_2_2_status",
+      "entity_id": "hc_2_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3331,7 +3331,7 @@
     {
       "starting_address": 8577,
       "name": "Status",
-      "entity_id": "hc_3_1_status",
+      "entity_id": "hc_3_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3344,7 +3344,7 @@
     {
       "starting_address": 8578,
       "name": "Status",
-      "entity_id": "hc_3_2_status",
+      "entity_id": "hc_3_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3357,7 +3357,7 @@
     {
       "starting_address": 8579,
       "name": "Status",
-      "entity_id": "hc_4_1_status",
+      "entity_id": "hc_4_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3370,7 +3370,7 @@
     {
       "starting_address": 8580,
       "name": "Status",
-      "entity_id": "hc_4_2_status",
+      "entity_id": "hc_4_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3383,7 +3383,7 @@
     {
       "starting_address": 8581,
       "name": "Status",
-      "entity_id": "hc_5_1_status",
+      "entity_id": "hc_5_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3396,7 +3396,7 @@
     {
       "starting_address": 8582,
       "name": "Status",
-      "entity_id": "hc_5_2_status",
+      "entity_id": "hc_5_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3409,7 +3409,7 @@
     {
       "starting_address": 8583,
       "name": "Status",
-      "entity_id": "hc_6_1_status",
+      "entity_id": "hc_6_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3422,7 +3422,7 @@
     {
       "starting_address": 8584,
       "name": "Status",
-      "entity_id": "hc_6_2_status",
+      "entity_id": "hc_6_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3435,7 +3435,7 @@
     {
       "starting_address": 8585,
       "name": "Status",
-      "entity_id": "hc_7_1_status",
+      "entity_id": "hc_7_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3448,7 +3448,7 @@
     {
       "starting_address": 8586,
       "name": "Status",
-      "entity_id": "hc_7_2_status",
+      "entity_id": "hc_7_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3461,7 +3461,7 @@
     {
       "starting_address": 8587,
       "name": "Status",
-      "entity_id": "hc_8_1_status",
+      "entity_id": "hc_8_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3474,7 +3474,7 @@
     {
       "starting_address": 8588,
       "name": "Status",
-      "entity_id": "hc_8_2_status",
+      "entity_id": "hc_8_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3487,7 +3487,7 @@
     {
       "starting_address": 8589,
       "name": "Status",
-      "entity_id": "hc_9_1_status",
+      "entity_id": "hc_9_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3500,7 +3500,7 @@
     {
       "starting_address": 8590,
       "name": "Status",
-      "entity_id": "hc_9_2_status",
+      "entity_id": "hc_9_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3513,7 +3513,7 @@
     {
       "starting_address": 8591,
       "name": "Status",
-      "entity_id": "hc_10_1_status",
+      "entity_id": "hc_10_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3526,7 +3526,7 @@
     {
       "starting_address": 8592,
       "name": "Status",
-      "entity_id": "hc_10_2_status",
+      "entity_id": "hc_10_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3539,7 +3539,7 @@
     {
       "starting_address": 8593,
       "name": "Status",
-      "entity_id": "hc_11_1_status",
+      "entity_id": "hc_11_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3552,7 +3552,7 @@
     {
       "starting_address": 8594,
       "name": "Status",
-      "entity_id": "hc_11_2_status",
+      "entity_id": "hc_11_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3565,7 +3565,7 @@
     {
       "starting_address": 8595,
       "name": "Status",
-      "entity_id": "hc_12_1_status",
+      "entity_id": "hc_12_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3578,7 +3578,7 @@
     {
       "starting_address": 8596,
       "name": "Status",
-      "entity_id": "hc_12_2_status",
+      "entity_id": "hc_12_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3591,7 +3591,7 @@
     {
       "starting_address": 8597,
       "name": "Status",
-      "entity_id": "hc_13_1_status",
+      "entity_id": "hc_13_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3604,7 +3604,7 @@
     {
       "starting_address": 8598,
       "name": "Status",
-      "entity_id": "hc_13_2_status",
+      "entity_id": "hc_13_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3617,7 +3617,7 @@
     {
       "starting_address": 8599,
       "name": "Status",
-      "entity_id": "hc_14_1_status",
+      "entity_id": "hc_14_1_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3630,7 +3630,7 @@
     {
       "starting_address": 8600,
       "name": "Status",
-      "entity_id": "hc_14_2_status",
+      "entity_id": "hc_14_2_hk_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -3643,7 +3643,7 @@
     {
       "starting_address": 24589,
       "name": "Select program",
-      "entity_id": "hc_1_1_select_program",
+      "entity_id": "hc_1_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3656,7 +3656,7 @@
     {
       "starting_address": 24590,
       "name": "Select program",
-      "entity_id": "hc_1_2_select_program",
+      "entity_id": "hc_1_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3669,7 +3669,7 @@
     {
       "starting_address": 24591,
       "name": "Select program",
-      "entity_id": "hc_2_1_select_program",
+      "entity_id": "hc_2_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3682,7 +3682,7 @@
     {
       "starting_address": 24592,
       "name": "Select program",
-      "entity_id": "hc_2_2_select_program",
+      "entity_id": "hc_2_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3695,7 +3695,7 @@
     {
       "starting_address": 24593,
       "name": "Select program",
-      "entity_id": "hc_3_1_select_program",
+      "entity_id": "hc_3_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3708,7 +3708,7 @@
     {
       "starting_address": 24594,
       "name": "Select program",
-      "entity_id": "hc_3_2_select_program",
+      "entity_id": "hc_3_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3721,7 +3721,7 @@
     {
       "starting_address": 24595,
       "name": "Select program",
-      "entity_id": "hc_4_1_select_program",
+      "entity_id": "hc_4_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3734,7 +3734,7 @@
     {
       "starting_address": 24596,
       "name": "Select program",
-      "entity_id": "hc_4_2_select_program",
+      "entity_id": "hc_4_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3747,7 +3747,7 @@
     {
       "starting_address": 24597,
       "name": "Select program",
-      "entity_id": "hc_5_1_select_program",
+      "entity_id": "hc_5_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3760,7 +3760,7 @@
     {
       "starting_address": 24598,
       "name": "Select program",
-      "entity_id": "hc_5_2_select_program",
+      "entity_id": "hc_5_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3773,7 +3773,7 @@
     {
       "starting_address": 24599,
       "name": "Select program",
-      "entity_id": "hc_6_1_select_program",
+      "entity_id": "hc_6_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3786,7 +3786,7 @@
     {
       "starting_address": 24600,
       "name": "Select program",
-      "entity_id": "hc_6_2_select_program",
+      "entity_id": "hc_6_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3799,7 +3799,7 @@
     {
       "starting_address": 24601,
       "name": "Select program",
-      "entity_id": "hc_7_1_select_program",
+      "entity_id": "hc_7_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3812,7 +3812,7 @@
     {
       "starting_address": 24602,
       "name": "Select program",
-      "entity_id": "hc_7_2_select_program",
+      "entity_id": "hc_7_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3825,7 +3825,7 @@
     {
       "starting_address": 24603,
       "name": "Select program",
-      "entity_id": "hc_8_1_select_program",
+      "entity_id": "hc_8_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3838,7 +3838,7 @@
     {
       "starting_address": 24604,
       "name": "Select program",
-      "entity_id": "hc_8_2_select_program",
+      "entity_id": "hc_8_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3851,7 +3851,7 @@
     {
       "starting_address": 24605,
       "name": "Select program",
-      "entity_id": "hc_9_1_select_program",
+      "entity_id": "hc_9_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3864,7 +3864,7 @@
     {
       "starting_address": 24606,
       "name": "Select program",
-      "entity_id": "hc_9_2_select_program",
+      "entity_id": "hc_9_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3877,7 +3877,7 @@
     {
       "starting_address": 24607,
       "name": "Select program",
-      "entity_id": "hc_10_1_select_program",
+      "entity_id": "hc_10_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3890,7 +3890,7 @@
     {
       "starting_address": 24608,
       "name": "Select program",
-      "entity_id": "hc_10_2_select_program",
+      "entity_id": "hc_10_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3903,7 +3903,7 @@
     {
       "starting_address": 24609,
       "name": "Select program",
-      "entity_id": "hc_11_1_select_program",
+      "entity_id": "hc_11_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3916,7 +3916,7 @@
     {
       "starting_address": 24610,
       "name": "Select program",
-      "entity_id": "hc_11_2_select_program",
+      "entity_id": "hc_11_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3929,7 +3929,7 @@
     {
       "starting_address": 24611,
       "name": "Select program",
-      "entity_id": "hc_12_1_select_program",
+      "entity_id": "hc_12_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3942,7 +3942,7 @@
     {
       "starting_address": 24612,
       "name": "Select program",
-      "entity_id": "hc_12_2_select_program",
+      "entity_id": "hc_12_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3955,7 +3955,7 @@
     {
       "starting_address": 24613,
       "name": "Select program",
-      "entity_id": "hc_13_1_select_program",
+      "entity_id": "hc_13_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3968,7 +3968,7 @@
     {
       "starting_address": 24614,
       "name": "Select program",
-      "entity_id": "hc_13_2_select_program",
+      "entity_id": "hc_13_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3981,7 +3981,7 @@
     {
       "starting_address": 24615,
       "name": "Select program",
-      "entity_id": "hc_14_1_select_program",
+      "entity_id": "hc_14_1_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -3994,7 +3994,7 @@
     {
       "starting_address": 24616,
       "name": "Select program",
-      "entity_id": "hc_14_2_select_program",
+      "entity_id": "hc_14_2_hk_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4007,7 +4007,7 @@
     {
       "starting_address": 24624,
       "name": "Comfort temperature",
-      "entity_id": "hc_1_1_comfort_temperature",
+      "entity_id": "hc_1_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4022,7 +4022,7 @@
     {
       "starting_address": 24625,
       "name": "Comfort temperature",
-      "entity_id": "hc_1_2_comfort_temperature",
+      "entity_id": "hc_1_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4037,7 +4037,7 @@
     {
       "starting_address": 24626,
       "name": "Comfort temperature",
-      "entity_id": "hc_2_1_comfort_temperature",
+      "entity_id": "hc_2_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4052,7 +4052,7 @@
     {
       "starting_address": 24627,
       "name": "Comfort temperature",
-      "entity_id": "hc_2_2_comfort_temperature",
+      "entity_id": "hc_2_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4067,7 +4067,7 @@
     {
       "starting_address": 24628,
       "name": "Comfort temperature",
-      "entity_id": "hc_3_1_comfort_temperature",
+      "entity_id": "hc_3_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4082,7 +4082,7 @@
     {
       "starting_address": 24629,
       "name": "Comfort temperature",
-      "entity_id": "hc_3_2_comfort_temperature",
+      "entity_id": "hc_3_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4097,7 +4097,7 @@
     {
       "starting_address": 24630,
       "name": "Comfort temperature",
-      "entity_id": "hc_4_1_comfort_temperature",
+      "entity_id": "hc_4_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4112,7 +4112,7 @@
     {
       "starting_address": 24631,
       "name": "Comfort temperature",
-      "entity_id": "hc_4_2_comfort_temperature",
+      "entity_id": "hc_4_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4127,7 +4127,7 @@
     {
       "starting_address": 24632,
       "name": "Comfort temperature",
-      "entity_id": "hc_5_1_comfort_temperature",
+      "entity_id": "hc_5_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4142,7 +4142,7 @@
     {
       "starting_address": 24633,
       "name": "Comfort temperature",
-      "entity_id": "hc_5_2_comfort_temperature",
+      "entity_id": "hc_5_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4157,7 +4157,7 @@
     {
       "starting_address": 24634,
       "name": "Comfort temperature",
-      "entity_id": "hc_6_1_comfort_temperature",
+      "entity_id": "hc_6_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4172,7 +4172,7 @@
     {
       "starting_address": 24635,
       "name": "Comfort temperature",
-      "entity_id": "hc_6_2_comfort_temperature",
+      "entity_id": "hc_6_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4187,7 +4187,7 @@
     {
       "starting_address": 24636,
       "name": "Comfort temperature",
-      "entity_id": "hc_7_1_comfort_temperature",
+      "entity_id": "hc_7_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4202,7 +4202,7 @@
     {
       "starting_address": 24637,
       "name": "Comfort temperature",
-      "entity_id": "hc_7_2_comfort_temperature",
+      "entity_id": "hc_7_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4217,7 +4217,7 @@
     {
       "starting_address": 24638,
       "name": "Comfort temperature",
-      "entity_id": "hc_8_1_comfort_temperature",
+      "entity_id": "hc_8_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4232,7 +4232,7 @@
     {
       "starting_address": 24639,
       "name": "Comfort temperature",
-      "entity_id": "hc_8_2_comfort_temperature",
+      "entity_id": "hc_8_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4247,7 +4247,7 @@
     {
       "starting_address": 24640,
       "name": "Comfort temperature",
-      "entity_id": "hc_9_1_comfort_temperature",
+      "entity_id": "hc_9_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4262,7 +4262,7 @@
     {
       "starting_address": 24641,
       "name": "Comfort temperature",
-      "entity_id": "hc_9_2_comfort_temperature",
+      "entity_id": "hc_9_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4277,7 +4277,7 @@
     {
       "starting_address": 24642,
       "name": "Comfort temperature",
-      "entity_id": "hc_10_1_comfort_temperature",
+      "entity_id": "hc_10_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4292,7 +4292,7 @@
     {
       "starting_address": 24643,
       "name": "Comfort temperature",
-      "entity_id": "hc_10_2_comfort_temperature",
+      "entity_id": "hc_10_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4307,7 +4307,7 @@
     {
       "starting_address": 24644,
       "name": "Comfort temperature",
-      "entity_id": "hc_11_1_comfort_temperature",
+      "entity_id": "hc_11_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4322,7 +4322,7 @@
     {
       "starting_address": 24645,
       "name": "Comfort temperature",
-      "entity_id": "hc_11_2_comfort_temperature",
+      "entity_id": "hc_11_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4337,7 +4337,7 @@
     {
       "starting_address": 24646,
       "name": "Comfort temperature",
-      "entity_id": "hc_12_1_comfort_temperature",
+      "entity_id": "hc_12_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4352,7 +4352,7 @@
     {
       "starting_address": 24647,
       "name": "Comfort temperature",
-      "entity_id": "hc_12_2_comfort_temperature",
+      "entity_id": "hc_12_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4367,7 +4367,7 @@
     {
       "starting_address": 24648,
       "name": "Comfort temperature",
-      "entity_id": "hc_13_1_comfort_temperature",
+      "entity_id": "hc_13_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4382,7 +4382,7 @@
     {
       "starting_address": 24649,
       "name": "Comfort temperature",
-      "entity_id": "hc_13_2_comfort_temperature",
+      "entity_id": "hc_13_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4397,7 +4397,7 @@
     {
       "starting_address": 24650,
       "name": "Comfort temperature",
-      "entity_id": "hc_14_1_comfort_temperature",
+      "entity_id": "hc_14_1_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4412,7 +4412,7 @@
     {
       "starting_address": 24651,
       "name": "Comfort temperature",
-      "entity_id": "hc_14_2_comfort_temperature",
+      "entity_id": "hc_14_2_hk_raum_temperatur_soll_tag",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4427,7 +4427,7 @@
     {
       "starting_address": 24659,
       "name": "Reduction temperature",
-      "entity_id": "hc_1_1_reduction_temperature",
+      "entity_id": "hc_1_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4442,7 +4442,7 @@
     {
       "starting_address": 24660,
       "name": "Reduction temperature",
-      "entity_id": "hc_1_2_reduction_temperature",
+      "entity_id": "hc_1_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4457,7 +4457,7 @@
     {
       "starting_address": 24661,
       "name": "Reduction temperature",
-      "entity_id": "hc_2_1_reduction_temperature",
+      "entity_id": "hc_2_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4472,7 +4472,7 @@
     {
       "starting_address": 24662,
       "name": "Reduction temperature",
-      "entity_id": "hc_2_2_reduction_temperature",
+      "entity_id": "hc_2_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4487,7 +4487,7 @@
     {
       "starting_address": 24663,
       "name": "Reduction temperature",
-      "entity_id": "hc_3_1_reduction_temperature",
+      "entity_id": "hc_3_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4502,7 +4502,7 @@
     {
       "starting_address": 24664,
       "name": "Reduction temperature",
-      "entity_id": "hc_3_2_reduction_temperature",
+      "entity_id": "hc_3_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4517,7 +4517,7 @@
     {
       "starting_address": 24665,
       "name": "Reduction temperature",
-      "entity_id": "hc_4_1_reduction_temperature",
+      "entity_id": "hc_4_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4532,7 +4532,7 @@
     {
       "starting_address": 24666,
       "name": "Reduction temperature",
-      "entity_id": "hc_4_2_reduction_temperature",
+      "entity_id": "hc_4_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4547,7 +4547,7 @@
     {
       "starting_address": 24667,
       "name": "Reduction temperature",
-      "entity_id": "hc_5_1_reduction_temperature",
+      "entity_id": "hc_5_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4562,7 +4562,7 @@
     {
       "starting_address": 24668,
       "name": "Reduction temperature",
-      "entity_id": "hc_5_2_reduction_temperature",
+      "entity_id": "hc_5_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4577,7 +4577,7 @@
     {
       "starting_address": 24669,
       "name": "Reduction temperature",
-      "entity_id": "hc_6_1_reduction_temperature",
+      "entity_id": "hc_6_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4592,7 +4592,7 @@
     {
       "starting_address": 24670,
       "name": "Reduction temperature",
-      "entity_id": "hc_6_2_reduction_temperature",
+      "entity_id": "hc_6_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4607,7 +4607,7 @@
     {
       "starting_address": 24671,
       "name": "Reduction temperature",
-      "entity_id": "hc_7_1_reduction_temperature",
+      "entity_id": "hc_7_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4622,7 +4622,7 @@
     {
       "starting_address": 24672,
       "name": "Reduction temperature",
-      "entity_id": "hc_7_2_reduction_temperature",
+      "entity_id": "hc_7_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4637,7 +4637,7 @@
     {
       "starting_address": 24673,
       "name": "Reduction temperature",
-      "entity_id": "hc_8_1_reduction_temperature",
+      "entity_id": "hc_8_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4652,7 +4652,7 @@
     {
       "starting_address": 24674,
       "name": "Reduction temperature",
-      "entity_id": "hc_8_2_reduction_temperature",
+      "entity_id": "hc_8_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4667,7 +4667,7 @@
     {
       "starting_address": 24675,
       "name": "Reduction temperature",
-      "entity_id": "hc_9_1_reduction_temperature",
+      "entity_id": "hc_9_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4682,7 +4682,7 @@
     {
       "starting_address": 24676,
       "name": "Reduction temperature",
-      "entity_id": "hc_9_2_reduction_temperature",
+      "entity_id": "hc_9_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4697,7 +4697,7 @@
     {
       "starting_address": 24677,
       "name": "Reduction temperature",
-      "entity_id": "hc_10_1_reduction_temperature",
+      "entity_id": "hc_10_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4712,7 +4712,7 @@
     {
       "starting_address": 24678,
       "name": "Reduction temperature",
-      "entity_id": "hc_10_2_reduction_temperature",
+      "entity_id": "hc_10_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4727,7 +4727,7 @@
     {
       "starting_address": 24679,
       "name": "Reduction temperature",
-      "entity_id": "hc_11_1_reduction_temperature",
+      "entity_id": "hc_11_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4742,7 +4742,7 @@
     {
       "starting_address": 24680,
       "name": "Reduction temperature",
-      "entity_id": "hc_11_2_reduction_temperature",
+      "entity_id": "hc_11_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4757,7 +4757,7 @@
     {
       "starting_address": 24681,
       "name": "Reduction temperature",
-      "entity_id": "hc_12_1_reduction_temperature",
+      "entity_id": "hc_12_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4772,7 +4772,7 @@
     {
       "starting_address": 24682,
       "name": "Reduction temperature",
-      "entity_id": "hc_12_2_reduction_temperature",
+      "entity_id": "hc_12_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4787,7 +4787,7 @@
     {
       "starting_address": 24683,
       "name": "Reduction temperature",
-      "entity_id": "hc_13_1_reduction_temperature",
+      "entity_id": "hc_13_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4802,7 +4802,7 @@
     {
       "starting_address": 24684,
       "name": "Reduction temperature",
-      "entity_id": "hc_13_2_reduction_temperature",
+      "entity_id": "hc_13_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4817,7 +4817,7 @@
     {
       "starting_address": 24685,
       "name": "Reduction temperature",
-      "entity_id": "hc_14_1_reduction_temperature",
+      "entity_id": "hc_14_1_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4832,7 +4832,7 @@
     {
       "starting_address": 24686,
       "name": "Reduction temperature",
-      "entity_id": "hc_14_2_reduction_temperature",
+      "entity_id": "hc_14_2_hk_raum_temperatur_soll_nacht",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -4847,7 +4847,7 @@
     {
       "starting_address": 24859,
       "name": "Modbus request",
-      "entity_id": "hc_1_1_modbus_request",
+      "entity_id": "hc_1_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4860,7 +4860,7 @@
     {
       "starting_address": 24860,
       "name": "Modbus request",
-      "entity_id": "hc_1_2_modbus_request",
+      "entity_id": "hc_1_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4873,7 +4873,7 @@
     {
       "starting_address": 24861,
       "name": "Modbus request",
-      "entity_id": "hc_2_1_modbus_request",
+      "entity_id": "hc_2_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4886,7 +4886,7 @@
     {
       "starting_address": 24862,
       "name": "Modbus request",
-      "entity_id": "hc_2_2_modbus_request",
+      "entity_id": "hc_2_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4899,7 +4899,7 @@
     {
       "starting_address": 24863,
       "name": "Modbus request",
-      "entity_id": "hc_3_1_modbus_request",
+      "entity_id": "hc_3_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4912,7 +4912,7 @@
     {
       "starting_address": 24864,
       "name": "Modbus request",
-      "entity_id": "hc_3_2_modbus_request",
+      "entity_id": "hc_3_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4925,7 +4925,7 @@
     {
       "starting_address": 24865,
       "name": "Modbus request",
-      "entity_id": "hc_4_1_modbus_request",
+      "entity_id": "hc_4_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4938,7 +4938,7 @@
     {
       "starting_address": 24866,
       "name": "Modbus request",
-      "entity_id": "hc_4_2_modbus_request",
+      "entity_id": "hc_4_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4951,7 +4951,7 @@
     {
       "starting_address": 24867,
       "name": "Modbus request",
-      "entity_id": "hc_5_1_modbus_request",
+      "entity_id": "hc_5_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4964,7 +4964,7 @@
     {
       "starting_address": 24868,
       "name": "Modbus request",
-      "entity_id": "hc_5_2_modbus_request",
+      "entity_id": "hc_5_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4977,7 +4977,7 @@
     {
       "starting_address": 24869,
       "name": "Modbus request",
-      "entity_id": "hc_6_1_modbus_request",
+      "entity_id": "hc_6_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -4990,7 +4990,7 @@
     {
       "starting_address": 24870,
       "name": "Modbus request",
-      "entity_id": "hc_6_2_modbus_request",
+      "entity_id": "hc_6_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5003,7 +5003,7 @@
     {
       "starting_address": 24871,
       "name": "Modbus request",
-      "entity_id": "hc_7_1_modbus_request",
+      "entity_id": "hc_7_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5016,7 +5016,7 @@
     {
       "starting_address": 24872,
       "name": "Modbus request",
-      "entity_id": "hc_7_2_modbus_request",
+      "entity_id": "hc_7_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5029,7 +5029,7 @@
     {
       "starting_address": 24873,
       "name": "Modbus request",
-      "entity_id": "hc_8_1_modbus_request",
+      "entity_id": "hc_8_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5042,7 +5042,7 @@
     {
       "starting_address": 24874,
       "name": "Modbus request",
-      "entity_id": "hc_8_2_modbus_request",
+      "entity_id": "hc_8_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5055,7 +5055,7 @@
     {
       "starting_address": 24875,
       "name": "Modbus request",
-      "entity_id": "hc_9_1_modbus_request",
+      "entity_id": "hc_9_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5068,7 +5068,7 @@
     {
       "starting_address": 24876,
       "name": "Modbus request",
-      "entity_id": "hc_9_2_modbus_request",
+      "entity_id": "hc_9_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5081,7 +5081,7 @@
     {
       "starting_address": 24877,
       "name": "Modbus request",
-      "entity_id": "hc_10_1_modbus_request",
+      "entity_id": "hc_10_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5094,7 +5094,7 @@
     {
       "starting_address": 24878,
       "name": "Modbus request",
-      "entity_id": "hc_10_2_modbus_request",
+      "entity_id": "hc_10_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5107,7 +5107,7 @@
     {
       "starting_address": 24879,
       "name": "Modbus request",
-      "entity_id": "hc_11_1_modbus_request",
+      "entity_id": "hc_11_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5120,7 +5120,7 @@
     {
       "starting_address": 24880,
       "name": "Modbus request",
-      "entity_id": "hc_11_2_modbus_request",
+      "entity_id": "hc_11_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5133,7 +5133,7 @@
     {
       "starting_address": 24881,
       "name": "Modbus request",
-      "entity_id": "hc_12_1_modbus_request",
+      "entity_id": "hc_12_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5146,7 +5146,7 @@
     {
       "starting_address": 24882,
       "name": "Modbus request",
-      "entity_id": "hc_12_2_modbus_request",
+      "entity_id": "hc_12_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5159,7 +5159,7 @@
     {
       "starting_address": 24883,
       "name": "Modbus request",
-      "entity_id": "hc_13_1_modbus_request",
+      "entity_id": "hc_13_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5172,7 +5172,7 @@
     {
       "starting_address": 24884,
       "name": "Modbus request",
-      "entity_id": "hc_13_2_modbus_request",
+      "entity_id": "hc_13_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5185,7 +5185,7 @@
     {
       "starting_address": 24885,
       "name": "Modbus request",
-      "entity_id": "hc_14_1_modbus_request",
+      "entity_id": "hc_14_1_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5198,7 +5198,7 @@
     {
       "starting_address": 24886,
       "name": "Modbus request",
-      "entity_id": "hc_14_2_modbus_request",
+      "entity_id": "hc_14_2_hk_modbus_anforderung",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5211,7 +5211,7 @@
     {
       "starting_address": 24894,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_1_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_1_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5224,7 +5224,7 @@
     {
       "starting_address": 24895,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_1_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_1_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5237,7 +5237,7 @@
     {
       "starting_address": 24896,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_2_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_2_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5250,7 +5250,7 @@
     {
       "starting_address": 24897,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_2_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_2_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5263,7 +5263,7 @@
     {
       "starting_address": 24898,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_3_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_3_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5276,7 +5276,7 @@
     {
       "starting_address": 24899,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_3_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_3_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5289,7 +5289,7 @@
     {
       "starting_address": 24900,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_4_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_4_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5302,7 +5302,7 @@
     {
       "starting_address": 24901,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_4_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_4_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5315,7 +5315,7 @@
     {
       "starting_address": 24902,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_5_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_5_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5328,7 +5328,7 @@
     {
       "starting_address": 24903,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_5_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_5_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5341,7 +5341,7 @@
     {
       "starting_address": 24904,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_6_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_6_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5354,7 +5354,7 @@
     {
       "starting_address": 24905,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_6_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_6_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5367,7 +5367,7 @@
     {
       "starting_address": 24906,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_7_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_7_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5380,7 +5380,7 @@
     {
       "starting_address": 24907,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_7_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_7_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5393,7 +5393,7 @@
     {
       "starting_address": 24908,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_8_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_8_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5406,7 +5406,7 @@
     {
       "starting_address": 24909,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_8_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_8_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5419,7 +5419,7 @@
     {
       "starting_address": 24910,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_9_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_9_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5432,7 +5432,7 @@
     {
       "starting_address": 24911,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_9_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_9_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5445,7 +5445,7 @@
     {
       "starting_address": 24912,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_10_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_10_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5458,7 +5458,7 @@
     {
       "starting_address": 24913,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_10_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_10_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5471,7 +5471,7 @@
     {
       "starting_address": 24914,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_11_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_11_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5484,7 +5484,7 @@
     {
       "starting_address": 24915,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_11_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_11_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5497,7 +5497,7 @@
     {
       "starting_address": 24916,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_12_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_12_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5510,7 +5510,7 @@
     {
       "starting_address": 24917,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_12_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_12_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5523,7 +5523,7 @@
     {
       "starting_address": 24918,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_13_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_13_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5536,7 +5536,7 @@
     {
       "starting_address": 24919,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_13_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_13_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5549,7 +5549,7 @@
     {
       "starting_address": 24920,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_14_1_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_14_1_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5562,7 +5562,7 @@
     {
       "starting_address": 24921,
       "name": "Modbus Forward flow temp. Setpoint",
-      "entity_id": "hc_14_2_modbus_forward_flow_temp_setpoint",
+      "entity_id": "hc_14_2_hk_modbus_temperatur",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5575,7 +5575,7 @@
     {
       "starting_address": 24936,
       "name": "HC setpoint spec.",
-      "entity_id": "hc_setpoint_spec",
+      "entity_id": "ksm_hk_modbus_temperatur_auswahl",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5587,7 +5587,7 @@
     {
       "starting_address": 24939,
       "name": "Modbus Program",
-      "entity_id": "hc_1_1_modbus_program",
+      "entity_id": "hc_1_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5600,7 +5600,7 @@
     {
       "starting_address": 24940,
       "name": "Modbus Program",
-      "entity_id": "hc_1_2_modbus_program",
+      "entity_id": "hc_1_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5613,7 +5613,7 @@
     {
       "starting_address": 24941,
       "name": "Modbus Program",
-      "entity_id": "hc_2_1_modbus_program",
+      "entity_id": "hc_2_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5626,7 +5626,7 @@
     {
       "starting_address": 24942,
       "name": "Modbus Program",
-      "entity_id": "hc_2_2_modbus_program",
+      "entity_id": "hc_2_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5639,7 +5639,7 @@
     {
       "starting_address": 24943,
       "name": "Modbus Program",
-      "entity_id": "hc_3_1_modbus_program",
+      "entity_id": "hc_3_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5652,7 +5652,7 @@
     {
       "starting_address": 24944,
       "name": "Modbus Program",
-      "entity_id": "hc_3_2_modbus_program",
+      "entity_id": "hc_3_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5665,7 +5665,7 @@
     {
       "starting_address": 24945,
       "name": "Modbus Program",
-      "entity_id": "hc_4_1_modbus_program",
+      "entity_id": "hc_4_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5678,7 +5678,7 @@
     {
       "starting_address": 24946,
       "name": "Modbus Program",
-      "entity_id": "hc_4_2_modbus_program",
+      "entity_id": "hc_4_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5691,7 +5691,7 @@
     {
       "starting_address": 24947,
       "name": "Modbus Program",
-      "entity_id": "hc_5_1_modbus_program",
+      "entity_id": "hc_5_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5704,7 +5704,7 @@
     {
       "starting_address": 24948,
       "name": "Modbus Program",
-      "entity_id": "hc_5_2_modbus_program",
+      "entity_id": "hc_5_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5717,7 +5717,7 @@
     {
       "starting_address": 24949,
       "name": "Modbus Program",
-      "entity_id": "hc_6_1_modbus_program",
+      "entity_id": "hc_6_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5730,7 +5730,7 @@
     {
       "starting_address": 24950,
       "name": "Modbus Program",
-      "entity_id": "hc_6_2_modbus_program",
+      "entity_id": "hc_6_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5743,7 +5743,7 @@
     {
       "starting_address": 24951,
       "name": "Modbus Program",
-      "entity_id": "hc_7_1_modbus_program",
+      "entity_id": "hc_7_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5756,7 +5756,7 @@
     {
       "starting_address": 24952,
       "name": "Modbus Program",
-      "entity_id": "hc_7_2_modbus_program",
+      "entity_id": "hc_7_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5769,7 +5769,7 @@
     {
       "starting_address": 24953,
       "name": "Modbus Program",
-      "entity_id": "hc_8_1_modbus_program",
+      "entity_id": "hc_8_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5782,7 +5782,7 @@
     {
       "starting_address": 24954,
       "name": "Modbus Program",
-      "entity_id": "hc_8_2_modbus_program",
+      "entity_id": "hc_8_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5795,7 +5795,7 @@
     {
       "starting_address": 24955,
       "name": "Modbus Program",
-      "entity_id": "hc_9_1_modbus_program",
+      "entity_id": "hc_9_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5808,7 +5808,7 @@
     {
       "starting_address": 24956,
       "name": "Modbus Program",
-      "entity_id": "hc_9_2_modbus_program",
+      "entity_id": "hc_9_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5821,7 +5821,7 @@
     {
       "starting_address": 24957,
       "name": "Modbus Program",
-      "entity_id": "hc_10_1_modbus_program",
+      "entity_id": "hc_10_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5834,7 +5834,7 @@
     {
       "starting_address": 24958,
       "name": "Modbus Program",
-      "entity_id": "hc_10_2_modbus_program",
+      "entity_id": "hc_10_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5847,7 +5847,7 @@
     {
       "starting_address": 24959,
       "name": "Modbus Program",
-      "entity_id": "hc_11_1_modbus_program",
+      "entity_id": "hc_11_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5860,7 +5860,7 @@
     {
       "starting_address": 24960,
       "name": "Modbus Program",
-      "entity_id": "hc_11_2_modbus_program",
+      "entity_id": "hc_11_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5873,7 +5873,7 @@
     {
       "starting_address": 24961,
       "name": "Modbus Program",
-      "entity_id": "hc_12_1_modbus_program",
+      "entity_id": "hc_12_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5886,7 +5886,7 @@
     {
       "starting_address": 24962,
       "name": "Modbus Program",
-      "entity_id": "hc_12_2_modbus_program",
+      "entity_id": "hc_12_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5899,7 +5899,7 @@
     {
       "starting_address": 24963,
       "name": "Modbus Program",
-      "entity_id": "hc_13_1_modbus_program",
+      "entity_id": "hc_13_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5912,7 +5912,7 @@
     {
       "starting_address": 24964,
       "name": "Modbus Program",
-      "entity_id": "hc_13_2_modbus_program",
+      "entity_id": "hc_13_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5925,7 +5925,7 @@
     {
       "starting_address": 24965,
       "name": "Modbus Program",
-      "entity_id": "hc_14_1_modbus_program",
+      "entity_id": "hc_14_1_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -5938,7 +5938,7 @@
     {
       "starting_address": 24966,
       "name": "Modbus Program",
-      "entity_id": "hc_14_2_modbus_program",
+      "entity_id": "hc_14_2_hk_modbus_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

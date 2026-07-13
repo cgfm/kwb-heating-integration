@@ -3,7 +3,7 @@
     {
       "starting_address": 8608,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_1_temperature_actual_value",
+      "entity_id": "dhwc_1_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -16,7 +16,7 @@
     {
       "starting_address": 8609,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_1_temperature_actual_status",
+      "entity_id": "dhwc_1_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -29,7 +29,7 @@
     {
       "starting_address": 8610,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_2_temperature_actual_value",
+      "entity_id": "dhwc_2_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -42,7 +42,7 @@
     {
       "starting_address": 8611,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_2_temperature_actual_status",
+      "entity_id": "dhwc_2_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -55,7 +55,7 @@
     {
       "starting_address": 8612,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_3_temperature_actual_value",
+      "entity_id": "dhwc_3_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -68,7 +68,7 @@
     {
       "starting_address": 8613,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_3_temperature_actual_status",
+      "entity_id": "dhwc_3_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -81,7 +81,7 @@
     {
       "starting_address": 8614,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_4_temperature_actual_value",
+      "entity_id": "dhwc_4_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -94,7 +94,7 @@
     {
       "starting_address": 8615,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_4_temperature_actual_status",
+      "entity_id": "dhwc_4_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -107,7 +107,7 @@
     {
       "starting_address": 8616,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_5_temperature_actual_value",
+      "entity_id": "dhwc_5_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -120,7 +120,7 @@
     {
       "starting_address": 8617,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_5_temperature_actual_status",
+      "entity_id": "dhwc_5_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -133,7 +133,7 @@
     {
       "starting_address": 8618,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_6_temperature_actual_value",
+      "entity_id": "dhwc_6_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -146,7 +146,7 @@
     {
       "starting_address": 8619,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_6_temperature_actual_status",
+      "entity_id": "dhwc_6_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -159,7 +159,7 @@
     {
       "starting_address": 8620,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_7_temperature_actual_value",
+      "entity_id": "dhwc_7_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -172,7 +172,7 @@
     {
       "starting_address": 8621,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_7_temperature_actual_status",
+      "entity_id": "dhwc_7_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -185,7 +185,7 @@
     {
       "starting_address": 8622,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_8_temperature_actual_value",
+      "entity_id": "dhwc_8_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -198,7 +198,7 @@
     {
       "starting_address": 8623,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_8_temperature_actual_status",
+      "entity_id": "dhwc_8_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -211,7 +211,7 @@
     {
       "starting_address": 8624,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_9_temperature_actual_value",
+      "entity_id": "dhwc_9_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -224,7 +224,7 @@
     {
       "starting_address": 8625,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_9_temperature_actual_status",
+      "entity_id": "dhwc_9_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -237,7 +237,7 @@
     {
       "starting_address": 8626,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_10_temperature_actual_value",
+      "entity_id": "dhwc_10_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -250,7 +250,7 @@
     {
       "starting_address": 8627,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_10_temperature_actual_status",
+      "entity_id": "dhwc_10_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -263,7 +263,7 @@
     {
       "starting_address": 8628,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_11_temperature_actual_value",
+      "entity_id": "dhwc_11_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -276,7 +276,7 @@
     {
       "starting_address": 8629,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_11_temperature_actual_status",
+      "entity_id": "dhwc_11_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -289,7 +289,7 @@
     {
       "starting_address": 8630,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_12_temperature_actual_value",
+      "entity_id": "dhwc_12_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -302,7 +302,7 @@
     {
       "starting_address": 8631,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_12_temperature_actual_status",
+      "entity_id": "dhwc_12_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -315,7 +315,7 @@
     {
       "starting_address": 8632,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_13_temperature_actual_value",
+      "entity_id": "dhwc_13_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -328,7 +328,7 @@
     {
       "starting_address": 8633,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_13_temperature_actual_status",
+      "entity_id": "dhwc_13_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -341,7 +341,7 @@
     {
       "starting_address": 8634,
       "name": "Temperatur Ist (value)",
-      "entity_id": "dhwc_14_temperature_actual_value",
+      "entity_id": "dhwc_14_boi_i_ist_temperatur_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -354,7 +354,7 @@
     {
       "starting_address": 8635,
       "name": "Temperatur Ist (status)",
-      "entity_id": "dhwc_14_temperature_actual_status",
+      "entity_id": "dhwc_14_boi_i_ist_temperatur_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -367,7 +367,7 @@
     {
       "starting_address": 8641,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_1_charging_pump",
+      "entity_id": "dhwc_1_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -380,7 +380,7 @@
     {
       "starting_address": 8642,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_2_charging_pump",
+      "entity_id": "dhwc_2_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -393,7 +393,7 @@
     {
       "starting_address": 8643,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_3_charging_pump",
+      "entity_id": "dhwc_3_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -406,7 +406,7 @@
     {
       "starting_address": 8644,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_4_charging_pump",
+      "entity_id": "dhwc_4_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -419,7 +419,7 @@
     {
       "starting_address": 8645,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_5_charging_pump",
+      "entity_id": "dhwc_5_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -432,7 +432,7 @@
     {
       "starting_address": 8646,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_6_charging_pump",
+      "entity_id": "dhwc_6_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -445,7 +445,7 @@
     {
       "starting_address": 8647,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_7_charging_pump",
+      "entity_id": "dhwc_7_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -458,7 +458,7 @@
     {
       "starting_address": 8648,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_8_charging_pump",
+      "entity_id": "dhwc_8_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -471,7 +471,7 @@
     {
       "starting_address": 8649,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_9_charging_pump",
+      "entity_id": "dhwc_9_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -484,7 +484,7 @@
     {
       "starting_address": 8650,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_10_charging_pump",
+      "entity_id": "dhwc_10_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -497,7 +497,7 @@
     {
       "starting_address": 8651,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_11_charging_pump",
+      "entity_id": "dhwc_11_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -510,7 +510,7 @@
     {
       "starting_address": 8652,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_12_charging_pump",
+      "entity_id": "dhwc_12_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -523,7 +523,7 @@
     {
       "starting_address": 8653,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_13_charging_pump",
+      "entity_id": "dhwc_13_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -536,7 +536,7 @@
     {
       "starting_address": 8654,
       "name": "Ladepumpe",
-      "entity_id": "dhwc_14_charging_pump",
+      "entity_id": "dhwc_14_boi_o_pumpe",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -549,7 +549,7 @@
     {
       "starting_address": 8658,
       "name": "Anforderung",
-      "entity_id": "dhwc_1_request",
+      "entity_id": "dhwc_1_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -562,7 +562,7 @@
     {
       "starting_address": 8659,
       "name": "Anforderung",
-      "entity_id": "dhwc_2_request",
+      "entity_id": "dhwc_2_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -575,7 +575,7 @@
     {
       "starting_address": 8660,
       "name": "Anforderung",
-      "entity_id": "dhwc_3_request",
+      "entity_id": "dhwc_3_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -588,7 +588,7 @@
     {
       "starting_address": 8661,
       "name": "Anforderung",
-      "entity_id": "dhwc_4_request",
+      "entity_id": "dhwc_4_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -601,7 +601,7 @@
     {
       "starting_address": 8662,
       "name": "Anforderung",
-      "entity_id": "dhwc_5_request",
+      "entity_id": "dhwc_5_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -614,7 +614,7 @@
     {
       "starting_address": 8663,
       "name": "Anforderung",
-      "entity_id": "dhwc_6_request",
+      "entity_id": "dhwc_6_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -627,7 +627,7 @@
     {
       "starting_address": 8664,
       "name": "Anforderung",
-      "entity_id": "dhwc_7_request",
+      "entity_id": "dhwc_7_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -640,7 +640,7 @@
     {
       "starting_address": 8665,
       "name": "Anforderung",
-      "entity_id": "dhwc_8_request",
+      "entity_id": "dhwc_8_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -653,7 +653,7 @@
     {
       "starting_address": 8666,
       "name": "Anforderung",
-      "entity_id": "dhwc_9_request",
+      "entity_id": "dhwc_9_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -666,7 +666,7 @@
     {
       "starting_address": 8667,
       "name": "Anforderung",
-      "entity_id": "dhwc_10_request",
+      "entity_id": "dhwc_10_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -679,7 +679,7 @@
     {
       "starting_address": 8668,
       "name": "Anforderung",
-      "entity_id": "dhwc_11_request",
+      "entity_id": "dhwc_11_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -692,7 +692,7 @@
     {
       "starting_address": 8669,
       "name": "Anforderung",
-      "entity_id": "dhwc_12_request",
+      "entity_id": "dhwc_12_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -705,7 +705,7 @@
     {
       "starting_address": 8670,
       "name": "Anforderung",
-      "entity_id": "dhwc_13_request",
+      "entity_id": "dhwc_13_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -718,7 +718,7 @@
     {
       "starting_address": 8671,
       "name": "Anforderung",
-      "entity_id": "dhwc_14_request",
+      "entity_id": "dhwc_14_boi_anforderung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -731,7 +731,7 @@
     {
       "starting_address": 8675,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_1_temperature_setpoint",
+      "entity_id": "dhwc_1_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -744,7 +744,7 @@
     {
       "starting_address": 8676,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_2_temperature_setpoint",
+      "entity_id": "dhwc_2_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -757,7 +757,7 @@
     {
       "starting_address": 8677,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_3_temperature_setpoint",
+      "entity_id": "dhwc_3_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -770,7 +770,7 @@
     {
       "starting_address": 8678,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_4_temperature_setpoint",
+      "entity_id": "dhwc_4_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -783,7 +783,7 @@
     {
       "starting_address": 8679,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_5_temperature_setpoint",
+      "entity_id": "dhwc_5_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -796,7 +796,7 @@
     {
       "starting_address": 8680,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_6_temperature_setpoint",
+      "entity_id": "dhwc_6_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -809,7 +809,7 @@
     {
       "starting_address": 8681,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_7_temperature_setpoint",
+      "entity_id": "dhwc_7_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -822,7 +822,7 @@
     {
       "starting_address": 8682,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_8_temperature_setpoint",
+      "entity_id": "dhwc_8_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -835,7 +835,7 @@
     {
       "starting_address": 8683,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_9_temperature_setpoint",
+      "entity_id": "dhwc_9_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -848,7 +848,7 @@
     {
       "starting_address": 8684,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_10_temperature_setpoint",
+      "entity_id": "dhwc_10_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -861,7 +861,7 @@
     {
       "starting_address": 8685,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_11_temperature_setpoint",
+      "entity_id": "dhwc_11_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -874,7 +874,7 @@
     {
       "starting_address": 8686,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_12_temperature_setpoint",
+      "entity_id": "dhwc_12_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -887,7 +887,7 @@
     {
       "starting_address": 8687,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_13_temperature_setpoint",
+      "entity_id": "dhwc_13_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -900,7 +900,7 @@
     {
       "starting_address": 8688,
       "name": "Temperatur Soll",
-      "entity_id": "dhwc_14_temperature_setpoint",
+      "entity_id": "dhwc_14_boi_soll_temperatur",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -913,7 +913,7 @@
     {
       "starting_address": 8692,
       "name": "Status",
-      "entity_id": "dhwc_1_status",
+      "entity_id": "dhwc_1_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -926,7 +926,7 @@
     {
       "starting_address": 8693,
       "name": "Status",
-      "entity_id": "dhwc_2_status",
+      "entity_id": "dhwc_2_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -939,7 +939,7 @@
     {
       "starting_address": 8694,
       "name": "Status",
-      "entity_id": "dhwc_3_status",
+      "entity_id": "dhwc_3_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -952,7 +952,7 @@
     {
       "starting_address": 8695,
       "name": "Status",
-      "entity_id": "dhwc_4_status",
+      "entity_id": "dhwc_4_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -965,7 +965,7 @@
     {
       "starting_address": 8696,
       "name": "Status",
-      "entity_id": "dhwc_5_status",
+      "entity_id": "dhwc_5_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -978,7 +978,7 @@
     {
       "starting_address": 8697,
       "name": "Status",
-      "entity_id": "dhwc_6_status",
+      "entity_id": "dhwc_6_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -991,7 +991,7 @@
     {
       "starting_address": 8698,
       "name": "Status",
-      "entity_id": "dhwc_7_status",
+      "entity_id": "dhwc_7_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1004,7 +1004,7 @@
     {
       "starting_address": 8699,
       "name": "Status",
-      "entity_id": "dhwc_8_status",
+      "entity_id": "dhwc_8_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1017,7 +1017,7 @@
     {
       "starting_address": 8700,
       "name": "Status",
-      "entity_id": "dhwc_9_status",
+      "entity_id": "dhwc_9_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1030,7 +1030,7 @@
     {
       "starting_address": 8701,
       "name": "Status",
-      "entity_id": "dhwc_10_status",
+      "entity_id": "dhwc_10_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1043,7 +1043,7 @@
     {
       "starting_address": 8702,
       "name": "Status",
-      "entity_id": "dhwc_11_status",
+      "entity_id": "dhwc_11_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1056,7 +1056,7 @@
     {
       "starting_address": 8703,
       "name": "Status",
-      "entity_id": "dhwc_12_status",
+      "entity_id": "dhwc_12_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1069,7 +1069,7 @@
     {
       "starting_address": 8704,
       "name": "Status",
-      "entity_id": "dhwc_13_status",
+      "entity_id": "dhwc_13_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1082,7 +1082,7 @@
     {
       "starting_address": 8705,
       "name": "Status",
-      "entity_id": "dhwc_14_status",
+      "entity_id": "dhwc_14_boi_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1095,7 +1095,7 @@
     {
       "starting_address": 9433,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_1_temperature_2_value",
+      "entity_id": "dhwc_1_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1108,7 +1108,7 @@
     {
       "starting_address": 9434,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_1_temperature_2_status",
+      "entity_id": "dhwc_1_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1121,7 +1121,7 @@
     {
       "starting_address": 9435,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_2_temperature_2_value",
+      "entity_id": "dhwc_2_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1134,7 +1134,7 @@
     {
       "starting_address": 9436,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_2_temperature_2_status",
+      "entity_id": "dhwc_2_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1147,7 +1147,7 @@
     {
       "starting_address": 9437,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_3_temperature_2_value",
+      "entity_id": "dhwc_3_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1160,7 +1160,7 @@
     {
       "starting_address": 9438,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_3_temperature_2_status",
+      "entity_id": "dhwc_3_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1173,7 +1173,7 @@
     {
       "starting_address": 9439,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_4_temperature_2_value",
+      "entity_id": "dhwc_4_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1186,7 +1186,7 @@
     {
       "starting_address": 9440,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_4_temperature_2_status",
+      "entity_id": "dhwc_4_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1199,7 +1199,7 @@
     {
       "starting_address": 9441,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_5_temperature_2_value",
+      "entity_id": "dhwc_5_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1212,7 +1212,7 @@
     {
       "starting_address": 9442,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_5_temperature_2_status",
+      "entity_id": "dhwc_5_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1225,7 +1225,7 @@
     {
       "starting_address": 9443,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_6_temperature_2_value",
+      "entity_id": "dhwc_6_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1238,7 +1238,7 @@
     {
       "starting_address": 9444,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_6_temperature_2_status",
+      "entity_id": "dhwc_6_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1251,7 +1251,7 @@
     {
       "starting_address": 9445,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_7_temperature_2_value",
+      "entity_id": "dhwc_7_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1264,7 +1264,7 @@
     {
       "starting_address": 9446,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_7_temperature_2_status",
+      "entity_id": "dhwc_7_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1277,7 +1277,7 @@
     {
       "starting_address": 9447,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_8_temperature_2_value",
+      "entity_id": "dhwc_8_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1290,7 +1290,7 @@
     {
       "starting_address": 9448,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_8_temperature_2_status",
+      "entity_id": "dhwc_8_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1303,7 +1303,7 @@
     {
       "starting_address": 9449,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_9_temperature_2_value",
+      "entity_id": "dhwc_9_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1316,7 +1316,7 @@
     {
       "starting_address": 9450,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_9_temperature_2_status",
+      "entity_id": "dhwc_9_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1329,7 +1329,7 @@
     {
       "starting_address": 9451,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_10_temperature_2_value",
+      "entity_id": "dhwc_10_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1342,7 +1342,7 @@
     {
       "starting_address": 9452,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_10_temperature_2_status",
+      "entity_id": "dhwc_10_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1355,7 +1355,7 @@
     {
       "starting_address": 9453,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_11_temperature_2_value",
+      "entity_id": "dhwc_11_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1368,7 +1368,7 @@
     {
       "starting_address": 9454,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_11_temperature_2_status",
+      "entity_id": "dhwc_11_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1381,7 +1381,7 @@
     {
       "starting_address": 9455,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_12_temperature_2_value",
+      "entity_id": "dhwc_12_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1394,7 +1394,7 @@
     {
       "starting_address": 9456,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_12_temperature_2_status",
+      "entity_id": "dhwc_12_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1407,7 +1407,7 @@
     {
       "starting_address": 9457,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_13_temperature_2_value",
+      "entity_id": "dhwc_13_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1420,7 +1420,7 @@
     {
       "starting_address": 9458,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_13_temperature_2_status",
+      "entity_id": "dhwc_13_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1433,7 +1433,7 @@
     {
       "starting_address": 9459,
       "name": "Temperatur 2 (value)",
-      "entity_id": "dhwc_14_temperature_2_value",
+      "entity_id": "dhwc_14_boi_i_ist_temperatur_2_value",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1446,7 +1446,7 @@
     {
       "starting_address": 9460,
       "name": "Temperatur 2 (status)",
-      "entity_id": "dhwc_14_temperature_2_status",
+      "entity_id": "dhwc_14_boi_i_ist_temperatur_2_status",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -1459,7 +1459,7 @@
     {
       "starting_address": 24693,
       "name": "Programm wählen",
-      "entity_id": "dhwc_1_select_program",
+      "entity_id": "dhwc_1_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1472,7 +1472,7 @@
     {
       "starting_address": 24694,
       "name": "Programm wählen",
-      "entity_id": "dhwc_2_select_program",
+      "entity_id": "dhwc_2_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1485,7 +1485,7 @@
     {
       "starting_address": 24695,
       "name": "Programm wählen",
-      "entity_id": "dhwc_3_select_program",
+      "entity_id": "dhwc_3_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1498,7 +1498,7 @@
     {
       "starting_address": 24696,
       "name": "Programm wählen",
-      "entity_id": "dhwc_4_select_program",
+      "entity_id": "dhwc_4_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1511,7 +1511,7 @@
     {
       "starting_address": 24697,
       "name": "Programm wählen",
-      "entity_id": "dhwc_5_select_program",
+      "entity_id": "dhwc_5_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1524,7 +1524,7 @@
     {
       "starting_address": 24698,
       "name": "Programm wählen",
-      "entity_id": "dhwc_6_select_program",
+      "entity_id": "dhwc_6_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1537,7 +1537,7 @@
     {
       "starting_address": 24699,
       "name": "Programm wählen",
-      "entity_id": "dhwc_7_select_program",
+      "entity_id": "dhwc_7_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1550,7 +1550,7 @@
     {
       "starting_address": 24700,
       "name": "Programm wählen",
-      "entity_id": "dhwc_8_select_program",
+      "entity_id": "dhwc_8_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1563,7 +1563,7 @@
     {
       "starting_address": 24701,
       "name": "Programm wählen",
-      "entity_id": "dhwc_9_select_program",
+      "entity_id": "dhwc_9_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1576,7 +1576,7 @@
     {
       "starting_address": 24702,
       "name": "Programm wählen",
-      "entity_id": "dhwc_10_select_program",
+      "entity_id": "dhwc_10_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1589,7 +1589,7 @@
     {
       "starting_address": 24703,
       "name": "Programm wählen",
-      "entity_id": "dhwc_11_select_program",
+      "entity_id": "dhwc_11_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1602,7 +1602,7 @@
     {
       "starting_address": 24704,
       "name": "Programm wählen",
-      "entity_id": "dhwc_12_select_program",
+      "entity_id": "dhwc_12_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1615,7 +1615,7 @@
     {
       "starting_address": 24705,
       "name": "Programm wählen",
-      "entity_id": "dhwc_13_select_program",
+      "entity_id": "dhwc_13_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1628,7 +1628,7 @@
     {
       "starting_address": 24706,
       "name": "Programm wählen",
-      "entity_id": "dhwc_14_select_program",
+      "entity_id": "dhwc_14_boi_programm",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1641,7 +1641,7 @@
     {
       "starting_address": 24711,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_1_temp_min_max_min",
+      "entity_id": "dhwc_1_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1656,7 +1656,7 @@
     {
       "starting_address": 24712,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_1_temp_min_max_max",
+      "entity_id": "dhwc_1_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1671,7 +1671,7 @@
     {
       "starting_address": 24713,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_2_temp_min_max_min",
+      "entity_id": "dhwc_2_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1686,7 +1686,7 @@
     {
       "starting_address": 24714,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_2_temp_min_max_max",
+      "entity_id": "dhwc_2_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1701,7 +1701,7 @@
     {
       "starting_address": 24715,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_3_temp_min_max_min",
+      "entity_id": "dhwc_3_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1716,7 +1716,7 @@
     {
       "starting_address": 24716,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_3_temp_min_max_max",
+      "entity_id": "dhwc_3_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1731,7 +1731,7 @@
     {
       "starting_address": 24717,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_4_temp_min_max_min",
+      "entity_id": "dhwc_4_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1746,7 +1746,7 @@
     {
       "starting_address": 24718,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_4_temp_min_max_max",
+      "entity_id": "dhwc_4_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1761,7 +1761,7 @@
     {
       "starting_address": 24719,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_5_temp_min_max_min",
+      "entity_id": "dhwc_5_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1776,7 +1776,7 @@
     {
       "starting_address": 24720,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_5_temp_min_max_max",
+      "entity_id": "dhwc_5_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1791,7 +1791,7 @@
     {
       "starting_address": 24721,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_6_temp_min_max_min",
+      "entity_id": "dhwc_6_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1806,7 +1806,7 @@
     {
       "starting_address": 24722,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_6_temp_min_max_max",
+      "entity_id": "dhwc_6_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1821,7 +1821,7 @@
     {
       "starting_address": 24723,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_7_temp_min_max_min",
+      "entity_id": "dhwc_7_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1836,7 +1836,7 @@
     {
       "starting_address": 24724,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_7_temp_min_max_max",
+      "entity_id": "dhwc_7_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1851,7 +1851,7 @@
     {
       "starting_address": 24725,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_8_temp_min_max_min",
+      "entity_id": "dhwc_8_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1866,7 +1866,7 @@
     {
       "starting_address": 24726,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_8_temp_min_max_max",
+      "entity_id": "dhwc_8_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1881,7 +1881,7 @@
     {
       "starting_address": 24727,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_9_temp_min_max_min",
+      "entity_id": "dhwc_9_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1896,7 +1896,7 @@
     {
       "starting_address": 24728,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_9_temp_min_max_max",
+      "entity_id": "dhwc_9_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1911,7 +1911,7 @@
     {
       "starting_address": 24729,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_10_temp_min_max_min",
+      "entity_id": "dhwc_10_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1926,7 +1926,7 @@
     {
       "starting_address": 24730,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_10_temp_min_max_max",
+      "entity_id": "dhwc_10_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1941,7 +1941,7 @@
     {
       "starting_address": 24731,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_11_temp_min_max_min",
+      "entity_id": "dhwc_11_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1956,7 +1956,7 @@
     {
       "starting_address": 24732,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_11_temp_min_max_max",
+      "entity_id": "dhwc_11_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1971,7 +1971,7 @@
     {
       "starting_address": 24733,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_12_temp_min_max_min",
+      "entity_id": "dhwc_12_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -1986,7 +1986,7 @@
     {
       "starting_address": 24734,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_12_temp_min_max_max",
+      "entity_id": "dhwc_12_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2001,7 +2001,7 @@
     {
       "starting_address": 24735,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_13_temp_min_max_min",
+      "entity_id": "dhwc_13_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2016,7 +2016,7 @@
     {
       "starting_address": 24736,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_13_temp_min_max_max",
+      "entity_id": "dhwc_13_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2031,7 +2031,7 @@
     {
       "starting_address": 24737,
       "name": "Temperatur Min/Max (min)",
-      "entity_id": "dhwc_14_temp_min_max_min",
+      "entity_id": "dhwc_14_boi_temperatur_grenzen_min",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2046,7 +2046,7 @@
     {
       "starting_address": 24738,
       "name": "Temperatur Min/Max (max)",
-      "entity_id": "dhwc_14_temp_min_max_max",
+      "entity_id": "dhwc_14_boi_temperatur_grenzen_max",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2061,7 +2061,7 @@
     {
       "starting_address": 24744,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_1_heat_dhw_1x",
+      "entity_id": "dhwc_1_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2074,7 +2074,7 @@
     {
       "starting_address": 24745,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_2_heat_dhw_1x",
+      "entity_id": "dhwc_2_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2087,7 +2087,7 @@
     {
       "starting_address": 24746,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_3_heat_dhw_1x",
+      "entity_id": "dhwc_3_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2100,7 +2100,7 @@
     {
       "starting_address": 24747,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_4_heat_dhw_1x",
+      "entity_id": "dhwc_4_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2113,7 +2113,7 @@
     {
       "starting_address": 24748,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_5_heat_dhw_1x",
+      "entity_id": "dhwc_5_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2126,7 +2126,7 @@
     {
       "starting_address": 24749,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_6_heat_dhw_1x",
+      "entity_id": "dhwc_6_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2139,7 +2139,7 @@
     {
       "starting_address": 24750,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_7_heat_dhw_1x",
+      "entity_id": "dhwc_7_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2152,7 +2152,7 @@
     {
       "starting_address": 24751,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_8_heat_dhw_1x",
+      "entity_id": "dhwc_8_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2165,7 +2165,7 @@
     {
       "starting_address": 24752,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_9_heat_dhw_1x",
+      "entity_id": "dhwc_9_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2178,7 +2178,7 @@
     {
       "starting_address": 24753,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_10_heat_dhw_1x",
+      "entity_id": "dhwc_10_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2191,7 +2191,7 @@
     {
       "starting_address": 24754,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_11_heat_dhw_1x",
+      "entity_id": "dhwc_11_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2204,7 +2204,7 @@
     {
       "starting_address": 24755,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_12_heat_dhw_1x",
+      "entity_id": "dhwc_12_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2217,7 +2217,7 @@
     {
       "starting_address": 24756,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_13_heat_dhw_1x",
+      "entity_id": "dhwc_13_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",
@@ -2230,7 +2230,7 @@
     {
       "starting_address": 24757,
       "name": "Brauchwasser 1x erhitzen",
-      "entity_id": "dhwc_14_heat_dhw_1x",
+      "entity_id": "dhwc_14_boi_schnellladung",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",

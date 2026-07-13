@@ -7,94 +7,9 @@ entity_id values that include the equipment index (e.g., sol_1_status).
 """
 
 import json
-import re
 from pathlib import Path
 
-
-# Character replacements for entity ID sanitization (same as coordinator.py)
-_ENTITY_ID_REPLACEMENTS = str.maketrans({
-    " ": "_",
-    ".": "_",
-    "/": "_",
-    "-": "_",
-    ":": "_",
-    "ä": "ae",
-    "ö": "oe",
-    "ü": "ue",
-    "Ä": "ae",
-    "Ö": "oe",
-    "Ü": "ue",
-    "ß": "ss",
-    "&": "and",
-    "@": "at",
-    "(": "",
-    ")": "",
-    "#": "",
-    "!": "",
-    "?": "",
-    ",": "",
-    ";": "",
-    "'": "",
-    '"': "",
-})
-
-# Equipment prefixes that are 0-indexed (need +1 for entity_id)
-# Includes both English and German variants
-ZERO_INDEXED_PREFIXES = {"PUF", "BUF", "ZIR", "Circ", "WMZ", "HQM", "Zirk"}
-
-
-def sanitize_for_entity_id(name: str) -> str:
-    """Sanitize a string for use in Home Assistant entity IDs."""
-    if not name:
-        return ""
-
-    result = name.translate(_ENTITY_ID_REPLACEMENTS)
-    result = result.lower()
-    result = re.sub(r'[^a-z0-9_]', '', result)
-    result = re.sub(r'_+', '_', result)
-    result = result.strip('_')
-
-    return result
-
-
-def sanitize_index_for_entity_id(index: str) -> str | None:
-    """Sanitize an index string for use in entity_id.
-
-    Converts index like "SOL 1", "PUF 0", "HK 1.1" to entity_id format
-    like "sol_1", "puf_1", "hk_1_1". Handles 0-indexed equipment by converting to 1-based.
-
-    Args:
-        index: The index string (e.g., "SOL 1", "PUF 0", "HK 1.1")
-
-    Returns:
-        Sanitized index string like "sol_1", "hk_1_1", or None if not applicable
-    """
-    if not index:
-        return None
-
-    # Split into prefix and number part
-    parts = index.split(" ", 1)
-    if len(parts) != 2:
-        return None
-
-    prefix = parts[0].strip()
-    number_part = parts[1].strip()
-
-    # Convert 0-indexed equipment to 1-based
-    if prefix in ZERO_INDEXED_PREFIXES:
-        try:
-            num = int(number_part)
-            number_part = str(num + 1)
-        except ValueError:
-            pass  # Keep original if not a simple number
-
-    # Replace dots with underscores for heating circuits (HK 1.1 -> hk_1_1)
-    sanitized_number = number_part.replace(".", "_")
-
-    # Sanitize the prefix (lowercase, handle special chars)
-    sanitized_prefix = sanitize_for_entity_id(prefix)
-
-    return f"{sanitized_prefix}_{sanitized_number}"
+from entity_id_generation import compute_entity_id
 
 
 def load_english_data_from_json(en_dir: Path) -> dict[int, dict[str, str]]:
@@ -149,23 +64,7 @@ def add_entity_ids_to_registers(registers: list[dict], english_data: dict[int, d
         if address is None:
             continue
 
-        # Get English data, fall back to current register data
-        en_data = english_data.get(int(address), {})
-        english_name = en_data.get("name", reg.get("name", ""))
-        english_index = en_data.get("index", "")
-
-        # Generate base entity_id from English name
-        base_entity_id = sanitize_for_entity_id(english_name)
-
-        # Include English index in entity_id if present
-        if english_index:
-            index_prefix = sanitize_index_for_entity_id(english_index)
-            if index_prefix:
-                entity_id = f"{index_prefix}_{base_entity_id}"
-            else:
-                entity_id = base_entity_id
-        else:
-            entity_id = base_entity_id
+        entity_id = compute_entity_id(reg, english_data)
 
         # Check if update is needed
         current_entity_id = reg.get("entity_id", "")
