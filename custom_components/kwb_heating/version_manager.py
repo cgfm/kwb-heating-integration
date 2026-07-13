@@ -111,6 +111,14 @@ class VersionManager:
                     "software_version": 8192,
                     "device_info_start": 8000
                 }
+            },
+            "26.6.1": {
+                "config_path": "versions/v26.6.1",
+                "supported_languages": ["de", "en"],
+                "register_layouts": {
+                    "software_version": 8192,
+                    "device_info_start": 8000
+                }
             }
         }
 
