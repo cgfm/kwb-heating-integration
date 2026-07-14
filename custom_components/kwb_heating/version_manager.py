@@ -209,14 +209,19 @@ class VersionManager:
             return self.default_version
 
     def get_config_path(self, version: str, language: str) -> Path:
-        """Get configuration path for version and language combination.
+        """Get configuration path for a version.
+
+        The config tree is language-merged (one tree per version, not per
+        language) - `language` is only used here to validate/warn if it isn't
+        one of the version's supported_languages. Callers resolve the
+        `{"de": ..., "en": ...}` fields inside the loaded JSON themselves.
 
         Args:
             version: Version string (e.g., "22.7.1")
             language: Language code (e.g., "de", "en")
 
         Returns:
-            Path to configuration directory
+            Path to the version's configuration directory
         """
         # Normalize version if needed
         if version not in self.version_mapping:
@@ -226,25 +231,14 @@ class VersionManager:
         version_info = self.version_mapping.get(version, {})
         config_path = version_info.get("config_path", f"versions/v{version}")
 
-        # Ensure language is supported, fallback to English or the first available
         supported_languages = version_info.get("supported_languages", ["en", "de"])
         if language not in supported_languages:
             _LOGGER.warning(
                 "Language '%s' not explicitly supported for version %s. Supported: %s.",
                 language, version, ", ".join(supported_languages)
             )
-            # Fallback priority: English, then the first language in the list
-            if "en" in supported_languages:
-                language = "en"
-            elif supported_languages:
-                language = supported_languages[0]
-            else:
-                # Last resort if supported_languages is empty
-                language = "en"
-            _LOGGER.info("Falling back to language '%s'", language)
 
-        full_path = self.config_base_path / config_path / language
-        return full_path
+        return self.config_base_path / config_path
 
     def get_supported_versions(self) -> list[str]:
         """Get list of supported software versions.

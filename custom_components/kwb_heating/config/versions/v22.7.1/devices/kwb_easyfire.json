@@ -1,0 +1,878 @@
+{
+  "registers": [
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_kesseltemp_ist.value",
+      "starting_address": 8197,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesseltemperatur Ist (value)",
+        "en": "Boiler temp., actual (value)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_kesseltemp_ist_value",
+      "id": "589"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_kesseltemp_ist.status",
+      "starting_address": 8198,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesseltemperatur Ist (status)",
+        "en": "Boiler temp., actual (status)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_kesseltemp_ist_status",
+      "id": "589"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.kesseltemp_soll",
+      "starting_address": 8199,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_kesseltemp_soll",
+      "id": "617"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.DO_Kesselpumpe",
+      "starting_address": 8200,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_do_kesselpumpe",
+      "id": "608"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "parameter": "KSM.kesselpumpe_steuerstufe",
+      "starting_address": 8201,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe %",
+        "en": "Boiler pump %"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_kesselpumpe_steuerstufe",
+      "id": "758"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_ruecklauftemp_ist.value",
+      "starting_address": 8202,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_ruecklauftemp_ist_value",
+      "id": "590"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_ruecklauftemp_ist.status",
+      "starting_address": 8203,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_ruecklauftemp_ist_status",
+      "id": "590"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.brennerleistung",
+      "starting_address": 8207,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselleistung",
+        "en": "Boiler output"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_brennerleistung",
+      "id": "2"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.kesselstatus_anzeige",
+      "starting_address": 8208,
+      "unit_value_table": "ksm_kesselstatus_anzeige_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_kesselstatus_anzeige",
+      "id": "736"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "KSM.Betriebsminuten_Summe",
+      "starting_address": 8209,
+      "unit_value_table": "min",
+      "expert_level": "read",
+      "name": {
+        "de": "Volllaststunden",
+        "en": "Full load hours"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_betriebsminuten_summe",
+      "id": "729"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.O2Ist",
+      "starting_address": 8214,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_o2ist",
+      "id": "620"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_flammtemp_ist.value",
+      "starting_address": 8215,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Flammtemperatur Ist (value)",
+        "en": "Flame temp., actual (value)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_flammtemp_ist_value",
+      "id": "917"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_flammtemp_ist.status",
+      "starting_address": 8216,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Flammtemperatur Ist (status)",
+        "en": "Flame temp., actual (status)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_flammtemp_ist_status",
+      "id": "917"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.AI_Feuerraum_Unterdruck",
+      "starting_address": 8218,
+      "unit_value_table": "1/10Pa",
+      "expert_level": "read",
+      "name": {
+        "de": "Unterdruck Ist",
+        "en": "Negative pressure, actual"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_ai_feuerraum_unterdruck",
+      "id": "588"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "AK.pl_geblaesestufe",
+      "starting_address": 8221,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Primärgebläse",
+        "en": "Primary fan"
+      },
+      "user_level": "read",
+      "entity_id": "ak_pl_geblaesestufe",
+      "id": "6"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.Saugzugstufe",
+      "starting_address": 8223,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Saugzugstufe",
+        "en": "Induced draught phase"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_saugzugstufe",
+      "id": "626"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.ServiceintervallReststunden",
+      "starting_address": 8224,
+      "unit_value_table": "h",
+      "expert_level": "read",
+      "name": {
+        "de": "Nächste Wartung in",
+        "en": "Next maintenance in"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_serviceintervallreststunden",
+      "id": "739"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "FS.o_motor_foerdersystem_1",
+      "starting_address": 8226,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Antrieb Fördersystem",
+        "en": "Drive, conveyor system"
+      },
+      "user_level": "read",
+      "entity_id": "fs_o_motor_foerdersystem_1",
+      "id": "638"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_extern1",
+      "starting_address": 8227,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Extern 1",
+        "en": "External 1"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_extern1",
+      "id": "595"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_extern2",
+      "starting_address": 8228,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Extern 2",
+        "en": "External 2"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_extern2",
+      "id": "596"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.i_extern3",
+      "starting_address": 8229,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Extern 3",
+        "en": "External 3"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_extern3",
+      "id": "746"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "ksm_i_rauchgastemp_ist_value",
+      "type": "s16",
+      "parameter": "KSM.i_rauchgastemp_ist.value",
+      "starting_address": 8231,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Abgastemperatur (value)",
+        "en": "Exhaust gas temperature (value)"
+      },
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "ksm_i_rauchgastemp_ist_status",
+      "type": "s16",
+      "parameter": "KSM.i_rauchgastemp_ist.status",
+      "starting_address": 8232,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Abgastemperatur (status)",
+        "en": "Exhaust gas temperature (status)"
+      },
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "FS.pelletsverbrauch",
+      "starting_address": 8233,
+      "unit_value_table": "kg",
+      "expert_level": "read",
+      "name": {
+        "de": "Brennstoffverbrauch",
+        "en": "Fuel consumption"
+      },
+      "user_level": "read",
+      "entity_id": "fs_pelletsverbrauch",
+      "id": "630"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "EF2.Brennstofffaktor",
+      "starting_address": 8235,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Brennstofffaktor",
+        "en": "Fuel factor"
+      },
+      "user_level": "read",
+      "entity_id": "ef2_brennstofffaktor",
+      "id": "3"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "AK.externe_brennerleistung",
+      "starting_address": 8236,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Brennerleistung extern",
+        "en": "burner output external"
+      },
+      "user_level": "read",
+      "entity_id": "ak_externe_brennerleistung",
+      "id": "1165"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "AK.externe_kessel_solltemperatur",
+      "starting_address": 8237,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesseltemp. Soll Extern",
+        "en": "Boiler temp. Setpoint extern."
+      },
+      "user_level": "read",
+      "entity_id": "ak_externe_kessel_solltemperatur",
+      "id": "735"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.DO_Pelletssauger",
+      "starting_address": 8238,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Saugturbine",
+        "en": "Suction turbine"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_do_pelletssauger",
+      "id": "637"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "SYSTEM.i_aussen_temperatur.value",
+      "starting_address": 8250,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Außentemperatur Istwert (value)",
+        "en": "Outside temp. act. value (value)"
+      },
+      "user_level": "read",
+      "entity_id": "system_i_aussen_temperatur_value",
+      "id": "390"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "SYSTEM.i_aussen_temperatur.status",
+      "starting_address": 8251,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Außentemperatur Istwert (status)",
+        "en": "Outside temp. act. value (status)"
+      },
+      "user_level": "read",
+      "entity_id": "system_i_aussen_temperatur_status",
+      "id": "390"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.o_multifunktionsausgang_1",
+      "starting_address": 9044,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Multifunktionsausgang 1 (125)",
+        "en": "Multi-function output 1 (125)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_o_multifunktionsausgang_1",
+      "id": "615"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.o_multifunktionsausgang_2",
+      "starting_address": 9045,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Multifunktionsausgang 2 (127)",
+        "en": "Multi-function output 2 (127)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_o_multifunktionsausgang_2",
+      "id": "678"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.o_multifunktionsausgang_3",
+      "starting_address": 9046,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Multifunktionsausgang 3 (124)",
+        "en": "Multi-function output 3 (124)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_o_multifunktionsausgang_3",
+      "id": "1162"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.o_multifunktionsausgang_4",
+      "starting_address": 9047,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Multifunktionsausgang 4 (126)",
+        "en": "Multi-function output 4 (126)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_o_multifunktionsausgang_4",
+      "id": "610"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.modbus_ueberhitzung",
+      "starting_address": 9495,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Modbus Überhitzung",
+        "en": "Modbus overheating"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_ueberhitzung",
+      "id": "2085"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.modbus_waermeabnahme_max",
+      "starting_address": 9496,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Modbus Wärmeabnahme Max",
+        "en": "Modbus heat consumption Max"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_waermeabnahme_max",
+      "id": "2086"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "parameter": "KSM.aschefuellstand",
+      "starting_address": 9497,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Füllstand Aschebehälter",
+        "en": "Fill level, ash container"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_aschefuellstand",
+      "id": "1343"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "parameter": "KSM.i_drehzahl_saugzug",
+      "starting_address": 9498,
+      "unit_value_table": {
+        "de": "Upm",
+        "en": "rpm"
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl Saugzug",
+        "en": "Induced draught speed"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_i_drehzahl_saugzug",
+      "id": "587"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "AK.anforderung_bl_ursache",
+      "starting_address": 9877,
+      "unit_value_table": "ak_anf_bl_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Brennerleistung bestimmt durch",
+        "en": "Burner output determined by"
+      },
+      "user_level": "read",
+      "entity_id": "ak_anforderung_bl_ursache",
+      "id": "1166"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "KSM.waermemenge_gesamt",
+      "starting_address": 9878,
+      "unit_value_table": "1/10kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat quant. tot."
+      },
+      "user_level": "read",
+      "entity_id": "ksm_waermemenge_gesamt",
+      "id": "2342"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.kesselstatus_anzeige_simple",
+      "starting_address": 9970,
+      "unit_value_table": "kfk_kesselstatus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_kesselstatus_anzeige_simple",
+      "id": "2441"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "fs_pelletverbrauch_reset_counter",
+      "type": "u16",
+      "parameter": "FS.pelletverbrauch_reset_counter",
+      "starting_address": 9988,
+      "expert_level": "read",
+      "name": {
+        "de": "Brennstoffverbrauch Rücksetzzähler",
+        "en": "Fuel consumption reset counter"
+      },
+      "id": "2458",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "AK.anlage_ein",
+      "starting_address": 24576,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Kessel Ein/Aus",
+        "en": "Boiler on/off"
+      },
+      "user_level": "readwrite",
+      "entity_id": "ak_anlage_ein",
+      "id": "1"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "EF2.KesseltempSoll1",
+      "starting_address": 24577,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Solltemperatur 1",
+        "en": "Setpoint temperature 1"
+      },
+      "min": 600,
+      "user_level": "read",
+      "entity_id": "ef2_kesseltempsoll1",
+      "max": 800,
+      "id": "32"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "EF2.KesseltempSoll2",
+      "starting_address": 24578,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Solltemperatur 2",
+        "en": "Setpoint temperature 2"
+      },
+      "min": 600,
+      "user_level": "read",
+      "entity_id": "ef2_kesseltempsoll2",
+      "max": 800,
+      "id": "33"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.RuecklauftempMin",
+      "starting_address": 24581,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Rücklauftemperatur Minimum",
+        "en": "Return flow temperature, minimum"
+      },
+      "min": 400,
+      "user_level": "read",
+      "entity_id": "ksm_ruecklauftempmin",
+      "max": 700,
+      "id": "624"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "AK.externe_vorgabe",
+      "starting_address": 24583,
+      "unit_value_table": "ak_externe_vorgabe_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Externe Vorgabe",
+        "en": "External specification"
+      },
+      "user_level": "read",
+      "entity_id": "ak_externe_vorgabe",
+      "id": "1164"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "AK.kesselprogramm",
+      "starting_address": 24584,
+      "unit_value_table": "ak_kesselprogramm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Kesselprogramm",
+        "en": "Boiler program"
+      },
+      "user_level": "read",
+      "entity_id": "ak_kesselprogramm",
+      "id": "5"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "ksm_modbus_lifetick",
+      "type": "u16",
+      "parameter": "KSM.modbus_lifetick",
+      "starting_address": 24849,
+      "expert_level": "readwrite",
+      "name": "Modbus Lifetick",
+      "id": "2069",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "ksm_modbus_commit_lifetick",
+      "type": "u16",
+      "parameter": "KSM.modbus_commit_lifetick",
+      "starting_address": 24850,
+      "expert_level": "read",
+      "name": "Modbus Commit Lifetick",
+      "id": "2070",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.modbus_kesseltemp_vorgabe",
+      "starting_address": 24851,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Kesseltemperatur",
+        "en": "Modbus boiler temperature"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_kesseltemp_vorgabe",
+      "id": "2082"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.modbus_leistung_vorgabe",
+      "starting_address": 24852,
+      "unit_value_table": "1/10%",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Kesselleistung",
+        "en": "Modbus boiler output"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_leistung_vorgabe",
+      "id": "2083"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.modbus_kesselanforderung",
+      "starting_address": 24854,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Kesselanforderung",
+        "en": "Modbus boiler request"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_kesselanforderung",
+      "id": "2084"
+    },
+    {
+      "data_type": "03",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "KSM.restmenge_brennstofflager",
+      "starting_address": 24927,
+      "unit_value_table": "kg",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Restmenge Brennstofflager",
+        "en": "Residual amount fuel storage"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "ksm_restmenge_brennstofflager",
+      "max": 100000,
+      "id": "1335"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.modbus_puffertemperatur_oben.value",
+      "starting_address": 24932,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Puffertemperatur oben für Restwärmenutzung (value)",
+        "en": "Modbus buffer temperature top for residual heat use (value)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_puffertemperatur_oben_value",
+      "id": "2283"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.modbus_puffertemperatur_oben.status",
+      "starting_address": 24933,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Puffertemperatur oben für Restwärmenutzung (status)",
+        "en": "Modbus buffer temperature top for residual heat use (status)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_puffertemperatur_oben_status",
+      "id": "2283"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.modbus_puffertemperatur_unten.value",
+      "starting_address": 24934,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Puffertemperatur unten für Restwärmenutzung (value)",
+        "en": "Modbus buffer temperature bottom for residual heat use (value)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_puffertemperatur_unten_value",
+      "id": "2284"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "KSM.modbus_puffertemperatur_unten.status",
+      "starting_address": 24935,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Puffertemperatur unten für Restwärmenutzung (status)",
+        "en": "Modbus buffer temperature bottom for residual heat use (status)"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_modbus_puffertemperatur_unten_status",
+      "id": "2284"
+    }
+  ]
+}

@@ -1,0 +1,1532 @@
+{
+  "value_tables": {
+    "ak_anf_bl_ursache_t": {
+      "1": {
+        "de": "Normalbetrieb",
+        "en": "Normal operation"
+      },
+      "2": {
+        "de": "Einmessen",
+        "en": "Measuring"
+      },
+      "3": {
+        "de": "Kaminkehrer",
+        "en": "Chimney sweep"
+      },
+      "4": {
+        "de": "Extern",
+        "en": "External"
+      },
+      "5": {
+        "de": "Extern überhitzt",
+        "en": "External overheated"
+      },
+      "6": {
+        "de": "Stoker leeren",
+        "en": "Clear stoker"
+      },
+      "7": {
+        "de": "Min. für Reinigung",
+        "en": "Min. for cleaning"
+      },
+      "8": {
+        "de": "Stoker Überhitzung",
+        "en": "Stoker, overheating"
+      },
+      "9": {
+        "de": "Zyklusbetrieb",
+        "en": "Cycle operation"
+      },
+      "10": {
+        "de": "Puffermanagement",
+        "en": "Buffer management"
+      },
+      "11": {
+        "de": "PuMgmt. überhitzt",
+        "en": "BuMgmt overheated"
+      },
+      "12": {
+        "de": "Modbus",
+        "en": "Modbus"
+      },
+      "13": {
+        "de": "Modbus Clee",
+        "en": "Modbus Clee"
+      }
+    },
+    "ak_externe_vorgabe_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Temperatur",
+        "en": "Temp."
+      },
+      "2": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "3": {
+        "de": "Modbus",
+        "en": "Modbus"
+      },
+      "4": {
+        "de": "Modbus",
+        "en": "Modbus"
+      }
+    },
+    "ak_kesselprogramm_t": {
+      "0": {
+        "de": "Anforderung",
+        "en": "request"
+      },
+      "1": {
+        "de": "Zeitprogramm",
+        "en": "Time program"
+      },
+      "2": {
+        "de": "Dauerbetrieb",
+        "en": "Continuous operation"
+      },
+      "3": {
+        "de": "Modbus Temperatur",
+        "en": "Modbus temperature"
+      },
+      "4": {
+        "de": "Modbus Leistung+Temperatur",
+        "en": "Modbus output+temperature"
+      }
+    },
+    "boiler_programm_t": {
+      "0": {
+        "de": "Zeit",
+        "en": "Time"
+      },
+      "1": {
+        "de": "Temp.",
+        "en": "Temp."
+      },
+      "2": {
+        "de": "Aus",
+        "en": "Off"
+      }
+    },
+    "boiler_quelle_t": {
+      "0": {
+        "de": "Wärmepumpe 1",
+        "en": "Heat pump 1"
+      },
+      "1": {
+        "de": "Puffer",
+        "en": "Buffer"
+      },
+      "2": {
+        "de": "WP1 oder Puffer",
+        "en": "HP1 or buffer"
+      }
+    },
+    "boiler_status_t": {
+      "0": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "1": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "2": {
+        "de": "Legionellenschutz",
+        "en": "Legionella protection"
+      },
+      "3": {
+        "de": "Urlaub",
+        "en": "Holiday"
+      },
+      "4": {
+        "de": "Einmalladung",
+        "en": "One-time charge"
+      },
+      "5": {
+        "de": "Außerhalb der Ladezeit",
+        "en": "Outside of charging time"
+      },
+      "6": {
+        "de": "Laden bis Solltemp.",
+        "en": "Charge to target temp."
+      },
+      "7": {
+        "de": "Temp. ausreichend",
+        "en": "Temp. sufficient"
+      },
+      "8": {
+        "de": "Blockierschutz",
+        "en": "Blocking protection"
+      },
+      "9": {
+        "de": "Warten Pumpenfreigabe",
+        "en": "Waiting, pump release"
+      },
+      "10": {
+        "de": "Kessel Überhitzung",
+        "en": "Boiler overheating"
+      },
+      "11": {
+        "de": "ZWQ Überhitzung",
+        "en": "SHS, overheating"
+      },
+      "12": {
+        "de": "max. Wärmeabnahme",
+        "en": "max. heat reduction"
+      },
+      "13": {
+        "de": "Nachlauf",
+        "en": "Afterrun"
+      },
+      "14": {
+        "de": "Nachlauf (Warten Freig.)",
+        "en": "Afterrun (waiting release)"
+      },
+      "15": {
+        "de": "SmartGrid Heizen",
+        "en": null
+      },
+      "16": {
+        "de": "SmartGrid Clee Heizen",
+        "en": null
+      }
+    },
+    "cf2_automatische_zuendung_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Auswahl",
+        "en": "Selection"
+      },
+      "2": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "3": {
+        "de": "Sofort",
+        "en": "immediately"
+      }
+    },
+    "cf2_betriebsmodus_t": {
+      "0": {
+        "de": "Kein",
+        "en": "None"
+      },
+      "1": {
+        "de": "Stückholz",
+        "en": "Log wood"
+      },
+      "2": {
+        "de": "Pellets",
+        "en": "Pellets"
+      },
+      "3": {
+        "de": "Stückholz (PM Nachlauf)",
+        "en": "Log wood (PM afterrun)"
+      },
+      "4": {
+        "de": "Relaistest",
+        "en": "Relay test"
+      }
+    },
+    "cf2_max_befuellgrad_anzeige_t": {
+      "0": {
+        "de": "Keine",
+        "en": "None"
+      },
+      "1": {
+        "de": "Ein Drittel",
+        "en": "One third"
+      },
+      "2": {
+        "de": "Zwei Drittel",
+        "en": "Two thirds"
+      },
+      "3": {
+        "de": "Voll",
+        "en": "Full"
+      }
+    },
+    "comfortenergy_status_t": {
+      "0": {
+        "de": "deaktiviert",
+        "en": "disabled"
+      },
+      "1": {
+        "de": "offline",
+        "en": "offline"
+      },
+      "2": {
+        "de": "online",
+        "en": "online"
+      }
+    },
+    "eap_anforderung_ursache_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Heizen Heizkreis",
+        "en": "Heating heating circuit"
+      },
+      "2": {
+        "de": "Heizen Warmw.",
+        "en": "Heating hot water"
+      },
+      "3": {
+        "de": "Kühlen",
+        "en": "Cooling"
+      },
+      "4": {
+        "de": "Relaistest",
+        "en": "Relay test"
+      },
+      "5": {
+        "de": "Testbetrieb",
+        "en": "Test mode"
+      },
+      "6": {
+        "de": "Modbus Aus",
+        "en": null
+      },
+      "7": {
+        "de": "Modb. Heizen Hk",
+        "en": null
+      },
+      "8": {
+        "de": "Modb. Heizen Ww",
+        "en": null
+      },
+      "9": {
+        "de": "Modbus Kühlen",
+        "en": null
+      },
+      "10": {
+        "de": "Gesp. durch ZWQ",
+        "en": null
+      },
+      "11": {
+        "de": "Modb. Aus (Warmw.)",
+        "en": null
+      },
+      "12": {
+        "de": "SG Heizen Hk",
+        "en": null
+      },
+      "13": {
+        "de": "SG Kühlen",
+        "en": null
+      }
+    },
+    "eap_erweiterter_betriebsstatus_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Heizen Heizkreis",
+        "en": "Heating heating circuit"
+      },
+      "2": {
+        "de": "Kühlen",
+        "en": "Cooling"
+      },
+      "4": {
+        "de": "Heizen WW",
+        "en": "Heating hot water"
+      }
+    },
+    "eap_heizen_kuehlen_t": {
+      "0": {
+        "de": "Heizen",
+        "en": null
+      },
+      "1": {
+        "de": "Kühlen",
+        "en": null
+      }
+    },
+    "eap_status_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Betrieb",
+        "en": "Operation"
+      },
+      "2": {
+        "de": "Kühlen",
+        "en": null
+      },
+      "3": {
+        "de": "Sperre (Bivalenz, WW)",
+        "en": null
+      },
+      "4": {
+        "de": "WW Heizbetrieb",
+        "en": null
+      },
+      "5": {
+        "de": "WP Frostschutz",
+        "en": null
+      },
+      "6": {
+        "de": "WP Temp. zu tief",
+        "en": null
+      },
+      "7": {
+        "de": "WP-Vorlauf zu hoch",
+        "en": null
+      },
+      "8": {
+        "de": "Abtauung",
+        "en": null
+      },
+      "9": {
+        "de": "Kühlen (passiv)",
+        "en": null
+      },
+      "11": {
+        "de": "HD Störung",
+        "en": null
+      },
+      "12": {
+        "de": "Niederdruck Störung",
+        "en": null
+      },
+      "16": {
+        "de": "Wiedereinschalt Verzögerung",
+        "en": null
+      },
+      "17": {
+        "de": "EVU-Sperre",
+        "en": "ESC block"
+      },
+      "18": {
+        "de": "Vorlaufzeit prim.",
+        "en": null
+      },
+      "19": {
+        "de": "Nachlaufzeit prim.",
+        "en": null
+      },
+      "44": {
+        "de": "MOP",
+        "en": null
+      },
+      "49": {
+        "de": "Erfolglose Abtauung",
+        "en": null
+      },
+      "51": {
+        "de": "Vorlaufzeit Kond.Pumpe",
+        "en": null
+      },
+      "55": {
+        "de": "Störung Kommunikation",
+        "en": null
+      },
+      "73": {
+        "de": "Durchfluss WQ/GW Kreis",
+        "en": null
+      },
+      "77": {
+        "de": "Begrenzung Verdichter",
+        "en": null
+      },
+      "95": {
+        "de": "Flüsterbetrieb",
+        "en": null
+      },
+      "96": {
+        "de": "Leistungsbegrenzung aktiv",
+        "en": null
+      },
+      "97": {
+        "de": "Kompressor Öl vorheizen",
+        "en": null
+      },
+      "98": {
+        "de": "Kaltstart",
+        "en": null
+      },
+      "99": {
+        "de": "Nicht konfiguriert",
+        "en": null
+      }
+    },
+    "eap_zustand_t": {
+      "0": {
+        "de": "Ok",
+        "en": "Ok"
+      },
+      "1": {
+        "de": "Fehler",
+        "en": "Error"
+      },
+      "2": {
+        "de": "Warnung",
+        "en": "Warning"
+      }
+    },
+    "hk_betriebsart_t": {
+      "0": {
+        "de": "Heizen",
+        "en": null
+      },
+      "1": {
+        "de": "Kühlen",
+        "en": null
+      },
+      "2": {
+        "de": "Auto",
+        "en": null
+      }
+    },
+    "hk_modbus_programm_t": {
+      "0": {
+        "de": "Frostschutz",
+        "en": "Frost protection"
+      },
+      "1": {
+        "de": "Absenk  auto",
+        "en": "Reduct  auto"
+      },
+      "2": {
+        "de": "Komfort auto",
+        "en": "Comfort auto"
+      },
+      "3": {
+        "de": "Absenk",
+        "en": "Reduct"
+      },
+      "4": {
+        "de": "Komfort",
+        "en": "Comfort"
+      }
+    },
+    "hk_modbus_temperatur_auswahl_t": {
+      "0": {
+        "de": "Vorlauftemp. Soll",
+        "en": "Forward flow temp."
+      },
+      "1": {
+        "de": "Raumtemp. Soll",
+        "en": "Room temp."
+      }
+    },
+    "hk_programm_t": {
+      "0": {
+        "de": "Automatik",
+        "en": "Automatic"
+      },
+      "1": {
+        "de": "Frostschutz",
+        "en": "Frost protection"
+      },
+      "2": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "3": {
+        "de": "Komfort",
+        "en": "Comfort"
+      },
+      "4": {
+        "de": "Absenk",
+        "en": "Reduct"
+      }
+    },
+    "hk_status_t": {
+      "0": {
+        "de": "Absenk",
+        "en": "Reduct"
+      },
+      "1": {
+        "de": "Komfort",
+        "en": "Comfort"
+      },
+      "2": {
+        "de": "Frostschutz",
+        "en": "Frost protection"
+      },
+      "3": {
+        "de": "Urlaub",
+        "en": "Holiday"
+      },
+      "4": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "5": {
+        "de": "Estrich",
+        "en": "Screed"
+      },
+      "6": {
+        "de": "Max. Wärmeabnahme",
+        "en": "Max. heat reduction"
+      },
+      "7": {
+        "de": "Max. Wärmeabnahme",
+        "en": "Max. heat reduction"
+      },
+      "8": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp."
+      },
+      "9": {
+        "de": "Modbus Absenk auto",
+        "en": "Modbus Reduct auto"
+      },
+      "10": {
+        "de": "Modbus Komfort auto",
+        "en": "Modbus Comfort auto"
+      },
+      "11": {
+        "de": "Modbus Frostschutz",
+        "en": "Modbus Frost protection"
+      },
+      "12": {
+        "de": "Vormischer Betrieb",
+        "en": "Premixer operation"
+      },
+      "13": {
+        "de": "Modbus Absenk",
+        "en": "Modbus Reduct"
+      },
+      "14": {
+        "de": "Modbus Komfort",
+        "en": "Modbus Comfort"
+      }
+    },
+    "hk_typ_t": {
+      "0": {
+        "de": "Heizkreis",
+        "en": "Heat.circ"
+      },
+      "1": {
+        "de": "Heiz-/Kühlkreis",
+        "en": null
+      },
+      "2": {
+        "de": "Kühlkreis",
+        "en": null
+      }
+    },
+    "kesselseriennummer_san_code_t": {
+      "0": {
+        "de": "...",
+        "en": "..."
+      },
+      "1": {
+        "de": "000-",
+        "en": "000-"
+      },
+      "2": {
+        "de": "02SAN",
+        "en": "02SAN"
+      },
+      "3": {
+        "de": "03SAN",
+        "en": "03SAN"
+      },
+      "4": {
+        "de": "04SAN",
+        "en": "04SAN"
+      },
+      "5": {
+        "de": "05SAN",
+        "en": "05SAN"
+      },
+      "6": {
+        "de": "06SAN",
+        "en": "06SAN"
+      },
+      "7": {
+        "de": "07SAN",
+        "en": "07SAN"
+      },
+      "8": {
+        "de": "08SAN",
+        "en": "08SAN"
+      },
+      "9": {
+        "de": "09SAN",
+        "en": "09SAN"
+      },
+      "10": {
+        "de": "10SAN",
+        "en": "10SAN"
+      },
+      "11": {
+        "de": "11SAN",
+        "en": "11SAN"
+      },
+      "12": {
+        "de": "12SAN",
+        "en": "12SAN"
+      },
+      "13": {
+        "de": "13SAN",
+        "en": "13SAN"
+      },
+      "14": {
+        "de": "14SAN",
+        "en": "14SAN"
+      },
+      "15": {
+        "de": "15SAN",
+        "en": "15SAN"
+      },
+      "16": {
+        "de": "16SAN",
+        "en": "16SAN"
+      },
+      "17": {
+        "de": "17SAN",
+        "en": "17SAN"
+      },
+      "18": {
+        "de": "18SAN",
+        "en": "18SAN"
+      },
+      "19": {
+        "de": "19SAN",
+        "en": "19SAN"
+      },
+      "20": {
+        "de": "20SAN",
+        "en": "20SAN"
+      },
+      "21": {
+        "de": "21SAN",
+        "en": "21SAN"
+      },
+      "22": {
+        "de": "22SAN",
+        "en": "22SAN"
+      },
+      "23": {
+        "de": "23SAN",
+        "en": "23SAN"
+      },
+      "24": {
+        "de": "24SAN",
+        "en": "24SAN"
+      },
+      "25": {
+        "de": "25SAN",
+        "en": "25SAN"
+      },
+      "26": {
+        "de": "26SAN",
+        "en": "26SAN"
+      },
+      "27": {
+        "de": "27SAN",
+        "en": "27SAN"
+      },
+      "28": {
+        "de": "28SAN",
+        "en": "28SAN"
+      },
+      "29": {
+        "de": "29SAN",
+        "en": "29SAN"
+      },
+      "30": {
+        "de": "30SAN",
+        "en": "30SAN"
+      },
+      "31": {
+        "de": "31SAN",
+        "en": "31SAN"
+      },
+      "32": {
+        "de": "32SAN",
+        "en": "32SAN"
+      },
+      "33": {
+        "de": "33SAN",
+        "en": "33SAN"
+      },
+      "34": {
+        "de": "34SAN",
+        "en": "34SAN"
+      },
+      "35": {
+        "de": "35SAN",
+        "en": "35SAN"
+      },
+      "36": {
+        "de": "36SAN",
+        "en": "36SAN"
+      },
+      "37": {
+        "de": "37SAN",
+        "en": "37SAN"
+      },
+      "38": {
+        "de": "38SAN",
+        "en": "38SAN"
+      },
+      "39": {
+        "de": "39SAN",
+        "en": "39SAN"
+      },
+      "40": {
+        "de": "40SAN",
+        "en": "40SAN"
+      },
+      "41": {
+        "de": "41SAN",
+        "en": "41SAN"
+      },
+      "42": {
+        "de": "42SAN",
+        "en": "42SAN"
+      },
+      "43": {
+        "de": "43SAN",
+        "en": "43SAN"
+      },
+      "44": {
+        "de": "44SAN",
+        "en": "44SAN"
+      },
+      "45": {
+        "de": "45SAN",
+        "en": "45SAN"
+      },
+      "46": {
+        "de": "46SAN",
+        "en": "46SAN"
+      },
+      "47": {
+        "de": "47SAN",
+        "en": "47SAN"
+      },
+      "48": {
+        "de": "48SAN",
+        "en": "48SAN"
+      },
+      "49": {
+        "de": "49SAN",
+        "en": "49SAN"
+      },
+      "50": {
+        "de": "50SAN",
+        "en": "50SAN"
+      }
+    },
+    "kfk_kesselstatus_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Bereitschaft",
+        "en": "Standby"
+      },
+      "2": {
+        "de": "Zünden",
+        "en": "Ignition"
+      },
+      "3": {
+        "de": "Betrieb",
+        "en": "operation"
+      },
+      "4": {
+        "de": "Nachlauf",
+        "en": "Afterrun"
+      },
+      "5": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "6": {
+        "de": "Bereit (SH)",
+        "en": "Ready (LW)"
+      },
+      "7": {
+        "de": "Betrieb (SH)",
+        "en": "operation (LW)"
+      }
+    },
+    "kfs_angeforderte_kessel_t": {
+      "1": {
+        "de": "1",
+        "en": "1"
+      },
+      "2": {
+        "de": "2",
+        "en": "2"
+      },
+      "3": {
+        "de": "3",
+        "en": "3"
+      },
+      "4": {
+        "de": "4",
+        "en": "4"
+      },
+      "5": {
+        "de": "5",
+        "en": "5"
+      },
+      "6": {
+        "de": "6",
+        "en": "6"
+      },
+      "7": {
+        "de": "7",
+        "en": "7"
+      },
+      "8": {
+        "de": "8",
+        "en": "8"
+      }
+    },
+    "kfs_profile_t": {
+      "0": {
+        "de": "Winter",
+        "en": "Winter"
+      },
+      "1": {
+        "de": "Sommer",
+        "en": "Summer"
+      }
+    },
+    "ksm_kesselstatus_anzeige_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Messbetrieb",
+        "en": "Measuring mode"
+      },
+      "2": {
+        "de": "Betrieb (Reinigung)",
+        "en": "Operation (Cleaning):"
+      },
+      "3": {
+        "de": "Einmessen",
+        "en": "Measuring"
+      },
+      "4": {
+        "de": "Betrieb",
+        "en": "operation"
+      },
+      "5": {
+        "de": "Nachlauf",
+        "en": "Afterrun"
+      },
+      "6": {
+        "de": "Neustart",
+        "en": "Restart"
+      },
+      "7": {
+        "de": "Störung Nachlauf",
+        "en": "Fault afterrun"
+      },
+      "8": {
+        "de": "Störung Aus",
+        "en": "Fault Off"
+      },
+      "9": {
+        "de": "Wartung",
+        "en": "Maintenance"
+      },
+      "10": {
+        "de": "Bereit (-Zuendanf)",
+        "en": "Ready (-IgnStart)"
+      },
+      "11": {
+        "de": "Zünden Start Saugzug",
+        "en": "Ignite start suction"
+      },
+      "12": {
+        "de": "Zünden FS Füllen",
+        "en": "Ignition fill fuel supply"
+      },
+      "13": {
+        "de": "Zünden Einschieben 1",
+        "en": "Ignition feeding 1"
+      },
+      "14": {
+        "de": "Zünden Einschieben 3",
+        "en": "Ignition feeding 3"
+      },
+      "15": {
+        "de": "Zünden Heizen",
+        "en": "Ignition heating"
+      },
+      "16": {
+        "de": "Heizen Durchzünden",
+        "en": "Heating - complete ignition"
+      },
+      "17": {
+        "de": "Zünden Einschieben 2",
+        "en": "Ignition feeding 2"
+      },
+      "18": {
+        "de": "Zünden Warten",
+        "en": "Ignition wait"
+      },
+      "19": {
+        "de": "Durchzünden",
+        "en": "Complete ignition"
+      },
+      "20": {
+        "de": "1. IB Betrieb",
+        "en": "1. IB operation"
+      },
+      "21": {
+        "de": "Bereit (-Ext1)",
+        "en": "Ready (-Ext1)"
+      },
+      "22": {
+        "de": "Bereit (-Zweitkessel)",
+        "en": "Ready (-SecondBoiler)"
+      },
+      "23": {
+        "de": "Bereit (-FS)",
+        "en": "Ready (-CS)"
+      },
+      "24": {
+        "de": "Bereit (-Reinigung)",
+        "en": "Ready (-Cleaning)"
+      },
+      "25": {
+        "de": "Bereit (+Stop)",
+        "en": "Ready (+Stop)"
+      },
+      "26": {
+        "de": "Bereit (-Ext3)",
+        "en": "Ready (-Ext3)"
+      },
+      "27": {
+        "de": "Bereit (-Lambdasonde)",
+        "en": "Ready (-lambda probe)"
+      },
+      "30": {
+        "de": "Bereit (-Anf)",
+        "en": "Ready (-Requ)"
+      },
+      "31": {
+        "de": "Bereit (+Wartezeit)",
+        "en": "Ready (+Wait time)"
+      },
+      "32": {
+        "de": "Bereit (+Anf)",
+        "en": "Ready (+Requ)"
+      },
+      "34": {
+        "de": "Betrieb Leerschieben",
+        "en": "Empty out operation"
+      },
+      "35": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "36": {
+        "de": "Anheizen",
+        "en": "Heating-up"
+      },
+      "37": {
+        "de": "Warten Zündanf.",
+        "en": "Wait ignition requ."
+      },
+      "38": {
+        "de": "Warten Zündfreig.",
+        "en": "Wait ignition rel."
+      },
+      "39": {
+        "de": "Start Zündung",
+        "en": "Start ignition"
+      },
+      "40": {
+        "de": "Zünden",
+        "en": "Ignition"
+      },
+      "41": {
+        "de": "Heizen",
+        "en": "Heating"
+      },
+      "42": {
+        "de": "Feuerhaltung",
+        "en": "Fire maintenance"
+      },
+      "43": {
+        "de": "Feuer aus",
+        "en": "Fire off"
+      },
+      "44": {
+        "de": "Störung Feuer aus",
+        "en": "Fault fire out"
+      },
+      "45": {
+        "de": "Tür offen",
+        "en": "Door open"
+      },
+      "46": {
+        "de": "Überhitzung",
+        "en": "Overheating"
+      },
+      "47": {
+        "de": "Störung Feuerhaltung",
+        "en": "Fault, fire maintenance"
+      },
+      "49": {
+        "de": "Sh aus, PM freigegeben",
+        "en": "Sh off, PM released"
+      },
+      "50": {
+        "de": "Start Pelletmodul",
+        "en": "Start pellet module"
+      },
+      "51": {
+        "de": "Pelletmodul Gesperrt",
+        "en": "Pellet module locked"
+      },
+      "52": {
+        "de": "Wartung",
+        "en": "Maintenance"
+      },
+      "53": {
+        "de": "Betrieb vor Wartung",
+        "en": "Operation before maint."
+      },
+      "54": {
+        "de": "Wartungsabschaltung",
+        "en": "Maintenance switch off"
+      },
+      "71": {
+        "de": "Nachlauf Rost",
+        "en": null
+      },
+      "72": {
+        "de": "Nachlauf Rost PLK",
+        "en": null
+      },
+      "73": {
+        "de": "Nl. Rost Flammtemperatur",
+        "en": null
+      },
+      "74": {
+        "de": "Nachlauf Rostasche",
+        "en": null
+      },
+      "75": {
+        "de": "Nachlauf Rost PLK schließt",
+        "en": null
+      },
+      "76": {
+        "de": "Nachlauf Reinigung",
+        "en": null
+      }
+    },
+    "ksm_verbraucher_anforderung_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Heizkreis",
+        "en": "Heat.circ"
+      },
+      "2": {
+        "de": "BWS",
+        "en": "DHWC"
+      },
+      "3": {
+        "de": "Puffer",
+        "en": "Buffer"
+      }
+    },
+    "modbus_vorgabe_durch_t": {
+      "0": {
+        "de": "Extern",
+        "en": "External"
+      },
+      "1": {
+        "de": "Clee",
+        "en": "Clee"
+      },
+      "2": {
+        "de": "KFS",
+        "en": "BMSC"
+      }
+    },
+    "puffer_o_umschaltventil_t": {
+      "0": {
+        "de": "Nicht vorhanden",
+        "en": "Not available"
+      },
+      "1": {
+        "de": "Oben",
+        "en": "Top"
+      },
+      "2": {
+        "de": "Unten",
+        "en": "Bottom"
+      }
+    },
+    "puffer_programm_t": {
+      "0": {
+        "de": "Zeit",
+        "en": "Time"
+      },
+      "1": {
+        "de": "Temperatur",
+        "en": "Temperature"
+      },
+      "2": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "3": {
+        "de": "Zeit+",
+        "en": "Time+"
+      },
+      "4": {
+        "de": "Sommer",
+        "en": "Summer"
+      }
+    },
+    "solar_programm_t": {
+      "0": {
+        "de": "Automatik",
+        "en": "Automatic"
+      },
+      "1": {
+        "de": "Handbetrieb",
+        "en": "Manual mode"
+      },
+      "2": {
+        "de": "Aus",
+        "en": "Off"
+      }
+    },
+    "solar_status_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Handbetrieb",
+        "en": "Manual mode"
+      },
+      "2": {
+        "de": "Laden Speicher 1",
+        "en": "Charge storage tank 1"
+      },
+      "3": {
+        "de": "Laden Speicher 2",
+        "en": "Charge storage tank 2"
+      },
+      "4": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "5": {
+        "de": "Solarschutz",
+        "en": "Solar protection"
+      },
+      "6": {
+        "de": "Rückkühlung 1",
+        "en": "Back cooling 1"
+      },
+      "7": {
+        "de": "Rückkühlung 2",
+        "en": "Back cooling 2"
+      },
+      "8": {
+        "de": "Frostschutz",
+        "en": "Frost protection"
+      }
+    },
+    "solar_status_ursache_t": {
+      "0": {
+        "de": "Programm Aus",
+        "en": "Program Off"
+      },
+      "1": {
+        "de": "Handbetrieb",
+        "en": "Manual mode"
+      },
+      "2": {
+        "de": "Kollektortemperatur ausreichend",
+        "en": "Collector tem. sufficient"
+      },
+      "3": {
+        "de": "Temperaturdifferenz Kollektor / Speicher 1 zu gering",
+        "en": "Tem.Diff.Coll/stor.tank 1 ins."
+      },
+      "4": {
+        "de": "Maximaltemperatur Speicher 1 überschritten",
+        "en": "Max. tem. storage tank 1 exc."
+      },
+      "5": {
+        "de": "Maximaltemperatur Speicher 2 überschritten",
+        "en": "Max.tem. storage tank 2 ex."
+      },
+      "6": {
+        "de": "Absoluter Vorrang (Kollektortemperatur zu gering)",
+        "en": "Absolute priority (collector temperature too low)"
+      },
+      "7": {
+        "de": "Blockierschutz",
+        "en": "Blocking protection"
+      },
+      "8": {
+        "de": "Kollektortemperatur zu hoch",
+        "en": "Collector tem.too high"
+      },
+      "9": {
+        "de": "Alarm im Solarkreis aktiv",
+        "en": "Alarm active in solar circuit"
+      },
+      "10": {
+        "de": "Maximaltemperatur Speicher 1+2 überschritten",
+        "en": "Max.tem.Stor.tank 1+2 exce."
+      },
+      "11": {
+        "de": "Kollektorminimaltemperatur unterschritten",
+        "en": "Coll.min.temp.undershot"
+      },
+      "12": {
+        "de": "Frostschutz",
+        "en": "Frost protection"
+      },
+      "13": {
+        "de": "Intervallfunktion",
+        "en": "Interval function"
+      },
+      "14": {
+        "de": "Rückkühlung",
+        "en": "Back cooling"
+      }
+    },
+    "system_ein_aus_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Ein",
+        "en": "On"
+      }
+    },
+    "system_gui_kessel_typ_t": {
+      "0": {
+        "de": "-",
+        "en": "-"
+      },
+      "1": {
+        "de": "KWB Easyfire",
+        "en": "KWB Easyfire"
+      },
+      "2": {
+        "de": "KWB CF 2",
+        "en": "KWB CF 2"
+      },
+      "3": {
+        "de": "KWB Combifire",
+        "en": "KWB Combifire"
+      },
+      "4": {
+        "de": "KWB Multifire",
+        "en": "KWB Multifire"
+      },
+      "5": {
+        "de": "KWB Pelletfire+",
+        "en": "KWB Pelletfire+"
+      },
+      "6": {
+        "de": "KWB CF 1",
+        "en": "KWB CF 1"
+      },
+      "7": {
+        "de": "Kein",
+        "en": "None"
+      },
+      "8": {
+        "de": "KWB CF 1.5",
+        "en": "KWB CF 1.5"
+      },
+      "9": {
+        "de": "KWB Easyfire 3",
+        "en": "KWB Easyfire 3"
+      },
+      "10": {
+        "de": "KWB Multifire 3",
+        "en": "KWB Multifire 3"
+      }
+    },
+    "system_sensor_status_t": {
+      "0": {
+        "de": "Defekt",
+        "en": "Faulty"
+      },
+      "1": {
+        "de": "Fehlt",
+        "en": "Missing"
+      },
+      "2": {
+        "de": "OK",
+        "en": "OK"
+      }
+    },
+    "uebergabestation_status_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "2": {
+        "de": "Betrieb",
+        "en": "operation"
+      },
+      "3": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. limitation"
+      },
+      "4": {
+        "de": "Nachlauf",
+        "en": "Afterrun"
+      },
+      "5": {
+        "de": "Notlauf",
+        "en": "Emergency operation"
+      }
+    },
+    "wmm_rolle_t": {
+      "0": {
+        "de": "Autonom",
+        "en": "Autonomous"
+      },
+      "1": {
+        "de": "KFS",
+        "en": "BMSC"
+      },
+      "2": {
+        "de": "Powerfire 1 150-300kW",
+        "en": "Powerfire 1 150-300kW"
+      },
+      "3": {
+        "de": "EasyAir Plus 8-25kW",
+        "en": "EasyAir Plus 8-25kW"
+      },
+      "4": {
+        "de": "Powerfire 2 400-500kW",
+        "en": "Powerfire 2 400-500kW"
+      },
+      "5": {
+        "de": "EasyAir Plus 40-50kW",
+        "en": null
+      },
+      "6": {
+        "de": "EasyAir Plus Kaskade",
+        "en": null
+      }
+    },
+    "zirk_programm_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Automatik",
+        "en": "Automatic"
+      },
+      "2": {
+        "de": "Dauerbetrieb",
+        "en": "Continuous operation"
+      }
+    },
+    "zk_status_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Betrieb",
+        "en": "operation"
+      },
+      "2": {
+        "de": "Überhitzung",
+        "en": "Overheating"
+      },
+      "3": {
+        "de": "Verzögerung",
+        "en": "Delay"
+      },
+      "4": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "5": {
+        "de": "Mindestlaufzeit",
+        "en": "Minimum runtime"
+      },
+      "6": {
+        "de": "Mindeststehzeit",
+        "en": "Idle time"
+      },
+      "7": {
+        "de": "Betrieb Modbus",
+        "en": "operation Modbus"
+      },
+      "8": {
+        "de": "Betrieb Modbus (Warmwasser)",
+        "en": null
+      }
+    },
+    "zus_wq_wp_status_t": {
+      "0": {
+        "de": "Aus",
+        "en": "Off"
+      },
+      "1": {
+        "de": "Betrieb",
+        "en": "operation"
+      },
+      "2": {
+        "de": "Mindestlaufzeit",
+        "en": "Minimum runtime"
+      },
+      "3": {
+        "de": "Mindeststehzeit",
+        "en": "Idle time"
+      }
+    },
+    "zwq_betriebsmodus_t": {
+      "0": {
+        "de": "Bivalent alternativ",
+        "en": "Bivalent alternatively"
+      },
+      "1": {
+        "de": "Bivalent parallel",
+        "en": "Bivalent parallel"
+      },
+      "2": {
+        "de": "Bivalent teilparallel",
+        "en": "Bivalent part-parallel"
+      }
+    }
+  }
+}

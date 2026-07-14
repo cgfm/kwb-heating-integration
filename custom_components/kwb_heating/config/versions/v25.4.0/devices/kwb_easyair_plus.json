@@ -1,0 +1,2008 @@
+{
+  "registers": [
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_vorlauftemperatur_soll",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.vorlauftemperatur_soll",
+      "starting_address": 10230,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "WEZ Sollwert",
+        "en": null
+      },
+      "id": "3124",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_vorlauftemperatur_soll",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.vorlauftemperatur_soll",
+      "starting_address": 10231,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "WEZ Sollwert",
+        "en": null
+      },
+      "id": "3124",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_momentanleistung",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.momentanleistung",
+      "starting_address": 10238,
+      "unit_value_table": {
+        "de": "1/100kW",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Momentanleistung",
+        "en": null
+      },
+      "id": "3183",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_momentanleistung",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.momentanleistung",
+      "starting_address": 10239,
+      "unit_value_table": {
+        "de": "1/100kW",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Momentanleistung",
+        "en": null
+      },
+      "id": "3183",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_drehzahl_ist",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_ist",
+      "starting_address": 10246,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl Ist",
+        "en": null
+      },
+      "id": "3163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_drehzahl_ist",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_ist",
+      "starting_address": 10247,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl Ist",
+        "en": null
+      },
+      "id": "3163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_drehzahl_soll",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_soll",
+      "starting_address": 10254,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl Soll",
+        "en": null
+      },
+      "id": "3162",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_drehzahl_soll",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_soll",
+      "starting_address": 10255,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl Soll",
+        "en": null
+      },
+      "id": "3162",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_aufgenommene_elektr_leistung",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.aufgenommene_elektr_leistung",
+      "starting_address": 10262,
+      "unit_value_table": {
+        "de": "1/100kW",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Aufgenommene el. Leistung",
+        "en": null
+      },
+      "id": "3184",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_aufgenommene_elektr_leistung",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.aufgenommene_elektr_leistung",
+      "starting_address": 10263,
+      "unit_value_table": {
+        "de": "1/100kW",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Aufgenommene el. Leistung",
+        "en": null
+      },
+      "id": "3184",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "EAP 0",
+      "parameter": "EAPDEV.vorlauftemperatur_ist",
+      "starting_address": 10270,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Ist",
+        "en": "Forward flow temp., act."
+      },
+      "user_level": "read",
+      "entity_id": "eap_0_eapdev_vorlauftemperatur_ist",
+      "id": "2631"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "EAP 1",
+      "parameter": "EAPDEV.vorlauftemperatur_ist",
+      "starting_address": 10271,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Ist",
+        "en": "Forward flow temp., act."
+      },
+      "user_level": "read",
+      "entity_id": "eap_1_eapdev_vorlauftemperatur_ist",
+      "id": "2631"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "EAP 0",
+      "parameter": "EAPDEV.ruecklauftemperatur_ist",
+      "starting_address": 10278,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Ist",
+        "en": "Return flow temp., actual"
+      },
+      "user_level": "read",
+      "entity_id": "eap_0_eapdev_ruecklauftemperatur_ist",
+      "id": "2632"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "EAP 1",
+      "parameter": "EAPDEV.ruecklauftemperatur_ist",
+      "starting_address": 10279,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Ist",
+        "en": "Return flow temp., actual"
+      },
+      "user_level": "read",
+      "entity_id": "eap_1_eapdev_ruecklauftemperatur_ist",
+      "id": "2632"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_ansauglufttemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.ansauglufttemperatur",
+      "starting_address": 10286,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Ansauglufttemperatur",
+        "en": null
+      },
+      "id": "3137",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_ansauglufttemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.ansauglufttemperatur",
+      "starting_address": 10287,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Ansauglufttemperatur",
+        "en": null
+      },
+      "id": "3137",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_sauggastemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.sauggastemperatur",
+      "starting_address": 10294,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sauggastemperatur",
+        "en": null
+      },
+      "id": "3138",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_sauggastemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.sauggastemperatur",
+      "starting_address": 10295,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sauggastemperatur",
+        "en": null
+      },
+      "id": "3138",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_heissgastemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.heissgastemperatur",
+      "starting_address": 10302,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Heissgastemperatur",
+        "en": null
+      },
+      "id": "3139",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_heissgastemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.heissgastemperatur",
+      "starting_address": 10303,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Heissgastemperatur",
+        "en": null
+      },
+      "id": "3139",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_drehzahl_ventilator",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_ventilator",
+      "starting_address": 10310,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl Ventilator",
+        "en": null
+      },
+      "id": "3140",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_drehzahl_ventilator",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_ventilator",
+      "starting_address": 10311,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl Ventilator",
+        "en": null
+      },
+      "id": "3140",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_volumenstrom",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.volumenstrom",
+      "starting_address": 10318,
+      "unit_value_table": {
+        "de": "1/10l/min",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Volumenstrom",
+        "en": null
+      },
+      "id": "3144",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_volumenstrom",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.volumenstrom",
+      "starting_address": 10319,
+      "unit_value_table": {
+        "de": "1/10l/min",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Volumenstrom",
+        "en": null
+      },
+      "id": "3144",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_volumenstrom_gemittelt",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.volumenstrom_gemittelt",
+      "starting_address": 10326,
+      "unit_value_table": {
+        "de": "1/10l/min",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Volumenstrom gemittelt",
+        "en": null
+      },
+      "id": "3145",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_volumenstrom_gemittelt",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.volumenstrom_gemittelt",
+      "starting_address": 10327,
+      "unit_value_table": {
+        "de": "1/10l/min",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Volumenstrom gemittelt",
+        "en": null
+      },
+      "id": "3145",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_drehzahl_cp",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_cp",
+      "starting_address": 10334,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl CP",
+        "en": null
+      },
+      "id": "3141",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_drehzahl_cp",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.drehzahl_cp",
+      "starting_address": 10335,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Drehzahl CP",
+        "en": null
+      },
+      "id": "3141",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_ueberhitzung",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.ueberhitzung",
+      "starting_address": 10342,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Überhitzung",
+        "en": null
+      },
+      "id": "3148",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_ueberhitzung",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.ueberhitzung",
+      "starting_address": 10343,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Überhitzung",
+        "en": null
+      },
+      "id": "3148",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_unterkuehlung",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.unterkuehlung",
+      "starting_address": 10350,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Unterkühlung",
+        "en": null
+      },
+      "id": "3149",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_unterkuehlung",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.unterkuehlung",
+      "starting_address": 10351,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Unterkühlung",
+        "en": null
+      },
+      "id": "3149",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_verdampfungstemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.verdampfungstemperatur",
+      "starting_address": 10358,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Verdampfungstemperatur",
+        "en": null
+      },
+      "id": "3150",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_verdampfungstemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.verdampfungstemperatur",
+      "starting_address": 10359,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Verdampfungstemperatur",
+        "en": null
+      },
+      "id": "3150",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_kondensationstemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.kondensationstemperatur",
+      "starting_address": 10366,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Kondensationstemperatur",
+        "en": null
+      },
+      "id": "3151",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_kondensationstemperatur",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.kondensationstemperatur",
+      "starting_address": 10367,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Kondensationstemperatur",
+        "en": null
+      },
+      "id": "3151",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_niederdruck",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.niederdruck",
+      "starting_address": 10374,
+      "unit_value_table": {
+        "de": "1/10bar",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Niederdruck (relativ)",
+        "en": null
+      },
+      "id": "3152",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_niederdruck",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.niederdruck",
+      "starting_address": 10375,
+      "unit_value_table": {
+        "de": "1/10bar",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Niederdruck (relativ)",
+        "en": null
+      },
+      "id": "3152",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_hochdruck",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.hochdruck",
+      "starting_address": 10382,
+      "unit_value_table": {
+        "de": "1/10bar",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Hochdruck (relativ)",
+        "en": null
+      },
+      "id": "3153",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_hochdruck",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.hochdruck",
+      "starting_address": 10383,
+      "unit_value_table": {
+        "de": "1/10bar",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Hochdruck (relativ)",
+        "en": null
+      },
+      "id": "3153",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_temperatur_fluessigkeitsleitung",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
+      "starting_address": 10390,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Temp. Flüssigkeitsleitung",
+        "en": null
+      },
+      "id": "3147",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_temperatur_fluessigkeitsleitung",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
+      "starting_address": 10391,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Temp. Flüssigkeitsleitung",
+        "en": null
+      },
+      "id": "3147",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_position_erstes_expansionsventil",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.position_erstes_expansionsventil",
+      "starting_address": 10398,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Position 1. EX-Ventil",
+        "en": null
+      },
+      "id": "3154",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_position_erstes_expansionsventil",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.position_erstes_expansionsventil",
+      "starting_address": 10399,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Position 1. EX-Ventil",
+        "en": null
+      },
+      "id": "3154",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_position_zweites_expansionsventi",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.position_zweites_expansionsventi",
+      "starting_address": 10406,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Position 2. EX-Ventil",
+        "en": null
+      },
+      "id": "3155",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_position_zweites_expansionsventi",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.position_zweites_expansionsventi",
+      "starting_address": 10407,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Position 2. EX-Ventil",
+        "en": null
+      },
+      "id": "3155",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_bivalenz_elh",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.bivalenz_elh",
+      "starting_address": 10414,
+      "unit_value_table": {
+        "de": "system_ein_aus_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Bivalenz-ELH",
+        "en": null
+      },
+      "id": "3207",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_bivalenz_elh",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.bivalenz_elh",
+      "starting_address": 10415,
+      "unit_value_table": {
+        "de": "system_ein_aus_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Bivalenz-ELH",
+        "en": null
+      },
+      "id": "3207",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_cop",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.cop",
+      "starting_address": 10422,
+      "unit_value_table": {
+        "de": "1/10",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "COP",
+        "en": null
+      },
+      "id": "3186",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_cop",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.cop",
+      "starting_address": 10423,
+      "unit_value_table": {
+        "de": "1/10",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "COP",
+        "en": null
+      },
+      "id": "3186",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_erweiterter_betriebsstatus",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.erweiterter_betriebsstatus",
+      "starting_address": 10430,
+      "unit_value_table": {
+        "de": "eap_erweiterter_betriebsstatus_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Erw. Betriebsstatus",
+        "en": null
+      },
+      "id": "3133",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_erweiterter_betriebsstatus",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.erweiterter_betriebsstatus",
+      "starting_address": 10431,
+      "unit_value_table": {
+        "de": "eap_erweiterter_betriebsstatus_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Erw. Betriebsstatus",
+        "en": null
+      },
+      "id": "3133",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "EAP 0",
+      "parameter": "EAPDEV.status",
+      "starting_address": 10438,
+      "unit_value_table": "eap_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "eap_0_eapdev_status",
+      "id": "2701"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "EAP 1",
+      "parameter": "EAPDEV.status",
+      "starting_address": 10439,
+      "unit_value_table": "eap_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "eap_1_eapdev_status",
+      "id": "2701"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_anforderung_ursache",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.anforderung_ursache",
+      "starting_address": 10446,
+      "unit_value_table": {
+        "de": "eap_anforderung_ursache_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung durch",
+        "en": null
+      },
+      "id": "3310",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_anforderung_ursache",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.anforderung_ursache",
+      "starting_address": 10447,
+      "unit_value_table": {
+        "de": "eap_anforderung_ursache_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung durch",
+        "en": null
+      },
+      "id": "3310",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_0_eapdev_zustand_waermepumpe",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.zustand_waermepumpe",
+      "starting_address": 10454,
+      "unit_value_table": {
+        "de": "eap_zustand_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Zustand Wärmepumpe",
+        "en": null
+      },
+      "id": "3311",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "eap_1_eapdev_zustand_waermepumpe",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.zustand_waermepumpe",
+      "starting_address": 10455,
+      "unit_value_table": {
+        "de": "eap_zustand_t",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Zustand Wärmepumpe",
+        "en": null
+      },
+      "id": "3311",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "ksm_modbus_lifetick",
+      "type": "u16",
+      "parameter": "KSM.modbus_lifetick",
+      "starting_address": 24849,
+      "expert_level": "readwrite",
+      "name": "Modbus Lifetick",
+      "id": "2069",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "ksm_modbus_commit_lifetick",
+      "type": "u16",
+      "parameter": "KSM.modbus_commit_lifetick",
+      "starting_address": 24850,
+      "expert_level": "read",
+      "name": "Modbus Commit Lifetick",
+      "id": "2070",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_sollwert_heizkreisbetrieb",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
+      "starting_address": 25168,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sollwert für Heizkreisbetrieb",
+        "en": null
+      },
+      "id": "3117",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_sollwert_heizkreisbetrieb",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
+      "starting_address": 25169,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sollwert für Heizkreisbetrieb",
+        "en": null
+      },
+      "id": "3117",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_sollwert_speicherbetrieb",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.sollwert_speicherbetrieb",
+      "starting_address": 25176,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sollwert für Speicherbetrieb",
+        "en": null
+      },
+      "id": "3118",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_sollwert_speicherbetrieb",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.sollwert_speicherbetrieb",
+      "starting_address": 25177,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sollwert für Speicherbetrieb",
+        "en": null
+      },
+      "id": "3118",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_sollwert_kuehlbetrieb",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.sollwert_kuehlbetrieb",
+      "starting_address": 25184,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sollwert für Kühlbetrieb",
+        "en": null
+      },
+      "id": "3119",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_sollwert_kuehlbetrieb",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.sollwert_kuehlbetrieb",
+      "starting_address": 25185,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Sollwert für Kühlbetrieb",
+        "en": null
+      },
+      "id": "3119",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_leistungsbegrenzung",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.leistungsbegrenzung",
+      "starting_address": 25192,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Leistungsbegrenzung",
+        "en": null
+      },
+      "id": "3090",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_leistungsbegrenzung",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.leistungsbegrenzung",
+      "starting_address": 25193,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Leistungsbegrenzung",
+        "en": null
+      },
+      "id": "3090",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_modbus_vorlauf_soll",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "max": {
+        "de": 1100,
+        "en": null
+      },
+      "parameter": "EAPDEV.modbus_vorlauf_soll",
+      "starting_address": 25200,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus VL-Temp. Soll",
+        "en": null
+      },
+      "min": {
+        "de": 0,
+        "en": null
+      },
+      "id": "3087",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_modbus_vorlauf_soll",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "max": {
+        "de": 1100,
+        "en": null
+      },
+      "parameter": "EAPDEV.modbus_vorlauf_soll",
+      "starting_address": 25201,
+      "unit_value_table": {
+        "de": "1/10°C",
+        "en": null
+      },
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus VL-Temp. Soll",
+        "en": null
+      },
+      "min": {
+        "de": 0,
+        "en": null
+      },
+      "id": "3087",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_modbus_max_verdichterdrehz_soll",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "max": {
+        "de": 1000,
+        "en": null
+      },
+      "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
+      "starting_address": 25208,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Mobus Max. Verdichter Soll",
+        "en": null
+      },
+      "min": {
+        "de": 0,
+        "en": null
+      },
+      "id": "3088",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_modbus_max_verdichterdrehz_soll",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "max": {
+        "de": 1000,
+        "en": null
+      },
+      "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
+      "starting_address": 25209,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Mobus Max. Verdichter Soll",
+        "en": null
+      },
+      "min": {
+        "de": 0,
+        "en": null
+      },
+      "id": "3088",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_max_leistung_heizen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.max_leistung_heizen",
+      "starting_address": 25216,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Leistung Heizen",
+        "en": null
+      },
+      "id": "3274",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_max_leistung_heizen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.max_leistung_heizen",
+      "starting_address": 25217,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Leistung Heizen",
+        "en": null
+      },
+      "id": "3274",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_min_leistung_heizen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.min_leistung_heizen",
+      "starting_address": 25224,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Min. Leistung Heizen",
+        "en": null
+      },
+      "id": "3275",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_min_leistung_heizen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.min_leistung_heizen",
+      "starting_address": 25225,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Min. Leistung Heizen",
+        "en": null
+      },
+      "id": "3275",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_max_leistung_warmwasser",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.max_leistung_warmwasser",
+      "starting_address": 25232,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Leistung Warmwasser",
+        "en": null
+      },
+      "id": "3280",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_max_leistung_warmwasser",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.max_leistung_warmwasser",
+      "starting_address": 25233,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Leistung Warmwasser",
+        "en": null
+      },
+      "id": "3280",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_min_leistung_warmwasser",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.min_leistung_warmwasser",
+      "starting_address": 25240,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Min. Leistung Warmwasser",
+        "en": null
+      },
+      "id": "3281",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_min_leistung_warmwasser",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.min_leistung_warmwasser",
+      "starting_address": 25241,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Min. Leistung Warmwasser",
+        "en": null
+      },
+      "id": "3281",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_max_leistung_kuehlen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.max_leistung_kuehlen",
+      "starting_address": 25248,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Leistung Kühlen",
+        "en": null
+      },
+      "id": "3276",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_max_leistung_kuehlen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.max_leistung_kuehlen",
+      "starting_address": 25249,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Leistung Kühlen",
+        "en": null
+      },
+      "id": "3276",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_min_leistung_kuehlen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.min_leistung_kuehlen",
+      "starting_address": 25256,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Min. Leistung Kühlen",
+        "en": null
+      },
+      "id": "3277",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_min_leistung_kuehlen",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.min_leistung_kuehlen",
+      "starting_address": 25257,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Min. Leistung Kühlen",
+        "en": null
+      },
+      "id": "3277",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_fluester1_beginn",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester1_beginn",
+      "starting_address": 25264,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeitfenster Beginn",
+        "en": null
+      },
+      "id": "3325",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_fluester1_beginn",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester1_beginn",
+      "starting_address": 25265,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeitfenster Beginn",
+        "en": null
+      },
+      "id": "3325",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_fluester1_ende",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester1_ende",
+      "starting_address": 25272,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeifenster Ende",
+        "en": null
+      },
+      "id": "3326",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_fluester1_ende",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester1_ende",
+      "starting_address": 25273,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeifenster Ende",
+        "en": null
+      },
+      "id": "3326",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_fluester2_beginn",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester2_beginn",
+      "starting_address": 25280,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeitfenster Beginn",
+        "en": null
+      },
+      "id": "3327",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_fluester2_beginn",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester2_beginn",
+      "starting_address": 25281,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeitfenster Beginn",
+        "en": null
+      },
+      "id": "3327",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_fluester2_ende",
+      "type": "u16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester2_ende",
+      "starting_address": 25288,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeifenster Ende",
+        "en": null
+      },
+      "id": "3328",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_fluester2_ende",
+      "type": "u16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester2_ende",
+      "starting_address": 25289,
+      "expert_level": "read",
+      "name": {
+        "de": "Zeifenster Ende",
+        "en": null
+      },
+      "id": "3328",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_0_eapdev_fluester_max_drehzahl",
+      "type": "s16",
+      "index": {
+        "de": "EAP 0",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester_max_drehzahl",
+      "starting_address": 25296,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Drehzahl",
+        "en": null
+      },
+      "id": "3329",
+      "user_level": "read"
+    },
+    {
+      "data_type": "03",
+      "entity_id": "eap_1_eapdev_fluester_max_drehzahl",
+      "type": "s16",
+      "index": {
+        "de": "EAP 1",
+        "en": null
+      },
+      "parameter": "EAPDEV.fluester_max_drehzahl",
+      "starting_address": 25297,
+      "unit_value_table": {
+        "de": "1/10%",
+        "en": null
+      },
+      "expert_level": "read",
+      "name": {
+        "de": "Max. Drehzahl",
+        "en": null
+      },
+      "id": "3329",
+      "user_level": "read"
+    }
+  ]
+}

@@ -59,6 +59,11 @@ def _derive_index_prefixes(registers: list[dict]) -> dict[str, bool]:
     }
 
 
+def _is_bilingual_value(value: Any) -> bool:
+    """True if `value` is the merged-tree {"de": ..., "en": ...} shape."""
+    return isinstance(value, dict) and value.keys() <= {"de", "en"}
+
+
 class AsyncModularRegisterManager:
     """Manages KWB register definitions from modular configuration files (async)."""
 
@@ -186,6 +191,52 @@ class AsyncModularRegisterManager:
 
         self._initialized = False
 
+    def _resolve_language(self, value: Any, context: str) -> Any:
+        """Resolve a merged {"de": ..., "en": ...} value down to the active
+        language, falling back to the other language (with a warning) if the
+        active one is missing - the visible counterpart to what used to be a
+        silently dropped register/value.
+        """
+        if not _is_bilingual_value(value):
+            return value
+
+        other = "de" if self._language == "en" else "en"
+        resolved = value.get(self._language)
+        if resolved is None:
+            resolved = value.get(other)
+            if resolved is not None:
+                _LOGGER.warning(
+                    "%s: no '%s' translation available, falling back to '%s' (%r)",
+                    context, self._language, other, resolved
+                )
+        return resolved
+
+    def _resolve_register(self, register: dict) -> dict:
+        """Resolve every bilingual field in a merged register to the active
+        language, producing the same flat single-language shape the rest of
+        this class has always worked with."""
+        address = register.get("starting_address")
+        context = f"register {address}"
+        return {
+            key: self._resolve_language(value, f"{context} field '{key}'")
+            for key, value in register.items()
+        }
+
+    def _resolve_registers(self, registers: list[dict]) -> list[dict]:
+        """Resolve a list of merged registers to the active language."""
+        return [self._resolve_register(reg) for reg in registers]
+
+    def _resolve_value_tables(self, value_tables: dict) -> dict[str, dict]:
+        """Resolve merged value tables ({table: {value: {"de":..,"en":..}}})
+        to the active language ({table: {value: text}})."""
+        resolved: dict[str, dict] = {}
+        for table_name, entries in value_tables.items():
+            resolved[table_name] = {
+                value: self._resolve_language(text, f"value_table '{table_name}' value {value!r}")
+                for value, text in entries.items()
+            }
+        return resolved
+
     async def initialize(self) -> None:
         """Async initialization."""
         if self._initialized:
@@ -203,15 +254,19 @@ class AsyncModularRegisterManager:
                 async with aiofiles.open(modbus_registers_path, 'r', encoding='utf-8') as f:
                     content = await f.read()
                     universal_data = json.loads(content)
-                    self._universal_registers = universal_data.get("universal_registers", [])
-            
+                    self._universal_registers = self._resolve_registers(
+                        universal_data.get("universal_registers", [])
+                    )
+
             # Load value tables
             value_tables_path = self.config_dir / "value_tables.json"
             if value_tables_path.exists():
                 async with aiofiles.open(value_tables_path, 'r', encoding='utf-8') as f:
                     content = await f.read()
                     value_tables_data = json.loads(content)
-                    self._value_tables = value_tables_data.get("value_tables", {})
+                    self._value_tables = self._resolve_value_tables(
+                        value_tables_data.get("value_tables", {})
+                    )
             
             _LOGGER.info("Loaded async modular KWB configuration: %d universal registers, %d value tables", 
                         len(self._universal_registers), len(self._value_tables))
@@ -251,7 +306,7 @@ class AsyncModularRegisterManager:
             async with aiofiles.open(device_path, 'r', encoding='utf-8') as f:
                 content = await f.read()
                 device_data = json.loads(content)
-                registers = device_data.get("registers", [])
+                registers = self._resolve_registers(device_data.get("registers", []))
                 self._device_cache[device_type] = registers
                 _LOGGER.info("Loaded %d registers for device type %s", len(registers), device_type)
                 return registers
@@ -282,7 +337,7 @@ class AsyncModularRegisterManager:
             async with aiofiles.open(equipment_path, 'r', encoding='utf-8') as f:
                 content = await f.read()
                 equipment_data = json.loads(content)
-                registers = equipment_data.get("registers", [])
+                registers = self._resolve_registers(equipment_data.get("registers", []))
                 self._equipment_cache[equipment_key] = registers
 
                 prefixes = _derive_index_prefixes(registers)

@@ -1,0 +1,1068 @@
+{
+  "registers": [
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8981,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_1_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8982,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_2_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8983,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_3_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8984,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_4_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8985,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_5_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8986,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_6_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8987,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_7_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8988,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_8_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8989,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_9_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8990,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_10_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8991,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_11_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8992,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_12_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8993,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_13_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "parameter": "ZK.o_pumpe",
+      "starting_address": 8994,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "user_level": "read",
+      "entity_id": "shs_14_zk_o_pumpe",
+      "id": "524"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 8998,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_1_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 8999,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_1_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9000,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_2_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9001,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_2_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9002,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_3_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9003,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_3_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9004,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_4_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9005,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_4_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9006,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_5_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9007,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_5_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9008,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_6_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9009,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_6_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9010,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_7_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9011,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_7_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9012,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_8_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9013,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_8_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9014,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_9_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9015,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_9_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9016,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_10_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9017,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_10_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9018,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_11_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9019,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_11_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9020,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_12_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9021,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_12_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9022,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_13_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9023,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_13_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "parameter": "ZK.i_temperatur.value",
+      "starting_address": 9024,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_14_zk_i_temperatur_value",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "parameter": "ZK.i_temperatur.status",
+      "starting_address": 9025,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "shs_14_zk_i_temperatur_status",
+      "id": "521"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9029,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_1_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9030,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_2_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9031,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_3_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9032,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_4_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9033,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_5_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9034,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_6_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9035,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_7_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9036,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_8_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9037,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_9_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9038,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_10_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9039,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_11_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9040,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_12_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9041,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_13_zk_o_anforderung",
+      "id": "523"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "parameter": "ZK.o_anforderung",
+      "starting_address": 9042,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "shs_14_zk_o_anforderung",
+      "id": "523"
+    }
+  ]
+}

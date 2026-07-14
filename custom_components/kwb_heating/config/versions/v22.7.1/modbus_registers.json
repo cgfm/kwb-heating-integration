@@ -1,0 +1,124 @@
+{
+  "universal_registers": [
+    {
+      "data_type": "04",
+      "entity_id": "system_sw_version_major",
+      "type": "u16",
+      "parameter": "SYSTEM.sw_version.major",
+      "starting_address": 8192,
+      "expert_level": "read",
+      "name": "Software (major)",
+      "id": "1163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "system_sw_version_minor",
+      "type": "u16",
+      "parameter": "SYSTEM.sw_version.minor",
+      "starting_address": 8193,
+      "expert_level": "read",
+      "name": "Software (minor)",
+      "id": "1163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "system_sw_version_patch",
+      "type": "u16",
+      "parameter": "SYSTEM.sw_version.patch",
+      "starting_address": 8194,
+      "expert_level": "read",
+      "name": "Software (patch)",
+      "id": "1163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.sw_revision",
+      "starting_address": 8195,
+      "expert_level": "read",
+      "name": "Revision",
+      "user_level": "read",
+      "entity_id": "system_sw_revision",
+      "id": "1171"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.anlage_keine_stoerung",
+      "starting_address": 8204,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anlage OK",
+        "en": "System OK"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_anlage_keine_stoerung",
+      "id": "614"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.anlage_stoerung",
+      "starting_address": 8205,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kessel Störung",
+        "en": "Boiler fault"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_anlage_stoerung",
+      "id": "1192"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.alarme_total",
+      "starting_address": 8252,
+      "expert_level": "read",
+      "name": {
+        "de": "Anzahl Alarme",
+        "en": "Number of alarms"
+      },
+      "user_level": "read",
+      "entity_id": "system_alarme_total",
+      "id": "431"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.alarme_offen",
+      "starting_address": 8254,
+      "expert_level": "read",
+      "name": {
+        "de": "Anzahl offene Alarme",
+        "en": "Number of pending alarms"
+      },
+      "user_level": "read",
+      "entity_id": "system_alarme_offen",
+      "id": "432"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.alarme_beheben_von_extern",
+      "starting_address": 24582,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Alarme beheben",
+        "en": "Rectify alarms"
+      },
+      "user_level": "readwrite",
+      "entity_id": "system_alarme_beheben_von_extern",
+      "id": "1144"
+    }
+  ]
+}

@@ -1,0 +1,6752 @@
+{
+  "registers": [
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.status",
+      "starting_address": 9049,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_1_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.status",
+      "starting_address": 9050,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_2_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.status",
+      "starting_address": 9051,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_3_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.status",
+      "starting_address": 9052,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_4_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.status",
+      "starting_address": 9053,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_5_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.status",
+      "starting_address": 9054,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_6_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.status",
+      "starting_address": 9055,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_7_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.status",
+      "starting_address": 9056,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_8_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.status",
+      "starting_address": 9057,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_9_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.status",
+      "starting_address": 9058,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_10_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.status",
+      "starting_address": 9059,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_11_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.status",
+      "starting_address": 9060,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_12_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.status",
+      "starting_address": 9061,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_13_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.status",
+      "starting_address": 9062,
+      "unit_value_table": "solar_status_t",
+      "expert_level": "read",
+      "name": "Status",
+      "user_level": "read",
+      "entity_id": "sol_14_sol_status",
+      "id": "1435"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9064,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9065,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9066,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9067,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9068,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9069,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9070,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9071,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9072,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9073,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9074,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9075,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9076,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.status_ursache",
+      "starting_address": 9077,
+      "unit_value_table": "solar_status_ursache_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Statusursache",
+        "en": "Stat. R."
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_status_ursache",
+      "id": "1436"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9080,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9081,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9082,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9083,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9084,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9085,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9086,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9087,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9088,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9089,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9090,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9091,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9092,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9093,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9094,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9095,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9096,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9097,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9098,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9099,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9100,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9101,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9102,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9103,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9104,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9105,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_kollektor_temperatur.value",
+      "starting_address": 9106,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (value)",
+        "en": "Collector temperature (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_kollektor_temperatur_value",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_kollektor_temperatur.status",
+      "starting_address": 9107,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektortemperatur (status)",
+        "en": "Collector temperature (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_kollektor_temperatur_status",
+      "id": "1394"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9110,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9111,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9112,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9113,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9114,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9115,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9116,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9117,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9118,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9119,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9120,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9121,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9122,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9123,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9124,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9125,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9126,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9127,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9128,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9129,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9130,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9131,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9132,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9133,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9134,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9135,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.value",
+      "starting_address": 9136,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (value)",
+        "en": "Temperature storage tank 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_1_value",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ist_temperatur_speicher_1.status",
+      "starting_address": 9137,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 1 (status)",
+        "en": "Temperature storage tank 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_1_status",
+      "id": "1396"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9140,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9141,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9142,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9143,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9144,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9145,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9146,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9147,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9148,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9149,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9150,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9151,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9152,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9153,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9154,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9155,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9156,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9157,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9158,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9159,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9160,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9161,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9162,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9163,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9164,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9165,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.value",
+      "starting_address": 9166,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (value)",
+        "en": "Temperature storage tank 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_2_value",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ist_temperatur_speicher_2.status",
+      "starting_address": 9167,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur Speicher 2 (status)",
+        "en": "Temperature storage tank 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ist_temperatur_speicher_2_status",
+      "id": "1397"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9169,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9170,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9171,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9172,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9173,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9174,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9175,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9176,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9177,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9178,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9179,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9180,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9181,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.o_pumpe_1",
+      "starting_address": 9182,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_o_pumpe_1",
+      "id": "1377"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9184,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9185,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9186,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9187,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9188,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9189,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9190,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9191,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9192,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9193,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9194,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9195,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9196,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.o_pumpe_2",
+      "starting_address": 9197,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_o_pumpe_2",
+      "id": "1381"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9199,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9200,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9201,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9202,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9203,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9204,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9205,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9206,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9207,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9208,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9209,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9210,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9211,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.o_umschaltventil",
+      "starting_address": 9212,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Switchover valve"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_o_umschaltventil",
+      "id": "1389"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 1",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9215,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 2",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9217,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 3",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9219,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 4",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9221,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 5",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9223,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 6",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9225,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 7",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9227,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 8",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9229,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 9",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9231,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 10",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9233,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 11",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9235,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 12",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9237,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 13",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9239,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 14",
+      "parameter": "SOL.waermeleistung",
+      "starting_address": 9241,
+      "unit_value_table": "1/1000kW",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmeleistung",
+        "en": "Thermal output"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_waermeleistung",
+      "id": "1444"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 1",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9245,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 2",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9247,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 3",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9249,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 4",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9251,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 5",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9253,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 6",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9255,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 7",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9257,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 8",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9259,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 9",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9261,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 10",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9263,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 11",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9265,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 12",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9267,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 13",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9269,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 14",
+      "parameter": "SOL.waermemenge_tag",
+      "starting_address": 9271,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge Tag",
+        "en": "Heat amount day"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_waermemenge_tag",
+      "id": "1441"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 1",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9275,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 2",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9277,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 3",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9279,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 4",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9281,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 5",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9283,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 6",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9285,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 7",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9287,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 8",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9289,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 9",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9291,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 10",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9293,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 11",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9295,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 12",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9297,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 13",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9299,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "index": "SOL 14",
+      "parameter": "SOL.waermemenge_gesamt_kwh",
+      "starting_address": 9301,
+      "unit_value_table": "1/1000kWh",
+      "expert_level": "read",
+      "name": {
+        "de": "Wärmemenge gesamt",
+        "en": "Heat amount total"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_waermemenge_gesamt_kwh",
+      "id": "1440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9305,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9306,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9307,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9308,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9309,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9310,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9311,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9312,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9313,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9314,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9315,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9316,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9317,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9318,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9319,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9320,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9321,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9322,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9323,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9324,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9325,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9326,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9327,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9328,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9329,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9330,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_vorlauf_temperatur.value",
+      "starting_address": 9331,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (value)",
+        "en": "Collector forward flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_value",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_vorlauf_temperatur.status",
+      "starting_address": 9332,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Vorlauftemperatur (status)",
+        "en": "Collector forward flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_status",
+      "id": "1395"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9335,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9336,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9337,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9338,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9339,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9340,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9341,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9342,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9343,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9344,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9345,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9346,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9347,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9348,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9349,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9350,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9351,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9352,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9353,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9354,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9355,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9356,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9357,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9358,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9359,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9360,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.value",
+      "starting_address": 9361,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (value)",
+        "en": "Collector return flow temp. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_kollektor_ruecklauf_temperatur_value",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_kollektor_ruecklauf_temperatur.status",
+      "starting_address": 9362,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kollektor Rücklauftemperatur (status)",
+        "en": "Collector return flow temp. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_kollektor_ruecklauf_temperatur_status",
+      "id": "1442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9365,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9366,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9367,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9368,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9369,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9370,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9371,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9372,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9373,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9374,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9375,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9376,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9377,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9378,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9379,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9380,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9381,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9382,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9383,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9384,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9385,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9386,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9387,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9388,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9389,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9390,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_kollektor_durchfluss.value",
+      "starting_address": 9391,
+      "unit_value_table": "1/100l/min",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (value)",
+        "en": "Flow-through (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_kollektor_durchfluss_value",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_kollektor_durchfluss.status",
+      "starting_address": 9392,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Durchfluss (status)",
+        "en": "Flow-through (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_kollektor_durchfluss_status",
+      "id": "1443"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 1",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9466,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 2",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9467,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 3",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9468,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 4",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9469,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 5",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9470,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 6",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9471,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 7",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9472,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 8",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9473,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 9",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9474,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 10",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9475,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 11",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9476,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 12",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9477,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 13",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9478,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 14",
+      "parameter": "SOL.pumpe_1_steuerstufe",
+      "starting_address": 9479,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 1",
+        "en": "Pump 1"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_pumpe_1_steuerstufe",
+      "id": "1378"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 1",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9481,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 2",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9482,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 3",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9483,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 4",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9484,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 5",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9485,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 6",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9486,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 7",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9487,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 8",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9488,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 9",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9489,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 10",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9490,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 11",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9491,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 12",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9492,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 13",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9493,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "u16",
+      "index": "SOL 14",
+      "parameter": "SOL.pumpe_2_steuerstufe",
+      "starting_address": 9494,
+      "unit_value_table": "1/10%",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe 2",
+        "en": "Pump 2"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_pumpe_2_steuerstufe",
+      "id": "1382"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9882,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9883,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9884,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9885,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9886,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9887,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9888,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9889,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9890,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9891,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9892,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9893,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9894,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9895,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9896,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9897,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9898,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9899,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9900,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9901,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9902,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9903,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9904,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9905,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9906,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9907,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.value",
+      "starting_address": 9908,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_sekundaer_value",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_vorlauf_temperatur_sekundaer.status",
+      "starting_address": 9909,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_vorlauf_temperatur_sekundaer_status",
+      "id": "2438"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9912,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9913,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9914,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9915,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9916,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9917,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9918,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9919,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9920,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9921,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9922,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9923,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9924,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9925,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9926,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9927,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9928,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9929,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9930,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9931,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9932,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9933,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9934,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9935,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9936,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9937,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.value",
+      "starting_address": 9938,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (value)",
+        "en": "Ret. flow temp. sec. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_sekundaer_value",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ruecklauf_temperatur_sekundaer.status",
+      "starting_address": 9939,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Sekundär (status)",
+        "en": "Ret. flow temp. sec. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_sekundaer_status",
+      "id": "2439"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9942,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9943,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_1_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9944,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9945,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_2_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9946,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9947,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_3_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9948,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9949,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_4_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9950,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9951,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_5_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9952,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9953,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_6_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9954,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9955,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_7_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9956,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9957,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_8_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9958,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9959,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_9_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9960,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9961,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_10_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9962,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9963,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_11_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9964,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9965,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_12_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9966,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9967,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_13_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.value",
+      "starting_address": 9968,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_primaer_value",
+      "id": "2440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.i_ruecklauf_temperatur_primaer.status",
+      "starting_address": 9969,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "user_level": "read",
+      "entity_id": "sol_14_sol_i_ruecklauf_temperatur_primaer_status",
+      "id": "2440"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25009,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_1_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25010,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_2_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25011,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_3_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25012,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_4_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25013,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_5_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25014,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_6_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25015,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_7_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25016,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_8_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25017,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_9_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25018,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_10_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25019,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_11_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25020,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_12_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25021,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_13_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.modbus_vorlauf_temperatur_soll",
+      "starting_address": 25022,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Vorlauftemp. Soll",
+        "en": "Modbus Forward flow temp. Setpoint"
+      },
+      "min": 0,
+      "user_level": "read",
+      "entity_id": "sol_14_sol_modbus_vorlauf_temperatur_soll",
+      "max": 900,
+      "id": "2582"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 1",
+      "parameter": "SOL.programm",
+      "starting_address": 26610,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_1_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 2",
+      "parameter": "SOL.programm",
+      "starting_address": 26611,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_2_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 3",
+      "parameter": "SOL.programm",
+      "starting_address": 26612,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_3_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 4",
+      "parameter": "SOL.programm",
+      "starting_address": 26613,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_4_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 5",
+      "parameter": "SOL.programm",
+      "starting_address": 26614,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_5_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 6",
+      "parameter": "SOL.programm",
+      "starting_address": 26615,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_6_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 7",
+      "parameter": "SOL.programm",
+      "starting_address": 26616,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_7_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 8",
+      "parameter": "SOL.programm",
+      "starting_address": 26617,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_8_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 9",
+      "parameter": "SOL.programm",
+      "starting_address": 26618,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_9_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 10",
+      "parameter": "SOL.programm",
+      "starting_address": 26619,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_10_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 11",
+      "parameter": "SOL.programm",
+      "starting_address": 26620,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_11_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 12",
+      "parameter": "SOL.programm",
+      "starting_address": 26621,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_12_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 13",
+      "parameter": "SOL.programm",
+      "starting_address": 26622,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_13_sol_programm",
+      "id": "1348"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": "SOL 14",
+      "parameter": "SOL.programm",
+      "starting_address": 26623,
+      "unit_value_table": "solar_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "sol_14_sol_programm",
+      "id": "1348"
+    }
+  ]
+}

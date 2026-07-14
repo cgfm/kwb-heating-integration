@@ -1,0 +1,4939 @@
+{
+  "registers": [
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8708,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8709,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8710,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8711,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8712,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8713,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8714,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8715,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8716,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8717,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8718,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8719,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8720,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8721,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8722,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8723,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8724,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8725,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8726,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8727,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8728,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8729,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8730,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8731,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8732,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8733,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8734,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8735,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.value",
+      "starting_address": 8736,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (value)",
+        "en": "Temperature 1 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_1_value",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_1.status",
+      "starting_address": 8737,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 1 (status)",
+        "en": "Temperature 1 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_1_status",
+      "id": "442"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8742,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8743,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8744,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8745,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8746,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8747,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8748,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8749,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8750,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8751,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8752,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8753,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8754,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8755,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8756,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8757,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8758,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8759,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8760,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8761,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8762,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8763,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8764,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8765,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8766,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8767,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8768,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8769,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.value",
+      "starting_address": 8770,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_2_value",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_2.status",
+      "starting_address": 8771,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_2_status",
+      "id": "443"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8776,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8777,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8778,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8779,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8780,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8781,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8782,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8783,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8784,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8785,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8786,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8787,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8788,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8789,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8790,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8791,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8792,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8793,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8794,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8795,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8796,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8797,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8798,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8799,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8800,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8801,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8802,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8803,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.value",
+      "starting_address": 8804,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (value)",
+        "en": "Temperature 3 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_3_value",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_3.status",
+      "starting_address": 8805,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 3 (status)",
+        "en": "Temperature 3 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_3_status",
+      "id": "444"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8810,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8811,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8812,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8813,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8814,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8815,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8816,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8817,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8818,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8819,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8820,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8821,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8822,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8823,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8824,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8825,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8826,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8827,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8828,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8829,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8830,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8831,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8832,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8833,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8834,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8835,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8836,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8837,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.value",
+      "starting_address": 8838,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (value)",
+        "en": "Temperature 4 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_4_value",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_4.status",
+      "starting_address": 8839,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 4 (status)",
+        "en": "Temperature 4 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_4_status",
+      "id": "445"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8844,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8845,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8846,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8847,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8848,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8849,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8850,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8851,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8852,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8853,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8854,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8855,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8856,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8857,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8858,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8859,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8860,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8861,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8862,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8863,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8864,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8865,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8866,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8867,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8868,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8869,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8870,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8871,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.value",
+      "starting_address": 8872,
+      "unit_value_table": "1/10°C",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (value)",
+        "en": "Temperature 5 (value)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_5_value",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.i_ist_temperatur_5.status",
+      "starting_address": 8873,
+      "unit_value_table": "system_sensor_status_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Temperatur 5 (status)",
+        "en": "Temperature 5 (status)"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_i_ist_temperatur_5_status",
+      "id": "446"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8878,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8879,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8880,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8881,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8882,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8883,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8884,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8885,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8886,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8887,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8888,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8889,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8890,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8891,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.o_pumpe",
+      "starting_address": 8892,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_o_pumpe",
+      "id": "450"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8895,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8896,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8897,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8898,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8899,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8900,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8901,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8902,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8903,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8904,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8905,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8906,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8907,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8908,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.anforderung",
+      "starting_address": 8909,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_anforderung",
+      "id": "440"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8912,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_1_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8913,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_2_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8914,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_3_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8915,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_4_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8916,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_5_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8917,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_6_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8918,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_7_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8919,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_8_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8920,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_9_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8921,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_10_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8922,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_11_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8923,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_12_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8924,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_13_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8925,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_14_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.o_umschaltventil",
+      "starting_address": 8926,
+      "unit_value_table": "puffer_o_umschaltventil_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Umschaltventil",
+        "en": "Reversing valve"
+      },
+      "user_level": "read",
+      "entity_id": "buf_15_puf_o_umschaltventil",
+      "id": "468"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24760,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_1_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24761,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_2_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24762,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_3_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24763,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_4_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24764,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_5_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24765,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_6_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24766,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_7_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24767,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_8_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24768,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_9_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24769,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_10_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24770,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_11_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24771,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_12_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24772,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_13_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24773,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_14_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.programm",
+      "starting_address": 24774,
+      "unit_value_table": "puffer_programm_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "user_level": "readwrite",
+      "entity_id": "buf_15_puf_programm",
+      "id": "451"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24777,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_1_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24778,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_1_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24779,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_2_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24780,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_2_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24781,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_3_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24782,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_3_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24783,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_4_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24784,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_4_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24785,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_5_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24786,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_5_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24787,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_6_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24788,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_6_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24789,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_7_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24790,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_7_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24791,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_8_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24792,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_8_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24793,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_9_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24794,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_9_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24795,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_10_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24796,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_10_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24797,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_11_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24798,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_11_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24799,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_12_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24800,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_12_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24801,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_13_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24802,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_13_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24803,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_14_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24804,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_14_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.temperatur_grenzen.min",
+      "starting_address": 24805,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_15_puf_temperatur_grenzen_min",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.temperatur_grenzen.max",
+      "starting_address": 24806,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_15_puf_temperatur_grenzen_max",
+      "max": 800,
+      "id": "982"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 0",
+        "en": "BUF 0"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24811,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_1_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 1",
+        "en": "BUF 1"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24812,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_2_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 2",
+        "en": "BUF 2"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24813,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_3_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 3",
+        "en": "BUF 3"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24814,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_4_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 4",
+        "en": "BUF 4"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24815,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_5_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 5",
+        "en": "BUF 5"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24816,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_6_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 6",
+        "en": "BUF 6"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24817,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_7_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 7",
+        "en": "BUF 7"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24818,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_8_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 8",
+        "en": "BUF 8"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24819,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_9_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 9",
+        "en": "BUF 9"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24820,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_10_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 10",
+        "en": "BUF 10"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24821,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_11_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 11",
+        "en": "BUF 11"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24822,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_12_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 12",
+        "en": "BUF 12"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24823,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_13_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 13",
+        "en": "BUF 13"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24824,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_14_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "index": {
+        "de": "PUF 14",
+        "en": "BUF 14"
+      },
+      "parameter": "PUF.brauchwassertemp_min",
+      "starting_address": 24825,
+      "unit_value_table": "1/10°C",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Brauchwassertemp. min.",
+        "en": "DHW temp. min."
+      },
+      "min": 0,
+      "user_level": "readwrite",
+      "entity_id": "buf_15_puf_brauchwassertemp_min",
+      "max": 700,
+      "id": "479"
+    }
+  ]
+}

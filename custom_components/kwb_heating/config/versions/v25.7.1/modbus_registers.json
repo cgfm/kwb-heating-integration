@@ -1,0 +1,313 @@
+{
+  "universal_registers": [
+    {
+      "data_type": "04",
+      "entity_id": "system_sw_version_major",
+      "type": "u16",
+      "parameter": "SYSTEM.sw_version.major",
+      "starting_address": 8192,
+      "expert_level": "read",
+      "name": "Software (major)",
+      "id": "1163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "system_sw_version_minor",
+      "type": "u16",
+      "parameter": "SYSTEM.sw_version.minor",
+      "starting_address": 8193,
+      "expert_level": "read",
+      "name": "Software (minor)",
+      "id": "1163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "entity_id": "system_sw_version_patch",
+      "type": "u16",
+      "parameter": "SYSTEM.sw_version.patch",
+      "starting_address": 8194,
+      "expert_level": "read",
+      "name": "Software (patch)",
+      "id": "1163",
+      "user_level": "read"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.sw_revision",
+      "starting_address": 8195,
+      "expert_level": "read",
+      "name": "Revision",
+      "user_level": "read",
+      "entity_id": "system_sw_revision",
+      "id": "1171"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.anlage_kein_alarm_keine_stoerung",
+      "starting_address": 8204,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Anlage OK",
+        "en": "System OK"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_anlage_kein_alarm_keine_stoerung",
+      "id": "614"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.summen_alarm_oder_stoerung",
+      "starting_address": 8205,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Summenstörung",
+        "en": "Group fault"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_summen_alarm_oder_stoerung",
+      "id": "1192"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.alarme_total",
+      "starting_address": 8252,
+      "expert_level": "read",
+      "name": {
+        "de": "Anzahl Alarme",
+        "en": "Number of alarms"
+      },
+      "user_level": "read",
+      "entity_id": "system_alarme_total",
+      "id": "431"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.alarme_offen",
+      "starting_address": 8254,
+      "expert_level": "read",
+      "name": {
+        "de": "Anzahl offene Alarme",
+        "en": "Number of pending alarms"
+      },
+      "user_level": "read",
+      "entity_id": "system_alarme_offen",
+      "id": "432"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "KSM.anlage_stoerung_mit_abschaltung",
+      "starting_address": 10022,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Summenstörung mit Kesselabschaltung",
+        "en": "Group fault including boiler shutdown"
+      },
+      "user_level": "read",
+      "entity_id": "ksm_anlage_stoerung_mit_abschaltung",
+      "id": "2598"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "SYSTEM.gui_kessel_typ",
+      "starting_address": 10024,
+      "unit_value_table": "system_gui_kessel_typ_t",
+      "expert_level": "read",
+      "name": {
+        "de": "Kesseltyp",
+        "en": "Boiler type"
+      },
+      "user_level": "read",
+      "entity_id": "system_gui_kessel_typ",
+      "id": "951"
+    },
+    {
+      "data_type": "04",
+      "type": "s16",
+      "parameter": "SYSTEM.wmm_rolle",
+      "starting_address": 10025,
+      "unit_value_table": "wmm_rolle_t",
+      "expert_level": "read",
+      "name": {
+        "de": "WMM Rolle",
+        "en": "WMM Role"
+      },
+      "user_level": "read",
+      "entity_id": "system_wmm_rolle",
+      "id": "2063"
+    },
+    {
+      "data_type": "04",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.bge_serial_number",
+      "starting_address": 10228,
+      "expert_level": "read",
+      "name": "BGE",
+      "user_level": "read",
+      "entity_id": "system_bge_serial_number",
+      "id": "1569"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.alarme_beheben_von_extern",
+      "starting_address": 24582,
+      "unit_value_table": "system_ein_aus_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Alarme beheben",
+        "en": "Rectify alarms"
+      },
+      "user_level": "readwrite",
+      "entity_id": "system_alarme_beheben_von_extern",
+      "id": "1144"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.modbus_lifetick_ignore_kessel",
+      "starting_address": 25159,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Lifetick Kessel ignorieren",
+        "en": "Modbus lifetick ignore boiler"
+      },
+      "user_level": "read",
+      "entity_id": "system_modbus_lifetick_ignore_kessel",
+      "id": "3028"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.modbus_lifetick_ignore_hk",
+      "starting_address": 25160,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Lifetick Heizkreise ignorieren",
+        "en": "Modbus lifetick ignore heating circuits"
+      },
+      "user_level": "read",
+      "entity_id": "system_modbus_lifetick_ignore_hk",
+      "id": "3029"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.modbus_lifetick_ignore_solar",
+      "starting_address": 25161,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Lifetick Solaranlagen ignorieren",
+        "en": "Modbus lifetick ignore solar systems"
+      },
+      "user_level": "read",
+      "entity_id": "system_modbus_lifetick_ignore_solar",
+      "id": "3030"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.modbus_lifetick_ignore_zwq",
+      "starting_address": 25162,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Lifetick Zweitwärmequellen ignorieren (Wärmepumpe oder Kessel)",
+        "en": "Modbus lifetick ignore secondary heating sources (heat pump or boiler)"
+      },
+      "user_level": "read",
+      "entity_id": "system_modbus_lifetick_ignore_zwq",
+      "id": "3031"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.modbus_lifetick_ignore_zuswq",
+      "starting_address": 25163,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Lifetick Zusatzwärmequellen ignorieren",
+        "en": "Modbus lifetick ignore additionally heating sources"
+      },
+      "user_level": "read",
+      "entity_id": "system_modbus_lifetick_ignore_zuswq",
+      "id": "3032"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.modbus_lifetick_ignor_uestrommfa",
+      "starting_address": 25164,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Lifetick Überschussstromkontakt (MFA) ignorieren",
+        "en": "Modbus lifetick ignore surplus electricity contact"
+      },
+      "user_level": "read",
+      "entity_id": "system_modbus_lifetick_ignor_uestrommfa",
+      "id": "3033"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.kessel_seriennummer_san_code",
+      "starting_address": 25165,
+      "unit_value_table": "kesselseriennummer_san_code_t",
+      "expert_level": "read",
+      "name": "SAN Code",
+      "user_level": "read",
+      "entity_id": "system_kessel_seriennummer_san_code",
+      "id": "2523"
+    },
+    {
+      "data_type": "03",
+      "number_of_registers": 2,
+      "type": "u32",
+      "parameter": "SYSTEM.kessel_seriennummer",
+      "starting_address": 25166,
+      "expert_level": "read",
+      "name": {
+        "de": "Seriennummer",
+        "en": "Serial number"
+      },
+      "user_level": "read",
+      "entity_id": "system_kessel_seriennummer",
+      "id": "407"
+    },
+    {
+      "data_type": "03",
+      "type": "s16",
+      "parameter": "SYSTEM.modbus_lifetick_ignore_wp",
+      "starting_address": 25304,
+      "unit_value_table": "system_yes_no_t",
+      "expert_level": "readwrite",
+      "name": {
+        "de": "Modbus Lifetick Wärmepumpe ignorieren",
+        "en": "Modbus lifetick ignore heat pump"
+      },
+      "user_level": "read",
+      "entity_id": "system_modbus_lifetick_ignore_wp",
+      "id": "3309"
+    }
+  ]
+}

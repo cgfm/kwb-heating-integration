@@ -5,7 +5,7 @@ A powerful conversion tool that transforms KWB ModbusInfo Excel files (.xlsx) in
 ## 🎯 Features
 
 - **Multi-version support** - Handles different KWB firmware versions (v22.7.1, v25.7.1, etc.)
-- **Multi-language support** - Processes both German and English Excel files
+- **Multi-language support** - Processes matched German and English Excel files together, merging them into a single per-version JSON tree
 - **Automatic device categorization** - Separates universal, device-specific, and equipment registers
 - **Combifire inheritance** - CF models (CF 1, CF 1.5, CF 2) inherit from Combifire base with override support
 - **Universal register aggregation** - Combines Universal and WMM Autonom (Modbus Lifetick) registers
@@ -147,48 +147,53 @@ INFO: ✓ Successfully converted ModbusInfo-de-V22.7.1.xlsx
 The converter writes directly into the integration's own config tree at
 `../custom_components/kwb_heating/config/versions/` - this is the single
 source of truth for register JSON; there is no separate copy inside
-`modbusinfoConverter/` to keep in sync. It creates a version and
-language-specific directory structure:
+`modbusinfoConverter/` to keep in sync. It reads the matching `ModbusInfo-de-V{version}.xlsx`
+and `ModbusInfo-en-V{version}.xlsx` pair together and merges them into **one**
+tree per version - not a separate `de/`/`en/` tree per language. Any field that
+actually differs between languages (typically `name` and `index`, occasionally
+others - see below) becomes `{"de": ..., "en": ...}` inline; everything else
+stays flat:
 
 ```
 custom_components/kwb_heating/config/versions/
 ├── v22.7.1/
-│   ├── de/
-│   │   ├── modbus_registers.json       # Universal + WMM Autonom registers
-│   │   ├── value_tables.json           # Enum value mappings
-│   │   ├── alarm_codes.json            # Alarm/error codes
-│   │   ├── devices/
-│   │   │   ├── kwb_easyfire.json       # Easyfire-specific registers
-│   │   │   ├── kwb_multifire.json      # Multifire-specific registers
-│   │   │   ├── kwb_pelletfire_plus.json
-│   │   │   ├── kwb_combifire.json      # Combifire base registers
-│   │   │   ├── kwb_cf1.json            # CF 1 (Combifire + specific)
-│   │   │   ├── kwb_cf1_5.json          # CF 1.5 (Combifire + specific)
-│   │   │   └── kwb_cf2.json            # CF 2 (Combifire + specific)
-│   │   └── equipment/
-│   │       ├── heating_circuits.json   # Heating circuit registers
-│   │       ├── buffer_storage.json     # Buffer storage registers
-│   │       ├── dhw_storage.json        # DHW storage registers
-│   │       ├── secondary_heat_sources.json
-│   │       ├── circulation.json
-│   │       ├── solar.json
-│   │       ├── boiler_sequence.json
-│   │       └── heat_meters.json
-│   └── en/
-│       └── (same structure as de/)
+│   ├── modbus_registers.json       # Universal + WMM Autonom registers
+│   ├── value_tables.json           # Enum value mappings
+│   ├── alarm_codes.json            # Alarm/error codes
+│   ├── devices/
+│   │   ├── kwb_easyfire.json       # Easyfire-specific registers
+│   │   ├── kwb_multifire.json      # Multifire-specific registers
+│   │   ├── kwb_pelletfire_plus.json
+│   │   ├── kwb_combifire.json      # Combifire base registers
+│   │   ├── kwb_cf1.json            # CF 1 (Combifire + specific)
+│   │   ├── kwb_cf1_5.json          # CF 1.5 (Combifire + specific)
+│   │   └── kwb_cf2.json            # CF 2 (Combifire + specific)
+│   └── equipment/
+│       ├── heating_circuits.json   # Heating circuit registers
+│       ├── buffer_storage.json     # Buffer storage registers
+│       ├── dhw_storage.json        # DHW storage registers
+│       ├── secondary_heat_sources.json
+│       ├── circulation.json
+│       ├── solar.json
+│       ├── boiler_sequence.json
+│       └── heat_meters.json
 └── v25.7.1/
-    ├── de/
-    │   ├── devices/
-    │   │   ├── kwb_easyfire.json
-    │   │   ├── kwb_ef3.json            # New in v25
-    │   │   ├── kwb_easyair_plus.json   # New in v25
-    │   │   └── ...
-    │   └── equipment/
-    │       ├── transfer_station.json   # New in v25
-    │       └── ...
-    └── en/
-        └── (same structure as de/)
+    ├── devices/
+    │   ├── kwb_easyfire.json
+    │   ├── kwb_ef3.json            # New in v25
+    │   ├── kwb_easyair_plus.json   # New in v25
+    │   └── ...
+    └── equipment/
+        ├── transfer_station.json   # New in v25
+        └── ...
 ```
+
+If a register or value-table entry genuinely exists in only one language's
+source Excel (KWB's own English translations are occasionally incomplete -
+e.g. ~40 EasyAir Plus rows only exist in German), the converter keeps it with
+the missing language set to `null` and logs a warning naming the exact
+address - this used to be a silent gap that dropped the register/entity for
+that language entirely, with no trace in the logs.
 
 ## 📄 Output File Formats
 
@@ -200,7 +205,7 @@ Contains universal registers applicable to all KWB systems:
   "universal_registers": [
     {
       "starting_address": 8192,
-      "name": "Software (major)",
+      "name": {"de": "Software (major)", "en": "Software (major)"},
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -213,6 +218,13 @@ Contains universal registers applicable to all KWB systems:
 }
 ```
 
+(If a field's German and English values happen to be identical for a given
+register - e.g. a register literally called "Solar" in both languages - the
+converter stores it as a plain string rather than `{"de": "Solar", "en": "Solar"}`.
+The runtime loader (`AsyncModularRegisterManager._resolve_language()`) accepts
+both shapes, so this is purely a storage-size optimization and not something
+downstream code needs to special-case.)
+
 ### devices/*.json
 Device-specific registers for each KWB model:
 
@@ -221,7 +233,7 @@ Device-specific registers for each KWB model:
   "registers": [
     {
       "starting_address": 8197,
-      "name": "Kesseltemperatur Ist (value)",
+      "name": {"de": "Kesseltemperatur Ist (value)", "en": "Boiler temperature actual (value)"},
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -243,15 +255,16 @@ Equipment-specific registers with index information:
   "registers": [
     {
       "starting_address": 8700,
-      "name": "HK Programm",
+      "name": {"de": "HK Programm", "en": "HC Program"},
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
       "unit_value_table": "hk_programm_t",
-      "index": "HK 1.1",
+      "index": {"de": "HK 1.1", "en": "HC 1.1"},
       "id": "656",
-      "parameter": "HK_<n>.programm"
+      "parameter": "HK_<n>.programm",
+      "entity_id": "hk_1_1_hk_programm"
     },
     ...
   ]
@@ -259,17 +272,18 @@ Equipment-specific registers with index information:
 ```
 
 ### value_tables.json
-Enum value mappings for state translations:
+Enum value mappings for state translations - each value maps to a
+`{"de": ..., "en": ...}` translation pair:
 
 ```json
 {
   "value_tables": {
     "hk_programm_t": {
-      "0": "Automatik",
-      "1": "Frostschutz",
-      "2": "Aus",
-      "3": "Komfort",
-      "4": "Absenk"
+      "0": {"de": "Automatik", "en": "Automatic"},
+      "1": {"de": "Frostschutz", "en": "Frost protection"},
+      "2": {"de": "Aus", "en": "Off"},
+      "3": {"de": "Komfort", "en": "Comfort"},
+      "4": {"de": "Absenk", "en": "Setback"}
     },
     ...
   }
@@ -277,7 +291,7 @@ Enum value mappings for state translations:
 ```
 
 ### alarm_codes.json
-Alarm and error code definitions:
+Alarm and error code definitions - `description` is `{"de": ..., "en": ...}`:
 
 ```json
 {
@@ -286,7 +300,7 @@ Alarm and error code definitions:
       "starting_address": 0,
       "function_code": "02",
       "alarm_id": "A000",
-      "description": "Kesseltemperatur Sensor defekt"
+      "description": {"de": "Kesseltemperatur Sensor defekt", "en": "Boiler temperature sensor defective"}
     },
     ...
   ]
@@ -478,7 +492,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(levelname)s: %(message)s')
 Use Python to validate generated JSON:
 
 ```bash
-python3 -m json.tool ../custom_components/kwb_heating/config/versions/v22.7.1/de/modbus_registers.json
+python3 -m json.tool ../custom_components/kwb_heating/config/versions/v22.7.1/modbus_registers.json
 ```
 
 ## 🔄 Version History
@@ -487,7 +501,7 @@ python3 -m json.tool ../custom_components/kwb_heating/config/versions/v22.7.1/de
 - ✅ Combifire inheritance for CF models
 - ✅ WMM Autonom merged into universal registers
 - ✅ Consistent English equipment filenames
-- ✅ Multi-language equipment sheet support
+- ✅ Merged German/English config tree - one tree per version instead of parallel `de`/`en` trees, so a register/value missing from one language's source Excel is now a visible, logged fallback instead of a silent drop
 - ✅ KWB EasyAir Plus support (v25+)
 - ✅ Transfer station equipment (v25+)
 

@@ -91,22 +91,14 @@ def sanitize_index_for_entity_id(index: str) -> str | None:
     return f"{sanitized_prefix}_{sanitized_number}"
 
 
-def compute_entity_id(
-    register: dict,
-    english_data: dict[int, dict[str, str]] | None = None,
-) -> str:
+def compute_entity_id(register: dict) -> str:
     """Compute a language-independent, collision-resistant entity_id.
 
     Args:
-        register: Normalized register dict. Must have "parameter"; may have
-            "starting_address" and its own "index".
-        english_data: Optional mapping of starting_address -> {"name", "index"}
-            sourced from the English-language sheet/file, for language
-            independence. May be missing an entry for a given address (e.g. a
-            newer device whose English translation is incomplete) - in that
-            case the register's own "index" is used instead, so a device with
-            an incomplete English sheet doesn't lose its equipment-index
-            disambiguation.
+        register: Normalized, merged register dict. Must have "parameter".
+            "index" is either the language-merged shape
+            ({"de": "...", "en": "..."}) or a plain string (older,
+            single-language callers) - both are handled.
 
     Returns:
         Sanitized entity_id, or "" if no parameter is available.
@@ -115,14 +107,15 @@ def compute_entity_id(
     if not parameter:
         return ""
 
-    address = register.get("starting_address")
-    en_data = {}
-    if english_data and address is not None:
-        en_data = english_data.get(int(address), {})
-
     # Prefer the English index for language independence, but fall back to
-    # this register's own index when English data has no entry at all.
-    index = en_data.get("index") or register.get("index", "")
+    # German if only that's present (e.g. a device whose English translation
+    # is incomplete) - the merge step logs this gap explicitly rather than
+    # it silently costing the equipment-index disambiguation.
+    index_field = register.get("index", "")
+    if isinstance(index_field, dict):
+        index = index_field.get("en") or index_field.get("de") or ""
+    else:
+        index = index_field or ""
 
     # Base id from the full KWB parameter path, not the translated display
     # name. Do NOT strip the leading "NAMESPACE." segment (e.g. "SOL.",

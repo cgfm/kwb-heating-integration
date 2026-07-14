@@ -21,7 +21,17 @@ logger = logging.getLogger(__name__)
 
 
 class ModbusInfoConverter:
-    """Converts ModbusInfo Excel files to JSON configuration."""
+    """Converts ModbusInfo Excel files to JSON configuration.
+
+    German and English source files for a version are processed together and
+    merged into a single output tree: every register's "name" and "index"
+    become {"de": ..., "en": ...}, and everything else (which is already
+    identical between languages) stays flat. This is the single source of
+    truth for a version - there is no more separate de/ and en/ output tree,
+    so "this register exists in German but not English" (or vice versa) is
+    something the merge step must decide and log, not something that can
+    silently happen.
+    """
 
     # Sheet categories
     #UNIVERSAL_SHEET = "Universal"
@@ -98,8 +108,6 @@ class ModbusInfoConverter:
         """Initialize converter."""
         self.input_dir = Path(input_dir)
         self.output_dir = Path(output_dir)
-        # Cache for English data lookup: {version: {starting_address: {"name": str, "index": str}}}
-        self._english_data_cache: dict[str, dict[int, dict[str, str]]] = {}
 
     def parse_filename(self, filename: str) -> dict[str, str]:
         """Parse ModbusInfo filename to extract version and language."""
@@ -110,84 +118,8 @@ class ModbusInfoConverter:
             return {"language": language, "version": version}
         return {}
 
-    def load_english_data(self, version: str) -> dict[int, dict[str, str]]:
-        """Load English register data (name and index) for a specific version.
-
-        Returns a mapping of starting_address -> {"name": str, "index": str} for use
-        in generating language-independent entity IDs.
-        """
-        if version in self._english_data_cache:
-            return self._english_data_cache[version]
-
-        english_data: dict[int, dict[str, str]] = {}
-        en_file = self.input_dir / f"ModbusInfo-en-V{version}.xlsx"
-
-        if not en_file.exists():
-            logger.warning(f"English file not found for version {version}: {en_file}")
-            self._english_data_cache[version] = english_data
-            return english_data
-
-        try:
-            workbook = openpyxl.load_workbook(en_file, data_only=True)
-
-            # Collect data from all relevant sheets
-            all_sheets = (
-                self.UNIVERSAL_SHEETS +
-                self.DEVICE_SHEETS +
-                list(self.EQUIPMENT_SHEETS.keys()) +
-                list(self.EQUIPMENT_SHEETS.values())
-            )
-
-            for sheet_name in all_sheets:
-                if sheet_name not in workbook.sheetnames:
-                    continue
-
-                sheet = workbook[sheet_name]
-                headers = [cell.value for cell in sheet[1]]
-
-                for row in sheet.iter_rows(min_row=2, values_only=True):
-                    if not any(row) or row[0] is None:
-                        continue
-
-                    # Get StartingAddress, Name, and Index
-                    row_dict = {}
-                    for i, value in enumerate(row):
-                        if i < len(headers) and headers[i]:
-                            row_dict[headers[i]] = value
-
-                    address = row_dict.get("StartingAddress")
-                    name = row_dict.get("Name")
-                    index = row_dict.get("Index")
-
-                    if address is not None and name:
-                        data = {"name": str(name).strip()}
-                        if index:
-                            data["index"] = str(index).strip()
-                        english_data[int(address)] = data
-
-            workbook.close()
-            logger.info(f"  Loaded {len(english_data)} English entries for version {version}")
-
-        except Exception as exc:
-            logger.error(f"Error loading English data for version {version}: {exc}")
-
-        self._english_data_cache[version] = english_data
-        return english_data
-
-    def read_register_sheet(
-        self,
-        workbook: openpyxl.Workbook,
-        sheet_name: str,
-        english_data: dict[int, dict[str, str]] | None = None
-    ) -> list[dict]:
-        """Read register data from Excel sheet.
-
-        Args:
-            workbook: The Excel workbook
-            sheet_name: Name of the sheet to read
-            english_data: Optional mapping of starting_address -> {"name": str, "index": str}
-                          for generating language-independent entity IDs
-        """
+    def read_register_sheet(self, workbook: openpyxl.Workbook, sheet_name: str) -> list[dict]:
+        """Read register data from an Excel sheet (single language, flat name/index)."""
         if sheet_name not in workbook.sheetnames:
             return []
 
@@ -207,24 +139,16 @@ class ModbusInfoConverter:
                 if i < len(headers) and headers[i]:
                     row_dict[headers[i]] = value
 
-            register = self.normalize_register(row_dict, english_data)
+            register = self.normalize_register(row_dict)
             if register:
                 registers.append(register)
 
         return registers
 
-    def normalize_register(
-        self,
-        data: dict,
-        english_data: dict[int, dict[str, str]] | None = None
-    ) -> dict | None:
-        """Normalize register data to standard format.
-
-        Args:
-            data: Raw register data from Excel row
-            english_data: Optional mapping of starting_address -> {"name": str, "index": str}
-                          for language-independent equipment-index lookup
-        """
+    def normalize_register(self, data: dict) -> dict | None:
+        """Normalize a single register row to standard format (single language,
+        flat name/index - the bilingual merge happens later in
+        merge_bilingual_registers())."""
         # Skip if no address
         address = data.get("StartingAddress")
         if address is None:
@@ -268,12 +192,6 @@ class ModbusInfoConverter:
         if data.get("Parameter"):
             register["parameter"] = str(data.get("Parameter"))
 
-        # entity_id is derived from "parameter" (and "index"), so compute it
-        # last, once both are set on the register.
-        entity_id = compute_entity_id(register, english_data)
-        if entity_id:
-            register["entity_id"] = entity_id
-
         # Remove empty string values
         register = {k: v for k, v in register.items() if v not in [None, ""]}
 
@@ -311,7 +229,7 @@ class ModbusInfoConverter:
         return "read"
 
     def read_value_tables(self, workbook: openpyxl.Workbook) -> dict:
-        """Read value tables from Excel."""
+        """Read value tables from Excel (single language)."""
         if self.VALUE_TABLES_SHEET not in workbook.sheetnames:
             return {}
 
@@ -361,7 +279,7 @@ class ModbusInfoConverter:
         return value_tables
 
     def read_alarm_codes(self, workbook: openpyxl.Workbook) -> list[dict]:
-        """Read alarm codes from Excel."""
+        """Read alarm codes from Excel (single language)."""
         if self.ALARMS_SHEET not in workbook.sheetnames:
             return []
 
@@ -386,184 +304,325 @@ class ModbusInfoConverter:
         return alarm_codes
 
     def merge_registers(self, base_registers: list[dict], override_registers: list[dict]) -> list[dict]:
-        """Merge two register lists, where override_registers take precedence by address.
+        """Merge two same-language register lists, override wins by address.
 
-        Args:
-            base_registers: Base register list (e.g., from Combifire)
-            override_registers: Override register list (e.g., from CF 1)
-
-        Returns:
-            Merged register list with overrides applied
+        Used for Combifire base + CF-model-specific overrides, both still in
+        a single language at this point (bilingual merging happens later).
         """
-        # Create a dictionary indexed by starting_address from base
         merged = {reg["starting_address"]: reg for reg in base_registers}
-
-        # Override with specific registers
         for reg in override_registers:
             merged[reg["starting_address"]] = reg
-
-        # Return sorted by address
         return sorted(merged.values(), key=lambda x: x["starting_address"])
 
-    def convert_file(self, xlsx_file: Path) -> None:
-        """Convert a single ModbusInfo Excel file to JSON."""
-        logger.info(f"Converting {xlsx_file.name}...")
+    # Fields expected to stay flat (identical between languages) even if a
+    # future version's data disagrees - "parameter" is the manufacturer's own
+    # key and the others are structural, so a mismatch there is a data
+    # problem worth surfacing loudly rather than silently becoming a
+    # per-language dict.
+    _STRUCTURAL_FIELDS = {
+        "starting_address", "parameter", "data_type", "type",
+        "user_level", "expert_level", "id",
+    }
 
-        # Parse filename
-        file_info = self.parse_filename(xlsx_file.name)
-        if not file_info:
-            logger.error(f"Could not parse filename: {xlsx_file.name}")
-            return
+    def merge_bilingual_registers(
+        self, de_registers: list[dict], en_registers: list[dict], context: str
+    ) -> list[dict]:
+        """Merge German and English register lists into one, keyed by address.
 
-        version = file_info["version"]
-        language = file_info["language"]
+        Any field whose value actually differs between languages (typically
+        "name" and "index", but e.g. "unit_value_table" can too - German
+        "Upm" vs English "rpm" for the same rpm register) becomes
+        {"de": ..., "en": ...}; fields that are identical (the common case)
+        stay flat. A register present in only one language is kept, with the
+        other language's per-field values left absent - this is exactly the
+        gap that used to cause silent entity_id collisions (e.g. EasyAir
+        Plus), so it's logged here instead of hidden.
+        """
+        de_by_addr = {r["starting_address"]: r for r in de_registers}
+        en_by_addr = {r["starting_address"]: r for r in en_registers}
+        all_addrs = sorted(set(de_by_addr) | set(en_by_addr))
 
-        # Load English names for entity_id generation (language-independent IDs)
-        english_data = self.load_english_data(version)
+        merged: list[dict] = []
+        for addr in all_addrs:
+            de_reg = de_by_addr.get(addr)
+            en_reg = en_by_addr.get(addr)
 
-        # Create output directory structure
-        version_dir = self.output_dir / f"v{version}" / language
-        version_dir.mkdir(parents=True, exist_ok=True)
+            if de_reg is None:
+                logger.warning(
+                    f"{context}: address {addr} ('{en_reg.get('name')}') present in "
+                    f"English only - missing from the German sheet"
+                )
+            if en_reg is None:
+                logger.warning(
+                    f"{context}: address {addr} ('{de_reg.get('name')}') present in "
+                    f"German only - missing from the English sheet"
+                )
 
-        # Create subdirectories
-        devices_dir = version_dir / "devices"
-        equipment_dir = version_dir / "equipment"
-        devices_dir.mkdir(exist_ok=True)
-        equipment_dir.mkdir(exist_ok=True)
+            base = de_reg or en_reg
+            all_keys = set(de_reg or {}) | set(en_reg or {})
+            combined: dict[str, Any] = {}
 
-        # Load workbook
-        try:
-            workbook = openpyxl.load_workbook(xlsx_file, data_only=True)
-        except Exception as exc:
-            logger.error(f"Error loading workbook {xlsx_file}: {exc}")
-            return
+            for key in all_keys:
+                de_val = de_reg.get(key) if de_reg else None
+                en_val = en_reg.get(key) if en_reg else None
 
-        # Read universal registers from all universal sheets
+                if key in self._STRUCTURAL_FIELDS:
+                    if de_reg and en_reg and de_val != en_val:
+                        logger.warning(
+                            f"{context}: address {addr} has different {key!r} between "
+                            f"languages (de={de_val!r}, en={en_val!r}) - using "
+                            f"{'de' if base is de_reg else 'en'}"
+                        )
+                    combined[key] = base.get(key)
+                elif de_val == en_val:
+                    combined[key] = de_val
+                else:
+                    combined[key] = {"de": de_val, "en": en_val}
+
+            entity_id = compute_entity_id(combined)
+            if entity_id:
+                combined["entity_id"] = entity_id
+
+            combined = {
+                k: v for k, v in combined.items()
+                if v not in (None, "") and v != {"de": None, "en": None}
+            }
+            merged.append(combined)
+
+        return merged
+
+    def merge_bilingual_value_tables(self, de_tables: dict, en_tables: dict, context: str) -> dict:
+        """Merge German/English value tables into {table: {value: {de, en}}}."""
+        all_table_names = sorted(set(de_tables) | set(en_tables))
+        merged: dict[str, dict[str, dict[str, str]]] = {}
+
+        for table_name in all_table_names:
+            de_values = de_tables.get(table_name, {})
+            en_values = en_tables.get(table_name, {})
+            all_values = sorted(set(de_values) | set(en_values), key=lambda v: (len(v), v))
+
+            merged_table = {}
+            for value in all_values:
+                de_text = de_values.get(value)
+                en_text = en_values.get(value)
+                if de_text is None:
+                    logger.warning(
+                        f"{context}: value table '{table_name}' value {value!r} missing German translation"
+                    )
+                if en_text is None:
+                    logger.warning(
+                        f"{context}: value table '{table_name}' value {value!r} missing English translation"
+                    )
+                merged_table[value] = {"de": de_text, "en": en_text}
+
+            merged[table_name] = merged_table
+
+        return merged
+
+    def merge_bilingual_alarm_codes(
+        self, de_alarms: list[dict], en_alarms: list[dict], context: str
+    ) -> list[dict]:
+        """Merge German/English alarm codes by starting_address; description
+        becomes {"de": ..., "en": ...}."""
+        de_by_addr = {a["starting_address"]: a for a in de_alarms}
+        en_by_addr = {a["starting_address"]: a for a in en_alarms}
+        all_addrs = sorted(set(de_by_addr) | set(en_by_addr))
+
+        merged = []
+        for addr in all_addrs:
+            de_alarm = de_by_addr.get(addr)
+            en_alarm = en_by_addr.get(addr)
+            base = de_alarm or en_alarm
+
+            combined = dict(base)
+            combined["description"] = {
+                "de": de_alarm["description"] if de_alarm else None,
+                "en": en_alarm["description"] if en_alarm else None,
+            }
+            combined = {k: v for k, v in combined.items() if v not in (None, "")}
+            merged.append(combined)
+
+        return merged
+
+    def _read_all_sheets(self, workbook: openpyxl.Workbook, language: str) -> dict[str, Any]:
+        """Read every sheet of a single-language workbook into raw (unmerged)
+        per-category register/value-table/alarm data."""
         universal_registers = []
         for sheet_name in self.UNIVERSAL_SHEETS:
             if sheet_name in workbook.sheetnames:
-                logger.info(f"  Reading {sheet_name} sheet...")
-                registers = self.read_register_sheet(workbook, sheet_name, english_data)
+                registers = self.read_register_sheet(workbook, sheet_name)
                 universal_registers.extend(registers)
-                logger.info(f"    Found {len(registers)} registers")
+                logger.info(f"  [{language}] {sheet_name}: {len(registers)} registers")
 
-        # Save universal registers
-        modbus_registers_file = version_dir / "modbus_registers.json"
-        with open(modbus_registers_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                "universal_registers": universal_registers
-            }, f, indent=2, ensure_ascii=False)
-        logger.info(f"  Created modbus_registers.json with {len(universal_registers)} universal registers")
-
-        # Read Combifire base registers (if exists) - applies to CF 1, CF 1.5, CF 2
         combifire_base_registers = []
         if "KWB Combifire" in workbook.sheetnames:
-            logger.info(f"  Reading KWB Combifire sheet (base for CF models)...")
-            combifire_base_registers = self.read_register_sheet(workbook, "KWB Combifire", english_data)
-            logger.info(f"    Found {len(combifire_base_registers)} base registers")
+            combifire_base_registers = self.read_register_sheet(workbook, "KWB Combifire")
+            logger.info(f"  [{language}] KWB Combifire (base): {len(combifire_base_registers)} registers")
 
-        # CF models that inherit from Combifire
         cf_models = ["KWB CF 1", "KWB CF 1.5", "KWB CF 2"]
-
-        # Read and save device-specific registers
+        device_registers: dict[str, list[dict]] = {}
         for sheet_name in self.DEVICE_SHEETS:
-            # Skip Combifire in main loop - it's handled separately below
             if sheet_name == "KWB Combifire":
                 continue
+            if sheet_name not in workbook.sheetnames:
+                continue
 
-            if sheet_name in workbook.sheetnames:
-                logger.info(f"  Reading {sheet_name} sheet...")
-                device_registers = self.read_register_sheet(workbook, sheet_name, english_data)
+            regs = self.read_register_sheet(workbook, sheet_name)
+            if sheet_name in cf_models and combifire_base_registers:
+                regs = self.merge_registers(combifire_base_registers, regs)
+            if regs:
+                device_registers[sheet_name] = regs
+                logger.info(f"  [{language}] {sheet_name}: {len(regs)} registers")
 
-                # Special handling for CF models: merge with Combifire base
-                if sheet_name in cf_models and combifire_base_registers:
-                    logger.info(f"    Merging {len(device_registers)} specific registers with {len(combifire_base_registers)} Combifire base registers...")
-                    device_registers = self.merge_registers(combifire_base_registers, device_registers)
-                    logger.info(f"    Result: {len(device_registers)} total registers")
-
-                if device_registers:
-                    filename = self.DEVICE_FILE_MAP.get(sheet_name, f"{sheet_name.lower().replace(' ', '_')}.json")
-                    device_file = devices_dir / filename
-                    with open(device_file, 'w', encoding='utf-8') as f:
-                        json.dump({
-                            "registers": device_registers
-                        }, f, indent=2, ensure_ascii=False)
-                    logger.info(f"    Created devices/{filename} with {len(device_registers)} registers")
-
-        # Save Combifire as its own device file too (if it exists)
         if combifire_base_registers:
-            combifire_file = devices_dir / "kwb_combifire.json"
-            with open(combifire_file, 'w', encoding='utf-8') as f:
-                json.dump({
-                    "registers": combifire_base_registers
-                }, f, indent=2, ensure_ascii=False)
-            logger.info(f"    Created devices/kwb_combifire.json with {len(combifire_base_registers)} registers")
+            device_registers["KWB Combifire"] = combifire_base_registers
 
-        # Read and save equipment-specific registers
-        # Check for both German and English sheet names
+        equipment_registers: dict[str, list[dict]] = {}
         all_equipment_sheets = list(self.EQUIPMENT_SHEETS.keys()) + list(self.EQUIPMENT_SHEETS.values())
-        processed_equipment = set()  # Track which equipment we've already processed
-
+        processed_equipment_files = set()
         for sheet_name in all_equipment_sheets:
-            if sheet_name in workbook.sheetnames:
-                # Get the English filename (consistent for both German and English)
-                filename = self.EQUIPMENT_FILE_MAP.get(sheet_name)
-                if filename and filename not in processed_equipment:
-                    logger.info(f"  Reading {sheet_name} sheet...")
-                    equipment_registers = self.read_register_sheet(workbook, sheet_name, english_data)
-                    if equipment_registers:
-                        equipment_file = equipment_dir / filename
-                        with open(equipment_file, 'w', encoding='utf-8') as f:
-                            json.dump({
-                                "registers": equipment_registers
-                            }, f, indent=2, ensure_ascii=False)
-                        logger.info(f"    Created equipment/{filename} with {len(equipment_registers)} registers")
-                        processed_equipment.add(filename)
+            if sheet_name not in workbook.sheetnames:
+                continue
+            filename = self.EQUIPMENT_FILE_MAP.get(sheet_name)
+            if not filename or filename in processed_equipment_files:
+                continue
+            regs = self.read_register_sheet(workbook, sheet_name)
+            if regs:
+                equipment_registers[filename] = regs
+                processed_equipment_files.add(filename)
+                logger.info(f"  [{language}] {sheet_name}: {len(regs)} registers")
 
-        # Read and save value tables
-        logger.info(f"  Reading {self.VALUE_TABLES_SHEET}...")
         value_tables = self.read_value_tables(workbook)
-        # Ensure required value tables are present (some may be missing from Excel)
         value_tables = self.ensure_required_value_tables(value_tables, language)
-        value_tables_file = version_dir / "value_tables.json"
-        with open(value_tables_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                "value_tables": value_tables
-            }, f, indent=2, ensure_ascii=False)
+        alarm_codes = self.read_alarm_codes(workbook)
+
+        return {
+            "universal_registers": universal_registers,
+            "device_registers": device_registers,  # sheet_name -> registers
+            "equipment_registers": equipment_registers,  # filename -> registers
+            "value_tables": value_tables,
+            "alarm_codes": alarm_codes,
+        }
+
+    def convert_version(self, version: str, de_file: Path | None, en_file: Path | None) -> None:
+        """Convert a version's German and English Excel files together into
+        one merged output tree. Either file may be absent (converts what's
+        available, with the missing language's name/index left blank)."""
+        logger.info(f"Converting v{version} (de={de_file.name if de_file else None}, "
+                    f"en={en_file.name if en_file else None})...")
+
+        version_dir = self.output_dir / f"v{version}"
+        version_dir.mkdir(parents=True, exist_ok=True)
+        (version_dir / "devices").mkdir(exist_ok=True)
+        (version_dir / "equipment").mkdir(exist_ok=True)
+
+        data_by_lang: dict[str, dict[str, Any]] = {}
+        for lang, xlsx_file in (("de", de_file), ("en", en_file)):
+            if xlsx_file is None:
+                data_by_lang[lang] = {
+                    "universal_registers": [], "device_registers": {},
+                    "equipment_registers": {}, "value_tables": {}, "alarm_codes": [],
+                }
+                continue
+            try:
+                workbook = openpyxl.load_workbook(xlsx_file, data_only=True)
+            except Exception as exc:
+                logger.error(f"Error loading workbook {xlsx_file}: {exc}")
+                continue
+            data_by_lang[lang] = self._read_all_sheets(workbook, lang)
+            workbook.close()
+
+        de_data = data_by_lang.get("de", {})
+        en_data = data_by_lang.get("en", {})
+
+        # Universal registers
+        universal = self.merge_bilingual_registers(
+            de_data.get("universal_registers", []), en_data.get("universal_registers", []),
+            f"v{version}/modbus_registers.json"
+        )
+        with open(version_dir / "modbus_registers.json", 'w', encoding='utf-8') as f:
+            json.dump({"universal_registers": universal}, f, indent=2, ensure_ascii=False)
+        logger.info(f"  Created modbus_registers.json with {len(universal)} universal registers")
+
+        # Device registers
+        de_devices = de_data.get("device_registers", {})
+        en_devices = en_data.get("device_registers", {})
+        for sheet_name in sorted(set(de_devices) | set(en_devices)):
+            filename = self.DEVICE_FILE_MAP.get(sheet_name, f"{sheet_name.lower().replace(' ', '_')}.json")
+            merged = self.merge_bilingual_registers(
+                de_devices.get(sheet_name, []), en_devices.get(sheet_name, []),
+                f"v{version}/devices/{filename}"
+            )
+            with open(version_dir / "devices" / filename, 'w', encoding='utf-8') as f:
+                json.dump({"registers": merged}, f, indent=2, ensure_ascii=False)
+            logger.info(f"  Created devices/{filename} with {len(merged)} registers")
+
+        # Equipment registers
+        de_equipment = de_data.get("equipment_registers", {})
+        en_equipment = en_data.get("equipment_registers", {})
+        for filename in sorted(set(de_equipment) | set(en_equipment)):
+            merged = self.merge_bilingual_registers(
+                de_equipment.get(filename, []), en_equipment.get(filename, []),
+                f"v{version}/equipment/{filename}"
+            )
+            with open(version_dir / "equipment" / filename, 'w', encoding='utf-8') as f:
+                json.dump({"registers": merged}, f, indent=2, ensure_ascii=False)
+            logger.info(f"  Created equipment/{filename} with {len(merged)} registers")
+
+        # Value tables
+        value_tables = self.merge_bilingual_value_tables(
+            de_data.get("value_tables", {}), en_data.get("value_tables", {}),
+            f"v{version}/value_tables.json"
+        )
+        with open(version_dir / "value_tables.json", 'w', encoding='utf-8') as f:
+            json.dump({"value_tables": value_tables}, f, indent=2, ensure_ascii=False)
         logger.info(f"  Created value_tables.json with {len(value_tables)} tables")
 
-        # Read and save alarm codes
-        logger.info(f"  Reading {self.ALARMS_SHEET}...")
-        alarm_codes = self.read_alarm_codes(workbook)
-        alarm_codes_file = version_dir / "alarm_codes.json"
-        with open(alarm_codes_file, 'w', encoding='utf-8') as f:
-            json.dump({
-                "alarm_codes": alarm_codes
-            }, f, indent=2, ensure_ascii=False)
+        # Alarm codes
+        alarm_codes = self.merge_bilingual_alarm_codes(
+            de_data.get("alarm_codes", []), en_data.get("alarm_codes", []),
+            f"v{version}/alarm_codes.json"
+        )
+        with open(version_dir / "alarm_codes.json", 'w', encoding='utf-8') as f:
+            json.dump({"alarm_codes": alarm_codes}, f, indent=2, ensure_ascii=False)
         logger.info(f"  Created alarm_codes.json with {len(alarm_codes)} alarms")
 
-        logger.info(f"✓ Successfully converted {xlsx_file.name}\n")
+        logger.info(f"✓ Successfully converted v{version}\n")
 
     def convert_all(self) -> None:
-        """Convert all ModbusInfo Excel files in input directory."""
+        """Convert all ModbusInfo Excel file pairs in the input directory,
+        one version at a time (German + English together)."""
         xlsx_files = list(self.input_dir.glob("ModbusInfo*.xlsx"))
 
         if not xlsx_files:
             logger.error(f"No ModbusInfo*.xlsx files found in {self.input_dir}")
             return
 
-        logger.info(f"Found {len(xlsx_files)} files to convert\n")
-
+        by_version: dict[str, dict[str, Path]] = {}
         for xlsx_file in xlsx_files:
+            info = self.parse_filename(xlsx_file.name)
+            if not info:
+                logger.error(f"Could not parse filename: {xlsx_file.name}")
+                continue
+            by_version.setdefault(info["version"], {})[info["language"]] = xlsx_file
+
+        logger.info(f"Found {len(xlsx_files)} files across {len(by_version)} version(s)\n")
+
+        for version in sorted(by_version):
+            files = by_version[version]
+            if "de" not in files:
+                logger.warning(f"v{version}: no German file found, converting English only")
+            if "en" not in files:
+                logger.warning(f"v{version}: no English file found, converting German only")
             try:
-                self.convert_file(xlsx_file)
-            except Exception as exc:
-                logger.error(f"Error converting {xlsx_file.name}: {exc}")
+                self.convert_version(version, files.get("de"), files.get("en"))
+            except Exception:
+                logger.error(f"Error converting v{version}")
                 import traceback
                 traceback.print_exc()
                 continue
 
-        logger.info("="*60)
+        logger.info("=" * 60)
         logger.info("Conversion complete!")
         logger.info(f"Output directory: {self.output_dir}")
 
@@ -585,7 +644,7 @@ def main():
     logger.info("KWB ModbusInfo to JSON Converter")
     logger.info(f"Input directory: {input_dir}")
     logger.info(f"Output directory: {output_dir}")
-    logger.info("="*60)
+    logger.info("=" * 60)
     logger.info("")
 
     converter = ModbusInfoConverter(input_dir, output_dir)

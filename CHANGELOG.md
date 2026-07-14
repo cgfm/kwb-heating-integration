@@ -102,6 +102,16 @@ human-readable, not unique; the KWB parameter path already is unique by construc
 
 ### Changed
 
+- **Internal:** German and English register JSON are now merged into a single tree per firmware version
+  (`config/versions/v{version}/...`) instead of two fully parallel `{de,en}/` trees. Per-register `name`/`index` (and
+  any other field that actually differs between languages - e.g. `unit_value_table` for one register, German "Upm" vs
+  English "rpm") become `{"de": ..., "en": ...}` inline; everything else stays flat as before. The two parallel trees
+  could - and did - silently drift apart: EasyAir Plus's English source Excel is missing ~40 rows present in the German
+  sheet, which used to mean those registers simply didn't exist for English-language installs, with nothing in the
+  logs to explain why. The merged loader (`AsyncModularRegisterManager._resolve_register()`) now falls back to the
+  other language and logs a warning naming the exact register/value instead. No end-user-visible behavior change if a
+  version's two source languages already agreed on every register (verified for all 6 shipped versions); external
+  tooling reading `config/versions/v.../de/` or `/en/` paths directly needs updating to drop the language segment.
 - `convert_modbusinfo.py` and `add_entity_ids_from_json.py` now share one entity_id-generation module (
   `modbusinfoConverter/entity_id_generation.py`) instead of two independently-maintained copies of the same logic, so
   the two tools can no longer drift into different naming schemes
