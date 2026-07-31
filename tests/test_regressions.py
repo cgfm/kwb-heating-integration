@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import asyncio
+import ast
 from collections import defaultdict
 import enum
 import importlib.util
@@ -85,8 +86,8 @@ class RegisterConfigurationTests(unittest.TestCase):
         self.assertEqual([], errors, "\n".join(errors))
 
 
-class CirculationSelectionTests(unittest.TestCase):
-    """Cover circulation prefixes and firmware-dependent starting slots."""
+class EquipmentSelectionTests(unittest.TestCase):
+    """Cover data-driven equipment prefixes and instance selection."""
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -132,6 +133,144 @@ class CirculationSelectionTests(unittest.TestCase):
 
                 self.assertTrue(selected)
                 self.assertEqual({expected_index}, {reg["index"] for reg in selected})
+
+    def test_every_shipped_equipment_prefix_selects_first_instance(self) -> None:
+        errors = []
+
+        for language_dir in sorted(CONFIG_ROOT.glob("v*/*")):
+            if not language_dir.is_dir():
+                continue
+            language = language_dir.name
+
+            for equipment_key, config in (
+                self.manager_module.AsyncModularRegisterManager.EQUIPMENT_KEY_CONFIG.items()
+            ):
+                path = language_dir / "equipment" / config["filename"]
+                if not path.exists():
+                    continue
+
+                source_registers = _load_registers(path)
+                manager = self.manager_module.AsyncModularRegisterManager(
+                    config_path=str(language_dir), language=language
+                )
+                manager._equipment_cache[equipment_key] = source_registers
+                selected = asyncio.run(
+                    manager.get_equipment_registers(
+                        equipment_key, "UserLevel", count=1
+                    )
+                )
+
+                source_prefixes = {
+                    register["index"].split(" ", 1)[0]
+                    for register in source_registers
+                    if " " in register.get("index", "")
+                }
+                selected_prefixes = {
+                    register["index"].split(" ", 1)[0]
+                    for register in selected
+                    if " " in register.get("index", "")
+                }
+                if not selected or source_prefixes != selected_prefixes:
+                    errors.append(
+                        f"{language_dir.relative_to(CONFIG_ROOT)}/{equipment_key}: "
+                        f"{source_prefixes} -> {selected_prefixes}"
+                    )
+
+        self.assertEqual([], errors, "\n".join(errors))
+
+    def test_english_equipment_aliases_and_transfer_stations(self) -> None:
+        config_dir = CONFIG_ROOT / "v25.4.0" / "en"
+        expected = {
+            "boiler_sequence": {"B 1"},
+            "dhw_storage": {"DHWC 1"},
+            "heat_meters": {"HQM 0"},
+            "buffer_storage": {"BUF 0", "FP 0"},
+            "transfer_stations": {"TS 1"},
+        }
+
+        for equipment_key, expected_indices in expected.items():
+            with self.subTest(equipment_key=equipment_key):
+                config = (
+                    self.manager_module.AsyncModularRegisterManager
+                    .EQUIPMENT_KEY_CONFIG[equipment_key]
+                )
+                source_registers = _load_registers(
+                    config_dir / "equipment" / config["filename"]
+                )
+                manager = self.manager_module.AsyncModularRegisterManager(
+                    config_path=str(config_dir), language="en"
+                )
+                manager._equipment_cache[equipment_key] = source_registers
+                selected = asyncio.run(
+                    manager.get_equipment_registers(
+                        equipment_key, "UserLevel", count=1
+                    )
+                )
+
+                self.assertEqual(
+                    expected_indices,
+                    {register["index"] for register in selected},
+                )
+
+
+class WiringRegressionTests(unittest.TestCase):
+    """Cover integration wiring without importing Home Assistant."""
+
+    def test_transfer_stations_are_a_canonical_equipment_key(self) -> None:
+        tree = ast.parse((INTEGRATION_ROOT / "const.py").read_text(encoding="utf-8"))
+        equipment_keys = next(
+            node.value
+            for node in tree.body
+            if (
+                isinstance(node, ast.Assign)
+                and any(
+                    isinstance(target, ast.Name)
+                    and target.id == "EQUIPMENT_KEYS"
+                    for target in node.targets
+                )
+            )
+            or (
+                isinstance(node, ast.AnnAssign)
+                and isinstance(node.target, ast.Name)
+                and node.target.id == "EQUIPMENT_KEYS"
+            )
+        )
+        key_names = {
+            element.id
+            for element in equipment_keys.elts
+            if isinstance(element, ast.Name)
+        }
+        self.assertIn("CONF_TRANSFER_STATIONS", key_names)
+
+    def test_duplicate_abort_is_not_swallowed_by_config_flow(self) -> None:
+        tree = ast.parse(
+            (INTEGRATION_ROOT / "config_flow.py").read_text(encoding="utf-8")
+        )
+        functions = {
+            node.name: node
+            for node in ast.walk(tree)
+            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+        }
+
+        for function_name in ("_async_step_network", "async_step_serial"):
+            function = functions[function_name]
+            abort_calls = [
+                node
+                for node in ast.walk(function)
+                if isinstance(node, ast.Call)
+                and isinstance(node.func, ast.Attribute)
+                and node.func.attr == "_abort_if_unique_id_configured"
+            ]
+            swallowed_calls = {
+                call
+                for try_node in ast.walk(function)
+                if isinstance(try_node, ast.Try)
+                for call in ast.walk(try_node)
+                if call in abort_calls
+            }
+
+            self.assertEqual(1, len(abort_calls), function_name)
+            self.assertFalse(swallowed_calls, function_name)
 
 
 class RtuOverTcpTests(unittest.TestCase):
@@ -217,6 +356,73 @@ class RtuOverTcpTests(unittest.TestCase):
             pymodbus_framer.ModbusRtuFramer = LegacyRtuFramer
             sys.modules["pymodbus.framer"] = pymodbus_framer
             self.assertIs(LegacyRtuFramer, module._get_rtu_framer())
+
+            class SlaveOnlyClient:
+                def __init__(self):
+                    self.read_kwargs = []
+                    self.write_kwargs = []
+
+                async def read_holding_registers(
+                    self, address, *, count, **kwargs
+                ):
+                    self.read_kwargs.append(kwargs)
+                    if "slave" not in kwargs:
+                        raise TypeError("slave keyword required")
+                    return "read"
+
+                async def write_register(self, address, value, **kwargs):
+                    self.write_kwargs.append(kwargs)
+                    if "slave" not in kwargs:
+                        raise TypeError("slave keyword required")
+                    return "write"
+
+            fake_client = SlaveOnlyClient()
+            kwb_client = module.KWBModbusClient(slave_id=7)
+            kwb_client._client = fake_client
+            kwb_client._unit_kwarg = "unit"
+
+            self.assertEqual(
+                "read",
+                asyncio.run(
+                    kwb_client._invoke_read(
+                        "read_holding_registers", address=100, count=1
+                    )
+                ),
+            )
+            self.assertEqual(
+                "read",
+                asyncio.run(
+                    kwb_client._invoke_read(
+                        "read_holding_registers", address=101, count=1
+                    )
+                ),
+            )
+            self.assertEqual(
+                [{"unit": 7}, {"slave": 7}, {"slave": 7}],
+                fake_client.read_kwargs,
+            )
+
+            kwb_client._unit_kwarg = "unit"
+            self.assertEqual(
+                "write",
+                asyncio.run(
+                    kwb_client._invoke_write(
+                        "write_register", address=100, value=1
+                    )
+                ),
+            )
+            self.assertEqual(
+                "write",
+                asyncio.run(
+                    kwb_client._invoke_write(
+                        "write_register", address=101, value=0
+                    )
+                ),
+            )
+            self.assertEqual(
+                [{"unit": 7}, {"slave": 7}, {"slave": 7}],
+                fake_client.write_kwargs,
+            )
         finally:
             for name, previous in saved_modules.items():
                 if previous is None:

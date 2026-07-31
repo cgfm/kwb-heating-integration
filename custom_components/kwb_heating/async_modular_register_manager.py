@@ -17,67 +17,66 @@ class AsyncModularRegisterManager:
 
     EQUIPMENT_KEY_CONFIG = {
         "heating_circuits": {
-            "is_zero_indexed": False,
             "filename": "heating_circuits.json",
             "lang": {
-                "de": {"name": "Heizkreise", "prefix": "HK"},
-                "en": {"name": "Heating Circuits", "prefix": "HC"}
+                "de": {"name": "Heizkreise"},
+                "en": {"name": "Heating Circuits"}
             }
         },
         "buffer_storage": {
-            "is_zero_indexed": True,
             "filename": "buffer_storage.json",
             "lang": {
-                "de": {"name": "Pufferspeicher", "prefix": "PUF"},
-                "en": {"name": "Buffer Storage", "prefix": "BUF"}
+                "de": {"name": "Pufferspeicher"},
+                "en": {"name": "Buffer Storage"}
             }
         },
         "dhw_storage": {
-            "is_zero_indexed": False,
             "filename": "dhw_storage.json",
             "lang": {
-                "de": {"name": "Brauchwasserspeicher", "prefix": "BWS"},
-                "en": {"name": "DHW Storage", "prefix": "DHW"}
+                "de": {"name": "Brauchwasserspeicher"},
+                "en": {"name": "DHW Storage"}
             }
         },
         "secondary_heat_sources": {
-            "is_zero_indexed": False,
             "filename": "secondary_heat_sources.json",
             "lang": {
-                "de": {"name": "Zweitwärmequellen", "prefix": "ZWQ"},
-                "en": {"name": "Secondary Heat Sources", "prefix": "SHS"}
+                "de": {"name": "Zweitwärmequellen"},
+                "en": {"name": "Secondary Heat Sources"}
             }
         },
         "circulation": {
-            "is_zero_indexed": True,
             "filename": "circulation.json",
             "lang": {
-                "de": {"name": "Zirkulation", "prefix": "Zirk"},
-                "en": {"name": "Circulation", "prefix": "Circ"}
+                "de": {"name": "Zirkulation"},
+                "en": {"name": "Circulation"}
             }
         },
         "solar": {
-            "is_zero_indexed": False,
             "filename": "solar.json",
             "lang": {
-                "de": {"name": "Solar", "prefix": "SOL"},
-                "en": {"name": "Solar", "prefix": "SOL"}
+                "de": {"name": "Solar"},
+                "en": {"name": "Solar"}
             }
         },
         "boiler_sequence": {
-            "is_zero_indexed": False,
             "filename": "boiler_sequence.json",
             "lang": {
-                "de": {"name": "Kesselfolgeschaltung", "prefix": "KFS"},
-                "en": {"name": "Boiler Sequence", "prefix": "BSEQ"}
+                "de": {"name": "Kesselfolgeschaltung"},
+                "en": {"name": "Boiler Sequence"}
             }
         },
         "heat_meters": {
-            "is_zero_indexed": True,
             "filename": "heat_meters.json",
             "lang": {
-                "de": {"name": "Wärmemengenzähler", "prefix": "WMZ"},
-                "en": {"name": "Heat Meters", "prefix": "HM"}
+                "de": {"name": "Wärmemengenzähler"},
+                "en": {"name": "Heat Meters"}
+            }
+        },
+        "transfer_stations": {
+            "filename": "transfer_station.json",
+            "lang": {
+                "de": {"name": "Übergabestation"},
+                "en": {"name": "Transfer Station"}
             }
         }
     }
@@ -285,44 +284,27 @@ class AsyncModularRegisterManager:
         if not config:
             return []
 
-        # Get language-specific prefix from config, fallback to 'en' then 'de'
-        lang_config = config["lang"].get(self._language) or config["lang"].get("en") or config["lang"]["de"]
-        prefix = lang_config["prefix"]
+        index_groups = self._get_equipment_index_groups(equipment_registers)
+
         # If count is specified and > 0, filter by index patterns
         if count is not None and count > 0:
-            # Select the first configured instances that actually exist in this
-            # firmware map. Some versions start zero-indexed equipment at slot 1,
-            # so a hard-coded range can otherwise select no registers at all.
-            indexed_registers: list[tuple[int, dict]] = []
+            selected_instances = {
+                prefix: set(instances[:count])
+                for prefix, instances in index_groups.items()
+            }
+            limited_registers = []
             for register in equipment_registers:
-                index = register.get("index", "")
-                expected_prefix = f"{prefix} "
-                if not index.startswith(expected_prefix):
+                parsed_index = self._parse_equipment_index(register.get("index", ""))
+                if not parsed_index:
                     continue
+                prefix, instance = parsed_index
+                if instance in selected_instances.get(prefix, set()):
+                    limited_registers.append(register)
 
-                number_part = index[len(expected_prefix):]
-                if equipment_key == "heating_circuits":
-                    number_part = number_part.split(".", 1)[0]
-
-                try:
-                    instance = int(number_part)
-                except ValueError:
-                    continue
-                indexed_registers.append((instance, register))
-
-            available_instances = sorted({item[0] for item in indexed_registers})
-            selected_instances = set(available_instances[:count])
-            limited_registers = [
-                register
-                for instance, register in indexed_registers
-                if instance in selected_instances
-            ]
-
-            if not available_instances:
+            if not index_groups:
                 _LOGGER.warning(
-                    "No %s registers matched index prefix '%s' for language %s",
+                    "No indexed %s registers found for language %s",
                     equipment_key,
-                    prefix,
                     self._language,
                 )
         else:
@@ -330,11 +312,43 @@ class AsyncModularRegisterManager:
 
         for register in limited_registers:
             if self._register_allowed_for_access_level(register, access_level):
-                registers.append(self._normalize_register(register))
+                registers.append(
+                    self._normalize_register(register, equipment_key, index_groups)
+                )
 
         _LOGGER.info("Selected %d %s registers for access level %s (count: %s)",
                     len(registers), equipment_key, access_level, count)
         return registers
+
+    @staticmethod
+    def _parse_equipment_index(index: str) -> tuple[str, int] | None:
+        """Return the index prefix and physical instance number."""
+        if not index or " " not in index:
+            return None
+
+        prefix, identifier = index.split(" ", 1)
+        instance_text = identifier.split(".", 1)[0]
+        try:
+            return prefix, int(instance_text)
+        except ValueError:
+            return None
+
+    def _get_equipment_index_groups(
+        self, equipment_registers: list[dict]
+    ) -> dict[str, list[int]]:
+        """Derive every index prefix and its available slots from register data."""
+        groups: dict[str, set[int]] = {}
+        for register in equipment_registers:
+            parsed_index = self._parse_equipment_index(register.get("index", ""))
+            if not parsed_index:
+                continue
+            prefix, instance = parsed_index
+            groups.setdefault(prefix, set()).add(instance)
+
+        return {
+            prefix: sorted(instances)
+            for prefix, instances in groups.items()
+        }
 
     async def get_all_registers(self, access_level: str, equipment_config: dict = None, device_type: str | None = None) -> list[dict]:
         """Get all registers for the access level, selected equipment, and device type."""
@@ -389,7 +403,7 @@ class AsyncModularRegisterManager:
 
         # Equipment-specific registers based on configuration (using counts)
         if equipment_config:
-            for key, config in self.EQUIPMENT_KEY_CONFIG.items():
+            for key in self.EQUIPMENT_KEY_CONFIG:
                 count = equipment_config.get(key, 0)
                 if count > 0:
                     equipment_regs = await self.get_equipment_registers(key, access_level, count)
@@ -409,7 +423,12 @@ class AsyncModularRegisterManager:
         
         return False
 
-    def _normalize_register(self, register: dict) -> dict:
+    def _normalize_register(
+        self,
+        register: dict,
+        equipment_key: str | None = None,
+        index_groups: dict[str, list[int]] | None = None,
+    ) -> dict:
         """Normalize register definition."""
         normalized = register.copy()
         
@@ -423,30 +442,26 @@ class AsyncModularRegisterManager:
         index = normalized.get("index", "")
         name = normalized.get("name", "")
         
-        if index and name:
-            for key, config in self.EQUIPMENT_KEY_CONFIG.items():
-                # Get language-specific prefix and name
-                lang_config = config["lang"].get(self._language) or config["lang"].get("en") or config["lang"]["de"]
-                prefix = lang_config["prefix"]
+        if index and name and equipment_key:
+            config = self.EQUIPMENT_KEY_CONFIG.get(equipment_key)
+            parsed_index = self._parse_equipment_index(index)
+            if config and parsed_index:
+                lang_config = (
+                    config["lang"].get(self._language)
+                    or config["lang"].get("en")
+                    or config["lang"]["de"]
+                )
                 friendly_name = lang_config["name"]
+                prefix, _instance = parsed_index
+                equipment_id = index.split(" ", 1)[1]
+                instances = (index_groups or {}).get(prefix, [])
 
-                if index.startswith(prefix):
-                    # Extract the equipment number/identifier
-                    equipment_id = index[len(prefix):].strip()
+                # Only simple numeric indices are shifted for display. Compound
+                # values such as heating circuit 1.1 are already user-facing.
+                if equipment_id.isdigit() and instances and instances[0] == 0:
+                    equipment_id = str(int(equipment_id) + 1)
 
-                    # Handle 0-indexed equipment types (convert to 1-based for display)
-                    if config["is_zero_indexed"]:
-                        try:
-                            display_num = int(equipment_id) + 1
-                            new_name = f"{friendly_name} {display_num}: {name}"
-                        except ValueError:
-                            new_name = f"{friendly_name} {equipment_id}: {name}"
-                    else:
-                        # Default: HC 1.1 -> Heating Circuit 1.1
-                        new_name = f"{friendly_name} {equipment_id}: {name}"
-
-                    normalized["name"] = new_name
-                    break
+                normalized["name"] = f"{friendly_name} {equipment_id}: {name}"
         
         # Add default access level if missing
         if "access_level" not in normalized:

@@ -266,12 +266,12 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 errors[CONF_HOST] = "invalid_host"
             else:
                 self.data.update(user_input)
+                unique_id = f"{host}_{user_input[CONF_SLAVE_ID]}"
+                await self.async_set_unique_id(unique_id)
+                self._abort_if_unique_id_configured()
+
                 try:
                     await validate_input(self.hass, self.data)
-
-                    unique_id = f"{user_input[CONF_HOST]}_{user_input[CONF_SLAVE_ID]}"
-                    await self.async_set_unique_id(unique_id)
-                    self._abort_if_unique_id_configured()
 
                     return await self.async_step_device()
 
@@ -299,12 +299,12 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 errors[CONF_SERIAL_PORT] = "invalid_serial_port"
             else:
                 self.data.update(user_input)
+                unique_id = f"{serial_port}_{user_input[CONF_SLAVE_ID]}"
+                await self.async_set_unique_id(unique_id)
+                self._abort_if_unique_id_configured()
+
                 try:
                     await validate_input(self.hass, self.data)
-
-                    unique_id = f"{user_input[CONF_SERIAL_PORT]}_{user_input[CONF_SLAVE_ID]}"
-                    await self.async_set_unique_id(unique_id)
-                    self._abort_if_unique_id_configured()
 
                     return await self.async_step_device()
 

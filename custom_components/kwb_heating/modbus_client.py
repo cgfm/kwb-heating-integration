@@ -122,30 +122,35 @@ class KWBModbusClient:
 
         method = getattr(self._client, method_name)
 
-        # Try unit kwarg
-        try:
-            res = await method(address, count=count, unit=self.slave_id)
-            self._unit_kwarg = "unit"
-            return res
-        except TypeError as e_unit:
-            # Try slave kwarg
+        first_error: TypeError | None = None
+        unit_kwargs = [self._unit_kwarg]
+        unit_kwargs.extend(
+            kwarg for kwarg in ("unit", "slave") if kwarg != self._unit_kwarg
+        )
+
+        for unit_kwarg in unit_kwargs:
             try:
-                res2 = await method(address, count=count, slave=self.slave_id)
-                self._unit_kwarg = "slave"
-                return res2
-            except TypeError as e_slave:
-                # Try without unit/slave
-                try:
-                    res3 = await method(address, count=count)
-                    return res3
-                except TypeError:
-                    # As last resort, try positional count only
-                    try:
-                        res4 = await method(address, count)
-                        return res4
-                    except TypeError:
-                        # Propagate the earliest informative error
-                        raise e_unit
+                result = await method(
+                    address,
+                    count=count,
+                    **{unit_kwarg: self.slave_id},
+                )
+                self._unit_kwarg = unit_kwarg
+                return result
+            except TypeError as exc:
+                if first_error is None:
+                    first_error = exc
+
+        # Try without unit/slave, then with positional count for old clients.
+        try:
+            return await method(address, count=count)
+        except TypeError:
+            try:
+                return await method(address, count)
+            except TypeError:
+                if first_error is not None:
+                    raise first_error
+                raise
 
     async def _invoke_write(self, method_name: str, *, address: int, value: Any):
         """Call a pymodbus write method in a version-agnostic way.
@@ -158,24 +163,31 @@ class KWBModbusClient:
 
         method = getattr(self._client, method_name)
 
-        # Try with 'unit'
-        try:
-            res = await method(address, value, unit=self.slave_id)
-            self._unit_kwarg = "unit"
-            return res
-        except TypeError as e_unit:
-            # Try with 'slave'
+        first_error: TypeError | None = None
+        unit_kwargs = [self._unit_kwarg]
+        unit_kwargs.extend(
+            kwarg for kwarg in ("unit", "slave") if kwarg != self._unit_kwarg
+        )
+
+        for unit_kwarg in unit_kwargs:
             try:
-                res2 = await method(address, value, slave=self.slave_id)
-                self._unit_kwarg = "slave"
-                return res2
-            except TypeError:
-                # Try without unit/slave
-                try:
-                    res3 = await method(address, value)
-                    return res3
-                except TypeError:
-                    raise e_unit
+                result = await method(
+                    address,
+                    value,
+                    **{unit_kwarg: self.slave_id},
+                )
+                self._unit_kwarg = unit_kwarg
+                return result
+            except TypeError as exc:
+                if first_error is None:
+                    first_error = exc
+
+        try:
+            return await method(address, value)
+        except TypeError:
+            if first_error is not None:
+                raise first_error
+            raise
 
     @property
     def _connection_label(self) -> str:

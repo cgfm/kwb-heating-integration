@@ -25,14 +25,6 @@ from .const import (
     CONF_PARITY,
     CONF_STOPBITS,
     CONF_BYTESIZE,
-    CONF_HEATING_CIRCUITS,
-    CONF_BUFFER_STORAGE,
-    CONF_DHW_STORAGE,
-    CONF_SECONDARY_HEAT_SOURCES,
-    CONF_CIRCULATION,
-    CONF_SOLAR,
-    CONF_BOILER_SEQUENCE,
-    CONF_HEAT_METERS,
     EQUIPMENT_KEYS,
     CONNECTION_TYPE_TCP,
     CONNECTION_TYPE_SERIAL,
@@ -204,14 +196,8 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         
         # Build equipment configuration - use counts directly, not boolean conversion
         equipment_config = {
-            "heating_circuits": self.config.get(CONF_HEATING_CIRCUITS, 0),
-            "buffer_storage": self.config.get(CONF_BUFFER_STORAGE, 0),
-            "dhw_storage": self.config.get(CONF_DHW_STORAGE, 0),
-            "secondary_heat_sources": self.config.get(CONF_SECONDARY_HEAT_SOURCES, 0),
-            "circulation": self.config.get(CONF_CIRCULATION, 0),
-            "solar": self.config.get(CONF_SOLAR, 0),
-            "boiler_sequence": self.config.get(CONF_BOILER_SEQUENCE, 0),
-            "heat_meters": self.config.get(CONF_HEAT_METERS, 0),
+            key: self.config.get(key, 0)
+            for key in EQUIPMENT_KEYS
         }
         
         # Store equipment counts for register filtering

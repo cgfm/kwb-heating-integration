@@ -13,6 +13,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - **Duplicate entity IDs**: Corrected all duplicate IDs in the shipped register maps, fixed sheet-scoped English-name lookup in both converter paths, and changed the runtime fallback to retain colliding registers with deterministic address-based IDs instead of silently dropping them.
 - **Missing circulation entities**: Corrected the German and English circulation prefixes (`Zirk`/`Circ`) and select the first slots that actually exist in the active firmware map, including v21.4 maps that start at slot 1.
+- **Equipment selection**: Equipment index prefixes and zero-/one-based slots are now derived from each firmware's register data. This restores boiler-sequence entities, English DHW and heat-meter entities, and secondary buffer prefixes without changing existing entity IDs.
+- **Transfer stations**: Connected the existing transfer-station option to the coordinator and register manager for supported v25 firmware maps.
+- **Config-flow duplicate handling**: Re-adding an existing connection now propagates Home Assistant's `already_configured` abort instead of turning it into an unknown error.
+- **PyModbus call compatibility**: Reuses the detected `unit`/`slave` keyword on subsequent reads and writes instead of repeating failed compatibility attempts for every register.
 
 ## [0.5.1] - 2026-07-31
 
