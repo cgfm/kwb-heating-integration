@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import re
 from typing import Any
 
 import voluptuous as vol
@@ -84,6 +85,15 @@ STEP_USER_DATA_SCHEMA = vol.Schema({
     ),
 })
 
+HOST_PATTERN = re.compile(
+    r"^(?:[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)*[a-zA-Z0-9](?:[a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?$|"
+    r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$"
+)
+
+SERIAL_PORT_PATTERN = re.compile(
+    r"^/dev/tty[A-Za-z0-9_/]+$|^COM\d+$"
+)
+
 STEP_TCP_DATA_SCHEMA = vol.Schema({
     vol.Required(CONF_HOST): cv.string,
     vol.Optional(CONF_PORT, default=DEFAULT_PORT): cv.port,
@@ -102,7 +112,13 @@ STEP_SERIAL_DATA_SCHEMA = vol.Schema({
 STEP_DEVICE_DATA_SCHEMA = vol.Schema({
     vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
     vol.Required(CONF_DEVICE_NAME): cv.string,
-    vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
+    vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): selector.SelectSelector(
+        selector.SelectSelectorConfig(
+            options=list(ACCESS_LEVELS.keys()),
+            translation_key="access_level",
+            mode=selector.SelectSelectorMode.DROPDOWN,
+        )
+    ),
     vol.Optional(CONF_LANGUAGE, default="auto"): selector.SelectSelector(
         selector.SelectSelectorConfig(
             options=["auto", "de", "en"],
@@ -174,10 +190,13 @@ async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str,
         success = await client.test_connection()
         if not success:
             raise CannotConnect("Connection test failed")
-        # Don't disconnect here - let the client handle cleanup automatically
+    except CannotConnect:
+        raise
     except Exception as exc:
         _LOGGER.error("Cannot connect to KWB heating system: %s", exc)
         raise CannotConnect from exc
+    finally:
+        await client.disconnect()
 
     # Return info that you want to store in the config entry.
     if connection_type == CONNECTION_TYPE_SERIAL:
@@ -203,7 +222,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
     @callback
     def async_get_options_flow(config_entry):
         """Get the options flow for this handler."""
-        return OptionsFlowHandler(config_entry)
+        return OptionsFlowHandler()
 
     async def async_step_user(
         self, user_input: dict[str, Any] | None = None
@@ -227,23 +246,25 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         errors: dict[str, str] = {}
 
         if user_input is not None:
-            self.data.update(user_input)
-            try:
-                await validate_input(self.hass, self.data)
+            host = user_input.get(CONF_HOST, "").strip()
+            if not HOST_PATTERN.match(host):
+                errors[CONF_HOST] = "invalid_host"
+            else:
+                self.data.update(user_input)
+                try:
+                    await validate_input(self.hass, self.data)
 
-                unique_id = f"{user_input[CONF_HOST]}_{user_input[CONF_SLAVE_ID]}"
-                await self.async_set_unique_id(unique_id)
-                self._abort_if_unique_id_configured()
+                    unique_id = f"{user_input[CONF_HOST]}_{user_input[CONF_SLAVE_ID]}"
+                    await self.async_set_unique_id(unique_id)
+                    self._abort_if_unique_id_configured()
 
-                return await self.async_step_device()
+                    return await self.async_step_device()
 
-            except CannotConnect:
-                errors["base"] = "cannot_connect"
-            except InvalidHost:
-                errors["host"] = "invalid_host"
-            except Exception:  # pylint: disable=broad-except
-                _LOGGER.exception("Unexpected exception")
-                errors["base"] = "unknown"
+                except CannotConnect:
+                    errors["base"] = "cannot_connect"
+                except Exception:  # pylint: disable=broad-except
+                    _LOGGER.exception("Unexpected exception")
+                    errors["base"] = "unknown"
 
         return self.async_show_form(
             step_id="tcp",
@@ -258,21 +279,25 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         errors: dict[str, str] = {}
 
         if user_input is not None:
-            self.data.update(user_input)
-            try:
-                await validate_input(self.hass, self.data)
+            serial_port = user_input.get(CONF_SERIAL_PORT, "").strip()
+            if not SERIAL_PORT_PATTERN.match(serial_port):
+                errors[CONF_SERIAL_PORT] = "invalid_serial_port"
+            else:
+                self.data.update(user_input)
+                try:
+                    await validate_input(self.hass, self.data)
 
-                unique_id = f"{user_input[CONF_SERIAL_PORT]}_{user_input[CONF_SLAVE_ID]}"
-                await self.async_set_unique_id(unique_id)
-                self._abort_if_unique_id_configured()
+                    unique_id = f"{user_input[CONF_SERIAL_PORT]}_{user_input[CONF_SLAVE_ID]}"
+                    await self.async_set_unique_id(unique_id)
+                    self._abort_if_unique_id_configured()
 
-                return await self.async_step_device()
+                    return await self.async_step_device()
 
-            except CannotConnect:
-                errors["base"] = "cannot_connect"
-            except Exception:  # pylint: disable=broad-except
-                _LOGGER.exception("Unexpected exception")
-                errors["base"] = "unknown"
+                except CannotConnect:
+                    errors["base"] = "cannot_connect"
+                except Exception:  # pylint: disable=broad-except
+                    _LOGGER.exception("Unexpected exception")
+                    errors["base"] = "unknown"
 
         return self.async_show_form(
             step_id="serial",
@@ -311,7 +336,13 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         device_schema = vol.Schema({
             vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
             vol.Required(CONF_DEVICE_NAME, default=suggested_name): cv.string,
-            vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): vol.In(ACCESS_LEVELS.keys()),
+            vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): selector.SelectSelector(
+                selector.SelectSelectorConfig(
+                    options=list(ACCESS_LEVELS.keys()),
+                    translation_key="access_level",
+                    mode=selector.SelectSelectorMode.DROPDOWN,
+                )
+            ),
             vol.Optional(CONF_LANGUAGE, default="auto"): selector.SelectSelector(
                 selector.SelectSelectorConfig(
                     options=["auto", "de", "en"],
@@ -328,7 +359,6 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             errors=errors,
             description_placeholders={
                 "device_types": ", ".join(DEVICE_TYPES.keys()),
-                "access_levels": ", ".join(f"{k}: {v}" for k, v in ACCESS_LEVELS.items())
             }
         )
 
@@ -364,13 +394,10 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
 
 class OptionsFlowHandler(config_entries.OptionsFlow):
-    """Handle options flow for KWB Heating integration."""
+    """Handle options flow for KWB Heating integration.
 
-    def __init__(self, config_entry: config_entries.ConfigEntry):
-        """Initialize options flow without setting deprecated attribute."""
-        # Do NOT assign to self.config_entry (deprecated in HA);
-        # keep a private reference for backward-compat usage.
-        self._config_entry = config_entry
+    Uses the modern HA pattern: self.config_entry is provided by the framework.
+    """
 
     async def async_step_init(
         self, user_input: dict[str, Any] | None = None
@@ -396,9 +423,9 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
             if not errors:
                 try:
                     # Update config entry data if device name changed
-                    if CONF_DEVICE_NAME in user_input and user_input[CONF_DEVICE_NAME] != self._config_entry.data.get(CONF_DEVICE_NAME):
+                    if CONF_DEVICE_NAME in user_input and user_input[CONF_DEVICE_NAME] != self.config_entry.data.get(CONF_DEVICE_NAME):
                         # Update data with new device name
-                        updated_data = {**self._config_entry.data, CONF_DEVICE_NAME: user_input[CONF_DEVICE_NAME]}
+                        updated_data = {**self.config_entry.data, CONF_DEVICE_NAME: user_input[CONF_DEVICE_NAME]}
                         
                         # Update config entry with new data and title
                         if updated_data.get(CONF_CONNECTION_TYPE) == CONNECTION_TYPE_SERIAL:
@@ -406,7 +433,7 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                         else:
                             conn_label = updated_data.get(CONF_HOST, "unknown")
                         self.hass.config_entries.async_update_entry(
-                            self._config_entry,
+                            self.config_entry,
                             data=updated_data,
                             title=f"{user_input[CONF_DEVICE_NAME]} ({conn_label})"
                         )
@@ -418,9 +445,8 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                     _LOGGER.error("Error updating equipment configuration: %s", exc)
                     errors["base"] = "unknown"
 
-        # Get current values from config entry
-        # Prefer framework-provided property if available, else our private copy
-        entry = getattr(self, "config_entry", None) or self._config_entry
+        # Get current values from config entry (provided by the framework)
+        entry = self.config_entry
         current_equipment = entry.options
         
         # Create schema with current values as defaults
@@ -490,7 +516,13 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                 CONF_ACCESS_LEVEL,
                 default=current_equipment.get(CONF_ACCESS_LEVEL,
                                              entry.data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL))
-            ): vol.In(ACCESS_LEVELS.keys()),
+            ): selector.SelectSelector(
+                selector.SelectSelectorConfig(
+                    options=list(ACCESS_LEVELS.keys()),
+                    translation_key="access_level",
+                    mode=selector.SelectSelectorMode.DROPDOWN,
+                )
+            ),
             vol.Optional(
                 CONF_UPDATE_INTERVAL,
                 default=current_equipment.get(CONF_UPDATE_INTERVAL,
@@ -510,7 +542,3 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
 
 class CannotConnect(HomeAssistantError):
     """Error to indicate we cannot connect."""
-
-
-class InvalidHost(HomeAssistantError):
-    """Error to indicate there is an invalid hostname."""

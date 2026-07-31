@@ -51,7 +51,7 @@
     {
       "starting_address": 8201,
       "name": "Boiler pump %",
-      "entity_id": "boiler_pump",
+      "entity_id": "boiler_pump_percent",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",

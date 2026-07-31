@@ -10,9 +10,6 @@ from pymodbus.client import AsyncModbusTcpClient
 from pymodbus.exceptions import ModbusException
 
 from .const import (
-    MODBUS_FUNCTION_CODES,
-    ERROR_CONNECTION,
-    ERROR_TIMEOUT,
     CONNECTION_TYPE_TCP,
     CONNECTION_TYPE_SERIAL,
     DEFAULT_BAUDRATE,
@@ -263,6 +260,18 @@ class KWBModbusClient:
                     self._client = None
                     _LOGGER.info("Disconnected from KWB heating system")
 
+    async def _teardown_connection(self) -> None:
+        """Tear down the client connection after a transport-level error."""
+        try:
+            if self._client is not None:
+                close_result = self._client.close()
+                if asyncio.iscoroutine(close_result):
+                    await close_result
+        except Exception:
+            pass
+        self._client = None
+        self._connected = False
+
     async def test_connection(self) -> bool:
         """Test the connection by reading a basic register."""
         try:
@@ -295,25 +304,25 @@ class KWBModbusClient:
                 result = await self._invoke_write(
                     "write_register", address=address, value=value
                 )
-                
+
                 if result.isError():
                     _LOGGER.error("Error writing register %d: %s", address, result)
                     return False
-                
+
                 return True
-                
+
+        except ModbusException as exc:
+            _LOGGER.error("Modbus protocol error writing register %d: %s", address, exc)
+            return False
+
+        except (ConnectionError, asyncio.TimeoutError, OSError) as exc:
+            _LOGGER.error("Connection error writing register %d: %s", address, exc)
+            await self._teardown_connection()
+            return False
+
         except Exception as exc:
             _LOGGER.error("Failed to write register %d: %s", address, exc)
-            # Close client on failure to avoid leaks and reconnect next time
-            try:
-                if self._client is not None:
-                    close_result = self._client.close()
-                    if asyncio.iscoroutine(close_result):
-                        await close_result
-            except Exception:
-                pass
-            self._client = None
-            self._connected = False
+            await self._teardown_connection()
             return False
 
     async def write_multiple_registers(self, address: int, values: list[int]) -> bool:
@@ -330,29 +339,34 @@ class KWBModbusClient:
                 result = await self._invoke_write(
                     "write_registers", address=address, value=values
                 )
-                
+
                 if result.isError():
                     _LOGGER.error("Error writing registers starting at %d: %s", address, result)
                     return False
-                
+
                 return True
-                
+
+        except ModbusException as exc:
+            _LOGGER.error("Modbus protocol error writing registers starting at %d: %s", address, exc)
+            return False
+
+        except (ConnectionError, asyncio.TimeoutError, OSError) as exc:
+            _LOGGER.error("Connection error writing registers starting at %d: %s", address, exc)
+            await self._teardown_connection()
+            return False
+
         except Exception as exc:
             _LOGGER.error("Failed to write registers starting at %d: %s", address, exc)
-            # Close client on failure to avoid leaks and reconnect next time
-            try:
-                if self._client is not None:
-                    close_result = self._client.close()
-                    if asyncio.iscoroutine(close_result):
-                        await close_result
-            except Exception:
-                pass
-            self._client = None
-            self._connected = False
+            await self._teardown_connection()
             return False
 
     async def _read_registers(self, register_type: str, address: int, count: int) -> list[int] | None:
-        """Read registers with error handling."""
+        """Read registers with error handling (acquires lock).
+
+        Public-facing method used by read_input_registers / read_holding_registers.
+        Acquires the lock for a single read. For batch reads, use _read_registers_unlocked
+        under an externally held lock instead.
+        """
         if not self._connected or not self._client:
             await self.connect()
 
@@ -360,100 +374,175 @@ class KWBModbusClient:
             _LOGGER.error("Cannot establish connection to Modbus device")
             return None
 
+        async with self._lock:
+            return await self._read_registers_unlocked(register_type, address, count)
+
+    async def _read_registers_unlocked(self, register_type: str, address: int, count: int) -> list[int] | None:
+        """Read registers without acquiring the lock (caller must hold it).
+
+        Differentiates between protocol errors (ModbusException) and connection
+        errors. Protocol errors do NOT tear down the connection, as the transport
+        is still healthy.
+        """
         try:
-            async with self._lock:
-                if register_type == "input":
-                    result = await self._invoke_read(
-                        "read_input_registers", address=address, count=count
-                    )
-                elif register_type == "holding":
-                    result = await self._invoke_read(
-                        "read_holding_registers", address=address, count=count
-                    )
-                else:
-                    raise ValueError(f"Invalid register type: {register_type}")
+            if register_type == "input":
+                result = await self._invoke_read(
+                    "read_input_registers", address=address, count=count
+                )
+            elif register_type == "holding":
+                result = await self._invoke_read(
+                    "read_holding_registers", address=address, count=count
+                )
+            else:
+                raise ValueError(f"Invalid register type: {register_type}")
 
-                if result.isError():
-                    _LOGGER.error("Error reading %s registers at %d: %s", register_type, address, result)
-                    return None
+            if result.isError():
+                _LOGGER.error("Error reading %s registers at %d: %s", register_type, address, result)
+                return None
 
-                return result.registers
+            return result.registers
+
+        except ModbusException as exc:
+            _LOGGER.error(
+                "Modbus protocol error reading %s registers at %d: %s",
+                register_type, address, exc,
+            )
+            return None
+
+        except (ConnectionError, asyncio.TimeoutError, OSError) as exc:
+            _LOGGER.error(
+                "Connection error reading %s registers at %d: %s",
+                register_type, address, exc,
+            )
+            await self._teardown_connection()
+            return None
 
         except Exception as exc:
             _LOGGER.error("Failed to read %s registers at %d: %s", register_type, address, exc)
-            # Close client to avoid leaks and reconnect on next call
-            try:
-                if self._client is not None:
-                    close_result = self._client.close()
-                    if asyncio.iscoroutine(close_result):
-                        await close_result
-            except Exception:
-                pass
-            self._client = None
-            self._connected = False
+            await self._teardown_connection()
             return None
 
     async def read_batch_registers(self, registers: list[dict]) -> dict[int, Any]:
-        """Read multiple registers in batches for efficiency."""
+        """Read multiple registers in batches for efficiency.
+
+        Acquires the lock once for the entire batch so that all reads form an
+        atomic snapshot of the device state (issue #24).
+        """
+        # Ensure connection before acquiring the lock
+        if not self._connected or not self._client:
+            await self.connect()
+
+        if not self._connected or not self._client:
+            _LOGGER.error("Cannot establish connection to Modbus device")
+            return {}
+
         results = {}
-        
-        # Group registers by type and create continuous ranges
+
+        # Group registers by type
         input_registers = []
         holding_registers = []
-        
+
         for reg in registers:
             data_type = reg.get("data_type", "")
-            if "04" in data_type:  # Input registers (read-only)
+            if "04" in data_type:
                 input_registers.append(reg)
-            elif "03" in data_type:  # Holding registers (read-write)
+            elif "03" in data_type:
                 holding_registers.append(reg)
-        
-        # Process input registers
-        if input_registers:
-            results.update(await self._read_register_batch(input_registers, "input"))
-        
-        # Process holding registers
-        if holding_registers:
-            results.update(await self._read_register_batch(holding_registers, "holding"))
-        
+
+        async with self._lock:
+            if input_registers:
+                results.update(await self._read_register_batch_unlocked(input_registers, "input"))
+            if holding_registers:
+                results.update(await self._read_register_batch_unlocked(holding_registers, "holding"))
+
         return results
 
-    async def _read_register_batch(self, registers: list[dict], register_type: str) -> dict[int, Any]:
-        """Read a batch of registers of the same type."""
-        results = {}
-        
-        # Sort registers by address
-        sorted_registers = sorted(registers, key=lambda x: x["starting_address"])
-        
-        # Read registers individually or in small batches to avoid Modbus limits
-        for reg in sorted_registers:
-            address = reg["starting_address"]
+    async def _read_register_batch_unlocked(self, registers: list[dict], register_type: str) -> dict[int, Any]:
+        """Read a batch of registers using contiguous range reads (caller must hold lock).
 
-            # Determine count based on data type (u32/s32 need 2 registers)
-            # Use 'type' field from config, fallback to 'unit' field
+        Groups registers into contiguous ranges (with a configurable gap tolerance)
+        and reads each range with a single Modbus request.
+        """
+        results = {}
+
+        # Build a list of (address, register_count, reg_dict) for each register
+        address_info: list[tuple[int, int, dict]] = []
+        for reg in registers:
+            address = reg["starting_address"]
             data_type = reg.get("type", reg.get("unit", "u16"))
             count = 2 if data_type in ["u32", "s32"] else 1
-            
+            address_info.append((address, count, reg))
+
+        address_info.sort(key=lambda x: x[0])
+        if not address_info:
+            return results
+
+        # Group into contiguous ranges.
+        MAX_GAP = 10   # max gap (in 16-bit registers) to bridge
+        MAX_RANGE = 125  # Modbus protocol limit per request
+
+        ranges: list[tuple[int, int, list[tuple[int, int, dict]]]] = []
+        range_start = address_info[0][0]
+        range_end = address_info[0][0] + address_info[0][1]
+        range_regs: list[tuple[int, int, dict]] = [address_info[0]]
+
+        for addr, count, reg in address_info[1:]:
+            reg_end = addr + count
+            if addr <= range_end + MAX_GAP and (reg_end - range_start) <= MAX_RANGE:
+                range_end = max(range_end, reg_end)
+                range_regs.append((addr, count, reg))
+            else:
+                ranges.append((range_start, range_end - range_start, range_regs))
+                range_start = addr
+                range_end = reg_end
+                range_regs = [(addr, count, reg)]
+
+        ranges.append((range_start, range_end - range_start, range_regs))
+
+        _LOGGER.debug(
+            "Reading %d %s registers in %d range(s) instead of %d individual reads",
+            len(address_info), register_type, len(ranges), len(address_info),
+        )
+
+        for range_start, range_count, range_regs in ranges:
             try:
-                if register_type == "input":
-                    values = await self.read_input_registers(address, count)
-                else:
-                    values = await self.read_holding_registers(address, count)
-                
-                if values and len(values) > 0:
-                    if count == 2 and len(values) >= 2:
-                        # Combine two 16-bit registers into one 32-bit value
-                        combined_value = (values[0] << 16) | values[1]
-                        results[address] = combined_value
-                        _LOGGER.debug("Read 32-bit register %d: %d", address, combined_value)
+                values = await self._read_registers_unlocked(register_type, range_start, range_count)
+
+                if not values or len(values) < range_count:
+                    _LOGGER.warning(
+                        "Incomplete data for %s range %d-%d (got %d of %d)",
+                        register_type, range_start, range_start + range_count - 1,
+                        len(values) if values else 0, range_count,
+                    )
+                    continue
+
+                for addr, count, reg in range_regs:
+                    offset = addr - range_start
+                    if offset + count <= len(values):
+                        if count == 2:
+                            combined_value = (values[offset] << 16) | values[offset + 1]
+                            results[addr] = combined_value
+                            _LOGGER.debug("Read 32-bit register %d: %d", addr, combined_value)
+                        else:
+                            results[addr] = values[offset]
+                            _LOGGER.debug("Read register %d: %d", addr, values[offset])
                     else:
-                        results[address] = values[0]
-                        _LOGGER.debug("Read register %d: %d", address, values[0])
-                else:
-                    _LOGGER.debug("No data for register %d", address)
-                    
+                        _LOGGER.debug("No data for register %d in range response", addr)
+
             except Exception as exc:
-                _LOGGER.warning("Failed to read register %d: %s", address, exc)
-                continue
-        
+                _LOGGER.warning(
+                    "Failed to read %s range %d-%d (%d regs): %s. Falling back to individual reads.",
+                    register_type, range_start, range_start + range_count - 1, range_count, exc,
+                )
+                for addr, count, reg in range_regs:
+                    try:
+                        ind_values = await self._read_registers_unlocked(register_type, addr, count)
+                        if ind_values and len(ind_values) >= count:
+                            if count == 2:
+                                results[addr] = (ind_values[0] << 16) | ind_values[1]
+                            else:
+                                results[addr] = ind_values[0]
+                    except Exception as inner_exc:
+                        _LOGGER.warning("Failed to read register %d: %s", addr, inner_exc)
+
         return results

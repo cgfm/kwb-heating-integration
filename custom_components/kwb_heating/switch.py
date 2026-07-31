@@ -23,16 +23,16 @@ async def async_setup_entry(
 ) -> None:
     """Set up KWB Heating switch platform."""
     coordinator: KWBDataUpdateCoordinator = hass.data[DOMAIN][config_entry.entry_id]
-    
+
     entities = []
-    
-    # Wait for register manager initialization if needed
-    if not hasattr(coordinator, '_registers') or coordinator._registers is None:
-        await coordinator._initialize_register_manager()
-    
+
+    await coordinator.ensure_initialized()
+
+    level_field = "user_level" if coordinator.access_level == "UserLevel" else "expert_level"
+
     # Create switch entities for read-write registers with boolean values
     for register in coordinator._registers:
-        if (register.get("user_level") == "readwrite" and
+        if (register.get(level_field) == "readwrite" and
             coordinator.data_converter.has_value_table(register) and
             coordinator.data_converter.is_boolean_value_table(register)):
             entities.append(KWBSwitch(coordinator, register))
@@ -55,15 +55,18 @@ class KWBSwitch(KWBBaseEntity, SwitchEntity):
         # Set icon based on register definition
         self._attr_icon = get_entity_icon(self._register, "switch")
 
+        # Cache static attributes shared across platforms
+        self._static_attrs: dict[str, Any] = self._build_static_attrs()
+
         # Determine on/off values from value table using data converter
         unit_value_table = self._register.get("unit_value_table", "")
-        
+
         self._on_value = None
         self._off_value = None
-        
+
         if unit_value_table in self.coordinator.data_converter.value_tables:
             value_table = self.coordinator.data_converter.value_tables[unit_value_table]
-            
+
             # Find which value represents "on" state
             for value, description in value_table.items():
                 desc_lower = str(description).lower()
@@ -77,7 +80,7 @@ class KWBSwitch(KWBBaseEntity, SwitchEntity):
                         self._off_value = int(value)
                     except ValueError:
                         self._off_value = value
-            
+
             # Fallback: use 0 as off, 1 as on for simple boolean tables
             if self._on_value is None or self._off_value is None:
                 keys = list(value_table.keys())
@@ -139,29 +142,20 @@ class KWBSwitch(KWBBaseEntity, SwitchEntity):
             else:
                 _LOGGER.error("Failed to turn off switch %s", self.name)
 
-    @property
-    def available(self) -> bool:
-        """Return if entity is available."""
-        return self.coordinator.last_update_success
+    # available property inherited from KWBBaseEntity (now also checks address in data)
 
     @property
     def extra_state_attributes(self) -> dict[str, Any]:
         """Return additional state attributes."""
-        attributes = {
-            "register_address": self._address,
-            "data_type": self._register.get("type"),
-            "access": self._register.get("access"),
-        }
-        
-        # Add current raw value
+        attributes: dict[str, Any] = dict(self._static_attrs)
+
         if self.coordinator.data is not None and self._address in self.coordinator.data:
             reg_data = self.coordinator.data[self._address]
             raw_val = reg_data.get("raw_value")
             if raw_val is not None:
                 attributes["raw_value"] = raw_val
-                # Add value description if available via data converter
                 disp = self.coordinator.data_converter.get_display_value(self._register, raw_val)
                 if disp is not None:
                     attributes["value_description"] = disp
-        
+
         return attributes

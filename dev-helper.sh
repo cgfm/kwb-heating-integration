@@ -2,19 +2,21 @@
 # KWB Development Helper Script
 # Provides common development tasks for KWB Heating Integration
 
-set -uo pipefail
-
 # Bash completion support: source this script to enable tab completion
 # Usage: source ./dev-helper.sh --completion
+# NOTE: This block must come before 'set -uo pipefail' so that sourcing
+# this script for completion doesn't leak strict mode into the parent shell.
 if [[ "${1:-}" == "--completion" ]]; then
     _dev_helper_completions() {
-        local actions="reset-kwb reset-full restart logs logs-kwb status open backup-config help"
+        local actions="start stop restart reset-kwb reset-full status logs logs-kwb open backup-config completion no-completion help"
         COMPREPLY=($(compgen -W "${actions}" -- "${COMP_WORDS[1]}"))
     }
     complete -F _dev_helper_completions ./dev-helper.sh
     complete -F _dev_helper_completions dev-helper.sh
     return 0 2>/dev/null || exit 0
 fi
+
+set -uo pipefail
 
 CONTAINER_NAME="kwb-hass-test"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -32,19 +34,25 @@ show_help() {
     echo -e "${CYAN}🔧 KWB Development Helper${NC}"
     echo -e "${CYAN}=========================${NC}"
     echo ""
-    echo -e "${YELLOW}Available actions:${NC}"
+    echo -e "${YELLOW}Container:${NC}"
+    echo -e "  ${GREEN}start${NC}          Start HA container"
+    echo -e "  ${GREEN}stop${NC}           Stop HA container"
+    echo -e "  ${GREEN}restart${NC}        Restart HA container"
+    echo -e "  ${GREEN}status${NC}         Show container status"
+    echo ""
+    echo -e "${YELLOW}Reset:${NC}"
     echo -e "  ${GREEN}reset-kwb${NC}      Reset only KWB integration (keep HA running)"
     echo -e "  ${GREEN}reset-full${NC}     Full HA reset (stop container, delete config)"
-    echo -e "  ${GREEN}restart${NC}        Restart HA container"
+    echo ""
+    echo -e "${YELLOW}Logs & UI:${NC}"
     echo -e "  ${GREEN}logs${NC}           Show recent HA logs"
     echo -e "  ${GREEN}logs-kwb${NC}       Show KWB-specific logs"
-    echo -e "  ${GREEN}status${NC}         Show container status"
     echo -e "  ${GREEN}open${NC}           Open HA web interface"
-    echo -e "  ${GREEN}backup-config${NC}  Backup current HA config"
     echo ""
-    echo -e "${YELLOW}Tab completion:${NC}"
-    echo -e "  source ./dev-helper.sh --completion"
-    echo -e "  Add to ~/.bashrc to make it permanent."
+    echo -e "${YELLOW}Utilities:${NC}"
+    echo -e "  ${GREEN}backup-config${NC}  Backup current HA config"
+    echo -e "  ${GREEN}completion${NC}     Add tab completion to ~/.bashrc"
+    echo -e "  ${GREEN}no-completion${NC}  Remove tab completion from ~/.bashrc"
     echo ""
     echo -e "${CYAN}Usage: ./dev-helper.sh <action>${NC}"
     echo -e "${CYAN}Example: ./dev-helper.sh reset-kwb${NC}"
@@ -107,23 +115,27 @@ reset_full() {
     fi
     echo -e "   ${GREEN}✅ Home Assistant is up${NC}"
 
-    echo -e "${CYAN}5️⃣ Installing HACS...${NC}"
-    docker exec -w /config "${CONTAINER_NAME}" bash -c \
-        'wget -qO - https://get.hacs.xyz | bash -' && \
-        echo -e "   ${GREEN}✅ HACS installed${NC}" || \
-        echo -e "   ${RED}❌ HACS installation failed${NC}"
-
-    echo -e "${CYAN}6️⃣ Restarting Home Assistant to load HACS...${NC}"
-    docker restart "${CONTAINER_NAME}"
-
     echo -e "${GREEN}✅ Full HA reset completed!${NC}"
-    echo -e "${BLUE}💡 HA is restarting with HACS, this may take a minute...${NC}"
+    echo -e "${BLUE}💡 Custom component is mounted via docker volume, ready to configure.${NC}"
+}
+
+start_container() {
+    echo -e "${YELLOW}▶️ Starting HA container...${NC}"
+    docker compose -f "${SCRIPT_DIR}/docker-compose.yml" up -d
+    echo -e "${GREEN}✅ Container started!${NC}"
 }
 
 restart_container() {
     echo -e "${YELLOW}🔄 Restarting HA container...${NC}"
-    docker restart "${CONTAINER_NAME}"
+    docker compose -f "${SCRIPT_DIR}/docker-compose.yml" restart
     echo -e "${GREEN}✅ Container restarted!${NC}"
+}
+
+stop_container() {
+    echo -e "${YELLOW}🛑 Stopping HA container...${NC}"
+    docker compose -f "${SCRIPT_DIR}/docker-compose.yml" down --remove-orphans 2>/dev/null || \
+        docker stop "${CONTAINER_NAME}" 2>/dev/null || true
+    echo -e "${GREEN}✅ Container stopped!${NC}"
 }
 
 show_logs() {
@@ -168,19 +180,53 @@ backup_config() {
     fi
 }
 
+install_completion() {
+    local bashrc="${HOME}/.bashrc"
+    local completion_line="source \"${SCRIPT_DIR}/dev-helper.sh\" --completion"
+
+    if grep -qF "dev-helper.sh\" --completion" "${bashrc}" 2>/dev/null; then
+        echo -e "${YELLOW}Tab completion is already installed in ${bashrc}${NC}"
+        return 0
+    fi
+
+    echo "" >> "${bashrc}"
+    echo "# KWB dev-helper tab completion" >> "${bashrc}"
+    echo "${completion_line}" >> "${bashrc}"
+    echo -e "${GREEN}✅ Tab completion added to ${bashrc}${NC}"
+    echo -e "${BLUE}💡 Open a new terminal or run 'source ~/.bashrc' to activate.${NC}"
+}
+
+remove_completion() {
+    local bashrc="${HOME}/.bashrc"
+
+    if ! grep -qF "dev-helper.sh\" --completion" "${bashrc}" 2>/dev/null; then
+        echo -e "${YELLOW}Tab completion is not installed in ${bashrc}${NC}"
+        return 0
+    fi
+
+    grep -vF "dev-helper.sh\" --completion" "${bashrc}" | grep -v "# KWB dev-helper tab completion" > "${bashrc}.tmp"
+    mv "${bashrc}.tmp" "${bashrc}"
+    echo -e "${GREEN}✅ Tab completion removed from ${bashrc}${NC}"
+    echo -e "${BLUE}💡 Open a new terminal or run 'source ~/.bashrc' to apply.${NC}"
+}
+
 # Main script logic
 action="${1:-help}"
 
 case "${action,,}" in
-    reset-kwb)     reset_kwb ;;
-    reset-full)    reset_full ;;
-    restart)       restart_container ;;
+    start)          start_container ;;
+    stop)           stop_container ;;
+    restart)        restart_container ;;
+    reset-kwb)      reset_kwb ;;
+    reset-full)     reset_full ;;
     logs)          show_logs ;;
     logs-kwb)      show_kwb_logs ;;
     status)        show_status ;;
     open)          open_ha ;;
-    backup-config) backup_config ;;
-    help)          show_help ;;
+    backup-config)  backup_config ;;
+    completion)     install_completion ;;
+    no-completion)  remove_completion ;;
+    help)           show_help ;;
     *)
         echo -e "${RED}❌ Unknown action: ${action}${NC}"
         show_help

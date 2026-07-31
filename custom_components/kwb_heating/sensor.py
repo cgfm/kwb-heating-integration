@@ -73,41 +73,28 @@ async def async_setup_entry(
 ) -> None:
     """Set up KWB Heating sensor platform."""
     coordinator: KWBDataUpdateCoordinator = hass.data[DOMAIN][config_entry.entry_id]
-    
+
     entities = []
-    
-    # Wait for register manager initialization if needed
-    if not hasattr(coordinator, '_registers') or coordinator._registers is None:
-        await coordinator._initialize_register_manager()
-    
+
+    await coordinator.ensure_initialized()
+
     _LOGGER.debug("Processing %d registers for sensor entities", len(coordinator._registers) if coordinator._registers else 0)
-    
-    # Create sensor entities for all read-only registers and RW registers that should show values
+
+    access_level = coordinator.access_level
+    level_field = "user_level" if access_level == "UserLevel" else "expert_level"
+
+    # Sensors are only created for read-only registers at the active access level.
+    # Read-write registers become number/select/switch entities instead.
     for register in coordinator._registers:
-        # Sensors are created for:
-        # 1. Read-only registers (access="R")
-        # 2. Read-write registers that have value tables (display values)
-        # 3. Read-write registers that are diagnostic or informational
-        # Get access level and determine if this register should create a sensor
-        user_level = register.get("user_level", "")
-        expert_level = register.get("expert_level", "")
-        access_level = coordinator.access_level  # UserLevel or ExpertLevel
-        
-        # Check if this register is accessible at the current access level
-        is_readable = False
-        if access_level == "UserLevel" and user_level in ["read", "write"]:
-            is_readable = True
-        elif access_level == "ExpertLevel" and expert_level in ["read", "write"]:
-            is_readable = True
-        
-        _LOGGER.debug("Register %s: user_level=%s, expert_level=%s, current_access=%s, readable=%s", 
-                      register.get("name", "Unknown"), user_level, expert_level, access_level, is_readable)
-        
-        # Create sensor for readable registers
+        level_value = register.get(level_field, "")
+        is_readable = level_value == "read"
+
+        _LOGGER.debug("Register %s: %s=%s, current_access=%s, readable=%s",
+                      register.get("name", "Unknown"), level_field, level_value, access_level, is_readable)
+
         if is_readable:
-            _LOGGER.debug("Creating sensor for register: %s", register.get("name", "Unknown"))
             entities.append(KWBSensor(coordinator, register))
-    
+
     # Add computed sensor for firewood devices: "Last Firewood Fire"
     device_type = coordinator.config.get("device_type", "")
     if device_type in FIREWOOD_DEVICE_TYPES:
@@ -140,26 +127,29 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         # Configure sensor properties based on register
         self._configure_sensor()
 
+        # Cache static attributes that never change (issue #35)
+        self._static_attrs: dict[str, Any] = self._build_static_attrs()
+
     def _configure_sensor(self) -> None:
         """Configure sensor properties based on register definition."""
         # Use data converter for unit and device class
         unit = self.coordinator.data_converter.get_unit(self._register)
         device_class = self.coordinator.data_converter.get_device_class(self._register)
-        
+
         if unit:
             self._attr_native_unit_of_measurement = unit
-        
+
         if device_class:
             self._attr_device_class = device_class
-            
+
         # Set state class ONLY for truly numeric values (no value tables)
-        if (self.coordinator.data_converter.is_numeric(self._register) and 
+        if (self.coordinator.data_converter.is_numeric(self._register) and
             not self.coordinator.data_converter.has_value_table(self._register)):
             self._attr_state_class = SensorStateClass.MEASUREMENT
-        
+
         # Set icon based on register definition
         self._attr_icon = get_entity_icon(self._register, "sensor")
-        
+
         # Set entity category based on register properties
         name_lower = self._register["name"].lower()
         if any(keyword in name_lower for keyword in ["version", "revision", "software"]):
@@ -172,14 +162,14 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         """Return the state of the sensor."""
         if self.coordinator.data and self._address in self.coordinator.data:
             register_data = self.coordinator.data[self._address]
-            
+
             # Use display value if available (from value table)
             if "display_value" in register_data:
                 return register_data["display_value"]
-                
+
             # Otherwise use converted value
             return register_data.get("value")
-        
+
         return None
 
     @property
@@ -187,43 +177,14 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         """Return additional state attributes."""
         if not self.coordinator.data or self._address not in self.coordinator.data:
             return {}
-        
-        register_data = self.coordinator.data[self._address]
-        
-        attributes = {
-            "register_address": self._address,
-            "register_type": self._register.get("type"),
-            "data_type": self._register.get("data_type"),
-            "raw_value": register_data.get("raw_value"),
-        }
 
-        # Keep only snake_case attributes for consistency
-        
-        # Add register description if available
-        if self._register.get("description"):
-            attributes["description"] = self._register["description"]
-        
-        # Add access level info
-        if self._register.get("access_level"):
-            attributes["access_level"] = self._register["access_level"]
-        
-        # Add min/max values if available
-        if self._register.get("min"):
-            attributes["min_value"] = self._register["min"]
-        if self._register.get("max"):
-            attributes["max_value"] = self._register["max"]
-        
+        register_data = self.coordinator.data[self._address]
+
+        # Merge cached static attributes with dynamic raw_value (issue #35)
+        attributes = {**self._static_attrs, "raw_value": register_data.get("raw_value")}
         return attributes
 
-    @property
-    def available(self) -> bool:
-        """Return True if entity is available."""
-        return (
-            self.coordinator.last_update_success
-            and self.coordinator.data is not None
-            and self._address in self.coordinator.data
-        )
-
+    # available property inherited from KWBBaseEntity
 
 class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
     """Sensor that tracks when the last firewood fire was active."""
@@ -246,13 +207,13 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
             language, FIREWOOD_SENSOR_TRANSLATIONS["en"]
         )
 
-        # Set entity attributes
-        device_prefix = coordinator.device_name_prefix
-        self._attr_name = f"{device_prefix} {translations['name']}"
+        # Set entity attributes — use has_entity_name so HA prefixes the device name
+        self._attr_has_entity_name = True
+        self._attr_name = translations['name']
 
         # Generate unique ID (always use English for consistency)
         device_identifier = f"{coordinator.host}_{coordinator.slave_id}"
-        device_prefix_id = coordinator.sanitize_for_entity_id(device_prefix)
+        device_prefix_id = coordinator.sanitize_for_entity_id(coordinator.device_name_prefix)
         self._attr_unique_id = f"kwb_heating_{device_identifier}_{device_prefix_id}_last_firewood_fire"
 
         # Set explicit entity_id - always use English for language-independent IDs
@@ -290,7 +251,13 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
 
     @callback
     def _handle_coordinator_update(self) -> None:
-        """Handle updated data from the coordinator."""
+        """Handle updated data from the coordinator.
+
+        Only writes HA state when the firewood status actually changes,
+        avoiding unnecessary DB writes every poll cycle (issue #23).
+        """
+        state_changed = False
+
         if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
             register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
             raw_value = register_data.get("raw_value")
@@ -301,12 +268,17 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
                 # Update timestamp when firewood becomes active or stays active
                 if is_firewood_active:
                     self._last_firewood_time = datetime.now(tz=timezone.utc)
+                    state_changed = True
                     if not self._was_firewood_active:
                         _LOGGER.info("Firewood fire started at %s", self._last_firewood_time)
 
+                if is_firewood_active != self._was_firewood_active:
+                    state_changed = True
+
                 self._was_firewood_active = is_firewood_active
 
-        self.async_write_ha_state()
+        if state_changed:
+            self.async_write_ha_state()
 
     @property
     def native_value(self) -> datetime | None:

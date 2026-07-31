@@ -403,6 +403,10 @@
     "system_ein_aus_t": {
       "0": "Aus",
       "1": "Ein"
+    },
+    "system_yes_no_t": {
+      "0": "Nein",
+      "1": "Ja"
     }
   }
 }

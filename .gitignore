@@ -81,6 +81,7 @@ claude*
 coordination/
 memory/
 Backup/
+agents/
 
 #modbusinfoConverter/config/*
 modbusinfoConverter/modbusinfo/*

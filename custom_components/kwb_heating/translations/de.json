@@ -31,11 +31,11 @@
       },
       "device": {
         "title": "KWB Heizungssystem - Gerätetyp",
-        "description": "Wählen Sie Ihren KWB Heizungstyp und geben Sie einen benutzerdefinierten Namen ein.\n\nVerfügbare Geräte: {device_types}\n\nZugriffsstufen:\n{access_levels}",
+        "description": "Wählen Sie Ihren KWB Heizungstyp und geben Sie einen benutzerdefinierten Namen ein.\n\nVerfügbare Geräte: {device_types}\n\nZugriffsebenen:\n• Benutzerebene: Standardfunktionen für Endanwender\n• Fachkraftebene: Voller Zugriff für Fachkräfte/Service",
         "data": {
           "device_type": "KWB Gerätetyp",
           "device_name": "Gerätename (zur Identifikation)",
-          "access_level": "Zugriffsstufe",
+          "access_level": "Zugriffsebene",
           "update_interval": "Update-Intervall (Sekunden)"
         }
       },
@@ -88,7 +88,7 @@
           "heat_meters": "Anzahl Wärmemengenzähler (0-36)",
           "transfer_stations": "Anzahl Übergabestationen (0-14)",
           "language": "Sprache",
-          "access_level": "Zugriffsstufe",
+          "access_level": "Zugriffsebene",
           "update_interval": "Update-Intervall (Sekunden)"
         },
         "data_description": {
@@ -114,6 +114,12 @@
         "auto": "Automatisch (Home Assistant Sprache verwenden)",
         "de": "Deutsch",
         "en": "Englisch"
+      }
+    },
+    "access_level": {
+      "options": {
+        "UserLevel": "Benutzerebene",
+        "ExpertLevel": "Fachkraftebene"
       }
     }
   }

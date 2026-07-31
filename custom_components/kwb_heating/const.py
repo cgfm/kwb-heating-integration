@@ -44,18 +44,17 @@ CONF_BOILER_SEQUENCE = "boiler_sequence"             # Boiler sequence control
 CONF_HEAT_METERS = "heat_meters"                     # Heat meters
 CONF_TRANSFER_STATIONS = "transfer_stations"         # Transfer stations
 
-# System Register Mapping (JSON key -> Config constant)
-SYSTEM_REGISTER_MAPPING = {
-    "Heizkreise": CONF_HEATING_CIRCUITS,
-    "Pufferspeicher": CONF_BUFFER_STORAGE,
-    "Brauchwasserspeicher": CONF_DHW_STORAGE,
-    "Zweitwärmequellen": CONF_SECONDARY_HEAT_SOURCES,
-    "Zirkulation": CONF_CIRCULATION,
-    "Solar": CONF_SOLAR,
-    "Kesselfolgeschaltung": CONF_BOILER_SEQUENCE,
-    "Wärmemengenzähler": CONF_HEAT_METERS,
-    "Übergabestation": CONF_TRANSFER_STATIONS,
-}
+# Canonical list of equipment configuration keys (issue #28)
+EQUIPMENT_KEYS = [
+    CONF_HEATING_CIRCUITS,
+    CONF_BUFFER_STORAGE,
+    CONF_DHW_STORAGE,
+    CONF_SECONDARY_HEAT_SOURCES,
+    CONF_CIRCULATION,
+    CONF_SOLAR,
+    CONF_BOILER_SEQUENCE,
+    CONF_HEAT_METERS,
+]
 
 # Access Levels
 ACCESS_LEVELS = {
@@ -72,27 +71,6 @@ DEFAULT_BAUDRATE = 19200
 DEFAULT_PARITY = "N"
 DEFAULT_STOPBITS = 1
 DEFAULT_BYTESIZE = 8
-
-# Modbus configuration
-MODBUS_FUNCTION_CODES = {
-    "01": "read_coils",
-    "02": "read_discrete_inputs", 
-    "03": "read_holding_registers",
-    "04": "read_input_registers",
-    "06": "write_single_register",
-    "15": "write_multiple_coils",
-    "16": "write_multiple_registers"
-}
-
-# Data types
-DATA_TYPES = {
-    "u16": "unsigned 16-bit",
-    "s16": "signed 16-bit",
-    "u32": "unsigned 32-bit",
-    "s32": "signed 32-bit",
-    "f32": "32-bit float",
-    "str": "string"
-}
 
 # Icon mapping for different entity types based on register names/types
 ENTITY_ICONS = {
@@ -159,30 +137,4 @@ ENTITY_ICONS = {
     "default_select": "mdi:format-list-bulleted",
 }
 
-# Icon mapping for device types
-DEVICE_TYPE_ICONS = {
-    "KWB Easyfire": "mdi:water-boiler",
-    "KWB Multifire": "mdi:water-boiler", 
-    "KWB Pelletfire+": "mdi:water-boiler",
-    "KWB Combifire": "mdi:water-boiler",
-    "KWB CF 2": "mdi:water-boiler",
-    "KWB CF 1": "mdi:water-boiler",
-    "KWB CF 1.5": "mdi:water-boiler",
-    "default": "mdi:water-boiler",
-}
 
-# Error codes
-ERROR_CONNECTION = "connection_error"
-ERROR_INVALID_DATA = "invalid_data"
-ERROR_TIMEOUT = "timeout_error"
-ERROR_CONFIG = "configuration_error"
-
-# Entity categories for organization
-ENTITY_CATEGORIES = {
-    "system": "System Information",
-    "heating": "Heating Control",
-    "temperature": "Temperature Sensors",
-    "pump": "Pump Control",
-    "alarm": "Alarm System",
-    "maintenance": "Maintenance"
-}
