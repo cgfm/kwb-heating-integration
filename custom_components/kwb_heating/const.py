@@ -31,6 +31,7 @@ CONF_LANGUAGE = "language"
 
 # Connection types
 CONNECTION_TYPE_TCP = "tcp"
+CONNECTION_TYPE_RTU_TCP = "rtu_tcp"
 CONNECTION_TYPE_SERIAL = "serial"
 
 # System Register Configuration (with slider in Config Flow)

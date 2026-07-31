@@ -17,6 +17,15 @@
           "slave_id": "Modbus Slave ID"
         }
       },
+      "rtu_tcp": {
+        "title": "KWB Heating System - RTU over TCP",
+        "description": "Configure an RTU-over-TCP connection, for example through a ser2net or RS485-to-Ethernet gateway.",
+        "data": {
+          "host": "IP Address or Hostname",
+          "port": "Gateway TCP Port",
+          "slave_id": "Modbus Slave ID"
+        }
+      },
       "serial": {
         "title": "KWB Heating System - Serial Connection (RTU)",
         "description": "Configure the Modbus RTU serial connection to your KWB heating system.\n\nConnect a USB/RS485 adapter to your Home Assistant host.",
@@ -107,6 +116,7 @@
     "connection_type": {
       "options": {
         "tcp": "Modbus TCP (Network)",
+        "rtu_tcp": "Modbus RTU over TCP (Gateway)",
         "serial": "Modbus RTU (USB/RS485)"
       }
     },

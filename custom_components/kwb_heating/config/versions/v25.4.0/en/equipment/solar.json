@@ -3685,7 +3685,7 @@
     {
       "starting_address": 9466,
       "name": "Pump 1",
-      "entity_id": "sol_1_pump_1",
+      "entity_id": "sol_1_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3698,7 +3698,7 @@
     {
       "starting_address": 9467,
       "name": "Pump 1",
-      "entity_id": "sol_2_pump_1",
+      "entity_id": "sol_2_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3711,7 +3711,7 @@
     {
       "starting_address": 9468,
       "name": "Pump 1",
-      "entity_id": "sol_3_pump_1",
+      "entity_id": "sol_3_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3724,7 +3724,7 @@
     {
       "starting_address": 9469,
       "name": "Pump 1",
-      "entity_id": "sol_4_pump_1",
+      "entity_id": "sol_4_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3737,7 +3737,7 @@
     {
       "starting_address": 9470,
       "name": "Pump 1",
-      "entity_id": "sol_5_pump_1",
+      "entity_id": "sol_5_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3750,7 +3750,7 @@
     {
       "starting_address": 9471,
       "name": "Pump 1",
-      "entity_id": "sol_6_pump_1",
+      "entity_id": "sol_6_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3763,7 +3763,7 @@
     {
       "starting_address": 9472,
       "name": "Pump 1",
-      "entity_id": "sol_7_pump_1",
+      "entity_id": "sol_7_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3776,7 +3776,7 @@
     {
       "starting_address": 9473,
       "name": "Pump 1",
-      "entity_id": "sol_8_pump_1",
+      "entity_id": "sol_8_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3789,7 +3789,7 @@
     {
       "starting_address": 9474,
       "name": "Pump 1",
-      "entity_id": "sol_9_pump_1",
+      "entity_id": "sol_9_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3802,7 +3802,7 @@
     {
       "starting_address": 9475,
       "name": "Pump 1",
-      "entity_id": "sol_10_pump_1",
+      "entity_id": "sol_10_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3815,7 +3815,7 @@
     {
       "starting_address": 9476,
       "name": "Pump 1",
-      "entity_id": "sol_11_pump_1",
+      "entity_id": "sol_11_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3828,7 +3828,7 @@
     {
       "starting_address": 9477,
       "name": "Pump 1",
-      "entity_id": "sol_12_pump_1",
+      "entity_id": "sol_12_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3841,7 +3841,7 @@
     {
       "starting_address": 9478,
       "name": "Pump 1",
-      "entity_id": "sol_13_pump_1",
+      "entity_id": "sol_13_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3854,7 +3854,7 @@
     {
       "starting_address": 9479,
       "name": "Pump 1",
-      "entity_id": "sol_14_pump_1",
+      "entity_id": "sol_14_pump_1_pumpe_1_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3867,7 +3867,7 @@
     {
       "starting_address": 9481,
       "name": "Pump 2",
-      "entity_id": "sol_1_pump_2",
+      "entity_id": "sol_1_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3880,7 +3880,7 @@
     {
       "starting_address": 9482,
       "name": "Pump 2",
-      "entity_id": "sol_2_pump_2",
+      "entity_id": "sol_2_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3893,7 +3893,7 @@
     {
       "starting_address": 9483,
       "name": "Pump 2",
-      "entity_id": "sol_3_pump_2",
+      "entity_id": "sol_3_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3906,7 +3906,7 @@
     {
       "starting_address": 9484,
       "name": "Pump 2",
-      "entity_id": "sol_4_pump_2",
+      "entity_id": "sol_4_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3919,7 +3919,7 @@
     {
       "starting_address": 9485,
       "name": "Pump 2",
-      "entity_id": "sol_5_pump_2",
+      "entity_id": "sol_5_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3932,7 +3932,7 @@
     {
       "starting_address": 9486,
       "name": "Pump 2",
-      "entity_id": "sol_6_pump_2",
+      "entity_id": "sol_6_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3945,7 +3945,7 @@
     {
       "starting_address": 9487,
       "name": "Pump 2",
-      "entity_id": "sol_7_pump_2",
+      "entity_id": "sol_7_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3958,7 +3958,7 @@
     {
       "starting_address": 9488,
       "name": "Pump 2",
-      "entity_id": "sol_8_pump_2",
+      "entity_id": "sol_8_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3971,7 +3971,7 @@
     {
       "starting_address": 9489,
       "name": "Pump 2",
-      "entity_id": "sol_9_pump_2",
+      "entity_id": "sol_9_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3984,7 +3984,7 @@
     {
       "starting_address": 9490,
       "name": "Pump 2",
-      "entity_id": "sol_10_pump_2",
+      "entity_id": "sol_10_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -3997,7 +3997,7 @@
     {
       "starting_address": 9491,
       "name": "Pump 2",
-      "entity_id": "sol_11_pump_2",
+      "entity_id": "sol_11_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -4010,7 +4010,7 @@
     {
       "starting_address": 9492,
       "name": "Pump 2",
-      "entity_id": "sol_12_pump_2",
+      "entity_id": "sol_12_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -4023,7 +4023,7 @@
     {
       "starting_address": 9493,
       "name": "Pump 2",
-      "entity_id": "sol_13_pump_2",
+      "entity_id": "sol_13_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -4036,7 +4036,7 @@
     {
       "starting_address": 9494,
       "name": "Pump 2",
-      "entity_id": "sol_14_pump_2",
+      "entity_id": "sol_14_pump_2_pumpe_2_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",

@@ -11,6 +11,7 @@ from pymodbus.exceptions import ModbusException
 
 from .const import (
     CONNECTION_TYPE_TCP,
+    CONNECTION_TYPE_RTU_TCP,
     CONNECTION_TYPE_SERIAL,
     DEFAULT_BAUDRATE,
     DEFAULT_PARITY,
@@ -19,6 +20,24 @@ from .const import (
 )
 
 _LOGGER = logging.getLogger(__name__)
+
+
+def _get_rtu_framer() -> Any:
+    """Return the RTU framer across supported pymodbus 3.x versions."""
+    try:
+        from pymodbus import FramerType
+
+        return FramerType.RTU
+    except ImportError:
+        try:
+            from pymodbus import Framer
+
+            return Framer.RTU
+        except ImportError:
+            # pymodbus 3.5 still expects the framer class.
+            from pymodbus.framer import ModbusRtuFramer
+
+            return ModbusRtuFramer
 
 
 class KWBModbusClient:
@@ -163,6 +182,8 @@ class KWBModbusClient:
         """Return a human-readable label for the current connection."""
         if self.connection_type == CONNECTION_TYPE_SERIAL:
             return f"{self.serial_port} (RTU, {self.baudrate} baud)"
+        if self.connection_type == CONNECTION_TYPE_RTU_TCP:
+            return f"{self.host}:{self.port} (RTU over TCP)"
         return f"{self.host}:{self.port}"
 
     def _create_client(self) -> Any:
@@ -178,11 +199,15 @@ class KWBModbusClient:
                 bytesize=self.bytesize,
                 timeout=10,
             )
-        return AsyncModbusTcpClient(
-            host=self.host,
-            port=self.port,
-            timeout=10,
-        )
+        client_options: dict[str, Any] = {
+            "host": self.host,
+            "port": self.port,
+            "timeout": 10,
+        }
+        if self.connection_type == CONNECTION_TYPE_RTU_TCP:
+            client_options["framer"] = _get_rtu_framer()
+
+        return AsyncModbusTcpClient(**client_options)
 
     async def connect(self) -> None:
         """Connect to the Modbus device."""

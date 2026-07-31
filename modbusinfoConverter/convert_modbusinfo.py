@@ -51,6 +51,19 @@ class ModbusInfoConverter:
     # Equipment prefixes that are 0-indexed (need +1 for entity_id)
     ZERO_INDEXED_PREFIXES = {"PUF", "BUF", "ZIR", "Circ", "WMZ", "HQM", "Zirk"}
 
+    # Canonical English prefixes used when the matching English register is absent.
+    INDEX_PREFIX_MAP = {
+        "HK": "HC",
+        "PUF": "BUF",
+        "ZUB": "FP",
+        "BWS": "DHWC",
+        "ZWQ": "SHS",
+        "Zirk": "Circ",
+        "KFK": "B",
+        "WMZ": "HQM",
+        "ÜGS": "TS",
+    }
+
     # Sheet categories
     #UNIVERSAL_SHEET = "Universal"
     # WMM Autonom is NOT a device - it contains universal Modbus lifetick registers
@@ -126,8 +139,11 @@ class ModbusInfoConverter:
         """Initialize converter."""
         self.input_dir = Path(input_dir)
         self.output_dir = Path(output_dir)
-        # Cache for English data lookup: {version: {starting_address: {"name": str, "index": str}}}
-        self._english_data_cache: dict[str, dict[int, dict[str, str]]] = {}
+        # Cache English data by sheet and address. Addresses are not globally unique
+        # across the workbook, so using only the address can mix up device sheets.
+        self._english_data_cache: dict[
+            str, dict[str, dict[int, dict[str, str]]]
+        ] = {}
 
     def sanitize_for_entity_id(self, name: str) -> str:
         """Sanitize a string for use in Home Assistant entity IDs.
@@ -164,16 +180,18 @@ class ModbusInfoConverter:
             return {"language": language, "version": version}
         return {}
 
-    def load_english_data(self, version: str) -> dict[int, dict[str, str]]:
+    def load_english_data(
+        self, version: str
+    ) -> dict[str, dict[int, dict[str, str]]]:
         """Load English register data (name and index) for a specific version.
 
-        Returns a mapping of starting_address -> {"name": str, "index": str} for use
+        Returns a mapping of sheet name -> starting address -> register data for use
         in generating language-independent entity IDs.
         """
         if version in self._english_data_cache:
             return self._english_data_cache[version]
 
-        english_data: dict[int, dict[str, str]] = {}
+        english_data: dict[str, dict[int, dict[str, str]]] = {}
         en_file = self.input_dir / f"ModbusInfo-en-V{version}.xlsx"
 
         if not en_file.exists():
@@ -198,6 +216,7 @@ class ModbusInfoConverter:
 
                 sheet = workbook[sheet_name]
                 headers = [cell.value for cell in sheet[1]]
+                sheet_data: dict[int, dict[str, str]] = {}
 
                 for row in sheet.iter_rows(min_row=2, values_only=True):
                     if not any(row) or row[0] is None:
@@ -217,10 +236,13 @@ class ModbusInfoConverter:
                         data = {"name": str(name).strip()}
                         if index:
                             data["index"] = str(index).strip()
-                        english_data[int(address)] = data
+                        sheet_data[int(address)] = data
+
+                english_data[sheet_name] = sheet_data
 
             workbook.close()
-            logger.info(f"  Loaded {len(english_data)} English entries for version {version}")
+            entry_count = sum(len(entries) for entries in english_data.values())
+            logger.info(f"  Loaded {entry_count} English entries for version {version}")
 
         except Exception as exc:
             logger.error(f"Error loading English data for version {version}: {exc}")
@@ -232,21 +254,27 @@ class ModbusInfoConverter:
         self,
         workbook: openpyxl.Workbook,
         sheet_name: str,
-        english_data: dict[int, dict[str, str]] | None = None
+        english_data: dict[str, dict[int, dict[str, str]]] | None = None
     ) -> list[dict]:
         """Read register data from Excel sheet.
 
         Args:
             workbook: The Excel workbook
             sheet_name: Name of the sheet to read
-            english_data: Optional mapping of starting_address -> {"name": str, "index": str}
-                          for generating language-independent entity IDs
+            english_data: Optional mapping of sheet -> starting_address -> register data
+                          for generating language-independent entity IDs.
         """
         if sheet_name not in workbook.sheetnames:
             return []
 
         sheet = workbook[sheet_name]
         registers = []
+
+        # German equipment sheets have a different name in the English workbook.
+        english_sheet_name = self.EQUIPMENT_SHEETS.get(sheet_name, sheet_name)
+        english_sheet_data = (
+            english_data.get(english_sheet_name, {}) if english_data else None
+        )
 
         # Get header row
         headers = [cell.value for cell in sheet[1]]
@@ -261,9 +289,51 @@ class ModbusInfoConverter:
                 if i < len(headers) and headers[i]:
                     row_dict[headers[i]] = value
 
-            register = self.normalize_register(row_dict, english_data)
+            register = self.normalize_register(row_dict, english_sheet_data)
             if register:
                 registers.append(register)
+
+        return self._make_entity_ids_unique(registers, sheet_name)
+
+    def _make_entity_ids_unique(
+        self, registers: list[dict], source_name: str
+    ) -> list[dict]:
+        """Disambiguate duplicate IDs without dropping valid registers.
+
+        The manufacturer's parameter path is stable across languages and is used
+        as the first suffix. The KWB ID and address are deterministic fallbacks.
+        Existing first occurrences keep their IDs to avoid unnecessary renames.
+        """
+        seen: set[str] = set()
+
+        for register in registers:
+            entity_id = register.get("entity_id")
+            if not entity_id or entity_id not in seen:
+                if entity_id:
+                    seen.add(entity_id)
+                continue
+
+            parameter = str(register.get("parameter", ""))
+            parameter_suffix = self.sanitize_for_entity_id(
+                parameter.rsplit(".", 1)[-1]
+            )
+            candidates = []
+            if parameter_suffix and not entity_id.endswith(parameter_suffix):
+                candidates.append(f"{entity_id}_{parameter_suffix}")
+            if register.get("id"):
+                candidates.append(f"{entity_id}_{register['id']}")
+            candidates.append(f"{entity_id}_register_{register['starting_address']}")
+
+            replacement = next(candidate for candidate in candidates if candidate not in seen)
+            logger.warning(
+                "Duplicate entity_id '%s' in %s at address %s; using '%s'",
+                entity_id,
+                source_name,
+                register.get("starting_address"),
+                replacement,
+            )
+            register["entity_id"] = replacement
+            seen.add(replacement)
 
         return registers
 
@@ -301,8 +371,9 @@ class ModbusInfoConverter:
         # Replace dots with underscores for heating circuits (HK 1.1 -> hk_1_1)
         sanitized_number = number_part.replace(".", "_")
 
-        # Sanitize the prefix (lowercase, handle special chars)
-        sanitized_prefix = self.sanitize_for_entity_id(prefix)
+        # Use a canonical prefix so fallback IDs remain language-independent.
+        canonical_prefix = self.INDEX_PREFIX_MAP.get(prefix, prefix)
+        sanitized_prefix = self.sanitize_for_entity_id(canonical_prefix)
 
         return f"{sanitized_prefix}_{sanitized_number}"
 
@@ -329,7 +400,7 @@ class ModbusInfoConverter:
         # Get English data for language-independent entity_id
         en_data = english_data.get(address_int, {}) if english_data else {}
         english_name = en_data.get("name", name)
-        english_index = en_data.get("index", "")
+        english_index = en_data.get("index", str(data.get("Index", "")).strip())
 
         # Generate entity_id from English name (language-independent)
         base_entity_id = self.sanitize_for_entity_id(english_name)

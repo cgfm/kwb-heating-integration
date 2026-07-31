@@ -42,6 +42,18 @@ _ENTITY_ID_REPLACEMENTS = str.maketrans({
 # Includes both English and German variants
 ZERO_INDEXED_PREFIXES = {"PUF", "BUF", "ZIR", "Circ", "WMZ", "HQM", "Zirk"}
 
+INDEX_PREFIX_MAP = {
+    "HK": "HC",
+    "PUF": "BUF",
+    "ZUB": "FP",
+    "BWS": "DHWC",
+    "ZWQ": "SHS",
+    "Zirk": "Circ",
+    "KFK": "B",
+    "WMZ": "HQM",
+    "ÜGS": "TS",
+}
+
 
 def sanitize_for_entity_id(name: str) -> str:
     """Sanitize a string for use in Home Assistant entity IDs."""
@@ -91,18 +103,22 @@ def sanitize_index_for_entity_id(index: str) -> str | None:
     # Replace dots with underscores for heating circuits (HK 1.1 -> hk_1_1)
     sanitized_number = number_part.replace(".", "_")
 
-    # Sanitize the prefix (lowercase, handle special chars)
-    sanitized_prefix = sanitize_for_entity_id(prefix)
+    # Use a canonical prefix so fallback IDs remain language-independent.
+    canonical_prefix = INDEX_PREFIX_MAP.get(prefix, prefix)
+    sanitized_prefix = sanitize_for_entity_id(canonical_prefix)
 
     return f"{sanitized_prefix}_{sanitized_number}"
 
 
-def load_english_data_from_json(en_dir: Path) -> dict[int, dict[str, str]]:
+def load_english_data_from_json(
+    en_dir: Path,
+) -> dict[str, dict[int, dict[str, str]]]:
     """Load English register data (name and index) from JSON files.
 
-    Returns a mapping of starting_address -> {"name": str, "index": str}.
+    Returns a mapping of relative filename -> starting_address -> register data.
+    Addresses are not globally unique across device and equipment files.
     """
-    english_data: dict[int, dict[str, str]] = {}
+    english_data: dict[str, dict[int, dict[str, str]]] = {}
 
     # Process all JSON files in the English directory
     for json_file in en_dir.rglob("*.json"):
@@ -120,6 +136,7 @@ def load_english_data_from_json(en_dir: Path) -> dict[int, dict[str, str]]:
             elif "registers" in data:
                 registers = data["registers"]
 
+            file_data: dict[int, dict[str, str]] = {}
             for reg in registers:
                 address = reg.get("starting_address")
                 name = reg.get("name")
@@ -128,7 +145,10 @@ def load_english_data_from_json(en_dir: Path) -> dict[int, dict[str, str]]:
                     entry = {"name": str(name).strip()}
                     if index:
                         entry["index"] = str(index).strip()
-                    english_data[int(address)] = entry
+                    file_data[int(address)] = entry
+
+            relative_path = json_file.relative_to(en_dir).as_posix()
+            english_data[relative_path] = file_data
 
         except Exception as e:
             print(f"  Warning: Could not process {json_file}: {e}")
@@ -152,7 +172,7 @@ def add_entity_ids_to_registers(registers: list[dict], english_data: dict[int, d
         # Get English data, fall back to current register data
         en_data = english_data.get(int(address), {})
         english_name = en_data.get("name", reg.get("name", ""))
-        english_index = en_data.get("index", "")
+        english_index = en_data.get("index", reg.get("index", ""))
 
         # Generate base entity_id from English name
         base_entity_id = sanitize_for_entity_id(english_name)
@@ -186,6 +206,35 @@ def add_entity_ids_to_registers(registers: list[dict], english_data: dict[int, d
             reg.clear()
             reg.update(new_reg)
             updated += 1
+
+    return updated + make_entity_ids_unique(registers)
+
+
+def make_entity_ids_unique(registers: list[dict]) -> int:
+    """Disambiguate duplicate IDs while preserving the first occurrence."""
+    seen: set[str] = set()
+    updated = 0
+
+    for reg in registers:
+        entity_id = reg.get("entity_id")
+        if not entity_id or entity_id not in seen:
+            if entity_id:
+                seen.add(entity_id)
+            continue
+
+        parameter = str(reg.get("parameter", ""))
+        parameter_suffix = sanitize_for_entity_id(parameter.rsplit(".", 1)[-1])
+        candidates = []
+        if parameter_suffix and not entity_id.endswith(parameter_suffix):
+            candidates.append(f"{entity_id}_{parameter_suffix}")
+        if reg.get("id"):
+            candidates.append(f"{entity_id}_{reg['id']}")
+        candidates.append(f"{entity_id}_register_{reg['starting_address']}")
+
+        replacement = next(candidate for candidate in candidates if candidate not in seen)
+        reg["entity_id"] = replacement
+        seen.add(replacement)
+        updated += 1
 
     return updated
 
@@ -235,8 +284,9 @@ def process_version(version_dir: Path) -> None:
         return
 
     print(f"  Loading English data from {en_dir}...")
-    english_data = load_english_data_from_json(en_dir)
-    print(f"  Loaded {len(english_data)} English entries")
+    english_data_by_file = load_english_data_from_json(en_dir)
+    entry_count = sum(len(entries) for entries in english_data_by_file.values())
+    print(f"  Loaded {entry_count} English entries")
 
     # Process both language directories
     for lang_dir in [de_dir, en_dir]:
@@ -251,6 +301,7 @@ def process_version(version_dir: Path) -> None:
 
             relative = json_file.relative_to(lang_dir)
             print(f"    {relative}...")
+            english_data = english_data_by_file.get(relative.as_posix(), {})
             process_json_file(json_file, english_data)
 
 

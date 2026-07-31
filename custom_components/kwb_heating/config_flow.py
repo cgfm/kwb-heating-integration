@@ -43,6 +43,7 @@ from .const import (
     CONF_HEAT_METERS,
     CONF_TRANSFER_STATIONS,
     CONNECTION_TYPE_TCP,
+    CONNECTION_TYPE_RTU_TCP,
     CONNECTION_TYPE_SERIAL,
     DEFAULT_BAUDRATE,
     DEFAULT_PARITY,
@@ -78,7 +79,7 @@ LANGUAGES = {
 STEP_USER_DATA_SCHEMA = vol.Schema({
     vol.Required(CONF_CONNECTION_TYPE, default=CONNECTION_TYPE_TCP): selector.SelectSelector(
         selector.SelectSelectorConfig(
-            options=[CONNECTION_TYPE_TCP, CONNECTION_TYPE_SERIAL],
+            options=[CONNECTION_TYPE_TCP, CONNECTION_TYPE_RTU_TCP, CONNECTION_TYPE_SERIAL],
             translation_key="connection_type",
             mode=selector.SelectSelectorMode.DROPDOWN,
         )
@@ -232,6 +233,8 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             self.data[CONF_CONNECTION_TYPE] = user_input[CONF_CONNECTION_TYPE]
             if user_input[CONF_CONNECTION_TYPE] == CONNECTION_TYPE_SERIAL:
                 return await self.async_step_serial()
+            if user_input[CONF_CONNECTION_TYPE] == CONNECTION_TYPE_RTU_TCP:
+                return await self.async_step_rtu_tcp()
             return await self.async_step_tcp()
 
         return self.async_show_form(
@@ -243,6 +246,18 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         self, user_input: dict[str, Any] | None = None
     ) -> FlowResult:
         """Handle TCP connection settings."""
+        return await self._async_step_network(user_input, "tcp")
+
+    async def async_step_rtu_tcp(
+        self, user_input: dict[str, Any] | None = None
+    ) -> FlowResult:
+        """Handle RTU-over-TCP connection settings."""
+        return await self._async_step_network(user_input, "rtu_tcp")
+
+    async def _async_step_network(
+        self, user_input: dict[str, Any] | None, step_id: str
+    ) -> FlowResult:
+        """Handle settings shared by Modbus TCP and RTU over TCP."""
         errors: dict[str, str] = {}
 
         if user_input is not None:
@@ -267,7 +282,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                     errors["base"] = "unknown"
 
         return self.async_show_form(
-            step_id="tcp",
+            step_id=step_id,
             data_schema=STEP_TCP_DATA_SCHEMA,
             errors=errors,
         )

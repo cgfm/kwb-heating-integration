@@ -484,7 +484,7 @@
     {
       "starting_address": 9970,
       "name": "Boiler status",
-      "entity_id": "boiler_status",
+      "entity_id": "boiler_status_kesselstatus_anzeige_simple",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",

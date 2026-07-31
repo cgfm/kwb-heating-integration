@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **RTU over TCP**: Added a dedicated network connection mode for ser2net and RS485-to-Ethernet gateways. The TCP transport now uses an RTU framer while retaining the configured Modbus slave ID.
+
+### Fixed
+- **Duplicate entity IDs**: Corrected all duplicate IDs in the shipped register maps, fixed sheet-scoped English-name lookup in both converter paths, and changed the runtime fallback to retain colliding registers with deterministic address-based IDs instead of silently dropping them.
+- **Missing circulation entities**: Corrected the German and English circulation prefixes (`Zirk`/`Circ`) and select the first slots that actually exist in the active firmware map, including v21.4 maps that start at slot 1.
+
 ## [0.5.1] - 2026-07-31
 
 ### Added

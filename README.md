@@ -4,7 +4,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cgfm/kwb-heating-integration)](https://github.com/cgfm/kwb-heating-integration/releases)
 [![GitHub](https://img.shields.io/github/license/cgfm/kwb-heating-integration)](LICENSE)
 
-A comprehensive Home Assistant Custom Component for **KWB heating systems** with Modbus TCP/RTU support.
+A comprehensive Home Assistant Custom Component for **KWB heating systems** with Modbus TCP, RTU over TCP, and serial RTU support.
 
 > **⚠️ Testing Status**: This integration has been tested primarily with **KWB CF2**, **2 heating circuits**, and **1 buffer storage**. Testing with other KWB models and configurations is very welcome! Please help expand compatibility by testing with your setup and reporting results via [GitHub Issues](https://github.com/cgfm/kwb-heating-integration/issues).
 
@@ -70,7 +70,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full details.
 
 ## 🔥 Features
 
-- **Complete Modbus TCP/RTU integration** for KWB heating systems
+- **Complete Modbus TCP/RTU integration** for KWB heating systems, including RTU-over-TCP gateways such as ser2net
 - **Multi-version & multi-language support** - Automatic version detection and language selection
 - **UI-based configuration** via Home Assistant Config Flow
 - **Access Level System** - User Level (Benutzerebene) vs. Expert Level (Fachkraftebene) for different user groups; Expert Level unlocks additional read/write controls (number/select/switch)
@@ -97,7 +97,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full details.
 
 - **Home Assistant** 2023.1.0 or higher
 - **KWB heating system** with Modbus TCP/RTU interface
-- **Network connection** to the heating system (TCP) or USB/RS485 adapter (RTU)
+- **Network connection** to the heating system (TCP), an RTU-over-TCP gateway, or a USB/RS485 adapter (RTU)
 
 ## 🚀 Installation
 
@@ -134,6 +134,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full details.
 
 - **Host/IP Address**: IP address of your KWB system
 - **Port**: Modbus TCP port (default: 502)
+- **Connection type**: Modbus TCP, RTU over TCP (for gateways such as ser2net), or serial Modbus RTU
 - **Slave ID**: Modbus Slave ID (default: 1)
 - **Device Type**: Select your KWB model
 - **Access Level / Zugriffsebene**:

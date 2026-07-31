@@ -16,7 +16,7 @@
     {
       "starting_address": 10231,
       "name": "WEZ Solltemperatur",
-      "entity_id": "wez_solltemperatur",
+      "entity_id": "wez_solltemperatur_vorlauftemperatur_soll",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -42,7 +42,7 @@
     {
       "starting_address": 10239,
       "name": "Momentanleistung",
-      "entity_id": "momentanleistung",
+      "entity_id": "momentanleistung_3183",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -68,7 +68,7 @@
     {
       "starting_address": 10247,
       "name": "Verdichter Drehzahl Ist",
-      "entity_id": "verdichter_drehzahl_ist",
+      "entity_id": "verdichter_drehzahl_ist_3163",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -94,7 +94,7 @@
     {
       "starting_address": 10255,
       "name": "Verdichter Drehzahl Soll",
-      "entity_id": "verdichter_drehzahl_soll",
+      "entity_id": "verdichter_drehzahl_soll_3162",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -120,7 +120,7 @@
     {
       "starting_address": 10263,
       "name": "Aufgen. elektr. Leistung",
-      "entity_id": "aufgen_elektr_leistung",
+      "entity_id": "aufgen_elektr_leistung_aufgenommene_elektr_leistung",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -198,7 +198,7 @@
     {
       "starting_address": 10287,
       "name": "Ansauglufttemperatur",
-      "entity_id": "ansauglufttemperatur",
+      "entity_id": "ansauglufttemperatur_3137",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -224,7 +224,7 @@
     {
       "starting_address": 10295,
       "name": "Sauggastemperatur",
-      "entity_id": "sauggastemperatur",
+      "entity_id": "sauggastemperatur_3138",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -250,7 +250,7 @@
     {
       "starting_address": 10303,
       "name": "Heissgastemperatur",
-      "entity_id": "heissgastemperatur",
+      "entity_id": "heissgastemperatur_3139",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -276,7 +276,7 @@
     {
       "starting_address": 10311,
       "name": "Drehzahl Ventilator",
-      "entity_id": "drehzahl_ventilator",
+      "entity_id": "drehzahl_ventilator_3140",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -302,7 +302,7 @@
     {
       "starting_address": 10319,
       "name": "Volumenstrom",
-      "entity_id": "volumenstrom",
+      "entity_id": "volumenstrom_3144",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -328,7 +328,7 @@
     {
       "starting_address": 10327,
       "name": "Volumenstrom gemittelt",
-      "entity_id": "volumenstrom_gemittelt",
+      "entity_id": "volumenstrom_gemittelt_3145",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -354,7 +354,7 @@
     {
       "starting_address": 10335,
       "name": "Drehzahl CP",
-      "entity_id": "drehzahl_cp",
+      "entity_id": "drehzahl_cp_3141",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -380,7 +380,7 @@
     {
       "starting_address": 10343,
       "name": "Überhitzung",
-      "entity_id": "ueberhitzung",
+      "entity_id": "ueberhitzung_3148",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -406,7 +406,7 @@
     {
       "starting_address": 10351,
       "name": "Unterkühlung",
-      "entity_id": "unterkuehlung",
+      "entity_id": "unterkuehlung_3149",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -432,7 +432,7 @@
     {
       "starting_address": 10359,
       "name": "Verdampfungstemperatur",
-      "entity_id": "verdampfungstemperatur",
+      "entity_id": "verdampfungstemperatur_3150",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -458,7 +458,7 @@
     {
       "starting_address": 10367,
       "name": "Kondensationstemperatur",
-      "entity_id": "kondensationstemperatur",
+      "entity_id": "kondensationstemperatur_3151",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -484,7 +484,7 @@
     {
       "starting_address": 10375,
       "name": "Niederdruck (relativ)",
-      "entity_id": "niederdruck_relativ",
+      "entity_id": "niederdruck_relativ_niederdruck",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -510,7 +510,7 @@
     {
       "starting_address": 10383,
       "name": "Hochdruck (relativ)",
-      "entity_id": "hochdruck_relativ",
+      "entity_id": "hochdruck_relativ_hochdruck",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -536,7 +536,7 @@
     {
       "starting_address": 10391,
       "name": "Temp. Flüssigkeitsleitung",
-      "entity_id": "temp_fluessigkeitsleitung",
+      "entity_id": "temp_fluessigkeitsleitung_temperatur_fluessigkeitsleitung",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -562,7 +562,7 @@
     {
       "starting_address": 10399,
       "name": "Position 1. EX-Ventil",
-      "entity_id": "position_1_ex_ventil",
+      "entity_id": "position_1_ex_ventil_position_erstes_expansionsventil",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -588,7 +588,7 @@
     {
       "starting_address": 10407,
       "name": "Position 2. EX-Ventil",
-      "entity_id": "position_2_ex_ventil",
+      "entity_id": "position_2_ex_ventil_position_zweites_expansionsventi",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -614,7 +614,7 @@
     {
       "starting_address": 10415,
       "name": "Bivalenz-ELH",
-      "entity_id": "bivalenz_elh",
+      "entity_id": "bivalenz_elh_3207",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -640,7 +640,7 @@
     {
       "starting_address": 10423,
       "name": "COP",
-      "entity_id": "cop",
+      "entity_id": "cop_3186",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -666,7 +666,7 @@
     {
       "starting_address": 10431,
       "name": "Erw. Betriebsstatus",
-      "entity_id": "erw_betriebsstatus",
+      "entity_id": "erw_betriebsstatus_erweiterter_betriebsstatus",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -718,7 +718,7 @@
     {
       "starting_address": 10447,
       "name": "Anforderung durch",
-      "entity_id": "anforderung_durch",
+      "entity_id": "anforderung_durch_anforderung_ursache",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -744,7 +744,7 @@
     {
       "starting_address": 10455,
       "name": "Zustand Wärmepumpe",
-      "entity_id": "zustand_waermepumpe",
+      "entity_id": "zustand_waermepumpe_3311",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -792,7 +792,7 @@
     {
       "starting_address": 25169,
       "name": "Sollwert für Heizen",
-      "entity_id": "sollwert_fuer_heizen",
+      "entity_id": "sollwert_fuer_heizen_sollwert_heizkreisbetrieb",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -818,7 +818,7 @@
     {
       "starting_address": 25177,
       "name": "Sollwert für Warmwasser",
-      "entity_id": "sollwert_fuer_warmwasser",
+      "entity_id": "sollwert_fuer_warmwasser_sollwert_speicherbetrieb",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -844,7 +844,7 @@
     {
       "starting_address": 25185,
       "name": "Sollwert für Kühlen",
-      "entity_id": "sollwert_fuer_kuehlen",
+      "entity_id": "sollwert_fuer_kuehlen_sollwert_kuehlbetrieb",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -870,7 +870,7 @@
     {
       "starting_address": 25193,
       "name": "Leistungsbegrenzung",
-      "entity_id": "leistungsbegrenzung",
+      "entity_id": "leistungsbegrenzung_3090",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -898,7 +898,7 @@
     {
       "starting_address": 25201,
       "name": "Modbus VL-Temp. Soll",
-      "entity_id": "modbus_vl_temp_soll",
+      "entity_id": "modbus_vl_temp_soll_modbus_vorlauf_soll",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -928,7 +928,7 @@
     {
       "starting_address": 25209,
       "name": "Mobus Max. Verdichter Soll",
-      "entity_id": "mobus_max_verdichter_soll",
+      "entity_id": "mobus_max_verdichter_soll_modbus_max_verdichterdrehz_soll",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -956,7 +956,7 @@
     {
       "starting_address": 25217,
       "name": "Max. Leistung Heizen",
-      "entity_id": "max_leistung_heizen",
+      "entity_id": "max_leistung_heizen_3274",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -982,7 +982,7 @@
     {
       "starting_address": 25225,
       "name": "Min. Leistung Heizen",
-      "entity_id": "min_leistung_heizen",
+      "entity_id": "min_leistung_heizen_3275",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1008,7 +1008,7 @@
     {
       "starting_address": 25233,
       "name": "Max. Leistung Warmwasser",
-      "entity_id": "max_leistung_warmwasser",
+      "entity_id": "max_leistung_warmwasser_3280",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1034,7 +1034,7 @@
     {
       "starting_address": 25241,
       "name": "Min. Leistung Warmwasser",
-      "entity_id": "min_leistung_warmwasser",
+      "entity_id": "min_leistung_warmwasser_3281",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1060,7 +1060,7 @@
     {
       "starting_address": 25249,
       "name": "Max. Leistung Kühlen",
-      "entity_id": "max_leistung_kuehlen",
+      "entity_id": "max_leistung_kuehlen_3276",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1086,7 +1086,7 @@
     {
       "starting_address": 25257,
       "name": "Min. Leistung Kühlen",
-      "entity_id": "min_leistung_kuehlen",
+      "entity_id": "min_leistung_kuehlen_3277",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",
@@ -1111,7 +1111,7 @@
     {
       "starting_address": 25265,
       "name": "Zeitfenster Beginn",
-      "entity_id": "zeitfenster_beginn",
+      "entity_id": "zeitfenster_beginn_fluester1_beginn",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -1135,7 +1135,7 @@
     {
       "starting_address": 25273,
       "name": "Zeitfenster Ende",
-      "entity_id": "zeitfenster_ende",
+      "entity_id": "zeitfenster_ende_fluester1_ende",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -1147,7 +1147,7 @@
     {
       "starting_address": 25280,
       "name": "Zeitfenster Beginn",
-      "entity_id": "zeitfenster_beginn",
+      "entity_id": "zeitfenster_beginn_fluester2_beginn",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -1159,7 +1159,7 @@
     {
       "starting_address": 25281,
       "name": "Zeitfenster Beginn",
-      "entity_id": "zeitfenster_beginn",
+      "entity_id": "zeitfenster_beginn_3327",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -1171,7 +1171,7 @@
     {
       "starting_address": 25288,
       "name": "Zeitfenster Ende",
-      "entity_id": "zeitfenster_ende",
+      "entity_id": "zeitfenster_ende_fluester2_ende",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -1183,7 +1183,7 @@
     {
       "starting_address": 25289,
       "name": "Zeitfenster Ende",
-      "entity_id": "zeitfenster_ende",
+      "entity_id": "zeitfenster_ende_3328",
       "data_type": "03",
       "type": "u16",
       "user_level": "read",
@@ -1208,7 +1208,7 @@
     {
       "starting_address": 25297,
       "name": "Max. Drehzahl",
-      "entity_id": "max_drehzahl",
+      "entity_id": "max_drehzahl_fluester_max_drehzahl",
       "data_type": "03",
       "type": "s16",
       "user_level": "read",

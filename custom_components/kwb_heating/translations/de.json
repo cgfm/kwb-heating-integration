@@ -17,6 +17,15 @@
           "slave_id": "Modbus Slave ID"
         }
       },
+      "rtu_tcp": {
+        "title": "KWB Heizungssystem - RTU über TCP",
+        "description": "Konfigurieren Sie eine RTU-over-TCP-Verbindung, zum Beispiel über ser2net oder ein RS485-zu-Ethernet-Gateway.",
+        "data": {
+          "host": "IP-Adresse oder Hostname",
+          "port": "TCP-Port des Gateways",
+          "slave_id": "Modbus Slave ID"
+        }
+      },
       "serial": {
         "title": "KWB Heizungssystem - Serielle Verbindung (RTU)",
         "description": "Konfigurieren Sie die serielle Modbus RTU-Verbindung zu Ihrem KWB Heizungssystem.\n\nVerbinden Sie einen USB/RS485-Adapter mit Ihrem Home Assistant Host.",
@@ -62,6 +71,7 @@
     "error": {
       "cannot_connect": "Verbindung zum KWB Heizungssystem fehlgeschlagen. Bitte prüfen Sie die IP-Adresse und stellen Sie sicher, dass das System erreichbar ist.",
       "invalid_host": "Ungültiger Hostname oder IP-Adresse.",
+      "invalid_serial_port": "Ungültiger serieller Port (z. B. /dev/ttyUSB0 oder COM3).",
       "timeout": "Verbindungs-Timeout. Bitte prüfen Sie Ihre Netzwerkverbindung.",
       "invalid_device_name": "Gerätename darf nicht leer sein.",
       "device_name_too_long": "Gerätename ist zu lang (maximal 50 Zeichen).",
@@ -106,6 +116,7 @@
     "connection_type": {
       "options": {
         "tcp": "Modbus TCP (Netzwerk)",
+        "rtu_tcp": "Modbus RTU über TCP (Gateway)",
         "serial": "Modbus RTU (USB/RS485)"
       }
     },

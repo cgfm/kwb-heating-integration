@@ -51,7 +51,7 @@
     {
       "starting_address": 8201,
       "name": "Kesselpumpe %",
-      "entity_id": "boiler_pump",
+      "entity_id": "boiler_pump_kesselpumpe_steuerstufe",
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -425,7 +425,7 @@
     {
       "starting_address": 8248,
       "name": "Volllaststunden",
-      "entity_id": "full_load_hours",
+      "entity_id": "full_load_hours_pm_betriebsminuten_summe",
       "data_type": "04",
       "type": "u32",
       "user_level": "read",
@@ -559,7 +559,7 @@
     {
       "starting_address": 9970,
       "name": "Kesselstatus",
-      "entity_id": "boiler_status",
+      "entity_id": "boiler_status_kesselstatus_anzeige_simple",
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -660,7 +660,7 @@
     {
       "starting_address": 24585,
       "name": "Kesseltemperatur Soll",
-      "entity_id": "boiler_temperature_setpoint",
+      "entity_id": "boiler_temperature_setpoint_kesseltemp_soll_1",
       "data_type": "03",
       "type": "s16",
       "user_level": "readwrite",

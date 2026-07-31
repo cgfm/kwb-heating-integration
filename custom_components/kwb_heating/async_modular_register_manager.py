@@ -52,8 +52,8 @@ class AsyncModularRegisterManager:
             "is_zero_indexed": True,
             "filename": "circulation.json",
             "lang": {
-                "de": {"name": "Zirkulation", "prefix": "ZIR"},
-                "en": {"name": "Circulation", "prefix": "CIRC"}
+                "de": {"name": "Zirkulation", "prefix": "Zirk"},
+                "en": {"name": "Circulation", "prefix": "Circ"}
             }
         },
         "solar": {
@@ -288,28 +288,43 @@ class AsyncModularRegisterManager:
         # Get language-specific prefix from config, fallback to 'en' then 'de'
         lang_config = config["lang"].get(self._language) or config["lang"].get("en") or config["lang"]["de"]
         prefix = lang_config["prefix"]
-        is_zero_indexed = config["is_zero_indexed"]
-
         # If count is specified and > 0, filter by index patterns
         if count is not None and count > 0:
-            filtered_registers = []
-            start_idx = 0 if is_zero_indexed else 1
-            end_idx = count if is_zero_indexed else count + 1
+            # Select the first configured instances that actually exist in this
+            # firmware map. Some versions start zero-indexed equipment at slot 1,
+            # so a hard-coded range can otherwise select no registers at all.
+            indexed_registers: list[tuple[int, dict]] = []
+            for register in equipment_registers:
+                index = register.get("index", "")
+                expected_prefix = f"{prefix} "
+                if not index.startswith(expected_prefix):
+                    continue
 
-            for i in range(start_idx, end_idx):
-                for register in equipment_registers:
-                    index = register.get("index", "")
-                    # Handle both exact match (PUF 0) and prefix match (HK 1.)
-                    if equipment_key == "heating_circuits":
-                        # Heating circuits use HK 1.1, HK 1.2, HK 2.1, etc.
-                        if index.startswith(f"{prefix} {i}."):
-                            filtered_registers.append(register)
-                    else:
-                        # Other equipment uses exact match (PUF 0, BWS 1, etc.)
-                        if index == f"{prefix} {i}":
-                            filtered_registers.append(register)
-            
-            limited_registers = filtered_registers
+                number_part = index[len(expected_prefix):]
+                if equipment_key == "heating_circuits":
+                    number_part = number_part.split(".", 1)[0]
+
+                try:
+                    instance = int(number_part)
+                except ValueError:
+                    continue
+                indexed_registers.append((instance, register))
+
+            available_instances = sorted({item[0] for item in indexed_registers})
+            selected_instances = set(available_instances[:count])
+            limited_registers = [
+                register
+                for instance, register in indexed_registers
+                if instance in selected_instances
+            ]
+
+            if not available_instances:
+                _LOGGER.warning(
+                    "No %s registers matched index prefix '%s' for language %s",
+                    equipment_key,
+                    prefix,
+                    self._language,
+                )
         else:
             limited_registers = equipment_registers
 
@@ -330,12 +345,7 @@ class AsyncModularRegisterManager:
         seen_entity_ids: set[str] = set()
 
         def add_registers(new_registers: list[dict]) -> int:
-            """Add registers, deduplicating by both starting_address and entity_id.
-
-            Entity-id dedup prevents Home Assistant unique_id collisions when the
-            same logical register appears in multiple sources (universal + device,
-            or device + equipment) with different addresses but the same entity_id.
-            """
+            """Add registers, deduplicating addresses and repairing ID collisions."""
             added = 0
             for reg in new_registers:
                 addr = reg.get("starting_address")
@@ -344,12 +354,20 @@ class AsyncModularRegisterManager:
                     _LOGGER.debug("Skipping duplicate register at address %s: %s", addr, reg.get("name"))
                     continue
                 if eid and eid in seen_entity_ids:
+                    # Never discard a valid register because of a configuration
+                    # mistake. The address is stable and unique within a Modbus map.
+                    reg = dict(reg)
+                    replacement = f"{eid}_register_{addr}"
+                    suffix = 2
+                    while replacement in seen_entity_ids:
+                        replacement = f"{eid}_register_{addr}_{suffix}"
+                        suffix += 1
                     _LOGGER.warning(
-                        "Skipping register with duplicate entity_id '%s' at address %s (%s) — "
-                        "would cause unique_id collision",
-                        eid, addr, reg.get("name"),
+                        "Duplicate entity_id '%s' at address %s (%s); using '%s'",
+                        eid, addr, reg.get("name"), replacement,
                     )
-                    continue
+                    reg["entity_id"] = replacement
+                    eid = replacement
                 if addr is not None:
                     seen_addresses.add(addr)
                 if eid:
