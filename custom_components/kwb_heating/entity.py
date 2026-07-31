@@ -84,3 +84,61 @@ class KWBBaseEntity(CoordinatorEntity):
             and self.coordinator.data is not None
             and self._address in self.coordinator.data
         )
+
+    def _build_description(self) -> str | None:
+        """Compose a human-readable description from register metadata.
+
+        Combines the manufacturer parameter path and any associated value-table
+        entries so the resulting attribute makes hard-to-read register names
+        more understandable in the More-Info dialog.
+        """
+        parts: list[str] = []
+
+        parameter = self._register.get("parameter")
+        if parameter:
+            parts.append(f"Parameter: {parameter}")
+
+        table_name = self._register.get("unit_value_table", "")
+        value_tables = getattr(self.coordinator.data_converter, "value_tables", {})
+        if table_name and table_name in value_tables:
+            table = value_tables[table_name]
+
+            def _sort_key(item: tuple[str, str]) -> tuple[int, int | str]:
+                key = item[0]
+                try:
+                    return (0, int(key))
+                except (TypeError, ValueError):
+                    return (1, str(key))
+
+            entries = ", ".join(f"{k}={v}" for k, v in sorted(table.items(), key=_sort_key))
+            parts.append(f"Values ({table_name}): {entries}")
+
+        return " | ".join(parts) if parts else None
+
+    def _build_static_attrs(self) -> dict[str, Any]:
+        """Build the dict of static attributes shared across all platforms.
+
+        Platforms merge dynamic data (raw_value, display_value, …) on top of
+        this in their own extra_state_attributes implementation.
+        """
+        register = self._register
+        attrs: dict[str, Any] = {
+            "register_address": self._address,
+            "register_type": register.get("type"),
+            "data_type": register.get("data_type"),
+        }
+
+        description = self._build_description()
+        if description:
+            attrs["description"] = description
+
+        if register.get("parameter"):
+            attrs["parameter"] = register["parameter"]
+        if register.get("access_level"):
+            attrs["access_level"] = register["access_level"]
+        if register.get("min") is not None:
+            attrs["min_value"] = register["min"]
+        if register.get("max") is not None:
+            attrs["max_value"] = register["max"]
+
+        return attrs

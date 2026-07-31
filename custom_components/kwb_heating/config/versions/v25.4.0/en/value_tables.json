@@ -362,6 +362,10 @@
     "system_ein_aus_t": {
       "0": "Off",
       "1": "On"
+    },
+    "system_yes_no_t": {
+      "0": "No",
+      "1": "Yes"
     }
   }
 }

@@ -73,13 +73,13 @@ async def async_setup_entry(
 ) -> None:
     """Set up KWB Heating sensor platform."""
     coordinator: KWBDataUpdateCoordinator = hass.data[DOMAIN][config_entry.entry_id]
-    
+
     entities = []
-    
+
     await coordinator.ensure_initialized()
 
     _LOGGER.debug("Processing %d registers for sensor entities", len(coordinator._registers) if coordinator._registers else 0)
-    
+
     access_level = coordinator.access_level
     level_field = "user_level" if access_level == "UserLevel" else "expert_level"
 
@@ -94,7 +94,7 @@ async def async_setup_entry(
 
         if is_readable:
             entities.append(KWBSensor(coordinator, register))
-    
+
     # Add computed sensor for firewood devices: "Last Firewood Fire"
     device_type = coordinator.config.get("device_type", "")
     if device_type in FIREWOOD_DEVICE_TYPES:
@@ -128,40 +128,28 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         self._configure_sensor()
 
         # Cache static attributes that never change (issue #35)
-        self._static_attrs: dict[str, Any] = {
-            "register_address": self._address,
-            "register_type": register.get("type"),
-            "data_type": register.get("data_type"),
-        }
-        if register.get("description"):
-            self._static_attrs["description"] = register["description"]
-        if register.get("access_level"):
-            self._static_attrs["access_level"] = register["access_level"]
-        if register.get("min"):
-            self._static_attrs["min_value"] = register["min"]
-        if register.get("max"):
-            self._static_attrs["max_value"] = register["max"]
+        self._static_attrs: dict[str, Any] = self._build_static_attrs()
 
     def _configure_sensor(self) -> None:
         """Configure sensor properties based on register definition."""
         # Use data converter for unit and device class
         unit = self.coordinator.data_converter.get_unit(self._register)
         device_class = self.coordinator.data_converter.get_device_class(self._register)
-        
+
         if unit:
             self._attr_native_unit_of_measurement = unit
-        
+
         if device_class:
             self._attr_device_class = device_class
-            
+
         # Set state class ONLY for truly numeric values (no value tables)
-        if (self.coordinator.data_converter.is_numeric(self._register) and 
+        if (self.coordinator.data_converter.is_numeric(self._register) and
             not self.coordinator.data_converter.has_value_table(self._register)):
             self._attr_state_class = SensorStateClass.MEASUREMENT
-        
+
         # Set icon based on register definition
         self._attr_icon = get_entity_icon(self._register, "sensor")
-        
+
         # Set entity category based on register properties
         name_lower = self._register["name"].lower()
         if any(keyword in name_lower for keyword in ["version", "revision", "software"]):
@@ -174,14 +162,14 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         """Return the state of the sensor."""
         if self.coordinator.data and self._address in self.coordinator.data:
             register_data = self.coordinator.data[self._address]
-            
+
             # Use display value if available (from value table)
             if "display_value" in register_data:
                 return register_data["display_value"]
-                
+
             # Otherwise use converted value
             return register_data.get("value")
-        
+
         return None
 
     @property

@@ -24,9 +24,9 @@ async def async_setup_entry(
 ) -> None:
     """Set up KWB Heating number platform."""
     coordinator: KWBDataUpdateCoordinator = hass.data[DOMAIN][config_entry.entry_id]
-    
+
     entities = []
-    
+
     await coordinator.ensure_initialized()
 
     level_field = "user_level" if coordinator.access_level == "UserLevel" else "expert_level"
@@ -37,7 +37,7 @@ async def async_setup_entry(
             coordinator.data_converter.is_numeric(register) and
             not coordinator.data_converter.has_value_table(register)):
             entities.append(KWBNumber(coordinator, register))
-    
+
     _LOGGER.info("Setting up %d KWB number entities", len(entities))
     async_add_entities(entities)
 
@@ -59,29 +59,32 @@ class KWBNumber(KWBBaseEntity, NumberEntity):
         # Configure number properties
         self._configure_number()
 
+        # Cache static attributes shared across platforms
+        self._static_attrs: dict[str, Any] = self._build_static_attrs()
+
     def _configure_number(self) -> None:
         """Configure number properties based on register definition."""
         # Use data converter for unit
         unit = self.coordinator.data_converter.get_unit(self._register)
         if unit:
             self._attr_native_unit_of_measurement = unit
-        
+
         # Set min/max values from register or use data converter defaults
         min_val = self._register.get("min")
         max_val = self._register.get("max")
-        
+
         if min_val and str(min_val).replace("-", "").replace(".", "").isdigit():
             self._attr_native_min_value = float(min_val)
         else:
             # Get default from data converter based on data type
             self._attr_native_min_value = self.coordinator.data_converter.get_min_value(self._register)
-        
+
         if max_val and str(max_val).replace(".", "").isdigit():
             self._attr_native_max_value = float(max_val)
         else:
             # Get default from data converter based on data type
             self._attr_native_max_value = self.coordinator.data_converter.get_max_value(self._register)
-        
+
         # Set step based on scaling
         self._attr_native_step = self.coordinator.data_converter.get_step_value(self._register)
 
@@ -104,18 +107,27 @@ class KWBNumber(KWBBaseEntity, NumberEntity):
             raise HomeAssistantError(
                 f"Cannot convert value '{value}' for register {self._address}: {exc}"
             ) from exc
-        
+
         # Write to device
         success = await self.coordinator.async_write_register(self._address, modbus_value)
-        
+
         if not success:
-            _LOGGER.error("Failed to write value %s (modbus: %s) to register %d", 
+            _LOGGER.error("Failed to write value %s (modbus: %s) to register %d",
                          value, modbus_value, self._address)
             return
-        
+
         # Update our local data immediately with the converted HA value
         if self.coordinator.data and self._address in self.coordinator.data:
             self.coordinator.data[self._address]["value"] = value
             self.async_write_ha_state()
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any]:
+        """Return additional state attributes."""
+        if not self.coordinator.data or self._address not in self.coordinator.data:
+            return dict(self._static_attrs)
+
+        register_data = self.coordinator.data[self._address]
+        return {**self._static_attrs, "raw_value": register_data.get("raw_value")}
 
     # available property inherited from KWBBaseEntity
