@@ -7,13 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.1] - 2026-07-31
+
+### Added
+- **Register metadata on all entity platforms**: Sensors, numbers, selects, and switches now expose consistent register address, type, parameter, access-level, range, raw-value, and value-table information as state attributes.
+- **Diagnostics support**: Home Assistant diagnostics can now be downloaded for KWB config entries.
+- **Modbus register reference**: Added a generated German reference for the v25.7.1 register definitions.
+
 ### Fixed
 - **Access level changes via the options flow were ignored**: `coordinator.access_level` was cached from `entry.data` at startup and never picked up updates stored in `entry.options`, so switching to Expert Level via the options flow still caused `number`, `select`, `switch`, and `sensor` platforms to filter against the *original* level. The cached attribute is now sourced from the merged data + options config and re-synced on every soft update.
 - **Expert Level did not unlock additional controls**: `number`, `select`, and `switch` platforms only checked the `user_level` field of each register and ignored the configured access level. Switching the integration to Expert Level now correctly creates the additional read/write entities for registers that are writable only at the expert level (e.g. heating-circuit, DHW, buffer-storage and secondary-heat-source parameters).
 - **Sensor visibility for read-only registers**: `sensor.py` used a list match against `["read", "write"]`, which never matched the actual register value `"readwrite"`. The check now compares the active access level's field exactly against `"read"`, ensuring read-only registers always become sensors and read-write registers become controls.
 - **Unique-ID collisions**: Register loading now also deduplicates by `entity_id` (in addition to `starting_address`), preventing "Platform kwb_heating does not generate unique IDs" warnings when the same logical register appears in multiple sources.
+- **Missing Yes/No value tables**: Added `system_yes_no_t` in German and English for every supported firmware configuration that was missing it.
 
 ### Changed
+- **Internal architecture**: Removed the legacy register managers and language manager, and streamlined the asynchronous coordinator, Modbus client, and config flow.
 - **German UI labels for access levels**: "Zugriffsstufe" → "Zugriffsebene", "UserLevel"/"ExpertLevel" dropdown values are now shown as "Benutzerebene" / "Fachkraftebene" in the German UI ("User Level" / "Expert Level" in English). Internal config values (`UserLevel`, `ExpertLevel`) are unchanged, so existing entries keep working without migration.
 
 ## [0.4.2] - 2026-02-06
