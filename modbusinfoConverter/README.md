@@ -1,6 +1,17 @@
 # KWB ModbusInfo to JSON Converter
 
-A powerful conversion tool that transforms KWB ModbusInfo Excel files (.xlsx) into structured JSON configuration files for the KWB Heating Home Assistant integration.
+A conversion tool that transforms KWB ModbusInfo Excel files (.xlsx) into
+structured JSON templates for the KWB Heating Home Assistant integration.
+
+> **Source of truth:** Finalized production definitions live only in
+> `custom_components/kwb_heating/config/versions/`. The files under
+> `modbusinfoConverter/config/versions/` are generated development templates and
+> snapshots. They are not runtime configuration and are not required to remain
+> identical to production.
+
+The converter is intentionally the first step, not the final semantic authority.
+Known cleanup rules belong in deterministic code; genuinely new or ambiguous
+meaning is reviewed by a human or AI before a template enters production.
 
 ## 🎯 Features
 
@@ -12,6 +23,8 @@ A powerful conversion tool that transforms KWB ModbusInfo Excel files (.xlsx) in
 - **Consistent naming** - Uses English filenames for all equipment files across languages
 - **Value table extraction** - Converts enum value tables for state translations
 - **Alarm code processing** - Extracts alarm/error code definitions with descriptions
+- **Focused review report** - Records ambiguous IDs and missing English metadata in `conversion_review.json`
+- **Safe finalization** - Dry-run import preserves published IDs and refuses ambiguous writes
 
 ## 📋 Prerequisites
 
@@ -144,10 +157,11 @@ INFO: ✓ Successfully converted ModbusInfo-de-V22.7.1.xlsx
 
 ## 📂 Output Structure
 
-The converter creates a version and language-specific directory structure:
+The converter creates a non-canonical version and language-specific template tree:
 
 ```
 config/versions/
+├── conversion_review.json             # Exceptional cases; never used at runtime
 ├── v22.7.1/
 │   ├── de/
 │   │   ├── modbus_registers.json       # Universal + WMM Autonom registers
@@ -318,41 +332,68 @@ Equipment files use English names regardless of Excel language:
 - English "Heating circuits" → `heating_circuits.json`
 - Both versions produce the same filename for compatibility
 
-## 🔄 Integration with Home Assistant
+## 🔄 Template → review → production workflow
 
-After successful conversion, integrate the generated files:
+1. Obtain matching German and English official KWB ModbusInfo files.
+2. Put them in `modbusinfoConverter/modbusinfo/`.
+3. Generate templates:
 
-### Method 1: Copy to Integration (Development)
+   ```bash
+   cd modbusinfoConverter
+   python3 convert_modbusinfo.py
+   ```
 
-```bash
-# From modbusinfoConverter directory
-cp -r config/versions/ ../custom_components/kwb_heating/config/
-```
+4. Review `config/versions/conversion_review.json`. It contains only exceptional
+   cases such as unresolved duplicate English names or missing English matches.
+5. Preview finalization for one firmware version:
 
-### Method 2: Replace Existing Config
+   ```bash
+   python3 import_generated_config.py 25.7.1
+   ```
 
-```bash
-# Backup existing config
-mv ../custom_components/kwb_heating/config/versions \
-   ../custom_components/kwb_heating/config/versions.backup
+   The command matches existing logical registers by configuration-file context,
+   KWB `parameter`, and equipment `index`. It preserves the full finalized
+   production register—and therefore its published `entity_id`—for a confident
+   match. It adds clearly new registers and value tables, preserves
+   production-only refinements, and reports changed or uncertain matches.
 
-# Copy new config
-cp -r config/versions ../custom_components/kwb_heating/config/
-```
+6. Review the generated `import_review_v25.7.1.json`. Resolve every blocking
+   semantic item in the template or production proposal.
+7. Only after a clean dry run, explicitly write the validated proposal:
 
-### Method 3: Update Specific Version/Language
+   ```bash
+   python3 import_generated_config.py 25.7.1 --write
+   ```
 
-```bash
-# Update only German v25.7.1
-cp -r config/versions/v25.7.1/de \
-   ../custom_components/kwb_heating/config/versions/v25.7.1/
-```
+8. Review the resulting Git diff and run regression tests before committing the
+   finalized JSON under `custom_components/kwb_heating/config/versions/`.
 
-### After Integration
+Do not copy the generated tree over the integration tree. The import command is
+dry-run by default and refuses `--write` while blocking review items exist.
 
-1. Restart Home Assistant
-2. The integration will automatically use version-specific configs
-3. Language is auto-detected from Home Assistant settings
+### Entity-ID policy
+
+- IDs are language-independent and generated from English ModbusInfo names and
+  indexes.
+- Conservative symbol mappings preserve obvious meaning; for example,
+  `Boiler pump %` becomes `boiler_pump_percent`.
+- A reliably identified writable duplicate may receive `_setting`.
+- Ambiguous duplicates receive a conspicuous temporary
+  `_review_register_<address>` candidate and a report item. German/internal KWB
+  parameter fragments are never used as silent collision suffixes.
+- Finalized IDs are compatibility data. Do not casually rename them after release.
+
+### What requires semantic review
+
+Generated JSON may need refinement for duplicate English names with different
+meaning, unusual value tables, new equipment structures, changed KWB parameters,
+translation problems, and firmware-specific anomalies. The converter is not
+expected to reproduce every historical manual decision automatically.
+
+`system_ein_aus_t` and `system_yes_no_t` are deterministic boolean tables that
+some workbooks reference without defining. The converter supplies both tables in
+German and English. Finalization preserves any existing production refinement,
+and validation rejects missing referenced `*_t` tables.
 
 ## 🛠️ Customization
 
@@ -472,6 +513,7 @@ This displays:
 - Verify "ValueTables" sheet exists
 - Check ValueTables format: Column 1 = table name, Column 2 = value, Column 3 = translation
 - Ensure value_tables.json is not empty
+- Run the canonical regression tests; every referenced `*_t` table must exist
 
 ## 📝 Development Tips
 

@@ -83,6 +83,9 @@ memory/
 Backup/
 agents/
 
-#modbusinfoConverter/config/*
+# Converter JSON snapshots are intentionally committed as non-canonical fixtures.
+# Review reports are local workflow artifacts.
+modbusinfoConverter/config/versions/conversion_review.json
+modbusinfoConverter/config/versions/import_review_*.json
 modbusinfoConverter/modbusinfo/*
 modbusinfoConverter/__pycache__/*

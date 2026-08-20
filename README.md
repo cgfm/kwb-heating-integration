@@ -3,6 +3,7 @@
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/cgfm/kwb-heating-integration)](https://github.com/cgfm/kwb-heating-integration/releases)
 [![GitHub](https://img.shields.io/github/license/cgfm/kwb-heating-integration)](LICENSE)
+[![AI Assisted](https://img.shields.io/badge/AI-Assisted%20Development-blueviolet.svg?style=for-the-badge)](#ai-assisted-development)
 
 A comprehensive Home Assistant Custom Component for **KWB heating systems** with Modbus TCP, RTU over TCP, and serial RTU support.
 
@@ -253,7 +254,10 @@ The integration supports **automatic version detection** and **multi-language co
    - **English (en)**: Force English configuration
 
 ### Configuration File Structure
-The integration uses version and language-specific configuration files:
+The integration uses version and language-specific configuration files. The tree
+under `custom_components/kwb_heating/config/versions/` is the only canonical
+production source of register definitions and the only version tree loaded at
+runtime:
 ```
 config/versions/
 ├── v21.4.0/
@@ -274,7 +278,9 @@ config/versions/
 
 ## 🔄 ModbusInfo Converter
 
-The **modbusinfoConverter** tool converts KWB's official ModbusInfo Excel files into JSON configuration format.
+The **modbusinfoConverter** tool converts KWB's official ModbusInfo Excel files
+into initial JSON templates. Its `config/versions/` tree is a non-canonical
+development artifact; it is neither a runtime dependency nor a production mirror.
 
 ### Key Features
 - Multi-version support (v21.4.0, v22.7.1, v24.7.1, v25.4.0, v25.7.1, etc.)
@@ -290,15 +296,19 @@ The **modbusinfoConverter** tool converts KWB's official ModbusInfo Excel files 
 | Script | Purpose |
 |--------|---------|
 | `convert_modbusinfo.py` | Convert Excel files to JSON configs |
+| `import_generated_config.py` | Dry-run/finalize a version while preserving published IDs |
 | `json_to_excel.py` | Generate Excel files from existing JSON configs |
-| `add_entity_ids_from_json.py` | Update entity_ids in existing JSON configs |
+| `add_entity_ids_from_json.py` | Update IDs in generated templates when Excel is unavailable |
 
 ### Quick Start
 ```bash
 cd modbusinfoConverter
 # Place ModbusInfo-{lang}-V{version}.xlsx files in modbusinfo/ directory
 python3 convert_modbusinfo.py
-# Generated files appear in config/versions/
+# Review config/versions/conversion_review.json
+python3 import_generated_config.py 25.7.1
+# Resolve blocking review items, then explicitly finalize:
+python3 import_generated_config.py 25.7.1 --write
 ```
 
 ### Generate Excel from JSON
@@ -315,7 +325,7 @@ For detailed usage instructions, see [modbusinfoConverter/README.md](modbusinfoC
 ### Use Cases
 - **Add new KWB firmware versions**: Convert new ModbusInfo Excel files
 - **Add language support**: Convert English/other language Excel files
-- **Update existing configs**: Re-generate from updated Excel files
+- **Update existing configs**: Generate a template, review it, then use safe finalization
 - **Recreate missing Excel files**: Generate Excel from JSON when source is unavailable
 - **Development**: Test with modified register definitions
 
@@ -434,8 +444,16 @@ If you have access to KWB's official ModbusInfo Excel files:
 
 1. Place Excel files in `modbusinfoConverter/modbusinfo/`
 2. Run `python3 convert_modbusinfo.py`
-3. Generated JSON configs appear in `modbusinfoConverter/config/versions/`
-4. Copy to integration: `cp -r config/versions/ custom_components/kwb_heating/config/`
+3. Review `modbusinfoConverter/config/versions/conversion_review.json`
+4. Run `python3 import_generated_config.py <version>` for a dry-run report
+5. Resolve ambiguous names, unusual tables, changed parameters, translations, and firmware anomalies
+6. Run the finalizer with `--write` only after review and validation succeed
+7. Review the canonical diff under `custom_components/kwb_heating/config/versions/` and run tests
+
+Generated IDs are based on English data and must remain language-independent.
+Public IDs must not normally contain German/internal KWB parameter fragments.
+Already released IDs and their derived Home Assistant unique IDs are compatibility
+data and must not be renamed merely because a fresh template suggests another ID.
 
 See [modbusinfoConverter/README.md](modbusinfoConverter/README.md) for details.
 

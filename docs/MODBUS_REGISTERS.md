@@ -1500,7 +1500,7 @@ Vollständige Auflistung aller Wertetabellen, die in der Spalte *Optionen / Wert
 
 ## Anhang A — Vollständige Adressliste
 
-Alle 2796 Modbus-Adressen, sortiert nach Quelle und Adresse. Die Datei `equipment/uebergabestation.json` ist mit `equipment/transfer_station.json` deckungsgleich (nur abweichende `entity_id`-Präfixe) und wurde hier nicht doppelt aufgeführt.
+Alle 2796 Modbus-Adressen, sortiert nach Quelle und Adresse.
 
 ### Universal (`modbus_registers.json`, 22 Register)
 

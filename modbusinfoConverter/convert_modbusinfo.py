@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Convert KWB ModbusInfo Excel files to JSON configuration format."""
 
+from __future__ import annotations
+
 import json
 import logging
 import re
@@ -11,8 +13,7 @@ from typing import Any
 try:
     import openpyxl
 except ImportError:
-    print("Error: openpyxl library is required. Install with: pip install openpyxl")
-    sys.exit(1)
+    openpyxl = None
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 logger = logging.getLogger(__name__)
@@ -37,6 +38,7 @@ class ModbusInfoConverter:
         "ß": "ss",
         "&": "and",
         "@": "at",
+        "%": " percent ",
         "(": "",
         ")": "",
         "#": "",
@@ -98,7 +100,11 @@ class ModbusInfoConverter:
         "system_ein_aus_t": {
             "en": {"0": "Off", "1": "On"},
             "de": {"0": "Aus", "1": "Ein"},
-        }
+        },
+        "system_yes_no_t": {
+            "en": {"0": "No", "1": "Yes"},
+            "de": {"0": "Nein", "1": "Ja"},
+        },
     }
 
     # Use consistent English filenames for equipment
@@ -144,6 +150,10 @@ class ModbusInfoConverter:
         self._english_data_cache: dict[
             str, dict[str, dict[int, dict[str, str]]]
         ] = {}
+        self.review_items: list[dict[str, Any]] = []
+        self._current_version = "unknown"
+        self._current_language = "unknown"
+        self._current_source_file = "unknown"
 
     def sanitize_for_entity_id(self, name: str) -> str:
         """Sanitize a string for use in Home Assistant entity IDs.
@@ -289,7 +299,9 @@ class ModbusInfoConverter:
                 if i < len(headers) and headers[i]:
                     row_dict[headers[i]] = value
 
-            register = self.normalize_register(row_dict, english_sheet_data)
+            register = self.normalize_register(
+                row_dict, english_sheet_data, source_name=sheet_name
+            )
             if register:
                 registers.append(register)
 
@@ -298,44 +310,112 @@ class ModbusInfoConverter:
     def _make_entity_ids_unique(
         self, registers: list[dict], source_name: str
     ) -> list[dict]:
-        """Disambiguate duplicate IDs without dropping valid registers.
+        """Resolve English collisions or record them for semantic review.
 
-        The manufacturer's parameter path is stable across languages and is used
-        as the first suffix. The KWB ID and address are deterministic fallbacks.
-        Existing first occurrences keep their IDs to avoid unnecessary renames.
+        A writable variant of an otherwise identical read-only English name is
+        deterministically marked as a setting. All other duplicates remain review
+        items and receive an address-based temporary ID. Manufacturer parameter
+        text is deliberately never exposed in a generated entity ID.
         """
-        seen: set[str] = set()
+        seen: dict[str, dict] = {}
 
         for register in registers:
             entity_id = register.get("entity_id")
             if not entity_id or entity_id not in seen:
                 if entity_id:
-                    seen.add(entity_id)
+                    seen[entity_id] = register
                 continue
 
-            parameter = str(register.get("parameter", ""))
-            parameter_suffix = self.sanitize_for_entity_id(
-                parameter.rsplit(".", 1)[-1]
-            )
-            candidates = []
-            if parameter_suffix and not entity_id.endswith(parameter_suffix):
-                candidates.append(f"{entity_id}_{parameter_suffix}")
-            if register.get("id"):
-                candidates.append(f"{entity_id}_{register['id']}")
-            candidates.append(f"{entity_id}_register_{register['starting_address']}")
-
-            replacement = next(candidate for candidate in candidates if candidate not in seen)
-            logger.warning(
-                "Duplicate entity_id '%s' in %s at address %s; using '%s'",
-                entity_id,
-                source_name,
-                register.get("starting_address"),
-                replacement,
-            )
+            conflicting = seen[entity_id]
+            writable = self._is_writable(register)
+            conflicting_writable = self._is_writable(conflicting)
+            setting_candidate = f"{entity_id}_setting"
+            if writable and not conflicting_writable and setting_candidate not in seen:
+                replacement = setting_candidate
+                logger.info(
+                    "Resolved read/write entity_id collision '%s' in %s as '%s'",
+                    entity_id,
+                    source_name,
+                    replacement,
+                )
+            elif conflicting_writable and not writable and setting_candidate not in seen:
+                conflicting["entity_id"] = setting_candidate
+                del seen[entity_id]
+                seen[setting_candidate] = conflicting
+                seen[entity_id] = register
+                logger.info(
+                    "Resolved read/write entity_id collision '%s' in %s as '%s'",
+                    entity_id,
+                    source_name,
+                    setting_candidate,
+                )
+                continue
+            else:
+                replacement = (
+                    f"{entity_id}_review_register_{register['starting_address']}"
+                )
+                sequence = 2
+                while replacement in seen:
+                    replacement = (
+                        f"{entity_id}_review_register_"
+                        f"{register['starting_address']}_{sequence}"
+                    )
+                    sequence += 1
+                self._record_collision_review(
+                    source_name, register, conflicting, replacement
+                )
             register["entity_id"] = replacement
-            seen.add(replacement)
+            seen[replacement] = register
 
         return registers
+
+    @staticmethod
+    def _is_writable(register: dict) -> bool:
+        """Return whether register metadata unambiguously exposes a setting."""
+        return any(
+            "write" in str(register.get(field, "")).lower()
+            for field in ("user_level", "expert_level", "access_level")
+        )
+
+    def _record_collision_review(
+        self,
+        source_name: str,
+        register: dict,
+        conflicting: dict,
+        candidate: str,
+    ) -> None:
+        """Record an ambiguous English-name collision for focused review."""
+        item = {
+            "kind": "ambiguous_entity_id_collision",
+            "firmware_version": self._current_version,
+            "language": self._current_language,
+            "source_file": self._current_source_file,
+            "device_or_equipment": source_name,
+            "address": register.get("starting_address"),
+            "english_name": register.get("_english_name", register.get("name")),
+            "parameter": register.get("parameter"),
+            "candidate_entity_id": candidate,
+            "conflicting_entity": {
+                "address": conflicting.get("starting_address"),
+                "english_name": conflicting.get(
+                    "_english_name", conflicting.get("name")
+                ),
+                "parameter": conflicting.get("parameter"),
+                "entity_id": conflicting.get("entity_id"),
+            },
+        }
+        self.review_items.append(item)
+        logger.warning(
+            "Entity ID requires review: firmware=%s source=%s address=%s "
+            "English name=%r parameter=%r candidate=%r conflicts_with=%r",
+            self._current_version,
+            source_name,
+            register.get("starting_address"),
+            item["english_name"],
+            register.get("parameter"),
+            candidate,
+            item["conflicting_entity"],
+        )
 
     def _sanitize_index_for_entity_id(self, index: str) -> str | None:
         """Sanitize an index string for use in entity_id.
@@ -380,7 +460,8 @@ class ModbusInfoConverter:
     def normalize_register(
         self,
         data: dict,
-        english_data: dict[int, dict[str, str]] | None = None
+        english_data: dict[int, dict[str, str]] | None = None,
+        source_name: str | None = None,
     ) -> dict | None:
         """Normalize register data to standard format.
 
@@ -399,11 +480,17 @@ class ModbusInfoConverter:
 
         # Get English data for language-independent entity_id
         en_data = english_data.get(address_int, {}) if english_data else {}
-        english_name = en_data.get("name", name)
-        english_index = en_data.get("index", str(data.get("Index", "")).strip())
+        missing_english_data = self._current_language not in {"en", "unknown"} and not en_data
+        english_name = en_data.get("name", name if not missing_english_data else "")
+        english_index = en_data.get(
+            "index",
+            str(data.get("Index", "")).strip() if not missing_english_data else "",
+        )
 
         # Generate entity_id from English name (language-independent)
         base_entity_id = self.sanitize_for_entity_id(english_name)
+        if missing_english_data:
+            base_entity_id = f"review_register_{address_int}"
 
         # Include English index in entity_id if present
         if english_index:
@@ -424,6 +511,7 @@ class ModbusInfoConverter:
             "type": str(data.get("Type", "u16")).strip().lower(),
             "user_level": self._parse_access_level(data.get("UserLevel")),
             "expert_level": self._parse_access_level(data.get("ExpertLevel")),
+            "_english_name": english_name,
         }
 
         # Keep the original index field for display purposes
@@ -451,10 +539,46 @@ class ModbusInfoConverter:
         if data.get("Parameter"):
             register["parameter"] = str(data.get("Parameter"))
 
+        if missing_english_data:
+            self._record_missing_english_review(register, source_name)
+
         # Remove empty string values
         register = {k: v for k, v in register.items() if v not in [None, ""]}
 
-        return register if register.get("starting_address") and register.get("name") else None
+        return (
+            register
+            if register.get("starting_address") is not None and register.get("name")
+            else None
+        )
+
+    def _record_missing_english_review(
+        self, register: dict, source_name: str | None
+    ) -> None:
+        """Report a localized row that could not be matched to English source data."""
+        item = {
+            "kind": "missing_english_metadata",
+            "firmware_version": self._current_version,
+            "language": self._current_language,
+            "source_file": self._current_source_file,
+            "device_or_equipment": source_name,
+            "address": register.get("starting_address"),
+            "english_name": None,
+            "localized_name": register.get("name"),
+            "parameter": register.get("parameter"),
+            "candidate_entity_id": register.get("entity_id"),
+            "conflicting_entity": None,
+        }
+        self.review_items.append(item)
+        logger.warning(
+            "Entity ID requires review: firmware=%s source=%s sheet=%s address=%s "
+            "has no matching English metadata; parameter=%r candidate=%r",
+            self._current_version,
+            self._current_source_file,
+            source_name,
+            register.get("starting_address"),
+            register.get("parameter"),
+            register.get("entity_id"),
+        )
 
     def _parse_function_code(self, functions: Any) -> str:
         """Parse Modbus function code(s)."""
@@ -594,6 +718,9 @@ class ModbusInfoConverter:
 
         version = file_info["version"]
         language = file_info["language"]
+        self._current_version = version
+        self._current_language = language
+        self._current_source_file = xlsx_file.name
 
         # Load English names for entity_id generation (language-independent IDs)
         english_data = self.load_english_data(version)
@@ -626,6 +753,7 @@ class ModbusInfoConverter:
 
         # Save universal registers
         modbus_registers_file = version_dir / "modbus_registers.json"
+        self._remove_converter_metadata(universal_registers)
         with open(modbus_registers_file, 'w', encoding='utf-8') as f:
             json.dump({
                 "universal_registers": universal_registers
@@ -659,6 +787,7 @@ class ModbusInfoConverter:
                     logger.info(f"    Result: {len(device_registers)} total registers")
 
                 if device_registers:
+                    self._remove_converter_metadata(device_registers)
                     filename = self.DEVICE_FILE_MAP.get(sheet_name, f"{sheet_name.lower().replace(' ', '_')}.json")
                     device_file = devices_dir / filename
                     with open(device_file, 'w', encoding='utf-8') as f:
@@ -669,6 +798,7 @@ class ModbusInfoConverter:
 
         # Save Combifire as its own device file too (if it exists)
         if combifire_base_registers:
+            self._remove_converter_metadata(combifire_base_registers)
             combifire_file = devices_dir / "kwb_combifire.json"
             with open(combifire_file, 'w', encoding='utf-8') as f:
                 json.dump({
@@ -689,6 +819,7 @@ class ModbusInfoConverter:
                     logger.info(f"  Reading {sheet_name} sheet...")
                     equipment_registers = self.read_register_sheet(workbook, sheet_name, english_data)
                     if equipment_registers:
+                        self._remove_converter_metadata(equipment_registers)
                         equipment_file = equipment_dir / filename
                         with open(equipment_file, 'w', encoding='utf-8') as f:
                             json.dump({
@@ -721,9 +852,32 @@ class ModbusInfoConverter:
 
         logger.info(f"✓ Successfully converted {xlsx_file.name}\n")
 
+    @staticmethod
+    def _remove_converter_metadata(registers: list[dict]) -> None:
+        """Remove fields used only while producing template IDs."""
+        for register in registers:
+            register.pop("_english_name", None)
+
+    def write_review_report(self) -> Path:
+        """Write machine-readable exceptional cases beside generated templates."""
+        report_path = self.output_dir / "conversion_review.json"
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report = {
+            "description": (
+                "Non-runtime converter findings requiring human or AI review "
+                "before finalization."
+            ),
+            "review_required": bool(self.review_items),
+            "items": self.review_items,
+        }
+        with open(report_path, "w", encoding="utf-8") as report_file:
+            json.dump(report, report_file, indent=2, ensure_ascii=False)
+        return report_path
+
     def convert_all(self) -> None:
         """Convert all ModbusInfo Excel files in input directory."""
-        xlsx_files = list(self.input_dir.glob("ModbusInfo*.xlsx"))
+        self.review_items = []
+        xlsx_files = sorted(self.input_dir.glob("ModbusInfo*.xlsx"))
 
         if not xlsx_files:
             logger.error(f"No ModbusInfo*.xlsx files found in {self.input_dir}")
@@ -740,9 +894,12 @@ class ModbusInfoConverter:
                 traceback.print_exc()
                 continue
 
+        report_path = self.write_review_report()
+
         logger.info("="*60)
         logger.info("Conversion complete!")
         logger.info(f"Output directory: {self.output_dir}")
+        logger.info(f"Review report: {report_path}")
 
 
 def main():
@@ -750,6 +907,12 @@ def main():
     script_dir = Path(__file__).parent
     input_dir = script_dir / "modbusinfo"
     output_dir = script_dir / "config" / "versions"
+
+    if openpyxl is None:
+        logger.error(
+            "openpyxl library is required. Install with: pip install openpyxl"
+        )
+        sys.exit(1)
 
     if not input_dir.exists():
         logger.error(f"Input directory not found: {input_dir}")

@@ -250,9 +250,12 @@ class AsyncModularRegisterManager:
                 break
 
             if self._register_allowed_for_access_level(register, access_level):
-                # Only include registers with valid addresses
+                # Final address validation is centralized in add_registers(),
+                # which applies equally to universal, device, and equipment maps.
+                registers.append(self._normalize_register(register))
+                # Invalid entries still reach the final validation for a useful
+                # warning, but must not consume the caller's valid-register limit.
                 if self._normalize_starting_address(register.get("starting_address")) is not None:
-                    registers.append(self._normalize_register(register))
                     count += 1
         
         _LOGGER.info("Selected %d universal registers for access level %s (limit: %d)", 
@@ -401,7 +404,15 @@ class AsyncModularRegisterManager:
             """Add registers, deduplicating addresses and repairing ID collisions."""
             added = 0
             for reg in new_registers:
-                addr = self._normalize_starting_address(reg.get("starting_address"))
+                original_address = reg.get("starting_address")
+                addr = self._normalize_starting_address(original_address)
+                if addr is None:
+                    _LOGGER.warning(
+                        "Skipping register with invalid starting_address %r: %s",
+                        original_address,
+                        self._register_description(reg),
+                    )
+                    continue
                 eid = reg.get("entity_id")
                 if addr is not None and addr in seen_addresses:
                     previous = seen_addresses[addr]

@@ -9,6 +9,7 @@ import importlib.util
 import json
 from pathlib import Path
 import sys
+import tempfile
 import types
 import unittest
 
@@ -16,24 +17,6 @@ import unittest
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 INTEGRATION_ROOT = PROJECT_ROOT / "custom_components" / "kwb_heating"
 CONFIG_ROOT = INTEGRATION_ROOT / "config" / "versions"
-CONVERTER_CONFIG_ROOT = PROJECT_ROOT / "modbusinfoConverter" / "config" / "versions"
-
-# The integration deliberately retains these three legacy IDs rather than using
-# the converter's newer parameter-derived variants. They are part of the public
-# Home Assistant identity contract, so parity checks allow only these exact pairs.
-INTENTIONAL_ENTITY_ID_OVERRIDES = {
-    ("boiler_pump_percent", "boiler_pump_kesselpumpe_steuerstufe"),
-    ("boiler_temperature_setpoint_setting", "boiler_temperature_setpoint_kesseltemp_soll_1"),
-    ("full_load_hours_pm", "full_load_hours_pm_betriebsminuten_summe"),
-}
-INTENTIONAL_VALUE_TABLE_ADDITIONS_BY_VERSION = {
-    "v21.4.0": {"system_ein_aus_t", "system_yes_no_t"},
-    "v22.7.1": {"system_ein_aus_t", "system_yes_no_t"},
-    "v24.7.1": set(),
-    "v25.4.0": {"system_ein_aus_t", "system_yes_no_t"},
-    "v25.7.1": {"system_ein_aus_t", "system_yes_no_t"},
-}
-LEGACY_TREE_FILE = Path("v25.7.1/de/equipment/uebergabestation.json")
 
 
 def _load_module(name: str, path: Path):
@@ -52,29 +35,24 @@ def _load_registers(path: Path) -> list[dict]:
 
 
 class RegisterConfigurationTests(unittest.TestCase):
-    """Validate entity IDs in every shipped register map."""
+    """Validate finalized production config independently of converter output."""
 
     def test_entity_ids_are_unique_in_each_register_file(self) -> None:
-        roots = [
-            CONFIG_ROOT,
-            PROJECT_ROOT / "modbusinfoConverter" / "config" / "versions",
-        ]
         errors = []
 
-        for root in roots:
-            for path in root.rglob("*.json"):
-                registers = _load_registers(path)
-                seen: dict[str, int] = {}
-                for register in registers:
-                    entity_id = register.get("entity_id")
-                    address = register.get("starting_address")
-                    if entity_id in seen:
-                        errors.append(
-                            f"{path.relative_to(PROJECT_ROOT)}: {entity_id} at "
-                            f"{seen[entity_id]} and {address}"
-                        )
-                    elif entity_id:
-                        seen[entity_id] = address
+        for path in CONFIG_ROOT.rglob("*.json"):
+            registers = _load_registers(path)
+            seen: dict[str, int] = {}
+            for register in registers:
+                entity_id = register.get("entity_id")
+                address = register.get("starting_address")
+                if entity_id in seen:
+                    errors.append(
+                        f"{path.relative_to(PROJECT_ROOT)}: {entity_id} at "
+                        f"{seen[entity_id]} and {address}"
+                    )
+                elif entity_id:
+                    seen[entity_id] = address
 
         self.assertEqual([], errors, "\n".join(errors))
 
@@ -93,7 +71,6 @@ class RegisterConfigurationTests(unittest.TestCase):
             common_files.extend(
                 path
                 for path in sorted((language_dir / "equipment").glob("*.json"))
-                if path.relative_to(CONFIG_ROOT) != LEGACY_TREE_FILE
             )
 
             # A real coordinator loads one device map at a time, so intentionally
@@ -123,91 +100,62 @@ class RegisterConfigurationTests(unittest.TestCase):
 
         self.assertEqual([], errors, "\n".join(errors))
 
-    def test_converter_tree_matches_integration_semantics(self) -> None:
-        """Detect drift from converter output while documenting identity exceptions."""
-        integration_files = {
-            path.relative_to(CONFIG_ROOT)
-            for path in CONFIG_ROOT.rglob("*.json")
-        }
-        converter_files = {
-            path.relative_to(CONVERTER_CONFIG_ROOT)
-            for path in CONVERTER_CONFIG_ROOT.rglob("*.json")
-        }
+    def test_canonical_tree_passes_standalone_validation(self) -> None:
+        from modbusinfoConverter.config_validation import validate_config_tree
 
-        self.assertEqual(
-            {LEGACY_TREE_FILE}, integration_files - converter_files,
-            "Unexpected integration-only config files",
-        )
-        self.assertEqual(
-            set(), converter_files - integration_files,
-            "Unexpected converter-only config files",
-        )
+        self.assertEqual([], validate_config_tree(CONFIG_ROOT))
 
-        # The legacy German filename is unused by the manager (which uses the
-        # canonical English filename) but remains checked in for compatibility.
-        legacy_registers = _load_registers(CONFIG_ROOT / LEGACY_TREE_FILE)
-        canonical_registers = _load_registers(
-            CONVERTER_CONFIG_ROOT / LEGACY_TREE_FILE.with_name("transfer_station.json")
-        )
-        self.assertEqual(len(legacy_registers), len(canonical_registers))
-        for legacy, canonical in zip(legacy_registers, canonical_registers):
-            legacy = dict(legacy)
-            canonical = dict(canonical)
-            # The unused legacy file retains its historic ugs_* IDs; its
-            # addresses and register semantics must still mirror the canonical file.
-            legacy.pop("entity_id", None)
-            canonical.pop("entity_id", None)
-            self.assertEqual(legacy, canonical)
-
+    def test_referenced_value_tables_exist_in_canonical_config(self) -> None:
         errors = []
-        for relative_path in sorted(integration_files & converter_files):
-            integration_data = json.loads((CONFIG_ROOT / relative_path).read_text(encoding="utf-8"))
-            converter_data = json.loads(
-                (CONVERTER_CONFIG_ROOT / relative_path).read_text(encoding="utf-8")
-            )
-
-            if relative_path.name == "value_tables.json":
-                integration_tables = integration_data["value_tables"]
-                converter_tables = converter_data["value_tables"]
-                extra_tables = set(integration_tables) - set(converter_tables)
-                expected_extra_tables = INTENTIONAL_VALUE_TABLE_ADDITIONS_BY_VERSION[
-                    relative_path.parts[0]
-                ]
-                if extra_tables != expected_extra_tables:
-                    errors.append(
-                        f"{relative_path}: unexpected extra value tables {sorted(extra_tables)}"
-                    )
-                if {
-                    key: value for key, value in integration_tables.items()
-                    if key not in expected_extra_tables
-                } != converter_tables:
-                    errors.append(f"{relative_path}: value table content differs")
-                continue
-
-            integration_registers = _load_registers(CONFIG_ROOT / relative_path)
-            converter_registers = _load_registers(CONVERTER_CONFIG_ROOT / relative_path)
-            if len(integration_registers) != len(converter_registers):
-                errors.append(f"{relative_path}: register count differs")
-                continue
-            for number, (integration_register, converter_register) in enumerate(
-                zip(integration_registers, converter_registers)
-            ):
-                if integration_register == converter_register:
-                    continue
-                integration_without_id = dict(integration_register)
-                converter_without_id = dict(converter_register)
-                integration_id = integration_without_id.pop("entity_id", None)
-                converter_id = converter_without_id.pop("entity_id", None)
-                if (
-                    integration_without_id != converter_without_id
-                    or (integration_id, converter_id) not in INTENTIONAL_ENTITY_ID_OVERRIDES
-                ):
-                    errors.append(
-                        f"{relative_path} register {number}: "
-                        f"{integration_register!r} != {converter_register!r}"
-                    )
-
+        for language_dir in sorted(CONFIG_ROOT.glob("v*/*")):
+            value_tables = json.loads(
+                (language_dir / "value_tables.json").read_text(encoding="utf-8")
+            )["value_tables"]
+            references = {
+                register["unit_value_table"]
+                for path in language_dir.rglob("*.json")
+                for register in _load_registers(path)
+                if str(register.get("unit_value_table", "")).endswith("_t")
+            }
+            missing = references - set(value_tables)
+            if missing:
+                errors.append(f"{language_dir}: {sorted(missing)}")
         self.assertEqual([], errors, "\n".join(errors))
+
+    def test_german_and_english_logical_registers_share_entity_ids(self) -> None:
+        errors = []
+        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
+            for de_path in sorted((version_dir / "de").rglob("*.json")):
+                relative = de_path.relative_to(version_dir / "de")
+                en_path = version_dir / "en" / relative
+                if not en_path.exists():
+                    continue
+                de_by_key = {
+                    (register.get("parameter"), register.get("index", "")): register
+                    for register in _load_registers(de_path)
+                }
+                en_by_key = {
+                    (register.get("parameter"), register.get("index", "")): register
+                    for register in _load_registers(en_path)
+                }
+                for key in de_by_key.keys() & en_by_key.keys():
+                    if de_by_key[key].get("entity_id") != en_by_key[key].get("entity_id"):
+                        errors.append(f"{version_dir.name}/{relative}: {key!r}")
+        self.assertEqual([], errors, "\n".join(errors))
+
+    def test_published_entity_id_examples_remain_finalized(self) -> None:
+        expected = {
+            "boiler_pump_percent",
+            "boiler_temperature_setpoint_setting",
+            "full_load_hours_pm",
+        }
+        for language in ("de", "en"):
+            ids = {
+                register.get("entity_id")
+                for path in (CONFIG_ROOT / "v22.7.1" / language).rglob("*.json")
+                for register in _load_registers(path)
+            }
+            self.assertTrue(expected.issubset(ids), language)
 
     def test_selected_device_maps_have_no_cross_file_id_collisions(self) -> None:
         errors = []
@@ -233,6 +181,248 @@ class RegisterConfigurationTests(unittest.TestCase):
                         )
 
         self.assertEqual([], errors, "\n".join(errors))
+
+
+class ConverterWorkflowTests(unittest.TestCase):
+    """Cover English template IDs, review reporting, and safe finalization."""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.converter_module = _load_module(
+            "kwb_converter_test",
+            PROJECT_ROOT / "modbusinfoConverter" / "convert_modbusinfo.py",
+        )
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        sys.modules.pop("kwb_converter_test", None)
+
+    def _converter(self, root: Path):
+        return self.converter_module.ModbusInfoConverter(root, root / "output")
+
+    @staticmethod
+    def _raw_register(address: int, name: str, parameter: str, **extra) -> dict:
+        register = {
+            "StartingAddress": address,
+            "Name": name,
+            "Functions": "04",
+            "Type": "u16",
+            "UserLevel": "read",
+            "ExpertLevel": "read",
+            "Parameter": parameter,
+        }
+        register.update(extra)
+        return register
+
+    def test_percent_is_preserved_as_english_entity_id_meaning(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            converter = self._converter(Path(temp_dir))
+            plain = converter.normalize_register(
+                self._raw_register(1, "Boiler pump", "KSM.pump")
+            )
+            percent = converter.normalize_register(
+                self._raw_register(2, "Boiler pump %", "KSM.pump_percent")
+            )
+
+        self.assertEqual("boiler_pump", plain["entity_id"])
+        self.assertEqual("boiler_pump_percent", percent["entity_id"])
+        self.assertEqual([], converter.review_items)
+
+    def test_localized_register_uses_matched_english_name_and_index(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            converter = self._converter(Path(temp_dir))
+            converter._current_language = "de"
+            register = converter.normalize_register(
+                self._raw_register(
+                    20,
+                    "Kesselpumpe %",
+                    "KSM.Kesselpumpe.Steuerstufe",
+                    Index="PUF 0",
+                ),
+                {20: {"name": "Boiler pump %", "index": "BUF 0"}},
+            )
+
+        self.assertEqual("buf_1_boiler_pump_percent", register["entity_id"])
+        self.assertNotIn("kesselpumpe", register["entity_id"])
+        self.assertNotIn("steuerstufe", register["entity_id"])
+
+    def test_missing_english_match_creates_review_id_not_german_id(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            converter = self._converter(Path(temp_dir))
+            converter._current_version = "25.7.1"
+            converter._current_language = "de"
+            register = converter.normalize_register(
+                self._raw_register(
+                    21,
+                    "Kesselpumpe Steuerstufe",
+                    "KSM.Kesselpumpe.Steuerstufe",
+                ),
+                {},
+                source_name="KWB Easyfire",
+            )
+
+        self.assertEqual("review_register_21", register["entity_id"])
+        self.assertNotIn("kesselpumpe", register["entity_id"])
+        self.assertEqual("missing_english_metadata", converter.review_items[0]["kind"])
+
+    def test_read_write_collision_gets_deterministic_english_setting_suffix(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            converter = self._converter(Path(temp_dir))
+            registers = [
+                {
+                    "starting_address": 10,
+                    "name": "Boiler temperature setpoint",
+                    "entity_id": "boiler_temperature_setpoint",
+                    "user_level": "read",
+                    "parameter": "KSM.actual",
+                },
+                {
+                    "starting_address": 11,
+                    "name": "Boiler temperature setpoint",
+                    "entity_id": "boiler_temperature_setpoint",
+                    "user_level": "readwrite",
+                    "parameter": "KSM.Kesseltemp_Soll_1",
+                },
+            ]
+            converter._make_entity_ids_unique(registers, "KWB Easyfire")
+
+        self.assertEqual("boiler_temperature_setpoint_setting", registers[1]["entity_id"])
+        self.assertEqual([], converter.review_items)
+
+    def test_ambiguous_collision_is_reported_without_parameter_fallback(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            converter = self._converter(Path(temp_dir))
+            converter._current_version = "25.7.1"
+            converter._current_language = "en"
+            converter._current_source_file = "ModbusInfo-en-V25.7.1.xlsx"
+            registers = [
+                {
+                    "starting_address": 100,
+                    "name": "Full load hours",
+                    "entity_id": "full_load_hours",
+                    "user_level": "read",
+                    "parameter": "KSM.Betriebsstunden_Summe",
+                },
+                {
+                    "starting_address": 101,
+                    "name": "Full load hours",
+                    "entity_id": "full_load_hours",
+                    "user_level": "read",
+                    "parameter": "KSM.Betriebsminuten_Summe",
+                },
+            ]
+            with self.assertLogs(self.converter_module.__name__, "WARNING") as logs:
+                converter._make_entity_ids_unique(registers, "KWB Combifire")
+            report_path = converter.write_review_report()
+            report = json.loads(report_path.read_text(encoding="utf-8"))
+
+        candidate = registers[1]["entity_id"]
+        self.assertEqual("full_load_hours_review_register_101", candidate)
+        self.assertNotIn("betriebsminuten", candidate)
+        self.assertTrue(report["review_required"])
+        item = report["items"][0]
+        self.assertEqual("25.7.1", item["firmware_version"])
+        self.assertEqual("KWB Combifire", item["device_or_equipment"])
+        self.assertEqual(101, item["address"])
+        self.assertEqual("Full load hours", item["english_name"])
+        self.assertEqual("KSM.Betriebsminuten_Summe", item["parameter"])
+        self.assertIn("conflicting_entity", item)
+        self.assertIn("requires review", "\n".join(logs.output))
+
+    def test_required_boolean_value_tables_are_generated(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            converter = self._converter(Path(temp_dir))
+            tables = converter.ensure_required_value_tables({}, "en")
+
+        self.assertEqual({"0": "Off", "1": "On"}, tables["system_ein_aus_t"])
+        self.assertEqual({"0": "No", "1": "Yes"}, tables["system_yes_no_t"])
+
+    def test_finalizer_preserves_published_ids_and_production_tables(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        published_ids = (
+            "boiler_pump_percent",
+            "boiler_temperature_setpoint_setting",
+            "full_load_hours_pm",
+        )
+        generated_ids = (
+            "boiler_pump_kesselpumpe_steuerstufe",
+            "boiler_temperature_setpoint_kesseltemp_soll_1",
+            "full_load_hours_pm_betriebsminuten_summe",
+        )
+        parameters = ("KSM.pump", "KSM.setpoint", "KSM.full_load_minutes")
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            for language in ("de", "en"):
+                generated_dir = generated_root / "v1.0.0" / language
+                canonical_dir = canonical_root / "v1.0.0" / language
+                (generated_dir / "devices").mkdir(parents=True)
+                (canonical_dir / "devices").mkdir(parents=True)
+                generated_registers = [
+                    {
+                        "starting_address": number,
+                        "name": f"Register {number}",
+                        "entity_id": generated_id,
+                        "parameter": parameter,
+                        "user_level": "read",
+                    }
+                    for number, generated_id, parameter in zip(
+                        (10, 11, 12), generated_ids, parameters
+                    )
+                ]
+                generated_registers.append(
+                    {
+                        "starting_address": 13,
+                        "name": "New register",
+                        "entity_id": "new_register",
+                        "parameter": "KSM.new",
+                        "user_level": "read",
+                    }
+                )
+                canonical_registers = [
+                    {**register, "entity_id": published_id}
+                    for register, published_id in zip(
+                        generated_registers[:3], published_ids
+                    )
+                ]
+                (generated_dir / "devices" / "kwb_test.json").write_text(
+                    json.dumps({"registers": generated_registers}), encoding="utf-8"
+                )
+                (canonical_dir / "devices" / "kwb_test.json").write_text(
+                    json.dumps({"registers": canonical_registers}), encoding="utf-8"
+                )
+                (generated_dir / "value_tables.json").write_text(
+                    json.dumps({"value_tables": {}}), encoding="utf-8"
+                )
+                finalized_tables = {
+                    "system_ein_aus_t": {"0": "Off", "1": "On"},
+                    "system_yes_no_t": {"0": "No", "1": "Yes"},
+                }
+                (canonical_dir / "value_tables.json").write_text(
+                    json.dumps({"value_tables": finalized_tables}), encoding="utf-8"
+                )
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "1.0.0"
+            )
+
+        for language in ("de", "en"):
+            registers = proposed[Path(language) / "devices" / "kwb_test.json"][
+                "registers"
+            ]
+            self.assertEqual(
+                [*published_ids, "new_register"],
+                [register["entity_id"] for register in registers],
+            )
+            tables = proposed[Path(language) / "value_tables.json"]["value_tables"]
+            self.assertIn("system_ein_aus_t", tables)
+            self.assertIn("system_yes_no_t", tables)
+        self.assertEqual(6, report["summary"]["published_entity_ids_preserved"])
+        self.assertEqual(2, report["summary"]["new_registers_added"])
+        self.assertFalse(report["blocking_review_required"])
 
 
 class EquipmentSelectionTests(unittest.TestCase):
@@ -411,23 +601,66 @@ class EquipmentSelectionTests(unittest.TestCase):
                     )
         self.assertEqual([], errors, "\n".join(errors))
 
-    def test_address_zero_is_valid_and_source_registers_are_not_mutated(self) -> None:
+    def test_final_address_validation_applies_to_every_register_source(self) -> None:
+        """Only add_registers() decides whether a source address is valid."""
+        def collect(source: str, starting_address: object) -> tuple[list[dict], dict]:
+            manager = self.manager_module.AsyncModularRegisterManager()
+            manager._initialized = True
+            register = {
+                "starting_address": starting_address,
+                "entity_id": f"{source}_register",
+                "parameter": f"{source}.parameter",
+                "name": f"{source} register",
+                "user_level": "read",
+            }
+            if source == "equipment":
+                register["index"] = "C 1"
+            if source == "universal":
+                manager._universal_registers = [register]
+                registers = asyncio.run(manager.get_all_registers("UserLevel"))
+            elif source == "device":
+                manager._device_cache["KWB Easyfire"] = [register]
+                registers = asyncio.run(
+                    manager.get_all_registers("UserLevel", device_type="KWB Easyfire")
+                )
+            else:
+                manager._equipment_cache["circulation"] = [register]
+                registers = asyncio.run(
+                    manager.get_all_registers(
+                        "UserLevel", equipment_config={"circulation": 1}
+                    )
+                )
+            return registers, register
+
+        for source in ("universal", "device", "equipment"):
+            for original, expected in ((0, 0), ("0", 0), ("123", 123)):
+                with self.subTest(source=source, address=original):
+                    registers, source_register = collect(source, original)
+                    self.assertEqual([expected], [reg["starting_address"] for reg in registers])
+                    self.assertEqual(original, source_register["starting_address"])
+
+            for invalid in (None, "", "   ", "invalid", -1, "-1", {}):
+                with self.subTest(source=source, address=invalid):
+                    with self.assertLogs(self.manager_module.__name__, "WARNING") as logs:
+                        registers, _source_register = collect(source, invalid)
+                    self.assertEqual([], registers)
+                    warning = "\n".join(logs.output)
+                    self.assertIn("invalid starting_address", warning)
+                    self.assertIn(repr(invalid), warning)
+
+    def test_invalid_addresses_never_reach_entity_id_collision_repair(self) -> None:
         manager = self.manager_module.AsyncModularRegisterManager()
-        source_registers = [
-            {"starting_address": 0, "user_level": "read"},
-            {"starting_address": "0", "user_level": "read"},
-            {"starting_address": 42, "user_level": "read"},
-            {"starting_address": "43", "user_level": "read"},
-            {"starting_address": None, "user_level": "read"},
-            {"starting_address": "not-an-address", "user_level": "read"},
+        manager._initialized = True
+        manager._universal_registers = [
+            {"starting_address": 10, "entity_id": "foo", "name": "Valid", "user_level": "read"},
+            {"starting_address": None, "entity_id": "foo", "name": "Invalid", "user_level": "read"},
         ]
-        manager._universal_registers = source_registers
 
-        selected = manager.get_registers_for_access_level("UserLevel")
+        with self.assertLogs(self.manager_module.__name__, "WARNING") as logs:
+            registers = asyncio.run(manager.get_all_registers("UserLevel"))
 
-        self.assertEqual([0, 0, 42, 43], [reg["starting_address"] for reg in selected])
-        self.assertEqual("0", source_registers[1]["starting_address"])
-        self.assertEqual("43", source_registers[3]["starting_address"])
+        self.assertEqual(["foo"], [register["entity_id"] for register in registers])
+        self.assertNotIn("foo_register_None", "\n".join(logs.output))
 
     def test_runtime_entity_id_collisions_are_repaired_deterministically(self) -> None:
         manager = self.manager_module.AsyncModularRegisterManager()
@@ -465,6 +698,38 @@ class EquipmentSelectionTests(unittest.TestCase):
         self.assertIn("using 'shared_register_20_register_30'", "\n".join(logs.output))
         # The repair must not rewrite source configuration that may be reused.
         self.assertEqual("shared", manager._device_cache["KWB Easyfire"][0]["entity_id"])
+
+    def test_entity_id_collision_uses_register_address_suffix_when_needed(self) -> None:
+        manager = self.manager_module.AsyncModularRegisterManager()
+        manager._initialized = True
+        manager._universal_registers = [
+            {"starting_address": 10, "entity_id": "shared", "name": "First", "user_level": "read"},
+            {
+                "starting_address": 30,
+                "entity_id": "shared_register_20",
+                "name": "Existing fallback",
+                "user_level": "read",
+            },
+        ]
+        manager._device_cache["KWB Easyfire"] = [
+            {"starting_address": 20, "entity_id": "shared", "name": "Third", "user_level": "read"},
+        ]
+
+        with self.assertLogs(self.manager_module.__name__, "WARNING") as logs:
+            first_run = asyncio.run(
+                manager.get_all_registers("UserLevel", device_type="KWB Easyfire")
+            )
+            second_run = asyncio.run(
+                manager.get_all_registers("UserLevel", device_type="KWB Easyfire")
+            )
+
+        self.assertEqual([10, 30, 20], [reg["starting_address"] for reg in first_run])
+        self.assertEqual(
+            ["shared", "shared_register_20", "shared_register_20_2"],
+            [reg["entity_id"] for reg in first_run],
+        )
+        self.assertEqual(first_run, second_run)
+        self.assertIn("using 'shared_register_20_2'", "\n".join(logs.output))
 
     def test_conflicting_duplicate_addresses_are_reported_and_deduplicated(self) -> None:
         manager = self.manager_module.AsyncModularRegisterManager()
@@ -659,6 +924,13 @@ class WiringRegressionTests(unittest.TestCase):
             if isinstance(element, ast.Name)
         }
         self.assertIn("CONF_TRANSFER_STATIONS", key_names)
+
+    def test_runtime_package_has_no_converter_dependency(self) -> None:
+        references = []
+        for path in INTEGRATION_ROOT.rglob("*.py"):
+            if "modbusinfoConverter" in path.read_text(encoding="utf-8"):
+                references.append(path.relative_to(PROJECT_ROOT).as_posix())
+        self.assertEqual([], references)
 
     def test_duplicate_abort_is_not_swallowed_by_config_flow(self) -> None:
         tree = ast.parse(

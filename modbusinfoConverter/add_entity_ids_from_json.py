@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Add entity_id field to JSON configs using English data.
+"""Add entity_id fields to generated template JSON using English data.
 
 This script is useful when Excel source files are not available but both
 German and English JSON configs exist. It generates language-independent
-entity_id values that include the equipment index (e.g., sol_1_status).
+entity_id values that include the equipment index (e.g., sol_1_status). It is
+not a production finalizer; use import_generated_config.py for canonical config.
 """
 
 import json
@@ -27,6 +28,7 @@ _ENTITY_ID_REPLACEMENTS = str.maketrans({
     "ß": "ss",
     "&": "and",
     "@": "at",
+    "%": " percent ",
     "(": "",
     ")": "",
     "#": "",
@@ -211,7 +213,7 @@ def add_entity_ids_to_registers(registers: list[dict], english_data: dict[int, d
 
 
 def make_entity_ids_unique(registers: list[dict]) -> int:
-    """Disambiguate duplicate IDs while preserving the first occurrence."""
+    """Give ambiguous duplicates review IDs without leaking parameter text."""
     seen: set[str] = set()
     updated = 0
 
@@ -222,16 +224,18 @@ def make_entity_ids_unique(registers: list[dict]) -> int:
                 seen.add(entity_id)
             continue
 
-        parameter = str(reg.get("parameter", ""))
-        parameter_suffix = sanitize_for_entity_id(parameter.rsplit(".", 1)[-1])
-        candidates = []
-        if parameter_suffix and not entity_id.endswith(parameter_suffix):
-            candidates.append(f"{entity_id}_{parameter_suffix}")
-        if reg.get("id"):
-            candidates.append(f"{entity_id}_{reg['id']}")
-        candidates.append(f"{entity_id}_register_{reg['starting_address']}")
-
-        replacement = next(candidate for candidate in candidates if candidate not in seen)
+        replacement = f"{entity_id}_review_register_{reg['starting_address']}"
+        sequence = 2
+        while replacement in seen:
+            replacement = (
+                f"{entity_id}_review_register_{reg['starting_address']}_{sequence}"
+            )
+            sequence += 1
+        print(
+            "    REVIEW REQUIRED: ambiguous English entity_id "
+            f"{entity_id!r} at address {reg.get('starting_address')}; "
+            f"parameter={reg.get('parameter')!r}, candidate={replacement!r}"
+        )
         reg["entity_id"] = replacement
         seen.add(replacement)
         updated += 1
@@ -309,9 +313,9 @@ def main():
     """Main entry point."""
     import sys
 
-    # Default to custom_components config directory
-    script_dir = Path(__file__).parent.parent
-    config_dir = script_dir / "custom_components" / "kwb_heating" / "config" / "versions"
+    # Operate only on non-canonical converter templates by default.
+    script_dir = Path(__file__).parent
+    config_dir = script_dir / "config" / "versions"
 
     # Allow specifying a specific version
     if len(sys.argv) > 1:
