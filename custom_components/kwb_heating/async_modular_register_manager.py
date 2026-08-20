@@ -248,14 +248,10 @@ class AsyncModularRegisterManager:
         for register in self._universal_registers:
             if count >= limit:
                 break
-                
+
             if self._register_allowed_for_access_level(register, access_level):
                 # Only include registers with valid addresses
-                starting_address = register.get("starting_address")
-                if starting_address and (isinstance(starting_address, int) or (isinstance(starting_address, str) and starting_address.isdigit())):
-                    # Convert string to int if needed
-                    if isinstance(starting_address, str):
-                        register["starting_address"] = int(starting_address)
+                if self._normalize_starting_address(register.get("starting_address")) is not None:
                     registers.append(self._normalize_register(register))
                     count += 1
         
@@ -296,6 +292,19 @@ class AsyncModularRegisterManager:
             for register in equipment_registers:
                 parsed_index = self._parse_equipment_index(register.get("index", ""))
                 if not parsed_index:
+                    # A blank index denotes a feature-level register. It is not
+                    # tied to a particular equipment instance, so include it once
+                    # when that feature is enabled. Non-blank unparseable indexes
+                    # remain excluded because their instance association is unclear.
+                    if not register.get("index"):
+                        limited_registers.append(register)
+                    else:
+                        _LOGGER.warning(
+                            "Skipping %s register with unparseable equipment index %r: %s",
+                            equipment_key,
+                            register.get("index"),
+                            self._register_description(register),
+                        )
                     continue
                 prefix, instance = parsed_index
                 if instance in selected_instances.get(prefix, set()):
@@ -333,6 +342,36 @@ class AsyncModularRegisterManager:
         except ValueError:
             return None
 
+    @staticmethod
+    def _normalize_starting_address(value: Any) -> int | None:
+        """Return a non-negative Modbus address without changing source config."""
+        if isinstance(value, bool):
+            return None
+        if isinstance(value, int):
+            return value if value >= 0 else None
+        if isinstance(value, str):
+            normalized = value.strip()
+            if normalized.isdigit():
+                return int(normalized)
+        return None
+
+    @staticmethod
+    def _register_semantic_signature(register: dict) -> tuple[Any, ...]:
+        """Fields that must agree when two files define the same address."""
+        fields = (
+            "entity_id", "parameter", "data_type", "register_type", "type", "unit",
+            "unit_value_table", "user_level", "expert_level", "access_level", "index",
+        )
+        return tuple(register.get(field) for field in fields)
+
+    @staticmethod
+    def _register_description(register: dict) -> str:
+        """Provide enough context to diagnose a duplicate definition."""
+        return (
+            f"name={register.get('name')!r}, entity_id={register.get('entity_id')!r}, "
+            f"parameter={register.get('parameter')!r}, index={register.get('index')!r}"
+        )
+
     def _get_equipment_index_groups(
         self, equipment_registers: list[dict]
     ) -> dict[str, list[int]]:
@@ -355,18 +394,38 @@ class AsyncModularRegisterManager:
         await self.initialize()  # Ensure async initialization
 
         registers = []
-        seen_addresses: set[int] = set()
+        seen_addresses: dict[int, dict] = {}
         seen_entity_ids: set[str] = set()
 
         def add_registers(new_registers: list[dict]) -> int:
             """Add registers, deduplicating addresses and repairing ID collisions."""
             added = 0
             for reg in new_registers:
-                addr = reg.get("starting_address")
+                addr = self._normalize_starting_address(reg.get("starting_address"))
                 eid = reg.get("entity_id")
                 if addr is not None and addr in seen_addresses:
-                    _LOGGER.debug("Skipping duplicate register at address %s: %s", addr, reg.get("name"))
+                    previous = seen_addresses[addr]
+                    if (
+                        self._register_semantic_signature(previous)
+                        == self._register_semantic_signature(reg)
+                    ):
+                        _LOGGER.debug(
+                            "Skipping equivalent duplicate register at address %s: %s",
+                            addr,
+                            self._register_description(reg),
+                        )
+                    else:
+                        _LOGGER.warning(
+                            "Skipping conflicting duplicate register at address %s; "
+                            "keeping [%s], ignoring [%s]",
+                            addr,
+                            self._register_description(previous),
+                            self._register_description(reg),
+                        )
                     continue
+                if addr is not None and reg.get("starting_address") != addr:
+                    reg = dict(reg)
+                    reg["starting_address"] = addr
                 if eid and eid in seen_entity_ids:
                     # Never discard a valid register because of a configuration
                     # mistake. The address is stable and unique within a Modbus map.
@@ -383,7 +442,7 @@ class AsyncModularRegisterManager:
                     reg["entity_id"] = replacement
                     eid = replacement
                 if addr is not None:
-                    seen_addresses.add(addr)
+                    seen_addresses[addr] = reg
                 if eid:
                     seen_entity_ids.add(eid)
                 registers.append(reg)
@@ -432,11 +491,11 @@ class AsyncModularRegisterManager:
         """Normalize register definition."""
         normalized = register.copy()
         
-        # Ensure starting_address is integer
+        # Ensure starting_address is an integer without mutating the source map.
         if "starting_address" in normalized:
-            addr = normalized["starting_address"]
-            if isinstance(addr, str) and addr.isdigit():
-                normalized["starting_address"] = int(addr)
+            addr = self._normalize_starting_address(normalized["starting_address"])
+            if addr is not None:
+                normalized["starting_address"] = addr
         
         # Add equipment prefix to name for better identification
         index = normalized.get("index", "")
