@@ -106,6 +106,9 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
         # Version and language info (will be detected on first update)
         self.detected_version: str | None = None
         self.current_language: str = self.config.get("language", "auto")
+        # Integration-owned computed trackers are attached after the first
+        # refresh. They are not owned by any individual entity platform.
+        self.fuel_split_tracker = None
 
     async def ensure_initialized(self) -> None:
         """Ensure the register manager is initialized.

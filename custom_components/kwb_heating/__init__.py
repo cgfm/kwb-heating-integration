@@ -15,6 +15,12 @@ from homeassistant.core import HomeAssistant
 
 from .const import CONF_LANGUAGE, DOMAIN, PLATFORMS, EQUIPMENT_KEYS
 from .coordinator import KWBDataUpdateCoordinator
+from .fuel_split import (
+    FuelSplitTracker,
+    STORAGE_VERSION as FUEL_SPLIT_STORAGE_VERSION,
+    fuel_split_storage_key,
+    get_fuel_split_register_addresses,
+)
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -33,8 +39,10 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     _LOGGER.info("Setting up KWB Heating integration")
     
     coordinator = KWBDataUpdateCoordinator(hass, entry)
-    
+
     await coordinator.async_config_entry_first_refresh()
+
+    await _async_setup_fuel_split_tracker(hass, entry, coordinator)
     
     hass.data[DOMAIN][entry.entry_id] = coordinator
     
@@ -45,6 +53,48 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     entry.async_on_unload(entry.add_update_listener(async_update_options))
     
     return True
+
+
+async def _async_setup_fuel_split_tracker(
+    hass: HomeAssistant,
+    entry: ConfigEntry,
+    coordinator: KWBDataUpdateCoordinator,
+) -> None:
+    """Create the single persistent fuel-split tracker when capable."""
+    if coordinator.fuel_split_tracker is not None:
+        _LOGGER.debug("Fuel-split tracker already exists for this config entry")
+        return
+    addresses = get_fuel_split_register_addresses(coordinator.registers)
+    if addresses is None:
+        _LOGGER.debug(
+            "Combined heat total or operating mode is absent; fuel split disabled"
+        )
+        return
+
+    # Imported lazily so module-level config/update tests do not require the
+    # complete Home Assistant storage runtime.
+    from homeassistant.helpers.storage import Store
+
+    total_address, mode_address = addresses
+    expected_interval = coordinator.update_interval.total_seconds()
+    tracker = FuelSplitTracker(
+        coordinator,
+        Store(
+            hass,
+            FUEL_SPLIT_STORAGE_VERSION,
+            fuel_split_storage_key(entry.entry_id),
+        ),
+        total_address,
+        mode_address,
+        expected_interval,
+    )
+    coordinator.fuel_split_tracker = tracker
+    await tracker.async_initialize()
+    _LOGGER.info(
+        "Fuel-split tracking enabled using total address %s and mode address %s",
+        total_address,
+        mode_address,
+    )
 
 
 async def async_update_options(hass: HomeAssistant, entry: ConfigEntry) -> None:
@@ -97,6 +147,10 @@ async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     
     if unload_ok:
         coordinator = hass.data[DOMAIN].pop(entry.entry_id)
+        tracker = coordinator.fuel_split_tracker
+        if tracker is not None:
+            await tracker.async_shutdown()
+            coordinator.fuel_split_tracker = None
         await coordinator.modbus_client.disconnect()
     
     return unload_ok

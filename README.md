@@ -77,7 +77,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full details.
 - **Access Level System** - User Level (Benutzerebene) vs. Expert Level (Fachkraftebene) for different user groups; Expert Level unlocks additional read/write controls (number/select/switch)
 - **Equipment-based configuration** - heating circuits, buffer storage, solar, etc.
 - **All entity types** - sensors, switches, input fields and select menus
-- **Computed sensors** - "Last Firewood Fire" tracking for Combifire/Multifire devices
+- **Computed sensors** - capability-based "Last Firewood Fire" and conservative dual-fuel energy tracking
 - **Robust communication** with automatic reconnection
 - **Comprehensive device support** for all common KWB models
 - **ModbusInfo Converter** - Tool to convert KWB Excel files to JSON configuration
@@ -206,6 +206,33 @@ automation:
         data:
           message: "Seit 24 Stunden kein Stückholzfeuer mehr!"
 ```
+
+#### Pellet / Log-Wood Energy Split
+
+Supported dual-fuel boilers expose one combined lifetime heat-output counter,
+not separate KWB meters for pellets and log wood. When the loaded register set
+contains both `KSM.waermemenge_gesamt_kwh` and `CF2.betriebsmodus`, the
+integration creates these language-independent entities:
+
+- `sensor.{prefix}_pellet_energy_total`
+- `sensor.{prefix}_log_wood_energy_total`
+- `sensor.{prefix}_fuel_energy_unattributed` (diagnostic, disabled by default)
+
+One persistent tracker observes increases in the combined counter. An interval
+is assigned to a fuel only when both its starting and ending operating modes
+confidently identify the same fuel. Fuel switches, off/relay-test/unknown modes,
+and gaps longer than three expected polling intervals are added to the
+unattributed total instead of being guessed. A raw mode change from `1` to `3`
+remains attributable because both values mean log-wood operation.
+
+Tracking starts at zero when the feature first observes the boiler; the
+historical combined total cannot be split retrospectively. The tracker persists
+independently of its sensor entities, survives language reloads, and keeps all
+three totals monotonic if the KWB source counter resets. The diagnostic sensor
+shows the tracking start, last source/mode observation, and reset count.
+
+These values are polling-based estimates, not independent per-fuel KWB hardware
+energy measurements. Enable the unattributed sensor to assess split quality.
 
 ### Control (Read-Write)
 - **Target temperatures** for heating circuits

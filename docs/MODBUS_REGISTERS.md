@@ -9,6 +9,24 @@ v25.7.1-Ansicht; die kanonischen v26.6.1-Definitionen stammen aus PR #21,
 Commit `360b9a6a07d1005c3f19e5a83159a26fcb659372`, und wurden ohne verfügbare
 Original-Exceldateien in das einheitliche mehrsprachige Schema migriert.
 
+## Abgeleitete Brennstoffenergie
+
+Bei Dual-Fuel-Kesseln stellt KWB nur die gemeinsame Wärmemenge
+`KSM.waermemenge_gesamt_kwh` bereit. Die Integration teilt deshalb ausschließlich
+die während des Home-Assistant-Betriebs beobachteten Zuwächse anhand von
+`CF2.betriebsmodus` auf Pellets und Stückholz auf. Die Rohwerte sind in allen
+kanonischen Firmwareständen konsistent: `1` und `3` bedeuten Stückholz, `2`
+Pellets, `0` und `4` keinen sicher zuordenbaren Brennstoff.
+
+Nur Intervalle mit derselben sicheren Brennstoffgruppe am Anfang und Ende werden
+zugeordnet. Brennstoffwechsel, unbekannte Modi und längere Beobachtungslücken
+landen im standardmäßig deaktivierten Diagnosesensor für nicht zugeordnete
+Brennstoffenergie. Die Zählung beginnt bei Installation der Funktion mit null;
+eine historische Aufteilung ist nicht möglich. Ein Reset des KWB-Gesamtzählers
+setzt die abgeleiteten, persistent gespeicherten Summen nicht zurück. Die Werte
+sind damit eine konservative, abtastungsbasierte Schätzung und keine getrennte
+KWB-Hardwaremessung.
+
 ## Inhaltsverzeichnis
 
 - [Lesehilfe](#lesehilfe)

@@ -11,6 +11,7 @@ from homeassistant.components.sensor import (
     SensorStateClass,
 )
 from homeassistant.config_entries import ConfigEntry
+from homeassistant.const import UnitOfEnergy
 from homeassistant.core import HomeAssistant, callback
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
 from homeassistant.helpers.entity import EntityCategory
@@ -20,7 +21,9 @@ from homeassistant.helpers.restore_state import RestoreEntity
 from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
 from .entity import KWBBaseEntity
+from .fuel_split import FuelSplitTracker
 from .icon_utils import get_entity_icon
+from .register_utils import find_register_by_parameter, normalize_register_address
 
 # Logical register capability required by the computed firewood sensor.
 FIREWOOD_STATUS_PARAMETER = "CF2.kesselstatus_anzeige_sh"
@@ -51,6 +54,27 @@ FIREWOOD_SENSOR_TRANSLATIONS = {
         "attr_firewood_active": "firewood_currently_active",
         "attr_boiler_status_raw": "boiler_status_raw",
         "attr_boiler_status": "boiler_status",
+    },
+}
+
+FUEL_SPLIT_TRANSLATIONS = {
+    "pellet": {
+        "de": "Pellet-Energie Gesamt",
+        "en": "Pellet Energy Total",
+        "entity_id_suffix": "pellet_energy_total",
+        "icon": "mdi:grain",
+    },
+    "log_wood": {
+        "de": "Stückholz-Energie Gesamt",
+        "en": "Log Wood Energy Total",
+        "entity_id_suffix": "log_wood_energy_total",
+        "icon": "mdi:pine-tree",
+    },
+    "unattributed": {
+        "de": "Nicht zugeordnete Brennstoffenergie",
+        "en": "Unattributed Fuel Energy",
+        "entity_id_suffix": "fuel_energy_unattributed",
+        "icon": "mdi:help-circle-outline",
     },
 }
 
@@ -86,15 +110,10 @@ async def async_setup_entry(
         if is_readable:
             entities.append(KWBSensor(coordinator, register))
 
-    firewood_register = next(
-        (
-            register
-            for register in coordinator.registers
-            if register.get("parameter") == FIREWOOD_STATUS_PARAMETER
-        ),
-        None,
+    firewood_register = find_register_by_parameter(
+        coordinator.registers, FIREWOOD_STATUS_PARAMETER
     )
-    firewood_address = _normalize_firewood_address(
+    firewood_address = normalize_register_address(
         firewood_register.get("starting_address") if firewood_register else None
     )
     if firewood_address is not None:
@@ -107,6 +126,16 @@ async def async_setup_entry(
     else:
         _LOGGER.debug(
             "Firewood status parameter not found, skipping 'Last Firewood Fire' sensor"
+        )
+
+    tracker = coordinator.fuel_split_tracker
+    if tracker is not None:
+        entities.extend(
+            (
+                KWBFuelSplitEnergySensor(coordinator, tracker, "pellet"),
+                KWBFuelSplitEnergySensor(coordinator, tracker, "log_wood"),
+                KWBFuelSplitEnergySensor(coordinator, tracker, "unattributed"),
+            )
         )
 
     _LOGGER.info("Setting up %d KWB sensor entities", len(entities))
@@ -185,17 +214,6 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
         return attributes
 
     # available property inherited from KWBBaseEntity
-
-def _normalize_firewood_address(value: Any) -> int | None:
-    """Normalize the discovered register address without accepting booleans."""
-    if isinstance(value, bool):
-        return None
-    if isinstance(value, int):
-        return value if value >= 0 else None
-    if isinstance(value, str) and value.strip().isdigit():
-        return int(value.strip())
-    return None
-
 
 class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
     """Sensor that tracks when the last firewood fire was active."""
@@ -335,5 +353,83 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
         return (
             self.coordinator.last_update_success
             and self.coordinator.data is not None
+        )
+
+
+class KWBFuelSplitEnergySensor(SensorEntity):
+    """Expose one value calculated by the config-entry fuel-split tracker."""
+
+    _attr_device_class = SensorDeviceClass.ENERGY
+    _attr_native_unit_of_measurement = UnitOfEnergy.KILO_WATT_HOUR
+    _attr_state_class = SensorStateClass.TOTAL
+    _attr_has_entity_name = True
+
+    def __init__(
+        self,
+        coordinator: KWBDataUpdateCoordinator,
+        tracker: FuelSplitTracker,
+        kind: str,
+    ) -> None:
+        self.coordinator = coordinator
+        self.tracker = tracker
+        self.kind = kind
+
+        language = "de"
+        if hasattr(coordinator, "register_manager") and coordinator.register_manager:
+            language = getattr(coordinator.register_manager, "_language", "de") or "de"
+        translations = FUEL_SPLIT_TRANSLATIONS[kind]
+        self._attr_name = translations.get(language, translations["en"])
+        self._attr_icon = translations["icon"]
+
+        device_identifier = f"{coordinator.host}_{coordinator.slave_id}"
+        device_prefix_id = coordinator.sanitize_for_entity_id(
+            coordinator.device_name_prefix
+        )
+        suffix = translations["entity_id_suffix"]
+        self._attr_unique_id = (
+            f"kwb_heating_{device_identifier}_{device_prefix_id}_{suffix}"
+        )
+        self._attr_entity_id = f"sensor.{device_prefix_id}_{suffix}"
+        self._attr_device_info = coordinator.device_info
+
+        if kind == "unattributed":
+            self._attr_entity_category = EntityCategory.DIAGNOSTIC
+            self._attr_entity_registry_enabled_default = False
+
+    async def async_added_to_hass(self) -> None:
+        """Listen only for already-accounted tracker changes."""
+        await super().async_added_to_hass()
+        self.async_on_remove(
+            self.tracker.async_add_listener(self._handle_tracker_update)
+        )
+
+    @callback
+    def _handle_tracker_update(self) -> None:
+        self.async_write_ha_state()
+
+    @property
+    def native_value(self) -> float:
+        """Return a monotonic derived total."""
+        if self.kind == "pellet":
+            value = self.tracker.pellet_kwh
+        elif self.kind == "log_wood":
+            value = self.tracker.log_wood_kwh
+        else:
+            value = self.tracker.unattributed_kwh
+        return round(value, 6)
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any] | None:
+        """Expose split-quality metadata only on the diagnostic entity."""
+        if self.kind != "unattributed":
+            return None
+        return self.tracker.diagnostic_attributes()
+
+    @property
+    def available(self) -> bool:
+        """Retain stored totals but flag unavailable source observations."""
+        return (
+            self.coordinator.last_update_success
+            and self.tracker.has_source_baseline
         )
 

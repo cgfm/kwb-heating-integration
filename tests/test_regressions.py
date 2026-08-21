@@ -152,6 +152,60 @@ class RegisterConfigurationTests(unittest.TestCase):
         }
         self.assertTrue(expected.issubset(ids))
 
+    def test_fuel_mode_semantics_are_consistent_in_every_canonical_firmware(self) -> None:
+        expected_english = {
+            "0": "None",
+            "1": "Log wood",
+            "2": "Pellets",
+            "3": "Log wood (PM afterrun)",
+            "4": "Relay test",
+        }
+        found = []
+        errors = []
+        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
+            tables = json.loads(
+                (version_dir / "value_tables.json").read_text(encoding="utf-8")
+            )["value_tables"]
+            for device_file in sorted((version_dir / "devices").glob("*.json")):
+                for register in _load_registers(device_file):
+                    if register.get("parameter") != "CF2.betriebsmodus":
+                        continue
+                    found.append((version_dir.name, device_file.name))
+                    table = tables.get(register.get("unit_value_table"), {})
+                    actual = {
+                        raw: localized.get("en")
+                        for raw, localized in table.items()
+                    }
+                    if actual != expected_english:
+                        errors.append(
+                            f"{version_dir.name}/{device_file.name}: {actual}"
+                        )
+        self.assertTrue(found)
+        self.assertEqual([], errors, "\n".join(errors))
+
+    def test_fuel_split_capable_devices_are_audited_across_firmware(self) -> None:
+        required = {
+            "KSM.waermemenge_gesamt_kwh",
+            "CF2.betriebsmodus",
+        }
+        expected = {
+            "v21.4.0": set(),
+            "v22.7.1": set(),
+            "v24.7.1": {"kwb_cf1", "kwb_cf1_5", "kwb_cf2", "kwb_combifire"},
+            "v25.4.0": {"kwb_cf1", "kwb_cf1_5", "kwb_cf2", "kwb_combifire"},
+            "v25.7.1": {"kwb_cf1", "kwb_cf1_5", "kwb_cf2", "kwb_combifire"},
+            "v26.6.1": {"kwb_cf1", "kwb_cf1_5", "kwb_cf2", "kwb_combifire"},
+        }
+        actual = {}
+        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
+            actual[version_dir.name] = {
+                path.stem
+                for path in (version_dir / "devices").glob("*.json")
+                if required
+                <= {register.get("parameter") for register in _load_registers(path)}
+            }
+        self.assertEqual(expected, actual)
+
     def test_selected_device_maps_have_no_cross_file_id_collisions(self) -> None:
         errors = []
 
@@ -1735,6 +1789,8 @@ class LanguageReloadTests(unittest.TestCase):
             "custom_components.kwb_heating",
             "custom_components.kwb_heating.const",
             "custom_components.kwb_heating.coordinator",
+            "custom_components.kwb_heating.fuel_split",
+            "custom_components.kwb_heating.register_utils",
             "homeassistant",
             "homeassistant.config_entries",
             "homeassistant.core",
@@ -1851,11 +1907,14 @@ class FirewoodSensorTests(unittest.TestCase):
             "custom_components.kwb_heating.const",
             "custom_components.kwb_heating.coordinator",
             "custom_components.kwb_heating.entity",
+            "custom_components.kwb_heating.fuel_split",
             "custom_components.kwb_heating.icon_utils",
+            "custom_components.kwb_heating.register_utils",
             "homeassistant",
             "homeassistant.components",
             "homeassistant.components.sensor",
             "homeassistant.config_entries",
+            "homeassistant.const",
             "homeassistant.core",
             "homeassistant.helpers",
             "homeassistant.helpers.entity_platform",
@@ -1895,13 +1954,26 @@ class FirewoodSensorTests(unittest.TestCase):
         sensor_module = types.ModuleType("homeassistant.components.sensor")
 
         class SensorEntity:
-            pass
+            async def async_added_to_hass(self):
+                return None
+
+            def async_on_remove(self, remove_callback):
+                self.remove_callback = remove_callback
+
+            def async_write_ha_state(self):
+                self.write_count = getattr(self, "write_count", 0) + 1
 
         sensor_module.SensorEntity = SensorEntity
-        sensor_module.SensorDeviceClass = types.SimpleNamespace(TIMESTAMP="timestamp")
-        sensor_module.SensorStateClass = types.SimpleNamespace(MEASUREMENT="measurement")
+        sensor_module.SensorDeviceClass = types.SimpleNamespace(
+            TIMESTAMP="timestamp", ENERGY="energy"
+        )
+        sensor_module.SensorStateClass = types.SimpleNamespace(
+            MEASUREMENT="measurement", TOTAL="total"
+        )
         config_entries = types.ModuleType("homeassistant.config_entries")
         config_entries.ConfigEntry = object
+        ha_const = types.ModuleType("homeassistant.const")
+        ha_const.UnitOfEnergy = types.SimpleNamespace(KILO_WATT_HOUR="kWh")
         ha_core = types.ModuleType("homeassistant.core")
         ha_core.HomeAssistant = object
         ha_core.callback = lambda function: function
@@ -1944,6 +2016,7 @@ class FirewoodSensorTests(unittest.TestCase):
             "homeassistant.components": components,
             "homeassistant.components.sensor": sensor_module,
             "homeassistant.config_entries": config_entries,
+            "homeassistant.const": ha_const,
             "homeassistant.core": ha_core,
             "homeassistant.helpers": helpers,
             "homeassistant.helpers.entity_platform": entity_platform,
@@ -1965,7 +2038,14 @@ class FirewoodSensorTests(unittest.TestCase):
             else:
                 sys.modules[name] = module
 
-    def _setup(self, device_type: str, registers: list[dict], data=None) -> list:
+    def _setup(
+        self,
+        device_type: str,
+        registers: list[dict],
+        data=None,
+        tracker=None,
+        language="en",
+    ) -> list:
         async def ensure_initialized():
             return None
 
@@ -1975,7 +2055,7 @@ class FirewoodSensorTests(unittest.TestCase):
             config={"device_type": device_type},
             access_level="UserLevel",
             ensure_initialized=ensure_initialized,
-            register_manager=types.SimpleNamespace(_language="en"),
+            register_manager=types.SimpleNamespace(_language=language),
             host="192.0.2.10",
             slave_id=1,
             device_name_prefix="KWB",
@@ -1983,6 +2063,7 @@ class FirewoodSensorTests(unittest.TestCase):
             device_info={},
             data=data or {},
             last_update_success=True,
+            fuel_split_tracker=tracker,
         )
         entities = []
         hass = types.SimpleNamespace(
@@ -2028,6 +2109,67 @@ class FirewoodSensorTests(unittest.TestCase):
 
     def test_old_firewood_model_without_register_is_not_a_false_positive(self) -> None:
         self.assertEqual([], self._setup("KWB CF 2", []))
+
+    def test_shared_tracker_creates_three_correctly_classified_sensors(self) -> None:
+        tracker = types.SimpleNamespace(
+            pellet_kwh=1.0,
+            log_wood_kwh=2.0,
+            unattributed_kwh=3.0,
+            has_source_baseline=True,
+            diagnostic_attributes=lambda: {"source_reset_count": 0},
+        )
+        entities = self._setup("Future Device", [], tracker=tracker)
+        fuel_entities = [
+            entity
+            for entity in entities
+            if isinstance(entity, self.sensor_module.KWBFuelSplitEnergySensor)
+        ]
+        self.assertEqual(3, len(fuel_entities))
+        by_kind = {entity.kind: entity for entity in fuel_entities}
+        self.assertEqual(1.0, by_kind["pellet"].native_value)
+        self.assertEqual(2.0, by_kind["log_wood"].native_value)
+        self.assertEqual(3.0, by_kind["unattributed"].native_value)
+        for entity in fuel_entities:
+            self.assertEqual("energy", entity._attr_device_class)
+            self.assertEqual("kWh", entity._attr_native_unit_of_measurement)
+            self.assertEqual("total", entity._attr_state_class)
+            self.assertFalse(hasattr(entity, "_attr_last_reset"))
+        self.assertEqual(
+            "diagnostic", by_kind["unattributed"]._attr_entity_category
+        )
+        self.assertFalse(
+            by_kind["unattributed"]._attr_entity_registry_enabled_default
+        )
+
+    def test_fuel_sensor_identity_is_language_independent(self) -> None:
+        tracker = types.SimpleNamespace(
+            pellet_kwh=1.0,
+            log_wood_kwh=2.0,
+            unattributed_kwh=3.0,
+            has_source_baseline=True,
+            diagnostic_attributes=lambda: {},
+        )
+        de = self._setup("Future Device", [], tracker=tracker, language="de")
+        en = self._setup("Future Device", [], tracker=tracker, language="en")
+        de_fuel = {
+            entity.kind: entity
+            for entity in de
+            if isinstance(entity, self.sensor_module.KWBFuelSplitEnergySensor)
+        }
+        en_fuel = {
+            entity.kind: entity
+            for entity in en
+            if isinstance(entity, self.sensor_module.KWBFuelSplitEnergySensor)
+        }
+        self.assertEqual(
+            {kind: entity._attr_entity_id for kind, entity in de_fuel.items()},
+            {kind: entity._attr_entity_id for kind, entity in en_fuel.items()},
+        )
+        self.assertEqual(
+            {kind: entity._attr_unique_id for kind, entity in de_fuel.items()},
+            {kind: entity._attr_unique_id for kind, entity in en_fuel.items()},
+        )
+        self.assertNotEqual(de_fuel["pellet"]._attr_name, en_fuel["pellet"]._attr_name)
 
     def assert_single_firewood(self, entities: list):
         firewood = [
