@@ -1,0 +1,2065 @@
+{
+  "firmware_version": "v26.6.1",
+  "scope": "v26-only EasyAir identities without English source metadata",
+  "eligibility": "No matching logical identity in canonical firmware before v26.6.1 and no English localized name in the v26.6.1 source.",
+  "summary": {
+    "eligible_entity_ids": 302,
+    "eligible_parameter_groups": 52,
+    "refined_entity_ids": 282,
+    "approved_parameter_groups": 49,
+    "manual_review_entity_ids": 20,
+    "manual_review_parameter_groups": 3
+  },
+  "entries": [
+    {
+      "parameter": "EAP.eigener_kuehlpuffer",
+      "current_entity_ids": [
+        "eap_eigener_kuehlpuffer"
+      ],
+      "proposed_entity_ids": [
+        "eap_dedicated_cooling_buffer"
+      ],
+      "proposed_suffix": "dedicated_cooling_buffer",
+      "german_name": "Eigener Kühlpuffer",
+      "supporting_context": {
+        "unit_or_value_table": "system_yes_no_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        null
+      ]
+    },
+    {
+      "parameter": "EAP.kuehlfunktion",
+      "current_entity_ids": [
+        "eap_kuehlfunktion"
+      ],
+      "proposed_entity_ids": [
+        "eap_cooling_function"
+      ],
+      "proposed_suffix": "cooling_function",
+      "german_name": "Kühlfunktion",
+      "supporting_context": {
+        "unit_or_value_table": "system_ein_aus_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        null
+      ]
+    },
+    {
+      "parameter": "EAP.sg_pufferladung_modbus",
+      "current_entity_ids": [
+        "eap_sg_pufferladung_modbus"
+      ],
+      "proposed_entity_ids": [
+        "eap_smart_grid_buffer_charging_via_modbus"
+      ],
+      "proposed_suffix": "smart_grid_buffer_charging_via_modbus",
+      "german_name": "SG Pufferladung",
+      "supporting_context": {
+        "unit_or_value_table": "system_ein_aus_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "readwrite",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        null
+      ]
+    },
+    {
+      "parameter": "EAP.sg_rtemp_ueberh_modbus",
+      "current_entity_ids": [
+        "eap_sg_rtemp_ueberh_modbus"
+      ],
+      "proposed_entity_ids": [
+        "eap_smart_grid_room_temperature_increase_via_modbus"
+      ],
+      "proposed_suffix": "smart_grid_room_temperature_increase_via_modbus",
+      "german_name": "SG Raumtemp.Überhöhen",
+      "supporting_context": {
+        "unit_or_value_table": "system_ein_aus_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "readwrite",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        null
+      ]
+    },
+    {
+      "parameter": "EAPDEV.anforderung_ursache",
+      "current_entity_ids": [
+        "eap_2_eapdev_anforderung_ursache",
+        "eap_3_eapdev_anforderung_ursache",
+        "eap_4_eapdev_anforderung_ursache",
+        "eap_5_eapdev_anforderung_ursache",
+        "eap_6_eapdev_anforderung_ursache",
+        "eap_7_eapdev_anforderung_ursache"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_demand_cause",
+        "eap_3_demand_cause",
+        "eap_4_demand_cause",
+        "eap_5_demand_cause",
+        "eap_6_demand_cause",
+        "eap_7_demand_cause"
+      ],
+      "proposed_suffix": "demand_cause",
+      "german_name": "Anforderung durch",
+      "supporting_context": {
+        "unit_or_value_table": "eap_anforderung_ursache_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.ansauglufttemperatur",
+      "current_entity_ids": [
+        "eap_2_eapdev_ansauglufttemperatur",
+        "eap_3_eapdev_ansauglufttemperatur",
+        "eap_4_eapdev_ansauglufttemperatur",
+        "eap_5_eapdev_ansauglufttemperatur",
+        "eap_6_eapdev_ansauglufttemperatur",
+        "eap_7_eapdev_ansauglufttemperatur"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_intake_air_temperature",
+        "eap_3_intake_air_temperature",
+        "eap_4_intake_air_temperature",
+        "eap_5_intake_air_temperature",
+        "eap_6_intake_air_temperature",
+        "eap_7_intake_air_temperature"
+      ],
+      "proposed_suffix": "intake_air_temperature",
+      "german_name": "Ansauglufttemperatur",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.aufgenommene_elektr_leistung",
+      "current_entity_ids": [
+        "eap_2_eapdev_aufgenommene_elektr_leistung",
+        "eap_3_eapdev_aufgenommene_elektr_leistung",
+        "eap_4_eapdev_aufgenommene_elektr_leistung",
+        "eap_5_eapdev_aufgenommene_elektr_leistung",
+        "eap_6_eapdev_aufgenommene_elektr_leistung",
+        "eap_7_eapdev_aufgenommene_elektr_leistung"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_electrical_power_consumption",
+        "eap_3_electrical_power_consumption",
+        "eap_4_electrical_power_consumption",
+        "eap_5_electrical_power_consumption",
+        "eap_6_electrical_power_consumption",
+        "eap_7_electrical_power_consumption"
+      ],
+      "proposed_suffix": "electrical_power_consumption",
+      "german_name": "Aufgen. elektr. Leistung",
+      "supporting_context": {
+        "unit_or_value_table": "1/100kW",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.bivalenz_elh",
+      "current_entity_ids": [
+        "eap_2_eapdev_bivalenz_elh",
+        "eap_3_eapdev_bivalenz_elh",
+        "eap_4_eapdev_bivalenz_elh",
+        "eap_5_eapdev_bivalenz_elh",
+        "eap_6_eapdev_bivalenz_elh",
+        "eap_7_eapdev_bivalenz_elh"
+      ],
+      "proposed_entity_ids": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "proposed_suffix": null,
+      "german_name": "Bivalenz-ELH",
+      "supporting_context": {
+        "unit_or_value_table": "system_ein_aus_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "manual_review",
+      "review_status": "unresolved",
+      "review_reason": "ELH is not expanded by canonical data; the boolean's exact equipment meaning cannot be named confidently.",
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.cop",
+      "current_entity_ids": [
+        "eap_2_eapdev_cop",
+        "eap_3_eapdev_cop",
+        "eap_4_eapdev_cop",
+        "eap_5_eapdev_cop",
+        "eap_6_eapdev_cop",
+        "eap_7_eapdev_cop"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_cop",
+        "eap_3_cop",
+        "eap_4_cop",
+        "eap_5_cop",
+        "eap_6_cop",
+        "eap_7_cop"
+      ],
+      "proposed_suffix": "cop",
+      "german_name": "COP",
+      "supporting_context": {
+        "unit_or_value_table": "1/10",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.drehzahl_cp",
+      "current_entity_ids": [
+        "eap_2_eapdev_drehzahl_cp",
+        "eap_3_eapdev_drehzahl_cp",
+        "eap_4_eapdev_drehzahl_cp",
+        "eap_5_eapdev_drehzahl_cp",
+        "eap_6_eapdev_drehzahl_cp",
+        "eap_7_eapdev_drehzahl_cp"
+      ],
+      "proposed_entity_ids": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "proposed_suffix": null,
+      "german_name": "Drehzahl CP",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "manual_review",
+      "review_status": "unresolved",
+      "review_reason": "CP is not expanded by canonical data, so the driven component is ambiguous despite the percent/speed unit.",
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.drehzahl_ist",
+      "current_entity_ids": [
+        "eap_2_eapdev_drehzahl_ist",
+        "eap_3_eapdev_drehzahl_ist",
+        "eap_4_eapdev_drehzahl_ist",
+        "eap_5_eapdev_drehzahl_ist",
+        "eap_6_eapdev_drehzahl_ist",
+        "eap_7_eapdev_drehzahl_ist"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_compressor_speed_actual",
+        "eap_3_compressor_speed_actual",
+        "eap_4_compressor_speed_actual",
+        "eap_5_compressor_speed_actual",
+        "eap_6_compressor_speed_actual",
+        "eap_7_compressor_speed_actual"
+      ],
+      "proposed_suffix": "compressor_speed_actual",
+      "german_name": "Verdichter Drehzahl Ist",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.drehzahl_soll",
+      "current_entity_ids": [
+        "eap_2_eapdev_drehzahl_soll",
+        "eap_3_eapdev_drehzahl_soll",
+        "eap_4_eapdev_drehzahl_soll",
+        "eap_5_eapdev_drehzahl_soll",
+        "eap_6_eapdev_drehzahl_soll",
+        "eap_7_eapdev_drehzahl_soll"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_compressor_speed_setpoint",
+        "eap_3_compressor_speed_setpoint",
+        "eap_4_compressor_speed_setpoint",
+        "eap_5_compressor_speed_setpoint",
+        "eap_6_compressor_speed_setpoint",
+        "eap_7_compressor_speed_setpoint"
+      ],
+      "proposed_suffix": "compressor_speed_setpoint",
+      "german_name": "Verdichter Drehzahl Soll",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.drehzahl_ventilator",
+      "current_entity_ids": [
+        "eap_2_eapdev_drehzahl_ventilator",
+        "eap_3_eapdev_drehzahl_ventilator",
+        "eap_4_eapdev_drehzahl_ventilator",
+        "eap_5_eapdev_drehzahl_ventilator",
+        "eap_6_eapdev_drehzahl_ventilator",
+        "eap_7_eapdev_drehzahl_ventilator"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_fan_speed",
+        "eap_3_fan_speed",
+        "eap_4_fan_speed",
+        "eap_5_fan_speed",
+        "eap_6_fan_speed",
+        "eap_7_fan_speed"
+      ],
+      "proposed_suffix": "fan_speed",
+      "german_name": "Drehzahl Ventilator",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.erweiterter_betriebsstatus",
+      "current_entity_ids": [
+        "eap_2_eapdev_erweiterter_betriebsstatus",
+        "eap_3_eapdev_erweiterter_betriebsstatus",
+        "eap_4_eapdev_erweiterter_betriebsstatus",
+        "eap_5_eapdev_erweiterter_betriebsstatus",
+        "eap_6_eapdev_erweiterter_betriebsstatus",
+        "eap_7_eapdev_erweiterter_betriebsstatus"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_extended_operating_status",
+        "eap_3_extended_operating_status",
+        "eap_4_extended_operating_status",
+        "eap_5_extended_operating_status",
+        "eap_6_extended_operating_status",
+        "eap_7_extended_operating_status"
+      ],
+      "proposed_suffix": "extended_operating_status",
+      "german_name": "Erw. Betriebsstatus",
+      "supporting_context": {
+        "unit_or_value_table": "eap_erweiterter_betriebsstatus_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.fluester1_beginn",
+      "current_entity_ids": [
+        "eap_2_eapdev_fluester1_beginn",
+        "eap_3_eapdev_fluester1_beginn",
+        "eap_4_eapdev_fluester1_beginn",
+        "eap_5_eapdev_fluester1_beginn",
+        "eap_6_eapdev_fluester1_beginn",
+        "eap_7_eapdev_fluester1_beginn"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_quiet_mode_1_start_time",
+        "eap_3_quiet_mode_1_start_time",
+        "eap_4_quiet_mode_1_start_time",
+        "eap_5_quiet_mode_1_start_time",
+        "eap_6_quiet_mode_1_start_time",
+        "eap_7_quiet_mode_1_start_time"
+      ],
+      "proposed_suffix": "quiet_mode_1_start_time",
+      "german_name": "Zeitfenster Beginn",
+      "supporting_context": {
+        "unit_or_value_table": null,
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.fluester1_ende",
+      "current_entity_ids": [
+        "eap_2_eapdev_fluester1_ende",
+        "eap_3_eapdev_fluester1_ende",
+        "eap_4_eapdev_fluester1_ende",
+        "eap_5_eapdev_fluester1_ende",
+        "eap_6_eapdev_fluester1_ende",
+        "eap_7_eapdev_fluester1_ende"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_quiet_mode_1_end_time",
+        "eap_3_quiet_mode_1_end_time",
+        "eap_4_quiet_mode_1_end_time",
+        "eap_5_quiet_mode_1_end_time",
+        "eap_6_quiet_mode_1_end_time",
+        "eap_7_quiet_mode_1_end_time"
+      ],
+      "proposed_suffix": "quiet_mode_1_end_time",
+      "german_name": "Zeitfenster Ende",
+      "supporting_context": {
+        "unit_or_value_table": null,
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.fluester2_beginn",
+      "current_entity_ids": [
+        "eap_2_eapdev_fluester2_beginn",
+        "eap_3_eapdev_fluester2_beginn",
+        "eap_4_eapdev_fluester2_beginn",
+        "eap_5_eapdev_fluester2_beginn",
+        "eap_6_eapdev_fluester2_beginn",
+        "eap_7_eapdev_fluester2_beginn"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_quiet_mode_2_start_time",
+        "eap_3_quiet_mode_2_start_time",
+        "eap_4_quiet_mode_2_start_time",
+        "eap_5_quiet_mode_2_start_time",
+        "eap_6_quiet_mode_2_start_time",
+        "eap_7_quiet_mode_2_start_time"
+      ],
+      "proposed_suffix": "quiet_mode_2_start_time",
+      "german_name": "Zeitfenster Beginn",
+      "supporting_context": {
+        "unit_or_value_table": null,
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.fluester2_ende",
+      "current_entity_ids": [
+        "eap_2_eapdev_fluester2_ende",
+        "eap_3_eapdev_fluester2_ende",
+        "eap_4_eapdev_fluester2_ende",
+        "eap_5_eapdev_fluester2_ende",
+        "eap_6_eapdev_fluester2_ende",
+        "eap_7_eapdev_fluester2_ende"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_quiet_mode_2_end_time",
+        "eap_3_quiet_mode_2_end_time",
+        "eap_4_quiet_mode_2_end_time",
+        "eap_5_quiet_mode_2_end_time",
+        "eap_6_quiet_mode_2_end_time",
+        "eap_7_quiet_mode_2_end_time"
+      ],
+      "proposed_suffix": "quiet_mode_2_end_time",
+      "german_name": "Zeitfenster Ende",
+      "supporting_context": {
+        "unit_or_value_table": null,
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.fluester_max_drehzahl",
+      "current_entity_ids": [
+        "eap_2_eapdev_fluester_max_drehzahl",
+        "eap_3_eapdev_fluester_max_drehzahl",
+        "eap_4_eapdev_fluester_max_drehzahl",
+        "eap_5_eapdev_fluester_max_drehzahl",
+        "eap_6_eapdev_fluester_max_drehzahl",
+        "eap_7_eapdev_fluester_max_drehzahl"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_quiet_mode_maximum_speed",
+        "eap_3_quiet_mode_maximum_speed",
+        "eap_4_quiet_mode_maximum_speed",
+        "eap_5_quiet_mode_maximum_speed",
+        "eap_6_quiet_mode_maximum_speed",
+        "eap_7_quiet_mode_maximum_speed"
+      ],
+      "proposed_suffix": "quiet_mode_maximum_speed",
+      "german_name": "Max. Drehzahl",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.heissgas_evu_abschaltung_el_begr",
+      "current_entity_ids": [
+        "eap_0_eapdev_heissgas_evu_abschaltung_el_begr",
+        "eap_1_eapdev_heissgas_evu_abschaltung_el_begr",
+        "eap_2_eapdev_heissgas_evu_abschaltung_el_begr",
+        "eap_3_eapdev_heissgas_evu_abschaltung_el_begr",
+        "eap_4_eapdev_heissgas_evu_abschaltung_el_begr",
+        "eap_5_eapdev_heissgas_evu_abschaltung_el_begr",
+        "eap_6_eapdev_heissgas_evu_abschaltung_el_begr",
+        "eap_7_eapdev_heissgas_evu_abschaltung_el_begr"
+      ],
+      "proposed_entity_ids": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "proposed_suffix": null,
+      "german_name": "Heissgas EVU Abschaltung",
+      "supporting_context": {
+        "unit_or_value_table": "system_yes_no_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "manual_review",
+      "review_status": "unresolved",
+      "review_reason": "The name and truncated parameter do not establish whether this means hot-gas shutdown, utility shutdown, or electrical limiting.",
+      "affected_equipment_instances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.heissgastemperatur",
+      "current_entity_ids": [
+        "eap_2_eapdev_heissgastemperatur",
+        "eap_3_eapdev_heissgastemperatur",
+        "eap_4_eapdev_heissgastemperatur",
+        "eap_5_eapdev_heissgastemperatur",
+        "eap_6_eapdev_heissgastemperatur",
+        "eap_7_eapdev_heissgastemperatur"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_hot_gas_temperature",
+        "eap_3_hot_gas_temperature",
+        "eap_4_hot_gas_temperature",
+        "eap_5_hot_gas_temperature",
+        "eap_6_hot_gas_temperature",
+        "eap_7_hot_gas_temperature"
+      ],
+      "proposed_suffix": "hot_gas_temperature",
+      "german_name": "Heissgastemperatur",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.hochdruck",
+      "current_entity_ids": [
+        "eap_2_eapdev_hochdruck",
+        "eap_3_eapdev_hochdruck",
+        "eap_4_eapdev_hochdruck",
+        "eap_5_eapdev_hochdruck",
+        "eap_6_eapdev_hochdruck",
+        "eap_7_eapdev_hochdruck"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_high_pressure_relative",
+        "eap_3_high_pressure_relative",
+        "eap_4_high_pressure_relative",
+        "eap_5_high_pressure_relative",
+        "eap_6_high_pressure_relative",
+        "eap_7_high_pressure_relative"
+      ],
+      "proposed_suffix": "high_pressure_relative",
+      "german_name": "Hochdruck (relativ)",
+      "supporting_context": {
+        "unit_or_value_table": "1/10bar",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.kondensationstemperatur",
+      "current_entity_ids": [
+        "eap_2_eapdev_kondensationstemperatur",
+        "eap_3_eapdev_kondensationstemperatur",
+        "eap_4_eapdev_kondensationstemperatur",
+        "eap_5_eapdev_kondensationstemperatur",
+        "eap_6_eapdev_kondensationstemperatur",
+        "eap_7_eapdev_kondensationstemperatur"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_condensation_temperature",
+        "eap_3_condensation_temperature",
+        "eap_4_condensation_temperature",
+        "eap_5_condensation_temperature",
+        "eap_6_condensation_temperature",
+        "eap_7_condensation_temperature"
+      ],
+      "proposed_suffix": "condensation_temperature",
+      "german_name": "Kondensationstemperatur",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.leistungsbegrenzung",
+      "current_entity_ids": [
+        "eap_2_eapdev_leistungsbegrenzung",
+        "eap_3_eapdev_leistungsbegrenzung",
+        "eap_4_eapdev_leistungsbegrenzung",
+        "eap_5_eapdev_leistungsbegrenzung",
+        "eap_6_eapdev_leistungsbegrenzung",
+        "eap_7_eapdev_leistungsbegrenzung"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_power_limit",
+        "eap_3_power_limit",
+        "eap_4_power_limit",
+        "eap_5_power_limit",
+        "eap_6_power_limit",
+        "eap_7_power_limit"
+      ],
+      "proposed_suffix": "power_limit",
+      "german_name": "Leistungsbegrenzung",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.max_leistung_heizen",
+      "current_entity_ids": [
+        "eap_2_eapdev_max_leistung_heizen",
+        "eap_3_eapdev_max_leistung_heizen",
+        "eap_4_eapdev_max_leistung_heizen",
+        "eap_5_eapdev_max_leistung_heizen",
+        "eap_6_eapdev_max_leistung_heizen",
+        "eap_7_eapdev_max_leistung_heizen"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_maximum_heating_power",
+        "eap_3_maximum_heating_power",
+        "eap_4_maximum_heating_power",
+        "eap_5_maximum_heating_power",
+        "eap_6_maximum_heating_power",
+        "eap_7_maximum_heating_power"
+      ],
+      "proposed_suffix": "maximum_heating_power",
+      "german_name": "Max. Leistung Heizen",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.max_leistung_kuehlen",
+      "current_entity_ids": [
+        "eap_2_eapdev_max_leistung_kuehlen",
+        "eap_3_eapdev_max_leistung_kuehlen",
+        "eap_4_eapdev_max_leistung_kuehlen",
+        "eap_5_eapdev_max_leistung_kuehlen",
+        "eap_6_eapdev_max_leistung_kuehlen",
+        "eap_7_eapdev_max_leistung_kuehlen"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_maximum_cooling_power",
+        "eap_3_maximum_cooling_power",
+        "eap_4_maximum_cooling_power",
+        "eap_5_maximum_cooling_power",
+        "eap_6_maximum_cooling_power",
+        "eap_7_maximum_cooling_power"
+      ],
+      "proposed_suffix": "maximum_cooling_power",
+      "german_name": "Max. Leistung Kühlen",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.max_leistung_warmwasser",
+      "current_entity_ids": [
+        "eap_2_eapdev_max_leistung_warmwasser",
+        "eap_3_eapdev_max_leistung_warmwasser",
+        "eap_4_eapdev_max_leistung_warmwasser",
+        "eap_5_eapdev_max_leistung_warmwasser",
+        "eap_6_eapdev_max_leistung_warmwasser",
+        "eap_7_eapdev_max_leistung_warmwasser"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_maximum_hot_water_power",
+        "eap_3_maximum_hot_water_power",
+        "eap_4_maximum_hot_water_power",
+        "eap_5_maximum_hot_water_power",
+        "eap_6_maximum_hot_water_power",
+        "eap_7_maximum_hot_water_power"
+      ],
+      "proposed_suffix": "maximum_hot_water_power",
+      "german_name": "Max. Leistung Warmwasser",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
+      "current_entity_ids": [
+        "eap_0_eapdev_min_elekt_leistung_mb_begrenzung",
+        "eap_1_eapdev_min_elekt_leistung_mb_begrenzung",
+        "eap_2_eapdev_min_elekt_leistung_mb_begrenzung",
+        "eap_3_eapdev_min_elekt_leistung_mb_begrenzung",
+        "eap_4_eapdev_min_elekt_leistung_mb_begrenzung",
+        "eap_5_eapdev_min_elekt_leistung_mb_begrenzung",
+        "eap_6_eapdev_min_elekt_leistung_mb_begrenzung",
+        "eap_7_eapdev_min_elekt_leistung_mb_begrenzung"
+      ],
+      "proposed_entity_ids": [
+        "eap_0_minimum_electrical_power_modbus_limit",
+        "eap_1_minimum_electrical_power_modbus_limit",
+        "eap_2_minimum_electrical_power_modbus_limit",
+        "eap_3_minimum_electrical_power_modbus_limit",
+        "eap_4_minimum_electrical_power_modbus_limit",
+        "eap_5_minimum_electrical_power_modbus_limit",
+        "eap_6_minimum_electrical_power_modbus_limit",
+        "eap_7_minimum_electrical_power_modbus_limit"
+      ],
+      "proposed_suffix": "minimum_electrical_power_modbus_limit",
+      "german_name": "Min. el.Leistung (MB Begr.)",
+      "supporting_context": {
+        "unit_or_value_table": "1/100kW",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.min_leistung_heizen",
+      "current_entity_ids": [
+        "eap_2_eapdev_min_leistung_heizen",
+        "eap_3_eapdev_min_leistung_heizen",
+        "eap_4_eapdev_min_leistung_heizen",
+        "eap_5_eapdev_min_leistung_heizen",
+        "eap_6_eapdev_min_leistung_heizen",
+        "eap_7_eapdev_min_leistung_heizen"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_minimum_heating_power",
+        "eap_3_minimum_heating_power",
+        "eap_4_minimum_heating_power",
+        "eap_5_minimum_heating_power",
+        "eap_6_minimum_heating_power",
+        "eap_7_minimum_heating_power"
+      ],
+      "proposed_suffix": "minimum_heating_power",
+      "german_name": "Min. Leistung Heizen",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.min_leistung_kuehlen",
+      "current_entity_ids": [
+        "eap_2_eapdev_min_leistung_kuehlen",
+        "eap_3_eapdev_min_leistung_kuehlen",
+        "eap_4_eapdev_min_leistung_kuehlen",
+        "eap_5_eapdev_min_leistung_kuehlen",
+        "eap_6_eapdev_min_leistung_kuehlen",
+        "eap_7_eapdev_min_leistung_kuehlen"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_minimum_cooling_power",
+        "eap_3_minimum_cooling_power",
+        "eap_4_minimum_cooling_power",
+        "eap_5_minimum_cooling_power",
+        "eap_6_minimum_cooling_power",
+        "eap_7_minimum_cooling_power"
+      ],
+      "proposed_suffix": "minimum_cooling_power",
+      "german_name": "Min. Leistung Kühlen",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.min_leistung_warmwasser",
+      "current_entity_ids": [
+        "eap_2_eapdev_min_leistung_warmwasser",
+        "eap_3_eapdev_min_leistung_warmwasser",
+        "eap_4_eapdev_min_leistung_warmwasser",
+        "eap_5_eapdev_min_leistung_warmwasser",
+        "eap_6_eapdev_min_leistung_warmwasser",
+        "eap_7_eapdev_min_leistung_warmwasser"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_minimum_hot_water_power",
+        "eap_3_minimum_hot_water_power",
+        "eap_4_minimum_hot_water_power",
+        "eap_5_minimum_hot_water_power",
+        "eap_6_minimum_hot_water_power",
+        "eap_7_minimum_hot_water_power"
+      ],
+      "proposed_suffix": "minimum_hot_water_power",
+      "german_name": "Min. Leistung Warmwasser",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
+      "current_entity_ids": [
+        "eap_0_eapdev_modbus_el_leistungsbegr_aktiv",
+        "eap_1_eapdev_modbus_el_leistungsbegr_aktiv",
+        "eap_2_eapdev_modbus_el_leistungsbegr_aktiv",
+        "eap_3_eapdev_modbus_el_leistungsbegr_aktiv",
+        "eap_4_eapdev_modbus_el_leistungsbegr_aktiv",
+        "eap_5_eapdev_modbus_el_leistungsbegr_aktiv",
+        "eap_6_eapdev_modbus_el_leistungsbegr_aktiv",
+        "eap_7_eapdev_modbus_el_leistungsbegr_aktiv"
+      ],
+      "proposed_entity_ids": [
+        "eap_0_modbus_electrical_power_limit_active",
+        "eap_1_modbus_electrical_power_limit_active",
+        "eap_2_modbus_electrical_power_limit_active",
+        "eap_3_modbus_electrical_power_limit_active",
+        "eap_4_modbus_electrical_power_limit_active",
+        "eap_5_modbus_electrical_power_limit_active",
+        "eap_6_modbus_electrical_power_limit_active",
+        "eap_7_modbus_electrical_power_limit_active"
+      ],
+      "proposed_suffix": "modbus_electrical_power_limit_active",
+      "german_name": "Modbus elektr. Leistungsbegrenzung aktiv",
+      "supporting_context": {
+        "unit_or_value_table": "system_yes_no_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "readwrite",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
+      "current_entity_ids": [
+        "eap_0_eapdev_modbus_max_elektr_leistung_heiz",
+        "eap_1_eapdev_modbus_max_elektr_leistung_heiz",
+        "eap_2_eapdev_modbus_max_elektr_leistung_heiz",
+        "eap_3_eapdev_modbus_max_elektr_leistung_heiz",
+        "eap_4_eapdev_modbus_max_elektr_leistung_heiz",
+        "eap_5_eapdev_modbus_max_elektr_leistung_heiz",
+        "eap_6_eapdev_modbus_max_elektr_leistung_heiz",
+        "eap_7_eapdev_modbus_max_elektr_leistung_heiz"
+      ],
+      "proposed_entity_ids": [
+        "eap_0_modbus_maximum_electrical_power_heating",
+        "eap_1_modbus_maximum_electrical_power_heating",
+        "eap_2_modbus_maximum_electrical_power_heating",
+        "eap_3_modbus_maximum_electrical_power_heating",
+        "eap_4_modbus_maximum_electrical_power_heating",
+        "eap_5_modbus_maximum_electrical_power_heating",
+        "eap_6_modbus_maximum_electrical_power_heating",
+        "eap_7_modbus_maximum_electrical_power_heating"
+      ],
+      "proposed_suffix": "modbus_maximum_electrical_power_heating",
+      "german_name": "Modbus max. elektr. Leistung Heizen",
+      "supporting_context": {
+        "unit_or_value_table": "1/100kW",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "readwrite",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
+      "current_entity_ids": [
+        "eap_0_eapdev_modbus_max_elektr_leistung_ww",
+        "eap_1_eapdev_modbus_max_elektr_leistung_ww",
+        "eap_2_eapdev_modbus_max_elektr_leistung_ww",
+        "eap_3_eapdev_modbus_max_elektr_leistung_ww",
+        "eap_4_eapdev_modbus_max_elektr_leistung_ww",
+        "eap_5_eapdev_modbus_max_elektr_leistung_ww",
+        "eap_6_eapdev_modbus_max_elektr_leistung_ww",
+        "eap_7_eapdev_modbus_max_elektr_leistung_ww"
+      ],
+      "proposed_entity_ids": [
+        "eap_0_modbus_maximum_electrical_power_hot_water",
+        "eap_1_modbus_maximum_electrical_power_hot_water",
+        "eap_2_modbus_maximum_electrical_power_hot_water",
+        "eap_3_modbus_maximum_electrical_power_hot_water",
+        "eap_4_modbus_maximum_electrical_power_hot_water",
+        "eap_5_modbus_maximum_electrical_power_hot_water",
+        "eap_6_modbus_maximum_electrical_power_hot_water",
+        "eap_7_modbus_maximum_electrical_power_hot_water"
+      ],
+      "proposed_suffix": "modbus_maximum_electrical_power_hot_water",
+      "german_name": "Modbus max. elektr. Leistung Warmwasser",
+      "supporting_context": {
+        "unit_or_value_table": "1/100kW",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "readwrite",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
+      "current_entity_ids": [
+        "eap_2_eapdev_modbus_max_verdichterdrehz_soll",
+        "eap_3_eapdev_modbus_max_verdichterdrehz_soll",
+        "eap_4_eapdev_modbus_max_verdichterdrehz_soll",
+        "eap_5_eapdev_modbus_max_verdichterdrehz_soll",
+        "eap_6_eapdev_modbus_max_verdichterdrehz_soll",
+        "eap_7_eapdev_modbus_max_verdichterdrehz_soll"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_modbus_maximum_compressor_speed_setpoint",
+        "eap_3_modbus_maximum_compressor_speed_setpoint",
+        "eap_4_modbus_maximum_compressor_speed_setpoint",
+        "eap_5_modbus_maximum_compressor_speed_setpoint",
+        "eap_6_modbus_maximum_compressor_speed_setpoint",
+        "eap_7_modbus_maximum_compressor_speed_setpoint"
+      ],
+      "proposed_suffix": "modbus_maximum_compressor_speed_setpoint",
+      "german_name": "Mobus Max. Verdichter Soll",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "readwrite",
+        "min": 0,
+        "max": 1000
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.modbus_vorlauf_soll",
+      "current_entity_ids": [
+        "eap_2_eapdev_modbus_vorlauf_soll",
+        "eap_3_eapdev_modbus_vorlauf_soll",
+        "eap_4_eapdev_modbus_vorlauf_soll",
+        "eap_5_eapdev_modbus_vorlauf_soll",
+        "eap_6_eapdev_modbus_vorlauf_soll",
+        "eap_7_eapdev_modbus_vorlauf_soll"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_modbus_forward_flow_temperature_setpoint",
+        "eap_3_modbus_forward_flow_temperature_setpoint",
+        "eap_4_modbus_forward_flow_temperature_setpoint",
+        "eap_5_modbus_forward_flow_temperature_setpoint",
+        "eap_6_modbus_forward_flow_temperature_setpoint",
+        "eap_7_modbus_forward_flow_temperature_setpoint"
+      ],
+      "proposed_suffix": "modbus_forward_flow_temperature_setpoint",
+      "german_name": "Modbus VL-Temp. Soll",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "readwrite",
+        "min": 0,
+        "max": 1100
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.momentanleistung",
+      "current_entity_ids": [
+        "eap_2_eapdev_momentanleistung",
+        "eap_3_eapdev_momentanleistung",
+        "eap_4_eapdev_momentanleistung",
+        "eap_5_eapdev_momentanleistung",
+        "eap_6_eapdev_momentanleistung",
+        "eap_7_eapdev_momentanleistung"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_current_heat_output",
+        "eap_3_current_heat_output",
+        "eap_4_current_heat_output",
+        "eap_5_current_heat_output",
+        "eap_6_current_heat_output",
+        "eap_7_current_heat_output"
+      ],
+      "proposed_suffix": "current_heat_output",
+      "german_name": "Momentanleistung",
+      "supporting_context": {
+        "unit_or_value_table": "1/100kW",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.niederdruck",
+      "current_entity_ids": [
+        "eap_2_eapdev_niederdruck",
+        "eap_3_eapdev_niederdruck",
+        "eap_4_eapdev_niederdruck",
+        "eap_5_eapdev_niederdruck",
+        "eap_6_eapdev_niederdruck",
+        "eap_7_eapdev_niederdruck"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_low_pressure_relative",
+        "eap_3_low_pressure_relative",
+        "eap_4_low_pressure_relative",
+        "eap_5_low_pressure_relative",
+        "eap_6_low_pressure_relative",
+        "eap_7_low_pressure_relative"
+      ],
+      "proposed_suffix": "low_pressure_relative",
+      "german_name": "Niederdruck (relativ)",
+      "supporting_context": {
+        "unit_or_value_table": "1/10bar",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.position_erstes_expansionsventil",
+      "current_entity_ids": [
+        "eap_2_eapdev_position_erstes_expansionsventil",
+        "eap_3_eapdev_position_erstes_expansionsventil",
+        "eap_4_eapdev_position_erstes_expansionsventil",
+        "eap_5_eapdev_position_erstes_expansionsventil",
+        "eap_6_eapdev_position_erstes_expansionsventil",
+        "eap_7_eapdev_position_erstes_expansionsventil"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_first_expansion_valve_position",
+        "eap_3_first_expansion_valve_position",
+        "eap_4_first_expansion_valve_position",
+        "eap_5_first_expansion_valve_position",
+        "eap_6_first_expansion_valve_position",
+        "eap_7_first_expansion_valve_position"
+      ],
+      "proposed_suffix": "first_expansion_valve_position",
+      "german_name": "Position 1. EX-Ventil",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.position_zweites_expansionsventi",
+      "current_entity_ids": [
+        "eap_2_eapdev_position_zweites_expansionsventi",
+        "eap_3_eapdev_position_zweites_expansionsventi",
+        "eap_4_eapdev_position_zweites_expansionsventi",
+        "eap_5_eapdev_position_zweites_expansionsventi",
+        "eap_6_eapdev_position_zweites_expansionsventi",
+        "eap_7_eapdev_position_zweites_expansionsventi"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_second_expansion_valve_position",
+        "eap_3_second_expansion_valve_position",
+        "eap_4_second_expansion_valve_position",
+        "eap_5_second_expansion_valve_position",
+        "eap_6_second_expansion_valve_position",
+        "eap_7_second_expansion_valve_position"
+      ],
+      "proposed_suffix": "second_expansion_valve_position",
+      "german_name": "Position 2. EX-Ventil",
+      "supporting_context": {
+        "unit_or_value_table": "1/10%",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.sauggastemperatur",
+      "current_entity_ids": [
+        "eap_2_eapdev_sauggastemperatur",
+        "eap_3_eapdev_sauggastemperatur",
+        "eap_4_eapdev_sauggastemperatur",
+        "eap_5_eapdev_sauggastemperatur",
+        "eap_6_eapdev_sauggastemperatur",
+        "eap_7_eapdev_sauggastemperatur"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_suction_gas_temperature",
+        "eap_3_suction_gas_temperature",
+        "eap_4_suction_gas_temperature",
+        "eap_5_suction_gas_temperature",
+        "eap_6_suction_gas_temperature",
+        "eap_7_suction_gas_temperature"
+      ],
+      "proposed_suffix": "suction_gas_temperature",
+      "german_name": "Sauggastemperatur",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
+      "current_entity_ids": [
+        "eap_2_eapdev_sollwert_heizkreisbetrieb",
+        "eap_3_eapdev_sollwert_heizkreisbetrieb",
+        "eap_4_eapdev_sollwert_heizkreisbetrieb",
+        "eap_5_eapdev_sollwert_heizkreisbetrieb",
+        "eap_6_eapdev_sollwert_heizkreisbetrieb",
+        "eap_7_eapdev_sollwert_heizkreisbetrieb"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_heating_setpoint",
+        "eap_3_heating_setpoint",
+        "eap_4_heating_setpoint",
+        "eap_5_heating_setpoint",
+        "eap_6_heating_setpoint",
+        "eap_7_heating_setpoint"
+      ],
+      "proposed_suffix": "heating_setpoint",
+      "german_name": "Sollwert für Heizen",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.sollwert_kuehlbetrieb",
+      "current_entity_ids": [
+        "eap_2_eapdev_sollwert_kuehlbetrieb",
+        "eap_3_eapdev_sollwert_kuehlbetrieb",
+        "eap_4_eapdev_sollwert_kuehlbetrieb",
+        "eap_5_eapdev_sollwert_kuehlbetrieb",
+        "eap_6_eapdev_sollwert_kuehlbetrieb",
+        "eap_7_eapdev_sollwert_kuehlbetrieb"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_cooling_setpoint",
+        "eap_3_cooling_setpoint",
+        "eap_4_cooling_setpoint",
+        "eap_5_cooling_setpoint",
+        "eap_6_cooling_setpoint",
+        "eap_7_cooling_setpoint"
+      ],
+      "proposed_suffix": "cooling_setpoint",
+      "german_name": "Sollwert für Kühlen",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.sollwert_speicherbetrieb",
+      "current_entity_ids": [
+        "eap_2_eapdev_sollwert_speicherbetrieb",
+        "eap_3_eapdev_sollwert_speicherbetrieb",
+        "eap_4_eapdev_sollwert_speicherbetrieb",
+        "eap_5_eapdev_sollwert_speicherbetrieb",
+        "eap_6_eapdev_sollwert_speicherbetrieb",
+        "eap_7_eapdev_sollwert_speicherbetrieb"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_hot_water_setpoint",
+        "eap_3_hot_water_setpoint",
+        "eap_4_hot_water_setpoint",
+        "eap_5_hot_water_setpoint",
+        "eap_6_hot_water_setpoint",
+        "eap_7_hot_water_setpoint"
+      ],
+      "proposed_suffix": "hot_water_setpoint",
+      "german_name": "Sollwert für Warmwasser",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
+      "current_entity_ids": [
+        "eap_2_eapdev_temperatur_fluessigkeitsleitung",
+        "eap_3_eapdev_temperatur_fluessigkeitsleitung",
+        "eap_4_eapdev_temperatur_fluessigkeitsleitung",
+        "eap_5_eapdev_temperatur_fluessigkeitsleitung",
+        "eap_6_eapdev_temperatur_fluessigkeitsleitung",
+        "eap_7_eapdev_temperatur_fluessigkeitsleitung"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_liquid_line_temperature",
+        "eap_3_liquid_line_temperature",
+        "eap_4_liquid_line_temperature",
+        "eap_5_liquid_line_temperature",
+        "eap_6_liquid_line_temperature",
+        "eap_7_liquid_line_temperature"
+      ],
+      "proposed_suffix": "liquid_line_temperature",
+      "german_name": "Temp. Flüssigkeitsleitung",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.ueberhitzung",
+      "current_entity_ids": [
+        "eap_2_eapdev_ueberhitzung",
+        "eap_3_eapdev_ueberhitzung",
+        "eap_4_eapdev_ueberhitzung",
+        "eap_5_eapdev_ueberhitzung",
+        "eap_6_eapdev_ueberhitzung",
+        "eap_7_eapdev_ueberhitzung"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_superheat",
+        "eap_3_superheat",
+        "eap_4_superheat",
+        "eap_5_superheat",
+        "eap_6_superheat",
+        "eap_7_superheat"
+      ],
+      "proposed_suffix": "superheat",
+      "german_name": "Überhitzung",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.unterkuehlung",
+      "current_entity_ids": [
+        "eap_2_eapdev_unterkuehlung",
+        "eap_3_eapdev_unterkuehlung",
+        "eap_4_eapdev_unterkuehlung",
+        "eap_5_eapdev_unterkuehlung",
+        "eap_6_eapdev_unterkuehlung",
+        "eap_7_eapdev_unterkuehlung"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_subcooling",
+        "eap_3_subcooling",
+        "eap_4_subcooling",
+        "eap_5_subcooling",
+        "eap_6_subcooling",
+        "eap_7_subcooling"
+      ],
+      "proposed_suffix": "subcooling",
+      "german_name": "Unterkühlung",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.verdampfungstemperatur",
+      "current_entity_ids": [
+        "eap_2_eapdev_verdampfungstemperatur",
+        "eap_3_eapdev_verdampfungstemperatur",
+        "eap_4_eapdev_verdampfungstemperatur",
+        "eap_5_eapdev_verdampfungstemperatur",
+        "eap_6_eapdev_verdampfungstemperatur",
+        "eap_7_eapdev_verdampfungstemperatur"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_evaporation_temperature",
+        "eap_3_evaporation_temperature",
+        "eap_4_evaporation_temperature",
+        "eap_5_evaporation_temperature",
+        "eap_6_evaporation_temperature",
+        "eap_7_evaporation_temperature"
+      ],
+      "proposed_suffix": "evaporation_temperature",
+      "german_name": "Verdampfungstemperatur",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.volumenstrom",
+      "current_entity_ids": [
+        "eap_2_eapdev_volumenstrom",
+        "eap_3_eapdev_volumenstrom",
+        "eap_4_eapdev_volumenstrom",
+        "eap_5_eapdev_volumenstrom",
+        "eap_6_eapdev_volumenstrom",
+        "eap_7_eapdev_volumenstrom"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_flow_rate",
+        "eap_3_flow_rate",
+        "eap_4_flow_rate",
+        "eap_5_flow_rate",
+        "eap_6_flow_rate",
+        "eap_7_flow_rate"
+      ],
+      "proposed_suffix": "flow_rate",
+      "german_name": "Volumenstrom",
+      "supporting_context": {
+        "unit_or_value_table": "1/10l/min",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.volumenstrom_gemittelt",
+      "current_entity_ids": [
+        "eap_2_eapdev_volumenstrom_gemittelt",
+        "eap_3_eapdev_volumenstrom_gemittelt",
+        "eap_4_eapdev_volumenstrom_gemittelt",
+        "eap_5_eapdev_volumenstrom_gemittelt",
+        "eap_6_eapdev_volumenstrom_gemittelt",
+        "eap_7_eapdev_volumenstrom_gemittelt"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_average_flow_rate",
+        "eap_3_average_flow_rate",
+        "eap_4_average_flow_rate",
+        "eap_5_average_flow_rate",
+        "eap_6_average_flow_rate",
+        "eap_7_average_flow_rate"
+      ],
+      "proposed_suffix": "average_flow_rate",
+      "german_name": "Volumenstrom gemittelt",
+      "supporting_context": {
+        "unit_or_value_table": "1/10l/min",
+        "type": "u16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.vorlauftemperatur_soll",
+      "current_entity_ids": [
+        "eap_2_eapdev_vorlauftemperatur_soll",
+        "eap_3_eapdev_vorlauftemperatur_soll",
+        "eap_4_eapdev_vorlauftemperatur_soll",
+        "eap_5_eapdev_vorlauftemperatur_soll",
+        "eap_6_eapdev_vorlauftemperatur_soll",
+        "eap_7_eapdev_vorlauftemperatur_soll"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_forward_flow_temperature_setpoint",
+        "eap_3_forward_flow_temperature_setpoint",
+        "eap_4_forward_flow_temperature_setpoint",
+        "eap_5_forward_flow_temperature_setpoint",
+        "eap_6_forward_flow_temperature_setpoint",
+        "eap_7_forward_flow_temperature_setpoint"
+      ],
+      "proposed_suffix": "forward_flow_temperature_setpoint",
+      "german_name": "WEZ Solltemperatur",
+      "supporting_context": {
+        "unit_or_value_table": "1/10°C",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "parameter": "EAPDEV.zustand_waermepumpe",
+      "current_entity_ids": [
+        "eap_2_eapdev_zustand_waermepumpe",
+        "eap_3_eapdev_zustand_waermepumpe",
+        "eap_4_eapdev_zustand_waermepumpe",
+        "eap_5_eapdev_zustand_waermepumpe",
+        "eap_6_eapdev_zustand_waermepumpe",
+        "eap_7_eapdev_zustand_waermepumpe"
+      ],
+      "proposed_entity_ids": [
+        "eap_2_heat_pump_state",
+        "eap_3_heat_pump_state",
+        "eap_4_heat_pump_state",
+        "eap_5_heat_pump_state",
+        "eap_6_heat_pump_state",
+        "eap_7_heat_pump_state"
+      ],
+      "proposed_suffix": "heat_pump_state",
+      "german_name": "Zustand Wärmepumpe",
+      "supporting_context": {
+        "unit_or_value_table": "eap_zustand_t",
+        "type": "s16",
+        "user_level": "read",
+        "expert_level": "read",
+        "min": null,
+        "max": null
+      },
+      "confidence": "reviewed",
+      "review_status": "approved",
+      "review_reason": null,
+      "affected_equipment_instances": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ]
+}

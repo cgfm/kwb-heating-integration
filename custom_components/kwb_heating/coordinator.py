@@ -250,6 +250,8 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             new_interval = self.config.get(CONF_UPDATE_INTERVAL, DEFAULT_UPDATE_INTERVAL)
             _LOGGER.info("Update interval changed to %d seconds", new_interval)
             self.update_interval = timedelta(seconds=new_interval)
+            if self.fuel_split_tracker is not None:
+                self.fuel_split_tracker.update_expected_interval(new_interval)
 
     async def _async_update_data(self) -> dict[str, Any]:
         """Fetch data from the KWB heating system."""

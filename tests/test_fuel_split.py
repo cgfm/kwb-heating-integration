@@ -245,6 +245,45 @@ class FuelSplitTrackerTests(unittest.TestCase):
         self.assertAlmostEqual(1.0, restored.pellet_kwh)
         self.assertEqual(0, restored.unattributed_kwh)
 
+    def test_slower_polling_updates_threshold_and_attributes_normal_delta(self) -> None:
+        tracker, coordinator, _store, clock = self.make_tracker(100.0, 2)
+        tracker.update_expected_interval(120)
+        self.assertEqual(120.0, tracker.expected_interval_seconds)
+        self.assertEqual(360.0, tracker.long_gap_seconds)
+        self.advance(coordinator, clock, 101.0, 2, seconds=120)
+        self.assertAlmostEqual(1.0, tracker.pellet_kwh)
+        self.assertEqual(0, tracker.unattributed_kwh)
+
+    def test_faster_polling_applies_shorter_gap_policy_immediately(self) -> None:
+        tracker, coordinator, _store, clock = self.make_tracker(100.0, 2)
+        tracker.update_expected_interval(120)
+        tracker.update_expected_interval(10)
+        self.assertEqual(10.0, tracker.expected_interval_seconds)
+        self.assertEqual(30.0, tracker.long_gap_seconds)
+        self.advance(coordinator, clock, 101.0, 2, seconds=31)
+        self.assertEqual(0, tracker.pellet_kwh)
+        self.assertAlmostEqual(1.0, tracker.unattributed_kwh)
+
+    def test_interval_update_preserves_accounting_and_storage_identity(self) -> None:
+        tracker, coordinator, _store, clock = self.make_tracker(100.0, 2)
+        self.advance(coordinator, clock, 100.5, 2)
+        before = tracker._serialize()
+        storage_key = fuel_split.fuel_split_storage_key("entry-1")
+        tracker.update_expected_interval(120)
+        self.assertEqual(before, tracker._serialize())
+        self.assertEqual(storage_key, fuel_split.fuel_split_storage_key("entry-1"))
+
+    def test_interval_update_rejects_invalid_values_without_state_change(self) -> None:
+        tracker, _coordinator, _store, _clock = self.make_tracker(100.0, 2)
+        before = (tracker.expected_interval_seconds, tracker.long_gap_seconds)
+        for invalid in (0, -1, float("nan"), float("inf"), "bad"):
+            with self.subTest(value=invalid), self.assertRaises(ValueError):
+                tracker.update_expected_interval(invalid)
+        self.assertEqual(before, (
+            tracker.expected_interval_seconds,
+            tracker.long_gap_seconds,
+        ))
+
     def test_three_entity_listeners_do_not_multiply_delta(self) -> None:
         tracker, coordinator, _store, clock = self.make_tracker(100.0, 2)
         notifications = [0, 0, 0]

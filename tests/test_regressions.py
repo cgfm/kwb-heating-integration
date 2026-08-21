@@ -307,8 +307,14 @@ class FirmwareV2661Tests(unittest.TestCase):
         entity_ids = audit["entity_id_processing"]
         self.assertEqual(2962, entity_ids["english_source_register_ids_regenerated"])
         self.assertEqual(
-            276, entity_ids["new_de_only_ids_retained_from_authoritative_pr_data"]
+            276,
+            entity_ids[
+                "new_de_only_ids_originally_retained_from_authoritative_pr_data"
+            ],
         )
+        self.assertEqual(302, entity_ids["canonical_history_refinement_eligible_ids"])
+        self.assertEqual(282, entity_ids["reviewed_english_ids_applied"])
+        self.assertEqual(20, entity_ids["ids_left_for_manual_semantic_review"])
         self.assertEqual(
             0, entity_ids["existing_published_ids_replaced_by_pr_parameter_ids"]
         )
@@ -321,6 +327,92 @@ class FirmwareV2661Tests(unittest.TestCase):
                 3512,
                 sum(len(_load_registers(path)) for path in root.rglob("*.json")),
             )
+
+    def test_easyair_refinement_eligibility_and_review_are_deterministic(self) -> None:
+        from modbusinfoConverter.refine_v26_easyair_entity_ids import (
+            eligible_easyair_keys,
+        )
+
+        audit = json.loads(
+            (
+                PROJECT_ROOT
+                / "modbusinfoConverter/v26_6_1_entity_id_refinement_audit.json"
+            ).read_text(encoding="utf-8")
+        )
+        self.assertEqual(302, len(eligible_easyair_keys(CONFIG_ROOT)))
+        self.assertEqual(
+            {
+                "eligible_entity_ids": 302,
+                "eligible_parameter_groups": 52,
+                "refined_entity_ids": 282,
+                "approved_parameter_groups": 49,
+                "manual_review_entity_ids": 20,
+                "manual_review_parameter_groups": 3,
+            },
+            audit["summary"],
+        )
+
+    def test_reviewed_easyair_mappings_apply_consistently_to_every_instance(self) -> None:
+        audit = json.loads(
+            (
+                PROJECT_ROOT
+                / "modbusinfoConverter/v26_6_1_entity_id_refinement_audit.json"
+            ).read_text(encoding="utf-8")
+        )
+        for root in (
+            CONFIG_ROOT,
+            PROJECT_ROOT / "modbusinfoConverter/config/versions",
+        ):
+            registers = _load_registers(
+                root / self.VERSION / "devices/kwb_easyair_plus.json"
+            )
+            for entry in audit["entries"]:
+                actual = [
+                    register["entity_id"]
+                    for register in registers
+                    if register.get("parameter") == entry["parameter"]
+                    and register.get("equipment_instance")
+                    in entry["affected_equipment_instances"]
+                ]
+                if entry["review_status"] == "approved":
+                    self.assertEqual(
+                        entry["proposed_entity_ids"], actual, entry["parameter"]
+                    )
+                    self.assertNotIn(
+                        "eapdev_", " ".join(actual), entry["parameter"]
+                    )
+                else:
+                    self.assertEqual(
+                        entry["current_entity_ids"], actual, entry["parameter"]
+                    )
+                    self.assertIsNotNone(entry["review_reason"])
+
+    def test_pre_v26_easyair_logical_ids_are_unchanged(self) -> None:
+        from modbusinfoConverter.config_validation import logical_register_key
+
+        relative = Path("devices/kwb_easyair_plus.json")
+        old_registers = _load_registers(
+            CONFIG_ROOT / "v25.7.1" / relative
+        )
+        new_registers = _load_registers(CONFIG_ROOT / self.VERSION / relative)
+        new_by_key = {
+            logical_register_key(relative, register): register
+            for register in new_registers
+        }
+        errors = []
+        compared = 0
+        for old in old_registers:
+            key = logical_register_key(relative, old)
+            new = new_by_key.get(key)
+            if new is None:
+                continue
+            compared += 1
+            if old.get("entity_id") != new.get("entity_id"):
+                errors.append(
+                    f"{key}: {old.get('entity_id')} -> {new.get('entity_id')}"
+                )
+        self.assertGreater(compared, 0)
+        self.assertEqual([], errors, "\n".join(errors))
 
     def test_generated_and_canonical_trees_validate_with_v2661(self) -> None:
         from modbusinfoConverter.config_validation import validate_config_tree
@@ -2412,6 +2504,14 @@ class WiringRegressionTests(unittest.TestCase):
             if "modbusinfoConverter" in path.read_text(encoding="utf-8"):
                 references.append(path.relative_to(PROJECT_ROOT).as_posix())
         self.assertEqual([], references)
+
+    def test_poll_interval_update_is_guarded_when_no_fuel_tracker_exists(self) -> None:
+        source = (INTEGRATION_ROOT / "coordinator.py").read_text(encoding="utf-8")
+        self.assertIn("if self.fuel_split_tracker is not None:", source)
+        self.assertIn(
+            "self.fuel_split_tracker.update_expected_interval(new_interval)",
+            source,
+        )
 
     def test_duplicate_abort_is_not_swallowed_by_config_flow(self) -> None:
         tree = ast.parse(

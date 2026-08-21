@@ -47,7 +47,7 @@
       "unit_value_table": "1/10°C",
       "id": "3124",
       "parameter": "EAPDEV.vorlauftemperatur_soll",
-      "entity_id": "eap_2_eapdev_vorlauftemperatur_soll",
+      "entity_id": "eap_2_forward_flow_temperature_setpoint",
       "name": {
         "de": "WEZ Solltemperatur"
       },
@@ -66,7 +66,7 @@
       "unit_value_table": "1/10°C",
       "id": "3124",
       "parameter": "EAPDEV.vorlauftemperatur_soll",
-      "entity_id": "eap_3_eapdev_vorlauftemperatur_soll",
+      "entity_id": "eap_3_forward_flow_temperature_setpoint",
       "name": {
         "de": "WEZ Solltemperatur"
       },
@@ -85,7 +85,7 @@
       "unit_value_table": "1/10°C",
       "id": "3124",
       "parameter": "EAPDEV.vorlauftemperatur_soll",
-      "entity_id": "eap_4_eapdev_vorlauftemperatur_soll",
+      "entity_id": "eap_4_forward_flow_temperature_setpoint",
       "name": {
         "de": "WEZ Solltemperatur"
       },
@@ -104,7 +104,7 @@
       "unit_value_table": "1/10°C",
       "id": "3124",
       "parameter": "EAPDEV.vorlauftemperatur_soll",
-      "entity_id": "eap_5_eapdev_vorlauftemperatur_soll",
+      "entity_id": "eap_5_forward_flow_temperature_setpoint",
       "name": {
         "de": "WEZ Solltemperatur"
       },
@@ -123,7 +123,7 @@
       "unit_value_table": "1/10°C",
       "id": "3124",
       "parameter": "EAPDEV.vorlauftemperatur_soll",
-      "entity_id": "eap_6_eapdev_vorlauftemperatur_soll",
+      "entity_id": "eap_6_forward_flow_temperature_setpoint",
       "name": {
         "de": "WEZ Solltemperatur"
       },
@@ -142,7 +142,7 @@
       "unit_value_table": "1/10°C",
       "id": "3124",
       "parameter": "EAPDEV.vorlauftemperatur_soll",
-      "entity_id": "eap_7_eapdev_vorlauftemperatur_soll",
+      "entity_id": "eap_7_forward_flow_temperature_setpoint",
       "name": {
         "de": "WEZ Solltemperatur"
       },
@@ -199,7 +199,7 @@
       "unit_value_table": "1/100kW",
       "id": "3183",
       "parameter": "EAPDEV.momentanleistung",
-      "entity_id": "eap_2_eapdev_momentanleistung",
+      "entity_id": "eap_2_current_heat_output",
       "name": {
         "de": "Momentanleistung"
       },
@@ -218,7 +218,7 @@
       "unit_value_table": "1/100kW",
       "id": "3183",
       "parameter": "EAPDEV.momentanleistung",
-      "entity_id": "eap_3_eapdev_momentanleistung",
+      "entity_id": "eap_3_current_heat_output",
       "name": {
         "de": "Momentanleistung"
       },
@@ -237,7 +237,7 @@
       "unit_value_table": "1/100kW",
       "id": "3183",
       "parameter": "EAPDEV.momentanleistung",
-      "entity_id": "eap_4_eapdev_momentanleistung",
+      "entity_id": "eap_4_current_heat_output",
       "name": {
         "de": "Momentanleistung"
       },
@@ -256,7 +256,7 @@
       "unit_value_table": "1/100kW",
       "id": "3183",
       "parameter": "EAPDEV.momentanleistung",
-      "entity_id": "eap_5_eapdev_momentanleistung",
+      "entity_id": "eap_5_current_heat_output",
       "name": {
         "de": "Momentanleistung"
       },
@@ -275,7 +275,7 @@
       "unit_value_table": "1/100kW",
       "id": "3183",
       "parameter": "EAPDEV.momentanleistung",
-      "entity_id": "eap_6_eapdev_momentanleistung",
+      "entity_id": "eap_6_current_heat_output",
       "name": {
         "de": "Momentanleistung"
       },
@@ -294,7 +294,7 @@
       "unit_value_table": "1/100kW",
       "id": "3183",
       "parameter": "EAPDEV.momentanleistung",
-      "entity_id": "eap_7_eapdev_momentanleistung",
+      "entity_id": "eap_7_current_heat_output",
       "name": {
         "de": "Momentanleistung"
       },
@@ -351,7 +351,7 @@
       "unit_value_table": "1/10%",
       "id": "3163",
       "parameter": "EAPDEV.drehzahl_ist",
-      "entity_id": "eap_2_eapdev_drehzahl_ist",
+      "entity_id": "eap_2_compressor_speed_actual",
       "name": {
         "de": "Verdichter Drehzahl Ist"
       },
@@ -370,7 +370,7 @@
       "unit_value_table": "1/10%",
       "id": "3163",
       "parameter": "EAPDEV.drehzahl_ist",
-      "entity_id": "eap_3_eapdev_drehzahl_ist",
+      "entity_id": "eap_3_compressor_speed_actual",
       "name": {
         "de": "Verdichter Drehzahl Ist"
       },
@@ -389,7 +389,7 @@
       "unit_value_table": "1/10%",
       "id": "3163",
       "parameter": "EAPDEV.drehzahl_ist",
-      "entity_id": "eap_4_eapdev_drehzahl_ist",
+      "entity_id": "eap_4_compressor_speed_actual",
       "name": {
         "de": "Verdichter Drehzahl Ist"
       },
@@ -408,7 +408,7 @@
       "unit_value_table": "1/10%",
       "id": "3163",
       "parameter": "EAPDEV.drehzahl_ist",
-      "entity_id": "eap_5_eapdev_drehzahl_ist",
+      "entity_id": "eap_5_compressor_speed_actual",
       "name": {
         "de": "Verdichter Drehzahl Ist"
       },
@@ -427,7 +427,7 @@
       "unit_value_table": "1/10%",
       "id": "3163",
       "parameter": "EAPDEV.drehzahl_ist",
-      "entity_id": "eap_6_eapdev_drehzahl_ist",
+      "entity_id": "eap_6_compressor_speed_actual",
       "name": {
         "de": "Verdichter Drehzahl Ist"
       },
@@ -446,7 +446,7 @@
       "unit_value_table": "1/10%",
       "id": "3163",
       "parameter": "EAPDEV.drehzahl_ist",
-      "entity_id": "eap_7_eapdev_drehzahl_ist",
+      "entity_id": "eap_7_compressor_speed_actual",
       "name": {
         "de": "Verdichter Drehzahl Ist"
       },
@@ -503,7 +503,7 @@
       "unit_value_table": "1/10%",
       "id": "3162",
       "parameter": "EAPDEV.drehzahl_soll",
-      "entity_id": "eap_2_eapdev_drehzahl_soll",
+      "entity_id": "eap_2_compressor_speed_setpoint",
       "name": {
         "de": "Verdichter Drehzahl Soll"
       },
@@ -522,7 +522,7 @@
       "unit_value_table": "1/10%",
       "id": "3162",
       "parameter": "EAPDEV.drehzahl_soll",
-      "entity_id": "eap_3_eapdev_drehzahl_soll",
+      "entity_id": "eap_3_compressor_speed_setpoint",
       "name": {
         "de": "Verdichter Drehzahl Soll"
       },
@@ -541,7 +541,7 @@
       "unit_value_table": "1/10%",
       "id": "3162",
       "parameter": "EAPDEV.drehzahl_soll",
-      "entity_id": "eap_4_eapdev_drehzahl_soll",
+      "entity_id": "eap_4_compressor_speed_setpoint",
       "name": {
         "de": "Verdichter Drehzahl Soll"
       },
@@ -560,7 +560,7 @@
       "unit_value_table": "1/10%",
       "id": "3162",
       "parameter": "EAPDEV.drehzahl_soll",
-      "entity_id": "eap_5_eapdev_drehzahl_soll",
+      "entity_id": "eap_5_compressor_speed_setpoint",
       "name": {
         "de": "Verdichter Drehzahl Soll"
       },
@@ -579,7 +579,7 @@
       "unit_value_table": "1/10%",
       "id": "3162",
       "parameter": "EAPDEV.drehzahl_soll",
-      "entity_id": "eap_6_eapdev_drehzahl_soll",
+      "entity_id": "eap_6_compressor_speed_setpoint",
       "name": {
         "de": "Verdichter Drehzahl Soll"
       },
@@ -598,7 +598,7 @@
       "unit_value_table": "1/10%",
       "id": "3162",
       "parameter": "EAPDEV.drehzahl_soll",
-      "entity_id": "eap_7_eapdev_drehzahl_soll",
+      "entity_id": "eap_7_compressor_speed_setpoint",
       "name": {
         "de": "Verdichter Drehzahl Soll"
       },
@@ -655,7 +655,7 @@
       "unit_value_table": "1/100kW",
       "id": "3184",
       "parameter": "EAPDEV.aufgenommene_elektr_leistung",
-      "entity_id": "eap_2_eapdev_aufgenommene_elektr_leistung",
+      "entity_id": "eap_2_electrical_power_consumption",
       "name": {
         "de": "Aufgen. elektr. Leistung"
       },
@@ -674,7 +674,7 @@
       "unit_value_table": "1/100kW",
       "id": "3184",
       "parameter": "EAPDEV.aufgenommene_elektr_leistung",
-      "entity_id": "eap_3_eapdev_aufgenommene_elektr_leistung",
+      "entity_id": "eap_3_electrical_power_consumption",
       "name": {
         "de": "Aufgen. elektr. Leistung"
       },
@@ -693,7 +693,7 @@
       "unit_value_table": "1/100kW",
       "id": "3184",
       "parameter": "EAPDEV.aufgenommene_elektr_leistung",
-      "entity_id": "eap_4_eapdev_aufgenommene_elektr_leistung",
+      "entity_id": "eap_4_electrical_power_consumption",
       "name": {
         "de": "Aufgen. elektr. Leistung"
       },
@@ -712,7 +712,7 @@
       "unit_value_table": "1/100kW",
       "id": "3184",
       "parameter": "EAPDEV.aufgenommene_elektr_leistung",
-      "entity_id": "eap_5_eapdev_aufgenommene_elektr_leistung",
+      "entity_id": "eap_5_electrical_power_consumption",
       "name": {
         "de": "Aufgen. elektr. Leistung"
       },
@@ -731,7 +731,7 @@
       "unit_value_table": "1/100kW",
       "id": "3184",
       "parameter": "EAPDEV.aufgenommene_elektr_leistung",
-      "entity_id": "eap_6_eapdev_aufgenommene_elektr_leistung",
+      "entity_id": "eap_6_electrical_power_consumption",
       "name": {
         "de": "Aufgen. elektr. Leistung"
       },
@@ -750,7 +750,7 @@
       "unit_value_table": "1/100kW",
       "id": "3184",
       "parameter": "EAPDEV.aufgenommene_elektr_leistung",
-      "entity_id": "eap_7_eapdev_aufgenommene_elektr_leistung",
+      "entity_id": "eap_7_electrical_power_consumption",
       "name": {
         "de": "Aufgen. elektr. Leistung"
       },
@@ -1143,7 +1143,7 @@
       "unit_value_table": "1/10°C",
       "id": "3137",
       "parameter": "EAPDEV.ansauglufttemperatur",
-      "entity_id": "eap_2_eapdev_ansauglufttemperatur",
+      "entity_id": "eap_2_intake_air_temperature",
       "name": {
         "de": "Ansauglufttemperatur"
       },
@@ -1162,7 +1162,7 @@
       "unit_value_table": "1/10°C",
       "id": "3137",
       "parameter": "EAPDEV.ansauglufttemperatur",
-      "entity_id": "eap_3_eapdev_ansauglufttemperatur",
+      "entity_id": "eap_3_intake_air_temperature",
       "name": {
         "de": "Ansauglufttemperatur"
       },
@@ -1181,7 +1181,7 @@
       "unit_value_table": "1/10°C",
       "id": "3137",
       "parameter": "EAPDEV.ansauglufttemperatur",
-      "entity_id": "eap_4_eapdev_ansauglufttemperatur",
+      "entity_id": "eap_4_intake_air_temperature",
       "name": {
         "de": "Ansauglufttemperatur"
       },
@@ -1200,7 +1200,7 @@
       "unit_value_table": "1/10°C",
       "id": "3137",
       "parameter": "EAPDEV.ansauglufttemperatur",
-      "entity_id": "eap_5_eapdev_ansauglufttemperatur",
+      "entity_id": "eap_5_intake_air_temperature",
       "name": {
         "de": "Ansauglufttemperatur"
       },
@@ -1219,7 +1219,7 @@
       "unit_value_table": "1/10°C",
       "id": "3137",
       "parameter": "EAPDEV.ansauglufttemperatur",
-      "entity_id": "eap_6_eapdev_ansauglufttemperatur",
+      "entity_id": "eap_6_intake_air_temperature",
       "name": {
         "de": "Ansauglufttemperatur"
       },
@@ -1238,7 +1238,7 @@
       "unit_value_table": "1/10°C",
       "id": "3137",
       "parameter": "EAPDEV.ansauglufttemperatur",
-      "entity_id": "eap_7_eapdev_ansauglufttemperatur",
+      "entity_id": "eap_7_intake_air_temperature",
       "name": {
         "de": "Ansauglufttemperatur"
       },
@@ -1295,7 +1295,7 @@
       "unit_value_table": "1/10°C",
       "id": "3138",
       "parameter": "EAPDEV.sauggastemperatur",
-      "entity_id": "eap_2_eapdev_sauggastemperatur",
+      "entity_id": "eap_2_suction_gas_temperature",
       "name": {
         "de": "Sauggastemperatur"
       },
@@ -1314,7 +1314,7 @@
       "unit_value_table": "1/10°C",
       "id": "3138",
       "parameter": "EAPDEV.sauggastemperatur",
-      "entity_id": "eap_3_eapdev_sauggastemperatur",
+      "entity_id": "eap_3_suction_gas_temperature",
       "name": {
         "de": "Sauggastemperatur"
       },
@@ -1333,7 +1333,7 @@
       "unit_value_table": "1/10°C",
       "id": "3138",
       "parameter": "EAPDEV.sauggastemperatur",
-      "entity_id": "eap_4_eapdev_sauggastemperatur",
+      "entity_id": "eap_4_suction_gas_temperature",
       "name": {
         "de": "Sauggastemperatur"
       },
@@ -1352,7 +1352,7 @@
       "unit_value_table": "1/10°C",
       "id": "3138",
       "parameter": "EAPDEV.sauggastemperatur",
-      "entity_id": "eap_5_eapdev_sauggastemperatur",
+      "entity_id": "eap_5_suction_gas_temperature",
       "name": {
         "de": "Sauggastemperatur"
       },
@@ -1371,7 +1371,7 @@
       "unit_value_table": "1/10°C",
       "id": "3138",
       "parameter": "EAPDEV.sauggastemperatur",
-      "entity_id": "eap_6_eapdev_sauggastemperatur",
+      "entity_id": "eap_6_suction_gas_temperature",
       "name": {
         "de": "Sauggastemperatur"
       },
@@ -1390,7 +1390,7 @@
       "unit_value_table": "1/10°C",
       "id": "3138",
       "parameter": "EAPDEV.sauggastemperatur",
-      "entity_id": "eap_7_eapdev_sauggastemperatur",
+      "entity_id": "eap_7_suction_gas_temperature",
       "name": {
         "de": "Sauggastemperatur"
       },
@@ -1447,7 +1447,7 @@
       "unit_value_table": "1/10°C",
       "id": "3139",
       "parameter": "EAPDEV.heissgastemperatur",
-      "entity_id": "eap_2_eapdev_heissgastemperatur",
+      "entity_id": "eap_2_hot_gas_temperature",
       "name": {
         "de": "Heissgastemperatur"
       },
@@ -1466,7 +1466,7 @@
       "unit_value_table": "1/10°C",
       "id": "3139",
       "parameter": "EAPDEV.heissgastemperatur",
-      "entity_id": "eap_3_eapdev_heissgastemperatur",
+      "entity_id": "eap_3_hot_gas_temperature",
       "name": {
         "de": "Heissgastemperatur"
       },
@@ -1485,7 +1485,7 @@
       "unit_value_table": "1/10°C",
       "id": "3139",
       "parameter": "EAPDEV.heissgastemperatur",
-      "entity_id": "eap_4_eapdev_heissgastemperatur",
+      "entity_id": "eap_4_hot_gas_temperature",
       "name": {
         "de": "Heissgastemperatur"
       },
@@ -1504,7 +1504,7 @@
       "unit_value_table": "1/10°C",
       "id": "3139",
       "parameter": "EAPDEV.heissgastemperatur",
-      "entity_id": "eap_5_eapdev_heissgastemperatur",
+      "entity_id": "eap_5_hot_gas_temperature",
       "name": {
         "de": "Heissgastemperatur"
       },
@@ -1523,7 +1523,7 @@
       "unit_value_table": "1/10°C",
       "id": "3139",
       "parameter": "EAPDEV.heissgastemperatur",
-      "entity_id": "eap_6_eapdev_heissgastemperatur",
+      "entity_id": "eap_6_hot_gas_temperature",
       "name": {
         "de": "Heissgastemperatur"
       },
@@ -1542,7 +1542,7 @@
       "unit_value_table": "1/10°C",
       "id": "3139",
       "parameter": "EAPDEV.heissgastemperatur",
-      "entity_id": "eap_7_eapdev_heissgastemperatur",
+      "entity_id": "eap_7_hot_gas_temperature",
       "name": {
         "de": "Heissgastemperatur"
       },
@@ -1599,7 +1599,7 @@
       "unit_value_table": "1/10%",
       "id": "3140",
       "parameter": "EAPDEV.drehzahl_ventilator",
-      "entity_id": "eap_2_eapdev_drehzahl_ventilator",
+      "entity_id": "eap_2_fan_speed",
       "name": {
         "de": "Drehzahl Ventilator"
       },
@@ -1618,7 +1618,7 @@
       "unit_value_table": "1/10%",
       "id": "3140",
       "parameter": "EAPDEV.drehzahl_ventilator",
-      "entity_id": "eap_3_eapdev_drehzahl_ventilator",
+      "entity_id": "eap_3_fan_speed",
       "name": {
         "de": "Drehzahl Ventilator"
       },
@@ -1637,7 +1637,7 @@
       "unit_value_table": "1/10%",
       "id": "3140",
       "parameter": "EAPDEV.drehzahl_ventilator",
-      "entity_id": "eap_4_eapdev_drehzahl_ventilator",
+      "entity_id": "eap_4_fan_speed",
       "name": {
         "de": "Drehzahl Ventilator"
       },
@@ -1656,7 +1656,7 @@
       "unit_value_table": "1/10%",
       "id": "3140",
       "parameter": "EAPDEV.drehzahl_ventilator",
-      "entity_id": "eap_5_eapdev_drehzahl_ventilator",
+      "entity_id": "eap_5_fan_speed",
       "name": {
         "de": "Drehzahl Ventilator"
       },
@@ -1675,7 +1675,7 @@
       "unit_value_table": "1/10%",
       "id": "3140",
       "parameter": "EAPDEV.drehzahl_ventilator",
-      "entity_id": "eap_6_eapdev_drehzahl_ventilator",
+      "entity_id": "eap_6_fan_speed",
       "name": {
         "de": "Drehzahl Ventilator"
       },
@@ -1694,7 +1694,7 @@
       "unit_value_table": "1/10%",
       "id": "3140",
       "parameter": "EAPDEV.drehzahl_ventilator",
-      "entity_id": "eap_7_eapdev_drehzahl_ventilator",
+      "entity_id": "eap_7_fan_speed",
       "name": {
         "de": "Drehzahl Ventilator"
       },
@@ -1751,7 +1751,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3144",
       "parameter": "EAPDEV.volumenstrom",
-      "entity_id": "eap_2_eapdev_volumenstrom",
+      "entity_id": "eap_2_flow_rate",
       "name": {
         "de": "Volumenstrom"
       },
@@ -1770,7 +1770,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3144",
       "parameter": "EAPDEV.volumenstrom",
-      "entity_id": "eap_3_eapdev_volumenstrom",
+      "entity_id": "eap_3_flow_rate",
       "name": {
         "de": "Volumenstrom"
       },
@@ -1789,7 +1789,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3144",
       "parameter": "EAPDEV.volumenstrom",
-      "entity_id": "eap_4_eapdev_volumenstrom",
+      "entity_id": "eap_4_flow_rate",
       "name": {
         "de": "Volumenstrom"
       },
@@ -1808,7 +1808,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3144",
       "parameter": "EAPDEV.volumenstrom",
-      "entity_id": "eap_5_eapdev_volumenstrom",
+      "entity_id": "eap_5_flow_rate",
       "name": {
         "de": "Volumenstrom"
       },
@@ -1827,7 +1827,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3144",
       "parameter": "EAPDEV.volumenstrom",
-      "entity_id": "eap_6_eapdev_volumenstrom",
+      "entity_id": "eap_6_flow_rate",
       "name": {
         "de": "Volumenstrom"
       },
@@ -1846,7 +1846,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3144",
       "parameter": "EAPDEV.volumenstrom",
-      "entity_id": "eap_7_eapdev_volumenstrom",
+      "entity_id": "eap_7_flow_rate",
       "name": {
         "de": "Volumenstrom"
       },
@@ -1903,7 +1903,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3145",
       "parameter": "EAPDEV.volumenstrom_gemittelt",
-      "entity_id": "eap_2_eapdev_volumenstrom_gemittelt",
+      "entity_id": "eap_2_average_flow_rate",
       "name": {
         "de": "Volumenstrom gemittelt"
       },
@@ -1922,7 +1922,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3145",
       "parameter": "EAPDEV.volumenstrom_gemittelt",
-      "entity_id": "eap_3_eapdev_volumenstrom_gemittelt",
+      "entity_id": "eap_3_average_flow_rate",
       "name": {
         "de": "Volumenstrom gemittelt"
       },
@@ -1941,7 +1941,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3145",
       "parameter": "EAPDEV.volumenstrom_gemittelt",
-      "entity_id": "eap_4_eapdev_volumenstrom_gemittelt",
+      "entity_id": "eap_4_average_flow_rate",
       "name": {
         "de": "Volumenstrom gemittelt"
       },
@@ -1960,7 +1960,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3145",
       "parameter": "EAPDEV.volumenstrom_gemittelt",
-      "entity_id": "eap_5_eapdev_volumenstrom_gemittelt",
+      "entity_id": "eap_5_average_flow_rate",
       "name": {
         "de": "Volumenstrom gemittelt"
       },
@@ -1979,7 +1979,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3145",
       "parameter": "EAPDEV.volumenstrom_gemittelt",
-      "entity_id": "eap_6_eapdev_volumenstrom_gemittelt",
+      "entity_id": "eap_6_average_flow_rate",
       "name": {
         "de": "Volumenstrom gemittelt"
       },
@@ -1998,7 +1998,7 @@
       "unit_value_table": "1/10l/min",
       "id": "3145",
       "parameter": "EAPDEV.volumenstrom_gemittelt",
-      "entity_id": "eap_7_eapdev_volumenstrom_gemittelt",
+      "entity_id": "eap_7_average_flow_rate",
       "name": {
         "de": "Volumenstrom gemittelt"
       },
@@ -2207,7 +2207,7 @@
       "unit_value_table": "1/10°C",
       "id": "3148",
       "parameter": "EAPDEV.ueberhitzung",
-      "entity_id": "eap_2_eapdev_ueberhitzung",
+      "entity_id": "eap_2_superheat",
       "name": {
         "de": "Überhitzung"
       },
@@ -2226,7 +2226,7 @@
       "unit_value_table": "1/10°C",
       "id": "3148",
       "parameter": "EAPDEV.ueberhitzung",
-      "entity_id": "eap_3_eapdev_ueberhitzung",
+      "entity_id": "eap_3_superheat",
       "name": {
         "de": "Überhitzung"
       },
@@ -2245,7 +2245,7 @@
       "unit_value_table": "1/10°C",
       "id": "3148",
       "parameter": "EAPDEV.ueberhitzung",
-      "entity_id": "eap_4_eapdev_ueberhitzung",
+      "entity_id": "eap_4_superheat",
       "name": {
         "de": "Überhitzung"
       },
@@ -2264,7 +2264,7 @@
       "unit_value_table": "1/10°C",
       "id": "3148",
       "parameter": "EAPDEV.ueberhitzung",
-      "entity_id": "eap_5_eapdev_ueberhitzung",
+      "entity_id": "eap_5_superheat",
       "name": {
         "de": "Überhitzung"
       },
@@ -2283,7 +2283,7 @@
       "unit_value_table": "1/10°C",
       "id": "3148",
       "parameter": "EAPDEV.ueberhitzung",
-      "entity_id": "eap_6_eapdev_ueberhitzung",
+      "entity_id": "eap_6_superheat",
       "name": {
         "de": "Überhitzung"
       },
@@ -2302,7 +2302,7 @@
       "unit_value_table": "1/10°C",
       "id": "3148",
       "parameter": "EAPDEV.ueberhitzung",
-      "entity_id": "eap_7_eapdev_ueberhitzung",
+      "entity_id": "eap_7_superheat",
       "name": {
         "de": "Überhitzung"
       },
@@ -2359,7 +2359,7 @@
       "unit_value_table": "1/10°C",
       "id": "3149",
       "parameter": "EAPDEV.unterkuehlung",
-      "entity_id": "eap_2_eapdev_unterkuehlung",
+      "entity_id": "eap_2_subcooling",
       "name": {
         "de": "Unterkühlung"
       },
@@ -2378,7 +2378,7 @@
       "unit_value_table": "1/10°C",
       "id": "3149",
       "parameter": "EAPDEV.unterkuehlung",
-      "entity_id": "eap_3_eapdev_unterkuehlung",
+      "entity_id": "eap_3_subcooling",
       "name": {
         "de": "Unterkühlung"
       },
@@ -2397,7 +2397,7 @@
       "unit_value_table": "1/10°C",
       "id": "3149",
       "parameter": "EAPDEV.unterkuehlung",
-      "entity_id": "eap_4_eapdev_unterkuehlung",
+      "entity_id": "eap_4_subcooling",
       "name": {
         "de": "Unterkühlung"
       },
@@ -2416,7 +2416,7 @@
       "unit_value_table": "1/10°C",
       "id": "3149",
       "parameter": "EAPDEV.unterkuehlung",
-      "entity_id": "eap_5_eapdev_unterkuehlung",
+      "entity_id": "eap_5_subcooling",
       "name": {
         "de": "Unterkühlung"
       },
@@ -2435,7 +2435,7 @@
       "unit_value_table": "1/10°C",
       "id": "3149",
       "parameter": "EAPDEV.unterkuehlung",
-      "entity_id": "eap_6_eapdev_unterkuehlung",
+      "entity_id": "eap_6_subcooling",
       "name": {
         "de": "Unterkühlung"
       },
@@ -2454,7 +2454,7 @@
       "unit_value_table": "1/10°C",
       "id": "3149",
       "parameter": "EAPDEV.unterkuehlung",
-      "entity_id": "eap_7_eapdev_unterkuehlung",
+      "entity_id": "eap_7_subcooling",
       "name": {
         "de": "Unterkühlung"
       },
@@ -2511,7 +2511,7 @@
       "unit_value_table": "1/10°C",
       "id": "3150",
       "parameter": "EAPDEV.verdampfungstemperatur",
-      "entity_id": "eap_2_eapdev_verdampfungstemperatur",
+      "entity_id": "eap_2_evaporation_temperature",
       "name": {
         "de": "Verdampfungstemperatur"
       },
@@ -2530,7 +2530,7 @@
       "unit_value_table": "1/10°C",
       "id": "3150",
       "parameter": "EAPDEV.verdampfungstemperatur",
-      "entity_id": "eap_3_eapdev_verdampfungstemperatur",
+      "entity_id": "eap_3_evaporation_temperature",
       "name": {
         "de": "Verdampfungstemperatur"
       },
@@ -2549,7 +2549,7 @@
       "unit_value_table": "1/10°C",
       "id": "3150",
       "parameter": "EAPDEV.verdampfungstemperatur",
-      "entity_id": "eap_4_eapdev_verdampfungstemperatur",
+      "entity_id": "eap_4_evaporation_temperature",
       "name": {
         "de": "Verdampfungstemperatur"
       },
@@ -2568,7 +2568,7 @@
       "unit_value_table": "1/10°C",
       "id": "3150",
       "parameter": "EAPDEV.verdampfungstemperatur",
-      "entity_id": "eap_5_eapdev_verdampfungstemperatur",
+      "entity_id": "eap_5_evaporation_temperature",
       "name": {
         "de": "Verdampfungstemperatur"
       },
@@ -2587,7 +2587,7 @@
       "unit_value_table": "1/10°C",
       "id": "3150",
       "parameter": "EAPDEV.verdampfungstemperatur",
-      "entity_id": "eap_6_eapdev_verdampfungstemperatur",
+      "entity_id": "eap_6_evaporation_temperature",
       "name": {
         "de": "Verdampfungstemperatur"
       },
@@ -2606,7 +2606,7 @@
       "unit_value_table": "1/10°C",
       "id": "3150",
       "parameter": "EAPDEV.verdampfungstemperatur",
-      "entity_id": "eap_7_eapdev_verdampfungstemperatur",
+      "entity_id": "eap_7_evaporation_temperature",
       "name": {
         "de": "Verdampfungstemperatur"
       },
@@ -2663,7 +2663,7 @@
       "unit_value_table": "1/10°C",
       "id": "3151",
       "parameter": "EAPDEV.kondensationstemperatur",
-      "entity_id": "eap_2_eapdev_kondensationstemperatur",
+      "entity_id": "eap_2_condensation_temperature",
       "name": {
         "de": "Kondensationstemperatur"
       },
@@ -2682,7 +2682,7 @@
       "unit_value_table": "1/10°C",
       "id": "3151",
       "parameter": "EAPDEV.kondensationstemperatur",
-      "entity_id": "eap_3_eapdev_kondensationstemperatur",
+      "entity_id": "eap_3_condensation_temperature",
       "name": {
         "de": "Kondensationstemperatur"
       },
@@ -2701,7 +2701,7 @@
       "unit_value_table": "1/10°C",
       "id": "3151",
       "parameter": "EAPDEV.kondensationstemperatur",
-      "entity_id": "eap_4_eapdev_kondensationstemperatur",
+      "entity_id": "eap_4_condensation_temperature",
       "name": {
         "de": "Kondensationstemperatur"
       },
@@ -2720,7 +2720,7 @@
       "unit_value_table": "1/10°C",
       "id": "3151",
       "parameter": "EAPDEV.kondensationstemperatur",
-      "entity_id": "eap_5_eapdev_kondensationstemperatur",
+      "entity_id": "eap_5_condensation_temperature",
       "name": {
         "de": "Kondensationstemperatur"
       },
@@ -2739,7 +2739,7 @@
       "unit_value_table": "1/10°C",
       "id": "3151",
       "parameter": "EAPDEV.kondensationstemperatur",
-      "entity_id": "eap_6_eapdev_kondensationstemperatur",
+      "entity_id": "eap_6_condensation_temperature",
       "name": {
         "de": "Kondensationstemperatur"
       },
@@ -2758,7 +2758,7 @@
       "unit_value_table": "1/10°C",
       "id": "3151",
       "parameter": "EAPDEV.kondensationstemperatur",
-      "entity_id": "eap_7_eapdev_kondensationstemperatur",
+      "entity_id": "eap_7_condensation_temperature",
       "name": {
         "de": "Kondensationstemperatur"
       },
@@ -2815,7 +2815,7 @@
       "unit_value_table": "1/10bar",
       "id": "3152",
       "parameter": "EAPDEV.niederdruck",
-      "entity_id": "eap_2_eapdev_niederdruck",
+      "entity_id": "eap_2_low_pressure_relative",
       "name": {
         "de": "Niederdruck (relativ)"
       },
@@ -2834,7 +2834,7 @@
       "unit_value_table": "1/10bar",
       "id": "3152",
       "parameter": "EAPDEV.niederdruck",
-      "entity_id": "eap_3_eapdev_niederdruck",
+      "entity_id": "eap_3_low_pressure_relative",
       "name": {
         "de": "Niederdruck (relativ)"
       },
@@ -2853,7 +2853,7 @@
       "unit_value_table": "1/10bar",
       "id": "3152",
       "parameter": "EAPDEV.niederdruck",
-      "entity_id": "eap_4_eapdev_niederdruck",
+      "entity_id": "eap_4_low_pressure_relative",
       "name": {
         "de": "Niederdruck (relativ)"
       },
@@ -2872,7 +2872,7 @@
       "unit_value_table": "1/10bar",
       "id": "3152",
       "parameter": "EAPDEV.niederdruck",
-      "entity_id": "eap_5_eapdev_niederdruck",
+      "entity_id": "eap_5_low_pressure_relative",
       "name": {
         "de": "Niederdruck (relativ)"
       },
@@ -2891,7 +2891,7 @@
       "unit_value_table": "1/10bar",
       "id": "3152",
       "parameter": "EAPDEV.niederdruck",
-      "entity_id": "eap_6_eapdev_niederdruck",
+      "entity_id": "eap_6_low_pressure_relative",
       "name": {
         "de": "Niederdruck (relativ)"
       },
@@ -2910,7 +2910,7 @@
       "unit_value_table": "1/10bar",
       "id": "3152",
       "parameter": "EAPDEV.niederdruck",
-      "entity_id": "eap_7_eapdev_niederdruck",
+      "entity_id": "eap_7_low_pressure_relative",
       "name": {
         "de": "Niederdruck (relativ)"
       },
@@ -2967,7 +2967,7 @@
       "unit_value_table": "1/10bar",
       "id": "3153",
       "parameter": "EAPDEV.hochdruck",
-      "entity_id": "eap_2_eapdev_hochdruck",
+      "entity_id": "eap_2_high_pressure_relative",
       "name": {
         "de": "Hochdruck (relativ)"
       },
@@ -2986,7 +2986,7 @@
       "unit_value_table": "1/10bar",
       "id": "3153",
       "parameter": "EAPDEV.hochdruck",
-      "entity_id": "eap_3_eapdev_hochdruck",
+      "entity_id": "eap_3_high_pressure_relative",
       "name": {
         "de": "Hochdruck (relativ)"
       },
@@ -3005,7 +3005,7 @@
       "unit_value_table": "1/10bar",
       "id": "3153",
       "parameter": "EAPDEV.hochdruck",
-      "entity_id": "eap_4_eapdev_hochdruck",
+      "entity_id": "eap_4_high_pressure_relative",
       "name": {
         "de": "Hochdruck (relativ)"
       },
@@ -3024,7 +3024,7 @@
       "unit_value_table": "1/10bar",
       "id": "3153",
       "parameter": "EAPDEV.hochdruck",
-      "entity_id": "eap_5_eapdev_hochdruck",
+      "entity_id": "eap_5_high_pressure_relative",
       "name": {
         "de": "Hochdruck (relativ)"
       },
@@ -3043,7 +3043,7 @@
       "unit_value_table": "1/10bar",
       "id": "3153",
       "parameter": "EAPDEV.hochdruck",
-      "entity_id": "eap_6_eapdev_hochdruck",
+      "entity_id": "eap_6_high_pressure_relative",
       "name": {
         "de": "Hochdruck (relativ)"
       },
@@ -3062,7 +3062,7 @@
       "unit_value_table": "1/10bar",
       "id": "3153",
       "parameter": "EAPDEV.hochdruck",
-      "entity_id": "eap_7_eapdev_hochdruck",
+      "entity_id": "eap_7_high_pressure_relative",
       "name": {
         "de": "Hochdruck (relativ)"
       },
@@ -3119,7 +3119,7 @@
       "unit_value_table": "1/10°C",
       "id": "3147",
       "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
-      "entity_id": "eap_2_eapdev_temperatur_fluessigkeitsleitung",
+      "entity_id": "eap_2_liquid_line_temperature",
       "name": {
         "de": "Temp. Flüssigkeitsleitung"
       },
@@ -3138,7 +3138,7 @@
       "unit_value_table": "1/10°C",
       "id": "3147",
       "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
-      "entity_id": "eap_3_eapdev_temperatur_fluessigkeitsleitung",
+      "entity_id": "eap_3_liquid_line_temperature",
       "name": {
         "de": "Temp. Flüssigkeitsleitung"
       },
@@ -3157,7 +3157,7 @@
       "unit_value_table": "1/10°C",
       "id": "3147",
       "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
-      "entity_id": "eap_4_eapdev_temperatur_fluessigkeitsleitung",
+      "entity_id": "eap_4_liquid_line_temperature",
       "name": {
         "de": "Temp. Flüssigkeitsleitung"
       },
@@ -3176,7 +3176,7 @@
       "unit_value_table": "1/10°C",
       "id": "3147",
       "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
-      "entity_id": "eap_5_eapdev_temperatur_fluessigkeitsleitung",
+      "entity_id": "eap_5_liquid_line_temperature",
       "name": {
         "de": "Temp. Flüssigkeitsleitung"
       },
@@ -3195,7 +3195,7 @@
       "unit_value_table": "1/10°C",
       "id": "3147",
       "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
-      "entity_id": "eap_6_eapdev_temperatur_fluessigkeitsleitung",
+      "entity_id": "eap_6_liquid_line_temperature",
       "name": {
         "de": "Temp. Flüssigkeitsleitung"
       },
@@ -3214,7 +3214,7 @@
       "unit_value_table": "1/10°C",
       "id": "3147",
       "parameter": "EAPDEV.temperatur_fluessigkeitsleitung",
-      "entity_id": "eap_7_eapdev_temperatur_fluessigkeitsleitung",
+      "entity_id": "eap_7_liquid_line_temperature",
       "name": {
         "de": "Temp. Flüssigkeitsleitung"
       },
@@ -3271,7 +3271,7 @@
       "unit_value_table": "1/10%",
       "id": "3154",
       "parameter": "EAPDEV.position_erstes_expansionsventil",
-      "entity_id": "eap_2_eapdev_position_erstes_expansionsventil",
+      "entity_id": "eap_2_first_expansion_valve_position",
       "name": {
         "de": "Position 1. EX-Ventil"
       },
@@ -3290,7 +3290,7 @@
       "unit_value_table": "1/10%",
       "id": "3154",
       "parameter": "EAPDEV.position_erstes_expansionsventil",
-      "entity_id": "eap_3_eapdev_position_erstes_expansionsventil",
+      "entity_id": "eap_3_first_expansion_valve_position",
       "name": {
         "de": "Position 1. EX-Ventil"
       },
@@ -3309,7 +3309,7 @@
       "unit_value_table": "1/10%",
       "id": "3154",
       "parameter": "EAPDEV.position_erstes_expansionsventil",
-      "entity_id": "eap_4_eapdev_position_erstes_expansionsventil",
+      "entity_id": "eap_4_first_expansion_valve_position",
       "name": {
         "de": "Position 1. EX-Ventil"
       },
@@ -3328,7 +3328,7 @@
       "unit_value_table": "1/10%",
       "id": "3154",
       "parameter": "EAPDEV.position_erstes_expansionsventil",
-      "entity_id": "eap_5_eapdev_position_erstes_expansionsventil",
+      "entity_id": "eap_5_first_expansion_valve_position",
       "name": {
         "de": "Position 1. EX-Ventil"
       },
@@ -3347,7 +3347,7 @@
       "unit_value_table": "1/10%",
       "id": "3154",
       "parameter": "EAPDEV.position_erstes_expansionsventil",
-      "entity_id": "eap_6_eapdev_position_erstes_expansionsventil",
+      "entity_id": "eap_6_first_expansion_valve_position",
       "name": {
         "de": "Position 1. EX-Ventil"
       },
@@ -3366,7 +3366,7 @@
       "unit_value_table": "1/10%",
       "id": "3154",
       "parameter": "EAPDEV.position_erstes_expansionsventil",
-      "entity_id": "eap_7_eapdev_position_erstes_expansionsventil",
+      "entity_id": "eap_7_first_expansion_valve_position",
       "name": {
         "de": "Position 1. EX-Ventil"
       },
@@ -3423,7 +3423,7 @@
       "unit_value_table": "1/10%",
       "id": "3155",
       "parameter": "EAPDEV.position_zweites_expansionsventi",
-      "entity_id": "eap_2_eapdev_position_zweites_expansionsventi",
+      "entity_id": "eap_2_second_expansion_valve_position",
       "name": {
         "de": "Position 2. EX-Ventil"
       },
@@ -3442,7 +3442,7 @@
       "unit_value_table": "1/10%",
       "id": "3155",
       "parameter": "EAPDEV.position_zweites_expansionsventi",
-      "entity_id": "eap_3_eapdev_position_zweites_expansionsventi",
+      "entity_id": "eap_3_second_expansion_valve_position",
       "name": {
         "de": "Position 2. EX-Ventil"
       },
@@ -3461,7 +3461,7 @@
       "unit_value_table": "1/10%",
       "id": "3155",
       "parameter": "EAPDEV.position_zweites_expansionsventi",
-      "entity_id": "eap_4_eapdev_position_zweites_expansionsventi",
+      "entity_id": "eap_4_second_expansion_valve_position",
       "name": {
         "de": "Position 2. EX-Ventil"
       },
@@ -3480,7 +3480,7 @@
       "unit_value_table": "1/10%",
       "id": "3155",
       "parameter": "EAPDEV.position_zweites_expansionsventi",
-      "entity_id": "eap_5_eapdev_position_zweites_expansionsventi",
+      "entity_id": "eap_5_second_expansion_valve_position",
       "name": {
         "de": "Position 2. EX-Ventil"
       },
@@ -3499,7 +3499,7 @@
       "unit_value_table": "1/10%",
       "id": "3155",
       "parameter": "EAPDEV.position_zweites_expansionsventi",
-      "entity_id": "eap_6_eapdev_position_zweites_expansionsventi",
+      "entity_id": "eap_6_second_expansion_valve_position",
       "name": {
         "de": "Position 2. EX-Ventil"
       },
@@ -3518,7 +3518,7 @@
       "unit_value_table": "1/10%",
       "id": "3155",
       "parameter": "EAPDEV.position_zweites_expansionsventi",
-      "entity_id": "eap_7_eapdev_position_zweites_expansionsventi",
+      "entity_id": "eap_7_second_expansion_valve_position",
       "name": {
         "de": "Position 2. EX-Ventil"
       },
@@ -3727,7 +3727,7 @@
       "unit_value_table": "1/10",
       "id": "3186",
       "parameter": "EAPDEV.cop",
-      "entity_id": "eap_2_eapdev_cop",
+      "entity_id": "eap_2_cop",
       "name": {
         "de": "COP"
       },
@@ -3746,7 +3746,7 @@
       "unit_value_table": "1/10",
       "id": "3186",
       "parameter": "EAPDEV.cop",
-      "entity_id": "eap_3_eapdev_cop",
+      "entity_id": "eap_3_cop",
       "name": {
         "de": "COP"
       },
@@ -3765,7 +3765,7 @@
       "unit_value_table": "1/10",
       "id": "3186",
       "parameter": "EAPDEV.cop",
-      "entity_id": "eap_4_eapdev_cop",
+      "entity_id": "eap_4_cop",
       "name": {
         "de": "COP"
       },
@@ -3784,7 +3784,7 @@
       "unit_value_table": "1/10",
       "id": "3186",
       "parameter": "EAPDEV.cop",
-      "entity_id": "eap_5_eapdev_cop",
+      "entity_id": "eap_5_cop",
       "name": {
         "de": "COP"
       },
@@ -3803,7 +3803,7 @@
       "unit_value_table": "1/10",
       "id": "3186",
       "parameter": "EAPDEV.cop",
-      "entity_id": "eap_6_eapdev_cop",
+      "entity_id": "eap_6_cop",
       "name": {
         "de": "COP"
       },
@@ -3822,7 +3822,7 @@
       "unit_value_table": "1/10",
       "id": "3186",
       "parameter": "EAPDEV.cop",
-      "entity_id": "eap_7_eapdev_cop",
+      "entity_id": "eap_7_cop",
       "name": {
         "de": "COP"
       },
@@ -3879,7 +3879,7 @@
       "unit_value_table": "eap_erweiterter_betriebsstatus_t",
       "id": "3133",
       "parameter": "EAPDEV.erweiterter_betriebsstatus",
-      "entity_id": "eap_2_eapdev_erweiterter_betriebsstatus",
+      "entity_id": "eap_2_extended_operating_status",
       "name": {
         "de": "Erw. Betriebsstatus"
       },
@@ -3898,7 +3898,7 @@
       "unit_value_table": "eap_erweiterter_betriebsstatus_t",
       "id": "3133",
       "parameter": "EAPDEV.erweiterter_betriebsstatus",
-      "entity_id": "eap_3_eapdev_erweiterter_betriebsstatus",
+      "entity_id": "eap_3_extended_operating_status",
       "name": {
         "de": "Erw. Betriebsstatus"
       },
@@ -3917,7 +3917,7 @@
       "unit_value_table": "eap_erweiterter_betriebsstatus_t",
       "id": "3133",
       "parameter": "EAPDEV.erweiterter_betriebsstatus",
-      "entity_id": "eap_4_eapdev_erweiterter_betriebsstatus",
+      "entity_id": "eap_4_extended_operating_status",
       "name": {
         "de": "Erw. Betriebsstatus"
       },
@@ -3936,7 +3936,7 @@
       "unit_value_table": "eap_erweiterter_betriebsstatus_t",
       "id": "3133",
       "parameter": "EAPDEV.erweiterter_betriebsstatus",
-      "entity_id": "eap_5_eapdev_erweiterter_betriebsstatus",
+      "entity_id": "eap_5_extended_operating_status",
       "name": {
         "de": "Erw. Betriebsstatus"
       },
@@ -3955,7 +3955,7 @@
       "unit_value_table": "eap_erweiterter_betriebsstatus_t",
       "id": "3133",
       "parameter": "EAPDEV.erweiterter_betriebsstatus",
-      "entity_id": "eap_6_eapdev_erweiterter_betriebsstatus",
+      "entity_id": "eap_6_extended_operating_status",
       "name": {
         "de": "Erw. Betriebsstatus"
       },
@@ -3974,7 +3974,7 @@
       "unit_value_table": "eap_erweiterter_betriebsstatus_t",
       "id": "3133",
       "parameter": "EAPDEV.erweiterter_betriebsstatus",
-      "entity_id": "eap_7_eapdev_erweiterter_betriebsstatus",
+      "entity_id": "eap_7_extended_operating_status",
       "name": {
         "de": "Erw. Betriebsstatus"
       },
@@ -4199,7 +4199,7 @@
       "unit_value_table": "eap_anforderung_ursache_t",
       "id": "3310",
       "parameter": "EAPDEV.anforderung_ursache",
-      "entity_id": "eap_2_eapdev_anforderung_ursache",
+      "entity_id": "eap_2_demand_cause",
       "name": {
         "de": "Anforderung durch"
       },
@@ -4218,7 +4218,7 @@
       "unit_value_table": "eap_anforderung_ursache_t",
       "id": "3310",
       "parameter": "EAPDEV.anforderung_ursache",
-      "entity_id": "eap_3_eapdev_anforderung_ursache",
+      "entity_id": "eap_3_demand_cause",
       "name": {
         "de": "Anforderung durch"
       },
@@ -4237,7 +4237,7 @@
       "unit_value_table": "eap_anforderung_ursache_t",
       "id": "3310",
       "parameter": "EAPDEV.anforderung_ursache",
-      "entity_id": "eap_4_eapdev_anforderung_ursache",
+      "entity_id": "eap_4_demand_cause",
       "name": {
         "de": "Anforderung durch"
       },
@@ -4256,7 +4256,7 @@
       "unit_value_table": "eap_anforderung_ursache_t",
       "id": "3310",
       "parameter": "EAPDEV.anforderung_ursache",
-      "entity_id": "eap_5_eapdev_anforderung_ursache",
+      "entity_id": "eap_5_demand_cause",
       "name": {
         "de": "Anforderung durch"
       },
@@ -4275,7 +4275,7 @@
       "unit_value_table": "eap_anforderung_ursache_t",
       "id": "3310",
       "parameter": "EAPDEV.anforderung_ursache",
-      "entity_id": "eap_6_eapdev_anforderung_ursache",
+      "entity_id": "eap_6_demand_cause",
       "name": {
         "de": "Anforderung durch"
       },
@@ -4294,7 +4294,7 @@
       "unit_value_table": "eap_anforderung_ursache_t",
       "id": "3310",
       "parameter": "EAPDEV.anforderung_ursache",
-      "entity_id": "eap_7_eapdev_anforderung_ursache",
+      "entity_id": "eap_7_demand_cause",
       "name": {
         "de": "Anforderung durch"
       },
@@ -4351,7 +4351,7 @@
       "unit_value_table": "eap_zustand_t",
       "id": "3311",
       "parameter": "EAPDEV.zustand_waermepumpe",
-      "entity_id": "eap_2_eapdev_zustand_waermepumpe",
+      "entity_id": "eap_2_heat_pump_state",
       "name": {
         "de": "Zustand Wärmepumpe"
       },
@@ -4370,7 +4370,7 @@
       "unit_value_table": "eap_zustand_t",
       "id": "3311",
       "parameter": "EAPDEV.zustand_waermepumpe",
-      "entity_id": "eap_3_eapdev_zustand_waermepumpe",
+      "entity_id": "eap_3_heat_pump_state",
       "name": {
         "de": "Zustand Wärmepumpe"
       },
@@ -4389,7 +4389,7 @@
       "unit_value_table": "eap_zustand_t",
       "id": "3311",
       "parameter": "EAPDEV.zustand_waermepumpe",
-      "entity_id": "eap_4_eapdev_zustand_waermepumpe",
+      "entity_id": "eap_4_heat_pump_state",
       "name": {
         "de": "Zustand Wärmepumpe"
       },
@@ -4408,7 +4408,7 @@
       "unit_value_table": "eap_zustand_t",
       "id": "3311",
       "parameter": "EAPDEV.zustand_waermepumpe",
-      "entity_id": "eap_5_eapdev_zustand_waermepumpe",
+      "entity_id": "eap_5_heat_pump_state",
       "name": {
         "de": "Zustand Wärmepumpe"
       },
@@ -4427,7 +4427,7 @@
       "unit_value_table": "eap_zustand_t",
       "id": "3311",
       "parameter": "EAPDEV.zustand_waermepumpe",
-      "entity_id": "eap_6_eapdev_zustand_waermepumpe",
+      "entity_id": "eap_6_heat_pump_state",
       "name": {
         "de": "Zustand Wärmepumpe"
       },
@@ -4446,7 +4446,7 @@
       "unit_value_table": "eap_zustand_t",
       "id": "3311",
       "parameter": "EAPDEV.zustand_waermepumpe",
-      "entity_id": "eap_7_eapdev_zustand_waermepumpe",
+      "entity_id": "eap_7_heat_pump_state",
       "name": {
         "de": "Zustand Wärmepumpe"
       },
@@ -4480,7 +4480,7 @@
       "unit_value_table": "system_ein_aus_t",
       "id": "3436",
       "parameter": "EAP.kuehlfunktion",
-      "entity_id": "eap_kuehlfunktion",
+      "entity_id": "eap_cooling_function",
       "name": {
         "de": "Kühlfunktion"
       }
@@ -4494,7 +4494,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3471",
       "parameter": "EAP.eigener_kuehlpuffer",
-      "entity_id": "eap_eigener_kuehlpuffer",
+      "entity_id": "eap_dedicated_cooling_buffer",
       "name": {
         "de": "Eigener Kühlpuffer"
       }
@@ -4726,7 +4726,7 @@
       "unit_value_table": "1/10°C",
       "id": "3117",
       "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
-      "entity_id": "eap_2_eapdev_sollwert_heizkreisbetrieb",
+      "entity_id": "eap_2_heating_setpoint",
       "name": {
         "de": "Sollwert für Heizen"
       },
@@ -4745,7 +4745,7 @@
       "unit_value_table": "1/10°C",
       "id": "3117",
       "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
-      "entity_id": "eap_3_eapdev_sollwert_heizkreisbetrieb",
+      "entity_id": "eap_3_heating_setpoint",
       "name": {
         "de": "Sollwert für Heizen"
       },
@@ -4764,7 +4764,7 @@
       "unit_value_table": "1/10°C",
       "id": "3117",
       "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
-      "entity_id": "eap_4_eapdev_sollwert_heizkreisbetrieb",
+      "entity_id": "eap_4_heating_setpoint",
       "name": {
         "de": "Sollwert für Heizen"
       },
@@ -4783,7 +4783,7 @@
       "unit_value_table": "1/10°C",
       "id": "3117",
       "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
-      "entity_id": "eap_5_eapdev_sollwert_heizkreisbetrieb",
+      "entity_id": "eap_5_heating_setpoint",
       "name": {
         "de": "Sollwert für Heizen"
       },
@@ -4802,7 +4802,7 @@
       "unit_value_table": "1/10°C",
       "id": "3117",
       "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
-      "entity_id": "eap_6_eapdev_sollwert_heizkreisbetrieb",
+      "entity_id": "eap_6_heating_setpoint",
       "name": {
         "de": "Sollwert für Heizen"
       },
@@ -4821,7 +4821,7 @@
       "unit_value_table": "1/10°C",
       "id": "3117",
       "parameter": "EAPDEV.sollwert_heizkreisbetrieb",
-      "entity_id": "eap_7_eapdev_sollwert_heizkreisbetrieb",
+      "entity_id": "eap_7_heating_setpoint",
       "name": {
         "de": "Sollwert für Heizen"
       },
@@ -4878,7 +4878,7 @@
       "unit_value_table": "1/10°C",
       "id": "3118",
       "parameter": "EAPDEV.sollwert_speicherbetrieb",
-      "entity_id": "eap_2_eapdev_sollwert_speicherbetrieb",
+      "entity_id": "eap_2_hot_water_setpoint",
       "name": {
         "de": "Sollwert für Warmwasser"
       },
@@ -4897,7 +4897,7 @@
       "unit_value_table": "1/10°C",
       "id": "3118",
       "parameter": "EAPDEV.sollwert_speicherbetrieb",
-      "entity_id": "eap_3_eapdev_sollwert_speicherbetrieb",
+      "entity_id": "eap_3_hot_water_setpoint",
       "name": {
         "de": "Sollwert für Warmwasser"
       },
@@ -4916,7 +4916,7 @@
       "unit_value_table": "1/10°C",
       "id": "3118",
       "parameter": "EAPDEV.sollwert_speicherbetrieb",
-      "entity_id": "eap_4_eapdev_sollwert_speicherbetrieb",
+      "entity_id": "eap_4_hot_water_setpoint",
       "name": {
         "de": "Sollwert für Warmwasser"
       },
@@ -4935,7 +4935,7 @@
       "unit_value_table": "1/10°C",
       "id": "3118",
       "parameter": "EAPDEV.sollwert_speicherbetrieb",
-      "entity_id": "eap_5_eapdev_sollwert_speicherbetrieb",
+      "entity_id": "eap_5_hot_water_setpoint",
       "name": {
         "de": "Sollwert für Warmwasser"
       },
@@ -4954,7 +4954,7 @@
       "unit_value_table": "1/10°C",
       "id": "3118",
       "parameter": "EAPDEV.sollwert_speicherbetrieb",
-      "entity_id": "eap_6_eapdev_sollwert_speicherbetrieb",
+      "entity_id": "eap_6_hot_water_setpoint",
       "name": {
         "de": "Sollwert für Warmwasser"
       },
@@ -4973,7 +4973,7 @@
       "unit_value_table": "1/10°C",
       "id": "3118",
       "parameter": "EAPDEV.sollwert_speicherbetrieb",
-      "entity_id": "eap_7_eapdev_sollwert_speicherbetrieb",
+      "entity_id": "eap_7_hot_water_setpoint",
       "name": {
         "de": "Sollwert für Warmwasser"
       },
@@ -5030,7 +5030,7 @@
       "unit_value_table": "1/10°C",
       "id": "3119",
       "parameter": "EAPDEV.sollwert_kuehlbetrieb",
-      "entity_id": "eap_2_eapdev_sollwert_kuehlbetrieb",
+      "entity_id": "eap_2_cooling_setpoint",
       "name": {
         "de": "Sollwert für Kühlen"
       },
@@ -5049,7 +5049,7 @@
       "unit_value_table": "1/10°C",
       "id": "3119",
       "parameter": "EAPDEV.sollwert_kuehlbetrieb",
-      "entity_id": "eap_3_eapdev_sollwert_kuehlbetrieb",
+      "entity_id": "eap_3_cooling_setpoint",
       "name": {
         "de": "Sollwert für Kühlen"
       },
@@ -5068,7 +5068,7 @@
       "unit_value_table": "1/10°C",
       "id": "3119",
       "parameter": "EAPDEV.sollwert_kuehlbetrieb",
-      "entity_id": "eap_4_eapdev_sollwert_kuehlbetrieb",
+      "entity_id": "eap_4_cooling_setpoint",
       "name": {
         "de": "Sollwert für Kühlen"
       },
@@ -5087,7 +5087,7 @@
       "unit_value_table": "1/10°C",
       "id": "3119",
       "parameter": "EAPDEV.sollwert_kuehlbetrieb",
-      "entity_id": "eap_5_eapdev_sollwert_kuehlbetrieb",
+      "entity_id": "eap_5_cooling_setpoint",
       "name": {
         "de": "Sollwert für Kühlen"
       },
@@ -5106,7 +5106,7 @@
       "unit_value_table": "1/10°C",
       "id": "3119",
       "parameter": "EAPDEV.sollwert_kuehlbetrieb",
-      "entity_id": "eap_6_eapdev_sollwert_kuehlbetrieb",
+      "entity_id": "eap_6_cooling_setpoint",
       "name": {
         "de": "Sollwert für Kühlen"
       },
@@ -5125,7 +5125,7 @@
       "unit_value_table": "1/10°C",
       "id": "3119",
       "parameter": "EAPDEV.sollwert_kuehlbetrieb",
-      "entity_id": "eap_7_eapdev_sollwert_kuehlbetrieb",
+      "entity_id": "eap_7_cooling_setpoint",
       "name": {
         "de": "Sollwert für Kühlen"
       },
@@ -5182,7 +5182,7 @@
       "unit_value_table": "1/10%",
       "id": "3090",
       "parameter": "EAPDEV.leistungsbegrenzung",
-      "entity_id": "eap_2_eapdev_leistungsbegrenzung",
+      "entity_id": "eap_2_power_limit",
       "name": {
         "de": "Leistungsbegrenzung"
       },
@@ -5201,7 +5201,7 @@
       "unit_value_table": "1/10%",
       "id": "3090",
       "parameter": "EAPDEV.leistungsbegrenzung",
-      "entity_id": "eap_3_eapdev_leistungsbegrenzung",
+      "entity_id": "eap_3_power_limit",
       "name": {
         "de": "Leistungsbegrenzung"
       },
@@ -5220,7 +5220,7 @@
       "unit_value_table": "1/10%",
       "id": "3090",
       "parameter": "EAPDEV.leistungsbegrenzung",
-      "entity_id": "eap_4_eapdev_leistungsbegrenzung",
+      "entity_id": "eap_4_power_limit",
       "name": {
         "de": "Leistungsbegrenzung"
       },
@@ -5239,7 +5239,7 @@
       "unit_value_table": "1/10%",
       "id": "3090",
       "parameter": "EAPDEV.leistungsbegrenzung",
-      "entity_id": "eap_5_eapdev_leistungsbegrenzung",
+      "entity_id": "eap_5_power_limit",
       "name": {
         "de": "Leistungsbegrenzung"
       },
@@ -5258,7 +5258,7 @@
       "unit_value_table": "1/10%",
       "id": "3090",
       "parameter": "EAPDEV.leistungsbegrenzung",
-      "entity_id": "eap_6_eapdev_leistungsbegrenzung",
+      "entity_id": "eap_6_power_limit",
       "name": {
         "de": "Leistungsbegrenzung"
       },
@@ -5277,7 +5277,7 @@
       "unit_value_table": "1/10%",
       "id": "3090",
       "parameter": "EAPDEV.leistungsbegrenzung",
-      "entity_id": "eap_7_eapdev_leistungsbegrenzung",
+      "entity_id": "eap_7_power_limit",
       "name": {
         "de": "Leistungsbegrenzung"
       },
@@ -5340,7 +5340,7 @@
       "max": 1100,
       "id": "3087",
       "parameter": "EAPDEV.modbus_vorlauf_soll",
-      "entity_id": "eap_2_eapdev_modbus_vorlauf_soll",
+      "entity_id": "eap_2_modbus_forward_flow_temperature_setpoint",
       "name": {
         "de": "Modbus VL-Temp. Soll"
       },
@@ -5361,7 +5361,7 @@
       "max": 1100,
       "id": "3087",
       "parameter": "EAPDEV.modbus_vorlauf_soll",
-      "entity_id": "eap_3_eapdev_modbus_vorlauf_soll",
+      "entity_id": "eap_3_modbus_forward_flow_temperature_setpoint",
       "name": {
         "de": "Modbus VL-Temp. Soll"
       },
@@ -5382,7 +5382,7 @@
       "max": 1100,
       "id": "3087",
       "parameter": "EAPDEV.modbus_vorlauf_soll",
-      "entity_id": "eap_4_eapdev_modbus_vorlauf_soll",
+      "entity_id": "eap_4_modbus_forward_flow_temperature_setpoint",
       "name": {
         "de": "Modbus VL-Temp. Soll"
       },
@@ -5403,7 +5403,7 @@
       "max": 1100,
       "id": "3087",
       "parameter": "EAPDEV.modbus_vorlauf_soll",
-      "entity_id": "eap_5_eapdev_modbus_vorlauf_soll",
+      "entity_id": "eap_5_modbus_forward_flow_temperature_setpoint",
       "name": {
         "de": "Modbus VL-Temp. Soll"
       },
@@ -5424,7 +5424,7 @@
       "max": 1100,
       "id": "3087",
       "parameter": "EAPDEV.modbus_vorlauf_soll",
-      "entity_id": "eap_6_eapdev_modbus_vorlauf_soll",
+      "entity_id": "eap_6_modbus_forward_flow_temperature_setpoint",
       "name": {
         "de": "Modbus VL-Temp. Soll"
       },
@@ -5445,7 +5445,7 @@
       "max": 1100,
       "id": "3087",
       "parameter": "EAPDEV.modbus_vorlauf_soll",
-      "entity_id": "eap_7_eapdev_modbus_vorlauf_soll",
+      "entity_id": "eap_7_modbus_forward_flow_temperature_setpoint",
       "name": {
         "de": "Modbus VL-Temp. Soll"
       },
@@ -5508,7 +5508,7 @@
       "max": 1000,
       "id": "3088",
       "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
-      "entity_id": "eap_2_eapdev_modbus_max_verdichterdrehz_soll",
+      "entity_id": "eap_2_modbus_maximum_compressor_speed_setpoint",
       "name": {
         "de": "Mobus Max. Verdichter Soll"
       },
@@ -5529,7 +5529,7 @@
       "max": 1000,
       "id": "3088",
       "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
-      "entity_id": "eap_3_eapdev_modbus_max_verdichterdrehz_soll",
+      "entity_id": "eap_3_modbus_maximum_compressor_speed_setpoint",
       "name": {
         "de": "Mobus Max. Verdichter Soll"
       },
@@ -5550,7 +5550,7 @@
       "max": 1000,
       "id": "3088",
       "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
-      "entity_id": "eap_4_eapdev_modbus_max_verdichterdrehz_soll",
+      "entity_id": "eap_4_modbus_maximum_compressor_speed_setpoint",
       "name": {
         "de": "Mobus Max. Verdichter Soll"
       },
@@ -5571,7 +5571,7 @@
       "max": 1000,
       "id": "3088",
       "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
-      "entity_id": "eap_5_eapdev_modbus_max_verdichterdrehz_soll",
+      "entity_id": "eap_5_modbus_maximum_compressor_speed_setpoint",
       "name": {
         "de": "Mobus Max. Verdichter Soll"
       },
@@ -5592,7 +5592,7 @@
       "max": 1000,
       "id": "3088",
       "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
-      "entity_id": "eap_6_eapdev_modbus_max_verdichterdrehz_soll",
+      "entity_id": "eap_6_modbus_maximum_compressor_speed_setpoint",
       "name": {
         "de": "Mobus Max. Verdichter Soll"
       },
@@ -5613,7 +5613,7 @@
       "max": 1000,
       "id": "3088",
       "parameter": "EAPDEV.modbus_max_verdichterdrehz_soll",
-      "entity_id": "eap_7_eapdev_modbus_max_verdichterdrehz_soll",
+      "entity_id": "eap_7_modbus_maximum_compressor_speed_setpoint",
       "name": {
         "de": "Mobus Max. Verdichter Soll"
       },
@@ -5670,7 +5670,7 @@
       "unit_value_table": "1/10%",
       "id": "3274",
       "parameter": "EAPDEV.max_leistung_heizen",
-      "entity_id": "eap_2_eapdev_max_leistung_heizen",
+      "entity_id": "eap_2_maximum_heating_power",
       "name": {
         "de": "Max. Leistung Heizen"
       },
@@ -5689,7 +5689,7 @@
       "unit_value_table": "1/10%",
       "id": "3274",
       "parameter": "EAPDEV.max_leistung_heizen",
-      "entity_id": "eap_3_eapdev_max_leistung_heizen",
+      "entity_id": "eap_3_maximum_heating_power",
       "name": {
         "de": "Max. Leistung Heizen"
       },
@@ -5708,7 +5708,7 @@
       "unit_value_table": "1/10%",
       "id": "3274",
       "parameter": "EAPDEV.max_leistung_heizen",
-      "entity_id": "eap_4_eapdev_max_leistung_heizen",
+      "entity_id": "eap_4_maximum_heating_power",
       "name": {
         "de": "Max. Leistung Heizen"
       },
@@ -5727,7 +5727,7 @@
       "unit_value_table": "1/10%",
       "id": "3274",
       "parameter": "EAPDEV.max_leistung_heizen",
-      "entity_id": "eap_5_eapdev_max_leistung_heizen",
+      "entity_id": "eap_5_maximum_heating_power",
       "name": {
         "de": "Max. Leistung Heizen"
       },
@@ -5746,7 +5746,7 @@
       "unit_value_table": "1/10%",
       "id": "3274",
       "parameter": "EAPDEV.max_leistung_heizen",
-      "entity_id": "eap_6_eapdev_max_leistung_heizen",
+      "entity_id": "eap_6_maximum_heating_power",
       "name": {
         "de": "Max. Leistung Heizen"
       },
@@ -5765,7 +5765,7 @@
       "unit_value_table": "1/10%",
       "id": "3274",
       "parameter": "EAPDEV.max_leistung_heizen",
-      "entity_id": "eap_7_eapdev_max_leistung_heizen",
+      "entity_id": "eap_7_maximum_heating_power",
       "name": {
         "de": "Max. Leistung Heizen"
       },
@@ -5822,7 +5822,7 @@
       "unit_value_table": "1/10%",
       "id": "3275",
       "parameter": "EAPDEV.min_leistung_heizen",
-      "entity_id": "eap_2_eapdev_min_leistung_heizen",
+      "entity_id": "eap_2_minimum_heating_power",
       "name": {
         "de": "Min. Leistung Heizen"
       },
@@ -5841,7 +5841,7 @@
       "unit_value_table": "1/10%",
       "id": "3275",
       "parameter": "EAPDEV.min_leistung_heizen",
-      "entity_id": "eap_3_eapdev_min_leistung_heizen",
+      "entity_id": "eap_3_minimum_heating_power",
       "name": {
         "de": "Min. Leistung Heizen"
       },
@@ -5860,7 +5860,7 @@
       "unit_value_table": "1/10%",
       "id": "3275",
       "parameter": "EAPDEV.min_leistung_heizen",
-      "entity_id": "eap_4_eapdev_min_leistung_heizen",
+      "entity_id": "eap_4_minimum_heating_power",
       "name": {
         "de": "Min. Leistung Heizen"
       },
@@ -5879,7 +5879,7 @@
       "unit_value_table": "1/10%",
       "id": "3275",
       "parameter": "EAPDEV.min_leistung_heizen",
-      "entity_id": "eap_5_eapdev_min_leistung_heizen",
+      "entity_id": "eap_5_minimum_heating_power",
       "name": {
         "de": "Min. Leistung Heizen"
       },
@@ -5898,7 +5898,7 @@
       "unit_value_table": "1/10%",
       "id": "3275",
       "parameter": "EAPDEV.min_leistung_heizen",
-      "entity_id": "eap_6_eapdev_min_leistung_heizen",
+      "entity_id": "eap_6_minimum_heating_power",
       "name": {
         "de": "Min. Leistung Heizen"
       },
@@ -5917,7 +5917,7 @@
       "unit_value_table": "1/10%",
       "id": "3275",
       "parameter": "EAPDEV.min_leistung_heizen",
-      "entity_id": "eap_7_eapdev_min_leistung_heizen",
+      "entity_id": "eap_7_minimum_heating_power",
       "name": {
         "de": "Min. Leistung Heizen"
       },
@@ -5974,7 +5974,7 @@
       "unit_value_table": "1/10%",
       "id": "3280",
       "parameter": "EAPDEV.max_leistung_warmwasser",
-      "entity_id": "eap_2_eapdev_max_leistung_warmwasser",
+      "entity_id": "eap_2_maximum_hot_water_power",
       "name": {
         "de": "Max. Leistung Warmwasser"
       },
@@ -5993,7 +5993,7 @@
       "unit_value_table": "1/10%",
       "id": "3280",
       "parameter": "EAPDEV.max_leistung_warmwasser",
-      "entity_id": "eap_3_eapdev_max_leistung_warmwasser",
+      "entity_id": "eap_3_maximum_hot_water_power",
       "name": {
         "de": "Max. Leistung Warmwasser"
       },
@@ -6012,7 +6012,7 @@
       "unit_value_table": "1/10%",
       "id": "3280",
       "parameter": "EAPDEV.max_leistung_warmwasser",
-      "entity_id": "eap_4_eapdev_max_leistung_warmwasser",
+      "entity_id": "eap_4_maximum_hot_water_power",
       "name": {
         "de": "Max. Leistung Warmwasser"
       },
@@ -6031,7 +6031,7 @@
       "unit_value_table": "1/10%",
       "id": "3280",
       "parameter": "EAPDEV.max_leistung_warmwasser",
-      "entity_id": "eap_5_eapdev_max_leistung_warmwasser",
+      "entity_id": "eap_5_maximum_hot_water_power",
       "name": {
         "de": "Max. Leistung Warmwasser"
       },
@@ -6050,7 +6050,7 @@
       "unit_value_table": "1/10%",
       "id": "3280",
       "parameter": "EAPDEV.max_leistung_warmwasser",
-      "entity_id": "eap_6_eapdev_max_leistung_warmwasser",
+      "entity_id": "eap_6_maximum_hot_water_power",
       "name": {
         "de": "Max. Leistung Warmwasser"
       },
@@ -6069,7 +6069,7 @@
       "unit_value_table": "1/10%",
       "id": "3280",
       "parameter": "EAPDEV.max_leistung_warmwasser",
-      "entity_id": "eap_7_eapdev_max_leistung_warmwasser",
+      "entity_id": "eap_7_maximum_hot_water_power",
       "name": {
         "de": "Max. Leistung Warmwasser"
       },
@@ -6126,7 +6126,7 @@
       "unit_value_table": "1/10%",
       "id": "3281",
       "parameter": "EAPDEV.min_leistung_warmwasser",
-      "entity_id": "eap_2_eapdev_min_leistung_warmwasser",
+      "entity_id": "eap_2_minimum_hot_water_power",
       "name": {
         "de": "Min. Leistung Warmwasser"
       },
@@ -6145,7 +6145,7 @@
       "unit_value_table": "1/10%",
       "id": "3281",
       "parameter": "EAPDEV.min_leistung_warmwasser",
-      "entity_id": "eap_3_eapdev_min_leistung_warmwasser",
+      "entity_id": "eap_3_minimum_hot_water_power",
       "name": {
         "de": "Min. Leistung Warmwasser"
       },
@@ -6164,7 +6164,7 @@
       "unit_value_table": "1/10%",
       "id": "3281",
       "parameter": "EAPDEV.min_leistung_warmwasser",
-      "entity_id": "eap_4_eapdev_min_leistung_warmwasser",
+      "entity_id": "eap_4_minimum_hot_water_power",
       "name": {
         "de": "Min. Leistung Warmwasser"
       },
@@ -6183,7 +6183,7 @@
       "unit_value_table": "1/10%",
       "id": "3281",
       "parameter": "EAPDEV.min_leistung_warmwasser",
-      "entity_id": "eap_5_eapdev_min_leistung_warmwasser",
+      "entity_id": "eap_5_minimum_hot_water_power",
       "name": {
         "de": "Min. Leistung Warmwasser"
       },
@@ -6202,7 +6202,7 @@
       "unit_value_table": "1/10%",
       "id": "3281",
       "parameter": "EAPDEV.min_leistung_warmwasser",
-      "entity_id": "eap_6_eapdev_min_leistung_warmwasser",
+      "entity_id": "eap_6_minimum_hot_water_power",
       "name": {
         "de": "Min. Leistung Warmwasser"
       },
@@ -6221,7 +6221,7 @@
       "unit_value_table": "1/10%",
       "id": "3281",
       "parameter": "EAPDEV.min_leistung_warmwasser",
-      "entity_id": "eap_7_eapdev_min_leistung_warmwasser",
+      "entity_id": "eap_7_minimum_hot_water_power",
       "name": {
         "de": "Min. Leistung Warmwasser"
       },
@@ -6278,7 +6278,7 @@
       "unit_value_table": "1/10%",
       "id": "3276",
       "parameter": "EAPDEV.max_leistung_kuehlen",
-      "entity_id": "eap_2_eapdev_max_leistung_kuehlen",
+      "entity_id": "eap_2_maximum_cooling_power",
       "name": {
         "de": "Max. Leistung Kühlen"
       },
@@ -6297,7 +6297,7 @@
       "unit_value_table": "1/10%",
       "id": "3276",
       "parameter": "EAPDEV.max_leistung_kuehlen",
-      "entity_id": "eap_3_eapdev_max_leistung_kuehlen",
+      "entity_id": "eap_3_maximum_cooling_power",
       "name": {
         "de": "Max. Leistung Kühlen"
       },
@@ -6316,7 +6316,7 @@
       "unit_value_table": "1/10%",
       "id": "3276",
       "parameter": "EAPDEV.max_leistung_kuehlen",
-      "entity_id": "eap_4_eapdev_max_leistung_kuehlen",
+      "entity_id": "eap_4_maximum_cooling_power",
       "name": {
         "de": "Max. Leistung Kühlen"
       },
@@ -6335,7 +6335,7 @@
       "unit_value_table": "1/10%",
       "id": "3276",
       "parameter": "EAPDEV.max_leistung_kuehlen",
-      "entity_id": "eap_5_eapdev_max_leistung_kuehlen",
+      "entity_id": "eap_5_maximum_cooling_power",
       "name": {
         "de": "Max. Leistung Kühlen"
       },
@@ -6354,7 +6354,7 @@
       "unit_value_table": "1/10%",
       "id": "3276",
       "parameter": "EAPDEV.max_leistung_kuehlen",
-      "entity_id": "eap_6_eapdev_max_leistung_kuehlen",
+      "entity_id": "eap_6_maximum_cooling_power",
       "name": {
         "de": "Max. Leistung Kühlen"
       },
@@ -6373,7 +6373,7 @@
       "unit_value_table": "1/10%",
       "id": "3276",
       "parameter": "EAPDEV.max_leistung_kuehlen",
-      "entity_id": "eap_7_eapdev_max_leistung_kuehlen",
+      "entity_id": "eap_7_maximum_cooling_power",
       "name": {
         "de": "Max. Leistung Kühlen"
       },
@@ -6430,7 +6430,7 @@
       "unit_value_table": "1/10%",
       "id": "3277",
       "parameter": "EAPDEV.min_leistung_kuehlen",
-      "entity_id": "eap_2_eapdev_min_leistung_kuehlen",
+      "entity_id": "eap_2_minimum_cooling_power",
       "name": {
         "de": "Min. Leistung Kühlen"
       },
@@ -6449,7 +6449,7 @@
       "unit_value_table": "1/10%",
       "id": "3277",
       "parameter": "EAPDEV.min_leistung_kuehlen",
-      "entity_id": "eap_3_eapdev_min_leistung_kuehlen",
+      "entity_id": "eap_3_minimum_cooling_power",
       "name": {
         "de": "Min. Leistung Kühlen"
       },
@@ -6468,7 +6468,7 @@
       "unit_value_table": "1/10%",
       "id": "3277",
       "parameter": "EAPDEV.min_leistung_kuehlen",
-      "entity_id": "eap_4_eapdev_min_leistung_kuehlen",
+      "entity_id": "eap_4_minimum_cooling_power",
       "name": {
         "de": "Min. Leistung Kühlen"
       },
@@ -6487,7 +6487,7 @@
       "unit_value_table": "1/10%",
       "id": "3277",
       "parameter": "EAPDEV.min_leistung_kuehlen",
-      "entity_id": "eap_5_eapdev_min_leistung_kuehlen",
+      "entity_id": "eap_5_minimum_cooling_power",
       "name": {
         "de": "Min. Leistung Kühlen"
       },
@@ -6506,7 +6506,7 @@
       "unit_value_table": "1/10%",
       "id": "3277",
       "parameter": "EAPDEV.min_leistung_kuehlen",
-      "entity_id": "eap_6_eapdev_min_leistung_kuehlen",
+      "entity_id": "eap_6_minimum_cooling_power",
       "name": {
         "de": "Min. Leistung Kühlen"
       },
@@ -6525,7 +6525,7 @@
       "unit_value_table": "1/10%",
       "id": "3277",
       "parameter": "EAPDEV.min_leistung_kuehlen",
-      "entity_id": "eap_7_eapdev_min_leistung_kuehlen",
+      "entity_id": "eap_7_minimum_cooling_power",
       "name": {
         "de": "Min. Leistung Kühlen"
       },
@@ -6579,7 +6579,7 @@
       "expert_level": "read",
       "id": "3325",
       "parameter": "EAPDEV.fluester1_beginn",
-      "entity_id": "eap_2_eapdev_fluester1_beginn",
+      "entity_id": "eap_2_quiet_mode_1_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6597,7 +6597,7 @@
       "expert_level": "read",
       "id": "3325",
       "parameter": "EAPDEV.fluester1_beginn",
-      "entity_id": "eap_3_eapdev_fluester1_beginn",
+      "entity_id": "eap_3_quiet_mode_1_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6615,7 +6615,7 @@
       "expert_level": "read",
       "id": "3325",
       "parameter": "EAPDEV.fluester1_beginn",
-      "entity_id": "eap_4_eapdev_fluester1_beginn",
+      "entity_id": "eap_4_quiet_mode_1_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6633,7 +6633,7 @@
       "expert_level": "read",
       "id": "3325",
       "parameter": "EAPDEV.fluester1_beginn",
-      "entity_id": "eap_5_eapdev_fluester1_beginn",
+      "entity_id": "eap_5_quiet_mode_1_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6651,7 +6651,7 @@
       "expert_level": "read",
       "id": "3325",
       "parameter": "EAPDEV.fluester1_beginn",
-      "entity_id": "eap_6_eapdev_fluester1_beginn",
+      "entity_id": "eap_6_quiet_mode_1_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6669,7 +6669,7 @@
       "expert_level": "read",
       "id": "3325",
       "parameter": "EAPDEV.fluester1_beginn",
-      "entity_id": "eap_7_eapdev_fluester1_beginn",
+      "entity_id": "eap_7_quiet_mode_1_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6723,7 +6723,7 @@
       "expert_level": "read",
       "id": "3326",
       "parameter": "EAPDEV.fluester1_ende",
-      "entity_id": "eap_2_eapdev_fluester1_ende",
+      "entity_id": "eap_2_quiet_mode_1_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -6741,7 +6741,7 @@
       "expert_level": "read",
       "id": "3326",
       "parameter": "EAPDEV.fluester1_ende",
-      "entity_id": "eap_3_eapdev_fluester1_ende",
+      "entity_id": "eap_3_quiet_mode_1_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -6759,7 +6759,7 @@
       "expert_level": "read",
       "id": "3326",
       "parameter": "EAPDEV.fluester1_ende",
-      "entity_id": "eap_4_eapdev_fluester1_ende",
+      "entity_id": "eap_4_quiet_mode_1_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -6777,7 +6777,7 @@
       "expert_level": "read",
       "id": "3326",
       "parameter": "EAPDEV.fluester1_ende",
-      "entity_id": "eap_5_eapdev_fluester1_ende",
+      "entity_id": "eap_5_quiet_mode_1_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -6795,7 +6795,7 @@
       "expert_level": "read",
       "id": "3326",
       "parameter": "EAPDEV.fluester1_ende",
-      "entity_id": "eap_6_eapdev_fluester1_ende",
+      "entity_id": "eap_6_quiet_mode_1_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -6813,7 +6813,7 @@
       "expert_level": "read",
       "id": "3326",
       "parameter": "EAPDEV.fluester1_ende",
-      "entity_id": "eap_7_eapdev_fluester1_ende",
+      "entity_id": "eap_7_quiet_mode_1_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -6867,7 +6867,7 @@
       "expert_level": "read",
       "id": "3327",
       "parameter": "EAPDEV.fluester2_beginn",
-      "entity_id": "eap_2_eapdev_fluester2_beginn",
+      "entity_id": "eap_2_quiet_mode_2_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6885,7 +6885,7 @@
       "expert_level": "read",
       "id": "3327",
       "parameter": "EAPDEV.fluester2_beginn",
-      "entity_id": "eap_3_eapdev_fluester2_beginn",
+      "entity_id": "eap_3_quiet_mode_2_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6903,7 +6903,7 @@
       "expert_level": "read",
       "id": "3327",
       "parameter": "EAPDEV.fluester2_beginn",
-      "entity_id": "eap_4_eapdev_fluester2_beginn",
+      "entity_id": "eap_4_quiet_mode_2_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6921,7 +6921,7 @@
       "expert_level": "read",
       "id": "3327",
       "parameter": "EAPDEV.fluester2_beginn",
-      "entity_id": "eap_5_eapdev_fluester2_beginn",
+      "entity_id": "eap_5_quiet_mode_2_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6939,7 +6939,7 @@
       "expert_level": "read",
       "id": "3327",
       "parameter": "EAPDEV.fluester2_beginn",
-      "entity_id": "eap_6_eapdev_fluester2_beginn",
+      "entity_id": "eap_6_quiet_mode_2_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -6957,7 +6957,7 @@
       "expert_level": "read",
       "id": "3327",
       "parameter": "EAPDEV.fluester2_beginn",
-      "entity_id": "eap_7_eapdev_fluester2_beginn",
+      "entity_id": "eap_7_quiet_mode_2_start_time",
       "name": {
         "de": "Zeitfenster Beginn"
       },
@@ -7011,7 +7011,7 @@
       "expert_level": "read",
       "id": "3328",
       "parameter": "EAPDEV.fluester2_ende",
-      "entity_id": "eap_2_eapdev_fluester2_ende",
+      "entity_id": "eap_2_quiet_mode_2_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -7029,7 +7029,7 @@
       "expert_level": "read",
       "id": "3328",
       "parameter": "EAPDEV.fluester2_ende",
-      "entity_id": "eap_3_eapdev_fluester2_ende",
+      "entity_id": "eap_3_quiet_mode_2_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -7047,7 +7047,7 @@
       "expert_level": "read",
       "id": "3328",
       "parameter": "EAPDEV.fluester2_ende",
-      "entity_id": "eap_4_eapdev_fluester2_ende",
+      "entity_id": "eap_4_quiet_mode_2_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -7065,7 +7065,7 @@
       "expert_level": "read",
       "id": "3328",
       "parameter": "EAPDEV.fluester2_ende",
-      "entity_id": "eap_5_eapdev_fluester2_ende",
+      "entity_id": "eap_5_quiet_mode_2_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -7083,7 +7083,7 @@
       "expert_level": "read",
       "id": "3328",
       "parameter": "EAPDEV.fluester2_ende",
-      "entity_id": "eap_6_eapdev_fluester2_ende",
+      "entity_id": "eap_6_quiet_mode_2_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -7101,7 +7101,7 @@
       "expert_level": "read",
       "id": "3328",
       "parameter": "EAPDEV.fluester2_ende",
-      "entity_id": "eap_7_eapdev_fluester2_ende",
+      "entity_id": "eap_7_quiet_mode_2_end_time",
       "name": {
         "de": "Zeitfenster Ende"
       },
@@ -7158,7 +7158,7 @@
       "unit_value_table": "1/10%",
       "id": "3329",
       "parameter": "EAPDEV.fluester_max_drehzahl",
-      "entity_id": "eap_2_eapdev_fluester_max_drehzahl",
+      "entity_id": "eap_2_quiet_mode_maximum_speed",
       "name": {
         "de": "Max. Drehzahl"
       },
@@ -7177,7 +7177,7 @@
       "unit_value_table": "1/10%",
       "id": "3329",
       "parameter": "EAPDEV.fluester_max_drehzahl",
-      "entity_id": "eap_3_eapdev_fluester_max_drehzahl",
+      "entity_id": "eap_3_quiet_mode_maximum_speed",
       "name": {
         "de": "Max. Drehzahl"
       },
@@ -7196,7 +7196,7 @@
       "unit_value_table": "1/10%",
       "id": "3329",
       "parameter": "EAPDEV.fluester_max_drehzahl",
-      "entity_id": "eap_4_eapdev_fluester_max_drehzahl",
+      "entity_id": "eap_4_quiet_mode_maximum_speed",
       "name": {
         "de": "Max. Drehzahl"
       },
@@ -7215,7 +7215,7 @@
       "unit_value_table": "1/10%",
       "id": "3329",
       "parameter": "EAPDEV.fluester_max_drehzahl",
-      "entity_id": "eap_5_eapdev_fluester_max_drehzahl",
+      "entity_id": "eap_5_quiet_mode_maximum_speed",
       "name": {
         "de": "Max. Drehzahl"
       },
@@ -7234,7 +7234,7 @@
       "unit_value_table": "1/10%",
       "id": "3329",
       "parameter": "EAPDEV.fluester_max_drehzahl",
-      "entity_id": "eap_6_eapdev_fluester_max_drehzahl",
+      "entity_id": "eap_6_quiet_mode_maximum_speed",
       "name": {
         "de": "Max. Drehzahl"
       },
@@ -7253,7 +7253,7 @@
       "unit_value_table": "1/10%",
       "id": "3329",
       "parameter": "EAPDEV.fluester_max_drehzahl",
-      "entity_id": "eap_7_eapdev_fluester_max_drehzahl",
+      "entity_id": "eap_7_quiet_mode_maximum_speed",
       "name": {
         "de": "Max. Drehzahl"
       },
@@ -7318,7 +7318,7 @@
       "unit_value_table": "system_ein_aus_t",
       "id": "3674",
       "parameter": "EAP.sg_pufferladung_modbus",
-      "entity_id": "eap_sg_pufferladung_modbus",
+      "entity_id": "eap_smart_grid_buffer_charging_via_modbus",
       "name": {
         "de": "SG Pufferladung"
       }
@@ -7332,7 +7332,7 @@
       "unit_value_table": "system_ein_aus_t",
       "id": "3675",
       "parameter": "EAP.sg_rtemp_ueberh_modbus",
-      "entity_id": "eap_sg_rtemp_ueberh_modbus",
+      "entity_id": "eap_smart_grid_room_temperature_increase_via_modbus",
       "name": {
         "de": "SG Raumtemp.Überhöhen"
       }
@@ -7346,7 +7346,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_0_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_0_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7365,7 +7365,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_1_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_1_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7384,7 +7384,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_2_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_2_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7403,7 +7403,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_3_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_3_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7422,7 +7422,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_4_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_4_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7441,7 +7441,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_5_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_5_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7460,7 +7460,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_6_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_6_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7479,7 +7479,7 @@
       "unit_value_table": "system_yes_no_t",
       "id": "3682",
       "parameter": "EAPDEV.modbus_el_leistungsbegr_aktiv",
-      "entity_id": "eap_7_eapdev_modbus_el_leistungsbegr_aktiv",
+      "entity_id": "eap_7_modbus_electrical_power_limit_active",
       "name": {
         "de": "Modbus elektr. Leistungsbegrenzung aktiv"
       },
@@ -7498,7 +7498,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_0_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_0_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7517,7 +7517,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_1_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_1_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7536,7 +7536,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_2_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_2_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7555,7 +7555,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_3_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_3_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7574,7 +7574,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_4_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_4_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7593,7 +7593,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_5_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_5_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7612,7 +7612,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_6_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_6_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7631,7 +7631,7 @@
       "unit_value_table": "1/100kW",
       "id": "3683",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_heiz",
-      "entity_id": "eap_7_eapdev_modbus_max_elektr_leistung_heiz",
+      "entity_id": "eap_7_modbus_maximum_electrical_power_heating",
       "name": {
         "de": "Modbus max. elektr. Leistung Heizen"
       },
@@ -7650,7 +7650,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_0_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_0_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7669,7 +7669,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_1_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_1_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7688,7 +7688,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_2_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_2_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7707,7 +7707,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_3_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_3_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7726,7 +7726,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_4_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_4_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7745,7 +7745,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_5_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_5_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7764,7 +7764,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_6_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_6_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7783,7 +7783,7 @@
       "unit_value_table": "1/100kW",
       "id": "3684",
       "parameter": "EAPDEV.min_elekt_leistung_mb_begrenzung",
-      "entity_id": "eap_7_eapdev_min_elekt_leistung_mb_begrenzung",
+      "entity_id": "eap_7_minimum_electrical_power_modbus_limit",
       "name": {
         "de": "Min. el.Leistung (MB Begr.)"
       },
@@ -7802,7 +7802,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_0_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_0_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },
@@ -7821,7 +7821,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_1_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_1_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },
@@ -7840,7 +7840,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_2_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_2_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },
@@ -7859,7 +7859,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_3_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_3_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },
@@ -7878,7 +7878,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_4_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_4_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },
@@ -7897,7 +7897,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_5_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_5_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },
@@ -7916,7 +7916,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_6_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_6_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },
@@ -7935,7 +7935,7 @@
       "unit_value_table": "1/100kW",
       "id": "3688",
       "parameter": "EAPDEV.modbus_max_elektr_leistung_ww",
-      "entity_id": "eap_7_eapdev_modbus_max_elektr_leistung_ww",
+      "entity_id": "eap_7_modbus_maximum_electrical_power_hot_water",
       "name": {
         "de": "Modbus max. elektr. Leistung Warmwasser"
       },

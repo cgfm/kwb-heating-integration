@@ -60,7 +60,11 @@
     "english_source_register_ids_regenerated": 2962,
     "de_only_source_ids_entering_finalizer": 550,
     "de_only_ids_replaced_from_v25_7_1_baseline": 274,
-    "new_de_only_ids_retained_from_authoritative_pr_data": 276,
+    "new_de_only_ids_originally_retained_from_authoritative_pr_data": 276,
+    "canonical_history_refinement_eligible_ids": 302,
+    "reviewed_english_ids_applied": 282,
+    "ids_left_for_manual_semantic_review": 20,
+    "refinement_audit": "v26_6_1_entity_id_refinement_audit.json",
     "existing_published_ids_replaced_by_pr_parameter_ids": 0
   },
   "v25_7_1_to_v26_6_1": {

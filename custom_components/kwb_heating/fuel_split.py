@@ -149,10 +149,9 @@ class FuelSplitTracker:
         self._store = store
         self.total_address = total_address
         self.mode_address = mode_address
-        self.expected_interval_seconds = max(float(expected_interval_seconds), 1.0)
-        self.long_gap_seconds = (
-            self.expected_interval_seconds * LONG_GAP_INTERVAL_MULTIPLIER
-        )
+        self.expected_interval_seconds = 1.0
+        self.long_gap_seconds = float(LONG_GAP_INTERVAL_MULTIPLIER)
+        self.update_expected_interval(expected_interval_seconds)
         self._now = now or (lambda: datetime.now(tz=timezone.utc))
         self.state = FuelSplitState()
         self._listeners: set[Callable[[], None]] = set()
@@ -176,6 +175,16 @@ class FuelSplitTracker:
     @property
     def has_source_baseline(self) -> bool:
         return self.state.last_source_total_kwh is not None
+
+    def update_expected_interval(self, seconds: float) -> None:
+        """Update only the timing policy used to recognize observation gaps."""
+        interval = _finite_number(seconds)
+        if interval is None or interval <= 0:
+            raise ValueError("Expected fuel-split polling interval must be positive")
+        self.expected_interval_seconds = max(interval, 1.0)
+        self.long_gap_seconds = (
+            self.expected_interval_seconds * LONG_GAP_INTERVAL_MULTIPLIER
+        )
 
     async def async_initialize(self) -> None:
         """Restore state, subscribe once, and process the current observation."""
