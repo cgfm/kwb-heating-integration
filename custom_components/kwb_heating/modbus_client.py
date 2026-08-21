@@ -75,42 +75,6 @@ class KWBModbusClient:
         """Return True if the client is connected to the Modbus device."""
         return self._connected
 
-    async def _invoke_with_unit_kwarg(self, method_name: str, *args):
-        """Call a pymodbus client method with unit/slave in a version-agnostic way.
-
-        1) Try positional unit/slave as last arg (most compatible)
-        2) Try keyword 'unit'
-        3) Try keyword 'slave'
-        Caches the working keyword for later debug logging.
-        """
-        if not self._client:
-            raise ConnectionError("Modbus client is not initialized")
-
-        method = getattr(self._client, method_name)
-
-        # 1) Positional attempt
-        try:
-            res_pos = await method(*args, self.slave_id)
-            _LOGGER.debug("pymodbus call %s used positional unit arg", method_name)
-            return res_pos
-        except TypeError as e_pos:
-            # 2) Keyword 'unit'
-            try:
-                res = await method(*args, unit=self.slave_id)
-                self._unit_kwarg = "unit"
-                _LOGGER.info("pymodbus call %s works with kwarg 'unit'", method_name)
-                return res
-            except TypeError as e_unit:
-                # 3) Keyword 'slave'
-                try:
-                    res2 = await method(*args, slave=self.slave_id)
-                    self._unit_kwarg = "slave"
-                    _LOGGER.info("pymodbus call %s works with kwarg 'slave'", method_name)
-                    return res2
-                except TypeError:
-                    # Re-raise the first error for clearer context
-                    raise e_pos
-
     async def _invoke_read(self, method_name: str, *, address: int, count: int):
         """Call a pymodbus read method in a version-agnostic way.
 

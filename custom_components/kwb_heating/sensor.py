@@ -22,17 +22,8 @@ from .coordinator import KWBDataUpdateCoordinator
 from .entity import KWBBaseEntity
 from .icon_utils import get_entity_icon
 
-# Device types that support firewood (logwood)
-FIREWOOD_DEVICE_TYPES = [
-    "KWB CF 1",
-    "KWB CF 1.5",
-    "KWB CF 2",
-    "KWB Combifire",
-    "KWB Multifire",
-]
-
-# Modbus address for firewood boiler status (logwood status)
-FIREWOOD_STATUS_ADDRESS = 8212
+# Logical register capability required by the computed firewood sensor.
+FIREWOOD_STATUS_PARAMETER = "CF2.kesselstatus_anzeige_sh"
 
 # Boiler status values indicating active firewood operation (boiler status display_t)
 FIREWOOD_ACTIVE_VALUES = [
@@ -95,19 +86,28 @@ async def async_setup_entry(
         if is_readable:
             entities.append(KWBSensor(coordinator, register))
 
-    # Add computed sensor for firewood devices: "Last Firewood Fire"
-    device_type = coordinator.config.get("device_type", "")
-    if device_type in FIREWOOD_DEVICE_TYPES:
-        # Check if the firewood status register is available
-        has_firewood_status = any(
-            reg.get("starting_address") == FIREWOOD_STATUS_ADDRESS
-            for reg in coordinator._registers
+    firewood_register = next(
+        (
+            register
+            for register in coordinator.registers
+            if register.get("parameter") == FIREWOOD_STATUS_PARAMETER
+        ),
+        None,
+    )
+    firewood_address = _normalize_firewood_address(
+        firewood_register.get("starting_address") if firewood_register else None
+    )
+    if firewood_address is not None:
+        _LOGGER.info(
+            "Adding 'Last Firewood Fire' sensor from %s at address %s",
+            FIREWOOD_STATUS_PARAMETER,
+            firewood_address,
         )
-        if has_firewood_status:
-            _LOGGER.info("Adding 'Last Firewood Fire' sensor for device type: %s", device_type)
-            entities.append(KWBLastFirewoodFireSensor(coordinator))
-        else:
-            _LOGGER.debug("Firewood status register not found, skipping 'Last Firewood Fire' sensor")
+        entities.append(KWBLastFirewoodFireSensor(coordinator, firewood_address))
+    else:
+        _LOGGER.debug(
+            "Firewood status parameter not found, skipping 'Last Firewood Fire' sensor"
+        )
 
     _LOGGER.info("Setting up %d KWB sensor entities", len(entities))
     async_add_entities(entities)
@@ -186,12 +186,26 @@ class KWBSensor(KWBBaseEntity, SensorEntity):
 
     # available property inherited from KWBBaseEntity
 
+def _normalize_firewood_address(value: Any) -> int | None:
+    """Normalize the discovered register address without accepting booleans."""
+    if isinstance(value, bool):
+        return None
+    if isinstance(value, int):
+        return value if value >= 0 else None
+    if isinstance(value, str) and value.strip().isdigit():
+        return int(value.strip())
+    return None
+
+
 class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
     """Sensor that tracks when the last firewood fire was active."""
 
-    def __init__(self, coordinator: KWBDataUpdateCoordinator) -> None:
+    def __init__(
+        self, coordinator: KWBDataUpdateCoordinator, firewood_status_address: int
+    ) -> None:
         """Initialize the sensor."""
         super().__init__(coordinator)
+        self._firewood_status_address = firewood_status_address
 
         # Store the last timestamp when firewood was active
         self._last_firewood_time: datetime | None = None
@@ -258,8 +272,11 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
         """
         state_changed = False
 
-        if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
-            register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
+        if (
+            self.coordinator.data
+            and self._firewood_status_address in self.coordinator.data
+        ):
+            register_data = self.coordinator.data[self._firewood_status_address]
             raw_value = register_data.get("raw_value")
 
             if raw_value is not None:
@@ -295,8 +312,11 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
             self._language, FIREWOOD_SENSOR_TRANSLATIONS["en"]
         )
 
-        if self.coordinator.data and FIREWOOD_STATUS_ADDRESS in self.coordinator.data:
-            register_data = self.coordinator.data[FIREWOOD_STATUS_ADDRESS]
+        if (
+            self.coordinator.data
+            and self._firewood_status_address in self.coordinator.data
+        ):
+            register_data = self.coordinator.data[self._firewood_status_address]
             raw_value = register_data.get("raw_value")
 
             if raw_value is not None:

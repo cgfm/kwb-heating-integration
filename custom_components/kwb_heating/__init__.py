@@ -13,7 +13,7 @@ import voluptuous as vol
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 
-from .const import DOMAIN, PLATFORMS, EQUIPMENT_KEYS
+from .const import CONF_LANGUAGE, DOMAIN, PLATFORMS, EQUIPMENT_KEYS
 from .coordinator import KWBDataUpdateCoordinator
 
 _LOGGER = logging.getLogger(__name__)
@@ -65,13 +65,21 @@ async def async_update_options(hass: HomeAssistant, entry: ConfigEntry) -> None:
     
     # Check if the access level has changed
     access_level_changed = old_config.get("access_level") != new_config.get("access_level")
+
+    # Localized names, indexes, value tables, and alarms are constructed during
+    # setup. Rebuild them together instead of mutating live entities piecemeal.
+    language_changed = old_config.get(CONF_LANGUAGE, "auto") != new_config.get(
+        CONF_LANGUAGE, "auto"
+    )
     
-    # A full reload is needed if equipment or access level changes, as this can add/remove entities
-    if equipment_changed or access_level_changed:
+    # A full reload is needed for structural changes and presentation language.
+    if equipment_changed or access_level_changed or language_changed:
         if equipment_changed:
             _LOGGER.info("Equipment configuration changed, reloading integration.")
         if access_level_changed:
             _LOGGER.info("Access level changed, reloading integration.")
+        if language_changed:
+            _LOGGER.info("Language changed, reloading integration.")
             
         await hass.config_entries.async_reload(entry.entry_id)
     else:

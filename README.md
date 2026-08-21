@@ -173,10 +173,12 @@ For devices that support firewood operation (Stückholz), a special computed sen
 
 | Language | Sensor Name | Entity ID |
 |----------|-------------|-----------|
-| German | `{Prefix} Letztes Stückholzfeuer` | `sensor.{prefix}_letztes_stueckholzfeuer` |
+| German | `{Prefix} Letztes Stückholzfeuer` | `sensor.{prefix}_last_firewood_fire` |
 | English | `{Prefix} Last Firewood Fire` | `sensor.{prefix}_last_firewood_fire` |
 
-**Supported devices**: KWB CF 1, KWB CF 1.5, KWB CF 2, KWB Combifire, KWB Multifire
+**Capability detection**: The sensor is created whenever the loaded register set
+contains `CF2.kesselstatus_anzeige_sh`. Device/model names and a fixed Modbus
+address are not used to decide availability.
 
 **Features**:
 - **Device class**: `timestamp` - displays relative time (e.g., "2 hours ago")
@@ -287,6 +289,13 @@ then any non-empty available value. A missing English translation therefore
 never removes a physical register or entity. Changing the Home Assistant
 language changes presentation only—not addresses, register membership, entity
 IDs, or unique IDs.
+
+Changing the integration's language option reloads its config entry so names,
+indexes, value-table labels, and alarm descriptions are rebuilt consistently.
+When the option is `auto`, the Home Assistant language is resolved during setup
+or reload. A later global Home Assistant language change does not currently emit
+a simple integration-specific reload callback; reload this config entry (or
+re-save its options) to apply that global-language change.
 
 ## 🔄 ModbusInfo Converter
 

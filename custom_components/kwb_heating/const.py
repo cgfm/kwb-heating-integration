@@ -58,6 +58,19 @@ EQUIPMENT_KEYS = [
     CONF_TRANSFER_STATIONS,
 ]
 
+# Single source of truth for setup/options equipment-count selectors.
+EQUIPMENT_RANGES = {
+    CONF_HEATING_CIRCUITS: {"default": 0, "min": 0, "max": 14},
+    CONF_BUFFER_STORAGE: {"default": 0, "min": 0, "max": 15},
+    CONF_DHW_STORAGE: {"default": 0, "min": 0, "max": 14},
+    CONF_SECONDARY_HEAT_SOURCES: {"default": 0, "min": 0, "max": 14},
+    CONF_CIRCULATION: {"default": 0, "min": 0, "max": 15},
+    CONF_SOLAR: {"default": 0, "min": 0, "max": 14},
+    CONF_BOILER_SEQUENCE: {"default": 0, "min": 0, "max": 8},
+    CONF_HEAT_METERS: {"default": 0, "min": 0, "max": 36},
+    CONF_TRANSFER_STATIONS: {"default": 0, "min": 0, "max": 14},
+}
+
 # Access Levels
 ACCESS_LEVELS = {
     "UserLevel": "Standard functions for end users",

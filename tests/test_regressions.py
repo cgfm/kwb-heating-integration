@@ -1096,6 +1096,85 @@ class EquipmentSelectionTests(unittest.TestCase):
             german_only_runtime["entity_id"], english_fallback_runtime["entity_id"]
         )
 
+    def test_all_firmware_device_maps_are_language_invariant(self) -> None:
+        """Every practical device map must expose one technical identity set."""
+        logger = self.manager_module._LOGGER
+        logger_was_disabled = logger.disabled
+        logger.disabled = True
+        self.addCleanup(setattr, logger, "disabled", logger_was_disabled)
+
+        identity_fields = (
+            "parameter",
+            "starting_address",
+            "entity_id",
+            "equipment_group",
+            "equipment_instance",
+            "equipment_subindex",
+        )
+        errors = []
+
+        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
+            universal = _load_registers(version_dir / "modbus_registers.json")
+            equipment_sources = {
+                key: _load_registers(version_dir / "equipment" / config["filename"])
+                for key, config in (
+                    self.manager_module.AsyncModularRegisterManager
+                    .EQUIPMENT_KEY_CONFIG.items()
+                )
+                if (version_dir / "equipment" / config["filename"]).exists()
+            }
+            equipment_config = {key: 100 for key in equipment_sources}
+
+            for device_file in sorted((version_dir / "devices").glob("*.json")):
+                device_key = device_file.stem
+
+                def load(language: str) -> list[tuple]:
+                    manager = self.manager_module.AsyncModularRegisterManager(
+                        config_path=str(version_dir), language=language
+                    )
+                    manager._initialized = True
+                    manager._universal_registers = [
+                        self.localization_module.localize_register(register, language)
+                        for register in universal
+                    ]
+                    manager._device_cache[device_key] = [
+                        self.localization_module.localize_register(register, language)
+                        for register in _load_registers(device_file)
+                    ]
+                    manager._equipment_cache.update({
+                        key: [
+                            self.localization_module.localize_register(
+                                register, language
+                            )
+                            for register in registers
+                        ]
+                        for key, registers in equipment_sources.items()
+                    })
+                    runtime_registers = asyncio.run(
+                        manager.get_all_registers(
+                            "UserLevel",
+                            equipment_config=equipment_config,
+                            device_type=device_key,
+                        )
+                    )
+                    return [
+                        (
+                            *(register.get(field) for field in identity_fields),
+                            f"192.0.2.10_1_{register.get('entity_id')}",
+                        )
+                        for register in runtime_registers
+                    ]
+
+                german = load("de")
+                english = load("en")
+                if german != english:
+                    errors.append(
+                        f"{version_dir.name}/{device_file.name}: "
+                        f"de={len(german)} en={len(english)}"
+                    )
+
+        self.assertEqual([], errors, "\n".join(errors))
+
     def test_every_shipped_equipment_prefix_selects_first_instance(self) -> None:
         errors = []
 
@@ -1394,6 +1473,319 @@ class EquipmentSelectionTests(unittest.TestCase):
         self.assertIn("conflicting duplicate register at address 10", "\n".join(logs.output))
 
 
+class LanguageReloadTests(unittest.TestCase):
+    """Verify localized runtime state is rebuilt when the option changes."""
+
+    def test_explicit_language_changes_reload_in_both_directions(self) -> None:
+        module_names = (
+            "custom_components",
+            "custom_components.kwb_heating",
+            "custom_components.kwb_heating.const",
+            "custom_components.kwb_heating.coordinator",
+            "homeassistant",
+            "homeassistant.config_entries",
+            "homeassistant.core",
+            "voluptuous",
+        )
+        saved_modules = {name: sys.modules.get(name) for name in module_names}
+
+        try:
+            package = types.ModuleType("custom_components")
+            package.__path__ = []
+            integration_package = types.ModuleType("custom_components.kwb_heating")
+            integration_package.__path__ = [str(INTEGRATION_ROOT)]
+            constants = types.ModuleType("custom_components.kwb_heating.const")
+            constants.CONF_LANGUAGE = "language"
+            constants.DOMAIN = "kwb_heating"
+            constants.PLATFORMS = []
+            constants.EQUIPMENT_KEYS = ["heating_circuits"]
+            coordinator_module = types.ModuleType(
+                "custom_components.kwb_heating.coordinator"
+            )
+            coordinator_module.KWBDataUpdateCoordinator = object
+
+            homeassistant = types.ModuleType("homeassistant")
+            config_entries = types.ModuleType("homeassistant.config_entries")
+            config_entries.ConfigEntry = object
+            ha_core = types.ModuleType("homeassistant.core")
+            ha_core.HomeAssistant = object
+            voluptuous = types.ModuleType("voluptuous")
+            voluptuous.ALLOW_EXTRA = object()
+            voluptuous.Schema = lambda *args, **kwargs: (args, kwargs)
+            sys.modules.update({
+                "custom_components": package,
+                "custom_components.kwb_heating": integration_package,
+                "custom_components.kwb_heating.const": constants,
+                "custom_components.kwb_heating.coordinator": coordinator_module,
+                "homeassistant": homeassistant,
+                "homeassistant.config_entries": config_entries,
+                "homeassistant.core": ha_core,
+                "voluptuous": voluptuous,
+            })
+
+            module_name = "custom_components.kwb_heating.init_language_test"
+            integration = types.ModuleType(module_name)
+            integration.__file__ = str(INTEGRATION_ROOT / "__init__.py")
+            integration.__package__ = "custom_components.kwb_heating"
+            sys.modules[module_name] = integration
+            exec(
+                compile(
+                    (INTEGRATION_ROOT / "__init__.py").read_text(encoding="utf-8"),
+                    integration.__file__,
+                    "exec",
+                ),
+                integration.__dict__,
+            )
+
+            for old_language, new_language in (("de", "en"), ("en", "de")):
+                with self.subTest(old=old_language, new=new_language):
+                    calls = {"reload": [], "update": 0, "refresh": 0}
+
+                    class Coordinator:
+                        config = {
+                            "language": old_language,
+                            "heating_circuits": 1,
+                            "access_level": "UserLevel",
+                        }
+
+                        async def async_update_config(self, _data, _options):
+                            calls["update"] += 1
+
+                        async def async_request_refresh(self):
+                            calls["refresh"] += 1
+
+                    class ConfigEntries:
+                        async def async_reload(self, entry_id):
+                            calls["reload"].append(entry_id)
+
+                    entry = types.SimpleNamespace(
+                        entry_id="entry-1",
+                        data={
+                            "language": old_language,
+                            "heating_circuits": 1,
+                            "access_level": "UserLevel",
+                        },
+                        options={"language": new_language},
+                    )
+                    hass = types.SimpleNamespace(
+                        data={"kwb_heating": {"entry-1": Coordinator()}},
+                        config_entries=ConfigEntries(),
+                    )
+
+                    asyncio.run(integration.async_update_options(hass, entry))
+                    self.assertEqual(["entry-1"], calls["reload"])
+                    self.assertEqual(0, calls["update"])
+                    self.assertEqual(0, calls["refresh"])
+        finally:
+            sys.modules.pop(
+                "custom_components.kwb_heating.init_language_test", None
+            )
+            for name, module in saved_modules.items():
+                if module is None:
+                    sys.modules.pop(name, None)
+                else:
+                    sys.modules[name] = module
+
+
+class FirewoodSensorTests(unittest.TestCase):
+    """Cover register-capability discovery for Last Firewood Fire."""
+
+    @classmethod
+    def setUpClass(cls) -> None:
+        cls.module_names = (
+            "custom_components",
+            "custom_components.kwb_heating",
+            "custom_components.kwb_heating.const",
+            "custom_components.kwb_heating.coordinator",
+            "custom_components.kwb_heating.entity",
+            "custom_components.kwb_heating.icon_utils",
+            "homeassistant",
+            "homeassistant.components",
+            "homeassistant.components.sensor",
+            "homeassistant.config_entries",
+            "homeassistant.core",
+            "homeassistant.helpers",
+            "homeassistant.helpers.entity_platform",
+            "homeassistant.helpers.entity",
+            "homeassistant.helpers.update_coordinator",
+            "homeassistant.helpers.restore_state",
+        )
+        cls.saved_modules = {
+            name: sys.modules.get(name) for name in cls.module_names
+        }
+
+        package = types.ModuleType("custom_components")
+        package.__path__ = []
+        integration_package = types.ModuleType("custom_components.kwb_heating")
+        integration_package.__path__ = [str(INTEGRATION_ROOT)]
+        constants = types.ModuleType("custom_components.kwb_heating.const")
+        constants.DOMAIN = "kwb_heating"
+        coordinator_module = types.ModuleType("custom_components.kwb_heating.coordinator")
+        coordinator_module.KWBDataUpdateCoordinator = object
+
+        class KWBBaseEntity:
+            def __init__(self, coordinator, register, _platform):
+                self.coordinator = coordinator
+                self._register = register
+                self._address = register.get("starting_address")
+
+            def _build_static_attrs(self):
+                return {}
+
+        entity_module = types.ModuleType("custom_components.kwb_heating.entity")
+        entity_module.KWBBaseEntity = KWBBaseEntity
+        icon_module = types.ModuleType("custom_components.kwb_heating.icon_utils")
+        icon_module.get_entity_icon = lambda _register, _platform: "mdi:gauge"
+
+        homeassistant = types.ModuleType("homeassistant")
+        components = types.ModuleType("homeassistant.components")
+        sensor_module = types.ModuleType("homeassistant.components.sensor")
+
+        class SensorEntity:
+            pass
+
+        sensor_module.SensorEntity = SensorEntity
+        sensor_module.SensorDeviceClass = types.SimpleNamespace(TIMESTAMP="timestamp")
+        sensor_module.SensorStateClass = types.SimpleNamespace(MEASUREMENT="measurement")
+        config_entries = types.ModuleType("homeassistant.config_entries")
+        config_entries.ConfigEntry = object
+        ha_core = types.ModuleType("homeassistant.core")
+        ha_core.HomeAssistant = object
+        ha_core.callback = lambda function: function
+        helpers = types.ModuleType("homeassistant.helpers")
+        entity_platform = types.ModuleType("homeassistant.helpers.entity_platform")
+        entity_platform.AddEntitiesCallback = object
+        entity_helper = types.ModuleType("homeassistant.helpers.entity")
+        entity_helper.EntityCategory = types.SimpleNamespace(DIAGNOSTIC="diagnostic")
+        update_coordinator = types.ModuleType(
+            "homeassistant.helpers.update_coordinator"
+        )
+
+        class CoordinatorEntity:
+            def __init__(self, coordinator):
+                self.coordinator = coordinator
+                self.write_count = 0
+
+            def async_write_ha_state(self):
+                self.write_count += 1
+
+        update_coordinator.CoordinatorEntity = CoordinatorEntity
+        restore_state = types.ModuleType("homeassistant.helpers.restore_state")
+
+        class RestoreEntity:
+            async def async_added_to_hass(self):
+                return None
+
+            async def async_get_last_state(self):
+                return None
+
+        restore_state.RestoreEntity = RestoreEntity
+        sys.modules.update({
+            "custom_components": package,
+            "custom_components.kwb_heating": integration_package,
+            "custom_components.kwb_heating.const": constants,
+            "custom_components.kwb_heating.coordinator": coordinator_module,
+            "custom_components.kwb_heating.entity": entity_module,
+            "custom_components.kwb_heating.icon_utils": icon_module,
+            "homeassistant": homeassistant,
+            "homeassistant.components": components,
+            "homeassistant.components.sensor": sensor_module,
+            "homeassistant.config_entries": config_entries,
+            "homeassistant.core": ha_core,
+            "homeassistant.helpers": helpers,
+            "homeassistant.helpers.entity_platform": entity_platform,
+            "homeassistant.helpers.entity": entity_helper,
+            "homeassistant.helpers.update_coordinator": update_coordinator,
+            "homeassistant.helpers.restore_state": restore_state,
+        })
+        cls.sensor_module = _load_module(
+            "custom_components.kwb_heating.sensor_firewood_test",
+            INTEGRATION_ROOT / "sensor.py",
+        )
+
+    @classmethod
+    def tearDownClass(cls) -> None:
+        sys.modules.pop("custom_components.kwb_heating.sensor_firewood_test", None)
+        for name, module in cls.saved_modules.items():
+            if module is None:
+                sys.modules.pop(name, None)
+            else:
+                sys.modules[name] = module
+
+    def _setup(self, device_type: str, registers: list[dict], data=None) -> list:
+        async def ensure_initialized():
+            return None
+
+        coordinator = types.SimpleNamespace(
+            _registers=registers,
+            registers=registers,
+            config={"device_type": device_type},
+            access_level="UserLevel",
+            ensure_initialized=ensure_initialized,
+            register_manager=types.SimpleNamespace(_language="en"),
+            host="192.0.2.10",
+            slave_id=1,
+            device_name_prefix="KWB",
+            sanitize_for_entity_id=lambda value: value.lower(),
+            device_info={},
+            data=data or {},
+            last_update_success=True,
+        )
+        entities = []
+        hass = types.SimpleNamespace(
+            data={"kwb_heating": {"entry-1": coordinator}}
+        )
+        entry = types.SimpleNamespace(entry_id="entry-1")
+        asyncio.run(
+            self.sensor_module.async_setup_entry(hass, entry, entities.extend)
+        )
+        return entities
+
+    @staticmethod
+    def _firewood_register(address: object = 9000) -> dict:
+        return {
+            "parameter": "CF2.kesselstatus_anzeige_sh",
+            "starting_address": address,
+            "user_level": "readwrite",
+        }
+
+    def test_register_exists_uses_actual_address(self) -> None:
+        entities = self._setup(
+            "Completely New Device",
+            [self._firewood_register("9000")],
+            {9000: {"raw_value": 41}, 8212: {"raw_value": 0}},
+        )
+        firewood = self.assert_single_firewood(entities)
+        self.assertEqual(9000, firewood._firewood_status_address)
+        self.assertEqual("sensor.kwb_last_firewood_fire", firewood._attr_entity_id)
+        self.assertEqual(
+            "kwb_heating_192.0.2.10_1_kwb_last_firewood_fire",
+            firewood._attr_unique_id,
+        )
+        firewood._handle_coordinator_update()
+        self.assertTrue(firewood._was_firewood_active)
+        self.assertEqual(41, firewood.extra_state_attributes["boiler_status_raw"])
+
+    def test_register_absent_does_not_create_sensor(self) -> None:
+        self.assertEqual([], self._setup("Unknown Device", []))
+
+    def test_device_name_is_irrelevant_when_register_exists(self) -> None:
+        entities = self._setup("Future Hybrid Model", [self._firewood_register()])
+        self.assert_single_firewood(entities)
+
+    def test_old_firewood_model_without_register_is_not_a_false_positive(self) -> None:
+        self.assertEqual([], self._setup("KWB CF 2", []))
+
+    def assert_single_firewood(self, entities: list):
+        firewood = [
+            entity
+            for entity in entities
+            if isinstance(entity, self.sensor_module.KWBLastFirewoodFireSensor)
+        ]
+        self.assertEqual(1, len(firewood))
+        return firewood[0]
+
+
 class IdentityCompatibilityTests(unittest.TestCase):
     """Execute the production identity paths without a Home Assistant install."""
 
@@ -1538,6 +1930,60 @@ class IdentityCompatibilityTests(unittest.TestCase):
 
 class WiringRegressionTests(unittest.TestCase):
     """Cover integration wiring without importing Home Assistant."""
+
+    def test_equipment_ranges_are_centralized_and_unchanged(self) -> None:
+        const_tree = ast.parse((INTEGRATION_ROOT / "const.py").read_text(encoding="utf-8"))
+        ranges_node = next(
+            node.value
+            for node in const_tree.body
+            if isinstance(node, ast.Assign)
+            and any(
+                isinstance(target, ast.Name) and target.id == "EQUIPMENT_RANGES"
+                for target in node.targets
+            )
+        )
+        ranges = {
+            key.id: ast.literal_eval(value)
+            for key, value in zip(ranges_node.keys, ranges_node.values)
+        }
+        self.assertEqual(
+            {
+                "CONF_HEATING_CIRCUITS": {"default": 0, "min": 0, "max": 14},
+                "CONF_BUFFER_STORAGE": {"default": 0, "min": 0, "max": 15},
+                "CONF_DHW_STORAGE": {"default": 0, "min": 0, "max": 14},
+                "CONF_SECONDARY_HEAT_SOURCES": {"default": 0, "min": 0, "max": 14},
+                "CONF_CIRCULATION": {"default": 0, "min": 0, "max": 15},
+                "CONF_SOLAR": {"default": 0, "min": 0, "max": 14},
+                "CONF_BOILER_SEQUENCE": {"default": 0, "min": 0, "max": 8},
+                "CONF_HEAT_METERS": {"default": 0, "min": 0, "max": 36},
+                "CONF_TRANSFER_STATIONS": {"default": 0, "min": 0, "max": 14},
+            },
+            ranges,
+        )
+
+        flow_tree = ast.parse(
+            (INTEGRATION_ROOT / "config_flow.py").read_text(encoding="utf-8")
+        )
+        calls = [
+            node
+            for node in ast.walk(flow_tree)
+            if isinstance(node, ast.Call)
+            and isinstance(node.func, ast.Name)
+            and node.func.id == "_equipment_schema_fields"
+        ]
+        self.assertEqual(2, len(calls))
+
+    def test_confirmed_dead_code_is_removed(self) -> None:
+        self.assertFalse((PROJECT_ROOT / "complete_modular_setup.py").exists())
+        sources = "\n".join(
+            path.read_text(encoding="utf-8")
+            for path in INTEGRATION_ROOT.rglob("*.py")
+        )
+        self.assertNotIn("_invoke_with_unit_kwarg", sources)
+        self.assertNotIn("STEP_DEVICE_DATA_SCHEMA", sources)
+        sensor_source = (INTEGRATION_ROOT / "sensor.py").read_text(encoding="utf-8")
+        self.assertNotIn("FIREWOOD_DEVICE_TYPES", sensor_source)
+        self.assertNotIn("FIREWOOD_STATUS_ADDRESS", sensor_source)
 
     def test_transfer_stations_are_a_canonical_equipment_key(self) -> None:
         tree = ast.parse((INTEGRATION_ROOT / "const.py").read_text(encoding="utf-8"))
