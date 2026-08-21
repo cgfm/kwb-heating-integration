@@ -8,6 +8,7 @@ import enum
 import importlib.util
 import json
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import types
@@ -25,7 +26,11 @@ def _load_module(name: str, path: Path):
         raise RuntimeError(f"Could not load {path}")
     module = importlib.util.module_from_spec(spec)
     sys.modules[name] = module
-    spec.loader.exec_module(module)
+    sys.path.insert(0, str(path.parent))
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.path.pop(0)
     return module
 
 
@@ -64,18 +69,17 @@ class RegisterConfigurationTests(unittest.TestCase):
         )
         errors = []
 
-        for language_dir in sorted(CONFIG_ROOT.glob("v*/*")):
-            if not language_dir.is_dir():
+        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
+            if not version_dir.is_dir():
                 continue
-            common_files = [language_dir / "modbus_registers.json"]
+            common_files = [version_dir / "modbus_registers.json"]
             common_files.extend(
-                path
-                for path in sorted((language_dir / "equipment").glob("*.json"))
+                path for path in sorted((version_dir / "equipment").glob("*.json"))
             )
 
             # A real coordinator loads one device map at a time, so intentionally
             # overlapping device maps are not treated as runtime collisions.
-            for device_file in sorted((language_dir / "devices").glob("*.json")):
+            for device_file in sorted((version_dir / "devices").glob("*.json")):
                 by_address: dict[object, list[tuple[Path, dict]]] = defaultdict(list)
                 for path in [*common_files, device_file]:
                     for register in _load_registers(path):
@@ -90,12 +94,12 @@ class RegisterConfigurationTests(unittest.TestCase):
                     }
                     if len(signatures) > 1:
                         details = "; ".join(
-                            f"{path.relative_to(language_dir)}: "
+                            f"{path.relative_to(version_dir)}: "
                             f"{register.get('entity_id')!r}/{register.get('parameter')!r}"
                             for path, register in definitions
                         )
                         errors.append(
-                            f"{language_dir.relative_to(CONFIG_ROOT)} address {address}: {details}"
+                            f"{version_dir.relative_to(CONFIG_ROOT)} address {address}: {details}"
                         )
 
         self.assertEqual([], errors, "\n".join(errors))
@@ -107,40 +111,31 @@ class RegisterConfigurationTests(unittest.TestCase):
 
     def test_referenced_value_tables_exist_in_canonical_config(self) -> None:
         errors = []
-        for language_dir in sorted(CONFIG_ROOT.glob("v*/*")):
+        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
             value_tables = json.loads(
-                (language_dir / "value_tables.json").read_text(encoding="utf-8")
+                (version_dir / "value_tables.json").read_text(encoding="utf-8")
             )["value_tables"]
             references = {
                 register["unit_value_table"]
-                for path in language_dir.rglob("*.json")
+                for path in version_dir.rglob("*.json")
                 for register in _load_registers(path)
                 if str(register.get("unit_value_table", "")).endswith("_t")
             }
             missing = references - set(value_tables)
             if missing:
-                errors.append(f"{language_dir}: {sorted(missing)}")
+                errors.append(f"{version_dir}: {sorted(missing)}")
         self.assertEqual([], errors, "\n".join(errors))
 
-    def test_german_and_english_logical_registers_share_entity_ids(self) -> None:
+    def test_only_explicit_fields_are_localized(self) -> None:
+        localized_fields = {"name", "index"}
         errors = []
-        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
-            for de_path in sorted((version_dir / "de").rglob("*.json")):
-                relative = de_path.relative_to(version_dir / "de")
-                en_path = version_dir / "en" / relative
-                if not en_path.exists():
-                    continue
-                de_by_key = {
-                    (register.get("parameter"), register.get("index", "")): register
-                    for register in _load_registers(de_path)
-                }
-                en_by_key = {
-                    (register.get("parameter"), register.get("index", "")): register
-                    for register in _load_registers(en_path)
-                }
-                for key in de_by_key.keys() & en_by_key.keys():
-                    if de_by_key[key].get("entity_id") != en_by_key[key].get("entity_id"):
-                        errors.append(f"{version_dir.name}/{relative}: {key!r}")
+        for path in CONFIG_ROOT.rglob("*.json"):
+            for register in _load_registers(path):
+                if not isinstance(register.get("name"), dict):
+                    errors.append(f"{path}: name is not localized")
+                for field, value in register.items():
+                    if isinstance(value, dict) and field not in localized_fields:
+                        errors.append(f"{path}: structural field {field} is localized")
         self.assertEqual([], errors, "\n".join(errors))
 
     def test_published_entity_id_examples_remain_finalized(self) -> None:
@@ -149,24 +144,23 @@ class RegisterConfigurationTests(unittest.TestCase):
             "boiler_temperature_setpoint_setting",
             "full_load_hours_pm",
         }
-        for language in ("de", "en"):
-            ids = {
-                register.get("entity_id")
-                for path in (CONFIG_ROOT / "v22.7.1" / language).rglob("*.json")
-                for register in _load_registers(path)
-            }
-            self.assertTrue(expected.issubset(ids), language)
+        ids = {
+            register.get("entity_id")
+            for path in (CONFIG_ROOT / "v22.7.1").rglob("*.json")
+            for register in _load_registers(path)
+        }
+        self.assertTrue(expected.issubset(ids))
 
     def test_selected_device_maps_have_no_cross_file_id_collisions(self) -> None:
         errors = []
 
-        for language_dir in CONFIG_ROOT.glob("v*/*"):
-            if not language_dir.is_dir():
+        for version_dir in CONFIG_ROOT.glob("v*"):
+            if not version_dir.is_dir():
                 continue
-            common_files = [language_dir / "modbus_registers.json"]
-            common_files.extend((language_dir / "equipment").glob("*.json"))
+            common_files = [version_dir / "modbus_registers.json"]
+            common_files.extend((version_dir / "equipment").glob("*.json"))
 
-            for device_file in (language_dir / "devices").glob("*.json"):
+            for device_file in (version_dir / "devices").glob("*.json"):
                 ids: dict[str, set[int]] = defaultdict(set)
                 for path in [*common_files, device_file]:
                     for register in _load_registers(path):
@@ -176,7 +170,7 @@ class RegisterConfigurationTests(unittest.TestCase):
                 for entity_id, addresses in ids.items():
                     if len(addresses) > 1:
                         errors.append(
-                            f"{language_dir.relative_to(CONFIG_ROOT)}/{device_file.name}: "
+                            f"{version_dir.relative_to(CONFIG_ROOT)}/{device_file.name}: "
                             f"{entity_id} -> {sorted(addresses)}"
                         )
 
@@ -263,7 +257,8 @@ class ConverterWorkflowTests(unittest.TestCase):
 
         self.assertEqual("review_register_21", register["entity_id"])
         self.assertNotIn("kesselpumpe", register["entity_id"])
-        self.assertEqual("missing_english_metadata", converter.review_items[0]["kind"])
+        self.assertEqual("ambiguous_entity_id", converter.review_items[0]["kind"])
+        self.assertTrue(converter.review_items[0]["blocking"])
 
     def test_read_write_collision_gets_deterministic_english_setting_suffix(self) -> None:
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -356,73 +351,619 @@ class ConverterWorkflowTests(unittest.TestCase):
             root = Path(temp_dir)
             generated_root = root / "generated"
             canonical_root = root / "canonical"
-            for language in ("de", "en"):
-                generated_dir = generated_root / "v1.0.0" / language
-                canonical_dir = canonical_root / "v1.0.0" / language
-                (generated_dir / "devices").mkdir(parents=True)
-                (canonical_dir / "devices").mkdir(parents=True)
-                generated_registers = [
-                    {
-                        "starting_address": number,
-                        "name": f"Register {number}",
-                        "entity_id": generated_id,
-                        "parameter": parameter,
-                        "user_level": "read",
-                    }
-                    for number, generated_id, parameter in zip(
-                        (10, 11, 12), generated_ids, parameters
-                    )
-                ]
-                generated_registers.append(
-                    {
-                        "starting_address": 13,
-                        "name": "New register",
-                        "entity_id": "new_register",
-                        "parameter": "KSM.new",
-                        "user_level": "read",
-                    }
-                )
-                canonical_registers = [
-                    {**register, "entity_id": published_id}
-                    for register, published_id in zip(
-                        generated_registers[:3], published_ids
-                    )
-                ]
-                (generated_dir / "devices" / "kwb_test.json").write_text(
-                    json.dumps({"registers": generated_registers}), encoding="utf-8"
-                )
-                (canonical_dir / "devices" / "kwb_test.json").write_text(
-                    json.dumps({"registers": canonical_registers}), encoding="utf-8"
-                )
-                (generated_dir / "value_tables.json").write_text(
-                    json.dumps({"value_tables": {}}), encoding="utf-8"
-                )
-                finalized_tables = {
-                    "system_ein_aus_t": {"0": "Off", "1": "On"},
-                    "system_yes_no_t": {"0": "No", "1": "Yes"},
+            generated_dir = generated_root / "v1.0.0"
+            canonical_dir = canonical_root / "v1.0.0"
+            (generated_dir / "devices").mkdir(parents=True)
+            (canonical_dir / "devices").mkdir(parents=True)
+            generated_registers = [
+                {
+                    "starting_address": number,
+                    "name": {"de": f"Register {number}", "en": f"Register {number}"},
+                    "entity_id": generated_id,
+                    "parameter": parameter,
+                    "user_level": "read",
                 }
-                (canonical_dir / "value_tables.json").write_text(
-                    json.dumps({"value_tables": finalized_tables}), encoding="utf-8"
+                for number, generated_id, parameter in zip(
+                    (10, 11, 12), generated_ids, parameters
+                )
+            ]
+            generated_registers.append(
+                {
+                    "starting_address": 13,
+                    "name": {"en": "New register"},
+                    "entity_id": "new_register",
+                    "parameter": "KSM.new",
+                    "user_level": "read",
+                }
+            )
+            canonical_registers = [
+                {**register, "entity_id": published_id}
+                for register, published_id in zip(
+                    generated_registers[:3], published_ids
+                )
+            ]
+            (generated_dir / "devices" / "kwb_test.json").write_text(
+                json.dumps({"registers": generated_registers}), encoding="utf-8"
+            )
+            (canonical_dir / "devices" / "kwb_test.json").write_text(
+                json.dumps({"registers": canonical_registers}), encoding="utf-8"
+            )
+            (generated_dir / "value_tables.json").write_text(
+                json.dumps({"value_tables": {}}), encoding="utf-8"
+            )
+            finalized_tables = {
+                "system_ein_aus_t": {
+                    "0": {"de": "Aus", "en": "Off"},
+                    "1": {"de": "Ein", "en": "On"},
+                },
+                "system_yes_no_t": {
+                    "0": {"de": "Nein", "en": "No"},
+                    "1": {"de": "Ja", "en": "Yes"},
+                },
+            }
+            (canonical_dir / "value_tables.json").write_text(
+                json.dumps({"value_tables": finalized_tables}), encoding="utf-8"
+            )
+            for directory in (generated_dir, canonical_dir):
+                (directory / "alarm_codes.json").write_text(
+                    json.dumps({"alarm_codes": []}), encoding="utf-8"
                 )
 
             proposed, report = build_finalized_version(
                 generated_root, canonical_root, "1.0.0"
             )
 
-        for language in ("de", "en"):
-            registers = proposed[Path(language) / "devices" / "kwb_test.json"][
-                "registers"
-            ]
-            self.assertEqual(
-                [*published_ids, "new_register"],
-                [register["entity_id"] for register in registers],
-            )
-            tables = proposed[Path(language) / "value_tables.json"]["value_tables"]
-            self.assertIn("system_ein_aus_t", tables)
-            self.assertIn("system_yes_no_t", tables)
-        self.assertEqual(6, report["summary"]["published_entity_ids_preserved"])
-        self.assertEqual(2, report["summary"]["new_registers_added"])
+        registers = proposed[Path("devices/kwb_test.json")]["registers"]
+        self.assertEqual(
+            [*published_ids, "new_register"],
+            [register["entity_id"] for register in registers],
+        )
+        tables = proposed[Path("value_tables.json")]["value_tables"]
+        self.assertIn("system_ein_aus_t", tables)
+        self.assertIn("system_yes_no_t", tables)
+        self.assertEqual(3, report["summary"]["published_entity_ids_preserved"])
+        self.assertEqual(1, report["summary"]["new_registers_added"])
         self.assertFalse(report["blocking_review_required"])
+
+
+class FinalizerCompatibilityTests(unittest.TestCase):
+    """Cover published-ID compatibility across canonical firmware versions."""
+
+    @staticmethod
+    def _write_version(root: Path, version: str, registers: list[dict]) -> None:
+        version_dir = root / version
+        device_dir = version_dir / "devices"
+        device_dir.mkdir(parents=True)
+        (device_dir / "kwb_test.json").write_text(
+            json.dumps({"registers": registers}), encoding="utf-8"
+        )
+        (version_dir / "value_tables.json").write_text(
+            json.dumps({"value_tables": {}}), encoding="utf-8"
+        )
+        (version_dir / "alarm_codes.json").write_text(
+            json.dumps({"alarm_codes": []}), encoding="utf-8"
+        )
+
+    @staticmethod
+    def _register(
+        address: int,
+        entity_id: str,
+        parameter: str = "KSM.foo",
+        **technical,
+    ) -> dict:
+        register = {
+            "starting_address": address,
+            "name": {"de": "Foo", "en": "Foo"},
+            "entity_id": entity_id,
+            "parameter": parameter,
+            "data_type": "04",
+            "type": "u16",
+            "user_level": "read",
+        }
+        register.update(technical)
+        return register
+
+    def test_new_version_preserves_id_and_uses_all_generated_technical_data(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        old = self._register(
+            100,
+            "pump_speed",
+            min=0,
+            max=100,
+            unit="rpm",
+            user_level="read",
+        )
+        generated = self._register(
+            200,
+            "pump_speed_generated",
+            min=5,
+            max=150,
+            unit="percent",
+            user_level="readwrite",
+            type="u32",
+        )
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(canonical_root, "v1.0.0", [old])
+            self._write_version(generated_root, "v2.0.0", [generated])
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+
+        result = proposed[Path("devices/kwb_test.json")]["registers"][0]
+        self.assertEqual({**generated, "entity_id": "pump_speed"}, result)
+        self.assertEqual("v1.0.0", report["base_version"])
+        self.assertEqual("automatic", report["baseline_selection"])
+        action = next(item for item in report["items"] if item.get("action"))
+        self.assertEqual("preserve_entity_id", action["action"])
+        self.assertEqual("v2.0.0", action["target_version"])
+        self.assertEqual("v1.0.0", action["base_version"])
+        self.assertEqual("pump_speed", action["entity_id"])
+        self.assertEqual(
+            {"old": 100, "new": 200},
+            action["technical_changes"]["starting_address"],
+        )
+        for field in ("min", "max", "unit", "user_level", "type"):
+            self.assertIn(field, action["technical_changes"])
+        self.assertFalse(report["blocking_review_required"])
+
+    def test_explicit_base_version_selects_requested_canonical_history(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(
+                canonical_root,
+                "v1.0.0",
+                [self._register(100, "explicit_published")],
+            )
+            self._write_version(
+                canonical_root,
+                "v1.5.0",
+                [self._register(100, "automatic_published")],
+            )
+            self._write_version(
+                generated_root,
+                "v2.0.0",
+                [self._register(200, "generated_id")],
+            )
+
+            proposed, report = build_finalized_version(
+                generated_root,
+                canonical_root,
+                "2.0.0",
+                base_version="1.0.0",
+            )
+
+        result = proposed[Path("devices/kwb_test.json")]["registers"][0]
+        self.assertEqual("explicit_published", result["entity_id"])
+        self.assertEqual("v1.0.0", report["base_version"])
+        self.assertEqual("explicit", report["baseline_selection"])
+
+    def test_missing_explicit_base_version_fails_clearly(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(
+                generated_root,
+                "v2.0.0",
+                [self._register(200, "generated_id")],
+            )
+
+            with self.assertRaisesRegex(
+                ValueError, "Canonical base version does not exist"
+            ):
+                build_finalized_version(
+                    generated_root,
+                    canonical_root,
+                    "2.0.0",
+                    base_version="1.0.0",
+                )
+
+    def test_automatic_base_is_highest_lower_semantic_version(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            for version, entity_id in (
+                ("v9.9.9", "id_9"),
+                ("v10.0.0", "id_10"),
+                ("v25.4.0", "id_25_4"),
+                ("v25.7.1", "id_25_7"),
+                ("v27.0.0", "newer_must_not_win"),
+            ):
+                self._write_version(
+                    canonical_root, version, [self._register(100, entity_id)]
+                )
+            self._write_version(
+                generated_root,
+                "v26.6.1",
+                [self._register(200, "generated_id")],
+            )
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "26.6.1"
+            )
+
+        result = proposed[Path("devices/kwb_test.json")]["registers"][0]
+        self.assertEqual("id_25_7", result["entity_id"])
+        self.assertEqual("v25.7.1", report["base_version"])
+
+    def test_no_older_baseline_uses_generated_data_and_reports_it(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        generated = self._register(200, "first_published_id")
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(
+                canonical_root,
+                "v3.0.0",
+                [self._register(300, "newer_must_not_win")],
+            )
+            self._write_version(generated_root, "v2.0.0", [generated])
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+
+        result = proposed[Path("devices/kwb_test.json")]["registers"][0]
+        self.assertEqual(generated, result)
+        self.assertIsNone(report["base_version"])
+        self.assertEqual("none", report["baseline_selection"])
+        self.assertTrue(
+            any(item["kind"] == "no_compatibility_baseline" for item in report["items"])
+        )
+        self.assertFalse(report["blocking_review_required"])
+
+    def test_ambiguous_baseline_match_blocks_write(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(
+                canonical_root,
+                "v1.0.0",
+                [
+                    self._register(100, "published_one"),
+                    self._register(101, "published_two"),
+                ],
+            )
+            self._write_version(
+                generated_root,
+                "v2.0.0",
+                [self._register(200, "generated_id")],
+            )
+
+            _proposed, report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+            review_path = root / "review.json"
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(
+                        PROJECT_ROOT
+                        / "modbusinfoConverter"
+                        / "import_generated_config.py"
+                    ),
+                    "2.0.0",
+                    "--generated-root",
+                    str(generated_root),
+                    "--canonical-root",
+                    str(canonical_root),
+                    "--base-version",
+                    "1.0.0",
+                    "--report",
+                    str(review_path),
+                    "--write",
+                ],
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+
+            self.assertFalse((canonical_root / "v2.0.0").exists())
+
+        self.assertTrue(report["blocking_review_required"])
+        self.assertTrue(
+            any(item["kind"] == "ambiguous_logical_match" for item in report["items"])
+        )
+        self.assertEqual(2, completed.returncode)
+        self.assertIn("Refusing to write", completed.stdout)
+
+    def test_changed_equipment_index_is_blocking_not_fuzzy_matched(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(
+                canonical_root,
+                "v1.0.0",
+                [
+                    self._register(
+                        100,
+                        "published_id",
+                        index={"de": "PUF 0", "en": "BUF 0"},
+                        equipment_group="BUF",
+                        equipment_instance=0,
+                    )
+                ],
+            )
+            self._write_version(
+                generated_root,
+                "v2.0.0",
+                [
+                    self._register(
+                        200,
+                        "generated_id",
+                        index={"de": "PUF 1", "en": "BUF 1"},
+                        equipment_group="BUF",
+                        equipment_instance=1,
+                    )
+                ],
+            )
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+
+        result = proposed[Path("devices/kwb_test.json")]["registers"][0]
+        self.assertEqual("generated_id", result["entity_id"])
+        self.assertTrue(report["blocking_review_required"])
+        self.assertTrue(
+            any(
+                item["kind"] == "incompatible_equipment_index_context"
+                for item in report["items"]
+            )
+        )
+
+    def test_existing_target_uses_generated_metadata_and_same_version_id(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        old = self._register(100, "published_id", max=100)
+        generated = self._register(200, "generated_id", max=150)
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(canonical_root, "v2.0.0", [old])
+            self._write_version(generated_root, "v2.0.0", [generated])
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+
+        result = proposed[Path("devices/kwb_test.json")]["registers"][0]
+        self.assertEqual({**generated, "entity_id": "published_id"}, result)
+        self.assertEqual("v2.0.0", report["base_version"])
+        self.assertEqual("same_version", report["baseline_selection"])
+        self.assertFalse(report["blocking_review_required"])
+
+    def test_version_ordering_is_numeric_and_malformed_versions_fail(self) -> None:
+        from modbusinfoConverter.import_generated_config import parse_firmware_version
+
+        self.assertLess(
+            parse_firmware_version("v25.7.1"), parse_firmware_version("v26.6.1")
+        )
+        self.assertLess(
+            parse_firmware_version("v9.9.9"), parse_firmware_version("v10.0.0")
+        )
+        with self.assertRaisesRegex(ValueError, "Malformed firmware version"):
+            parse_firmware_version("v25.7")
+
+
+class MultilingualSchemaTests(unittest.TestCase):
+    """Cover deterministic DE/EN merging and explicitly localized values."""
+
+    @staticmethod
+    def _source_register(address: int, name: str, entity_id: str = "foo") -> dict:
+        return {
+            "starting_address": address,
+            "name": name,
+            "entity_id": entity_id,
+            "parameter": "KSM.foo",
+            "data_type": "04",
+            "type": "u16",
+            "user_level": "read",
+        }
+
+    def test_german_only_register_survives_with_english_fallback(self) -> None:
+        from modbusinfoConverter.multilingual_config import (
+            merge_register_documents,
+            new_report,
+        )
+        localization = _load_module(
+            "kwb_localization_de_only_test",
+            INTEGRATION_ROOT / "config_localization.py",
+        )
+        report = new_report("test")
+        merged = merge_register_documents(
+            {"registers": [self._source_register(1234, "Pumpe")]},
+            {"registers": []},
+            "v2.0.0",
+            "devices/test.json",
+            report,
+        )["registers"][0]
+
+        german = localization.localize_register(merged, "de")
+        english = localization.localize_register(merged, "en")
+        sys.modules.pop("kwb_localization_de_only_test", None)
+        self.assertEqual("Pumpe", german["name"])
+        self.assertEqual("Pumpe", english["name"])
+        self.assertEqual(german["entity_id"], english["entity_id"])
+        self.assertEqual(1, report["summary"]["de_only_registers"])
+        self.assertFalse(report["items"][0]["blocking"])
+
+    def test_english_only_register_survives_with_german_fallback(self) -> None:
+        from modbusinfoConverter.multilingual_config import (
+            merge_register_documents,
+            new_report,
+        )
+        localization = _load_module(
+            "kwb_localization_en_only_test",
+            INTEGRATION_ROOT / "config_localization.py",
+        )
+        report = new_report("test")
+        merged = merge_register_documents(
+            {"registers": []},
+            {"registers": [self._source_register(1234, "Pump")]},
+            "v2.0.0",
+            "devices/test.json",
+            report,
+        )["registers"][0]
+
+        german = localization.localize_register(merged, "de")
+        english = localization.localize_register(merged, "en")
+        sys.modules.pop("kwb_localization_en_only_test", None)
+        self.assertEqual("Pump", german["name"])
+        self.assertEqual("Pump", english["name"])
+        self.assertEqual(1, report["summary"]["en_only_registers"])
+
+    def test_one_to_many_language_pair_is_blocking(self) -> None:
+        from modbusinfoConverter.multilingual_config import (
+            merge_register_documents,
+            new_report,
+        )
+
+        report = new_report("test")
+        german = self._source_register(100, "Pumpe")
+        english_one = self._source_register(200, "Pump", "foo_one")
+        english_two = self._source_register(300, "Pump duplicate", "foo_two")
+        merge_register_documents(
+            {"registers": [german]},
+            {"registers": [english_one, english_two]},
+            "v2.0.0",
+            "devices/test.json",
+            report,
+        )
+
+        ambiguity = next(
+            item
+            for item in report["items"]
+            if item["kind"] == "ambiguous_language_pair"
+        )
+        self.assertTrue(ambiguity["blocking"])
+        self.assertEqual(
+            {"parameter_and_equipment_context": ("KSM.foo", None)},
+            ambiguity["candidate_matching_evidence"],
+        )
+
+    def test_structural_language_conflict_blocks_finalizer_write(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+        from modbusinfoConverter.multilingual_config import (
+            merge_register_documents,
+            new_report,
+        )
+
+        report = new_report("test")
+        german = self._source_register(100, "Pumpe")
+        english = self._source_register(200, "Pump")
+        english["type"] = "u32"
+        merged = merge_register_documents(
+            {"registers": [german]},
+            {"registers": [english]},
+            "v2.0.0",
+            "devices/test.json",
+            report,
+        )
+        conflict = next(item for item in report["items"] if item["blocking"])
+        self.assertEqual("structural_conflict", conflict["kind"])
+        self.assertEqual(["starting_address", "type"], conflict["fields"])
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            version_dir = generated_root / "v2.0.0"
+            (version_dir / "devices").mkdir(parents=True)
+            (version_dir / "devices" / "test.json").write_text(
+                json.dumps(merged), encoding="utf-8"
+            )
+            (version_dir / "value_tables.json").write_text(
+                json.dumps({"value_tables": {}}), encoding="utf-8"
+            )
+            (version_dir / "alarm_codes.json").write_text(
+                json.dumps({"alarm_codes": []}), encoding="utf-8"
+            )
+            (generated_root / "conversion_review.json").write_text(
+                json.dumps(report), encoding="utf-8"
+            )
+            _proposal, import_report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+            completed = subprocess.run(
+                [
+                    sys.executable,
+                    str(PROJECT_ROOT / "modbusinfoConverter/import_generated_config.py"),
+                    "2.0.0",
+                    "--generated-root",
+                    str(generated_root),
+                    "--canonical-root",
+                    str(canonical_root),
+                    "--report",
+                    str(root / "import-review.json"),
+                    "--write",
+                ],
+                check=False,
+                capture_output=True,
+                text=True,
+            )
+
+        self.assertTrue(import_report["blocking_review_required"])
+        self.assertEqual(2, completed.returncode)
+        self.assertIn("Refusing to write", completed.stdout)
+
+    def test_value_table_and_alarm_labels_resolve_from_one_definition(self) -> None:
+        localization = _load_module(
+            "kwb_localization_values_test",
+            INTEGRATION_ROOT / "config_localization.py",
+        )
+        tables = {
+            "system_ein_aus_t": {
+                "0": {"de": "Aus", "en": "Off"},
+                "1": {"de": "Ein", "en": "On"},
+            }
+        }
+        alarm = {
+            "starting_address": 7,
+            "alarm_id": "0.7",
+            "description": {"de": "Batterie leer", "en": "Battery empty"},
+        }
+
+        self.assertEqual(
+            {"0": "Aus", "1": "Ein"},
+            localization.localize_value_tables(tables, "de")["system_ein_aus_t"],
+        )
+        self.assertEqual(
+            {"0": "Off", "1": "On"},
+            localization.localize_value_tables(tables, "en")["system_ein_aus_t"],
+        )
+        self.assertEqual(
+            "Batterie leer",
+            localization.localize_alarm_codes([alarm], "de")[0]["description"],
+        )
+        self.assertEqual(
+            "Battery empty",
+            localization.localize_alarm_codes([alarm], "en")[0]["description"],
+        )
+        sys.modules.pop("kwb_localization_values_test", None)
 
 
 class EquipmentSelectionTests(unittest.TestCase):
@@ -436,10 +977,20 @@ class EquipmentSelectionTests(unittest.TestCase):
             "kwb_register_manager_test",
             INTEGRATION_ROOT / "async_modular_register_manager.py",
         )
+        cls.localization_module = _load_module(
+            "kwb_config_localization_test",
+            INTEGRATION_ROOT / "config_localization.py",
+        )
+        cls.version_module = _load_module(
+            "kwb_version_manager_test",
+            INTEGRATION_ROOT / "version_manager.py",
+        )
 
     @classmethod
     def tearDownClass(cls) -> None:
         sys.modules.pop("kwb_register_manager_test", None)
+        sys.modules.pop("kwb_config_localization_test", None)
+        sys.modules.pop("kwb_version_manager_test", None)
         if cls.previous_aiofiles is None:
             sys.modules.pop("aiofiles", None)
         else:
@@ -455,10 +1006,13 @@ class EquipmentSelectionTests(unittest.TestCase):
 
         for version, language, expected_index in cases:
             with self.subTest(version=version, language=language):
-                config_dir = CONFIG_ROOT / version / language
-                registers = _load_registers(
-                    config_dir / "equipment" / "circulation.json"
-                )
+                config_dir = CONFIG_ROOT / version
+                registers = [
+                    self.localization_module.localize_register(register, language)
+                    for register in _load_registers(
+                        config_dir / "equipment" / "circulation.json"
+                    )
+                ]
                 manager = self.manager_module.AsyncModularRegisterManager(
                     config_path=str(config_dir), language=language
                 )
@@ -473,52 +1027,123 @@ class EquipmentSelectionTests(unittest.TestCase):
                 self.assertTrue(selected)
                 self.assertEqual({expected_index}, {reg["index"] for reg in selected})
 
+    def test_version_config_path_is_language_neutral(self) -> None:
+        manager = self.version_module.VersionManager(
+            INTEGRATION_ROOT / "config"
+        )
+        german = manager.get_config_path("25.7.1", "de")
+        english = manager.get_config_path("25.7.1", "en")
+        self.assertEqual(german, english)
+        self.assertEqual(CONFIG_ROOT / "v25.7.1", german)
+
+    def test_runtime_register_membership_is_identical_in_german_and_english(self) -> None:
+        version_dir = CONFIG_ROOT / "v25.7.1"
+        universal = _load_registers(version_dir / "modbus_registers.json")
+        easyair = _load_registers(version_dir / "devices/kwb_easyair_plus.json")
+
+        def load(language: str) -> list[dict]:
+            manager = self.manager_module.AsyncModularRegisterManager(
+                config_path=str(version_dir), language=language
+            )
+            manager._initialized = True
+            manager._universal_registers = [
+                self.localization_module.localize_register(register, language)
+                for register in universal
+            ]
+            manager._device_cache["KWB EasyAir Plus"] = [
+                self.localization_module.localize_register(register, language)
+                for register in easyair
+            ]
+            return asyncio.run(
+                manager.get_all_registers(
+                    "UserLevel", device_type="KWB EasyAir Plus"
+                )
+            )
+
+        german = load("de")
+        english = load("en")
+        identity = lambda register: (
+            register.get("parameter"),
+            register.get("starting_address"),
+            register.get("entity_id"),
+            f"192.0.2.10_1_{register.get('entity_id')}",
+        )
+        self.assertEqual([identity(register) for register in german], [
+            identity(register) for register in english
+        ])
+        self.assertEqual(len(german), len(english))
+        self.assertTrue(
+            any(
+                de_register["name"] != en_register["name"]
+                for de_register, en_register in zip(german, english)
+            )
+        )
+
+        missing_english = next(
+            register
+            for register in easyair
+            if set(register.get("name", {})) == {"de"}
+        )
+        address = missing_english["starting_address"]
+        german_only_runtime = next(
+            register for register in german if register["starting_address"] == address
+        )
+        english_fallback_runtime = next(
+            register for register in english if register["starting_address"] == address
+        )
+        self.assertEqual(german_only_runtime["name"], english_fallback_runtime["name"])
+        self.assertEqual(
+            german_only_runtime["entity_id"], english_fallback_runtime["entity_id"]
+        )
+
     def test_every_shipped_equipment_prefix_selects_first_instance(self) -> None:
         errors = []
 
-        for language_dir in sorted(CONFIG_ROOT.glob("v*/*")):
-            if not language_dir.is_dir():
+        for version_dir in sorted(CONFIG_ROOT.glob("v*")):
+            if not version_dir.is_dir():
                 continue
-            language = language_dir.name
+            for language in ("de", "en"):
+                for equipment_key, config in (
+                    self.manager_module.AsyncModularRegisterManager.EQUIPMENT_KEY_CONFIG.items()
+                ):
+                    path = version_dir / "equipment" / config["filename"]
+                    if not path.exists():
+                        continue
 
-            for equipment_key, config in (
-                self.manager_module.AsyncModularRegisterManager.EQUIPMENT_KEY_CONFIG.items()
-            ):
-                path = language_dir / "equipment" / config["filename"]
-                if not path.exists():
-                    continue
-
-                source_registers = _load_registers(path)
-                manager = self.manager_module.AsyncModularRegisterManager(
-                    config_path=str(language_dir), language=language
-                )
-                manager._equipment_cache[equipment_key] = source_registers
-                selected = asyncio.run(
-                    manager.get_equipment_registers(
-                        equipment_key, "UserLevel", count=1
+                    source_registers = [
+                        self.localization_module.localize_register(register, language)
+                        for register in _load_registers(path)
+                    ]
+                    manager = self.manager_module.AsyncModularRegisterManager(
+                        config_path=str(version_dir), language=language
                     )
-                )
-
-                source_prefixes = {
-                    register["index"].split(" ", 1)[0]
-                    for register in source_registers
-                    if " " in register.get("index", "")
-                }
-                selected_prefixes = {
-                    register["index"].split(" ", 1)[0]
-                    for register in selected
-                    if " " in register.get("index", "")
-                }
-                if not selected or source_prefixes != selected_prefixes:
-                    errors.append(
-                        f"{language_dir.relative_to(CONFIG_ROOT)}/{equipment_key}: "
-                        f"{source_prefixes} -> {selected_prefixes}"
+                    manager._equipment_cache[equipment_key] = source_registers
+                    selected = asyncio.run(
+                        manager.get_equipment_registers(
+                            equipment_key, "UserLevel", count=1
+                        )
                     )
+
+                    source_prefixes = {
+                        register["equipment_group"]
+                        for register in source_registers
+                        if register.get("equipment_group")
+                    }
+                    selected_prefixes = {
+                        register["equipment_group"]
+                        for register in selected
+                        if register.get("equipment_group")
+                    }
+                    if not selected or source_prefixes != selected_prefixes:
+                        errors.append(
+                            f"{version_dir.name}/{language}/{equipment_key}: "
+                            f"{source_prefixes} -> {selected_prefixes}"
+                        )
 
         self.assertEqual([], errors, "\n".join(errors))
 
     def test_english_equipment_aliases_and_transfer_stations(self) -> None:
-        config_dir = CONFIG_ROOT / "v25.4.0" / "en"
+        config_dir = CONFIG_ROOT / "v25.4.0"
         expected = {
             "boiler_sequence": {"B 1"},
             "dhw_storage": {"DHWC 1"},
@@ -533,9 +1158,12 @@ class EquipmentSelectionTests(unittest.TestCase):
                     self.manager_module.AsyncModularRegisterManager
                     .EQUIPMENT_KEY_CONFIG[equipment_key]
                 )
-                source_registers = _load_registers(
-                    config_dir / "equipment" / config["filename"]
-                )
+                source_registers = [
+                    self.localization_module.localize_register(register, "en")
+                    for register in _load_registers(
+                        config_dir / "equipment" / config["filename"]
+                    )
+                ]
                 manager = self.manager_module.AsyncModularRegisterManager(
                     config_path=str(config_dir), language="en"
                 )
@@ -555,10 +1183,13 @@ class EquipmentSelectionTests(unittest.TestCase):
         """Blank indexes are feature-level entries, not missing equipment slots."""
         for version, language in (("v21.4.0", "de"), ("v25.7.1", "en")):
             with self.subTest(version=version, language=language):
-                config_dir = CONFIG_ROOT / version / language
-                source_registers = _load_registers(
-                    config_dir / "equipment" / "boiler_sequence.json"
-                )
+                config_dir = CONFIG_ROOT / version
+                source_registers = [
+                    self.localization_module.localize_register(register, language)
+                    for register in _load_registers(
+                        config_dir / "equipment" / "boiler_sequence.json"
+                    )
+                ]
                 manager = self.manager_module.AsyncModularRegisterManager(
                     config_path=str(config_dir), language=language
                 )
@@ -585,20 +1216,21 @@ class EquipmentSelectionTests(unittest.TestCase):
     def test_shipped_equipment_indexes_are_instance_indexes_or_blank(self) -> None:
         """Non-blank malformed indexes would otherwise hide equipment entities."""
         errors = []
-        for path in sorted(CONFIG_ROOT.glob("v*/*/equipment/*.json")):
+        for path in sorted(CONFIG_ROOT.glob("v*/equipment/*.json")):
             for register in _load_registers(path):
-                index = register.get("index", "")
-                if not index:
-                    continue
-                if (
-                    self.manager_module.AsyncModularRegisterManager
-                    ._parse_equipment_index(index)
-                    is None
-                ):
-                    errors.append(
-                        f"{path.relative_to(CONFIG_ROOT)} address "
-                        f"{register.get('starting_address')}: {index!r}"
-                    )
+                for language in ("de", "en"):
+                    index = register.get("index", {}).get(language, "")
+                    if not index:
+                        continue
+                    if (
+                        self.manager_module.AsyncModularRegisterManager
+                        ._parse_equipment_index(index)
+                        is None
+                    ):
+                        errors.append(
+                            f"{path.relative_to(CONFIG_ROOT)} address "
+                            f"{register.get('starting_address')} {language}: {index!r}"
+                        )
         self.assertEqual([], errors, "\n".join(errors))
 
     def test_final_address_validation_applies_to_every_register_source(self) -> None:
@@ -876,16 +1508,24 @@ class IdentityCompatibilityTests(unittest.TestCase):
                 ),
                 sanitize_for_entity_id=lambda value: value.lower(),
             )
-            register = {
-                "starting_address": 8192,
-                "entity_id": "software_major",
-                "name": "Software (major)",
-            }
-
-            entity = entity_module.KWBBaseEntity(coordinator, register, "sensor")
-
-            self.assertEqual("sensor.kwb_software_major", entity.entity_id)
-            self.assertEqual("192.0.2.10_1_software_major", entity._attr_unique_id)
+            for address, published_id in (
+                (8201, "boiler_pump_percent"),
+                (8282, "boiler_temperature_setpoint_setting"),
+                (8257, "full_load_hours_pm"),
+            ):
+                with self.subTest(entity_id=published_id):
+                    register = {
+                        "starting_address": address,
+                        "entity_id": published_id,
+                        "name": published_id.replace("_", " "),
+                    }
+                    entity = entity_module.KWBBaseEntity(
+                        coordinator, register, "sensor"
+                    )
+                    self.assertEqual(f"sensor.kwb_{published_id}", entity.entity_id)
+                    self.assertEqual(
+                        f"192.0.2.10_1_{published_id}", entity._attr_unique_id
+                    )
         finally:
             sys.modules.pop("custom_components.kwb_heating.coordinator_identity_test", None)
             sys.modules.pop("custom_components.kwb_heating.entity_identity_test", None)

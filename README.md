@@ -240,11 +240,12 @@ Migration from legacy "rohwert" entities:
 
 ## 🌍 Language Support
 
-The integration supports **automatic version detection** and **multi-language configurations**:
+The integration supports **automatic version detection** and multilingual display
+data without duplicating the physical register configuration:
 
 ### Supported Languages & Versions
-- **German (de)** - Complete support for v21.4.0, v22.7.1, v24.7.1 and v25.7.1
-- **English (en)** - Complete support for v21.4.0, v22.7.1, v24.7.1 and v25.7.1
+- **German (de)** - Complete support for v21.4.0, v22.7.1, v24.7.1, v25.4.0 and v25.7.1
+- **English (en)** - Complete support for v21.4.0, v22.7.1, v24.7.1, v25.4.0 and v25.7.1, with safe fallback for documented source translation gaps
 
 ### Auto-Detection
 1. **Version Detection**: Automatically detects KWB firmware version via Modbus register 8192
@@ -254,27 +255,38 @@ The integration supports **automatic version detection** and **multi-language co
    - **English (en)**: Force English configuration
 
 ### Configuration File Structure
-The integration uses version and language-specific configuration files. The tree
+
+Each firmware has one language-independent technical configuration. The tree
 under `custom_components/kwb_heating/config/versions/` is the only canonical
-production source of register definitions and the only version tree loaded at
-runtime:
+production source and the only version tree loaded at runtime:
+
 ```
 config/versions/
 ├── v21.4.0/
-│   ├── de/  # German version 21.4.0
-│   └── en/  # English version 21.4.0
+│   ├── devices/
+│   ├── equipment/
+│   ├── modbus_registers.json
+│   ├── value_tables.json
+│   └── alarm_codes.json
 ├── v22.7.1/
-│   ├── de/  # German version 22.7.1
-│   └── en/  # English version 22.7.1
-├── v24.7.1/
-│   ├── de/  # German version 24.7.1
-│   └── en/  # English version 24.7.1
+│   └── (same unified structure)
 └── v25.7.1/
-    ├── de/  # German version 25.7.1
-    └── en/  # English version 25.7.1
+    └── (same unified structure)
 ```
 
-**Note**: Register names, equipment labels, and status values within the configuration files are in their respective language (German or English), as provided by KWB's ModbusInfo documentation.
+Register `name` and `index` are explicit `{ "de": ..., "en": ... }`
+objects. Value-table labels and alarm descriptions use the same localized-value
+shape. Addresses, parameters, entity IDs, types, limits, access metadata,
+scaling, register lengths, and value-table references are structural values and
+must never vary by language. Equipment selection uses the language-neutral
+`equipment_group`, `equipment_instance`, and optional `equipment_subindex`
+fields; localized `index` is presentation data.
+
+Localized values resolve in this order: requested language, English, German,
+then any non-empty available value. A missing English translation therefore
+never removes a physical register or entity. Changing the Home Assistant
+language changes presentation only—not addresses, register membership, entity
+IDs, or unique IDs.
 
 ## 🔄 ModbusInfo Converter
 
@@ -284,12 +296,12 @@ development artifact; it is neither a runtime dependency nor a production mirror
 
 ### Key Features
 - Multi-version support (v21.4.0, v22.7.1, v24.7.1, v25.4.0, v25.7.1, etc.)
-- Multi-language processing (German & English Excel files)
+- Merged German/English processing into one multilingual firmware template
 - Language-independent entity_id generation (derived from English data)
 - Equipment index prefixes included in entity_ids
 - Automatic device categorization (universal, device-specific, equipment)
 - Combifire inheritance (CF models inherit from Combifire base)
-- Consistent English filenames for cross-language compatibility
+- Consistent English filenames in the one canonical tree
 
 ### Available Scripts
 
@@ -324,7 +336,7 @@ For detailed usage instructions, see [modbusinfoConverter/README.md](modbusinfoC
 
 ### Use Cases
 - **Add new KWB firmware versions**: Convert new ModbusInfo Excel files
-- **Add language support**: Convert English/other language Excel files
+- **Improve translations**: Convert matching German/English Excel files
 - **Update existing configs**: Generate a template, review it, then use safe finalization
 - **Recreate missing Excel files**: Generate Excel from JSON when source is unavailable
 - **Development**: Test with modified register definitions

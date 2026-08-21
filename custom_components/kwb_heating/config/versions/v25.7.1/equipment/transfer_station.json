@@ -1,0 +1,3588 @@
+{
+  "registers": [
+    {
+      "starting_address": 10463,
+      "entity_id": "ts_1_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10464,
+      "entity_id": "ts_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10465,
+      "entity_id": "ts_3_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10466,
+      "entity_id": "ts_4_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10467,
+      "entity_id": "ts_5_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10468,
+      "entity_id": "ts_6_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10469,
+      "entity_id": "ts_7_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10470,
+      "entity_id": "ts_8_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10471,
+      "entity_id": "ts_9_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10472,
+      "entity_id": "ts_10_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10473,
+      "entity_id": "ts_11_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10474,
+      "entity_id": "ts_12_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10475,
+      "entity_id": "ts_13_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10476,
+      "entity_id": "ts_14_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "uebergabestation_status_t",
+      "id": "3000",
+      "parameter": "UEBERGABE.uegs_status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10479,
+      "entity_id": "ts_1_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10480,
+      "entity_id": "ts_1_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10481,
+      "entity_id": "ts_2_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10482,
+      "entity_id": "ts_2_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10483,
+      "entity_id": "ts_3_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10484,
+      "entity_id": "ts_3_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10485,
+      "entity_id": "ts_4_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10486,
+      "entity_id": "ts_4_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10487,
+      "entity_id": "ts_5_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10488,
+      "entity_id": "ts_5_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10489,
+      "entity_id": "ts_6_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10490,
+      "entity_id": "ts_6_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10491,
+      "entity_id": "ts_7_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10492,
+      "entity_id": "ts_7_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10493,
+      "entity_id": "ts_8_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10494,
+      "entity_id": "ts_8_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10495,
+      "entity_id": "ts_9_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10496,
+      "entity_id": "ts_9_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10497,
+      "entity_id": "ts_10_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10498,
+      "entity_id": "ts_10_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10499,
+      "entity_id": "ts_11_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10500,
+      "entity_id": "ts_11_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10501,
+      "entity_id": "ts_12_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10502,
+      "entity_id": "ts_12_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10503,
+      "entity_id": "ts_13_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10504,
+      "entity_id": "ts_13_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10505,
+      "entity_id": "ts_14_forw_flow_temp_sec_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (value)",
+        "en": "Forw. flow temp. sec. (value)"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10506,
+      "entity_id": "ts_14_forw_flow_temp_sec_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2994",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Sekundär (status)",
+        "en": "Forw. flow temp. sec. (status)"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10508,
+      "entity_id": "ts_1_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10509,
+      "entity_id": "ts_2_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10510,
+      "entity_id": "ts_3_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10511,
+      "entity_id": "ts_4_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10512,
+      "entity_id": "ts_5_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10513,
+      "entity_id": "ts_6_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10514,
+      "entity_id": "ts_7_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10515,
+      "entity_id": "ts_8_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10516,
+      "entity_id": "ts_9_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10517,
+      "entity_id": "ts_10_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10518,
+      "entity_id": "ts_11_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10519,
+      "entity_id": "ts_12_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10520,
+      "entity_id": "ts_13_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10521,
+      "entity_id": "ts_14_forward_flow_temp_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2995",
+      "parameter": "UEBERGABE.vorlauftemp_sekundaer_soll",
+      "name": {
+        "de": "Vorlauftemperatur Soll",
+        "en": "Forward flow temp. Setpoint"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10524,
+      "entity_id": "ts_1_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10525,
+      "entity_id": "ts_1_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10526,
+      "entity_id": "ts_2_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10527,
+      "entity_id": "ts_2_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10528,
+      "entity_id": "ts_3_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10529,
+      "entity_id": "ts_3_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10530,
+      "entity_id": "ts_4_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10531,
+      "entity_id": "ts_4_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10532,
+      "entity_id": "ts_5_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10533,
+      "entity_id": "ts_5_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10534,
+      "entity_id": "ts_6_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10535,
+      "entity_id": "ts_6_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10536,
+      "entity_id": "ts_7_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10537,
+      "entity_id": "ts_7_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10538,
+      "entity_id": "ts_8_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10539,
+      "entity_id": "ts_8_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10540,
+      "entity_id": "ts_9_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10541,
+      "entity_id": "ts_9_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10542,
+      "entity_id": "ts_10_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10543,
+      "entity_id": "ts_10_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10544,
+      "entity_id": "ts_11_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10545,
+      "entity_id": "ts_11_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10546,
+      "entity_id": "ts_12_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10547,
+      "entity_id": "ts_12_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10548,
+      "entity_id": "ts_13_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10549,
+      "entity_id": "ts_13_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10550,
+      "entity_id": "ts_14_forw_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.value",
+      "name": {
+        "de": "Vorlauftemperatur Primär (value)",
+        "en": "Forw. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10551,
+      "entity_id": "ts_14_forw_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2996",
+      "parameter": "UEBERGABE.vorlauftemp_primaer_ist.status",
+      "name": {
+        "de": "Vorlauftemperatur Primär (status)",
+        "en": "Forw. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10554,
+      "entity_id": "ts_1_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10555,
+      "entity_id": "ts_1_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10556,
+      "entity_id": "ts_2_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10557,
+      "entity_id": "ts_2_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10558,
+      "entity_id": "ts_3_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10559,
+      "entity_id": "ts_3_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10560,
+      "entity_id": "ts_4_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10561,
+      "entity_id": "ts_4_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10562,
+      "entity_id": "ts_5_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10563,
+      "entity_id": "ts_5_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10564,
+      "entity_id": "ts_6_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10565,
+      "entity_id": "ts_6_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10566,
+      "entity_id": "ts_7_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10567,
+      "entity_id": "ts_7_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10568,
+      "entity_id": "ts_8_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10569,
+      "entity_id": "ts_8_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10570,
+      "entity_id": "ts_9_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10571,
+      "entity_id": "ts_9_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10572,
+      "entity_id": "ts_10_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10573,
+      "entity_id": "ts_10_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10574,
+      "entity_id": "ts_11_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10575,
+      "entity_id": "ts_11_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10576,
+      "entity_id": "ts_12_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10577,
+      "entity_id": "ts_12_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10578,
+      "entity_id": "ts_13_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10579,
+      "entity_id": "ts_13_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10580,
+      "entity_id": "ts_14_ret_flow_temp_prim_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Primär (value)",
+        "en": "Ret. flow temp. prim. (value)"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10581,
+      "entity_id": "ts_14_ret_flow_temp_prim_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2997",
+      "parameter": "UEBERGABE.ruecklauftemp_primaer_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Primär (status)",
+        "en": "Ret. flow temp. prim. (status)"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10583,
+      "entity_id": "ts_1_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10584,
+      "entity_id": "ts_2_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10585,
+      "entity_id": "ts_3_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10586,
+      "entity_id": "ts_4_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10587,
+      "entity_id": "ts_5_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10588,
+      "entity_id": "ts_6_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10589,
+      "entity_id": "ts_7_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10590,
+      "entity_id": "ts_8_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10591,
+      "entity_id": "ts_9_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10592,
+      "entity_id": "ts_10_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10593,
+      "entity_id": "ts_11_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10594,
+      "entity_id": "ts_12_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10595,
+      "entity_id": "ts_13_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10596,
+      "entity_id": "ts_14_valve",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2998",
+      "parameter": "UEBERGABE.o_ventil",
+      "name": {
+        "de": "Ventil",
+        "en": "Valve"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 25306,
+      "entity_id": "ts_1_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 25307,
+      "entity_id": "ts_2_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 25308,
+      "entity_id": "ts_3_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 25309,
+      "entity_id": "ts_4_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 25310,
+      "entity_id": "ts_5_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 25311,
+      "entity_id": "ts_6_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 25312,
+      "entity_id": "ts_7_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 25313,
+      "entity_id": "ts_8_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 25314,
+      "entity_id": "ts_9_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 25315,
+      "entity_id": "ts_10_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 25316,
+      "entity_id": "ts_11_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 25317,
+      "entity_id": "ts_12_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 25318,
+      "entity_id": "ts_13_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 25319,
+      "entity_id": "ts_14_temperature_increase",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 20,
+      "max": 50,
+      "id": "2979",
+      "parameter": "UEBERGABE.temperatur_anhebung",
+      "name": {
+        "de": "Temperaturerhöhung",
+        "en": "Temperature increase"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 25321,
+      "entity_id": "ts_1_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 25322,
+      "entity_id": "ts_2_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 25323,
+      "entity_id": "ts_3_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 25324,
+      "entity_id": "ts_4_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 25325,
+      "entity_id": "ts_5_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 25326,
+      "entity_id": "ts_6_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 25327,
+      "entity_id": "ts_7_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 25328,
+      "entity_id": "ts_8_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 25329,
+      "entity_id": "ts_9_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 25330,
+      "entity_id": "ts_10_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 25331,
+      "entity_id": "ts_11_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 25332,
+      "entity_id": "ts_12_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 25333,
+      "entity_id": "ts_13_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 25334,
+      "entity_id": "ts_14_return_flow_temp_restriction",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "3034",
+      "parameter": "UEBERGABE.ruecklauftemp_begrenzung",
+      "name": {
+        "de": "Rücklauftemp. Begrenzung",
+        "en": "Return flow temp. restriction"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 25336,
+      "entity_id": "ts_1_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 1",
+        "en": "TS 1"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 25337,
+      "entity_id": "ts_2_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 2",
+        "en": "TS 2"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 25338,
+      "entity_id": "ts_3_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 3",
+        "en": "TS 3"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 25339,
+      "entity_id": "ts_4_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 4",
+        "en": "TS 4"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 25340,
+      "entity_id": "ts_5_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 5",
+        "en": "TS 5"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 25341,
+      "entity_id": "ts_6_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 6",
+        "en": "TS 6"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 25342,
+      "entity_id": "ts_7_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 7",
+        "en": "TS 7"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 25343,
+      "entity_id": "ts_8_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 8",
+        "en": "TS 8"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 25344,
+      "entity_id": "ts_9_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 9",
+        "en": "TS 9"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 25345,
+      "entity_id": "ts_10_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 10",
+        "en": "TS 10"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 25346,
+      "entity_id": "ts_11_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 11",
+        "en": "TS 11"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 25347,
+      "entity_id": "ts_12_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 12",
+        "en": "TS 12"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 25348,
+      "entity_id": "ts_13_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 13",
+        "en": "TS 13"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 25349,
+      "entity_id": "ts_14_limit_temperature",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 700,
+      "id": "2980",
+      "parameter": "UEBERGABE.grenz_temp",
+      "name": {
+        "de": "Grenztemperatur",
+        "en": "Limit temperature"
+      },
+      "index": {
+        "de": "ÜGS 14",
+        "en": "TS 14"
+      },
+      "equipment_group": "TS",
+      "equipment_instance": 14
+    }
+  ]
+}

@@ -8,6 +8,19 @@ from pathlib import Path
 from typing import Any
 import aiofiles
 
+try:
+    from .config_localization import (
+        localize_alarm_codes,
+        localize_register,
+        localize_value_tables,
+    )
+except ImportError:  # Loaded directly by isolated regression tests.
+    from config_localization import (
+        localize_alarm_codes,
+        localize_register,
+        localize_value_tables,
+    )
+
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -147,7 +160,10 @@ class AsyncModularRegisterManager:
                 async with aiofiles.open(modbus_registers_path, 'r', encoding='utf-8') as f:
                     content = await f.read()
                     universal_data = json.loads(content)
-                    self._universal_registers = universal_data.get("universal_registers", [])
+                self._universal_registers = [
+                    localize_register(register, self._language)
+                    for register in universal_data.get("universal_registers", [])
+                ]
             
             # Load value tables
             value_tables_path = self.config_dir / "value_tables.json"
@@ -155,7 +171,18 @@ class AsyncModularRegisterManager:
                 async with aiofiles.open(value_tables_path, 'r', encoding='utf-8') as f:
                     content = await f.read()
                     value_tables_data = json.loads(content)
-                    self._value_tables = value_tables_data.get("value_tables", {})
+                    self._value_tables = localize_value_tables(
+                        value_tables_data.get("value_tables", {}), self._language
+                    )
+
+            alarm_codes_path = self.config_dir / "alarm_codes.json"
+            if alarm_codes_path.exists():
+                async with aiofiles.open(alarm_codes_path, 'r', encoding='utf-8') as f:
+                    content = await f.read()
+                    alarm_codes_data = json.loads(content)
+                    self._alarm_codes = localize_alarm_codes(
+                        alarm_codes_data.get("alarm_codes", []), self._language
+                    )
             
             _LOGGER.info("Loaded async modular KWB configuration: %d universal registers, %d value tables", 
                         len(self._universal_registers), len(self._value_tables))
@@ -195,7 +222,10 @@ class AsyncModularRegisterManager:
             async with aiofiles.open(device_path, 'r', encoding='utf-8') as f:
                 content = await f.read()
                 device_data = json.loads(content)
-                registers = device_data.get("registers", [])
+                registers = [
+                    localize_register(register, self._language)
+                    for register in device_data.get("registers", [])
+                ]
                 self._device_cache[device_type] = registers
                 _LOGGER.info("Loaded %d registers for device type %s", len(registers), device_type)
                 return registers
@@ -226,7 +256,10 @@ class AsyncModularRegisterManager:
             async with aiofiles.open(equipment_path, 'r', encoding='utf-8') as f:
                 content = await f.read()
                 equipment_data = json.loads(content)
-                registers = equipment_data.get("registers", [])
+                registers = [
+                    localize_register(register, self._language)
+                    for register in equipment_data.get("registers", [])
+                ]
                 self._equipment_cache[equipment_key] = registers
                 _LOGGER.info("Loaded %d registers for equipment key %s", len(registers), equipment_key)
                 return registers
@@ -293,7 +326,7 @@ class AsyncModularRegisterManager:
             }
             limited_registers = []
             for register in equipment_registers:
-                parsed_index = self._parse_equipment_index(register.get("index", ""))
+                parsed_index = self._technical_equipment_index(register)
                 if not parsed_index:
                     # A blank index denotes a feature-level register. It is not
                     # tied to a particular equipment instance, so include it once
@@ -346,6 +379,19 @@ class AsyncModularRegisterManager:
             return None
 
     @staticmethod
+    def _technical_equipment_index(register: dict) -> tuple[str, int] | None:
+        """Return the language-neutral equipment group and physical instance."""
+        group = register.get("equipment_group")
+        instance = register.get("equipment_instance")
+        if isinstance(group, str) and group and isinstance(instance, int):
+            return group, instance
+        # Scalar indexes remain supported for isolated legacy test fixtures. The
+        # canonical schema requires explicit technical equipment fields.
+        return AsyncModularRegisterManager._parse_equipment_index(
+            register.get("index", "")
+        )
+
+    @staticmethod
     def _normalize_starting_address(value: Any) -> int | None:
         """Return a non-negative Modbus address without changing source config."""
         if isinstance(value, bool):
@@ -363,7 +409,8 @@ class AsyncModularRegisterManager:
         """Fields that must agree when two files define the same address."""
         fields = (
             "entity_id", "parameter", "data_type", "register_type", "type", "unit",
-            "unit_value_table", "user_level", "expert_level", "access_level", "index",
+            "unit_value_table", "user_level", "expert_level", "access_level",
+            "equipment_group", "equipment_instance", "equipment_subindex",
         )
         return tuple(register.get(field) for field in fields)
 
@@ -381,7 +428,7 @@ class AsyncModularRegisterManager:
         """Derive every index prefix and its available slots from register data."""
         groups: dict[str, set[int]] = {}
         for register in equipment_registers:
-            parsed_index = self._parse_equipment_index(register.get("index", ""))
+            parsed_index = self._technical_equipment_index(register)
             if not parsed_index:
                 continue
             prefix, instance = parsed_index
@@ -514,7 +561,7 @@ class AsyncModularRegisterManager:
         
         if index and name and equipment_key:
             config = self.EQUIPMENT_KEY_CONFIG.get(equipment_key)
-            parsed_index = self._parse_equipment_index(index)
+            parsed_index = self._technical_equipment_index(normalized)
             if config and parsed_index:
                 lang_config = (
                     config["lang"].get(self._language)
@@ -522,9 +569,9 @@ class AsyncModularRegisterManager:
                     or config["lang"]["de"]
                 )
                 friendly_name = lang_config["name"]
-                prefix, _instance = parsed_index
+                equipment_group, _instance = parsed_index
                 equipment_id = index.split(" ", 1)[1]
-                instances = (index_groups or {}).get(prefix, [])
+                instances = (index_groups or {}).get(equipment_group, [])
 
                 # Only simple numeric indices are shifted for display. Compound
                 # values such as heating circuit 1.1 are already user-facing.

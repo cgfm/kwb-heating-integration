@@ -1,0 +1,3588 @@
+{
+  "registers": [
+    {
+      "starting_address": 8608,
+      "entity_id": "dhwc_1_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8609,
+      "entity_id": "dhwc_1_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8610,
+      "entity_id": "dhwc_2_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8611,
+      "entity_id": "dhwc_2_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8612,
+      "entity_id": "dhwc_3_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8613,
+      "entity_id": "dhwc_3_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8614,
+      "entity_id": "dhwc_4_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8615,
+      "entity_id": "dhwc_4_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8616,
+      "entity_id": "dhwc_5_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8617,
+      "entity_id": "dhwc_5_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8618,
+      "entity_id": "dhwc_6_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8619,
+      "entity_id": "dhwc_6_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8620,
+      "entity_id": "dhwc_7_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8621,
+      "entity_id": "dhwc_7_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8622,
+      "entity_id": "dhwc_8_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8623,
+      "entity_id": "dhwc_8_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8624,
+      "entity_id": "dhwc_9_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8625,
+      "entity_id": "dhwc_9_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8626,
+      "entity_id": "dhwc_10_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8627,
+      "entity_id": "dhwc_10_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8628,
+      "entity_id": "dhwc_11_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8629,
+      "entity_id": "dhwc_11_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8630,
+      "entity_id": "dhwc_12_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8631,
+      "entity_id": "dhwc_12_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8632,
+      "entity_id": "dhwc_13_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8633,
+      "entity_id": "dhwc_13_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8634,
+      "entity_id": "dhwc_14_temperature_actual_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.value",
+      "name": {
+        "de": "Temperatur Ist (value)",
+        "en": "Temperature actual (value)"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8635,
+      "entity_id": "dhwc_14_temperature_actual_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "487",
+      "parameter": "BOI.i_ist_temperatur.status",
+      "name": {
+        "de": "Temperatur Ist (status)",
+        "en": "Temperature actual (status)"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8641,
+      "entity_id": "dhwc_1_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8642,
+      "entity_id": "dhwc_2_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8643,
+      "entity_id": "dhwc_3_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8644,
+      "entity_id": "dhwc_4_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8645,
+      "entity_id": "dhwc_5_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8646,
+      "entity_id": "dhwc_6_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8647,
+      "entity_id": "dhwc_7_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8648,
+      "entity_id": "dhwc_8_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8649,
+      "entity_id": "dhwc_9_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8650,
+      "entity_id": "dhwc_10_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8651,
+      "entity_id": "dhwc_11_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8652,
+      "entity_id": "dhwc_12_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8653,
+      "entity_id": "dhwc_13_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8654,
+      "entity_id": "dhwc_14_charging_pump",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "491",
+      "parameter": "BOI.o_pumpe",
+      "name": {
+        "de": "Ladepumpe",
+        "en": "Charging pump"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8658,
+      "entity_id": "dhwc_1_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8659,
+      "entity_id": "dhwc_2_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8660,
+      "entity_id": "dhwc_3_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8661,
+      "entity_id": "dhwc_4_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8662,
+      "entity_id": "dhwc_5_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8663,
+      "entity_id": "dhwc_6_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8664,
+      "entity_id": "dhwc_7_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8665,
+      "entity_id": "dhwc_8_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8666,
+      "entity_id": "dhwc_9_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8667,
+      "entity_id": "dhwc_10_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8668,
+      "entity_id": "dhwc_11_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8669,
+      "entity_id": "dhwc_12_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8670,
+      "entity_id": "dhwc_13_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8671,
+      "entity_id": "dhwc_14_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "485",
+      "parameter": "BOI.anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8675,
+      "entity_id": "dhwc_1_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8676,
+      "entity_id": "dhwc_2_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8677,
+      "entity_id": "dhwc_3_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8678,
+      "entity_id": "dhwc_4_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8679,
+      "entity_id": "dhwc_5_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8680,
+      "entity_id": "dhwc_6_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8681,
+      "entity_id": "dhwc_7_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8682,
+      "entity_id": "dhwc_8_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8683,
+      "entity_id": "dhwc_9_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8684,
+      "entity_id": "dhwc_10_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8685,
+      "entity_id": "dhwc_11_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8686,
+      "entity_id": "dhwc_12_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8687,
+      "entity_id": "dhwc_13_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8688,
+      "entity_id": "dhwc_14_temperature_setpoint",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "507",
+      "parameter": "BOI.soll_temperatur",
+      "name": {
+        "de": "Temperatur Soll",
+        "en": "Temperature setpoint"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8692,
+      "entity_id": "dhwc_1_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8693,
+      "entity_id": "dhwc_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8694,
+      "entity_id": "dhwc_3_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8695,
+      "entity_id": "dhwc_4_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8696,
+      "entity_id": "dhwc_5_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8697,
+      "entity_id": "dhwc_6_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8698,
+      "entity_id": "dhwc_7_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8699,
+      "entity_id": "dhwc_8_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8700,
+      "entity_id": "dhwc_9_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8701,
+      "entity_id": "dhwc_10_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8702,
+      "entity_id": "dhwc_11_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8703,
+      "entity_id": "dhwc_12_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8704,
+      "entity_id": "dhwc_13_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8705,
+      "entity_id": "dhwc_14_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "boiler_status_t",
+      "id": "513",
+      "parameter": "BOI.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9433,
+      "entity_id": "dhwc_1_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9434,
+      "entity_id": "dhwc_1_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9435,
+      "entity_id": "dhwc_2_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9436,
+      "entity_id": "dhwc_2_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9437,
+      "entity_id": "dhwc_3_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9438,
+      "entity_id": "dhwc_3_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9439,
+      "entity_id": "dhwc_4_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9440,
+      "entity_id": "dhwc_4_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9441,
+      "entity_id": "dhwc_5_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9442,
+      "entity_id": "dhwc_5_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9443,
+      "entity_id": "dhwc_6_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9444,
+      "entity_id": "dhwc_6_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9445,
+      "entity_id": "dhwc_7_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9446,
+      "entity_id": "dhwc_7_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9447,
+      "entity_id": "dhwc_8_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9448,
+      "entity_id": "dhwc_8_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9449,
+      "entity_id": "dhwc_9_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9450,
+      "entity_id": "dhwc_9_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9451,
+      "entity_id": "dhwc_10_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9452,
+      "entity_id": "dhwc_10_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9453,
+      "entity_id": "dhwc_11_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9454,
+      "entity_id": "dhwc_11_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9455,
+      "entity_id": "dhwc_12_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9456,
+      "entity_id": "dhwc_12_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9457,
+      "entity_id": "dhwc_13_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9458,
+      "entity_id": "dhwc_13_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9459,
+      "entity_id": "dhwc_14_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.value",
+      "name": {
+        "de": "Temperatur 2 (value)",
+        "en": "Temperature 2 (value)"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9460,
+      "entity_id": "dhwc_14_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1403",
+      "parameter": "BOI.i_ist_temperatur_2.status",
+      "name": {
+        "de": "Temperatur 2 (status)",
+        "en": "Temperature 2 (status)"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 24693,
+      "entity_id": "dhwc_1_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 24694,
+      "entity_id": "dhwc_2_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 24695,
+      "entity_id": "dhwc_3_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 24696,
+      "entity_id": "dhwc_4_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 24697,
+      "entity_id": "dhwc_5_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 24698,
+      "entity_id": "dhwc_6_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 24699,
+      "entity_id": "dhwc_7_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 24700,
+      "entity_id": "dhwc_8_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 24701,
+      "entity_id": "dhwc_9_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 24702,
+      "entity_id": "dhwc_10_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 24703,
+      "entity_id": "dhwc_11_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 24704,
+      "entity_id": "dhwc_12_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 24705,
+      "entity_id": "dhwc_13_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 24706,
+      "entity_id": "dhwc_14_select_program",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "boiler_programm_t",
+      "id": "492",
+      "parameter": "BOI.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 24711,
+      "entity_id": "dhwc_1_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 24712,
+      "entity_id": "dhwc_1_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 24713,
+      "entity_id": "dhwc_2_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 24714,
+      "entity_id": "dhwc_2_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 24715,
+      "entity_id": "dhwc_3_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 24716,
+      "entity_id": "dhwc_3_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 24717,
+      "entity_id": "dhwc_4_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 24718,
+      "entity_id": "dhwc_4_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 24719,
+      "entity_id": "dhwc_5_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 24720,
+      "entity_id": "dhwc_5_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 24721,
+      "entity_id": "dhwc_6_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 24722,
+      "entity_id": "dhwc_6_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 24723,
+      "entity_id": "dhwc_7_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 24724,
+      "entity_id": "dhwc_7_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 24725,
+      "entity_id": "dhwc_8_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 24726,
+      "entity_id": "dhwc_8_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 24727,
+      "entity_id": "dhwc_9_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 24728,
+      "entity_id": "dhwc_9_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 24729,
+      "entity_id": "dhwc_10_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 24730,
+      "entity_id": "dhwc_10_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 24731,
+      "entity_id": "dhwc_11_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 24732,
+      "entity_id": "dhwc_11_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 24733,
+      "entity_id": "dhwc_12_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 24734,
+      "entity_id": "dhwc_12_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 24735,
+      "entity_id": "dhwc_13_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 24736,
+      "entity_id": "dhwc_13_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 24737,
+      "entity_id": "dhwc_14_temp_min_max_min",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.min",
+      "name": {
+        "de": "Temperatur Min/Max (min)",
+        "en": "Temp. min/max (min)"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 24738,
+      "entity_id": "dhwc_14_temp_min_max_max",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 700,
+      "id": "981",
+      "parameter": "BOI.temperatur_grenzen.max",
+      "name": {
+        "de": "Temperatur Min/Max (max)",
+        "en": "Temp. min/max (max)"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 24744,
+      "entity_id": "dhwc_1_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 1",
+        "en": "DHWC 1"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 24745,
+      "entity_id": "dhwc_2_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 2",
+        "en": "DHWC 2"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 24746,
+      "entity_id": "dhwc_3_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 3",
+        "en": "DHWC 3"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 24747,
+      "entity_id": "dhwc_4_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 4",
+        "en": "DHWC 4"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 24748,
+      "entity_id": "dhwc_5_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 5",
+        "en": "DHWC 5"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 24749,
+      "entity_id": "dhwc_6_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 6",
+        "en": "DHWC 6"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 24750,
+      "entity_id": "dhwc_7_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 7",
+        "en": "DHWC 7"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 24751,
+      "entity_id": "dhwc_8_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 8",
+        "en": "DHWC 8"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 24752,
+      "entity_id": "dhwc_9_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 9",
+        "en": "DHWC 9"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 24753,
+      "entity_id": "dhwc_10_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 10",
+        "en": "DHWC 10"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 24754,
+      "entity_id": "dhwc_11_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 11",
+        "en": "DHWC 11"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 24755,
+      "entity_id": "dhwc_12_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 12",
+        "en": "DHWC 12"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 24756,
+      "entity_id": "dhwc_13_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 13",
+        "en": "DHWC 13"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 24757,
+      "entity_id": "dhwc_14_heat_dhw_1x",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "493",
+      "parameter": "BOI.schnellladung",
+      "name": {
+        "de": "Brauchwasser 1x erhitzen",
+        "en": "Heat DHW 1x"
+      },
+      "index": {
+        "de": "BWS 14",
+        "en": "DHWC 14"
+      },
+      "equipment_group": "DHWC",
+      "equipment_instance": 14
+    }
+  ]
+}

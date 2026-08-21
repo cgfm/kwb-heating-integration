@@ -98,7 +98,20 @@ def add_header_row(sheet, headers):
         cell.fill = header_fill
 
 
-def convert_register_to_row(register: dict) -> list:
+def resolve_localized_value(value, language: str, fallback: str = "") -> str:
+    """Resolve one explicitly localized schema value for workbook export."""
+    if isinstance(value, str):
+        return value
+    if not isinstance(value, dict):
+        return fallback
+    for candidate in dict.fromkeys((language, "en", "de", *value.keys())):
+        resolved = value.get(candidate)
+        if isinstance(resolved, str) and resolved.strip():
+            return resolved.strip()
+    return fallback
+
+
+def convert_register_to_row(register: dict, language: str) -> list:
     """Convert a register dict to Excel row values."""
     # Map data_type back to Functions format
     data_type = register.get("data_type", "04")
@@ -129,12 +142,16 @@ def convert_register_to_row(register: dict) -> list:
 
     return [
         register.get("starting_address"),
-        register.get("name"),
+        resolve_localized_value(
+            register.get("name"),
+            language,
+            fallback=str(register.get("entity_id") or register.get("parameter") or ""),
+        ),
         functions,
         register.get("type", "s16").upper(),
         user_level,
         expert_level,
-        register.get("index", ""),
+        resolve_localized_value(register.get("index", ""), language),
         register.get("unit_value_table", ""),
         register.get("min"),
         register.get("max"),
@@ -144,12 +161,12 @@ def convert_register_to_row(register: dict) -> list:
     ]
 
 
-def add_registers_to_sheet(sheet, registers: list[dict]):
+def add_registers_to_sheet(sheet, registers: list[dict], language: str):
     """Add registers to a sheet."""
     add_header_row(sheet, REGISTER_HEADERS)
 
     for row_idx, register in enumerate(registers, 2):
-        row_values = convert_register_to_row(register)
+        row_values = convert_register_to_row(register, language)
         for col_idx, value in enumerate(row_values, 1):
             sheet.cell(row=row_idx, column=col_idx, value=value)
 
@@ -165,27 +182,29 @@ def load_json_file(path: Path) -> dict | None:
 
 
 def create_excel_from_json(version_dir: Path, output_file: Path, language: str):
-    """Create an Excel file from JSON configs for a specific language."""
-    lang_dir = version_dir / language
-    if not lang_dir.exists():
-        logger.error(f"Language directory not found: {lang_dir}")
+    """Create one language view from the unified multilingual JSON config."""
+    if language not in {"de", "en"}:
+        logger.error(f"Unsupported export language: {language}")
+        return False
+    if not version_dir.exists():
+        logger.error(f"Version directory not found: {version_dir}")
         return False
 
     wb = create_styled_workbook()
     sheets_created = 0
 
     # Add Universal sheet from modbus_registers.json
-    modbus_file = lang_dir / "modbus_registers.json"
+    modbus_file = version_dir / "modbus_registers.json"
     if modbus_file.exists():
         data = load_json_file(modbus_file)
         if data and "universal_registers" in data:
             sheet = wb.create_sheet("Universal")
-            add_registers_to_sheet(sheet, data["universal_registers"])
+            add_registers_to_sheet(sheet, data["universal_registers"], language)
             sheets_created += 1
             logger.info(f"  Created Universal sheet with {len(data['universal_registers'])} registers")
 
     # Add device sheets
-    devices_dir = lang_dir / "devices"
+    devices_dir = version_dir / "devices"
     if devices_dir.exists():
         for json_file, sheet_name in DEVICE_SHEET_MAP.items():
             file_path = devices_dir / json_file
@@ -193,12 +212,12 @@ def create_excel_from_json(version_dir: Path, output_file: Path, language: str):
                 data = load_json_file(file_path)
                 if data and "registers" in data:
                     sheet = wb.create_sheet(sheet_name)
-                    add_registers_to_sheet(sheet, data["registers"])
+                    add_registers_to_sheet(sheet, data["registers"], language)
                     sheets_created += 1
                     logger.info(f"  Created {sheet_name} sheet with {len(data['registers'])} registers")
 
     # Add equipment sheets
-    equipment_dir = lang_dir / "equipment"
+    equipment_dir = version_dir / "equipment"
     sheet_map = EQUIPMENT_SHEET_MAP_EN if language == "en" else EQUIPMENT_SHEET_MAP_DE
 
     if equipment_dir.exists():
@@ -208,12 +227,12 @@ def create_excel_from_json(version_dir: Path, output_file: Path, language: str):
                 data = load_json_file(file_path)
                 if data and "registers" in data:
                     sheet = wb.create_sheet(sheet_name)
-                    add_registers_to_sheet(sheet, data["registers"])
+                    add_registers_to_sheet(sheet, data["registers"], language)
                     sheets_created += 1
                     logger.info(f"  Created {sheet_name} sheet with {len(data['registers'])} registers")
 
     # Add ValueTables sheet
-    value_tables_file = lang_dir / "value_tables.json"
+    value_tables_file = version_dir / "value_tables.json"
     if value_tables_file.exists():
         data = load_json_file(value_tables_file)
         if data and "value_tables" in data:
@@ -224,13 +243,19 @@ def create_excel_from_json(version_dir: Path, output_file: Path, language: str):
                 for value, translation in values.items():
                     sheet.cell(row=row_idx, column=1, value=table_name)
                     sheet.cell(row=row_idx, column=2, value=value)
-                    sheet.cell(row=row_idx, column=3, value=translation)
+                    sheet.cell(
+                        row=row_idx,
+                        column=3,
+                        value=resolve_localized_value(
+                            translation, language, fallback=str(value)
+                        ),
+                    )
                     row_idx += 1
             sheets_created += 1
             logger.info(f"  Created ValueTables sheet")
 
     # Add Alarms sheet
-    alarm_file = lang_dir / "alarm_codes.json"
+    alarm_file = version_dir / "alarm_codes.json"
     if alarm_file.exists():
         data = load_json_file(alarm_file)
         if data and "alarm_codes" in data:
@@ -240,7 +265,15 @@ def create_excel_from_json(version_dir: Path, output_file: Path, language: str):
                 sheet.cell(row=row_idx, column=1, value=alarm.get("starting_address"))
                 sheet.cell(row=row_idx, column=2, value=alarm.get("function_code"))
                 sheet.cell(row=row_idx, column=3, value=alarm.get("alarm_id"))
-                sheet.cell(row=row_idx, column=4, value=alarm.get("description"))
+                sheet.cell(
+                    row=row_idx,
+                    column=4,
+                    value=resolve_localized_value(
+                        alarm.get("description"),
+                        language,
+                        fallback=f"Alarm {alarm.get('alarm_id', 'unknown')}",
+                    ),
+                )
             sheets_created += 1
             logger.info(f"  Created Alarms sheet with {len(data['alarm_codes'])} alarms")
 
@@ -260,17 +293,15 @@ def process_version(version_dir: Path, output_dir: Path):
 
     logger.info(f"\nProcessing {version}...")
 
-    # Create English Excel file
+    # Export both localized views from the same technical configuration.
     en_output = output_dir / f"ModbusInfo-en-V{version_num}.xlsx"
-    if (version_dir / "en").exists():
-        logger.info(f"  Creating English Excel file...")
-        create_excel_from_json(version_dir, en_output, "en")
+    logger.info(f"  Creating English Excel file...")
+    create_excel_from_json(version_dir, en_output, "en")
 
     # Create German Excel file
     de_output = output_dir / f"ModbusInfo-de-V{version_num}.xlsx"
-    if (version_dir / "de").exists():
-        logger.info(f"  Creating German Excel file...")
-        create_excel_from_json(version_dir, de_output, "de")
+    logger.info(f"  Creating German Excel file...")
+    create_excel_from_json(version_dir, de_output, "de")
 
 
 def main():

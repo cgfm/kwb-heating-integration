@@ -16,14 +16,14 @@ meaning is reviewed by a human or AI before a template enters production.
 ## 🎯 Features
 
 - **Multi-version support** - Handles different KWB firmware versions (v22.7.1, v25.7.1, etc.)
-- **Multi-language support** - Processes both German and English Excel files
+- **Multilingual output** - Merges German and English Excel files into one technical tree
 - **Automatic device categorization** - Separates universal, device-specific, and equipment registers
 - **Combifire inheritance** - CF models (CF 1, CF 1.5, CF 2) inherit from Combifire base with override support
 - **Universal register aggregation** - Combines Universal and WMM Autonom (Modbus Lifetick) registers
-- **Consistent naming** - Uses English filenames for all equipment files across languages
+- **Consistent naming** - Uses one set of English equipment filenames
 - **Value table extraction** - Converts enum value tables for state translations
 - **Alarm code processing** - Extracts alarm/error code definitions with descriptions
-- **Focused review report** - Records ambiguous IDs and missing English metadata in `conversion_review.json`
+- **Focused review report** - Separates missing translations, ambiguous language pairs, structural conflicts, ambiguous IDs, and technical differences
 - **Safe finalization** - Dry-run import preserves published IDs and refuses ambiguous writes
 
 ## 📋 Prerequisites
@@ -157,47 +157,26 @@ INFO: ✓ Successfully converted ModbusInfo-de-V22.7.1.xlsx
 
 ## 📂 Output Structure
 
-The converter creates a non-canonical version and language-specific template tree:
+The converter parses German and English independently in temporary staging, then
+emits one non-canonical multilingual template per firmware:
 
 ```
 config/versions/
 ├── conversion_review.json             # Exceptional cases; never used at runtime
 ├── v22.7.1/
-│   ├── de/
-│   │   ├── modbus_registers.json       # Universal + WMM Autonom registers
-│   │   ├── value_tables.json           # Enum value mappings
-│   │   ├── alarm_codes.json            # Alarm/error codes
-│   │   ├── devices/
-│   │   │   ├── kwb_easyfire.json       # Easyfire-specific registers
-│   │   │   ├── kwb_multifire.json      # Multifire-specific registers
-│   │   │   ├── kwb_pelletfire_plus.json
-│   │   │   ├── kwb_combifire.json      # Combifire base registers
-│   │   │   ├── kwb_cf1.json            # CF 1 (Combifire + specific)
-│   │   │   ├── kwb_cf1_5.json          # CF 1.5 (Combifire + specific)
-│   │   │   └── kwb_cf2.json            # CF 2 (Combifire + specific)
-│   │   └── equipment/
-│   │       ├── heating_circuits.json   # Heating circuit registers
-│   │       ├── buffer_storage.json     # Buffer storage registers
-│   │       ├── dhw_storage.json        # DHW storage registers
-│   │       ├── secondary_heat_sources.json
-│   │       ├── circulation.json
-│   │       ├── solar.json
-│   │       ├── boiler_sequence.json
-│   │       └── heat_meters.json
-│   └── en/
-│       └── (same structure as de/)
+│   ├── modbus_registers.json           # Universal + WMM Autonom registers
+│   ├── value_tables.json               # One raw mapping, localized labels
+│   ├── alarm_codes.json                # One alarm identity, localized text
+│   ├── devices/
+│   │   ├── kwb_easyfire.json
+│   │   ├── kwb_multifire.json
+│   │   └── ...
+│   └── equipment/
+│       ├── heating_circuits.json
+│       ├── buffer_storage.json
+│       └── ...
 └── v25.7.1/
-    ├── de/
-    │   ├── devices/
-    │   │   ├── kwb_easyfire.json
-    │   │   ├── kwb_ef3.json            # New in v25
-    │   │   ├── kwb_easyair_plus.json   # New in v25
-    │   │   └── ...
-    │   └── equipment/
-    │       ├── transfer_station.json   # New in v25
-    │       └── ...
-    └── en/
-        └── (same structure as de/)
+    └── (same unified structure)
 ```
 
 ## 📄 Output File Formats
@@ -210,7 +189,10 @@ Contains universal registers applicable to all KWB systems:
   "universal_registers": [
     {
       "starting_address": 8192,
-      "name": "Software (major)",
+      "name": {
+        "de": "Software (major)",
+        "en": "Software (major)"
+      },
       "data_type": "04",
       "type": "u16",
       "user_level": "read",
@@ -231,7 +213,10 @@ Device-specific registers for each KWB model:
   "registers": [
     {
       "starting_address": 8197,
-      "name": "Kesseltemperatur Ist (value)",
+      "name": {
+        "de": "Kesseltemperatur Ist (value)",
+        "en": "Boiler temperature actual (value)"
+      },
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
@@ -253,13 +238,22 @@ Equipment-specific registers with index information:
   "registers": [
     {
       "starting_address": 8700,
-      "name": "HK Programm",
+      "name": {
+        "de": "HK Programm",
+        "en": "HC program"
+      },
       "data_type": "04",
       "type": "s16",
       "user_level": "read",
       "expert_level": "read",
       "unit_value_table": "hk_programm_t",
-      "index": "HK 1.1",
+      "index": {
+        "de": "HK 1.1",
+        "en": "HC 1.1"
+      },
+      "equipment_group": "HC",
+      "equipment_instance": 1,
+      "equipment_subindex": 1,
       "id": "656",
       "parameter": "HK_<n>.programm"
     },
@@ -268,6 +262,11 @@ Equipment-specific registers with index information:
 }
 ```
 
+Only register `name` and `index` may be localized objects. Address, parameter,
+entity ID, register/data type, limits, access metadata, length, scaling, and
+value-table reference are structural scalars. The derived equipment fields are
+the language-neutral selection context; localized `index` is display data.
+
 ### value_tables.json
 Enum value mappings for state translations:
 
@@ -275,11 +274,9 @@ Enum value mappings for state translations:
 {
   "value_tables": {
     "hk_programm_t": {
-      "0": "Automatik",
-      "1": "Frostschutz",
-      "2": "Aus",
-      "3": "Komfort",
-      "4": "Absenk"
+      "0": {"de": "Automatik", "en": "Automatic"},
+      "1": {"de": "Frostschutz", "en": "Frost protection"},
+      "2": {"de": "Aus", "en": "Off"}
     },
     ...
   }
@@ -296,7 +293,10 @@ Alarm and error code definitions:
       "starting_address": 0,
       "function_code": "02",
       "alarm_id": "A000",
-      "description": "Kesseltemperatur Sensor defekt"
+      "description": {
+        "de": "Kesseltemperatur Sensor defekt",
+        "en": "Boiler temperature sensor defective"
+      }
     },
     ...
   ]
@@ -327,10 +327,10 @@ The converter implements intelligent register inheritance for CF models:
 
 ### Consistent Equipment Filenames
 
-Equipment files use English names regardless of Excel language:
+Equipment files use one English filename for the merged language sources:
 - German "Heizkreise" → `heating_circuits.json`
 - English "Heating circuits" → `heating_circuits.json`
-- Both versions produce the same filename for compatibility
+- Both sheets merge into that one file
 
 ## 🔄 Template → review → production workflow
 
@@ -343,26 +343,60 @@ Equipment files use English names regardless of Excel language:
    python3 convert_modbusinfo.py
    ```
 
-4. Review `config/versions/conversion_review.json`. It contains only exceptional
-   cases such as unresolved duplicate English names or missing English matches.
+4. Review `config/versions/conversion_review.json`. Categories include
+   `missing_translation`, `ambiguous_language_pair`, `structural_conflict`,
+   `ambiguous_entity_id`, and `technical_metadata_difference`. Each item states
+   whether it is blocking. Missing translations are non-blocking; ambiguous
+   pairing and structural disagreements are blocking.
 5. Preview finalization for one firmware version:
 
    ```bash
-   python3 import_generated_config.py 25.7.1
+   python3 import_generated_config.py 26.6.1
    ```
 
-   The command matches existing logical registers by configuration-file context,
-   KWB `parameter`, and equipment `index`. It preserves the full finalized
-   production register—and therefore its published `entity_id`—for a confident
-   match. It adds clearly new registers and value tables, preserves
-   production-only refinements, and reports changed or uncertain matches.
+   If canonical `v26.6.1` does not exist, the finalizer automatically selects the
+   highest older canonical firmware version using numeric semantic-version
+   ordering. For example, `v25.7.1` is selected ahead of `v25.4.0`, and
+   `v10.0.0` is newer than `v9.9.9`. A newer canonical version is never selected.
+   The selected compatibility baseline is printed during dry-run and stored in
+   the import review report.
 
-6. Review the generated `import_review_v25.7.1.json`. Resolve every blocking
+   To choose a specific older canonical version instead:
+
+   ```bash
+   python3 import_generated_config.py 26.6.1 --base-version 25.7.1
+   ```
+
+   Explicit bases must exist in
+   `custom_components/kwb_heating/config/versions/` and must be older than a new
+   target. Converter snapshots are never compatibility baselines. If the target
+   canonical version already exists, that same version remains authoritative for
+   its published IDs. Malformed or ambiguous firmware version names fail rather
+   than falling back to string ordering.
+
+   Matching uses configuration-file context, KWB `parameter`, and technical
+   equipment instance context, with address as supporting evidence. For a unique
+   match, the proposed register starts with the newly
+   generated object and carries forward only the canonical `entity_id`. New
+   addresses, register/data types, units, scaling, limits, access properties,
+   value-table references, lengths, and other firmware-specific metadata remain
+   generated target-version data. A moved register therefore retains its
+   published Home Assistant identity without retaining its old address.
+
+   Meaningful technical changes on a confident match are non-blocking but visible
+   as `preserve_entity_id` review entries containing old/new field values. Normal
+   unchanged matches are not listed. Multiple logical matches, parameter/address
+   identity conflicts, incompatible context, and conflicting published IDs are
+   blocking and are never silently resolved. If no older canonical version is
+   available, import proceeds as a genuinely first version and records that no
+   compatibility baseline was available.
+
+6. Review the generated `import_review_v26.6.1.json`. Resolve every blocking
    semantic item in the template or production proposal.
 7. Only after a clean dry run, explicitly write the validated proposal:
 
    ```bash
-   python3 import_generated_config.py 25.7.1 --write
+   python3 import_generated_config.py 26.6.1 --write
    ```
 
 8. Review the resulting Git diff and run regression tests before committing the
@@ -385,10 +419,18 @@ dry-run by default and refuses `--write` while blocking review items exist.
 
 ### What requires semantic review
 
-Generated JSON may need refinement for duplicate English names with different
-meaning, unusual value tables, new equipment structures, changed KWB parameters,
-translation problems, and firmware-specific anomalies. The converter is not
-expected to reproduce every historical manual decision automatically.
+German and English records are paired by deterministic logical evidence—not list
+position or fuzzy matching. A record present in only one workbook remains in the
+output and receives a non-blocking missing-translation item. If paired records
+disagree on address, parameter, type, scaling, limits, access, length, value-table
+reference, or technical equipment context, the candidates and differing fields
+are recorded as a blocking structural conflict. Production finalization is
+refused until blocking items are resolved.
+
+At runtime localized values fall back from requested language to English, German,
+then any non-empty label. Missing English text can therefore never suppress a
+register. Physical unit spelling is normalized only for deterministic aliases
+(currently `Upm`/`RPM` to `rpm`); value-table references stay language-neutral.
 
 `system_ein_aus_t` and `system_yes_no_t` are deterministic boolean tables that
 some workbooks reference without defining. The converter supplies both tables in
@@ -540,7 +582,7 @@ logging.basicConfig(level=logging.DEBUG, format='%(levelname)s: %(message)s')
 Use Python to validate generated JSON:
 
 ```bash
-python3 -m json.tool config/versions/v22.7.1/de/modbus_registers.json
+python3 -m json.tool config/versions/v22.7.1/modbus_registers.json
 ```
 
 ## 🔄 Version History
@@ -549,7 +591,7 @@ python3 -m json.tool config/versions/v22.7.1/de/modbus_registers.json
 - ✅ Combifire inheritance for CF models
 - ✅ WMM Autonom merged into universal registers
 - ✅ Consistent English equipment filenames
-- ✅ Multi-language equipment sheet support
+- ✅ Unified multilingual firmware output
 - ✅ KWB EasyAir Plus support (v25+)
 - ✅ Transfer station equipment (v25+)
 

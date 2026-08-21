@@ -10,6 +10,8 @@ from typing import Any
 
 
 ENTITY_ID_PATTERN = re.compile(r"^[a-z0-9_]+$")
+SUPPORTED_LANGUAGES = {"de", "en"}
+LOCALIZED_REGISTER_FIELDS = {"name", "index"}
 
 
 def load_json(path: Path) -> dict[str, Any]:
@@ -32,41 +34,71 @@ def registers_from(data: dict[str, Any]) -> list[dict[str, Any]]:
 def logical_register_key(
     relative_path: Path, register: dict[str, Any]
 ) -> tuple[str, str, str] | None:
-    """Build a stable key from file context, KWB parameter, and equipment index."""
+    """Build a stable key from file context, parameter, and technical equipment key."""
     parameter = register.get("parameter")
     if not isinstance(parameter, str) or not parameter.strip():
         return None
-    index = str(register.get("index", "")).strip()
-    return relative_path.as_posix(), parameter.strip(), index
+    equipment_group = register.get("equipment_group")
+    equipment_instance = register.get("equipment_instance")
+    equipment_subindex = register.get("equipment_subindex")
+    if equipment_group is not None or equipment_instance is not None:
+        context = f"{equipment_group}:{equipment_instance}"
+        if equipment_subindex is not None:
+            context += f":{equipment_subindex}"
+    else:
+        context = ""
+    return relative_path.as_posix(), parameter.strip(), context
 
 
-def _equipment_index_valid(index: Any) -> bool:
+def _equipment_index_valid(index: Any, expected_instance: Any) -> bool:
     if index in (None, ""):
         return True
     if not isinstance(index, str) or " " not in index:
         return False
     _prefix, identifier = index.split(" ", 1)
     try:
-        int(identifier.split(".", 1)[0])
+        instance = int(identifier.split(".", 1)[0])
     except ValueError:
         return False
-    return True
+    return expected_instance is None or instance == expected_instance
+
+
+def _localized_value_errors(value: Any, location: str, required: bool) -> list[str]:
+    errors: list[str] = []
+    if value is None and not required:
+        return errors
+    if not isinstance(value, dict):
+        return [f"{location}: must be a localized object"]
+    unknown = set(value) - SUPPORTED_LANGUAGES
+    if unknown:
+        errors.append(f"{location}: unsupported language keys {sorted(unknown)}")
+    usable = [item for item in value.values() if isinstance(item, str) and item.strip()]
+    if required and not usable:
+        errors.append(f"{location}: requires at least one usable translation")
+    for language, item in value.items():
+        if not isinstance(item, str) or not item.strip():
+            errors.append(f"{location}.{language}: translation must be a non-empty string")
+    return errors
 
 
 def validate_config_tree(root: Path) -> list[str]:
-    """Validate a version tree without comparing it to any other tree."""
+    """Validate one language-neutral technical tree per firmware version."""
     root = Path(root)
     errors: list[str] = []
-    language_registers: dict[
-        tuple[str, str], dict[tuple[str, str, str], dict[str, Any]]
-    ] = {}
-
-    for language_dir in sorted(root.glob("v*/*")):
-        if not language_dir.is_dir():
+    for version_dir in sorted(root.glob("v*")):
+        if not version_dir.is_dir():
             continue
-        version = language_dir.parent.name
-        language = language_dir.name
-        value_tables_path = language_dir / "value_tables.json"
+        legacy_languages = [
+            language for language in SUPPORTED_LANGUAGES if (version_dir / language).is_dir()
+        ]
+        if legacy_languages:
+            errors.append(
+                f"{version_dir}: obsolete language directories remain: "
+                f"{sorted(legacy_languages)}"
+            )
+            continue
+
+        value_tables_path = version_dir / "value_tables.json"
         try:
             value_tables_data = load_json(value_tables_path)
             value_tables = value_tables_data.get("value_tables", {})
@@ -77,10 +109,33 @@ def validate_config_tree(root: Path) -> list[str]:
             errors.append(str(exc))
             value_tables = {}
 
+        for table_name, table in value_tables.items():
+            if not isinstance(table_name, str) or not table_name:
+                errors.append(f"{value_tables_path}: invalid value-table name {table_name!r}")
+                continue
+            if not isinstance(table, dict):
+                errors.append(f"{value_tables_path}: table {table_name!r} must be an object")
+                continue
+            for raw_value, labels in table.items():
+                try:
+                    int(raw_value)
+                except (TypeError, ValueError):
+                    errors.append(
+                        f"{value_tables_path}: table {table_name!r} has invalid raw key "
+                        f"{raw_value!r}"
+                    )
+                errors.extend(
+                    _localized_value_errors(
+                        labels,
+                        f"{value_tables_path}: table {table_name!r}[{raw_value!r}]",
+                        required=True,
+                    )
+                )
+
         logical: dict[tuple[str, str, str], dict[str, Any]] = {}
         referenced_tables: set[str] = set()
-        for path in sorted(language_dir.rglob("*.json")):
-            if path == value_tables_path:
+        for path in sorted(version_dir.rglob("*.json")):
+            if path == value_tables_path or path.name == "alarm_codes.json":
                 continue
             try:
                 data = load_json(path)
@@ -93,7 +148,7 @@ def validate_config_tree(root: Path) -> list[str]:
 
             seen_ids: dict[str, Any] = {}
             seen_addresses: dict[int, dict[str, Any]] = {}
-            relative_path = path.relative_to(language_dir)
+            relative_path = path.relative_to(version_dir)
             for number, register in enumerate(registers):
                 location = f"{path}:{number}"
                 if not isinstance(register, dict):
@@ -122,13 +177,52 @@ def validate_config_tree(root: Path) -> list[str]:
                 else:
                     seen_ids[entity_id] = address
 
-                if relative_path.parts[:1] == ("equipment",) and not _equipment_index_valid(
-                    register.get("index")
-                ):
-                    errors.append(
-                        f"{location}: malformed equipment index "
-                        f"{register.get('index')!r}"
+                errors.extend(
+                    _localized_value_errors(
+                        register.get("name"), f"{location}: name", required=True
                     )
+                )
+                if "index" in register:
+                    errors.extend(
+                        _localized_value_errors(
+                            register.get("index"), f"{location}: index", required=True
+                        )
+                    )
+                for field, value in register.items():
+                    if field not in LOCALIZED_REGISTER_FIELDS and isinstance(value, dict):
+                        errors.append(
+                            f"{location}: structural field {field!r} cannot be localized"
+                        )
+
+                if relative_path.parts[:1] == ("equipment",):
+                    index = register.get("index", {})
+                    if index:
+                        group = register.get("equipment_group")
+                        instance = register.get("equipment_instance")
+                        if not isinstance(group, str) or not group:
+                            errors.append(f"{location}: missing technical equipment_group")
+                        if (
+                            isinstance(instance, bool)
+                            or not isinstance(instance, int)
+                            or instance < 0
+                        ):
+                            errors.append(
+                                f"{location}: invalid equipment_instance {instance!r}"
+                            )
+                        if isinstance(index, dict):
+                            for language, localized_index in index.items():
+                                if not _equipment_index_valid(localized_index, instance):
+                                    errors.append(
+                                        f"{location}: malformed {language} equipment index "
+                                        f"{localized_index!r}"
+                                    )
+                    subindex = register.get("equipment_subindex")
+                    if subindex is not None and (
+                        isinstance(subindex, bool)
+                        or not isinstance(subindex, int)
+                        or subindex < 0
+                    ):
+                        errors.append(f"{location}: invalid equipment_subindex {subindex!r}")
 
                 table = register.get("unit_value_table")
                 if isinstance(table, str) and table.endswith("_t"):
@@ -144,22 +238,38 @@ def validate_config_tree(root: Path) -> list[str]:
 
         for table in sorted(referenced_tables - set(value_tables)):
             errors.append(
-                f"{language_dir}: referenced value table {table!r} does not exist"
+                f"{version_dir}: referenced value table {table!r} does not exist"
             )
-        language_registers[(version, language)] = logical
 
-    versions = {version for version, _language in language_registers}
-    for version in sorted(versions):
-        de = language_registers.get((version, "de"), {})
-        en = language_registers.get((version, "en"), {})
-        for key in sorted(de.keys() & en.keys()):
-            de_id = de[key].get("entity_id")
-            en_id = en[key].get("entity_id")
-            if de_id != en_id:
-                errors.append(
-                    f"{version}/{key[0]} parameter={key[1]!r} index={key[2]!r}: "
-                    f"German entity_id {de_id!r} != English entity_id {en_id!r}"
+        alarm_path = version_dir / "alarm_codes.json"
+        try:
+            alarms = load_json(alarm_path).get("alarm_codes", [])
+            if not isinstance(alarms, list):
+                errors.append(f"{alarm_path}: alarm_codes must be a list")
+                alarms = []
+        except ValueError as exc:
+            errors.append(str(exc))
+            alarms = []
+        seen_alarms: set[tuple[Any, Any]] = set()
+        for number, alarm in enumerate(alarms):
+            location = f"{alarm_path}:{number}"
+            if not isinstance(alarm, dict):
+                errors.append(f"{location}: alarm must be an object")
+                continue
+            alarm_key = (alarm.get("starting_address"), alarm.get("alarm_id"))
+            if alarm_key in seen_alarms:
+                errors.append(f"{location}: duplicate alarm identity {alarm_key!r}")
+            seen_alarms.add(alarm_key)
+            errors.extend(
+                _localized_value_errors(
+                    alarm.get("description"), f"{location}: description", required=True
                 )
+            )
+            for field, value in alarm.items():
+                if field != "description" and isinstance(value, dict):
+                    errors.append(
+                        f"{location}: structural alarm field {field!r} cannot be localized"
+                    )
 
     return errors
 
@@ -169,4 +279,3 @@ def validate_or_raise(root: Path) -> None:
     errors = validate_config_tree(root)
     if errors:
         raise ValueError("Configuration validation failed:\n" + "\n".join(errors))
-

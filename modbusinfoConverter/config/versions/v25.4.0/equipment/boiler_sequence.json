@@ -1,0 +1,778 @@
+{
+  "registers": [
+    {
+      "starting_address": 9394,
+      "entity_id": "average_buffer_temp",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1361",
+      "parameter": "KFS.mittlere_puffertemperatur",
+      "name": {
+        "de": "Mittlere Puffertemp.",
+        "en": "Average buffer temp."
+      }
+    },
+    {
+      "starting_address": 9395,
+      "entity_id": "buffer_fill_level",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "1363",
+      "parameter": "KFS.puffer_fuellgrad",
+      "name": {
+        "de": "Pufferfüllgrad",
+        "en": "Buffer fill level"
+      }
+    },
+    {
+      "starting_address": 9396,
+      "entity_id": "netwforwfl_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1551",
+      "parameter": "KFS.netz_vorlauf.value",
+      "name": {
+        "de": "Netzvorlauf (value)",
+        "en": "NetwForwFl (value)"
+      }
+    },
+    {
+      "starting_address": 9397,
+      "entity_id": "netwforwfl_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1551",
+      "parameter": "KFS.netz_vorlauf.status",
+      "name": {
+        "de": "Netzvorlauf (status)",
+        "en": "NetwForwFl (status)"
+      }
+    },
+    {
+      "starting_address": 9398,
+      "entity_id": "netwretfl_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1552",
+      "parameter": "KFS.netz_ruecklauf.value",
+      "name": {
+        "de": "Netzrücklauf (value)",
+        "en": "NetwRetFl (value)"
+      }
+    },
+    {
+      "starting_address": 9399,
+      "entity_id": "netwretfl_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1552",
+      "parameter": "KFS.netz_ruecklauf.status",
+      "name": {
+        "de": "Netzrücklauf (status)",
+        "en": "NetwRetFl (status)"
+      }
+    },
+    {
+      "starting_address": 9400,
+      "entity_id": "requ_peak_load_boiler",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1350",
+      "parameter": "KFS.o_anforderung_spitzenlastkessel",
+      "name": {
+        "de": "Anf. Spitzenlastkessel",
+        "en": "Requ. peak load boiler"
+      }
+    },
+    {
+      "starting_address": 9402,
+      "entity_id": "b_1_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 1",
+        "en": "B 1"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9403,
+      "entity_id": "b_2_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 2",
+        "en": "B 2"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9404,
+      "entity_id": "b_3_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 3",
+        "en": "B 3"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9405,
+      "entity_id": "b_4_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 4",
+        "en": "B 4"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9406,
+      "entity_id": "b_5_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 5",
+        "en": "B 5"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9407,
+      "entity_id": "b_6_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 6",
+        "en": "B 6"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9408,
+      "entity_id": "b_7_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 7",
+        "en": "B 7"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9409,
+      "entity_id": "b_8_request",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1353",
+      "parameter": "KFK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "index": {
+        "de": "KFK 8",
+        "en": "B 8"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9422,
+      "entity_id": "b_1_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 1",
+        "en": "B 1"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9423,
+      "entity_id": "b_2_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 2",
+        "en": "B 2"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9424,
+      "entity_id": "b_3_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 3",
+        "en": "B 3"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9425,
+      "entity_id": "b_4_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 4",
+        "en": "B 4"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9426,
+      "entity_id": "b_5_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 5",
+        "en": "B 5"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9427,
+      "entity_id": "b_6_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 6",
+        "en": "B 6"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9428,
+      "entity_id": "b_7_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 7",
+        "en": "B 7"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9429,
+      "entity_id": "b_8_fault",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "1371",
+      "parameter": "KFK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "index": {
+        "de": "KFK 8",
+        "en": "B 8"
+      },
+      "equipment_group": "B",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9499,
+      "entity_id": "systems",
+      "data_type": "04",
+      "type": "u8",
+      "user_level": "read",
+      "expert_level": "read",
+      "id": "1459",
+      "parameter": "KFS.anzahl_kessel",
+      "name": {
+        "de": "Anlagen",
+        "en": "Systems"
+      }
+    },
+    {
+      "starting_address": 9500,
+      "entity_id": "systems_requested",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfs_angeforderte_kessel_t",
+      "id": "2125",
+      "parameter": "KFS.anzahl_angeforderte_kessel",
+      "name": {
+        "de": "Anlagen angefordert",
+        "en": "Systems requested"
+      }
+    },
+    {
+      "starting_address": 9501,
+      "entity_id": "buffer_setpoint_temperature",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2213",
+      "parameter": "KFS.puffer_solltemperatur_anzeige",
+      "name": {
+        "de": "Puffersolltemperatur",
+        "en": "Buffer setpoint temperature"
+      }
+    },
+    {
+      "starting_address": 9502,
+      "entity_id": "buffer_temperature_1_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1366",
+      "parameter": "KFS.puffer_temperatur_1.value",
+      "name": {
+        "de": "Puffer Temperatur 1 (value)",
+        "en": "Buffer temperature 1 (value)"
+      }
+    },
+    {
+      "starting_address": 9503,
+      "entity_id": "buffer_temperature_1_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1366",
+      "parameter": "KFS.puffer_temperatur_1.status",
+      "name": {
+        "de": "Puffer Temperatur 1 (status)",
+        "en": "Buffer temperature 1 (status)"
+      }
+    },
+    {
+      "starting_address": 9504,
+      "entity_id": "buffer_temperature_2_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1367",
+      "parameter": "KFS.puffer_temperatur_2.value",
+      "name": {
+        "de": "Puffer Temperatur 2 (value)",
+        "en": "Buffer temperature 2 (value)"
+      }
+    },
+    {
+      "starting_address": 9505,
+      "entity_id": "buffer_temperature_2_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1367",
+      "parameter": "KFS.puffer_temperatur_2.status",
+      "name": {
+        "de": "Puffer Temperatur 2 (status)",
+        "en": "Buffer temperature 2 (status)"
+      }
+    },
+    {
+      "starting_address": 9506,
+      "entity_id": "buffer_temperature_3_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1368",
+      "parameter": "KFS.puffer_temperatur_3.value",
+      "name": {
+        "de": "Puffer Temperatur 3 (value)",
+        "en": "Buffer temperature 3 (value)"
+      }
+    },
+    {
+      "starting_address": 9507,
+      "entity_id": "buffer_temperature_3_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1368",
+      "parameter": "KFS.puffer_temperatur_3.status",
+      "name": {
+        "de": "Puffer Temperatur 3 (status)",
+        "en": "Buffer temperature 3 (status)"
+      }
+    },
+    {
+      "starting_address": 9508,
+      "entity_id": "buffer_temperature_4_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1369",
+      "parameter": "KFS.puffer_temperatur_4.value",
+      "name": {
+        "de": "Puffer Temperatur 4 (value)",
+        "en": "Buffer temperature 4 (value)"
+      }
+    },
+    {
+      "starting_address": 9509,
+      "entity_id": "buffer_temperature_4_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1369",
+      "parameter": "KFS.puffer_temperatur_4.status",
+      "name": {
+        "de": "Puffer Temperatur 4 (status)",
+        "en": "Buffer temperature 4 (status)"
+      }
+    },
+    {
+      "starting_address": 9510,
+      "entity_id": "buffer_temperature_5_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "1370",
+      "parameter": "KFS.puffer_temperatur_5.value",
+      "name": {
+        "de": "Puffer Temperatur 5 (value)",
+        "en": "Buffer temperature 5 (value)"
+      }
+    },
+    {
+      "starting_address": 9511,
+      "entity_id": "buffer_temperature_5_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "1370",
+      "parameter": "KFS.puffer_temperatur_5.status",
+      "name": {
+        "de": "Puffer Temperatur 5 (status)",
+        "en": "Buffer temperature 5 (status)"
+      }
+    },
+    {
+      "starting_address": 9512,
+      "entity_id": "averaged_outside_temp_value",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2241",
+      "parameter": "KFS.i_aussen_temperatur_mittelwert.value",
+      "name": {
+        "de": "Außentemperatur gemittelt (value)",
+        "en": "Averaged outside temp. (value)"
+      }
+    },
+    {
+      "starting_address": 9513,
+      "entity_id": "averaged_outside_temp_status",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2241",
+      "parameter": "KFS.i_aussen_temperatur_mittelwert.status",
+      "name": {
+        "de": "Außentemperatur gemittelt (status)",
+        "en": "Averaged outside temp. (status)"
+      }
+    },
+    {
+      "starting_address": 9514,
+      "entity_id": "malfunction_contact_duration",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "1354",
+      "parameter": "KFS.o_stoerung_dauer",
+      "name": {
+        "de": "Störkontakt Dauer",
+        "en": "Malfunction contact duration"
+      }
+    },
+    {
+      "starting_address": 9515,
+      "entity_id": "average_charging_temp",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2106",
+      "parameter": "KFS.mittlere_durchladetemperatur",
+      "name": {
+        "de": "Mittlere Durchladetemp.",
+        "en": "Average charging temp."
+      }
+    },
+    {
+      "starting_address": 9516,
+      "entity_id": "buffer_charge_up_degree",
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "2095",
+      "parameter": "KFS.puffer_durchladegrad",
+      "name": {
+        "de": "Pufferdurchladegrad",
+        "en": "Buffer charge-up degree"
+      }
+    },
+    {
+      "starting_address": 24848,
+      "entity_id": "buffer_setpoint_temperature_winter",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 500,
+      "max": 900,
+      "id": "1365",
+      "parameter": "KFS.puffer_solltemperatur_winter",
+      "name": {
+        "de": "Puffersolltemperatur Winter",
+        "en": "Buffer setpoint temperature Winter"
+      }
+    },
+    {
+      "starting_address": 24929,
+      "entity_id": "boiler_master_and_slave_circuit",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2244",
+      "parameter": "KFS.anlage_ein",
+      "name": {
+        "de": "Kesselfolgeschaltung",
+        "en": "Boiler master-and-slave circuit"
+      }
+    },
+    {
+      "starting_address": 24930,
+      "entity_id": "active_profile",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "kfs_profile_t",
+      "id": "2214",
+      "parameter": "KFS.active_profile",
+      "name": {
+        "de": "Aktives Profil",
+        "en": "Active profile"
+      }
+    },
+    {
+      "starting_address": 24931,
+      "entity_id": "buffer_setpoint_temperature_summer",
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 300,
+      "max": 900,
+      "id": "2230",
+      "parameter": "KFS.puffer_solltemperatur_sommer",
+      "name": {
+        "de": "Puffersolltemperatur Sommer",
+        "en": "Buffer setpoint temperature Summer"
+      }
+    }
+  ]
+}

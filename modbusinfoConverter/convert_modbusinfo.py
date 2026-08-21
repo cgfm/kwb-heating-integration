@@ -6,9 +6,18 @@ from __future__ import annotations
 import json
 import logging
 import re
+import shutil
 import sys
+import tempfile
 from pathlib import Path
 from typing import Any
+
+try:
+    from config_validation import validate_or_raise
+    from multilingual_config import merge_language_version, new_report
+except ImportError:  # Imported as a package module.
+    from .config_validation import validate_or_raise
+    from .multilingual_config import merge_language_version, new_report
 
 try:
     import openpyxl
@@ -154,6 +163,7 @@ class ModbusInfoConverter:
         self._current_version = "unknown"
         self._current_language = "unknown"
         self._current_source_file = "unknown"
+        self._staging_root: Path | None = None
 
     def sanitize_for_entity_id(self, name: str) -> str:
         """Sanitize a string for use in Home Assistant entity IDs.
@@ -386,7 +396,8 @@ class ModbusInfoConverter:
     ) -> None:
         """Record an ambiguous English-name collision for focused review."""
         item = {
-            "kind": "ambiguous_entity_id_collision",
+            "kind": "ambiguous_entity_id",
+            "blocking": True,
             "firmware_version": self._current_version,
             "language": self._current_language,
             "source_file": self._current_source_file,
@@ -512,6 +523,8 @@ class ModbusInfoConverter:
             "user_level": self._parse_access_level(data.get("UserLevel")),
             "expert_level": self._parse_access_level(data.get("ExpertLevel")),
             "_english_name": english_name,
+            "_source_file": self._current_source_file,
+            "_source_context": source_name,
         }
 
         # Keep the original index field for display purposes
@@ -556,7 +569,8 @@ class ModbusInfoConverter:
     ) -> None:
         """Report a localized row that could not be matched to English source data."""
         item = {
-            "kind": "missing_english_metadata",
+            "kind": "ambiguous_entity_id",
+            "blocking": True,
             "firmware_version": self._current_version,
             "language": self._current_language,
             "source_file": self._current_source_file,
@@ -726,7 +740,8 @@ class ModbusInfoConverter:
         english_data = self.load_english_data(version)
 
         # Create output directory structure
-        version_dir = self.output_dir / f"v{version}" / language
+        staging_root = self._staging_root or (self.output_dir / ".language_sources")
+        version_dir = staging_root / f"v{version}" / language
         version_dir.mkdir(parents=True, exist_ok=True)
 
         # Create subdirectories
@@ -858,24 +873,28 @@ class ModbusInfoConverter:
         for register in registers:
             register.pop("_english_name", None)
 
-    def write_review_report(self) -> Path:
+    def write_review_report(self, report: dict[str, Any] | None = None) -> Path:
         """Write machine-readable exceptional cases beside generated templates."""
         report_path = self.output_dir / "conversion_review.json"
         report_path.parent.mkdir(parents=True, exist_ok=True)
-        report = {
-            "description": (
-                "Non-runtime converter findings requiring human or AI review "
-                "before finalization."
-            ),
-            "review_required": bool(self.review_items),
-            "items": self.review_items,
-        }
+        if report is None:
+            report = new_report(
+                "Non-runtime converter findings requiring review before finalization."
+            )
+            report["items"].extend(self.review_items)
+            report["summary"]["blocking_items"] = sum(
+                bool(item.get("blocking", True)) for item in self.review_items
+            )
+        report["review_required"] = bool(report["items"])
+        report["blocking_review_required"] = any(
+            item.get("blocking", True) for item in report["items"]
+        )
         with open(report_path, "w", encoding="utf-8") as report_file:
             json.dump(report, report_file, indent=2, ensure_ascii=False)
         return report_path
 
     def convert_all(self) -> None:
-        """Convert all ModbusInfo Excel files in input directory."""
+        """Parse both languages, then emit one unified tree per firmware."""
         self.review_items = []
         xlsx_files = sorted(self.input_dir.glob("ModbusInfo*.xlsx"))
 
@@ -885,16 +904,40 @@ class ModbusInfoConverter:
 
         logger.info(f"Found {len(xlsx_files)} files to convert\n")
 
-        for xlsx_file in xlsx_files:
-            try:
-                self.convert_file(xlsx_file)
-            except Exception as exc:
-                logger.error(f"Error converting {xlsx_file.name}: {exc}")
-                import traceback
-                traceback.print_exc()
-                continue
+        report = new_report(
+            "Multilingual converter findings requiring review before finalization."
+        )
+        with tempfile.TemporaryDirectory(prefix="kwb-converter-languages-") as temp_dir:
+            staging_root = Path(temp_dir) / "languages"
+            unified_root = Path(temp_dir) / "unified"
+            self._staging_root = staging_root
+            for xlsx_file in xlsx_files:
+                try:
+                    self.convert_file(xlsx_file)
+                except Exception as exc:
+                    logger.error(f"Error converting {xlsx_file.name}: {exc}")
+                    import traceback
+                    traceback.print_exc()
+                    continue
+            self._staging_root = None
+            report["items"].extend(self.review_items)
+            report["summary"]["blocking_items"] += sum(
+                bool(item.get("blocking", True)) for item in self.review_items
+            )
+            for source_version in sorted(staging_root.glob("v*")):
+                merge_language_version(
+                    source_version,
+                    unified_root / source_version.name,
+                    report,
+                )
+            validate_or_raise(unified_root)
+            for unified_version in sorted(unified_root.glob("v*")):
+                destination = self.output_dir / unified_version.name
+                if destination.exists():
+                    shutil.rmtree(destination)
+                shutil.copytree(unified_version, destination)
 
-        report_path = self.write_review_report()
+        report_path = self.write_review_report(report)
 
         logger.info("="*60)
         logger.info("Conversion complete!")

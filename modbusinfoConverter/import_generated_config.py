@@ -7,6 +7,7 @@ import argparse
 from copy import deepcopy
 import json
 from pathlib import Path
+import re
 import tempfile
 from typing import Any
 
@@ -27,16 +28,151 @@ except ImportError:  # Imported as modbusinfoConverter.import_generated_config.
 
 
 REGISTER_CONTAINER_KEYS = ("registers", "universal_registers")
+VERSION_PATTERN = re.compile(
+    r"^(?:v)?(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)\.(0|[1-9][0-9]*)$"
+)
+
+# Canonical history is compatibility history, not a source of technical metadata.
+COMPATIBILITY_FIELDS = ("entity_id",)
+TECHNICAL_COMPARISON_FIELDS = (
+    "starting_address",
+    "data_type",
+    "register_type",
+    "type",
+    "unit",
+    "unit_value_table",
+    "multiplier",
+    "scale",
+    "scaling",
+    "min",
+    "max",
+    "user_level",
+    "expert_level",
+    "access",
+    "access_level",
+    "write_mode",
+    "read_write",
+    "writable",
+    "read_only",
+    "register_length",
+    "length",
+    "functions",
+    "function_code",
+    "word_order",
+    "byte_order",
+    "id",
+    "equipment_group",
+    "equipment_instance",
+    "equipment_subindex",
+)
 
 
 def _register_container(data: dict[str, Any]) -> str | None:
     return next((key for key in REGISTER_CONTAINER_KEYS if key in data), None)
 
 
-def _comparison_without_published_id(register: dict[str, Any]) -> dict[str, Any]:
-    comparable = dict(register)
-    comparable.pop("entity_id", None)
-    return comparable
+def parse_firmware_version(version: str) -> tuple[int, int, int]:
+    """Parse the strict firmware version format used by canonical directories."""
+    match = VERSION_PATTERN.fullmatch(str(version).strip())
+    if match is None:
+        raise ValueError(
+            f"Malformed firmware version {version!r}; expected MAJOR.MINOR.PATCH"
+        )
+    return tuple(int(component) for component in match.groups())
+
+
+def _normalize_version(version: str) -> str:
+    parsed = parse_firmware_version(version)
+    return "v" + ".".join(str(component) for component in parsed)
+
+
+def _canonical_versions(canonical_root: Path) -> dict[tuple[int, int, int], str]:
+    """Return strict canonical versions, failing instead of guessing malformed names."""
+    versions: dict[tuple[int, int, int], str] = {}
+    if not canonical_root.exists():
+        return versions
+    for path in canonical_root.iterdir():
+        if not path.is_dir() or not path.name.startswith("v"):
+            continue
+        try:
+            parsed = parse_firmware_version(path.name)
+        except ValueError as exc:
+            raise ValueError(
+                f"Malformed canonical version directory {path}; cannot select a baseline"
+            ) from exc
+        if parsed in versions:
+            raise ValueError(
+                "Ambiguous canonical firmware versions "
+                f"{versions[parsed]!r} and {path.name!r}"
+            )
+        versions[parsed] = path.name
+    return versions
+
+
+def _select_baseline_version(
+    canonical_root: Path,
+    target_version: str,
+    requested_base_version: str | None,
+) -> tuple[str | None, str]:
+    """Select same-version history, an explicit base, or the newest older base."""
+    target = parse_firmware_version(target_version)
+    target_name = _normalize_version(target_version)
+    target_path = canonical_root / target_name
+    if target_path.exists() and not target_path.is_dir():
+        raise ValueError(f"Canonical target is not a directory: {target_path}")
+    if target_path.is_dir():
+        if requested_base_version is not None:
+            requested_name = _normalize_version(requested_base_version)
+            if requested_name != target_name:
+                raise ValueError(
+                    f"Canonical target {target_name} already exists; its own published "
+                    "IDs must be used instead of a different base version"
+                )
+        return target_name, "same_version"
+
+    if requested_base_version is not None:
+        requested = parse_firmware_version(requested_base_version)
+        requested_name = _normalize_version(requested_base_version)
+        if requested >= target:
+            raise ValueError(
+                f"Base version {requested_name} must be older than target {target_name}"
+            )
+        requested_path = canonical_root / requested_name
+        if not requested_path.is_dir():
+            raise ValueError(
+                f"Canonical base version does not exist: {requested_path}"
+            )
+        return requested_name, "explicit"
+
+    older = {
+        parsed: name
+        for parsed, name in _canonical_versions(canonical_root).items()
+        if parsed < target
+    }
+    if not older:
+        return None, "none"
+    return older[max(older)], "automatic"
+
+
+def _meaningful_technical_changes(
+    old: dict[str, Any], new: dict[str, Any]
+) -> dict[str, dict[str, Any]]:
+    """Compare focused register properties without reporting formatting-only changes."""
+    changes: dict[str, dict[str, Any]] = {}
+    for field in TECHNICAL_COMPARISON_FIELDS:
+        old_value = old.get(field)
+        new_value = new.get(field)
+        normalized_old = old_value.strip() if isinstance(old_value, str) else old_value
+        normalized_new = new_value.strip() if isinstance(new_value, str) else new_value
+        if normalized_old != normalized_new:
+            changes[field] = {"old": old_value, "new": new_value}
+    return changes
+
+
+def _change_classification(changes: dict[str, dict[str, Any]]) -> str:
+    if set(changes) == {"starting_address"}:
+        return "register_moved"
+    return "technical_metadata_changed"
 
 
 def _merge_register_file(
@@ -44,62 +180,117 @@ def _merge_register_file(
     generated: dict[str, Any],
     canonical: dict[str, Any],
     report: dict[str, Any],
+    preserve_canonical_only: bool,
 ) -> dict[str, Any]:
-    """Preserve finalized registers and add only unambiguous new registers."""
+    """Use generated registers while carrying forward only published entity IDs."""
     generated_key = _register_container(generated)
     canonical_key = _register_container(canonical)
     if generated_key is None or canonical_key is None:
-        return deepcopy(canonical)
+        return deepcopy(generated)
 
     generated_registers = registers_from(generated)
     canonical_registers = registers_from(canonical)
     canonical_by_key: dict[tuple[str, str, str], list[dict[str, Any]]] = {}
+    canonical_by_parameter: dict[str, list[dict[str, Any]]] = {}
     canonical_by_address: dict[Any, list[dict[str, Any]]] = {}
-    matched_keys: set[tuple[str, str, str]] = set()
+    canonical_by_entity_id: dict[str, list[dict[str, Any]]] = {}
     for register in canonical_registers:
         key = logical_register_key(relative_path, register)
         if key is not None:
             canonical_by_key.setdefault(key, []).append(register)
-        canonical_by_address.setdefault(register.get("starting_address"), []).append(
-            register
-        )
+            canonical_by_parameter.setdefault(key[1], []).append(register)
+        address = register.get("starting_address")
+        if address is not None:
+            canonical_by_address.setdefault(address, []).append(register)
+        entity_id = register.get("entity_id")
+        if isinstance(entity_id, str) and entity_id:
+            canonical_by_entity_id.setdefault(entity_id, []).append(register)
 
-    merged_registers = deepcopy(canonical_registers)
+    matched_canonical: set[int] = set()
+    entries: list[dict[str, Any]] = []
     for generated_register in generated_registers:
+        merged_register = deepcopy(generated_register)
+        entry = {
+            "register": merged_register,
+            "generated_entity_id": generated_register.get("entity_id"),
+            "canonical": None,
+            "technical_changes": {},
+        }
+        entries.append(entry)
         key = logical_register_key(relative_path, generated_register)
         matches = canonical_by_key.get(key, []) if key is not None else []
         if len(matches) == 1:
             existing = matches[0]
-            matched_keys.add(key)
-            if existing.get("entity_id"):
-                report["summary"]["published_entity_ids_preserved"] += 1
-            if _comparison_without_published_id(existing) != (
-                _comparison_without_published_id(generated_register)
-            ):
+            matched_canonical.add(id(existing))
+            changes = _meaningful_technical_changes(existing, generated_register)
+            if {
+                "equipment_group",
+                "equipment_instance",
+                "equipment_subindex",
+            } & set(changes):
                 report["items"].append(
                     {
-                        "kind": "existing_register_changed",
+                        "kind": "incompatible_equipment_context",
                         "blocking": True,
+                        "target_version": report["target_version"],
+                        "base_version": report["base_version"],
                         "file": relative_path.as_posix(),
                         "parameter": generated_register.get("parameter"),
-                        "index": generated_register.get("index"),
                         "canonical": existing,
                         "generated": generated_register,
-                        "decision": (
-                            "Canonical register retained; review and apply intended "
-                            "semantic changes manually."
-                        ),
+                        "context_changes": {
+                            field: detail
+                            for field, detail in changes.items()
+                            if field
+                            in {
+                                "equipment_group",
+                                "equipment_instance",
+                                "equipment_subindex",
+                            }
+                        },
                     }
                 )
+                continue
+            entry["canonical"] = existing
+            entry["technical_changes"] = changes
+            for field in COMPATIBILITY_FIELDS:
+                if existing.get(field):
+                    merged_register[field] = deepcopy(existing[field])
             continue
         if len(matches) > 1:
+            matched_canonical.update(id(match) for match in matches)
             report["items"].append(
                 {
                     "kind": "ambiguous_logical_match",
                     "blocking": True,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
                     "file": relative_path.as_posix(),
                     "generated": generated_register,
                     "conflicting_entities": matches,
+                }
+            )
+            continue
+
+        parameter = generated_register.get("parameter")
+        parameter_matches = (
+            canonical_by_parameter.get(parameter.strip(), [])
+            if isinstance(parameter, str) and parameter.strip()
+            else []
+        )
+        if parameter_matches:
+            matched_canonical.update(id(match) for match in parameter_matches)
+            report["items"].append(
+                {
+                    "kind": "incompatible_equipment_index_context",
+                    "blocking": True,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
+                    "file": relative_path.as_posix(),
+                    "parameter": parameter,
+                    "generated_index": generated_register.get("index"),
+                    "generated": generated_register,
+                    "conflicting_entities": parameter_matches,
                 }
             )
             continue
@@ -108,10 +299,13 @@ def _merge_register_file(
             generated_register.get("starting_address"), []
         )
         if address_matches:
+            matched_canonical.update(id(match) for match in address_matches)
             report["items"].append(
                 {
                     "kind": "unmatched_register_address_conflict",
                     "blocking": True,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
                     "file": relative_path.as_posix(),
                     "generated": generated_register,
                     "conflicting_entities": address_matches,
@@ -119,24 +313,107 @@ def _merge_register_file(
             )
             continue
 
-        merged_registers.append(deepcopy(generated_register))
+        entity_matches = canonical_by_entity_id.get(
+            str(generated_register.get("entity_id")), []
+        )
+        if entity_matches:
+            matched_canonical.update(id(match) for match in entity_matches)
+            report["items"].append(
+                {
+                    "kind": "entity_id_logical_identity_conflict",
+                    "blocking": True,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
+                    "file": relative_path.as_posix(),
+                    "generated": generated_register,
+                    "conflicting_entities": entity_matches,
+                }
+            )
+            continue
+
         report["summary"]["new_registers_added"] += 1
 
-    for key, matches in canonical_by_key.items():
-        if key not in matched_keys:
+    # Carrying an old ID can expose a collision with another generated register.
+    # Keep the generated IDs in the blocked proposal so validation and dry-run finish.
+    entries_by_entity_id: dict[str, list[dict[str, Any]]] = {}
+    for entry in entries:
+        entity_id = entry["register"].get("entity_id")
+        if isinstance(entity_id, str):
+            entries_by_entity_id.setdefault(entity_id, []).append(entry)
+    for entity_id, conflicting_entries in entries_by_entity_id.items():
+        if len(conflicting_entries) < 2:
+            continue
+        report["items"].append(
+            {
+                "kind": "conflicting_published_entity_ids",
+                "blocking": True,
+                "target_version": report["target_version"],
+                "base_version": report["base_version"],
+                "file": relative_path.as_posix(),
+                "entity_id": entity_id,
+                "parameters": [
+                    entry["register"].get("parameter") for entry in conflicting_entries
+                ],
+            }
+        )
+        for entry in conflicting_entries:
+            entry["register"]["entity_id"] = entry["generated_entity_id"]
+            entry["canonical"] = None
+
+    for entry in entries:
+        existing = entry["canonical"]
+        if existing is None or not existing.get("entity_id"):
+            continue
+        report["summary"]["published_entity_ids_preserved"] += 1
+        changes = entry["technical_changes"]
+        generated_entity_id = entry["generated_entity_id"]
+        if existing["entity_id"] != generated_entity_id or changes:
+            report["summary"]["compatibility_actions_reported"] += 1
+            if changes:
+                report["summary"]["technical_register_changes_reported"] += 1
+            report["items"].append(
+                {
+                    "kind": "preserve_entity_id",
+                    "action": "preserve_entity_id",
+                    "blocking": False,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
+                    "file": relative_path.as_posix(),
+                    "parameter": entry["register"].get("parameter"),
+                    "index": entry["register"].get("index"),
+                    "entity_id": existing["entity_id"],
+                    "generated_entity_id": generated_entity_id,
+                    "technical_changes": changes,
+                    "classification": (
+                        _change_classification(changes)
+                        if changes
+                        else "published_identity_preserved"
+                    ),
+                }
+            )
+
+    merged_registers = [entry["register"] for entry in entries]
+    if preserve_canonical_only:
+        for register in canonical_registers:
+            if id(register) in matched_canonical:
+                continue
+            merged_registers.append(deepcopy(register))
+            key = logical_register_key(relative_path, register)
             report["items"].append(
                 {
                     "kind": "canonical_only_register_preserved",
                     "blocking": False,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
                     "file": relative_path.as_posix(),
-                    "parameter": key[1],
-                    "index": key[2],
-                    "canonical_entities": matches,
+                    "parameter": key[1] if key else register.get("parameter"),
+                    "index": key[2] if key else register.get("index"),
+                    "canonical_entity": register,
                 }
             )
 
-    result = deepcopy(canonical)
-    result[canonical_key] = merged_registers
+    result = deepcopy(generated)
+    result[generated_key] = merged_registers
     return result
 
 
@@ -146,26 +423,53 @@ def _merge_value_tables(
     canonical: dict[str, Any],
     report: dict[str, Any],
 ) -> dict[str, Any]:
-    """Preserve production refinements and add genuinely new tables."""
-    result = deepcopy(canonical)
-    canonical_tables = result.setdefault("value_tables", {})
+    """Use generated localized labels while blocking raw-key structural changes."""
+    result = deepcopy(generated)
+    canonical_tables = canonical.get("value_tables", {})
     generated_tables = generated.get("value_tables", {})
     for name, table in generated_tables.items():
         if name not in canonical_tables:
-            canonical_tables[name] = deepcopy(table)
             report["summary"]["new_value_tables_added"] += 1
+        elif set(canonical_tables[name]) != set(table):
+            report["items"].append(
+                {
+                    "kind": "value_table_raw_keys_changed",
+                    "blocking": True,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
+                    "file": relative_path.as_posix(),
+                    "value_table": name,
+                    "canonical_raw_keys": sorted(canonical_tables[name]),
+                    "generated_raw_keys": sorted(table),
+                    "decision": "Generated proposal retained; raw-key change requires review.",
+                }
+            )
         elif canonical_tables[name] != table:
             report["items"].append(
                 {
-                    "kind": "value_table_changed",
-                    "blocking": True,
+                    "kind": "localized_value_table_labels_changed",
+                    "blocking": False,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
                     "file": relative_path.as_posix(),
                     "value_table": name,
                     "canonical": canonical_tables[name],
                     "generated": table,
-                    "decision": "Canonical value table retained for review.",
+                    "decision": "Generated target-firmware labels used.",
                 }
             )
+    for name in canonical_tables.keys() - generated_tables.keys():
+        result.setdefault("value_tables", {})[name] = deepcopy(canonical_tables[name])
+        report["items"].append(
+            {
+                "kind": "canonical_only_value_table_preserved",
+                "blocking": False,
+                "target_version": report["target_version"],
+                "base_version": report["base_version"],
+                "file": relative_path.as_posix(),
+                "value_table": name,
+            }
+        )
     return result
 
 
@@ -175,28 +479,68 @@ def _merge_alarm_codes(
     canonical: dict[str, Any],
     report: dict[str, Any],
 ) -> dict[str, Any]:
-    """Preserve finalized alarms and append only new stable alarm keys."""
-    result = deepcopy(canonical)
-    canonical_alarms = result.setdefault("alarm_codes", [])
+    """Use generated alarm metadata and labels for matched alarm identities."""
+    result = deepcopy(generated)
+    canonical_alarms = canonical.get("alarm_codes", [])
     generated_alarms = generated.get("alarm_codes", [])
     existing = {
         (alarm.get("starting_address"), alarm.get("alarm_id")): alarm
         for alarm in canonical_alarms
     }
+    generated_keys: set[tuple[Any, Any]] = set()
     for alarm in generated_alarms:
         key = (alarm.get("starting_address"), alarm.get("alarm_id"))
+        generated_keys.add(key)
         if key not in existing:
-            canonical_alarms.append(deepcopy(alarm))
             report["summary"]["new_alarm_codes_added"] += 1
-        elif existing[key] != alarm:
+        else:
+            old_technical = {
+                field: value
+                for field, value in existing[key].items()
+                if field != "description"
+            }
+            new_technical = {
+                field: value for field, value in alarm.items() if field != "description"
+            }
+            if old_technical != new_technical:
+                report["items"].append(
+                    {
+                        "kind": "alarm_code_structural_change",
+                        "blocking": True,
+                        "target_version": report["target_version"],
+                        "base_version": report["base_version"],
+                        "file": relative_path.as_posix(),
+                        "canonical": existing[key],
+                        "generated": alarm,
+                        "decision": "Generated proposal retained; structure requires review.",
+                    }
+                )
+            elif existing[key].get("description") != alarm.get("description"):
+                report["items"].append(
+                    {
+                        "kind": "localized_alarm_description_changed",
+                        "blocking": False,
+                        "target_version": report["target_version"],
+                        "base_version": report["base_version"],
+                        "file": relative_path.as_posix(),
+                        "alarm_id": alarm.get("alarm_id"),
+                        "canonical": existing[key].get("description"),
+                        "generated": alarm.get("description"),
+                        "decision": "Generated target-firmware description used.",
+                    }
+                )
+    result_alarms = result.setdefault("alarm_codes", [])
+    for key, alarm in existing.items():
+        if key not in generated_keys:
+            result_alarms.append(deepcopy(alarm))
             report["items"].append(
                 {
-                    "kind": "alarm_code_changed",
-                    "blocking": True,
+                    "kind": "canonical_only_alarm_preserved",
+                    "blocking": False,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
                     "file": relative_path.as_posix(),
-                    "canonical": existing[key],
-                    "generated": alarm,
-                    "decision": "Canonical alarm retained for review.",
+                    "canonical": alarm,
                 }
             )
     return result
@@ -210,7 +554,8 @@ def _conversion_review_items(generated_root: Path, version: str) -> list[dict]:
     return [
         item
         for item in data.get("items", [])
-        if str(item.get("firmware_version")) == version.removeprefix("v")
+        if str(item.get("firmware_version", "")).removeprefix("v")
+        == version.removeprefix("v")
     ]
 
 
@@ -218,36 +563,68 @@ def build_finalized_version(
     generated_root: Path,
     canonical_root: Path,
     version: str,
+    base_version: str | None = None,
 ) -> tuple[dict[Path, dict[str, Any]], dict[str, Any]]:
     """Build a validated proposal without mutating canonical configuration."""
-    version = f"v{version.removeprefix('v')}"
+    version = _normalize_version(version)
+    generated_root = Path(generated_root)
+    canonical_root = Path(canonical_root)
     generated_version = Path(generated_root) / version
     canonical_version = Path(canonical_root) / version
     if not generated_version.is_dir():
         raise ValueError(f"Generated version does not exist: {generated_version}")
+    selected_base, baseline_selection = _select_baseline_version(
+        canonical_root, version, base_version
+    )
+    compatibility_version = (
+        canonical_root / selected_base if selected_base is not None else None
+    )
+    target_exists = canonical_version.is_dir()
 
     report: dict[str, Any] = {
         "version": version,
-        "generated_root": str(Path(generated_root)),
-        "canonical_root": str(Path(canonical_root)),
+        "target_version": version,
+        "base_version": selected_base,
+        "baseline_selection": baseline_selection,
+        "generated_root": str(generated_root),
+        "canonical_root": str(canonical_root),
         "items": [],
         "summary": {
             "published_entity_ids_preserved": 0,
+            "compatibility_actions_reported": 0,
+            "technical_register_changes_reported": 0,
             "new_registers_added": 0,
             "new_value_tables_added": 0,
             "new_alarm_codes_added": 0,
             "files_added": 0,
         },
     }
-    for item in _conversion_review_items(Path(generated_root), version):
+    if selected_base is None:
         report["items"].append(
-            {"kind": "converter_review_required", "blocking": True, "detail": item}
+            {
+                "kind": "no_compatibility_baseline",
+                "blocking": False,
+                "target_version": version,
+                "base_version": None,
+                "message": (
+                    "No older canonical firmware version was available; generated "
+                    "entity IDs require first-version review."
+                ),
+            }
+        )
+    for item in _conversion_review_items(generated_root, version):
+        report["items"].append(
+            {
+                "kind": "converter_review_required",
+                "blocking": bool(item.get("blocking", True)),
+                "detail": item,
+            }
         )
 
     proposed: dict[Path, dict[str, Any]] = {}
     canonical_files = (
         {path.relative_to(canonical_version) for path in canonical_version.rglob("*.json")}
-        if canonical_version.is_dir()
+        if target_exists
         else set()
     )
     generated_files = {
@@ -269,33 +646,64 @@ def build_finalized_version(
             continue
         generated_data = load_json(generated_path)
         if not canonical_path.exists():
-            proposed[relative_path] = deepcopy(generated_data)
             report["summary"]["files_added"] += 1
-            continue
+        compatibility_path = (
+            compatibility_version / relative_path
+            if compatibility_version is not None
+            else None
+        )
+        compatibility_data = (
+            load_json(compatibility_path)
+            if compatibility_path is not None and compatibility_path.exists()
+            else None
+        )
 
-        canonical_data = load_json(canonical_path)
-        if relative_path.name == "value_tables.json":
+        # A previous-version baseline only contributes register identity. Other
+        # files and all register metadata come from the generated target version.
+        if canonical_path.exists() and relative_path.name == "value_tables.json":
             proposed[relative_path] = _merge_value_tables(
-                relative_path, generated_data, canonical_data, report
+                relative_path, generated_data, compatibility_data, report
             )
-        elif relative_path.name == "alarm_codes.json":
+        elif canonical_path.exists() and relative_path.name == "alarm_codes.json":
             proposed[relative_path] = _merge_alarm_codes(
-                relative_path, generated_data, canonical_data, report
+                relative_path, generated_data, compatibility_data, report
             )
-        elif _register_container(generated_data) is not None:
+        elif (
+            _register_container(generated_data) is not None
+            and compatibility_data is not None
+            and _register_container(compatibility_data) is not None
+        ):
             proposed[relative_path] = _merge_register_file(
-                relative_path, generated_data, canonical_data, report
+                relative_path,
+                generated_data,
+                compatibility_data,
+                report,
+                preserve_canonical_only=target_exists,
             )
-        else:
-            proposed[relative_path] = deepcopy(canonical_data)
-            if canonical_data != generated_data:
+        elif canonical_path.exists() and compatibility_data != generated_data:
+            proposed[relative_path] = deepcopy(compatibility_data)
+            if _register_container(generated_data) is not None:
+                report["items"].append(
+                    {
+                        "kind": "incompatible_register_file_structure",
+                        "blocking": True,
+                        "target_version": version,
+                        "base_version": selected_base,
+                        "file": relative_path.as_posix(),
+                    }
+                )
+            else:
                 report["items"].append(
                     {
                         "kind": "unrecognized_file_changed",
                         "blocking": True,
+                        "target_version": version,
+                        "base_version": selected_base,
                         "file": relative_path.as_posix(),
                     }
                 )
+        else:
+            proposed[relative_path] = deepcopy(generated_data)
 
     with tempfile.TemporaryDirectory(prefix="kwb-config-finalize-") as temp_dir:
         validation_root = Path(temp_dir)
@@ -311,6 +719,9 @@ def build_finalized_version(
     report["blocking_review_required"] = any(
         item.get("blocking", False) for item in report["items"]
     )
+    report["summary"]["blocking_review_items"] = sum(
+        bool(item.get("blocking", False)) for item in report["items"]
+    )
     return proposed, report
 
 
@@ -320,7 +731,7 @@ def write_finalized_version(
     proposed: dict[Path, dict[str, Any]],
 ) -> None:
     """Write a fully validated proposal to the canonical tree."""
-    version = f"v{version.removeprefix('v')}"
+    version = _normalize_version(version)
     for relative_path, data in proposed.items():
         destination = Path(canonical_root) / version / relative_path
         destination.parent.mkdir(parents=True, exist_ok=True)
@@ -359,6 +770,13 @@ def main() -> int:
         ),
     )
     parser.add_argument(
+        "--base-version",
+        help=(
+            "Older canonical firmware version used only for published-ID matching "
+            "when the target does not exist"
+        ),
+    )
+    parser.add_argument(
         "--report",
         type=Path,
         help="Review-report path (default: generated root/import_review_<version>.json)",
@@ -370,11 +788,17 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    proposed, report = build_finalized_version(
-        args.generated_root, args.canonical_root, args.version
-    )
+    try:
+        proposed, report = build_finalized_version(
+            args.generated_root,
+            args.canonical_root,
+            args.version,
+            base_version=args.base_version,
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     report_path = args.report or (
-        args.generated_root / f"import_review_v{args.version.removeprefix('v')}.json"
+        args.generated_root / f"import_review_{report['target_version']}.json"
     )
     report_path.parent.mkdir(parents=True, exist_ok=True)
     report_path.write_text(
@@ -389,10 +813,16 @@ def main() -> int:
         print(f"Finalized v{args.version.removeprefix('v')} into {args.canonical_root}")
     else:
         print(f"Dry run only; review report written to {report_path}")
+    if report["base_version"] is None:
+        print("Compatibility baseline: none available")
+    else:
+        print(
+            "Compatibility baseline: "
+            f"{report['base_version']} ({report['baseline_selection']})"
+        )
     print(json.dumps(report["summary"], indent=2))
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

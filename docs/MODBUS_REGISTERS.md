@@ -1,6 +1,6 @@
 # KWB Modbus Register — Nachschlagewerk
 
-**Software-Version:** v25.7.1 (DE) · **Quelle:** `custom_components/kwb_heating/config/versions/v25.7.1/de/`  
+**Software-Version:** v25.7.1 (deutsche Darstellung) · **Quelle:** `custom_components/kwb_heating/config/versions/v25.7.1/`
 **Generiert:** Tabellen aus den JSON-Definitionen der Integration; das **Glossar** wurde zusätzlich aus öffentlichen KWB-Quellen ergänzt (siehe Quellenliste am Ende des Glossars).  
 **Hinweis:** Die *Erklärungs*-Spalte ist bei nicht selbsterklärenden Begriffen leer (`—`) bzw. im Glossar separat markiert. KWB liefert in den Modbus-Tabellen nur das *Name*-Feld als Beschreibung; alles, was darüber hinausgeht, ist im Glossar mit Konfidenz-Stufe (✓ verifiziert / ~ wahrscheinlich / ? nicht belegt) markiert. **Spekulationen ohne Quelle sind als solche gekennzeichnet.**
 
@@ -23,6 +23,17 @@
 - [Anhang A — Vollständige Adressliste](#anhang-a--vollstandige-adressliste)
 
 ## Lesehilfe
+
+Die Firmware-Konfiguration ist sprachunabhängig und existiert genau einmal.
+Technische Registerfelder (Adresse, Parameter, Entity-ID, Typ, Grenzen,
+Zugriffsrechte, Skalierung, Registerlänge und Wertetabellenreferenz) sind
+Skalarwerte. Nur `name` und `index`, Wertetabellen-Labels sowie
+Alarmbeschreibungen enthalten explizite `de`/`en`-Werte. Fehlende Übersetzungen
+entfernen kein Register: Die Laufzeit fällt von der angeforderten Sprache auf
+Englisch, Deutsch und anschließend einen beliebigen vorhandenen Text zurück.
+Geräteauswahl verwendet die technischen Felder `equipment_group`,
+`equipment_instance` und optional `equipment_subindex`, nicht den lokalisierten
+Anzeigetext in `index`.
 
 **Spalten der Hauptabschnitte:**
 

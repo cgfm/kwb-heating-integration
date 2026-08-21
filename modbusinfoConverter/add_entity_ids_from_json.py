@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Add entity_id fields to generated template JSON using English data.
 
-This script is useful when Excel source files are not available but both
-German and English JSON configs exist. It generates language-independent
-entity_id values that include the equipment index (e.g., sol_1_status). It is
-not a production finalizer; use import_generated_config.py for canonical config.
+This script is useful when Excel source files are unavailable but a unified
+multilingual generated JSON config exists. It generates language-independent
+entity_id values from inline English metadata. It is not a production finalizer;
+use import_generated_config.py for canonical config.
 """
 
 import json
@@ -113,17 +113,16 @@ def sanitize_index_for_entity_id(index: str) -> str | None:
 
 
 def load_english_data_from_json(
-    en_dir: Path,
+    version_dir: Path,
 ) -> dict[str, dict[int, dict[str, str]]]:
-    """Load English register data (name and index) from JSON files.
+    """Load inline English register data from one unified version tree.
 
     Returns a mapping of relative filename -> starting_address -> register data.
     Addresses are not globally unique across device and equipment files.
     """
     english_data: dict[str, dict[int, dict[str, str]]] = {}
 
-    # Process all JSON files in the English directory
-    for json_file in en_dir.rglob("*.json"):
+    for json_file in version_dir.rglob("*.json"):
         if json_file.name in ["value_tables.json", "alarm_codes.json"]:
             continue  # Skip non-register files
 
@@ -141,15 +140,25 @@ def load_english_data_from_json(
             file_data: dict[int, dict[str, str]] = {}
             for reg in registers:
                 address = reg.get("starting_address")
-                name = reg.get("name")
-                index = reg.get("index")
+                name_value = reg.get("name")
+                index_value = reg.get("index")
+                name = (
+                    name_value.get("en")
+                    if isinstance(name_value, dict)
+                    else name_value
+                )
+                index = (
+                    index_value.get("en")
+                    if isinstance(index_value, dict)
+                    else index_value
+                )
                 if address is not None and name:
                     entry = {"name": str(name).strip()}
                     if index:
                         entry["index"] = str(index).strip()
                     file_data[int(address)] = entry
 
-            relative_path = json_file.relative_to(en_dir).as_posix()
+            relative_path = json_file.relative_to(version_dir).as_posix()
             english_data[relative_path] = file_data
 
         except Exception as e:
@@ -173,8 +182,14 @@ def add_entity_ids_to_registers(registers: list[dict], english_data: dict[int, d
 
         # Get English data, fall back to current register data
         en_data = english_data.get(int(address), {})
-        english_name = en_data.get("name", reg.get("name", ""))
-        english_index = en_data.get("index", reg.get("index", ""))
+        english_name = en_data.get("name", "")
+        english_index = en_data.get("index", "")
+        if not english_name:
+            print(
+                "    REVIEW REQUIRED: no English name for entity_id generation "
+                f"at address {address}; parameter={reg.get('parameter')!r}"
+            )
+            continue
 
         # Generate base entity_id from English name
         base_entity_id = sanitize_for_entity_id(english_name)
@@ -280,33 +295,19 @@ def process_json_file(json_file: Path, english_data: dict[int, dict[str, str]]) 
 
 def process_version(version_dir: Path) -> None:
     """Process a version directory to add entity_id fields."""
-    en_dir = version_dir / "en"
-    de_dir = version_dir / "de"
-
-    if not en_dir.exists():
-        print(f"  No English directory found, skipping")
-        return
-
-    print(f"  Loading English data from {en_dir}...")
-    english_data_by_file = load_english_data_from_json(en_dir)
+    print(f"  Loading inline English data from {version_dir}...")
+    english_data_by_file = load_english_data_from_json(version_dir)
     entry_count = sum(len(entries) for entries in english_data_by_file.values())
     print(f"  Loaded {entry_count} English entries")
 
-    # Process both language directories
-    for lang_dir in [de_dir, en_dir]:
-        if not lang_dir.exists():
+    for json_file in version_dir.rglob("*.json"):
+        if json_file.name in ["value_tables.json", "alarm_codes.json"]:
             continue
 
-        print(f"  Processing {lang_dir.name}/...")
-
-        for json_file in lang_dir.rglob("*.json"):
-            if json_file.name in ["value_tables.json", "alarm_codes.json"]:
-                continue
-
-            relative = json_file.relative_to(lang_dir)
-            print(f"    {relative}...")
-            english_data = english_data_by_file.get(relative.as_posix(), {})
-            process_json_file(json_file, english_data)
+        relative = json_file.relative_to(version_dir)
+        print(f"    {relative}...")
+        english_data = english_data_by_file.get(relative.as_posix(), {})
+        process_json_file(json_file, english_data)
 
 
 def main():

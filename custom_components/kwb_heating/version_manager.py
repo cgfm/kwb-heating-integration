@@ -201,11 +201,11 @@ class VersionManager:
             return self.default_version
 
     def get_config_path(self, version: str, language: str) -> Path:
-        """Get configuration path for version and language combination.
+        """Get the language-neutral configuration path for one firmware version.
 
         Args:
             version: Version string (e.g., "22.7.1")
-            language: Language code (e.g., "de", "en")
+            language: Accepted for API compatibility; it does not select data.
 
         Returns:
             Path to configuration directory
@@ -218,7 +218,7 @@ class VersionManager:
         version_info = self.version_mapping.get(version, {})
         config_path = version_info.get("config_path", f"versions/v{version}")
 
-        # Ensure language is supported, fallback to English or the first available
+        # Validate language for presentation, but never use it to select registers.
         supported_languages = version_info.get("supported_languages", ["en", "de"])
         if language not in supported_languages:
             _LOGGER.warning(
@@ -235,7 +235,7 @@ class VersionManager:
                 language = "en"
             _LOGGER.info("Falling back to language '%s'", language)
 
-        full_path = self.config_base_path / config_path / language
+        full_path = self.config_base_path / config_path
         return full_path
 
     def get_supported_versions(self) -> list[str]:
@@ -277,11 +277,11 @@ class VersionManager:
         return 8192
 
     def validate_config_exists(self, version: str, language: str) -> bool:
-        """Check if configuration exists for version and language.
+        """Check if the unified configuration exists for a version.
 
         Args:
             version: Version string
-            language: Language code
+            language: Accepted for API compatibility.
 
         Returns:
             True if configuration directory exists
