@@ -4,6 +4,11 @@
 **Generiert:** Tabellen aus den JSON-Definitionen der Integration; das **Glossar** wurde zusätzlich aus öffentlichen KWB-Quellen ergänzt (siehe Quellenliste am Ende des Glossars).  
 **Hinweis:** Die *Erklärungs*-Spalte ist bei nicht selbsterklärenden Begriffen leer (`—`) bzw. im Glossar separat markiert. KWB liefert in den Modbus-Tabellen nur das *Name*-Feld als Beschreibung; alles, was darüber hinausgeht, ist im Glossar mit Konfidenz-Stufe (✓ verifiziert / ~ wahrscheinlich / ? nicht belegt) markiert. **Spekulationen ohne Quelle sind als solche gekennzeichnet.**
 
+Firmware v26.6.1 wird ebenfalls unterstützt. Dieses Nachschlagewerk bleibt eine
+v25.7.1-Ansicht; die kanonischen v26.6.1-Definitionen stammen aus PR #21,
+Commit `360b9a6a07d1005c3f19e5a83159a26fcb659372`, und wurden ohne verfügbare
+Original-Exceldateien in das einheitliche mehrsprachige Schema migriert.
+
 ## Inhaltsverzeichnis
 
 - [Lesehilfe](#lesehilfe)

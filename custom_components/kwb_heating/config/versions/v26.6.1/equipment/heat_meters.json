@@ -1,0 +1,4684 @@
+{
+  "registers": [
+    {
+      "starting_address": 9517,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_1_power",
+      "index": {
+        "de": "WMZ 0",
+        "en": "HQM 0"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 9519,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_2_power",
+      "index": {
+        "de": "WMZ 1",
+        "en": "HQM 1"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9521,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_3_power",
+      "index": {
+        "de": "WMZ 2",
+        "en": "HQM 2"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9523,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_4_power",
+      "index": {
+        "de": "WMZ 3",
+        "en": "HQM 3"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9525,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_5_power",
+      "index": {
+        "de": "WMZ 4",
+        "en": "HQM 4"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9527,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_6_power",
+      "index": {
+        "de": "WMZ 5",
+        "en": "HQM 5"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9529,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_7_power",
+      "index": {
+        "de": "WMZ 6",
+        "en": "HQM 6"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9531,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_8_power",
+      "index": {
+        "de": "WMZ 7",
+        "en": "HQM 7"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9533,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_9_power",
+      "index": {
+        "de": "WMZ 8",
+        "en": "HQM 8"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9535,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_10_power",
+      "index": {
+        "de": "WMZ 9",
+        "en": "HQM 9"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9537,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_11_power",
+      "index": {
+        "de": "WMZ 10",
+        "en": "HQM 10"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9539,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_12_power",
+      "index": {
+        "de": "WMZ 11",
+        "en": "HQM 11"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9541,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_13_power",
+      "index": {
+        "de": "WMZ 12",
+        "en": "HQM 12"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9543,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_14_power",
+      "index": {
+        "de": "WMZ 13",
+        "en": "HQM 13"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9545,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_15_power",
+      "index": {
+        "de": "WMZ 14",
+        "en": "HQM 14"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9547,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_16_power",
+      "index": {
+        "de": "WMZ 15",
+        "en": "HQM 15"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 15
+    },
+    {
+      "starting_address": 9549,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_17_power",
+      "index": {
+        "de": "WMZ 16",
+        "en": "HQM 16"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 16
+    },
+    {
+      "starting_address": 9551,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_18_power",
+      "index": {
+        "de": "WMZ 17",
+        "en": "HQM 17"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 17
+    },
+    {
+      "starting_address": 9553,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_19_power",
+      "index": {
+        "de": "WMZ 18",
+        "en": "HQM 18"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 18
+    },
+    {
+      "starting_address": 9555,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_20_power",
+      "index": {
+        "de": "WMZ 19",
+        "en": "HQM 19"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 19
+    },
+    {
+      "starting_address": 9557,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_21_power",
+      "index": {
+        "de": "WMZ 20",
+        "en": "HQM 20"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 20
+    },
+    {
+      "starting_address": 9559,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_22_power",
+      "index": {
+        "de": "WMZ 21",
+        "en": "HQM 21"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 21
+    },
+    {
+      "starting_address": 9561,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_23_power",
+      "index": {
+        "de": "WMZ 22",
+        "en": "HQM 22"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 22
+    },
+    {
+      "starting_address": 9563,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_24_power",
+      "index": {
+        "de": "WMZ 23",
+        "en": "HQM 23"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 23
+    },
+    {
+      "starting_address": 9565,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_25_power",
+      "index": {
+        "de": "WMZ 24",
+        "en": "HQM 24"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 24
+    },
+    {
+      "starting_address": 9567,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_26_power",
+      "index": {
+        "de": "WMZ 25",
+        "en": "HQM 25"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 25
+    },
+    {
+      "starting_address": 9569,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_27_power",
+      "index": {
+        "de": "WMZ 26",
+        "en": "HQM 26"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 26
+    },
+    {
+      "starting_address": 9571,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_28_power",
+      "index": {
+        "de": "WMZ 27",
+        "en": "HQM 27"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 27
+    },
+    {
+      "starting_address": 9573,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_29_power",
+      "index": {
+        "de": "WMZ 28",
+        "en": "HQM 28"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 28
+    },
+    {
+      "starting_address": 9575,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_30_power",
+      "index": {
+        "de": "WMZ 29",
+        "en": "HQM 29"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 29
+    },
+    {
+      "starting_address": 9577,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_31_power",
+      "index": {
+        "de": "WMZ 30",
+        "en": "HQM 30"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 30
+    },
+    {
+      "starting_address": 9579,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_32_power",
+      "index": {
+        "de": "WMZ 31",
+        "en": "HQM 31"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 31
+    },
+    {
+      "starting_address": 9581,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_33_power",
+      "index": {
+        "de": "WMZ 32",
+        "en": "HQM 32"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 32
+    },
+    {
+      "starting_address": 9583,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_34_power",
+      "index": {
+        "de": "WMZ 33",
+        "en": "HQM 33"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 33
+    },
+    {
+      "starting_address": 9585,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_35_power",
+      "index": {
+        "de": "WMZ 34",
+        "en": "HQM 34"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 34
+    },
+    {
+      "starting_address": 9587,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000kW",
+      "number_of_registers": 2,
+      "id": "2170",
+      "parameter": "MBUS.leistung",
+      "name": {
+        "de": "Leistung",
+        "en": "Power"
+      },
+      "entity_id": "hqm_36_power",
+      "index": {
+        "de": "WMZ 35",
+        "en": "HQM 35"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 35
+    },
+    {
+      "starting_address": 9589,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_1_forward_flow",
+      "index": {
+        "de": "WMZ 0",
+        "en": "HQM 0"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 9590,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_2_forward_flow",
+      "index": {
+        "de": "WMZ 1",
+        "en": "HQM 1"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9591,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_3_forward_flow",
+      "index": {
+        "de": "WMZ 2",
+        "en": "HQM 2"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9592,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_4_forward_flow",
+      "index": {
+        "de": "WMZ 3",
+        "en": "HQM 3"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9593,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_5_forward_flow",
+      "index": {
+        "de": "WMZ 4",
+        "en": "HQM 4"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9594,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_6_forward_flow",
+      "index": {
+        "de": "WMZ 5",
+        "en": "HQM 5"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9595,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_7_forward_flow",
+      "index": {
+        "de": "WMZ 6",
+        "en": "HQM 6"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9596,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_8_forward_flow",
+      "index": {
+        "de": "WMZ 7",
+        "en": "HQM 7"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9597,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_9_forward_flow",
+      "index": {
+        "de": "WMZ 8",
+        "en": "HQM 8"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9598,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_10_forward_flow",
+      "index": {
+        "de": "WMZ 9",
+        "en": "HQM 9"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9599,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_11_forward_flow",
+      "index": {
+        "de": "WMZ 10",
+        "en": "HQM 10"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9600,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_12_forward_flow",
+      "index": {
+        "de": "WMZ 11",
+        "en": "HQM 11"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9601,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_13_forward_flow",
+      "index": {
+        "de": "WMZ 12",
+        "en": "HQM 12"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9602,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_14_forward_flow",
+      "index": {
+        "de": "WMZ 13",
+        "en": "HQM 13"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9603,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_15_forward_flow",
+      "index": {
+        "de": "WMZ 14",
+        "en": "HQM 14"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9604,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_16_forward_flow",
+      "index": {
+        "de": "WMZ 15",
+        "en": "HQM 15"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 15
+    },
+    {
+      "starting_address": 9605,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_17_forward_flow",
+      "index": {
+        "de": "WMZ 16",
+        "en": "HQM 16"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 16
+    },
+    {
+      "starting_address": 9606,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_18_forward_flow",
+      "index": {
+        "de": "WMZ 17",
+        "en": "HQM 17"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 17
+    },
+    {
+      "starting_address": 9607,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_19_forward_flow",
+      "index": {
+        "de": "WMZ 18",
+        "en": "HQM 18"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 18
+    },
+    {
+      "starting_address": 9608,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_20_forward_flow",
+      "index": {
+        "de": "WMZ 19",
+        "en": "HQM 19"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 19
+    },
+    {
+      "starting_address": 9609,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_21_forward_flow",
+      "index": {
+        "de": "WMZ 20",
+        "en": "HQM 20"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 20
+    },
+    {
+      "starting_address": 9610,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_22_forward_flow",
+      "index": {
+        "de": "WMZ 21",
+        "en": "HQM 21"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 21
+    },
+    {
+      "starting_address": 9611,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_23_forward_flow",
+      "index": {
+        "de": "WMZ 22",
+        "en": "HQM 22"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 22
+    },
+    {
+      "starting_address": 9612,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_24_forward_flow",
+      "index": {
+        "de": "WMZ 23",
+        "en": "HQM 23"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 23
+    },
+    {
+      "starting_address": 9613,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_25_forward_flow",
+      "index": {
+        "de": "WMZ 24",
+        "en": "HQM 24"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 24
+    },
+    {
+      "starting_address": 9614,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_26_forward_flow",
+      "index": {
+        "de": "WMZ 25",
+        "en": "HQM 25"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 25
+    },
+    {
+      "starting_address": 9615,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_27_forward_flow",
+      "index": {
+        "de": "WMZ 26",
+        "en": "HQM 26"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 26
+    },
+    {
+      "starting_address": 9616,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_28_forward_flow",
+      "index": {
+        "de": "WMZ 27",
+        "en": "HQM 27"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 27
+    },
+    {
+      "starting_address": 9617,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_29_forward_flow",
+      "index": {
+        "de": "WMZ 28",
+        "en": "HQM 28"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 28
+    },
+    {
+      "starting_address": 9618,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_30_forward_flow",
+      "index": {
+        "de": "WMZ 29",
+        "en": "HQM 29"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 29
+    },
+    {
+      "starting_address": 9619,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_31_forward_flow",
+      "index": {
+        "de": "WMZ 30",
+        "en": "HQM 30"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 30
+    },
+    {
+      "starting_address": 9620,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_32_forward_flow",
+      "index": {
+        "de": "WMZ 31",
+        "en": "HQM 31"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 31
+    },
+    {
+      "starting_address": 9621,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_33_forward_flow",
+      "index": {
+        "de": "WMZ 32",
+        "en": "HQM 32"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 32
+    },
+    {
+      "starting_address": 9622,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_34_forward_flow",
+      "index": {
+        "de": "WMZ 33",
+        "en": "HQM 33"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 33
+    },
+    {
+      "starting_address": 9623,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_35_forward_flow",
+      "index": {
+        "de": "WMZ 34",
+        "en": "HQM 34"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 34
+    },
+    {
+      "starting_address": 9624,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2167",
+      "parameter": "MBUS.vorlauftemp",
+      "name": {
+        "de": "Vorlauf",
+        "en": "Forward flow"
+      },
+      "entity_id": "hqm_36_forward_flow",
+      "index": {
+        "de": "WMZ 35",
+        "en": "HQM 35"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 35
+    },
+    {
+      "starting_address": 9625,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_1_return_flow",
+      "index": {
+        "de": "WMZ 0",
+        "en": "HQM 0"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 9626,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_2_return_flow",
+      "index": {
+        "de": "WMZ 1",
+        "en": "HQM 1"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9627,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_3_return_flow",
+      "index": {
+        "de": "WMZ 2",
+        "en": "HQM 2"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9628,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_4_return_flow",
+      "index": {
+        "de": "WMZ 3",
+        "en": "HQM 3"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9629,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_5_return_flow",
+      "index": {
+        "de": "WMZ 4",
+        "en": "HQM 4"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9630,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_6_return_flow",
+      "index": {
+        "de": "WMZ 5",
+        "en": "HQM 5"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9631,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_7_return_flow",
+      "index": {
+        "de": "WMZ 6",
+        "en": "HQM 6"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9632,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_8_return_flow",
+      "index": {
+        "de": "WMZ 7",
+        "en": "HQM 7"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9633,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_9_return_flow",
+      "index": {
+        "de": "WMZ 8",
+        "en": "HQM 8"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9634,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_10_return_flow",
+      "index": {
+        "de": "WMZ 9",
+        "en": "HQM 9"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9635,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_11_return_flow",
+      "index": {
+        "de": "WMZ 10",
+        "en": "HQM 10"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9636,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_12_return_flow",
+      "index": {
+        "de": "WMZ 11",
+        "en": "HQM 11"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9637,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_13_return_flow",
+      "index": {
+        "de": "WMZ 12",
+        "en": "HQM 12"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9638,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_14_return_flow",
+      "index": {
+        "de": "WMZ 13",
+        "en": "HQM 13"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9639,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_15_return_flow",
+      "index": {
+        "de": "WMZ 14",
+        "en": "HQM 14"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9640,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_16_return_flow",
+      "index": {
+        "de": "WMZ 15",
+        "en": "HQM 15"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 15
+    },
+    {
+      "starting_address": 9641,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_17_return_flow",
+      "index": {
+        "de": "WMZ 16",
+        "en": "HQM 16"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 16
+    },
+    {
+      "starting_address": 9642,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_18_return_flow",
+      "index": {
+        "de": "WMZ 17",
+        "en": "HQM 17"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 17
+    },
+    {
+      "starting_address": 9643,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_19_return_flow",
+      "index": {
+        "de": "WMZ 18",
+        "en": "HQM 18"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 18
+    },
+    {
+      "starting_address": 9644,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_20_return_flow",
+      "index": {
+        "de": "WMZ 19",
+        "en": "HQM 19"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 19
+    },
+    {
+      "starting_address": 9645,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_21_return_flow",
+      "index": {
+        "de": "WMZ 20",
+        "en": "HQM 20"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 20
+    },
+    {
+      "starting_address": 9646,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_22_return_flow",
+      "index": {
+        "de": "WMZ 21",
+        "en": "HQM 21"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 21
+    },
+    {
+      "starting_address": 9647,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_23_return_flow",
+      "index": {
+        "de": "WMZ 22",
+        "en": "HQM 22"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 22
+    },
+    {
+      "starting_address": 9648,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_24_return_flow",
+      "index": {
+        "de": "WMZ 23",
+        "en": "HQM 23"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 23
+    },
+    {
+      "starting_address": 9649,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_25_return_flow",
+      "index": {
+        "de": "WMZ 24",
+        "en": "HQM 24"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 24
+    },
+    {
+      "starting_address": 9650,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_26_return_flow",
+      "index": {
+        "de": "WMZ 25",
+        "en": "HQM 25"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 25
+    },
+    {
+      "starting_address": 9651,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_27_return_flow",
+      "index": {
+        "de": "WMZ 26",
+        "en": "HQM 26"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 26
+    },
+    {
+      "starting_address": 9652,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_28_return_flow",
+      "index": {
+        "de": "WMZ 27",
+        "en": "HQM 27"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 27
+    },
+    {
+      "starting_address": 9653,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_29_return_flow",
+      "index": {
+        "de": "WMZ 28",
+        "en": "HQM 28"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 28
+    },
+    {
+      "starting_address": 9654,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_30_return_flow",
+      "index": {
+        "de": "WMZ 29",
+        "en": "HQM 29"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 29
+    },
+    {
+      "starting_address": 9655,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_31_return_flow",
+      "index": {
+        "de": "WMZ 30",
+        "en": "HQM 30"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 30
+    },
+    {
+      "starting_address": 9656,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_32_return_flow",
+      "index": {
+        "de": "WMZ 31",
+        "en": "HQM 31"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 31
+    },
+    {
+      "starting_address": 9657,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_33_return_flow",
+      "index": {
+        "de": "WMZ 32",
+        "en": "HQM 32"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 32
+    },
+    {
+      "starting_address": 9658,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_34_return_flow",
+      "index": {
+        "de": "WMZ 33",
+        "en": "HQM 33"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 33
+    },
+    {
+      "starting_address": 9659,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_35_return_flow",
+      "index": {
+        "de": "WMZ 34",
+        "en": "HQM 34"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 34
+    },
+    {
+      "starting_address": 9660,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2168",
+      "parameter": "MBUS.ruecklauftemp",
+      "name": {
+        "de": "Rücklauf",
+        "en": "Return flow"
+      },
+      "entity_id": "hqm_36_return_flow",
+      "index": {
+        "de": "WMZ 35",
+        "en": "HQM 35"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 35
+    },
+    {
+      "starting_address": 9661,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_1_energy",
+      "index": {
+        "de": "WMZ 0",
+        "en": "HQM 0"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 9663,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_2_energy",
+      "index": {
+        "de": "WMZ 1",
+        "en": "HQM 1"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9665,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_3_energy",
+      "index": {
+        "de": "WMZ 2",
+        "en": "HQM 2"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9667,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_4_energy",
+      "index": {
+        "de": "WMZ 3",
+        "en": "HQM 3"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9669,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_5_energy",
+      "index": {
+        "de": "WMZ 4",
+        "en": "HQM 4"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9671,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_6_energy",
+      "index": {
+        "de": "WMZ 5",
+        "en": "HQM 5"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9673,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_7_energy",
+      "index": {
+        "de": "WMZ 6",
+        "en": "HQM 6"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9675,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_8_energy",
+      "index": {
+        "de": "WMZ 7",
+        "en": "HQM 7"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9677,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_9_energy",
+      "index": {
+        "de": "WMZ 8",
+        "en": "HQM 8"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9679,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_10_energy",
+      "index": {
+        "de": "WMZ 9",
+        "en": "HQM 9"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9681,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_11_energy",
+      "index": {
+        "de": "WMZ 10",
+        "en": "HQM 10"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9683,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_12_energy",
+      "index": {
+        "de": "WMZ 11",
+        "en": "HQM 11"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9685,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_13_energy",
+      "index": {
+        "de": "WMZ 12",
+        "en": "HQM 12"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9687,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_14_energy",
+      "index": {
+        "de": "WMZ 13",
+        "en": "HQM 13"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9689,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_15_energy",
+      "index": {
+        "de": "WMZ 14",
+        "en": "HQM 14"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9691,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_16_energy",
+      "index": {
+        "de": "WMZ 15",
+        "en": "HQM 15"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 15
+    },
+    {
+      "starting_address": 9693,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_17_energy",
+      "index": {
+        "de": "WMZ 16",
+        "en": "HQM 16"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 16
+    },
+    {
+      "starting_address": 9695,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_18_energy",
+      "index": {
+        "de": "WMZ 17",
+        "en": "HQM 17"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 17
+    },
+    {
+      "starting_address": 9697,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_19_energy",
+      "index": {
+        "de": "WMZ 18",
+        "en": "HQM 18"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 18
+    },
+    {
+      "starting_address": 9699,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_20_energy",
+      "index": {
+        "de": "WMZ 19",
+        "en": "HQM 19"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 19
+    },
+    {
+      "starting_address": 9701,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_21_energy",
+      "index": {
+        "de": "WMZ 20",
+        "en": "HQM 20"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 20
+    },
+    {
+      "starting_address": 9703,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_22_energy",
+      "index": {
+        "de": "WMZ 21",
+        "en": "HQM 21"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 21
+    },
+    {
+      "starting_address": 9705,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_23_energy",
+      "index": {
+        "de": "WMZ 22",
+        "en": "HQM 22"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 22
+    },
+    {
+      "starting_address": 9707,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_24_energy",
+      "index": {
+        "de": "WMZ 23",
+        "en": "HQM 23"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 23
+    },
+    {
+      "starting_address": 9709,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_25_energy",
+      "index": {
+        "de": "WMZ 24",
+        "en": "HQM 24"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 24
+    },
+    {
+      "starting_address": 9711,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_26_energy",
+      "index": {
+        "de": "WMZ 25",
+        "en": "HQM 25"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 25
+    },
+    {
+      "starting_address": 9713,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_27_energy",
+      "index": {
+        "de": "WMZ 26",
+        "en": "HQM 26"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 26
+    },
+    {
+      "starting_address": 9715,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_28_energy",
+      "index": {
+        "de": "WMZ 27",
+        "en": "HQM 27"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 27
+    },
+    {
+      "starting_address": 9717,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_29_energy",
+      "index": {
+        "de": "WMZ 28",
+        "en": "HQM 28"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 28
+    },
+    {
+      "starting_address": 9719,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_30_energy",
+      "index": {
+        "de": "WMZ 29",
+        "en": "HQM 29"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 29
+    },
+    {
+      "starting_address": 9721,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_31_energy",
+      "index": {
+        "de": "WMZ 30",
+        "en": "HQM 30"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 30
+    },
+    {
+      "starting_address": 9723,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_32_energy",
+      "index": {
+        "de": "WMZ 31",
+        "en": "HQM 31"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 31
+    },
+    {
+      "starting_address": 9725,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_33_energy",
+      "index": {
+        "de": "WMZ 32",
+        "en": "HQM 32"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 32
+    },
+    {
+      "starting_address": 9727,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_34_energy",
+      "index": {
+        "de": "WMZ 33",
+        "en": "HQM 33"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 33
+    },
+    {
+      "starting_address": 9729,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_35_energy",
+      "index": {
+        "de": "WMZ 34",
+        "en": "HQM 34"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 34
+    },
+    {
+      "starting_address": 9731,
+      "data_type": "04",
+      "type": "u32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kWh",
+      "number_of_registers": 2,
+      "id": "2169",
+      "parameter": "MBUS.energie",
+      "name": {
+        "de": "Energie",
+        "en": "Energy"
+      },
+      "entity_id": "hqm_36_energy",
+      "index": {
+        "de": "WMZ 35",
+        "en": "HQM 35"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 35
+    },
+    {
+      "starting_address": 9733,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_1_volume_act",
+      "index": {
+        "de": "WMZ 0",
+        "en": "HQM 0"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 9735,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_2_volume_act",
+      "index": {
+        "de": "WMZ 1",
+        "en": "HQM 1"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9737,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_3_volume_act",
+      "index": {
+        "de": "WMZ 2",
+        "en": "HQM 2"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9739,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_4_volume_act",
+      "index": {
+        "de": "WMZ 3",
+        "en": "HQM 3"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9741,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_5_volume_act",
+      "index": {
+        "de": "WMZ 4",
+        "en": "HQM 4"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9743,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_6_volume_act",
+      "index": {
+        "de": "WMZ 5",
+        "en": "HQM 5"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9745,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_7_volume_act",
+      "index": {
+        "de": "WMZ 6",
+        "en": "HQM 6"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9747,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_8_volume_act",
+      "index": {
+        "de": "WMZ 7",
+        "en": "HQM 7"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9749,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_9_volume_act",
+      "index": {
+        "de": "WMZ 8",
+        "en": "HQM 8"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9751,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_10_volume_act",
+      "index": {
+        "de": "WMZ 9",
+        "en": "HQM 9"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9753,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_11_volume_act",
+      "index": {
+        "de": "WMZ 10",
+        "en": "HQM 10"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9755,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_12_volume_act",
+      "index": {
+        "de": "WMZ 11",
+        "en": "HQM 11"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9757,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_13_volume_act",
+      "index": {
+        "de": "WMZ 12",
+        "en": "HQM 12"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9759,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_14_volume_act",
+      "index": {
+        "de": "WMZ 13",
+        "en": "HQM 13"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9761,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_15_volume_act",
+      "index": {
+        "de": "WMZ 14",
+        "en": "HQM 14"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9763,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_16_volume_act",
+      "index": {
+        "de": "WMZ 15",
+        "en": "HQM 15"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 15
+    },
+    {
+      "starting_address": 9765,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_17_volume_act",
+      "index": {
+        "de": "WMZ 16",
+        "en": "HQM 16"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 16
+    },
+    {
+      "starting_address": 9767,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_18_volume_act",
+      "index": {
+        "de": "WMZ 17",
+        "en": "HQM 17"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 17
+    },
+    {
+      "starting_address": 9769,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_19_volume_act",
+      "index": {
+        "de": "WMZ 18",
+        "en": "HQM 18"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 18
+    },
+    {
+      "starting_address": 9771,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_20_volume_act",
+      "index": {
+        "de": "WMZ 19",
+        "en": "HQM 19"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 19
+    },
+    {
+      "starting_address": 9773,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_21_volume_act",
+      "index": {
+        "de": "WMZ 20",
+        "en": "HQM 20"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 20
+    },
+    {
+      "starting_address": 9775,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_22_volume_act",
+      "index": {
+        "de": "WMZ 21",
+        "en": "HQM 21"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 21
+    },
+    {
+      "starting_address": 9777,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_23_volume_act",
+      "index": {
+        "de": "WMZ 22",
+        "en": "HQM 22"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 22
+    },
+    {
+      "starting_address": 9779,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_24_volume_act",
+      "index": {
+        "de": "WMZ 23",
+        "en": "HQM 23"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 23
+    },
+    {
+      "starting_address": 9781,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_25_volume_act",
+      "index": {
+        "de": "WMZ 24",
+        "en": "HQM 24"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 24
+    },
+    {
+      "starting_address": 9783,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_26_volume_act",
+      "index": {
+        "de": "WMZ 25",
+        "en": "HQM 25"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 25
+    },
+    {
+      "starting_address": 9785,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_27_volume_act",
+      "index": {
+        "de": "WMZ 26",
+        "en": "HQM 26"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 26
+    },
+    {
+      "starting_address": 9787,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_28_volume_act",
+      "index": {
+        "de": "WMZ 27",
+        "en": "HQM 27"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 27
+    },
+    {
+      "starting_address": 9789,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_29_volume_act",
+      "index": {
+        "de": "WMZ 28",
+        "en": "HQM 28"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 28
+    },
+    {
+      "starting_address": 9791,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_30_volume_act",
+      "index": {
+        "de": "WMZ 29",
+        "en": "HQM 29"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 29
+    },
+    {
+      "starting_address": 9793,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_31_volume_act",
+      "index": {
+        "de": "WMZ 30",
+        "en": "HQM 30"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 30
+    },
+    {
+      "starting_address": 9795,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_32_volume_act",
+      "index": {
+        "de": "WMZ 31",
+        "en": "HQM 31"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 31
+    },
+    {
+      "starting_address": 9797,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_33_volume_act",
+      "index": {
+        "de": "WMZ 32",
+        "en": "HQM 32"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 32
+    },
+    {
+      "starting_address": 9799,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_34_volume_act",
+      "index": {
+        "de": "WMZ 33",
+        "en": "HQM 33"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 33
+    },
+    {
+      "starting_address": 9801,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_35_volume_act",
+      "index": {
+        "de": "WMZ 34",
+        "en": "HQM 34"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 34
+    },
+    {
+      "starting_address": 9803,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "l/h",
+      "number_of_registers": 2,
+      "id": "2299",
+      "parameter": "MBUS.vol_akt",
+      "name": {
+        "de": "Volumen akt.",
+        "en": "Volume act."
+      },
+      "entity_id": "hqm_36_volume_act",
+      "index": {
+        "de": "WMZ 35",
+        "en": "HQM 35"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 35
+    },
+    {
+      "starting_address": 9805,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_1_volume_total",
+      "index": {
+        "de": "WMZ 0",
+        "en": "HQM 0"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 9807,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_2_volume_total",
+      "index": {
+        "de": "WMZ 1",
+        "en": "HQM 1"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9809,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_3_volume_total",
+      "index": {
+        "de": "WMZ 2",
+        "en": "HQM 2"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9811,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_4_volume_total",
+      "index": {
+        "de": "WMZ 3",
+        "en": "HQM 3"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9813,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_5_volume_total",
+      "index": {
+        "de": "WMZ 4",
+        "en": "HQM 4"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9815,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_6_volume_total",
+      "index": {
+        "de": "WMZ 5",
+        "en": "HQM 5"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9817,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_7_volume_total",
+      "index": {
+        "de": "WMZ 6",
+        "en": "HQM 6"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9819,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_8_volume_total",
+      "index": {
+        "de": "WMZ 7",
+        "en": "HQM 7"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9821,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_9_volume_total",
+      "index": {
+        "de": "WMZ 8",
+        "en": "HQM 8"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9823,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_10_volume_total",
+      "index": {
+        "de": "WMZ 9",
+        "en": "HQM 9"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9825,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_11_volume_total",
+      "index": {
+        "de": "WMZ 10",
+        "en": "HQM 10"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9827,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_12_volume_total",
+      "index": {
+        "de": "WMZ 11",
+        "en": "HQM 11"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9829,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_13_volume_total",
+      "index": {
+        "de": "WMZ 12",
+        "en": "HQM 12"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9831,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_14_volume_total",
+      "index": {
+        "de": "WMZ 13",
+        "en": "HQM 13"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9833,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_15_volume_total",
+      "index": {
+        "de": "WMZ 14",
+        "en": "HQM 14"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9835,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_16_volume_total",
+      "index": {
+        "de": "WMZ 15",
+        "en": "HQM 15"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 15
+    },
+    {
+      "starting_address": 9837,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_17_volume_total",
+      "index": {
+        "de": "WMZ 16",
+        "en": "HQM 16"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 16
+    },
+    {
+      "starting_address": 9839,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_18_volume_total",
+      "index": {
+        "de": "WMZ 17",
+        "en": "HQM 17"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 17
+    },
+    {
+      "starting_address": 9841,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_19_volume_total",
+      "index": {
+        "de": "WMZ 18",
+        "en": "HQM 18"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 18
+    },
+    {
+      "starting_address": 9843,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_20_volume_total",
+      "index": {
+        "de": "WMZ 19",
+        "en": "HQM 19"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 19
+    },
+    {
+      "starting_address": 9845,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_21_volume_total",
+      "index": {
+        "de": "WMZ 20",
+        "en": "HQM 20"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 20
+    },
+    {
+      "starting_address": 9847,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_22_volume_total",
+      "index": {
+        "de": "WMZ 21",
+        "en": "HQM 21"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 21
+    },
+    {
+      "starting_address": 9849,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_23_volume_total",
+      "index": {
+        "de": "WMZ 22",
+        "en": "HQM 22"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 22
+    },
+    {
+      "starting_address": 9851,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_24_volume_total",
+      "index": {
+        "de": "WMZ 23",
+        "en": "HQM 23"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 23
+    },
+    {
+      "starting_address": 9853,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_25_volume_total",
+      "index": {
+        "de": "WMZ 24",
+        "en": "HQM 24"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 24
+    },
+    {
+      "starting_address": 9855,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_26_volume_total",
+      "index": {
+        "de": "WMZ 25",
+        "en": "HQM 25"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 25
+    },
+    {
+      "starting_address": 9857,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_27_volume_total",
+      "index": {
+        "de": "WMZ 26",
+        "en": "HQM 26"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 26
+    },
+    {
+      "starting_address": 9859,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_28_volume_total",
+      "index": {
+        "de": "WMZ 27",
+        "en": "HQM 27"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 27
+    },
+    {
+      "starting_address": 9861,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_29_volume_total",
+      "index": {
+        "de": "WMZ 28",
+        "en": "HQM 28"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 28
+    },
+    {
+      "starting_address": 9863,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_30_volume_total",
+      "index": {
+        "de": "WMZ 29",
+        "en": "HQM 29"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 29
+    },
+    {
+      "starting_address": 9865,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_31_volume_total",
+      "index": {
+        "de": "WMZ 30",
+        "en": "HQM 30"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 30
+    },
+    {
+      "starting_address": 9867,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_32_volume_total",
+      "index": {
+        "de": "WMZ 31",
+        "en": "HQM 31"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 31
+    },
+    {
+      "starting_address": 9869,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_33_volume_total",
+      "index": {
+        "de": "WMZ 32",
+        "en": "HQM 32"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 32
+    },
+    {
+      "starting_address": 9871,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_34_volume_total",
+      "index": {
+        "de": "WMZ 33",
+        "en": "HQM 33"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 33
+    },
+    {
+      "starting_address": 9873,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_35_volume_total",
+      "index": {
+        "de": "WMZ 34",
+        "en": "HQM 34"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 34
+    },
+    {
+      "starting_address": 9875,
+      "data_type": "04",
+      "type": "s32",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/1000m³",
+      "number_of_registers": 2,
+      "id": "2300",
+      "parameter": "MBUS.vol_ges",
+      "name": {
+        "de": "Volumen ges.",
+        "en": "Volume total"
+      },
+      "entity_id": "hqm_36_volume_total",
+      "index": {
+        "de": "WMZ 35",
+        "en": "HQM 35"
+      },
+      "equipment_group": "HQM",
+      "equipment_instance": 35
+    }
+  ]
+}

@@ -175,6 +175,41 @@ def _change_classification(changes: dict[str, dict[str, Any]]) -> str:
     return "technical_metadata_changed"
 
 
+def _localized_texts(value: Any) -> set[str]:
+    """Return normalized non-empty display strings used as matching evidence."""
+    values = value.values() if isinstance(value, dict) else (value,)
+    return {
+        item.strip().casefold()
+        for item in values
+        if isinstance(item, str) and item.strip()
+    }
+
+
+def _confident_parameter_rename(
+    canonical: dict[str, Any], generated: dict[str, Any]
+) -> bool:
+    """Recognize a unique vendor rename without relying on address alone."""
+    canonical_id = canonical.get("id")
+    generated_id = generated.get("id")
+    if not canonical_id or str(canonical_id) != str(generated_id):
+        return False
+    if canonical.get("entity_id") != generated.get("entity_id"):
+        return False
+    if any(
+        canonical.get(field) != generated.get(field)
+        for field in (
+            "equipment_group",
+            "equipment_instance",
+            "equipment_subindex",
+        )
+    ):
+        return False
+    return bool(
+        _localized_texts(canonical.get("name"))
+        & _localized_texts(generated.get("name"))
+    )
+
+
 def _merge_register_file(
     relative_path: Path,
     generated: dict[str, Any],
@@ -205,6 +240,24 @@ def _merge_register_file(
         entity_id = register.get("entity_id")
         if isinstance(entity_id, str) and entity_id:
             canonical_by_entity_id.setdefault(entity_id, []).append(register)
+
+    canonical_contexts_by_parameter: dict[str, set[str]] = {}
+    generated_contexts_by_parameter: dict[str, set[str]] = {}
+    for register in canonical_registers:
+        key = logical_register_key(relative_path, register)
+        if key is not None and key[2]:
+            canonical_contexts_by_parameter.setdefault(key[1], set()).add(key[2])
+    for register in generated_registers:
+        key = logical_register_key(relative_path, register)
+        if key is not None and key[2]:
+            generated_contexts_by_parameter.setdefault(key[1], set()).add(key[2])
+    expanded_equipment_parameters = {
+        parameter
+        for parameter, canonical_contexts in canonical_contexts_by_parameter.items()
+        if canonical_contexts
+        and canonical_contexts
+        < generated_contexts_by_parameter.get(parameter, set())
+    }
 
     matched_canonical: set[int] = set()
     entries: list[dict[str, Any]] = []
@@ -279,6 +332,45 @@ def _merge_register_file(
             else []
         )
         if parameter_matches:
+            parameter_key = parameter.strip()
+            canonical_contexts = canonical_contexts_by_parameter.get(
+                parameter_key, set()
+            )
+            if (
+                key is not None
+                and key[2]
+                and parameter_key in expanded_equipment_parameters
+                and key[2] not in canonical_contexts
+                and not canonical_by_address.get(
+                    generated_register.get("starting_address")
+                )
+            ):
+                report["summary"]["new_registers_added"] += 1
+                report["summary"]["new_equipment_instances_added"] += 1
+                report["items"].append(
+                    {
+                        "kind": "new_equipment_instance",
+                        "blocking": False,
+                        "target_version": report["target_version"],
+                        "base_version": report["base_version"],
+                        "file": relative_path.as_posix(),
+                        "parameter": parameter,
+                        "equipment_group": generated_register.get(
+                            "equipment_group"
+                        ),
+                        "equipment_instance": generated_register.get(
+                            "equipment_instance"
+                        ),
+                        "equipment_subindex": generated_register.get(
+                            "equipment_subindex"
+                        ),
+                        "matching_evidence": (
+                            "All canonical equipment contexts remain present and "
+                            "the generated context is a unique additional instance."
+                        ),
+                    }
+                )
+                continue
             matched_canonical.update(id(match) for match in parameter_matches)
             report["items"].append(
                 {
@@ -298,6 +390,41 @@ def _merge_register_file(
         address_matches = canonical_by_address.get(
             generated_register.get("starting_address"), []
         )
+        if (
+            len(address_matches) == 1
+            and _confident_parameter_rename(address_matches[0], generated_register)
+        ):
+            existing = address_matches[0]
+            matched_canonical.add(id(existing))
+            changes = _meaningful_technical_changes(existing, generated_register)
+            entry["canonical"] = existing
+            entry["technical_changes"] = changes
+            for field in COMPATIBILITY_FIELDS:
+                if existing.get(field):
+                    merged_register[field] = deepcopy(existing[field])
+            report["summary"]["parameter_identity_changes_reported"] += 1
+            report["items"].append(
+                {
+                    "kind": "parameter_identity_changed",
+                    "blocking": False,
+                    "target_version": report["target_version"],
+                    "base_version": report["base_version"],
+                    "file": relative_path.as_posix(),
+                    "old_parameter": existing.get("parameter"),
+                    "new_parameter": generated_register.get("parameter"),
+                    "entity_id": existing.get("entity_id"),
+                    "starting_address": generated_register.get("starting_address"),
+                    "vendor_register_id": generated_register.get("id"),
+                    "matching_evidence": [
+                        "unique_same_file_address",
+                        "same_vendor_register_id",
+                        "same_generated_and_published_entity_id",
+                        "same_equipment_context",
+                        "shared_localized_name",
+                    ],
+                }
+            )
+            continue
         if address_matches:
             matched_canonical.update(id(match) for match in address_matches)
             report["items"].append(
@@ -593,7 +720,9 @@ def build_finalized_version(
             "published_entity_ids_preserved": 0,
             "compatibility_actions_reported": 0,
             "technical_register_changes_reported": 0,
+            "parameter_identity_changes_reported": 0,
             "new_registers_added": 0,
+            "new_equipment_instances_added": 0,
             "new_value_tables_added": 0,
             "new_alarm_codes_added": 0,
             "files_added": 0,

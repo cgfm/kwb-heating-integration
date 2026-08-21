@@ -1,0 +1,6472 @@
+{
+  "registers": [
+    {
+      "starting_address": 8981,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_1_boiler_pump",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8982,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_2_boiler_pump",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8983,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_3_boiler_pump",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8984,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_4_boiler_pump",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8985,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_5_boiler_pump",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8986,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_6_boiler_pump",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8987,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_7_boiler_pump",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8988,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_8_boiler_pump",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8989,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_9_boiler_pump",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8990,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_10_boiler_pump",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8991,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_11_boiler_pump",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8992,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_12_boiler_pump",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8993,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_13_boiler_pump",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8994,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "524",
+      "parameter": "ZK.o_pumpe",
+      "name": {
+        "de": "Kesselpumpe",
+        "en": "Boiler pump"
+      },
+      "entity_id": "shs_14_boiler_pump",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8998,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_1_temperature_value",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8999,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_1_temperature_status",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9000,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_2_temperature_value",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9001,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_2_temperature_status",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9002,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_3_temperature_value",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9003,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_3_temperature_status",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9004,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_4_temperature_value",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9005,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_4_temperature_status",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9006,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_5_temperature_value",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9007,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_5_temperature_status",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9008,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_6_temperature_value",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9009,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_6_temperature_status",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9010,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_7_temperature_value",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9011,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_7_temperature_status",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9012,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_8_temperature_value",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9013,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_8_temperature_status",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9014,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_9_temperature_value",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9015,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_9_temperature_status",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9016,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_10_temperature_value",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9017,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_10_temperature_status",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9018,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_11_temperature_value",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9019,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_11_temperature_status",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9020,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_12_temperature_value",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9021,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_12_temperature_status",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9022,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_13_temperature_value",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9023,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_13_temperature_status",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9024,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "shs_14_temperature_value",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9025,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "521",
+      "parameter": "ZK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "shs_14_temperature_status",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9029,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_1_request",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9030,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_2_request",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9031,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_3_request",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9032,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_4_request",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9033,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_5_request",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9034,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_6_request",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9035,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_7_request",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9036,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_8_request",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9037,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_9_request",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 9038,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_10_request",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 9039,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_11_request",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 9040,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_12_request",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 9041,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_13_request",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 9042,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "523",
+      "parameter": "ZK.o_anforderung",
+      "name": {
+        "de": "Anforderung",
+        "en": "Request"
+      },
+      "entity_id": "shs_14_request",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 9991,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_1_status",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 9992,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_2_status",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 9993,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_3_status",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 9994,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_4_status",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 9995,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_5_status",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 9996,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_6_status",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 9997,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_7_status",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 9998,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_8_status",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 9999,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_9_status",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10000,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_10_status",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10001,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_11_status",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10002,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_12_status",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10003,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_13_status",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10004,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zk_status_t",
+      "id": "525",
+      "parameter": "ZK.status",
+      "name": {
+        "de": "Status",
+        "en": "Status"
+      },
+      "entity_id": "shs_14_status",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10007,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_1_fault",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10008,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_2_fault",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10009,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_3_fault",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10010,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_4_fault",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10011,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_5_fault",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10012,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_6_fault",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10013,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_7_fault",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10014,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_8_fault",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10015,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_9_fault",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10016,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_10_fault",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10017,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_11_fault",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10018,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_12_fault",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10019,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_13_fault",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10020,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_yes_no_t",
+      "id": "2508",
+      "parameter": "ZK.i_stoerung",
+      "name": {
+        "de": "Störung",
+        "en": "Fault"
+      },
+      "entity_id": "shs_14_fault",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10028,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_1_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10029,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_1_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 10030,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_2_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10031,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_2_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 10032,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_3_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10033,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_3_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 10034,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_4_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10035,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_4_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 10036,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_5_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10037,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_5_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 10038,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_6_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10039,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_6_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 10040,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_7_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10041,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_7_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 10042,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_8_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10043,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_8_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 10044,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_9_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10045,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_9_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 10046,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_10_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10047,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_10_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 10048,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_11_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10049,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_11_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 10050,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_12_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10051,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_12_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 10052,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_13_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10053,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_13_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 10054,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.value",
+      "name": {
+        "de": "Puffertemperatur (value)",
+        "en": "Buffer temperature (value)"
+      },
+      "entity_id": "shs_14_buffer_temperature_value",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 10055,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "2985",
+      "parameter": "ZK.i_puffertemp_bei_sensor_auswahl.status",
+      "name": {
+        "de": "Puffertemperatur (status)",
+        "en": "Buffer temperature (status)"
+      },
+      "entity_id": "shs_14_buffer_temperature_status",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 12601,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_1_boiler_status",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 12602,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_2_boiler_status",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 12603,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_3_boiler_status",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 12604,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_4_boiler_status",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 12605,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_5_boiler_status",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 12606,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_6_boiler_status",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 12607,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_7_boiler_status",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 12608,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_8_boiler_status",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 12609,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_9_boiler_status",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 12610,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_10_boiler_status",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 12611,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_11_boiler_status",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 12612,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_12_boiler_status",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 12613,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_13_boiler_status",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 12614,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "kfk_kesselstatus_t",
+      "id": "3486",
+      "parameter": "ZK.modbus_bivalenz_kesselstatus",
+      "name": {
+        "de": "Kesselstatus",
+        "en": "Boiler status"
+      },
+      "entity_id": "shs_14_boiler_status",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 12617,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_1_burner_output",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 12618,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_2_burner_output",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 12619,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_3_burner_output",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 12620,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_4_burner_output",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 12621,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_5_burner_output",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 12622,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_6_burner_output",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 12623,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_7_burner_output",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 12624,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_8_burner_output",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 12625,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_9_burner_output",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 12626,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_10_burner_output",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 12627,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_11_burner_output",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 12628,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_12_burner_output",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 12629,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_13_burner_output",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 12630,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3487",
+      "parameter": "ZK.modbus_bivalenz_brennerleistung",
+      "name": {
+        "de": "Brennerleistung",
+        "en": "Burner output"
+      },
+      "entity_id": "shs_14_burner_output",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 12633,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_1_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 12634,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_2_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 12635,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_3_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 12636,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_4_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 12637,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_5_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 12638,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_6_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 12639,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_7_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 12640,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_8_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 12641,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_9_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 12642,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_10_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 12643,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_11_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 12644,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_12_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 12645,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_13_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 12646,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3488",
+      "parameter": "ZK.modbus_bivalenz_leistung_vorgabe",
+      "name": {
+        "de": "Kesselleistung Soll",
+        "en": "Boiler output Desired"
+      },
+      "entity_id": "shs_14_boiler_output_desired",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 12649,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_1_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 12650,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_2_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 12651,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_3_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 12652,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_4_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 12653,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_5_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 12654,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_6_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 12655,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_7_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 12656,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_8_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 12657,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_9_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 12658,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_10_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 12659,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_11_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 12660,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_12_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 12661,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_13_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 12662,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3490",
+      "parameter": "ZK.modbus_bival_kesseltemp_vorgabe",
+      "name": {
+        "de": "Kesseltemperatur Soll",
+        "en": "Boiler temperature, setpoint"
+      },
+      "entity_id": "shs_14_boiler_temperature_setpoint",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 12666,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_1_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 12667,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_1_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 12668,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_2_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 12669,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_2_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 12670,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_3_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 12671,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_3_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 12672,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_4_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 12673,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_4_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 12674,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_5_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 12675,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_5_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 12676,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_6_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 12677,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_6_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 12678,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_7_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 12679,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_7_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 12680,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_8_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 12681,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_8_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 12682,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_9_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 12683,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_9_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 12684,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_10_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 12685,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_10_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 12686,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_11_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 12687,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_11_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 12688,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_12_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 12689,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_12_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 12690,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_13_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 12691,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_13_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 12692,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.value",
+      "name": {
+        "de": "Rücklauftemperatur Ist (value)",
+        "en": "Return flow temp., actual (value)"
+      },
+      "entity_id": "shs_14_return_flow_temp_actual_value",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 12693,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "3491",
+      "parameter": "ZK.modbus_bival_i_ruecklauftemp_ist.status",
+      "name": {
+        "de": "Rücklauftemperatur Ist (status)",
+        "en": "Return flow temp., actual (status)"
+      },
+      "entity_id": "shs_14_return_flow_temp_actual_status",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 12697,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_1_oxygen_actual",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 12698,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_2_oxygen_actual",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 12699,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_3_oxygen_actual",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 12700,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_4_oxygen_actual",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 12701,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_5_oxygen_actual",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 12702,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_6_oxygen_actual",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 12703,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_7_oxygen_actual",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 12704,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_8_oxygen_actual",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 12705,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_9_oxygen_actual",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 12706,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_10_oxygen_actual",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 12707,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_11_oxygen_actual",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 12708,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_12_oxygen_actual",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 12709,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_13_oxygen_actual",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 12710,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10%",
+      "id": "3492",
+      "parameter": "ZK.modbus_bivalenz_o2_ist",
+      "name": {
+        "de": "Sauerstoff Ist",
+        "en": "Oxygen, actual"
+      },
+      "entity_id": "shs_14_oxygen_actual",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 25024,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_1_modbus_request",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 25025,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_2_modbus_request",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 25026,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_3_modbus_request",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 25027,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_4_modbus_request",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 25028,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_5_modbus_request",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 25029,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_6_modbus_request",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 25030,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_7_modbus_request",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 25031,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_8_modbus_request",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 25032,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_9_modbus_request",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 25033,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_10_modbus_request",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 25034,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_11_modbus_request",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 25035,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_12_modbus_request",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 25036,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_13_modbus_request",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 25037,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "2595",
+      "parameter": "ZK.modbus_anforderung",
+      "name": {
+        "de": "Ext. Modbus Anforderung",
+        "en": "Ext. Modbus Request"
+      },
+      "entity_id": "shs_14_modbus_request",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 25042,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_1_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 25043,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_2_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 25044,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_3_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 25045,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_4_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 25046,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_5_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 25047,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_6_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 25048,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_7_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 25049,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_8_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 25050,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_9_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 25051,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_10_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 25052,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_11_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 25053,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_12_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 25054,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_13_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 25055,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2519",
+      "parameter": "ZK.puffertemperatur_max",
+      "name": {
+        "de": "Puffertemperatur Max.",
+        "en": "Buffer temperature max."
+      },
+      "entity_id": "shs_14_buffer_temperature_max",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 26401,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_1_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 26402,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_2_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 26403,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_3_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 26404,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_4_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 26405,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_5_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 26406,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_6_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 26407,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_7_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 26408,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_8_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 26409,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_9_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 26410,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_10_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 26411,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_11_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 26412,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_12_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 26413,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_13_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 26414,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10%",
+      "min": 0,
+      "max": 1000,
+      "id": "3499",
+      "parameter": "ZK.modbus_ext_leistung_vorgabe",
+      "entity_id": "zwq_14_zk_modbus_ext_leistung_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesselleistung Soll"
+      },
+      "index": {
+        "de": "ZWQ 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 26417,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_1_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 26418,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_2_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 26419,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_3_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 26420,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_4_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 26421,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_5_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 26422,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_6_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 26423,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_7_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 26424,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_8_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 26425,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_9_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 26426,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_10_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 26427,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_11_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 26428,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_12_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 26429,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_13_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 26430,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "readwrite",
+      "unit_value_table": "1/10°C",
+      "min": 0,
+      "max": 1000,
+      "id": "3500",
+      "parameter": "ZK.modbus_ext_kesseltemp_vorgabe",
+      "entity_id": "zwq_14_zk_modbus_ext_kesseltemp_vorgabe",
+      "name": {
+        "de": "Ext. Modbus Kesseltemp. Soll"
+      },
+      "index": {
+        "de": "ZWQ 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 26433,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_1_op_mode",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 26434,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_2_op_mode",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 26435,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_3_op_mode",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 26436,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_4_op_mode",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 26437,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_5_op_mode",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 26438,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_6_op_mode",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 26439,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_7_op_mode",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 26440,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_8_op_mode",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 26441,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_9_op_mode",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 26442,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_10_op_mode",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 26443,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_11_op_mode",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 26444,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_12_op_mode",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 26445,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_13_op_mode",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 26446,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "zwq_betriebsmodus_t",
+      "id": "2512",
+      "parameter": "ZK.zwq_betriebsmodus",
+      "name": {
+        "de": "Betriebsmodus",
+        "en": "Op. mode"
+      },
+      "entity_id": "shs_14_op_mode",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 26449,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_1_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 26450,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_2_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 26451,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_3_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 26452,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_4_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 26453,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_5_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 26454,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_6_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 26455,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_7_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 26456,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_8_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 26457,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_9_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 26458,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_10_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 26459,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_11_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 26460,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_12_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 26461,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_13_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 26462,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2513",
+      "parameter": "ZK.zwq_bivalenzpunkt_1",
+      "name": {
+        "de": "Bivalenzpunkt 1",
+        "en": "Bivalence point 1"
+      },
+      "entity_id": "shs_14_bivalence_point_1",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 26465,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_1_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 1",
+        "en": "SHS 1"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 26466,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_2_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 2",
+        "en": "SHS 2"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 26467,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_3_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 3",
+        "en": "SHS 3"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 26468,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_4_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 4",
+        "en": "SHS 4"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 26469,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_5_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 5",
+        "en": "SHS 5"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 26470,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_6_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 6",
+        "en": "SHS 6"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 26471,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_7_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 7",
+        "en": "SHS 7"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 26472,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_8_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 8",
+        "en": "SHS 8"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 26473,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_9_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 9",
+        "en": "SHS 9"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 26474,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_10_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 10",
+        "en": "SHS 10"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 26475,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_11_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 11",
+        "en": "SHS 11"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 26476,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_12_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 12",
+        "en": "SHS 12"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 26477,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_13_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 13",
+        "en": "SHS 13"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 26478,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "2514",
+      "parameter": "ZK.zwq_bivalenzpunkt_2",
+      "name": {
+        "de": "Bivalenzpunkt 2",
+        "en": "Bivalence point 2"
+      },
+      "entity_id": "shs_14_bivalence_point_2",
+      "index": {
+        "de": "ZWQ 14",
+        "en": "SHS 14"
+      },
+      "equipment_group": "SHS",
+      "equipment_instance": 14
+    }
+  ]
+}

@@ -8,6 +8,7 @@ import enum
 import importlib.util
 import json
 from pathlib import Path
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -175,6 +176,181 @@ class RegisterConfigurationTests(unittest.TestCase):
                         )
 
         self.assertEqual([], errors, "\n".join(errors))
+
+
+class FirmwareV2661Tests(unittest.TestCase):
+    """Verify the PR #21 data migration and v25.7.1 compatibility import."""
+
+    VERSION = "v26.6.1"
+    EXPECTED_DEVICES = {
+        "kwb_cf1.json",
+        "kwb_cf1_5.json",
+        "kwb_cf2.json",
+        "kwb_combifire.json",
+        "kwb_easyair_plus.json",
+        "kwb_easyfire.json",
+        "kwb_ef3.json",
+        "kwb_multifire.json",
+        "kwb_pelletfire_plus.json",
+    }
+    EXPECTED_EQUIPMENT = {
+        "boiler_sequence.json",
+        "buffer_storage.json",
+        "circulation.json",
+        "dhw_storage.json",
+        "heat_meters.json",
+        "heating_circuits.json",
+        "secondary_heat_sources.json",
+        "solar.json",
+        "transfer_station.json",
+    }
+
+    def test_mapping_and_all_pr_files_are_present(self) -> None:
+        mapping = json.loads(
+            (INTEGRATION_ROOT / "config/version_mapping.json").read_text(
+                encoding="utf-8"
+            )
+        )["supported_versions"]["26.6.1"]
+        self.assertEqual("versions/v26.6.1", mapping["config_path"])
+        self.assertEqual(
+            {"software_version": 8192, "device_info_start": 8000},
+            mapping["register_layouts"],
+        )
+
+        for root in (
+            CONFIG_ROOT / self.VERSION,
+            PROJECT_ROOT / "modbusinfoConverter/config/versions" / self.VERSION,
+        ):
+            self.assertEqual(
+                self.EXPECTED_DEVICES,
+                {path.name for path in (root / "devices").glob("*.json")},
+            )
+            self.assertEqual(
+                self.EXPECTED_EQUIPMENT,
+                {path.name for path in (root / "equipment").glob("*.json")},
+            )
+            self.assertFalse((root / "de").exists())
+            self.assertFalse((root / "en").exists())
+
+    def test_pr_language_union_survives_the_unified_snapshot(self) -> None:
+        audit = json.loads(
+            (
+                PROJECT_ROOT
+                / "modbusinfoConverter/v26_6_1_migration_audit.json"
+            ).read_text(encoding="utf-8")
+        )
+        merge = audit["language_merge"]
+        self.assertEqual(
+            "360b9a6a07d1005c3f19e5a83159a26fcb659372",
+            audit["source"]["commit"],
+        )
+        self.assertEqual(3512, merge["source_union_registers"])
+        self.assertEqual(3512, merge["unified_generated_registers"])
+        self.assertEqual(550, merge["de_only_registers"])
+        self.assertEqual(0, merge["en_only_registers"])
+        self.assertEqual(0, merge["missing_from_unified"])
+        self.assertEqual(0, merge["blocking_items"])
+        entity_ids = audit["entity_id_processing"]
+        self.assertEqual(2962, entity_ids["english_source_register_ids_regenerated"])
+        self.assertEqual(
+            276, entity_ids["new_de_only_ids_retained_from_authoritative_pr_data"]
+        )
+        self.assertEqual(
+            0, entity_ids["existing_published_ids_replaced_by_pr_parameter_ids"]
+        )
+
+        for root in (
+            CONFIG_ROOT / self.VERSION,
+            PROJECT_ROOT / "modbusinfoConverter/config/versions" / self.VERSION,
+        ):
+            self.assertEqual(
+                3512,
+                sum(len(_load_registers(path)) for path in root.rglob("*.json")),
+            )
+
+    def test_generated_and_canonical_trees_validate_with_v2661(self) -> None:
+        from modbusinfoConverter.config_validation import validate_config_tree
+
+        generated_root = PROJECT_ROOT / "modbusinfoConverter/config/versions"
+        self.assertEqual([], validate_config_tree(generated_root))
+        self.assertEqual([], validate_config_tree(CONFIG_ROOT))
+
+    def test_explicit_v25_baseline_reproduces_canonical_v26(self) -> None:
+        from modbusinfoConverter.import_generated_config import (
+            build_finalized_version,
+        )
+
+        generated_root = PROJECT_ROOT / "modbusinfoConverter/config/versions"
+        with tempfile.TemporaryDirectory() as temp_dir:
+            canonical_root = Path(temp_dir) / "canonical"
+            shutil.copytree(
+                CONFIG_ROOT / "v25.7.1", canonical_root / "v25.7.1"
+            )
+            proposed, report = build_finalized_version(
+                generated_root,
+                canonical_root,
+                "26.6.1",
+                base_version="25.7.1",
+            )
+
+        self.assertFalse(report["blocking_review_required"])
+        self.assertEqual("v25.7.1", report["base_version"])
+        self.assertEqual(2796, report["summary"]["published_entity_ids_preserved"])
+        self.assertEqual(716, report["summary"]["new_registers_added"])
+        self.assertEqual(69, report["summary"]["parameter_identity_changes_reported"])
+        self.assertEqual(16, report["summary"]["technical_register_changes_reported"])
+
+        proposed_ids = {
+            register.get("entity_id")
+            for data in proposed.values()
+            for register in data.get("registers", data.get("universal_registers", []))
+        }
+        self.assertTrue(
+            {
+                "boiler_pump_percent",
+                "boiler_temperature_setpoint_setting",
+                "full_load_hours_pm",
+            }.issubset(proposed_ids)
+        )
+        for relative_path, data in proposed.items():
+            canonical = json.loads(
+                (CONFIG_ROOT / self.VERSION / relative_path).read_text(encoding="utf-8")
+            )
+            self.assertEqual(canonical, data, relative_path.as_posix())
+
+    def test_solar_program_is_new_and_uses_generic_select_metadata(self) -> None:
+        converter_module = _load_module(
+            "kwb_v2661_data_converter_test",
+            INTEGRATION_ROOT / "data_conversion.py",
+        )
+        version_root = CONFIG_ROOT / self.VERSION
+        solar = [
+            register
+            for register in _load_registers(version_root / "equipment/solar.json")
+            if register.get("parameter") == "SOL.programm"
+        ]
+        old_solar = [
+            register
+            for register in _load_registers(
+                CONFIG_ROOT / "v25.7.1/equipment/solar.json"
+            )
+            if register.get("parameter") == "SOL.programm"
+        ]
+        tables = json.loads(
+            (version_root / "value_tables.json").read_text(encoding="utf-8")
+        )["value_tables"]
+        converter = converter_module.KWBDataConverter(tables)
+
+        self.assertEqual([], old_solar)
+        self.assertEqual(14, len(solar))
+        self.assertEqual(list(range(26610, 26624)), [r["starting_address"] for r in solar])
+        self.assertEqual({"de": "Programm wählen", "en": "Select program"}, solar[0]["name"])
+        self.assertEqual("sol_1_select_program", solar[0]["entity_id"])
+        self.assertEqual("solar_programm_t", solar[0]["unit_value_table"])
+        self.assertEqual("readwrite", solar[0]["user_level"])
+        self.assertTrue(converter.has_value_table(solar[0]))
+        self.assertFalse(converter.is_boolean_value_table(solar[0]))
+        sys.modules.pop("kwb_v2661_data_converter_test", None)
 
 
 class ConverterWorkflowTests(unittest.TestCase):
@@ -733,6 +909,83 @@ class FinalizerCompatibilityTests(unittest.TestCase):
                 for item in report["items"]
             )
         )
+
+    def test_complete_equipment_instance_expansion_is_new_not_ambiguous(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        def equipment_register(instance: int, entity_id: str) -> dict:
+            return self._register(
+                100 + instance,
+                entity_id,
+                index={"de": f"EAP {instance}"},
+                equipment_group="EAP",
+                equipment_instance=instance,
+            )
+
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(
+                canonical_root,
+                "v1.0.0",
+                [
+                    equipment_register(0, "published_zero"),
+                    equipment_register(1, "published_one"),
+                ],
+            )
+            self._write_version(
+                generated_root,
+                "v2.0.0",
+                [
+                    equipment_register(0, "generated_zero"),
+                    equipment_register(1, "generated_one"),
+                    equipment_register(2, "generated_two"),
+                ],
+            )
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+
+        registers = proposed[Path("devices/kwb_test.json")]["registers"]
+        self.assertEqual(
+            ["published_zero", "published_one", "generated_two"],
+            [register["entity_id"] for register in registers],
+        )
+        self.assertEqual(1, report["summary"]["new_equipment_instances_added"])
+        self.assertFalse(report["blocking_review_required"])
+        self.assertTrue(
+            any(item["kind"] == "new_equipment_instance" for item in report["items"])
+        )
+
+    def test_unique_vendor_parameter_rename_preserves_published_id(self) -> None:
+        from modbusinfoConverter.import_generated_config import build_finalized_version
+
+        old = self._register(100, "published_id", parameter="KSM.old", id="123")
+        generated = self._register(
+            100, "published_id", parameter="KSM.new", id="123", max=150
+        )
+        with tempfile.TemporaryDirectory() as temp_dir:
+            root = Path(temp_dir)
+            generated_root = root / "generated"
+            canonical_root = root / "canonical"
+            self._write_version(canonical_root, "v1.0.0", [old])
+            self._write_version(generated_root, "v2.0.0", [generated])
+
+            proposed, report = build_finalized_version(
+                generated_root, canonical_root, "2.0.0"
+            )
+
+        result = proposed[Path("devices/kwb_test.json")]["registers"][0]
+        self.assertEqual(generated, result)
+        self.assertEqual(1, report["summary"]["parameter_identity_changes_reported"])
+        rename = next(
+            item for item in report["items"] if item["kind"] == "parameter_identity_changed"
+        )
+        self.assertEqual("KSM.old", rename["old_parameter"])
+        self.assertEqual("KSM.new", rename["new_parameter"])
+        self.assertFalse(report["blocking_review_required"])
 
     def test_existing_target_uses_generated_metadata_and_same_version_id(self) -> None:
         from modbusinfoConverter.import_generated_config import build_finalized_version

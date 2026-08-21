@@ -1,0 +1,1264 @@
+{
+  "registers": [
+    {
+      "starting_address": 8929,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_1_temperature_value",
+      "index": {
+        "de": "Zirk 0",
+        "en": "Circ 0"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 8930,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_1_temperature_status",
+      "index": {
+        "de": "Zirk 0",
+        "en": "Circ 0"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 8931,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_2_temperature_value",
+      "index": {
+        "de": "Zirk 1",
+        "en": "Circ 1"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8932,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_2_temperature_status",
+      "index": {
+        "de": "Zirk 1",
+        "en": "Circ 1"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8933,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_3_temperature_value",
+      "index": {
+        "de": "Zirk 2",
+        "en": "Circ 2"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8934,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_3_temperature_status",
+      "index": {
+        "de": "Zirk 2",
+        "en": "Circ 2"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8935,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_4_temperature_value",
+      "index": {
+        "de": "Zirk 3",
+        "en": "Circ 3"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8936,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_4_temperature_status",
+      "index": {
+        "de": "Zirk 3",
+        "en": "Circ 3"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8937,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_5_temperature_value",
+      "index": {
+        "de": "Zirk 4",
+        "en": "Circ 4"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8938,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_5_temperature_status",
+      "index": {
+        "de": "Zirk 4",
+        "en": "Circ 4"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8939,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_6_temperature_value",
+      "index": {
+        "de": "Zirk 5",
+        "en": "Circ 5"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8940,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_6_temperature_status",
+      "index": {
+        "de": "Zirk 5",
+        "en": "Circ 5"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8941,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_7_temperature_value",
+      "index": {
+        "de": "Zirk 6",
+        "en": "Circ 6"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8942,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_7_temperature_status",
+      "index": {
+        "de": "Zirk 6",
+        "en": "Circ 6"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8943,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_8_temperature_value",
+      "index": {
+        "de": "Zirk 7",
+        "en": "Circ 7"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8944,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_8_temperature_status",
+      "index": {
+        "de": "Zirk 7",
+        "en": "Circ 7"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8945,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_9_temperature_value",
+      "index": {
+        "de": "Zirk 8",
+        "en": "Circ 8"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8946,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_9_temperature_status",
+      "index": {
+        "de": "Zirk 8",
+        "en": "Circ 8"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8947,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_10_temperature_value",
+      "index": {
+        "de": "Zirk 9",
+        "en": "Circ 9"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8948,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_10_temperature_status",
+      "index": {
+        "de": "Zirk 9",
+        "en": "Circ 9"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8949,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_11_temperature_value",
+      "index": {
+        "de": "Zirk 10",
+        "en": "Circ 10"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8950,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_11_temperature_status",
+      "index": {
+        "de": "Zirk 10",
+        "en": "Circ 10"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8951,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_12_temperature_value",
+      "index": {
+        "de": "Zirk 11",
+        "en": "Circ 11"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8952,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_12_temperature_status",
+      "index": {
+        "de": "Zirk 11",
+        "en": "Circ 11"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8953,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_13_temperature_value",
+      "index": {
+        "de": "Zirk 12",
+        "en": "Circ 12"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8954,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_13_temperature_status",
+      "index": {
+        "de": "Zirk 12",
+        "en": "Circ 12"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8955,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_14_temperature_value",
+      "index": {
+        "de": "Zirk 13",
+        "en": "Circ 13"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8956,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_14_temperature_status",
+      "index": {
+        "de": "Zirk 13",
+        "en": "Circ 13"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8957,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "1/10°C",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.value",
+      "name": {
+        "de": "Temperatur (value)",
+        "en": "Temperature (value)"
+      },
+      "entity_id": "circ_15_temperature_value",
+      "index": {
+        "de": "Zirk 14",
+        "en": "Circ 14"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8958,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_sensor_status_t",
+      "id": "902",
+      "parameter": "ZIRK.i_temperatur.status",
+      "name": {
+        "de": "Temperatur (status)",
+        "en": "Temperature (status)"
+      },
+      "entity_id": "circ_15_temperature_status",
+      "index": {
+        "de": "Zirk 14",
+        "en": "Circ 14"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 8963,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_1_pump",
+      "index": {
+        "de": "Zirk 0",
+        "en": "Circ 0"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 8964,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_2_pump",
+      "index": {
+        "de": "Zirk 1",
+        "en": "Circ 1"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 8965,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_3_pump",
+      "index": {
+        "de": "Zirk 2",
+        "en": "Circ 2"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 8966,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_4_pump",
+      "index": {
+        "de": "Zirk 3",
+        "en": "Circ 3"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 8967,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_5_pump",
+      "index": {
+        "de": "Zirk 4",
+        "en": "Circ 4"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 8968,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_6_pump",
+      "index": {
+        "de": "Zirk 5",
+        "en": "Circ 5"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 8969,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_7_pump",
+      "index": {
+        "de": "Zirk 6",
+        "en": "Circ 6"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 8970,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_8_pump",
+      "index": {
+        "de": "Zirk 7",
+        "en": "Circ 7"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 8971,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_9_pump",
+      "index": {
+        "de": "Zirk 8",
+        "en": "Circ 8"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 8972,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_10_pump",
+      "index": {
+        "de": "Zirk 9",
+        "en": "Circ 9"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 8973,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_11_pump",
+      "index": {
+        "de": "Zirk 10",
+        "en": "Circ 10"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 8974,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_12_pump",
+      "index": {
+        "de": "Zirk 11",
+        "en": "Circ 11"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 8975,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_13_pump",
+      "index": {
+        "de": "Zirk 12",
+        "en": "Circ 12"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 8976,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_14_pump",
+      "index": {
+        "de": "Zirk 13",
+        "en": "Circ 13"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 8977,
+      "data_type": "04",
+      "type": "s16",
+      "user_level": "read",
+      "expert_level": "read",
+      "unit_value_table": "system_ein_aus_t",
+      "id": "904",
+      "parameter": "ZIRK.o_pumpe",
+      "name": {
+        "de": "Pumpe",
+        "en": "Pump"
+      },
+      "entity_id": "circ_15_pump",
+      "index": {
+        "de": "Zirk 14",
+        "en": "Circ 14"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 14
+    },
+    {
+      "starting_address": 24828,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_1_select_program",
+      "index": {
+        "de": "Zirk 0",
+        "en": "Circ 0"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 0
+    },
+    {
+      "starting_address": 24829,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_2_select_program",
+      "index": {
+        "de": "Zirk 1",
+        "en": "Circ 1"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 1
+    },
+    {
+      "starting_address": 24830,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_3_select_program",
+      "index": {
+        "de": "Zirk 2",
+        "en": "Circ 2"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 2
+    },
+    {
+      "starting_address": 24831,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_4_select_program",
+      "index": {
+        "de": "Zirk 3",
+        "en": "Circ 3"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 3
+    },
+    {
+      "starting_address": 24832,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_5_select_program",
+      "index": {
+        "de": "Zirk 4",
+        "en": "Circ 4"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 4
+    },
+    {
+      "starting_address": 24833,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_6_select_program",
+      "index": {
+        "de": "Zirk 5",
+        "en": "Circ 5"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 5
+    },
+    {
+      "starting_address": 24834,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_7_select_program",
+      "index": {
+        "de": "Zirk 6",
+        "en": "Circ 6"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 6
+    },
+    {
+      "starting_address": 24835,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_8_select_program",
+      "index": {
+        "de": "Zirk 7",
+        "en": "Circ 7"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 7
+    },
+    {
+      "starting_address": 24836,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_9_select_program",
+      "index": {
+        "de": "Zirk 8",
+        "en": "Circ 8"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 8
+    },
+    {
+      "starting_address": 24837,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_10_select_program",
+      "index": {
+        "de": "Zirk 9",
+        "en": "Circ 9"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 9
+    },
+    {
+      "starting_address": 24838,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_11_select_program",
+      "index": {
+        "de": "Zirk 10",
+        "en": "Circ 10"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 10
+    },
+    {
+      "starting_address": 24839,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_12_select_program",
+      "index": {
+        "de": "Zirk 11",
+        "en": "Circ 11"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 11
+    },
+    {
+      "starting_address": 24840,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_13_select_program",
+      "index": {
+        "de": "Zirk 12",
+        "en": "Circ 12"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 12
+    },
+    {
+      "starting_address": 24841,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_14_select_program",
+      "index": {
+        "de": "Zirk 13",
+        "en": "Circ 13"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 13
+    },
+    {
+      "starting_address": 24842,
+      "data_type": "03",
+      "type": "s16",
+      "user_level": "readwrite",
+      "expert_level": "readwrite",
+      "unit_value_table": "zirk_programm_t",
+      "id": "900",
+      "parameter": "ZIRK.programm",
+      "name": {
+        "de": "Programm wählen",
+        "en": "Select program"
+      },
+      "entity_id": "circ_15_select_program",
+      "index": {
+        "de": "Zirk 14",
+        "en": "Circ 14"
+      },
+      "equipment_group": "Circ",
+      "equipment_instance": 14
+    }
+  ]
+}

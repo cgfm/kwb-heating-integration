@@ -1,0 +1,109 @@
+{
+  "firmware_version": "v26.6.1",
+  "source": {
+    "pull_request": 21,
+    "commit": "360b9a6a07d1005c3f19e5a83159a26fcb659372",
+    "format": "legacy_de_en_json",
+    "extraction": "git archive into a temporary directory",
+    "original_excel_available": false
+  },
+  "source_files": {
+    "device_files": [
+      "kwb_cf1.json",
+      "kwb_cf1_5.json",
+      "kwb_cf2.json",
+      "kwb_combifire.json",
+      "kwb_easyair_plus.json",
+      "kwb_easyfire.json",
+      "kwb_ef3.json",
+      "kwb_multifire.json",
+      "kwb_pelletfire_plus.json"
+    ],
+    "equipment_files": [
+      "boiler_sequence.json",
+      "buffer_storage.json",
+      "circulation.json",
+      "dhw_storage.json",
+      "heat_meters.json",
+      "heating_circuits.json",
+      "secondary_heat_sources.json",
+      "solar.json",
+      "transfer_station.json"
+    ]
+  },
+  "language_merge": {
+    "coverage_identity_fields": [
+      "relative_file",
+      "parameter",
+      "starting_address"
+    ],
+    "pre_entity_id_normalization_included_source_entity_id": true,
+    "de_registers": 3512,
+    "en_registers": 2962,
+    "registers_in_both": 2962,
+    "de_only_registers": 550,
+    "en_only_registers": 0,
+    "source_union_registers": 3512,
+    "unified_generated_registers": 3512,
+    "missing_from_unified": 0,
+    "extra_in_unified": 0,
+    "missing_register_translations": 550,
+    "missing_value_table_translations": 50,
+    "missing_alarm_translations": 2,
+    "value_table_raw_key_superset_gaps": 9,
+    "raw_key_gap_resolution": "Raw-key unions were retained and absent labels remain explicit translation gaps.",
+    "structural_conflicts": 0,
+    "ambiguous_language_pairs": 0,
+    "blocking_items": 0
+  },
+  "entity_id_processing": {
+    "english_source_register_ids_regenerated": 2962,
+    "de_only_source_ids_entering_finalizer": 550,
+    "de_only_ids_replaced_from_v25_7_1_baseline": 274,
+    "new_de_only_ids_retained_from_authoritative_pr_data": 276,
+    "existing_published_ids_replaced_by_pr_parameter_ids": 0
+  },
+  "v25_7_1_to_v26_6_1": {
+    "existing_registers_matched": 2796,
+    "unchanged_parameter_identity": 2727,
+    "unchanged_parameter_and_technical_metadata": 2711,
+    "unchanged_technical_metadata": 2780,
+    "parameter_identity_changes": 69,
+    "changed_starting_address_matches": 0,
+    "changed_technical_metadata_matches": 16,
+    "technical_change_fields": {
+      "min": 16,
+      "max": 16
+    },
+    "new_registers": 716,
+    "new_equipment_instance_registers": 276,
+    "removed_or_unmatched_registers": 0,
+    "published_entity_ids_preserved": 2796,
+    "blocking_items": 0,
+    "value_tables": {
+      "unchanged": 32,
+      "changed": 5,
+      "added": 6,
+      "removed": 0
+    },
+    "alarm_codes": {
+      "unchanged": 1560,
+      "changed": 6,
+      "added": 70,
+      "removed": 2
+    }
+  },
+  "solar_program": {
+    "source_context": "equipment/solar.json",
+    "parameter": "SOL.programm",
+    "instances": 14,
+    "starting_address_first": 26610,
+    "starting_address_last": 26623,
+    "german_name": "Programm wählen",
+    "english_name": "Select program",
+    "entity_id_first": "sol_1_select_program",
+    "entity_id_last": "sol_14_select_program",
+    "value_table": "solar_programm_t",
+    "new_relative_to_v25.7.1": true
+  }
+}

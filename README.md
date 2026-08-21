@@ -246,8 +246,8 @@ The integration supports **automatic version detection** and multilingual displa
 data without duplicating the physical register configuration:
 
 ### Supported Languages & Versions
-- **German (de)** - Complete support for v21.4.0, v22.7.1, v24.7.1, v25.4.0 and v25.7.1
-- **English (en)** - Complete support for v21.4.0, v22.7.1, v24.7.1, v25.4.0 and v25.7.1, with safe fallback for documented source translation gaps
+- **German (de)** - Complete support for v21.4.0, v22.7.1, v24.7.1, v25.4.0, v25.7.1 and v26.6.1
+- **English (en)** - Complete support for v21.4.0, v22.7.1, v24.7.1, v25.4.0, v25.7.1 and v26.6.1, with safe fallback for documented source translation gaps
 
 ### Auto-Detection
 1. **Version Detection**: Automatically detects KWB firmware version via Modbus register 8192
@@ -272,7 +272,9 @@ config/versions/
 │   └── alarm_codes.json
 ├── v22.7.1/
 │   └── (same unified structure)
-└── v25.7.1/
+├── v25.7.1/
+│   └── (same unified structure)
+└── v26.6.1/
     └── (same unified structure)
 ```
 
@@ -304,7 +306,7 @@ into initial JSON templates. Its `config/versions/` tree is a non-canonical
 development artifact; it is neither a runtime dependency nor a production mirror.
 
 ### Key Features
-- Multi-version support (v21.4.0, v22.7.1, v24.7.1, v25.4.0, v25.7.1, etc.)
+- Multi-version support (v21.4.0, v22.7.1, v24.7.1, v25.4.0, v25.7.1, v26.6.1, etc.)
 - Merged German/English processing into one multilingual firmware template
 - Language-independent entity_id generation (derived from English data)
 - Equipment index prefixes included in entity_ids
