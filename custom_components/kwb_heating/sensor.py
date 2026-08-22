@@ -22,6 +22,7 @@ from .const import DOMAIN
 from .coordinator import KWBDataUpdateCoordinator
 from .entity import KWBBaseEntity
 from .fuel_split import FuelSplitTracker
+from .fuel_split_entity_ids import fuel_split_entity_identity
 from .icon_utils import get_entity_icon
 from .register_utils import find_register_by_parameter, normalize_register_address
 
@@ -250,7 +251,7 @@ class KWBLastFirewoodFireSensor(CoordinatorEntity, RestoreEntity, SensorEntity):
 
         # Set explicit entity_id - always use English for language-independent IDs
         english_suffix = FIREWOOD_SENSOR_TRANSLATIONS["en"]["entity_id_suffix"]
-        self._attr_entity_id = f"sensor.{device_prefix_id}_{english_suffix}"
+        self.entity_id = f"sensor.{device_prefix_id}_{english_suffix}"
 
         # Set device info
         self._attr_device_info = coordinator.device_info
@@ -381,15 +382,9 @@ class KWBFuelSplitEnergySensor(SensorEntity):
         self._attr_name = translations.get(language, translations["en"])
         self._attr_icon = translations["icon"]
 
-        device_identifier = f"{coordinator.host}_{coordinator.slave_id}"
-        device_prefix_id = coordinator.sanitize_for_entity_id(
-            coordinator.device_name_prefix
-        )
-        suffix = translations["entity_id_suffix"]
-        self._attr_unique_id = (
-            f"kwb_heating_{device_identifier}_{device_prefix_id}_{suffix}"
-        )
-        self._attr_entity_id = f"sensor.{device_prefix_id}_{suffix}"
+        unique_id, entity_id = fuel_split_entity_identity(coordinator, kind)
+        self._attr_unique_id = unique_id
+        self.entity_id = entity_id
         self._attr_device_info = coordinator.device_info
 
         if kind == "unattributed":

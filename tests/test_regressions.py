@@ -40,6 +40,59 @@ def _load_registers(path: Path) -> list[dict]:
     return data.get("registers", data.get("universal_registers", []))
 
 
+class _FakeEntityRegistry:
+    """Small 2026.8-compatible registry surface for migration unit tests."""
+
+    def __init__(self) -> None:
+        self.entries = {}
+        self.state_entity_ids = set()
+        self.update_calls = []
+
+    def add(self, entity_id: str, **values):
+        entry = types.SimpleNamespace(entity_id=entity_id, **values)
+        self.entries[entity_id] = entry
+        return entry
+
+    def async_get_entity_id(self, domain, platform, unique_id):
+        for entity_id, entry in self.entries.items():
+            if (
+                entry.domain == domain
+                and entry.platform == platform
+                and entry.unique_id == unique_id
+            ):
+                return entity_id
+        return None
+
+    def async_get(self, entity_id):
+        return self.entries.get(entity_id)
+
+    def async_regenerate_entity_id(self, entry):
+        return entry.automatic_entity_id
+
+    def async_get_available_entity_id(
+        self, domain, suggested_object_id, *, current_entity_id=None
+    ):
+        target = f"{domain}.{suggested_object_id}"
+        if (
+            target == current_entity_id
+            or (
+                target not in self.entries
+                and target not in self.state_entity_ids
+            )
+        ):
+            return target
+        return f"{target}_2"
+
+    def async_update_entity(self, entity_id, *, new_entity_id):
+        old = self.entries.pop(entity_id)
+        values = vars(old).copy()
+        values["entity_id"] = new_entity_id
+        updated = types.SimpleNamespace(**values)
+        self.entries[new_entity_id] = updated
+        self.update_calls.append((entity_id, new_entity_id))
+        return updated
+
+
 class RegisterConfigurationTests(unittest.TestCase):
     """Validate finalized production config independently of converter output."""
 
@@ -1882,6 +1935,7 @@ class LanguageReloadTests(unittest.TestCase):
             "custom_components.kwb_heating.const",
             "custom_components.kwb_heating.coordinator",
             "custom_components.kwb_heating.fuel_split",
+            "custom_components.kwb_heating.fuel_split_entity_ids",
             "custom_components.kwb_heating.register_utils",
             "homeassistant",
             "homeassistant.config_entries",
@@ -2000,6 +2054,7 @@ class FirewoodSensorTests(unittest.TestCase):
             "custom_components.kwb_heating.coordinator",
             "custom_components.kwb_heating.entity",
             "custom_components.kwb_heating.fuel_split",
+            "custom_components.kwb_heating.fuel_split_entity_ids",
             "custom_components.kwb_heating.icon_utils",
             "custom_components.kwb_heating.register_utils",
             "homeassistant",
@@ -2137,6 +2192,9 @@ class FirewoodSensorTests(unittest.TestCase):
         data=None,
         tracker=None,
         language="en",
+        device_prefix="KWB",
+        device_area=None,
+        entity_registry=None,
     ) -> list:
         async def ensure_initialized():
             return None
@@ -2150,7 +2208,7 @@ class FirewoodSensorTests(unittest.TestCase):
             register_manager=types.SimpleNamespace(_language=language),
             host="192.0.2.10",
             slave_id=1,
-            device_name_prefix="KWB",
+            device_name_prefix=device_prefix,
             sanitize_for_entity_id=lambda value: value.lower(),
             device_info={},
             data=data or {},
@@ -2162,8 +2220,43 @@ class FirewoodSensorTests(unittest.TestCase):
             data={"kwb_heating": {"entry-1": coordinator}}
         )
         entry = types.SimpleNamespace(entry_id="entry-1")
+
+        def add_entities(new_entities):
+            entities.extend(new_entities)
+            if entity_registry is None:
+                return
+            for entity in new_entities:
+                entity_id = getattr(entity, "entity_id", None)
+                if entity_id is None:
+                    # Model the 2026.8 default area/device/entity-name path so
+                    # this test fails in the same way as the live deployment.
+                    object_id = "_".join(
+                        part
+                        for part in (
+                            device_area,
+                            device_prefix,
+                            getattr(entity, "_attr_name", None),
+                        )
+                        if part
+                    ).lower()
+                    object_id = (
+                        object_id.replace("ä", "a")
+                        .replace("ö", "o")
+                        .replace("ü", "u")
+                        .replace("ß", "ss")
+                        .replace("-", "_")
+                        .replace(" ", "_")
+                    )
+                    entity_id = f"sensor.{object_id}"
+                    entity.entity_id = entity_id
+                entity_registry[entity._attr_unique_id] = types.SimpleNamespace(
+                    entity_id=entity_id,
+                    unique_id=entity._attr_unique_id,
+                    name=entity._attr_name,
+                )
+
         asyncio.run(
-            self.sensor_module.async_setup_entry(hass, entry, entities.extend)
+            self.sensor_module.async_setup_entry(hass, entry, add_entities)
         )
         return entities
 
@@ -2183,7 +2276,8 @@ class FirewoodSensorTests(unittest.TestCase):
         )
         firewood = self.assert_single_firewood(entities)
         self.assertEqual(9000, firewood._firewood_status_address)
-        self.assertEqual("sensor.kwb_last_firewood_fire", firewood._attr_entity_id)
+        self.assertEqual("sensor.kwb_last_firewood_fire", firewood.entity_id)
+        self.assertFalse(hasattr(firewood, "_attr_entity_id"))
         self.assertEqual(
             "kwb_heating_192.0.2.10_1_kwb_last_firewood_fire",
             firewood._attr_unique_id,
@@ -2254,14 +2348,295 @@ class FirewoodSensorTests(unittest.TestCase):
             if isinstance(entity, self.sensor_module.KWBFuelSplitEnergySensor)
         }
         self.assertEqual(
-            {kind: entity._attr_entity_id for kind, entity in de_fuel.items()},
-            {kind: entity._attr_entity_id for kind, entity in en_fuel.items()},
+            {kind: entity.entity_id for kind, entity in de_fuel.items()},
+            {kind: entity.entity_id for kind, entity in en_fuel.items()},
         )
         self.assertEqual(
             {kind: entity._attr_unique_id for kind, entity in de_fuel.items()},
             {kind: entity._attr_unique_id for kind, entity in en_fuel.items()},
         )
         self.assertNotEqual(de_fuel["pellet"]._attr_name, en_fuel["pellet"]._attr_name)
+
+    def test_fuel_sensor_registered_ids_ignore_area_and_localized_names(self) -> None:
+        tracker = types.SimpleNamespace(
+            pellet_kwh=1.0,
+            log_wood_kwh=2.0,
+            unattributed_kwh=3.0,
+            has_source_baseline=True,
+            diagnostic_attributes=lambda: {},
+        )
+        expected_ids = {
+            "pellet": "sensor.heizung_pellet_energy_total",
+            "log_wood": "sensor.heizung_log_wood_energy_total",
+            "unattributed": "sensor.heizung_fuel_energy_unattributed",
+        }
+        expected_unique_ids = {
+            "pellet": "kwb_heating_192.0.2.10_1_heizung_pellet_energy_total",
+            "log_wood": "kwb_heating_192.0.2.10_1_heizung_log_wood_energy_total",
+            "unattributed": (
+                "kwb_heating_192.0.2.10_1_heizung_fuel_energy_unattributed"
+            ),
+        }
+
+        registries = {}
+        entities_by_language = {}
+        for language in ("de", "en"):
+            registry = {}
+            entities = self._setup(
+                "Future Device",
+                [],
+                tracker=tracker,
+                language=language,
+                device_prefix="heizung",
+                device_area="Heizungsraum",
+                entity_registry=registry,
+            )
+            fuel_entities = {
+                entity.kind: entity
+                for entity in entities
+                if isinstance(entity, self.sensor_module.KWBFuelSplitEnergySensor)
+            }
+            registries[language] = registry
+            entities_by_language[language] = fuel_entities
+
+            self.assertEqual(
+                expected_ids,
+                {
+                    kind: registry[entity._attr_unique_id].entity_id
+                    for kind, entity in fuel_entities.items()
+                },
+            )
+            self.assertEqual(
+                expected_unique_ids,
+                {kind: entity._attr_unique_id for kind, entity in fuel_entities.items()},
+            )
+            self.assertTrue(
+                all(
+                    not hasattr(entity, "_attr_entity_id")
+                    for entity in fuel_entities.values()
+                )
+            )
+
+        self.assertEqual(
+            {
+                "pellet": "Pellet-Energie Gesamt",
+                "log_wood": "Stückholz-Energie Gesamt",
+                "unattributed": "Nicht zugeordnete Brennstoffenergie",
+            },
+            {
+                kind: entity._attr_name
+                for kind, entity in entities_by_language["de"].items()
+            },
+        )
+        self.assertEqual(
+            {
+                "pellet": "Pellet Energy Total",
+                "log_wood": "Log Wood Energy Total",
+                "unattributed": "Unattributed Fuel Energy",
+            },
+            {
+                kind: entity._attr_name
+                for kind, entity in entities_by_language["en"].items()
+            },
+        )
+        self.assertEqual(
+            set(registries["de"]),
+            set(registries["en"]),
+        )
+
+    @staticmethod
+    def _fuel_split_coordinator():
+        return types.SimpleNamespace(
+            host="192.0.2.10",
+            slave_id=1,
+            device_name_prefix="heizung",
+            sanitize_for_entity_id=lambda value: value.lower(),
+        )
+
+    def _add_fuel_split_registry_entry(
+        self,
+        registry,
+        kind,
+        entity_id,
+        *,
+        automatic_entity_id=None,
+        config_entry_id="entry-1",
+        disabled_by=None,
+        entity_category=None,
+    ):
+        identity_module = sys.modules[
+            "custom_components.kwb_heating.fuel_split_entity_ids"
+        ]
+        unique_id, target_entity_id = identity_module.fuel_split_entity_identity(
+            self._fuel_split_coordinator(), kind
+        )
+        entry = registry.add(
+            entity_id,
+            id=f"registry-id-{kind}",
+            domain="sensor",
+            platform="kwb_heating",
+            unique_id=unique_id,
+            config_entry_id=config_entry_id,
+            device_id="device-1",
+            disabled_by=disabled_by,
+            entity_category=entity_category,
+            automatic_entity_id=automatic_entity_id or entity_id,
+        )
+        return entry, target_entity_id
+
+    def _run_fuel_split_entity_id_migration(self, registry):
+        identity_module = sys.modules[
+            "custom_components.kwb_heating.fuel_split_entity_ids"
+        ]
+        registry_module_name = "homeassistant.helpers.entity_registry"
+        old_module = sys.modules.get(registry_module_name)
+        helpers_module = sys.modules["homeassistant.helpers"]
+        had_attribute = hasattr(helpers_module, "entity_registry")
+        old_attribute = getattr(helpers_module, "entity_registry", None)
+        registry_module = types.ModuleType(registry_module_name)
+        registry_module.async_get = lambda _hass: registry
+        sys.modules[registry_module_name] = registry_module
+        helpers_module.entity_registry = registry_module
+        try:
+            identity_module.async_migrate_fuel_split_entity_ids(
+                types.SimpleNamespace(),
+                types.SimpleNamespace(entry_id="entry-1"),
+                self._fuel_split_coordinator(),
+            )
+        finally:
+            if old_module is None:
+                sys.modules.pop(registry_module_name, None)
+            else:
+                sys.modules[registry_module_name] = old_module
+            if had_attribute:
+                helpers_module.entity_registry = old_attribute
+            else:
+                del helpers_module.entity_registry
+
+    def test_live_fuel_split_registry_ids_are_migrated_idempotently(self) -> None:
+        registry = _FakeEntityRegistry()
+        old_ids = {
+            "pellet": "sensor.heizungsraum_heizung_pellet_energie_gesamt",
+            "log_wood": "sensor.heizungsraum_heizung_stuckholz_energie_gesamt",
+            "unattributed": (
+                "sensor.heizungsraum_heizung_nicht_zugeordnete_brennstoffenergie"
+            ),
+        }
+        disabled_by = {
+            "pellet": None,
+            "log_wood": "user",
+            "unattributed": "integration",
+        }
+        categories = {
+            "pellet": None,
+            "log_wood": None,
+            "unattributed": "diagnostic",
+        }
+        target_ids = {}
+        original_registry_ids = {}
+        fuel_split_store = {
+            "key": "kwb_heating.fuel_split.entry-1",
+            "pellet_kwh": 12.5,
+            "log_wood_kwh": 4.25,
+            "unattributed_kwh": 0.5,
+        }
+        original_store = fuel_split_store.copy()
+
+        for kind, old_entity_id in old_ids.items():
+            entry, target_ids[kind] = self._add_fuel_split_registry_entry(
+                registry,
+                kind,
+                old_entity_id,
+                disabled_by=disabled_by[kind],
+                entity_category=categories[kind],
+            )
+            original_registry_ids[kind] = entry.id
+
+        self._run_fuel_split_entity_id_migration(registry)
+        self.assertEqual(set(target_ids.values()), set(registry.entries))
+        self.assertEqual(3, len(registry.update_calls))
+        self.assertEqual(original_store, fuel_split_store)
+
+        for kind, target_entity_id in target_ids.items():
+            entry = registry.entries[target_entity_id]
+            self.assertEqual(original_registry_ids[kind], entry.id)
+            self.assertEqual("entry-1", entry.config_entry_id)
+            self.assertEqual("device-1", entry.device_id)
+            self.assertEqual(disabled_by[kind], entry.disabled_by)
+            self.assertEqual(categories[kind], entry.entity_category)
+            self.assertEqual(
+                1,
+                sum(
+                    candidate.unique_id == entry.unique_id
+                    for candidate in registry.entries.values()
+                ),
+            )
+
+        self._run_fuel_split_entity_id_migration(registry)
+        self.assertEqual(3, len(registry.update_calls))
+        self.assertEqual(set(target_ids.values()), set(registry.entries))
+
+    def test_custom_fuel_split_entity_id_is_preserved(self) -> None:
+        registry = _FakeEntityRegistry()
+        custom_id = "sensor.my_personal_pellet_counter"
+        automatic_id = "sensor.heizungsraum_heizung_pellet_energie_gesamt"
+        entry, _target = self._add_fuel_split_registry_entry(
+            registry,
+            "pellet",
+            custom_id,
+            automatic_entity_id=automatic_id,
+        )
+
+        with self.assertLogs(
+            "custom_components.kwb_heating.fuel_split_entity_ids", "INFO"
+        ) as logs:
+            self._run_fuel_split_entity_id_migration(registry)
+
+        self.assertIs(entry, registry.entries[custom_id])
+        self.assertEqual([], registry.update_calls)
+        self.assertIn("Preserving FuelSplit entity ID", "\n".join(logs.output))
+
+    def test_fuel_split_target_collision_warns_without_appending_suffix(self) -> None:
+        registry = _FakeEntityRegistry()
+        old_id = "sensor.heizungsraum_heizung_pellet_energie_gesamt"
+        fuel_entry, target_id = self._add_fuel_split_registry_entry(
+            registry, "pellet", old_id
+        )
+        unrelated = registry.add(
+            target_id,
+            id="unrelated-registry-id",
+            domain="sensor",
+            platform="other_integration",
+            unique_id="unrelated-unique-id",
+            config_entry_id="other-entry",
+            automatic_entity_id=target_id,
+        )
+
+        with self.assertLogs(
+            "custom_components.kwb_heating.fuel_split_entity_ids", "WARNING"
+        ) as logs:
+            self._run_fuel_split_entity_id_migration(registry)
+
+        self.assertIs(fuel_entry, registry.entries[old_id])
+        self.assertIs(unrelated, registry.entries[target_id])
+        self.assertNotIn(f"{target_id}_2", registry.entries)
+        self.assertEqual([], registry.update_calls)
+        self.assertIn("belongs to another registry entry", "\n".join(logs.output))
+
+    def test_fuel_split_migration_requires_matching_config_entry(self) -> None:
+        registry = _FakeEntityRegistry()
+        old_id = "sensor.heizungsraum_heizung_pellet_energie_gesamt"
+        entry, _target = self._add_fuel_split_registry_entry(
+            registry,
+            "pellet",
+            old_id,
+            config_entry_id="different-entry",
+        )
+
+        self._run_fuel_split_entity_id_migration(registry)
+
+        self.assertIs(entry, registry.entries[old_id])
+        self.assertEqual([], registry.update_calls)
 
     def assert_single_firewood(self, entities: list):
         firewood = [
@@ -2417,6 +2792,13 @@ class IdentityCompatibilityTests(unittest.TestCase):
 
 class WiringRegressionTests(unittest.TestCase):
     """Cover integration wiring without importing Home Assistant."""
+
+    def test_fuel_split_registry_migration_precedes_platform_setup(self) -> None:
+        source = (INTEGRATION_ROOT / "__init__.py").read_text(encoding="utf-8")
+        migration_call = "async_migrate_fuel_split_entity_ids(hass, entry, coordinator)"
+        platform_setup = "async_forward_entry_setups(entry, PLATFORMS)"
+        self.assertIn(migration_call, source)
+        self.assertLess(source.index(migration_call), source.index(platform_setup))
 
     def test_equipment_ranges_are_centralized_and_unchanged(self) -> None:
         const_tree = ast.parse((INTEGRATION_ROOT / "const.py").read_text(encoding="utf-8"))

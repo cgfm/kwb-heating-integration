@@ -21,6 +21,7 @@ from .fuel_split import (
     fuel_split_storage_key,
     get_fuel_split_register_addresses,
 )
+from .fuel_split_entity_ids import async_migrate_fuel_split_entity_ids
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -43,6 +44,11 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     await coordinator.async_config_entry_first_refresh()
 
     await _async_setup_fuel_split_tracker(hass, entry, coordinator)
+
+    if coordinator.fuel_split_tracker is not None:
+        # Run before platforms are forwarded so an existing registry entry is
+        # renamed before EntityPlatform resolves the unchanged unique ID.
+        async_migrate_fuel_split_entity_ids(hass, entry, coordinator)
     
     hass.data[DOMAIN][entry.entry_id] = coordinator
     
