@@ -7,8 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.2] - 2026-08-22
+
 ### Added
+- **Firmware v26.6.1 support**: Added canonical register, equipment, device, alarm, and value-table data for the current KWB firmware generation, including refined stable IDs for EasyAir registers.
+- **Dual-fuel energy totals**: Added persistent pellet, log-wood, and unattributed energy totals for capable combination boilers. The unattributed total is a disabled-by-default diagnostic entity.
 - **RTU over TCP**: Added a dedicated network connection mode for ser2net and RS485-to-Ethernet gateways. The TCP transport now uses an RTU framer while retaining the configured Modbus slave ID.
+
+### Changed
+- **Canonical multilingual firmware data**: Consolidated separate German and English register trees into one validated schema with localized display metadata while preserving stable entity identities.
+- **Last Firewood Fire discovery**: The computed sensor is now enabled by register capability instead of a fixed device-name list, improving compatibility with future and renamed devices.
+- **Language changes**: Changing the integration language now performs a full reload so localized names, indexes, value tables, and alarm descriptions are rebuilt consistently.
 
 ### Fixed
 - **Duplicate entity IDs**: Corrected all duplicate IDs in the shipped register maps, fixed sheet-scoped English-name lookup in both converter paths, and changed the runtime fallback to retain colliding registers with deterministic address-based IDs instead of silently dropping them.
@@ -17,6 +26,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Transfer stations**: Connected the existing transfer-station option to the coordinator and register manager for supported v25 firmware maps.
 - **Config-flow duplicate handling**: Re-adding an existing connection now propagates Home Assistant's `already_configured` abort instead of turning it into an unknown error.
 - **PyModbus call compatibility**: Reuses the detected `unit`/`slave` keyword on subsequent reads and writes instead of repeating failed compatibility attempts for every register.
+- **FuelSplit timing and resets**: Poll-interval changes now update the tracker's expected interval, long gaps remain unattributed, and combined-counter resets preserve already-accounted totals.
+- **Stable FuelSplit entity IDs on Home Assistant 2026.8**: Fresh entities now request stable English IDs through `entity.entity_id`. Existing automatically generated localized/area-prefixed beta IDs are migrated in place without changing unique IDs, registry metadata, or user-customized IDs.
+- **Last Firewood Fire fresh-install ID**: Corrected the same entity-ID suggestion issue for new installations without migrating or renaming the existing published registry identity.
+
 
 ## [0.5.1] - 2026-07-31
 
