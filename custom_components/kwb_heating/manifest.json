@@ -1,19 +1,18 @@
 {
   "domain": "kwb_heating",
   "name": "KWB Heating Integration",
-  "version": "0.5.2",
-  "homeassistant": "2023.1.0",
-  "documentation": "https://github.com/cgfm/kwb-heating-integration",
-  "issue_tracker": "https://github.com/cgfm/kwb-heating-integration/issues",
+  "after_dependencies": [],
   "codeowners": ["@cgfm"],
-  "requirements": ["pymodbus>=3.5.0,<4.0.0", "pyserial>=3.5,<4.0.0", "aiofiles>=23.0.0,<25.0.0"],
   "config_flow": true,
   "dependencies": [],
-  "after_dependencies": [],
-  "iot_class": "local_polling",
+  "documentation": "https://github.com/cgfm/kwb-heating-integration",
   "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/cgfm/kwb-heating-integration/issues",
   "loggers": ["custom_components.kwb_heating"],
-  "quality_scale": "silver"
+  "quality_scale": "silver",
+  "requirements": ["pymodbus>=3.5.0,<4.0.0", "pyserial>=3.5,<4.0.0", "aiofiles>=23.0.0,<25.0.0"],
+  "version": "0.5.3"
 }
 
 

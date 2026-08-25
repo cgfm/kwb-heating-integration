@@ -129,8 +129,8 @@
     },
     "access_level": {
       "options": {
-        "UserLevel": "Benutzerebene",
-        "ExpertLevel": "Fachkraftebene"
+        "user": "Benutzerebene",
+        "expert": "Fachkraftebene"
       }
     }
   }

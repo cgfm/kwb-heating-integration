@@ -133,6 +133,19 @@ def _equipment_schema_fields(
 STEP_EQUIPMENT_DATA_SCHEMA = vol.Schema(_equipment_schema_fields())
 
 
+def _access_level_from_selector(value: str) -> str:
+    """Convert a selector value to the legacy value used by the integration."""
+    return ACCESS_LEVELS.get(value, value)
+
+
+def _access_level_to_selector(value: str) -> str:
+    """Convert a stored legacy access level to its selector value."""
+    for selector_value, stored_value in ACCESS_LEVELS.items():
+        if value == stored_value:
+            return selector_value
+    return value if value in ACCESS_LEVELS else "user"
+
+
 async def validate_input(hass: HomeAssistant, data: dict[str, Any]) -> dict[str, Any]:
     """Validate the user input allows us to connect."""
     connection_type = data.get(CONF_CONNECTION_TYPE, CONNECTION_TYPE_TCP)
@@ -298,7 +311,11 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             elif len(device_name) > 50:
                 errors[CONF_DEVICE_NAME] = "device_name_too_long"
             else:
-                self.data.update(user_input)
+                device_data = dict(user_input)
+                device_data[CONF_ACCESS_LEVEL] = _access_level_from_selector(
+                    device_data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL)
+                )
+                self.data.update(device_data)
                 # Move to equipment configuration step
                 return await self.async_step_equipment()
 
@@ -315,7 +332,10 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         device_schema = vol.Schema({
             vol.Required(CONF_DEVICE_TYPE): vol.In(DEVICE_TYPES.keys()),
             vol.Required(CONF_DEVICE_NAME, default=suggested_name): cv.string,
-            vol.Optional(CONF_ACCESS_LEVEL, default=DEFAULT_ACCESS_LEVEL): selector.SelectSelector(
+            vol.Optional(
+                CONF_ACCESS_LEVEL,
+                default=_access_level_to_selector(DEFAULT_ACCESS_LEVEL),
+            ): selector.SelectSelector(
                 selector.SelectSelectorConfig(
                     options=list(ACCESS_LEVELS.keys()),
                     translation_key="access_level",
@@ -418,7 +438,12 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
                         )
                     
                     # Create options entry with equipment settings (excluding device name from options)
-                    options_data = {k: v for k, v in user_input.items() if k != CONF_DEVICE_NAME}
+                    options_data = {
+                        k: v for k, v in user_input.items() if k != CONF_DEVICE_NAME
+                    }
+                    options_data[CONF_ACCESS_LEVEL] = _access_level_from_selector(
+                        options_data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL)
+                    )
                     return self.async_create_entry(title="", data=options_data)
                 except Exception as exc:
                     _LOGGER.error("Error updating equipment configuration: %s", exc)
@@ -449,8 +474,12 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
             **_equipment_schema_fields(current_equipment, entry.data),
             vol.Optional(
                 CONF_ACCESS_LEVEL,
-                default=current_equipment.get(CONF_ACCESS_LEVEL,
-                                             entry.data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL))
+                default=_access_level_to_selector(
+                    current_equipment.get(
+                        CONF_ACCESS_LEVEL,
+                        entry.data.get(CONF_ACCESS_LEVEL, DEFAULT_ACCESS_LEVEL),
+                    )
+                )
             ): selector.SelectSelector(
                 selector.SelectSelectorConfig(
                     options=list(ACCESS_LEVELS.keys()),

@@ -2793,6 +2793,41 @@ class IdentityCompatibilityTests(unittest.TestCase):
 class WiringRegressionTests(unittest.TestCase):
     """Cover integration wiring without importing Home Assistant."""
 
+    def test_access_level_selectors_preserve_legacy_runtime_values(self) -> None:
+        const_tree = ast.parse(
+            (INTEGRATION_ROOT / "const.py").read_text(encoding="utf-8")
+        )
+        access_levels_node = next(
+            node.value
+            for node in const_tree.body
+            if isinstance(node, ast.Assign)
+            and any(
+                isinstance(target, ast.Name) and target.id == "ACCESS_LEVELS"
+                for target in node.targets
+            )
+        )
+        self.assertEqual(
+            {"user": "UserLevel", "expert": "ExpertLevel"},
+            ast.literal_eval(access_levels_node),
+        )
+
+        for relative_path in (
+            "strings.json",
+            "translations/en.json",
+            "translations/de.json",
+        ):
+            translations = json.loads(
+                (INTEGRATION_ROOT / relative_path).read_text(encoding="utf-8")
+            )
+            option_keys = translations["selector"]["access_level"]["options"]
+            self.assertEqual({"user", "expert"}, set(option_keys), relative_path)
+
+        flow_source = (INTEGRATION_ROOT / "config_flow.py").read_text(
+            encoding="utf-8"
+        )
+        self.assertGreaterEqual(flow_source.count("_access_level_from_selector("), 3)
+        self.assertGreaterEqual(flow_source.count("_access_level_to_selector("), 3)
+
     def test_fuel_split_registry_migration_precedes_platform_setup(self) -> None:
         source = (INTEGRATION_ROOT / "__init__.py").read_text(encoding="utf-8")
         migration_call = "async_migrate_fuel_split_entity_ids(hass, entry, coordinator)"

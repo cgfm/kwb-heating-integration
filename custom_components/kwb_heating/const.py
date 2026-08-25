@@ -71,10 +71,12 @@ EQUIPMENT_RANGES = {
     CONF_TRANSFER_STATIONS: {"default": 0, "min": 0, "max": 14},
 }
 
-# Access Levels
+# Access-level selector values map to the legacy values stored in config entries
+# and consumed by the register manager. Selector values must be lowercase so they
+# can also be used as Home Assistant translation keys.
 ACCESS_LEVELS = {
-    "UserLevel": "Standard functions for end users",
-    "ExpertLevel": "Full access for experts/service"
+    "user": "UserLevel",
+    "expert": "ExpertLevel",
 }
 
 # Default values
