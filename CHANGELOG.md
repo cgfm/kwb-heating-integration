@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.5] - 2026-11-21
+
+### Fixed
+
+- Writable Number entities now use the same Modbus scaling for their minimum and maximum as for their current value. On Easyfire, the return flow minimum can be set from 40 to 70 °C and both temperature setpoints can be set from 60 to 80 °C. The fix applies to all models with scaled Number registers. (#23)
+
 ## [0.5.4] - 2026-11-21
 
 ### Added

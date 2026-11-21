@@ -94,6 +94,39 @@ class _FakeEntityRegistry:
         return updated
 
 
+class NumberBoundsTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls) -> None:
+        module = _load_module("kwb_number_data_conversion", INTEGRATION_ROOT / "data_conversion.py")
+        cls.converter = module.KWBDataConverter({})
+
+    def test_easyfire_number_bounds_use_the_same_unit_as_the_value(self) -> None:
+        registers = _load_registers(CONFIG_ROOT / "v25.4.0" / "devices" / "kwb_easyfire.json")
+        expected_bounds = {24577: (60.0, 80.0), 24578: (60.0, 80.0), 24581: (40.0, 70.0)}
+        registers_by_address = {register["starting_address"]: register for register in registers}
+
+        for address, (minimum, maximum) in expected_bounds.items():
+            with self.subTest(address=address):
+                register = registers_by_address[address]
+                self.assertEqual(self.converter.get_min_value(register), minimum)
+                self.assertEqual(self.converter.get_max_value(register), maximum)
+                self.assertEqual(self.converter.get_step_value(register), 0.1)
+
+    def test_bounds_support_other_scales_and_register_defaults(self) -> None:
+        cases = (
+            ({"type": "s16", "unit_value_table": "1/100kW", "min": 0, "max": "1250"}, (0.0, 12.5)),
+            ({"type": "s16", "unit_value_table": "1/10°C", "min": -500, "max": -50}, (-50.0, -5.0)),
+            ({"type": "s16", "unit_value_table": "1/10°C", "min": None, "max": ""}, (-3276.8, 3276.7)),
+            ({"type": "u16", "unit_value_table": "%", "min": 20, "max": 80}, (20.0, 80.0)),
+        )
+        for register, bounds in cases:
+            with self.subTest(register=register):
+                self.assertEqual(
+                    (self.converter.get_min_value(register), self.converter.get_max_value(register)),
+                    bounds,
+                )
+
+
 class RegisterConfigurationTests(unittest.TestCase):
     """Validate finalized production config independently of converter output."""
 

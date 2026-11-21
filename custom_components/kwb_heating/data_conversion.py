@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import logging
 import re
+from math import isfinite
 from typing import Any
 
 _LOGGER = logging.getLogger(__name__)
@@ -357,29 +358,34 @@ class KWBDataConverter:
         return None
     
     def get_min_value(self, register: dict) -> float:
-        """Get minimum value for numeric register."""
+        """Return the minimum in the Home Assistant unit."""
         data_type = register.get("type", register.get("unit", "u16"))
-        
-        if data_type == "s16":
-            return -32768.0
-        elif data_type in ["u16", "u32", "s32"]:
-            return 0.0
-        else:
-            return 0.0
-    
+        default = -32768.0 if data_type == "s16" else 0.0
+        return self._get_number_bound(register, "min", default)
+
     def get_max_value(self, register: dict) -> float:
-        """Get maximum value for numeric register."""
+        """Return the maximum in the Home Assistant unit."""
         data_type = register.get("type", register.get("unit", "u16"))
-        
-        if data_type == "u16":
-            return 65535.0
-        elif data_type == "s16":
-            return 32767.0
-        elif data_type in ["u32", "s32"]:
-            return 4294967295.0
-        else:
-            return 1000000.0
-    
+        defaults = {
+            "u16": 65535.0,
+            "s16": 32767.0,
+            "u32": 4294967295.0,
+            "s32": 4294967295.0,
+        }
+        return self._get_number_bound(register, "max", defaults.get(data_type, 1000000.0))
+
+    def _get_number_bound(self, register: dict, key: str, default: float) -> float:
+        """Scale a register bound, using the register type when it is missing."""
+        try:
+            bound = float(register.get(key, default))
+        except (TypeError, ValueError, OverflowError):
+            bound = default
+        if not isfinite(bound):
+            bound = default
+
+        # Bounds are signed values in the configuration, so only apply unit scaling.
+        return self._convert_from_scaling_factor(bound, register.get("unit_value_table", ""))
+
     def get_step_value(self, register: dict) -> float:
         """Get step value for numeric register based on scaling."""
         unit_value_table = register.get("unit_value_table", "")

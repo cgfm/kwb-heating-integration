@@ -64,29 +64,14 @@ class KWBNumber(KWBBaseEntity, NumberEntity):
 
     def _configure_number(self) -> None:
         """Configure number properties based on register definition."""
-        # Use data converter for unit
-        unit = self.coordinator.data_converter.get_unit(self._register)
+        converter = self.coordinator.data_converter
+        unit = converter.get_unit(self._register)
         if unit:
             self._attr_native_unit_of_measurement = unit
 
-        # Set min/max values from register or use data converter defaults
-        min_val = self._register.get("min")
-        max_val = self._register.get("max")
-
-        if min_val and str(min_val).replace("-", "").replace(".", "").isdigit():
-            self._attr_native_min_value = float(min_val)
-        else:
-            # Get default from data converter based on data type
-            self._attr_native_min_value = self.coordinator.data_converter.get_min_value(self._register)
-
-        if max_val and str(max_val).replace(".", "").isdigit():
-            self._attr_native_max_value = float(max_val)
-        else:
-            # Get default from data converter based on data type
-            self._attr_native_max_value = self.coordinator.data_converter.get_max_value(self._register)
-
-        # Set step based on scaling
-        self._attr_native_step = self.coordinator.data_converter.get_step_value(self._register)
+        self._attr_native_min_value = converter.get_min_value(self._register)
+        self._attr_native_max_value = converter.get_max_value(self._register)
+        self._attr_native_step = converter.get_step_value(self._register)
 
     @property
     def native_value(self) -> float | None:
