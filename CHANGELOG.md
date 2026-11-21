@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.4] - 2026-11-21
+
+### Added
+- **Open alarms**. A diagnostic sensor counts active KWB alarms and lists their IDs and localized descriptions in the `open_alarms` attribute. The integration batches Modbus function 02 reads using the detected firmware's alarm table. If the alarm read fails, the alarm sensor becomes unavailable and the other measurements continue to update.
+
+### Fixed
+- **PyModbus device addressing**. Reads and writes now pass the configured device address with the `device_id` keyword on newer PyModbus versions.
+- **Dependency compatibility**. Removed the upper version bound for `aiofiles`.
+
 ## [0.5.2] - 2026-08-22
 
 ### Added

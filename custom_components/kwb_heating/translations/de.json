@@ -1,4 +1,11 @@
 {
+  "entity": {
+    "sensor": {
+      "open_alarms": {
+        "name": "Offene Alarme"
+      }
+    }
+  },
   "config": {
     "step": {
       "user": {

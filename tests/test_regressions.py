@@ -14,6 +14,7 @@ import sys
 import tempfile
 import types
 import unittest
+from unittest.mock import patch
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -2042,8 +2043,8 @@ class LanguageReloadTests(unittest.TestCase):
                     sys.modules[name] = module
 
 
-class FirewoodSensorTests(unittest.TestCase):
-    """Cover register-capability discovery for Last Firewood Fire."""
+class SensorPlatformTests(unittest.TestCase):
+    """Exercise register and computed sensors without a Home Assistant install."""
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -2120,6 +2121,11 @@ class FirewoodSensorTests(unittest.TestCase):
         config_entries = types.ModuleType("homeassistant.config_entries")
         config_entries.ConfigEntry = object
         ha_const = types.ModuleType("homeassistant.const")
+        ha_const.CONF_HOST = "host"
+        ha_const.CONF_PORT = "port"
+        ha_const.Platform = types.SimpleNamespace(
+            SENSOR="sensor", NUMBER="number", SELECT="select", SWITCH="switch"
+        )
         ha_const.UnitOfEnergy = types.SimpleNamespace(KILO_WATT_HOUR="kWh")
         ha_core = types.ModuleType("homeassistant.core")
         ha_core.HomeAssistant = object
@@ -2138,10 +2144,16 @@ class FirewoodSensorTests(unittest.TestCase):
                 self.coordinator = coordinator
                 self.write_count = 0
 
+            @property
+            def available(self):
+                return self.coordinator.last_update_success
+
             def async_write_ha_state(self):
                 self.write_count += 1
 
         update_coordinator.CoordinatorEntity = CoordinatorEntity
+        update_coordinator.DataUpdateCoordinator = object
+        update_coordinator.UpdateFailed = RuntimeError
         restore_state = types.ModuleType("homeassistant.helpers.restore_state")
 
         class RestoreEntity:
@@ -2205,7 +2217,7 @@ class FirewoodSensorTests(unittest.TestCase):
             config={"device_type": device_type},
             access_level="UserLevel",
             ensure_initialized=ensure_initialized,
-            register_manager=types.SimpleNamespace(_language=language),
+            register_manager=types.SimpleNamespace(_language=language, alarm_codes=[]),
             host="192.0.2.10",
             slave_id=1,
             device_name_prefix=device_prefix,
@@ -2259,6 +2271,127 @@ class FirewoodSensorTests(unittest.TestCase):
             self.sensor_module.async_setup_entry(hass, entry, add_entities)
         )
         return entities
+
+    async def _exercise_alarm_poll(self, later_response, expected_alarms):
+        """Poll the real client and coordinator through the sensor setup path."""
+        package = "custom_components.kwb_heating"
+        with patch.dict(sys.modules):
+            _load_module(f"{package}.const", INTEGRATION_ROOT / "const.py")
+            for name, class_name in (
+                ("data_conversion", "KWBDataConverter"),
+                ("async_modular_register_manager", "AsyncModularRegisterManager"),
+                ("version_manager", "VersionManager"),
+                ("language_manager", "LanguageManager"),
+            ):
+                module_name = f"{package}.{name}"
+                module = types.ModuleType(module_name)
+                setattr(module, class_name, object)
+                sys.modules[module_name] = module
+            sys.modules["pymodbus.client"] = types.SimpleNamespace(AsyncModbusTcpClient=object)
+
+            class ModbusException(Exception):
+                pass
+
+            sys.modules["pymodbus.exceptions"] = types.SimpleNamespace(
+                ModbusException=ModbusException
+            )
+            client_module = _load_module(
+                f"{package}.modbus_client", INTEGRATION_ROOT / "modbus_client.py"
+            )
+            coordinator_module = _load_module(
+                f"{package}.coordinator", INTEGRATION_ROOT / "coordinator.py"
+            )
+            localization = _load_module(
+                f"{package}.config_localization", INTEGRATION_ROOT / "config_localization.py"
+            )
+
+        def response(*, error=False, **payload):
+            return types.SimpleNamespace(isError=lambda: error, **payload)
+
+        client = client_module.KWBModbusClient(slave_id=7)
+        calls = []
+
+        async def read_input_registers(address, *, count, device_id):
+            self.assertTrue(client._lock.locked())
+            self.assertEqual((address, count, device_id), (128, 1, 7))
+            return response(registers=[42])
+
+        async def read_discrete_inputs(address, *, count, device_id):
+            self.assertTrue(client._lock.locked())
+            calls.append((address, count, device_id))
+            if address == 7:
+                # A later error must discard any alarms already read.
+                active = expected_alarms is None
+                return response(bits=[active] + [False] * 7)
+            return later_response(response)
+
+        client._client = types.SimpleNamespace(
+            read_input_registers=read_input_registers,
+            read_discrete_inputs=read_discrete_inputs,
+        )
+        client._connected = True
+        firmware = INTEGRATION_ROOT / "config/versions/v26.6.1/alarm_codes.json"
+        alarm_codes = json.loads(firmware.read_text(encoding="utf-8"))["alarm_codes"][:4]
+        entry = types.SimpleNamespace(entry_id="entry-1")
+        cls = coordinator_module.KWBDataUpdateCoordinator
+        coordinator = cls.__new__(cls)
+        coordinator.entry = entry
+        coordinator.config = {}
+        coordinator.connection_type = "tcp"
+        coordinator.host = "192.0.2.10"
+        coordinator.slave_id = 7
+        coordinator.detected_version = "26.6.1"
+        coordinator.access_level = "UserLevel"
+        coordinator.fuel_split_tracker = None
+        coordinator.modbus_client = client
+        coordinator.register_manager = types.SimpleNamespace(
+            alarm_codes=localization.localize_alarm_codes(alarm_codes, "de")
+        )
+        # Deliberately reuse a numeric address from the discrete input space.
+        coordinator._registers = [
+            {"starting_address": 128, "data_type": "04", "name": "Measurement"}
+        ]
+        coordinator._process_register_value = lambda register, value: {"value": value}
+        coordinator.last_update_success = True
+        coordinator.data = await coordinator._async_update_data()
+
+        entities = []
+        hass = types.SimpleNamespace(data={"kwb_heating": {entry.entry_id: coordinator}})
+        await self.sensor_module.async_setup_entry(hass, entry, entities.extend)
+        (sensor,) = entities
+        self.assertIsInstance(sensor, self.sensor_module.KWBOpenAlarmsSensor)
+        self.assertEqual(calls, [(7, 1, 7), (128, 3, 7)])
+        self.assertEqual(coordinator.data[128], {"value": 42})
+        if expected_alarms is None:
+            self.assertFalse(sensor.available)
+            self.assertIsNone(sensor.native_value)
+            self.assertIsNone(sensor.extra_state_attributes)
+        else:
+            self.assertTrue(sensor.available)
+            self.assertEqual(sensor.native_value, len(expected_alarms))
+            self.assertEqual(sensor.extra_state_attributes, {"open_alarms": expected_alarms})
+
+    def test_reports_multiple_open_alarms_with_localized_descriptions(self):
+        expected = [
+            {"alarm_id": "1.0", "description": "Temperatur im Abgas nach Zündung nicht erreicht 1!"},
+            {"alarm_id": "1.2", "description": "Zündversuche erfolglos! (Pellets)"},
+        ]
+        asyncio.run(self._exercise_alarm_poll(
+            lambda response: response(bits=[True, False, True]), expected
+        ))
+
+    def test_no_open_alarms_is_an_available_empty_list(self):
+        asyncio.run(self._exercise_alarm_poll(
+            lambda response: response(bits=[False, False, False]), []
+        ))
+
+    def test_alarm_read_failure_preserves_measurements(self):
+        for later_response in (
+            lambda response: response(error=True),
+            lambda response: response(bits=[True]),
+        ):
+            with self.subTest(later_response=later_response):
+                asyncio.run(self._exercise_alarm_poll(later_response, None))
 
     @staticmethod
     def _firewood_register(address: object = 9000) -> dict:

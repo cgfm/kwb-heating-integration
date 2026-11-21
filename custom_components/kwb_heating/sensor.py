@@ -96,6 +96,9 @@ async def async_setup_entry(
 
     _LOGGER.debug("Processing %d registers for sensor entities", len(coordinator._registers) if coordinator._registers else 0)
 
+    if coordinator.register_manager.alarm_codes:
+        entities.append(KWBOpenAlarmsSensor(coordinator))
+
     access_level = coordinator.access_level
     level_field = "user_level" if access_level == "UserLevel" else "expert_level"
 
@@ -141,6 +144,37 @@ async def async_setup_entry(
 
     _LOGGER.info("Setting up %d KWB sensor entities", len(entities))
     async_add_entities(entities)
+
+
+class KWBOpenAlarmsSensor(CoordinatorEntity, SensorEntity):
+    """Expose the number and details of alarms currently open on the controller."""
+
+    _attr_has_entity_name = True
+    _attr_translation_key = "open_alarms"
+    _attr_entity_category = EntityCategory.DIAGNOSTIC
+    _attr_icon = "mdi:alert"
+
+    def __init__(self, coordinator: KWBDataUpdateCoordinator) -> None:
+        super().__init__(coordinator)
+        self._attr_unique_id = f"{coordinator.entry.entry_id}_open_alarms"
+        self._attr_device_info = coordinator.device_info
+
+    @property
+    def available(self) -> bool:
+        """Report an unavailable alarm reading independently of other sensors."""
+        return super().available and self.coordinator.open_alarms is not None
+
+    @property
+    def native_value(self) -> int | None:
+        """Return the number of open alarms."""
+        alarms = self.coordinator.open_alarms
+        return len(alarms) if alarms is not None else None
+
+    @property
+    def extra_state_attributes(self) -> dict[str, Any] | None:
+        """Expose the IDs and localized descriptions as a list."""
+        alarms = self.coordinator.open_alarms
+        return {"open_alarms": alarms} if alarms is not None else None
 
 
 class KWBSensor(KWBBaseEntity, SensorEntity):

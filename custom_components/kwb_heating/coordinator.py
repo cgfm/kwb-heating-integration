@@ -43,6 +43,8 @@ from .language_manager import LanguageManager
 
 _LOGGER = logging.getLogger(__name__)
 
+_MAX_DISCRETE_INPUTS_PER_READ = 2000
+
 # Pre-compiled regex for entity ID sanitization (more efficient than chained replace)
 _ENTITY_ID_INVALID_CHARS = re.compile(r"[^a-z0-9_]")
 
@@ -253,14 +255,15 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             if self.fuel_split_tracker is not None:
                 self.fuel_split_tracker.update_expected_interval(new_interval)
 
-    async def _async_update_data(self) -> dict[str, Any]:
+    async def _async_update_data(self) -> dict[int | str, Any]:
         """Fetch data from the KWB heating system."""
         # Initialize register manager on first run
         if not hasattr(self, 'register_manager') or self.register_manager is None:
             await self._initialize_register_manager()
         
-        if not self._registers:
-            _LOGGER.warning("No registers configured")
+        alarm_codes = self.register_manager.alarm_codes
+        if not self._registers and not alarm_codes:
+            _LOGGER.warning("No registers or alarm codes configured")
             return {}
 
         try:
@@ -273,7 +276,7 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
             register_data = await self.modbus_client.read_batch_registers(self._registers)
             
             # Process and convert data
-            processed_data = {}
+            processed_data: dict[int | str, Any] = {}
             for register in self._registers:
                 address = register["starting_address"]
                 if address in register_data:
@@ -284,10 +287,50 @@ class KWBDataUpdateCoordinator(DataUpdateCoordinator):
                     _LOGGER.debug("No data for register %d (%s)", address, register["name"])
             
             _LOGGER.debug("Successfully updated %d registers", len(processed_data))
+            if alarm_codes:
+                processed_data["open_alarms"] = await self._async_read_open_alarms(
+                    alarm_codes
+                )
             return processed_data
             
         except Exception as exc:
             raise UpdateFailed(f"Error communicating with KWB heating system: {exc}") from exc
+
+    async def _async_read_open_alarms(
+        self, alarm_codes: list[dict]
+    ) -> list[dict[str, str]] | None:
+        """Read consecutive alarm bits together and return the active messages."""
+        addresses = sorted({alarm["starting_address"] for alarm in alarm_codes})
+        ranges: list[tuple[int, int]] = []
+        for address in addresses:
+            if ranges:
+                start, count = ranges[-1]
+                if address == start + count and count < _MAX_DISCRETE_INPUTS_PER_READ:
+                    ranges[-1] = (start, count + 1)
+                    continue
+            ranges.append((address, 1))
+
+        active_addresses = set()
+        for start, count in ranges:
+            try:
+                bits = await self.modbus_client.read_discrete_inputs(start, count)
+            except Exception as exc:
+                _LOGGER.warning("Could not read alarm bits at %d: %s", start, exc)
+                return None
+            if bits is None:
+                return None
+            active_addresses.update(start + offset for offset, bit in enumerate(bits) if bit)
+
+        return [
+            {"alarm_id": alarm["alarm_id"], "description": alarm["description"]}
+            for alarm in alarm_codes
+            if alarm["starting_address"] in active_addresses
+        ]
+
+    @property
+    def open_alarms(self) -> list[dict[str, str]] | None:
+        """Return the open alarms from the latest coordinator update."""
+        return (self.data or {}).get("open_alarms")
 
     def _process_register_value(self, register: dict, raw_value: int) -> dict[str, Any]:
         """Process raw register value according to register definition."""

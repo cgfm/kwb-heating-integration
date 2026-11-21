@@ -78,7 +78,7 @@ class KWBModbusClient:
     async def _invoke_read(self, method_name: str, *, address: int, count: int):
         """Call a pymodbus read method in a version-agnostic way.
 
-        Prefer keyword parameters for count and unit/slave to support
+        Prefer keyword parameters for count and device address to support
         versions that enforce keyword-only arguments.
         """
         if not self._client:
@@ -89,7 +89,7 @@ class KWBModbusClient:
         first_error: TypeError | None = None
         unit_kwargs = [self._unit_kwarg]
         unit_kwargs.extend(
-            kwarg for kwarg in ("unit", "slave") if kwarg != self._unit_kwarg
+            kwarg for kwarg in ("unit", "slave", "device_id") if kwarg != self._unit_kwarg
         )
 
         for unit_kwarg in unit_kwargs:
@@ -119,8 +119,7 @@ class KWBModbusClient:
     async def _invoke_write(self, method_name: str, *, address: int, value: Any):
         """Call a pymodbus write method in a version-agnostic way.
 
-        Always pass address and value(s) positionally, and unit/slave as keyword.
-        Falls back between 'unit' and 'slave', and finally no unit (if not supported).
+        Pass address and value(s) positionally and the device address by keyword.
         """
         if not self._client:
             raise ConnectionError("Modbus client is not initialized")
@@ -130,7 +129,7 @@ class KWBModbusClient:
         first_error: TypeError | None = None
         unit_kwargs = [self._unit_kwarg]
         unit_kwargs.extend(
-            kwarg for kwarg in ("unit", "slave") if kwarg != self._unit_kwarg
+            kwarg for kwarg in ("unit", "slave", "device_id") if kwarg != self._unit_kwarg
         )
 
         for unit_kwarg in unit_kwargs:
@@ -215,6 +214,8 @@ class KWBModbusClient:
                             self._unit_kwarg = "unit"
                         elif "slave" in sig.parameters:
                             self._unit_kwarg = "slave"
+                        elif "device_id" in sig.parameters:
+                            self._unit_kwarg = "device_id"
                         else:
                             # Fallback to unit
                             self._unit_kwarg = "unit"
@@ -285,11 +286,26 @@ class KWBModbusClient:
 
     async def read_input_registers(self, address: int, count: int = 1) -> list[int] | None:
         """Read input registers (function code 04)."""
-        return await self._read_registers("input", address, count)
+        return await self._read("read_input_registers", "registers", address, count)
 
     async def read_holding_registers(self, address: int, count: int = 1) -> list[int] | None:
         """Read holding registers (function code 03)."""
-        return await self._read_registers("holding", address, count)
+        return await self._read("read_holding_registers", "registers", address, count)
+
+    async def read_discrete_inputs(
+        self, address: int, count: int = 1
+    ) -> list[bool] | None:
+        """Read discrete inputs (function code 02), dropping response padding."""
+        bits = await self._read("read_discrete_inputs", "bits", address, count)
+        if bits is None:
+            return None
+        if len(bits) < count:
+            _LOGGER.warning(
+                "Incomplete discrete input response at %d: got %d of %d bits",
+                address, len(bits), count,
+            )
+            return None
+        return bits[:count]
 
     async def write_single_register(self, address: int, value: int) -> bool:
         """Write a single holding register (function code 06)."""
@@ -361,13 +377,10 @@ class KWBModbusClient:
             await self._teardown_connection()
             return False
 
-    async def _read_registers(self, register_type: str, address: int, count: int) -> list[int] | None:
-        """Read registers with error handling (acquires lock).
-
-        Public-facing method used by read_input_registers / read_holding_registers.
-        Acquires the lock for a single read. For batch reads, use _read_registers_unlocked
-        under an externally held lock instead.
-        """
+    async def _read(
+        self, method: str, field: str, address: int, count: int
+    ) -> list[Any] | None:
+        """Perform a single read under the shared lock."""
         if not self._connected or not self._client:
             await self.connect()
 
@@ -376,50 +389,34 @@ class KWBModbusClient:
             return None
 
         async with self._lock:
-            return await self._read_registers_unlocked(register_type, address, count)
+            return await self._read_unlocked(method, field, address, count)
 
-    async def _read_registers_unlocked(self, register_type: str, address: int, count: int) -> list[int] | None:
-        """Read registers without acquiring the lock (caller must hold it).
+    async def _read_registers_unlocked(
+        self, register_type: str, address: int, count: int
+    ) -> list[int] | None:
+        """Read registers while the batch caller holds the lock."""
+        return await self._read_unlocked(
+            f"read_{register_type}_registers", "registers", address, count
+        )
 
-        Differentiates between protocol errors (ModbusException) and connection
-        errors. Protocol errors do NOT tear down the connection, as the transport
-        is still healthy.
-        """
+    async def _read_unlocked(
+        self, method: str, field: str, address: int, count: int
+    ) -> list[Any] | None:
+        """Read from the device while the caller holds the lock."""
         try:
-            if register_type == "input":
-                result = await self._invoke_read(
-                    "read_input_registers", address=address, count=count
-                )
-            elif register_type == "holding":
-                result = await self._invoke_read(
-                    "read_holding_registers", address=address, count=count
-                )
-            else:
-                raise ValueError(f"Invalid register type: {register_type}")
-
+            result = await self._invoke_read(method, address=address, count=count)
             if result.isError():
-                _LOGGER.error("Error reading %s registers at %d: %s", register_type, address, result)
+                _LOGGER.error("%s failed at %d: %s", method, address, result)
                 return None
 
-            return result.registers
+            return getattr(result, field)
 
         except ModbusException as exc:
-            _LOGGER.error(
-                "Modbus protocol error reading %s registers at %d: %s",
-                register_type, address, exc,
-            )
-            return None
-
-        except (ConnectionError, asyncio.TimeoutError, OSError) as exc:
-            _LOGGER.error(
-                "Connection error reading %s registers at %d: %s",
-                register_type, address, exc,
-            )
-            await self._teardown_connection()
+            _LOGGER.error("Modbus protocol error in %s at %d: %s", method, address, exc)
             return None
 
         except Exception as exc:
-            _LOGGER.error("Failed to read %s registers at %d: %s", register_type, address, exc)
+            _LOGGER.error("%s failed at %d: %s", method, address, exc)
             await self._teardown_connection()
             return None
 
