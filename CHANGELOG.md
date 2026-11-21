@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.6] - 2026-11-21
+
+### Fixed
+
+- Removed `pyserial` from the integration manifest because Home Assistant supplies it. The manifest now passes Hassfest validation.
+
 ## [0.5.5] - 2026-11-21
 
 ### Fixed
